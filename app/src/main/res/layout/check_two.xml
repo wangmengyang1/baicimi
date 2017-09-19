@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/login_back2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/register_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="电动剃须刀"
+            android:textColor="#343434"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_gouwuche2"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/img_gouwuche" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/re1"
+        android:background="#EEEEEE"></View>
+
+
+    <com.baicimi.view.VerticalViewPagerView
+        android:id="@+id/check_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        
+    </com.baicimi.view.VerticalViewPagerView>
+    
+
+</LinearLayout>

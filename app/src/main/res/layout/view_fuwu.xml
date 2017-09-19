@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_fuwusuoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务说明"
+        android:textSize="16sp"
+        android:textColor="#3D3E3E"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/img_gouxuan1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/gouxuan"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卖家承诺24小时内发货"
+            android:textSize="14sp"
+            android:textColor="#3D3E3E"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_gouxuan1"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/img_gouxuan2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/gouxuan"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/guihuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10天退货"
+            android:textSize="14sp"
+            android:textColor="#3D3E3E"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_gouxuan2"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10天退货，退货邮费买家承担"
+            android:textSize="11sp"
+            android:textColor="#3D3E3E"
+            android:layout_below="@id/guihuo"
+            android:layout_toRightOf="@id/img_gouxuan2"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        ></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/img_gouxuan3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/gouxuan"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运费险"
+            android:textSize="14sp"
+            android:textColor="#3D3E3E"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_gouxuan3"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        ></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/img_gouxuan4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/gouxuan"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="政企采购"
+            android:textSize="14sp"
+            android:textColor="#3D3E3E"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_gouxuan4"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        ></View>
+
+    <Button
+        android:id="@+id/btn_wancheng"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#D02020"
+        android:layout_marginTop="50dp"
+        android:text="完成"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        />
+
+</LinearLayout>

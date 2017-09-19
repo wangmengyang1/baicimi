@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/zhengfu_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/register_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="政府采购"
+            android:textColor="#656567"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="帮助"
+            android:textColor="#656567"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/zhengfu_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/zhengfu_title"
+        android:background="#BBBBBB"></View>
+
+    <View
+        android:id="@+id/zhengfu_view2"
+        android:layout_width="1.4dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#BBBBBB"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/zhengfu_view1"
+        ></View>
+
+    <com.baicimi.view.MyScrollView
+        android:id="@+id/myscro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zhengfu_view1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.baicimi.ui.PagerSlidingTabStrip
+                android:id="@+id/zhengfu_dingdan_p"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@id/zhengfu_view1"
+                android:layout_centerHorizontal="true"
+                app:pstsDividerColor="#00ffffff"
+                app:pstsIndicatorColor="#D93636"
+                app:pstsIndicatorHeight="2dp"
+                app:pstsShouldExpand="true"
+                app:pstsTabSelectTextColor="@color/common_text_tab"
+                app:pstsTabSelectTextSize="18sp"
+                app:pstsTabTextSize="18sp"></com.baicimi.ui.PagerSlidingTabStrip>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_zhengfu_dingdan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v4.view.ViewPager>
+            </LinearLayout>
+
+
+    </com.baicimi.view.MyScrollView>
+
+    <Button
+        android:id="@+id/btn_zhengfu_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#CE2538"
+        android:text="提交申请"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

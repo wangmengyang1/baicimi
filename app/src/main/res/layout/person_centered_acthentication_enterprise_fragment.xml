@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/teacher_status_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="#d52846"
+        >
+
+        <ImageView
+            android:id="@+id/back_enterprise"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_wirth_image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号认证"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            />
+
+
+    </RelativeLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="带*的为必填"
+               android:textSize="14sp"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="30dp"
+               android:textColor="#5d5d5d"
+               />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="30dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*认证类型 : "
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="企业官方认证"
+                   android:textSize="14sp"
+                   android:textColor="@color/black"
+                   android:layout_marginLeft="8dp"
+                   />
+
+               <TextView
+                   android:id="@+id/person_centered_acthentication_user_fragment_textview_change_enterprise"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="(更换认证类型)"
+                   android:textColor="@color/red"
+                   android:textSize="12sp"
+                   android:layout_marginLeft="8dp"
+                   />
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="有营业执照的各类企业，公司等企业官方账号均可申请企业认证"
+               android:textSize="11sp"
+               android:layout_marginLeft="40dp"
+               />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:gravity="center_vertical"
+               android:layout_marginLeft="30dp"
+               android:layout_marginRight="50dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*企业类别"
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+
+                   <Spinner
+                       android:id="@+id/person_cnetered_spinner_enterprise"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       ></Spinner>
+
+
+           </LinearLayout>
+           
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:background="@drawable/person_centered_acthentication_user_view_shape"
+               android:layout_marginTop="8dp"
+               android:layout_marginLeft="50dp"
+               android:layout_marginRight="50dp"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:text="请完善认证说明，认证成功，将出现在你的提示信息中"
+               android:gravity="center"
+               android:layout_marginTop="5dp"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:text="昵称：嘎嘎嘎嘎嘎嘎个"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="45dp"
+               android:textColor="@color/black"
+               />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="5dp"
+               android:gravity="center"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*企业全称 ："
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                   android:textColor="#5d5d5d"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:gravity="center_vertical"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*企业性质"
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+
+               <Spinner
+                   android:id="@+id/person_centered_spinner_02_enterprise"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   ></Spinner>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:gravity="center_vertical"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*企业类别"
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+
+               <Spinner
+                   android:id="@+id/person_centered_spinner_03_enterprise"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   ></Spinner>
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:gravity="center"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*官方网站地址 ："
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                   android:textColor="#5d5d5d"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:gravity="center"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*认证说明 ："
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="150dp"
+                   android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                   android:textColor="#5d5d5d"
+                   />
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:gravity="center"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*联系人姓名 ："
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                   android:textColor="#5d5d5d"
+                   />
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:gravity="center"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*联系人职位 ："
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                   android:textColor="#5d5d5d"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:gravity="center"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*联系手机 ："
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                   android:textColor="#5d5d5d"
+                   />
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:gravity="center"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*电子邮箱 ："
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                   android:textColor="#5d5d5d"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:gravity="center"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*上传营业执照 ："
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="浏览..."
+                   android:textSize="14sp"
+                   android:paddingTop="4dp"
+                   android:paddingBottom="4dp"
+                   android:paddingLeft="12dp"
+                   android:paddingRight="12dp"
+                   android:background="@drawable/person_cnetered_acthentication_user_button_shape"
+                   android:layout_marginLeft="15dp"
+                   />
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="请上传企业营业执照正本最新年检彩色复印件或照片"
+               android:textSize="11sp"
+               android:textColor="#5d5d5d"
+               android:gravity="center"
+               android:layout_marginTop="4dp"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="（如是餐饮等公共服务还需提供卫生许可证明等）"
+               android:textSize="11sp"
+               android:textColor="@color/red"
+               android:gravity="center"
+               android:layout_marginTop="4dp"
+               />
+
+           <!--<LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:gravity="center"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*岗位证明 ："
+                   android:textSize="12sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="浏览..."
+                   android:textSize="12sp"
+                   android:paddingTop="4dp"
+                   android:paddingBottom="4dp"
+                   android:paddingLeft="12dp"
+                   android:paddingRight="12dp"
+                   android:background="@drawable/person_cnetered_acthentication_user_button_shape"
+                   android:layout_marginLeft="15dp"
+                   />
+
+           </LinearLayout>-->
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="15dp"
+               android:gravity="center"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*其他材料 ："
+                   android:textSize="14sp"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                   android:textColor="#5d5d5d"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="浏览..."
+                   android:textSize="14sp"
+                   android:paddingTop="4dp"
+                   android:paddingBottom="4dp"
+                   android:paddingLeft="12dp"
+                   android:paddingRight="12dp"
+                   android:background="@drawable/person_cnetered_acthentication_user_button_shape"
+                   android:layout_marginLeft="15dp"
+                   />
+
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/person_cnetred_acthentication_enterprise_uploading"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="上 传 认 证"
+               android:background="@drawable/intimacy_payment_home_page_button_shape"
+               android:textColor="@color/white"
+               android:gravity="center"
+               android:paddingTop="8dp"
+               android:paddingBottom="8dp"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               android:layout_marginBottom="8dp"
+               />
+
+       </LinearLayout>
+
+   </ScrollView>
+
+
+
+</LinearLayout>

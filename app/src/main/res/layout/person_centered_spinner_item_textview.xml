@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="13sp"
+    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+    >
+
+</TextView>

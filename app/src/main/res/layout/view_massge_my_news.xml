@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rg_sort"
+    android:layout_width="150dp"
+    android:background="@mipmap/bg_dropdown"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    >
+
+    <RadioButton
+        android:id="@+id/rb_sort_default"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@mipmap/faqiliaotian"
+        android:drawablePadding="15dp"
+        android:textSize="16sp"
+        android:paddingRight="10dp"
+        android:text="发起聊天"
+        android:textColor="#ffffff" />
+
+
+    <RadioButton
+        android:id="@+id/rb_sort_hot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableLeft="@mipmap/similiaotian"
+        android:drawablePadding="15dp"
+        android:button="@null"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="私密聊天"
+        android:textSize="16sp"
+        android:textColor="#ffffff" />
+
+</RadioGroup>

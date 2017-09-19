@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@mipmap/titel_pic">
+
+    <Button
+        android:id="@+id/btn_head_cehua"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@mipmap/shouyecehua"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:layout_marginLeft="15dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:id="@+id/title_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo"
+            />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广东"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/title_logo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/geren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/geren"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        />
+
+
+</RelativeLayout>

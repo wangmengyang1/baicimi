@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="55dp"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <com.baicimi.ui.PersonUserPagerSlidingTabStrip
+            android:id="@+id/head_page_pupst"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            app:pstsDividerColor="#00ffffff"
+            app:pstsIndicatorColor="#D93636"
+            app:pstsIndicatorHeight="1.8dp"
+            app:pstsShouldExpand="true"
+            app:pstsTabSelectTextColor="@color/common_text_tab"
+            app:pstsTabSelectTextSize="12sp"
+            app:pstsTabTextSize="15sp"></com.baicimi.ui.PersonUserPagerSlidingTabStrip>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rr1"
+        android:layout_marginTop="5dp">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_head_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="#EEEEEE"></View>
+
+
+
+</LinearLayout>

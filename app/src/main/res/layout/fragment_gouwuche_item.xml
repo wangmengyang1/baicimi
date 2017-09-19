@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="#ffffff">
+
+    <CheckBox
+        android:id="@+id/gouwuche_check"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/gouwuche_list_chexbok"
+        android:button="@null" />
+
+    <ImageView
+        android:id="@+id/gouwuche_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/gouwuche_check"
+        android:src="@mipmap/fenlei1" />
+
+
+    <TextView
+        android:id="@+id/gouwuche_goods_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/gouwuche_img"
+        android:text="补水美白洁面乳"
+        android:textColor="#696969"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/gouwuche_goods_yanse_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gouwuche_goods_message"
+        android:layout_toRightOf="@id/gouwuche_img"
+        android:text="编号 4373/206"
+        android:textColor="#BFBFBF"
+        android:textSize="12sp" />
+
+
+    <ImageView
+        android:id="@+id/xiao_img1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/gouwuche_goods_yanse_num"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/gouwuche_img"
+        android:src="@mipmap/xiao_img2" />
+
+    <ImageView
+        android:id="@+id/xiao_img2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/gouwuche_goods_yanse_num"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/xiao_img1"
+        android:src="@mipmap/xiao_img1" />
+
+
+    <Spinner
+        android:id="@+id/btn_kuanshi"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/xiao_img2"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/gouwuche_img"
+        android:background="@mipmap/btn_back_img"
+        android:text="120ML"
+        android:textColor="#484848"
+        android:textSize="5sp" />
+
+    <Spinner
+        android:id="@+id/btn_jifendikou"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/xiao_img2"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/btn_kuanshi"
+        android:background="@mipmap/btn_back_img"
+        android:layout_marginLeft="3dp"
+        android:text="1000积分抵扣10元"
+        android:textColor="#484848"
+        android:textSize="5sp" />
+
+
+    //加减框
+    <View
+        android:id="@+id/view_jiajian_shang"
+        android:layout_width="81dp"
+        android:layout_height="0.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/xiao_img2"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:background="#BFBFBF"></View>
+
+    <View
+        android:id="@+id/view_jiajian_you"
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view_jiajian_shang"
+        android:layout_marginRight="10dp"
+        android:background="#BFBFBF"></View>
+
+    <TextView
+        android:id="@+id/gouwuche_goods_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_jiajian_shang"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toLeftOf="@id/view_jiajian_you"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="+"
+        android:textColor="#3A3A3C"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view_jiajian_zhong1"
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/view_jiajian_shang"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/gouwuche_goods_add"
+        android:background="#BFBFBF"></View>
+
+    <TextView
+        android:id="@+id/gouwuche_goods_num"
+        android:layout_width="20dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/view_jiajian_shang"
+        android:layout_marginTop="3dp"
+        android:layout_toLeftOf="@id/view_jiajian_zhong1"
+        android:text="1"
+        android:textColor="#3A3A3C"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/view_jiajian_zhong2"
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/view_jiajian_shang"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/gouwuche_goods_num"
+        android:background="#BFBFBF"></View>
+
+    <TextView
+        android:id="@+id/gouwuche_goods_jian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xiao_img2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-16dp"
+        android:layout_toLeftOf="@id/view_jiajian_zhong2"
+        android:clickable="true"
+        android:text="-"
+        android:textColor="#3A3A3C"
+        android:textSize="38sp" />
+
+    <View
+        android:id="@+id/view_jiajian_zuo"
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/view_jiajian_shang"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@id/gouwuche_goods_jian"
+        android:background="#BFBFBF"></View>
+
+    <View
+        android:id="@+id/view_jiajian_xia"
+        android:layout_width="81dp"
+        android:layout_height="0.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view_jiajian_zuo"
+        android:layout_marginRight="10dp"
+        android:background="#BFBFBF"></View>
+
+
+    <TextView
+        android:id="@+id/goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥599.00"
+        android:textSize="14sp"
+        android:textColor="#696969"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_above="@id/view_jiajian_shang"
+        />
+
+</RelativeLayout>

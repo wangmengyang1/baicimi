@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/distribution_order_good_adapter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="名称"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="规格"
+            android:textSize="12sp"
+            android:gravity="right"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="单价"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:textSize="12sp"
+            android:paddingLeft="10dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="小计"
+            android:textSize="12sp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        >
+
+
+        <CheckBox
+            android:id="@+id/distribution_order_good_adapter_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MyCheckBoxTwo"
+            android:padding="3dp"
+            />
+
+        <ImageView
+            android:id="@+id/distribution_order_good_adapter_imageurl"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home_page_brand_fragment_image_22"
+            />
+
+
+        <TextView
+            android:id="@+id/distribution_order_good_adapter_lible"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="自然堂补水保湿"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+
+        <TextView
+            android:id="@+id/distribution_order_good_adapter_specification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250ML"
+            android:textSize="13sp"
+            android:layout_marginLeft="6dp"
+            />
+
+
+        <TextView
+            android:id="@+id/distribution_order_good_adapter_money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="88"
+            android:textSize="13sp"
+            android:gravity="center"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/distribution_order_good_adapter_layout_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/distribution_order_good_adapter_subtract_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/jian_image_black"
+                android:padding="3dp"
+                />
+            <TextView
+                android:id="@+id/distribution_order_good_adapter_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                />
+            <ImageView
+                android:id="@+id/distribution_order_good_adapter_add_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/add_image_black_01"
+                android:padding="3dp"
+                />
+            
+            
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/distribution_order_good_adapter_amountmoney"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="480"
+            android:textSize="13sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="管理"
+            android:textSize="13sp"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

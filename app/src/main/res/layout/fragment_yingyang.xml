@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+     <ImageView
+         android:id="@+id/login_back"
+         android:layout_width="22dp"
+         android:layout_height="22dp"
+         android:src="@mipmap/register_back"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="15dp"
+         />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成分和保养"
+            android:textSize="16sp"
+            android:textColor="#131313"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成分"
+                android:textSize="20sp"
+                android:textColor="#131313"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="面料"
+                android:textSize="15sp"
+                android:textColor="#131313"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="20dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginTop="6dp"
+                ></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主要面料"
+                android:textSize="14sp"
+                android:textColor="#8C8C8C"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="聚酯纤维54%-棉46%"
+                android:textSize="13sp"
+                android:textColor="#131313"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="装饰品"
+                android:textSize="14sp"
+                android:textColor="#8C8C8C"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="腈纶70%-改性腈纶18%-聚酯纤维12%"
+                android:textSize="13sp"
+                android:textColor="#131313"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="里料"
+                android:textSize="15sp"
+                android:textColor="#131313"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="20dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginTop="6dp"
+                ></View>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="聚酯纤维100%"
+                android:textSize="16sp"
+                android:textColor="#131313"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="填充物"
+                android:textSize="15sp"
+                android:textColor="#131313"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="20dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginTop="6dp"
+                ></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="聚酯纤维100%"
+                android:textSize="16sp"
+                android:textColor="#131313"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保养"
+                android:textSize="22sp"
+                android:textColor="#131313"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="50dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/baoyang1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    ></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30°C以下机洗 较短较慢程序脱水"
+                    android:textSize="13sp"
+                    android:textColor="#4E4E4E"
+                    android:layout_marginTop="26dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/baoyang2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    ></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不可漂白"
+                    android:textSize="13sp"
+                    android:textColor="#4E4E4E"
+                    android:layout_marginTop="16dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/baoyang3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    ></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不可熨烫"
+                    android:textSize="13sp"
+                    android:textColor="#4E4E4E"
+                    android:layout_marginTop="16dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/baoyang4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    ></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不可干洗"
+                    android:textSize="13sp"
+                    android:textColor="#4E4E4E"
+                    android:layout_marginTop="16dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/baoyang5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    ></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不可使用烘干机"
+                    android:textSize="13sp"
+                    android:textColor="#4E4E4E"
+                    android:layout_marginTop="16dp"
+                    />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"></View>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

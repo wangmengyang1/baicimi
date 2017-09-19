@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#FFFFFF"
+    >
+
+
+    <View
+        android:id="@+id/details_img"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:background="@mipmap/details_img"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="15dp"
+        ></View>
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="澳门十月初五 开心小八礼袋"
+        android:layout_toRightOf="@id/details_img"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textColor="#616161"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03-01"
+        android:layout_toRightOf="@id/details_img"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textColor="#AAAAAA"
+        />
+
+    <View
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:background="@mipmap/right_img"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        ></View>
+
+    <TextView
+        android:id="@+id/mony_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="118.50"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="35dp"
+        android:textSize="13sp"
+        android:textColor="#616161"
+        />
+
+
+</RelativeLayout>

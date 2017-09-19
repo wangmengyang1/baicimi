@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5FA"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#DB2950">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/red_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="信用管理"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#F5F5FA"
+                ></View>
+
+            <RelativeLayout
+                android:id="@+id/gerennews_re"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                >
+
+                <ImageView
+                    android:id="@+id/img_gerenxinxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@mipmap/gerenxinxi"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人信息"
+                    android:textSize="17sp"
+                    android:textColor="#616161"
+                    android:layout_toRightOf="@id/img_gerenxinxi"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/geren_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/main_left"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_geren_message_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="16sp"
+                    android:textColor="#ADADAD"
+                    android:layout_toLeftOf="@id/geren_left"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    />
+
+                <TextView
+                    android:id="@+id/chenghao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textSize="16sp"
+                    android:textColor="#ADADAD"
+                    android:layout_toLeftOf="@id/tv_geren_message_num"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_xingxing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/xingxing"
+                    android:layout_toLeftOf="@id/chenghao"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#F5F5FA"
+                ></View>
+
+
+            <RelativeLayout
+                android:id="@+id/fumianjilu_re"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                >
+
+                <ImageView
+                    android:id="@+id/img_fumianjilu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@mipmap/fumianjilu"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负面记录"
+                    android:textSize="17sp"
+                    android:textColor="#616161"
+                    android:layout_toRightOf="@id/img_fumianjilu"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/fumianjilu_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/main_left"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#F5F5FA"
+                ></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                >
+
+                <ImageView
+                    android:id="@+id/img_shouquan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@mipmap/shouquanguanli"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="授权管理"
+                    android:textSize="17sp"
+                    android:textColor="#616161"
+                    android:layout_toRightOf="@id/img_shouquan"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/shouquan_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/main_left"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F5F5FA"
+                ></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                >
+
+                <ImageView
+                    android:id="@+id/img_xinyonghukan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@mipmap/xinyonghucha"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="信用互查"
+                    android:textSize="17sp"
+                    android:textColor="#616161"
+                    android:layout_toRightOf="@id/img_xinyonghukan"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/xinyonghukan_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/main_left"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

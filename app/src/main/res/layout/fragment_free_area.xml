@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:id="@+id/fuqin"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/register_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="兑换排行"
+            android:textColor="#4C4C4C"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/img_gouwuche_more" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EEEEEE"></View>
+
+
+    //首页滑动界面
+
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <com.baicimi.ui.PersonUserPagerSlidingTabStrip
+            android:id="@+id/free_page"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            app:pstsDividerColor="#00ffffff"
+            app:pstsIndicatorColor="#D93636"
+            app:pstsIndicatorHeight="1dp"
+            app:pstsShouldExpand="true"
+            app:pstsTabSelectTextColor="@color/common_text_tab"
+            app:pstsTabSelectTextSize="12sp"
+            app:pstsTabTextSize="15sp"></com.baicimi.ui.PersonUserPagerSlidingTabStrip>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="460dp">
+
+            <com.baicimi.view.MyViewPagerPager
+                android:id="@+id/vp_free"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.baicimi.view.MyViewPagerPager>
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

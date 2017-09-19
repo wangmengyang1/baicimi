@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <com.baicimi.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/fragment_chaogxciao_banner"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                app:title_height="0dp"
+                ></com.youth.banner.Banner>
+
+            //首页我的订单等gridview
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/xifa"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:src="@mipmap/changxiao_xifashui"
+                        android:textColor="#737373"
+                        />
+
+                    <ImageView
+                        android:id="@+id/muyu"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:src="@mipmap/changxiao_xifashui"
+                        android:textColor="#737373"
+                        android:textSize="14sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/xiyiye"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:src="@mipmap/changxiao_xiyiye"
+                        android:textColor="#737373"
+                        android:textSize="14sp"
+                        />
+                    <ImageView
+                        android:id="@+id/ximiannai"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:src="@mipmap/changxiao_xijiejing"
+                        android:textColor="#737373"
+                        android:textSize="14sp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingBottom="8dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="沐浴露"
+                        android:textColor="#737373"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="洗发水"
+                        android:textColor="#737373"
+                        android:textSize="13sp"  />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="洗衣液"
+                        android:textColor="#737373"
+                        android:textSize="13sp"  />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="洗洁精"
+                        android:textColor="#737373"
+                        android:textSize="13sp"  />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/tv_pinpaihuodng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="品牌活动"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/tv_pinpaihuodng"
+                    android:background="#808080"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_pinpaihuodng"
+                    android:text="BrandActivity"
+                    android:textColor="#D0D0D0"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
+
+            <View
+                android:id="@+id/huodong1"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/pinpai1"
+                android:clickable="true"
+                />
+
+            <View
+                android:id="@+id/huodong2"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/pinpai2"
+                android:clickable="true"
+               />
+
+            <View
+                android:id="@+id/huodong3"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/pinpai3"
+                android:clickable="true"
+                />
+
+            <View
+                android:id="@+id/huodong4"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/pinpai4"
+                android:clickable="true"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/tv_xifa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="洗发露"
+                    android:textColor="#808080"
+                    android:textSize="15sp"   />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/tv_xifa"
+                    android:background="#808080"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_xifa"
+                    android:text="Shampoo"
+                    android:textColor="#D0D0D0"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
+
+
+            <GridView
+                android:id="@+id/xifa_grideview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fafafa"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="1dp"></GridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/tv_muyu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="沐浴露"
+                    android:textColor="#808080"
+                    android:textSize="15sp"   />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/tv_muyu"
+                    android:background="#808080"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_muyu"
+                    android:text="BodyWash"
+                    android:textColor="#D0D0D0"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"></View>
+
+
+            <GridView
+                android:id="@+id/xiyi_grideview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fafafa"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="1dp"></GridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/tv_xiyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="洗衣液"
+                    android:textColor="#808080"
+                    android:textSize="15sp"  />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/tv_xiyi"
+                    android:background="#808080"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_xiyi"
+                    android:text="LaundryDetergent"
+                    android:textColor="#D0D0D0"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"></View>
+
+
+            <GridView
+                android:id="@+id/muyu_grideview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fafafa"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="1dp"></GridView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"></View>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/tv_xijiejing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="洗洁精"
+                    android:textColor="#808080"
+                    android:textSize="15sp"   />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/tv_xijiejing"
+                    android:background="#808080"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_xijiejing"
+                    android:text="Brand activities"
+                    android:textColor="#D0D0D0"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"></View>
+
+
+            <GridView
+                android:id="@+id/xijiejing_grideview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fafafa"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="1dp"></GridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"></View>
+
+
+        </LinearLayout>
+    </com.baicimi.view.MyScrollView>
+
+</LinearLayout>

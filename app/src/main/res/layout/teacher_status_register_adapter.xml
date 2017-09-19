@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/teacher_status_register_adapter_item_shape"
+        android:layout_margin="2dp"
+        >
+
+        <ImageView
+            android:id="@+id/teacher_status_register_adapter_image_02"
+            android:layout_width="111dp"
+            android:layout_height="70dp"
+            android:src="@drawable/teacher_status_register_fragment_image_02"
+            android:padding="2dp"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/teacher_status_register_adapter_lible_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日化用品"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/teacher_status_register_adapter_image_02"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:visibility="invisible"
+            />
+
+
+
+        <TextView
+            android:id="@+id/teacher_status_register_adapter_libles"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="您还希望在此专区购买到那些产品？"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/teacher_status_register_adapter_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点此留言"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/teacher_status_register_adapter_layout_shape"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_below="@+id/teacher_status_register_adapter_libles"
+            android:layout_marginTop="8dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

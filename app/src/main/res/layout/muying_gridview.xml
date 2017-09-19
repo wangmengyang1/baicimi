@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="5dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/muyinyongp_img2"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_shaixuan_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/img_goods"
+            android:text="官方授权 自然堂乐园补水保湿"
+            android:textColor="#7C7C7C"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shaixuan_goods_name"
+            android:layout_centerInParent="true"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_jifenjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥39"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FE3E5C"
+
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_jifenjia_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥100"
+                android:textSize="11sp"
+                android:textColor="#989898"
+                android:layout_toRightOf="@id/tv_jifenjia"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:background="#A9A9A9"
+                android:layout_toRightOf="@id/tv_jifenjia"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+                ></View>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@mipmap/jinbi"
+                android:layout_toRightOf="@+id/tv_jifenjia_num"
+                android:layout_marginLeft="6dp"
+                android:layout_alignTop="@+id/tv_jifenjia_num"
+                android:layout_marginTop="3dp"
+                />
+
+
+            <TextView
+                android:id="@+id/fukuan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="892541人购买"
+                android:textSize="13sp"
+                android:textColor="#989898"
+                android:layout_below="@id/tv_jifenjia"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/tv_baoyou"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_toRightOf="@id/fukuan_num"
+                android:src="@drawable/heart_image_homepage"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="12sp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

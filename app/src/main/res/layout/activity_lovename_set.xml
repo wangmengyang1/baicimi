@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/login_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/login_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:src="@mipmap/register_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="昵称"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/chuangkou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/cehua" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#EEEEEE"></View>
+
+            <ImageView
+                android:id="@+id/login_guanggao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_title"
+                android:layout_marginTop="-30dp"
+                android:src="@mipmap/login_title" />
+
+            <View
+                android:id="@+id/vv1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="-30dp"
+                android:background="#EEEEEE"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="60dp"
+                >
+                
+              <EditText
+                  android:id="@+id/et_set_lovenane"
+                  android:layout_width="280dp"
+                  android:layout_height="50dp"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="15dp"
+                  android:background="@mipmap/set_name"
+                  />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/set_name_delect"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/et_set_lovenane"
+                    android:layout_marginLeft="27dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.此昵称非登录会员名，社区场景显示"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="#B9B9B9"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.与卖家品牌冲突的昵称，百次幂商城有权收回"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="#B9B9B9"
+                android:layout_marginTop="5dp"
+                />
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@mipmap/set_name_save"
+                android:text="保存"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

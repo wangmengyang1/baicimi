@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="110dp">
+
+    <ImageView
+        android:id="@+id/jingcai_says_img"
+        android:layout_width="85dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/img_gouwu_goods"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/jingcai_says_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时光易老，不忘来路，不改初心"
+        android:textSize="10sp"
+        android:textColor="#5A5A5A"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/jingcai_says_img"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3123"
+        android:drawableLeft="@mipmap/dingyue_img"
+        android:textSize="9sp"
+        android:textColor="#A2A2A2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/says_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人，其实不需要太多的东西，只要健康的活着，真诚的爱着，真诚的爱惜着..."
+        android:textColor="#A2A2A2"
+        android:textSize="9.5sp"
+        android:layout_toRightOf="@id/jingcai_says_img"
+        android:layout_below="@id/jingcai_says_message"
+        />
+
+    <com.baicimi.view.CircleImageView
+        android:id="@+id/header_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/user_header_img"
+        android:layout_below="@id/says_content"
+        android:layout_toRightOf="@id/jingcai_says_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GERRY"
+        android:textColor="#717171"
+        android:textSize="9sp"
+        android:layout_below="@id/says_content"
+        android:layout_toRightOf="@id/header_img"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GuangZhou,China"
+        android:textColor="#717171"
+        android:textSize="9sp"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/header_img"
+        android:layout_marginLeft="10dp"
+        />
+</RelativeLayout>

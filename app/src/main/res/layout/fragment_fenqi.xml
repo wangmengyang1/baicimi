@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/register_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的分期"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_centerInParent="true"
+                />
+
+        <TextView
+            android:id="@+id/know_fenqi"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="了解分期"
+            android:textSize="13sp"
+            android:textColor="#AAAAAA"
+            android:layout_centerVertical="true"
+            ></TextView>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_below="@id/rr"
+        ></View>
+
+    <ScrollView
+        android:layout_below="@id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:background="@mipmap/myfenqi_title_img"
+                    ></View>
+
+
+
+                <com.baicimi.ui.MyListView
+                    android:id="@+id/fenqi_list"
+                    android:layout_width="match_parent"
+                    android:divider="@null"
+                    android:layout_height="wrap_content"></com.baicimi.ui.MyListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#EEEEEE"
+                ></View>
+
+            <com.baicimi.ui.MyListView
+                android:id="@+id/fenqi_list_yihuan"
+                android:layout_width="match_parent"
+                android:divider="@null"
+                android:layout_height="wrap_content"></com.baicimi.ui.MyListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"></View>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/seccese_fenqi"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="#FF2C2B"-->
+        <!--android:layout_height="50dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_seccese_fenqi"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="分期开通成功"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="查看我的额度>"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textSize="9sp"-->
+            <!--android:layout_below="@id/tv_seccese_fenqi"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--/>-->
+
+
+    <!--</RelativeLayout>-->
+
+
+
+
+</RelativeLayout>

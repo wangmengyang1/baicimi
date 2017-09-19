@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@mipmap/titel_pic"
+    >
+
+    <ImageView
+        android:id="@+id/user_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/header"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名称"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/user_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="48dp"
+        />
+
+    <TextView
+        android:id="@+id/user_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="积分"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/user_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="78dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/user_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="48dp"
+        android:src="@mipmap/user_vip"
+        />
+
+    <TextView
+        android:id="@+id/user_vip_piont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="434873"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/user_point"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="78dp"
+        />
+
+    <ImageView
+        android:id="@+id/user_mian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/user_main1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/person_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/user_main2"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/user_mian"
+        />
+
+    <ImageView
+        android:id="@+id/mian_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/main_left"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/user_ctrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账户管理"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@id/mian_left"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        />
+
+</RelativeLayout>

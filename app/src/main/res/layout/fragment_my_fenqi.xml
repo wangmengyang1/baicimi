@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/instalments_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_weikaitong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="您尚未开通"
+        android:textColor="#505050"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_kaitong_fenqi"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_weikaitong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_shape"
+        android:text="立即开通"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/re_chakan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/re_shape">
+
+        <TextView
+            android:id="@+id/tv_chakan_dettails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看详情"
+            android:textColor="#6A6A6A"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_chakan_dettails"
+            android:src="@mipmap/right_img" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/re_fenqi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/re_chakan"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="#F0F0F0">
+
+        <RelativeLayout
+            android:id="@+id/re_mifenqi"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <View
+                android:id="@+id/mifenqi_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/mifenqi_img"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                ></View>
+
+            <TextView
+                android:id="@+id/tv_edu_fenqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/mifenqi_img"
+                android:layout_marginLeft="7dp"
+                android:text="幂额度分期"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#CCCCCC"
+            ></View>
+
+        <RelativeLayout
+            android:id="@+id/re_kafenqi"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <View
+                android:id="@+id/kafenqi_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/kafenqi_img"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                ></View>
+
+            <TextView
+                android:id="@+id/yinghangka_fenqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:text="银行卡分期"
+                android:layout_toRightOf="@id/kafenqi_img"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

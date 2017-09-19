@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/register_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户服务"
+            android:textSize="17sp"
+            android:textColor="#454545"
+            android:layout_centerInParent="true"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gengduo"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="#F1F1F1"
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="问题查询"
+           android:textSize="13sp"
+           android:textColor="#7A7780"
+           android:layout_marginTop="25dp"
+           android:layout_marginLeft="15dp"
+           />
+   </RelativeLayout>
+
+
+    //我的分期
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="#D6D6D9"
+            ></View>
+
+
+        <RadioGroup
+            android:id="@+id/fuwu_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/dingdan"
+                android:layout_width="0dp"
+                style="@style/MMTabButton_fuwu"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:checked="true"
+                android:text="订单问题"
+                android:textColor="#7D7D7D" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#D6D6D9"
+                ></View>
+
+            <RadioButton
+                android:id="@+id/gouwu"
+                style="@style/MMTabButton_fuwu"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:text="购物问题"
+                android:textColor="#7D7D7D" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#D6D6D9"
+                ></View>
+
+            <RadioButton
+                android:id="@+id/qita"
+                style="@style/MMTabButton_fuwu"
+                android:layout_height="40dp"
+                android:layout_weight="1.0"
+                android:layout_width="0dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:text="其他问题"
+                android:textColor="#7D7D7D" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/fuwu_group"
+            android:background="#D6D6D9"
+            ></View>
+
+        <FrameLayout
+            android:id="@+id/id_content_fuwu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2" />
+    </RelativeLayout>
+
+
+</LinearLayout>

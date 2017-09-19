@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zql.android.springview.SpringView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_search_title_sousuo_springview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/sousuo_back_img"
+    custom:topMargin="35dp"
+    custom:bottomMargin="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/baicimi_logo1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baicimi_logo1_ss"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@id/baicimi_logo1"
+            android:src="@drawable/image_hudie_ss" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/personmessage_img"
+            android:id="@+id/imageView2"
+            android:visibility="invisible"
+            />
+
+        <!--<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp">
+
+            <EditText
+                android:id="@+id/sousuo_img"
+                android:layout_width="220dp"
+                android:layout_height="35dp"
+                android:background="@mipmap/sousuo_dise" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="true"
+                android:layout_toRightOf="@id/sousuo_img"
+                android:src="@mipmap/sousuo_img_sousuo" />
+
+        </RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="80dp"
+            android:id="@+id/linearLayout">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/brand_fragment_second_image_12"
+
+                android:layout_marginLeft="15dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="28dp"
+                android:background="@drawable/brand_fragment_second_edittext_layer_list"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索"
+                android:textSize="13sp"
+                android:layout_marginRight="15dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center|top"
+        android:background="#ee000000"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image Story ∨"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_secrch_title_sousuo_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ee000000"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:paddingTop="60dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="幂商城全称百次幂商城是一家以化妆品为主的O2O类购物网站。幂商城把O2O模式运用在化妆品行业上。让消费者先了解，后体验，达到真正能挑选到适合自己肌肤特性的产品。移动端APP同时也在研发当中。幂商城目前日均覆盖用户数约5万，为满足不同需求手机端及移动端正在开发，预计日均覆盖移动用户数12万。幂商城全称百次幂商城是一家以化妆品为主的O2O类购物网站。幂商城把O2O模式运用在化妆品行业上。让消费者先了解，后体验，达到真正能挑选到适合自己肌肤特性的产品。移动端APP同时也在研发当中。幂商城目前日均覆盖用户数约5万，为满足不同需求手机端及移动端正在开发，预计日均覆盖移动用户数12万。幂商城全称百次幂商城是一家以化妆品为主的O2O类购物网站。幂商城把O2O模式运用在化妆品行业上。让消费者先了解，后体验，达到真正能挑选到适合自己肌肤特性的产品。移动端APP同时也在研发当中。幂商城目前日均覆盖用户数约5万，为满足不同需求手机端及移动端正在开发，预计日均覆盖移动用户数12万"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+
+
+</com.zql.android.springview.SpringView>

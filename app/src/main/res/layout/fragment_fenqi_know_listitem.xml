@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    >
+
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <CheckBox
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/mifenqi_chexbok"
+            android:layout_gravity="center_horizontal"
+            android:checked="true"
+            android:layout_marginTop="5dp"
+            android:button="@null"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="30dp"
+            android:background="@mipmap/kaitongdianed"
+            ></View>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开通条件"
+            android:textSize="15sp"
+            android:textColor="#6D6D6D"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            />
+        <View
+            android:id="@+id/view1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@mipmap/right_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            ></View>
+
+        <TextView
+            android:id="@+id/tv_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="了解详情"
+            android:textSize="15sp"
+            android:textColor="#AAAAAA"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/view1"
+            android:layout_marginRight="5dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            ></View>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

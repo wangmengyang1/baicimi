@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/tv_kefu"
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:background="#3D394F"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:drawableTop="@mipmap/img_kefu"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/add_gouwuche"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:background="#C10223"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加入购物车"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_now_buy"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:background="#FD6B22"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即购买"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

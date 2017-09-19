@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="6dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/brand_fragment_second_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="百次幂商城"
+            android:textColor="#000000"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/brand_fragment_second_image_13"
+            android:padding="6dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
+        >
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/brand_fragment_second_image_12"
+
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="28dp"
+            android:background="@drawable/brand_fragment_second_edittext_layer_list"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:src="@drawable/brand_fragment_second_image_01"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/brand_fragment_second_image_08"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <LinearLayout
+                    android:id="@+id/brand_fragment_second_layout_tagnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginRight="30dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/tag_image_red"
+                        />
+                    <TextView
+                        android:id="@+id/brand_fragment_second_textview_tagnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234"
+                        android:textSize="12sp"
+                        android:textColor="#d62b2b"
+                        />
+
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/brang_frgment_second_layout_attention"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        >
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/add_image_attention"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="关注"
+                            android:textSize="12sp"
+                            android:textColor="#d62b2b"
+                            android:layout_gravity="center_vertical"
+                            />
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/brang_frgment_second_textview_attention"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已关注"
+                        android:textSize="12sp"
+                        android:textColor="#d62b2b"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="invisible"
+                        />
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="品驰智慧精准护肤"
+                android:gravity="center"
+                android:layout_marginTop="22dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\“智慧活性成分\”，精准护理，带来持久功效"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:textSize="13sp"
+                />
+            
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:src="@drawable/brand_fragment_second_image_02"
+                android:layout_gravity="center"
+                />
+
+            <!--<ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/brand_fragment_second_image_08"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="品驰智慧精准护肤"
+                android:gravity="center"
+                />-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="品驰智慧紧肤系列"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="表观遗传学"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美丽，对每一位女性有着独一无二的意义，香奈儿智慧紧肤系列，量身定般的育龄护理功效。"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="8dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="234dp"
+                        android:orientation="vertical"
+                        android:layout_marginRight="5dp"
+                        >
+                        
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="112dp"
+                            android:src="@drawable/brand_fragment_second_image_03"
+                            android:layout_marginBottom="5dp"
+                            android:scaleType="fitXY"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="112dp"
+                            android:src="@drawable/brand_fragment_second_image_04"
+                            android:layout_marginTop="5dp"
+                            android:scaleType="fitXY"
+                            />
+
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="234dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/brand_fragment_second_image_05"
+                        android:scaleType="fitXY"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:padding="12dp"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="品驰智慧紧肤系列"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="智慧紧肤精华乳霜"
+                        android:layout_marginTop="4dp"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="智慧紧肤精华乳霜有效巩固肌肤屏障，在保护并修复肌肤的同时，带来前所未有的舒适感受与密集育龄功效"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="#000000"
+                        android:textColor="@color/white"
+                        />
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="234dp"
+                    android:src="@drawable/brand_fragment_second_image_06"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="234dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="品驰智慧紧肤系列"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="智慧紧肤提拉原液"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="智慧紧肤提拉原液的精纯配方富含紧肤成分与维他命复合物，快速提升脸部线条，更显紧致饱满，无论何种场合，令肌肤在最需要的时刻绽放光彩"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:maxLines="3"
+                        android:ellipsize="end"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/brand_fragment_second_check_shape"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:src="@drawable/brand_fragment_second_image_07"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

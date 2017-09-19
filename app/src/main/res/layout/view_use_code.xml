@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用积分"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:textColor="#83848D"
+            />
+
+        <ImageView
+            android:id="@+id/guanbi_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/guanbi_use_jifen"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EFEFEF"
+        android:layout_below="@id/re1"
+        ></View>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/view1"
+        android:orientation="vertical"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            >
+
+            <CheckBox
+                android:id="@+id/use_jifen1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/use_jifen_chexbok"
+                android:clickable="true"
+                android:button="@null"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/one_jifen"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/use_jifen1"
+                android:layout_marginLeft="20dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <CheckBox
+                android:id="@+id/use_jifen2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/use_jifen_chexbok"
+                android:button="@null"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/one_jifen"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/use_jifen2"
+                android:layout_marginLeft="20dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+
+            <CheckBox
+                android:id="@+id/use_jifen3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/use_jifen_chexbok"
+                android:clickable="true"
+                android:button="@null"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/one_jifen"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/use_jifen3"
+                android:layout_marginLeft="20dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EFEFEF"
+        android:layout_below="@id/ll1"
+        ></View>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#93939A"
+        android:text="可使用积分：236543131分"
+       android:layout_gravity="center_horizontal"
+        android:layout_below="@id/view2"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/jifen_btn_yse"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#D02022"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        />
+
+</LinearLayout>

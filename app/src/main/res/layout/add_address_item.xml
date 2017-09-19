@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/man_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人名"
+            android:textSize="16sp"
+            android:textColor="#686B70"
+            />
+        <TextView
+            android:id="@+id/man_phone_num"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13459797633"
+            android:textSize="16sp"
+            android:textColor="#686B70"
+            />
+
+    </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/man_address"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址000000000000"
+            android:textSize="16sp"
+            android:textColor="#686B70"
+            />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="10dp"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <CheckBox
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/guanzhu_chexbok"
+            android:button="@null"
+            android:checked="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认地址"
+            android:textColor="#EA3A3B"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_shanchu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textSize="15sp"
+            android:textColor="#626569"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+
+        <ImageView
+            android:id="@+id/delect_address"
+            android:layout_width="25dp"
+            android:layout_height="23dp"
+            android:src="@mipmap/delect_address"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_shanchu"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_bianji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textSize="15sp"
+            android:textColor="#626569"
+            android:layout_toLeftOf="@id/delect_address"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/bianji_address"
+            android:layout_width="25dp"
+            android:layout_height="23dp"
+            android:src="@mipmap/bianji_address"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_bianji"
+            android:layout_marginRight="5dp"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

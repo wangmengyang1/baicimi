@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="产品信息"
+                    android:textColor="#727272"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_to_gouwuche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/img_to_gouwuche"
+                    android:text="区购物车选择"
+                    android:textColor="#C8C8C8" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="#F5F5F5">
+
+
+                <ImageView
+                    android:id="@+id/gouwuche_img"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/changxiaore" />
+
+
+                <TextView
+                    android:id="@+id/gouwuche_goods_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@id/gouwuche_img"
+                    android:text="韩国正品品驰长效补水舒缓肌肤晒后修复温和保湿修护滋润面膜贴女"
+                    android:textColor="#808384"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/gouwuche_goods_yanse_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gouwuche_goods_message"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/gouwuche_img"
+                    android:text="颜色分类:5片"
+                    android:textColor="#BFBFBF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/gouwuche_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gouwuche_goods_yanse_num"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/gouwuche_img"
+                    android:text="发货时间:卖家承诺24小时内发货"
+                    android:textColor="#FE3B35"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/gouwuche_goods_used_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gouwuche_goods_price"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/gouwuche_img"
+                    android:text="¥138.80"
+                    android:textColor="#ED5270"
+                    android:textSize="13sp" />
+
+
+                <View
+                    android:id="@+id/view_jiajian_shang"
+                    android:layout_width="110dp"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/gouwuche_goods_price"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#BFBFBF"></View>
+
+                <View
+                    android:id="@+id/view_jiajian_you"
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/view_jiajian_shang"
+                    android:layout_marginRight="15dp"
+                    android:background="#BFBFBF"></View>
+
+                <TextView
+                    android:id="@+id/gouwuche_goods_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_jiajian_shang"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="-2dp"
+                    android:layout_toLeftOf="@id/view_jiajian_you"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="+"
+                    android:textColor="#3A3A3C"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/view_jiajian_zhong1"
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/view_jiajian_shang"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/gouwuche_goods_add"
+                    android:background="#BFBFBF"></View>
+
+                <TextView
+                    android:id="@+id/gouwuche_goods_num"
+                    android:layout_width="30dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/view_jiajian_shang"
+                    android:layout_marginTop="3dp"
+                    android:layout_toLeftOf="@id/view_jiajian_zhong1"
+                    android:text="1"
+                    android:textColor="#3A3A3C"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/view_jiajian_zhong2"
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/view_jiajian_shang"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@id/gouwuche_goods_num"
+                    android:background="#BFBFBF"></View>
+
+                <TextView
+                    android:id="@+id/gouwuche_goods_jian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gouwuche_goods_yanse_num"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_toLeftOf="@id/view_jiajian_zhong2"
+                    android:clickable="true"
+                    android:text="-"
+                    android:textColor="#3A3A3C"
+                    android:textSize="38sp" />
+
+                <View
+                    android:id="@+id/view_jiajian_zuo"
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/view_jiajian_shang"
+                    android:layout_marginRight="9dp"
+                    android:layout_toLeftOf="@id/gouwuche_goods_jian"
+                    android:background="#BFBFBF"></View>
+
+                <View
+                    android:id="@+id/view_jiajian_xia"
+                    android:layout_width="110dp"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/view_jiajian_zuo"
+                    android:layout_marginRight="15dp"
+                    android:background="#BFBFBF"></View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_danwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="单位"
+                    android:textColor="#5B5B5B"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/tv_danwei"
+                    android:background="@drawable/shape"
+                    android:hint="    宝昌保监会有限公司"
+                    android:textColor="#989898"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_shouhuoren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="收货人"
+                    android:textColor="#5B5B5B"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/tv_shouhuoren"
+                    android:background="@drawable/shape"
+                    android:hint="    输入姓名"
+                    android:textColor="#989898"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_lianxifangshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="联系方式"
+                    android:textColor="#5B5B5B"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/tv_lianxifangshi"
+                    android:background="@drawable/shape"
+                    android:hint="    输入联系方式"
+                    android:textColor="#989898"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="地址"
+                    android:textColor="#5B5B5B"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_to_xuanze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/img_to_xuanze"
+                    android:text="请选择"
+                    android:textColor="#C8C8C8" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape"
+                android:hint="  输入详细地址..."
+                android:textColor="#989898"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="12dp"
+                android:background="#EEEEEE"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="发票要求"
+                    android:textColor="#5B5B5B"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_fapiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/img_fapiao"
+                    android:text="请选择"
+                    android:textColor="#C8C8C8" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="发票内容"
+                    android:textColor="#5B5B5B"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_fapiao1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/right_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/img_fapiao1"
+                    android:text="请选择"
+                    android:textColor="#C8C8C8" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"></View>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注"
+                android:textSize="13sp"
+                android:textColor="#717171"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                android:hint="  说说您的要求和注意事项..."
+                android:textSize="12sp"
+                android:textColor="#A2A2A2"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                ></View>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

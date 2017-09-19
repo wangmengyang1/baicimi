@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#fff"
+
+        >
+
+        <ImageView
+            android:id="@+id/present_check_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_gitback"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="礼品寄存页"
+            android:layout_centerInParent="true"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/present_check_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_gift_menu"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/present_check_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/present_check_card_voucher"
+            style="@style/MMTabButton"
+            android:layout_height="40dp"
+            android:layout_weight="1.0"
+            android:layout_width="0dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="卡券"
+            android:textColor="#7D7D7D" />
+        <RadioButton
+            android:id="@+id/present_check_check"
+            style="@style/MMTabButton"
+            android:layout_height="40dp"
+            android:layout_weight="1.0"
+            android:layout_width="0dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="寄存"
+            android:textColor="#7D7D7D" />
+        <RadioButton
+            android:id="@+id/present_check_present"
+            style="@style/MMTabButton"
+            android:layout_height="40dp"
+            android:layout_weight="1.0"
+            android:layout_width="0dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="礼品"
+            android:textColor="#7D7D7D"
+            android:checked="true"
+            />
+
+    </RadioGroup>
+
+
+    <ListView
+        android:id="@+id/activity_present_check_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

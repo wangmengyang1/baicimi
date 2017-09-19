@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        android:paddingTop="18dp"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/after_sale_server_dialog_lible"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="请求已发送，百次幂客服将在24小时内处理您的退货请求"
+            android:maxLines="2"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#be000000"
+            />
+
+        <View
+            android:id="@+id/after_sale_server_dialog_view"
+            android:layout_width="250dp"
+            android:layout_height="0.4dp"
+            android:background="#dbdbda"
+            android:layout_below="@+id/after_sale_server_dialog_lible"
+            android:layout_marginTop="18dp"
+            />
+
+        <TextView
+            android:id="@+id/after_sale_server_dialog_true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确 定"
+            android:textSize="15sp"
+
+            android:layout_below="@+id/after_sale_server_dialog_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textColor="#0f7fff"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

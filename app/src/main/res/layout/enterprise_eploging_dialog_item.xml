@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+
+        >
+
+
+
+        <ImageView
+            android:id="@+id/enterprise_eploging_dialog_dissmiss"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/error_image_white"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/enterprise_uploging_dialog_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作人员会在1--3个工作日批准你的认证申请"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/enterprise_eploging_dialog_dissmiss"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            />
+
+
+        <TextView
+            android:id="@+id/enterprise_uploging_dialog_item_back_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击返回商城首页>>>"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_below="@+id/enterprise_uploging_dialog_item_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30dp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

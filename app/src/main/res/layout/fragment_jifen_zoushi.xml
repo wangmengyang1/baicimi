@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="#CE2538">
+
+            <TextView
+                android:id="@+id/today_zoushi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="今日走势"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/today_zoushi"
+                android:layout_centerHorizontal="true"
+                android:text="100积分=1元"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_weight="4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分汇率"
+                    android:textColor="#535353"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="30dp"
+                    />
+
+                <com.baicimi.view.JiFenZouShiView
+                    android:id="@+id/chart_line"
+                    android:layout_width="210dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_my_shizhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-23dp"
+                    android:text="我的市值"
+                    android:textSize="13sp"
+                    android:textColor="#535353"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@id/chart_line"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_my_jifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的积分:58000，当前积分市值为5800元"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#535353"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@id/tv_my_shizhi"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_gongxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="恭喜你，你已成功超越了98%用户"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#535353"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@id/tv_my_jifen"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/re_shape">
+
+        <TextView
+            android:id="@+id/tv_chakan_dettails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看详情"
+            android:textColor="#6A6A6A"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_chakan_dettails"
+            android:src="@mipmap/right_img" />
+    </RelativeLayout>
+
+</RelativeLayout>

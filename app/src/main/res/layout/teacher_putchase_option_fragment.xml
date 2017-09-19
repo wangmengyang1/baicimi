@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/teacher_status_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="#d52846"
+        >
+
+        <ImageView
+            android:id="@+id/back_teacher_putchase_option_fragment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_wirth_image"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="畅销商品"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.youth.banner.Banner
+                android:id="@+id/teacher_putchase_option_banner_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                app:title_height="0dp"
+                ></com.youth.banner.Banner>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#f1f1f1"
+                    >
+
+                    <!--<TextView
+                        android:id="@+id/distributor_putchase_option_daychemical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="日化"
+                        android:textSize="14sp"
+                        android:textColor="@color/red"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+
+                        />
+                    <TextView
+                        android:id="@+id/distributor_putchase_option_beautymakeup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="美妆"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/distributor_putchase_option_personalbelongings"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="个人用品"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/distributor_putchase_option_motherandbaby"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="母婴用品"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        />-->
+                    <TextView
+                        android:id="@+id/distributor_putchase_option_officesupplies"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="日化"
+                        android:textSize="14sp"
+                        android:textColor="@color/red"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/distributor_putchase_option_sports"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="美妆"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/distributor_putchase_option_clothing"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="个人用品"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/distributor_putchase_option_accessory"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="母婴用品"
+                        android:textSize="14sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/teacher_putchase_option_framelayout_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                ></FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="35dp"
+                >
+                
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"
+                    android:background="#f8f8f8"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="品牌精选"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"
+                    android:background="#f8f8f8"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"
+                    />
+                
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECTED"
+                android:textColor="#777777"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                />
+
+            <GridView
+                android:id="@+id/teacher_putchase_option_gridview_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="25dp"
+                ></GridView>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

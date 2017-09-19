@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01/03期"
+        android:textSize="15sp"
+        android:textColor="#AAAAAA"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        />
+
+    <TextView
+        android:id="@+id/back_mony_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还款日期:2016-06-10"
+        android:textSize="15sp"
+        android:textColor="#AAAAAA"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/back_mony_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1350.00(含手续费0.00)"
+        android:textSize="15sp"
+        android:textColor="#AAAAAA"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        />
+
+    <TextView
+        android:id="@+id/yes_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已还清"
+        android:textSize="15sp"
+        android:textColor="#616161"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+</RelativeLayout>

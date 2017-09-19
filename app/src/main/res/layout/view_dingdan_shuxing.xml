@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单属性"
+        android:textSize="17sp"
+        android:textColor="#5A5A5A"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#AAAAAA"
+        android:layout_marginTop="15dp"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+     <RelativeLayout
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="match_parent">
+
+         <CheckBox
+             android:id="@+id/person_dingdan_check"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:clickable="true"
+             android:button="@null"
+             android:layout_marginLeft="50dp"
+             android:background="@drawable/use_jifen_chexbok"
+             android:layout_centerVertical="true"
+
+             />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="个人订单"
+             android:textSize="14sp"
+             android:layout_toRightOf="@id/person_dingdan_check"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             />
+     </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/tuangou_dingdan_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:clickable="true"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/use_jifen_chexbok"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="团购订单"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/tuangou_dingdan_check"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/fenqi_dingdan_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/use_jifen_chexbok"
+                android:layout_centerVertical="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分期订单"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/fenqi_dingdan_check"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/zhengfu_dingdan_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/use_jifen_chexbok"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="政府订单"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/zhengfu_dingdan_check"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/qinmifu_dingdan_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/use_jifen_chexbok"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="亲密付订单"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/qinmifu_dingdan_check"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

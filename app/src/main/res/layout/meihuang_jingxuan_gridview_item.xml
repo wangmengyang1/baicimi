@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="160dp"
+       android:background="@mipmap/meizhuang_jingxuan"
+       >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_alignParentBottom="true"
+           android:background="#000000"
+           >
+
+           <com.baicimi.view.CircleImageView
+               android:id="@+id/user_header_img"
+               android:layout_width="24dp"
+               android:layout_height="24dp"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="8dp"
+               android:src="@mipmap/user_header_img"
+               />
+
+           <TextView
+               android:id="@+id/tv_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="GERRY"
+               android:textSize="9sp"
+               android:textColor="#FFFFFF"
+               android:layout_toRightOf="@id/user_header_img"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="10dp"
+               />
+
+           <TextView
+               android:id="@+id/tv_adddress"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="GuangZhou China"
+               android:textSize="8sp"
+               android:layout_marginRight="10dp"
+               android:textColor="#FFFFFF"
+               android:layout_toRightOf="@id/user_header_img"
+               android:layout_below="@id/tv_name"
+               android:layout_marginLeft="5dp"
+               />
+       </RelativeLayout>
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="初春裸妆造型，打造艺术系"
+            android:textColor="#323232"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3123"
+            android:textSize="8sp"
+            android:textColor="#767676"
+            android:layout_marginTop="-12dp"
+            android:layout_below="@id/tv_message"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:layout_alignParentRight="true"
+            />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@mipmap/dingzi"
+            android:layout_marginTop="-11dp"
+            android:layout_below="@id/tv_message"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_num"
+            ></View>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/teacher_status_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/back_intimacy_payment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_meigui_image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亲密付"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/intimacy_payment_user_strategy_textivew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="攻略"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="@drawable/intimacy_payment_home_page_liyer_list"
+        >
+
+        <LinearLayout
+            android:id="@+id/intimacy_payment_home_page_layout_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:src="@drawable/intimacy_payment_home_page_image_01"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="爱人购物"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我来买单"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/intimacy_payment_home_page_layout_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/intimacy_payment_home_page_layout_01"
+            >
+
+            <ImageView
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:src="@drawable/intimacy_payment_home_page_image_02"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="父母孩子"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="都能开通"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="额度灵活/自动代付/实时提醒"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/intimacy_payment_home_page_textview_dredge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="为Ta开通"
+            android:textSize="16sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/intimacy_payment_home_page_button_shape"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/intimacy_payment_home_page_textview_bydredge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 求 开 通 "
+            android:textSize="16sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/intimacy_payment_home_page_button_shape_02"
+            android:textColor="#ff002c"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

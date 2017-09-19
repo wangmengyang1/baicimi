@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/re_miyouquan_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/miyouquan_img"
+        />
+
+    <RelativeLayout
+        android:id="@+id/re_miyouquan_content_message"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@id/re_miyouquan_img"
+        android:background="#000000"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【猴姆独家】重磅!威尔.史密斯联手爱德华.诺顿、影后凯特.温丝莱特、海伦.米勒、迈克尔.佩纳、娜奥米.哈里斯新作《附属美丽》首曝预告片"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_zhuanfa"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/re_miyouquan_content_message"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="阅读量508万"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="#989898"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转发25万"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="#989898"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论15万"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="#989898"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/tv_dianzan_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14935"
+            android:drawableLeft="@mipmap/dianzan_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="#989898"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/tv_dingyue_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1086"
+            android:drawableLeft="@mipmap/dingyue_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="#989898"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        android:layout_below="@id/ll_zhuanfa"
+        ></View>
+
+    <RelativeLayout
+        android:id="@+id/re_zhuanfa_man"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/ll_zhuanfa"
+        >
+
+        <TextView
+            android:id="@+id/xiegang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="//"
+            android:textSize="15sp"
+            android:textColor="#686868"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="13dp"
+            />
+        <TextView
+            android:id="@+id/aite_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" @百事加冰"
+            android:layout_marginTop="14dp"
+            android:textSize="14sp"
+            android:textColor="#3590C2"
+            android:layout_toRightOf="@id/xiegang"
+            />
+
+        <TextView
+            android:id="@+id/xiegang2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="://"
+            android:layout_marginTop="14dp"
+            android:textSize="14sp"
+            android:textColor="#686868"
+            android:layout_toRightOf="@id/aite_name1"
+            />
+
+        <TextView
+            android:id="@+id/aite_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" @张三"
+            android:layout_marginTop="14dp"
+            android:textSize="14sp"
+            android:textColor="#3590C2"
+            android:layout_toRightOf="@id/xiegang2"
+            />
+
+        <TextView
+            android:id="@+id/zhuanfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":转发文章"
+            android:layout_marginTop="14dp"
+            android:textSize="14sp"
+            android:textColor="#686868"
+            android:layout_toRightOf="@id/aite_name2"
+            />
+
+        <ImageView
+            android:id="@+id/miyouquan_header_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/miyouquan_header_img"
+            android:layout_below="@id/zhuanfa"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/zhuanfa_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李四"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/miyouquan_header_img"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/zhuanfa"
+            android:textSize="15sp"
+            android:textColor="#464646"
+            />
+
+        <TextView
+            android:id="@+id/zhuanfa_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="33分钟前"
+            android:textColor="#858585"
+            android:textSize="13sp"
+            android:layout_toRightOf="@id/miyouquan_header_img"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/zhuanfa_user_name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来自 百次幂 baicimi.com"
+            android:textColor="#858585"
+            android:textSize="13sp"
+            android:layout_toRightOf="@id/zhuanfa_time"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/zhuanfa_user_name"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_below="@id/re_zhuanfa_man"
+        ></View>
+
+</RelativeLayout>

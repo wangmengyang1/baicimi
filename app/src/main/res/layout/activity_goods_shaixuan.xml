@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:drawablePadding="2dp"
+                        android:drawableRight="@mipmap/shaixuanbiao"
+                        android:text="筛选"
+                        android:textColor="#C43636"
+                        android:textSize="23sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="类型"
+                    android:textColor="#6E6E6E"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="全部"
+                        android:textColor="#D76869"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="面膜纸"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="#999A9C"
+                        android:text="膏状"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:textColor="#999A9C"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="贴膜"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="功效"
+                    android:textColor="#6E6E6E"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="全部"
+                        android:textColor="#D76869"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="#999A9C"
+                        android:text="补水"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:textColor="#999A9C"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="保湿"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="#999A9C"
+                        android:text="美白"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="淡斑"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="#999A9C"
+                        android:text="细致毛孔"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="控油祛痘"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="#999A9C"
+                        android:text="抗氧化"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="修复"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="去红血丝"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="#999A9C"
+                        android:text="晒后修复"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="紧致"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="#999A9C"
+                        android:text="提亮肤色"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                //价格区间
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="价格区间(元)"
+                    android:textColor="#6E6E6E"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="全部"
+                        android:textColor="#D76869"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="0-99"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="#999A9C"
+                        android:text="100-199"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="#999A9C"
+                        android:text="200-499"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="500-999"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                //性别
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:text="性别"
+                    android:textColor="#6E6E6E"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:textColor="#D76869"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="全部"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="男"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="女"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="通用"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                //产地
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:text="产地"
+                    android:textColor="#6E6E6E"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="全部"
+                        android:textColor="#D76869"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="中国"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:textColor="#999A9C"
+                        android:gravity="center"
+                        android:text="韩国"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shaixuan_leixing_chexbok"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="#999A9C"
+                        android:text="日本"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#ffffff"
+                    ></RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/yes_btn_shaixuan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_tv_back"
+            android:text="重置"
+            android:textColor="#353539"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_shaixuan_yes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#D00000"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/yes_btn_shaixuan"
+        android:background="#FEFEFE"></View>
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:elevation="8dp"
+        android:background="@drawable/home_page_view_button_adapter_layout_shape"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/home_page_view_button_adapter_imageurl"
+            android:layout_width="172dp"
+            android:layout_height="82dp"
+            android:src="@drawable/home_page_brand_fragment_image_11"
+            />
+
+        <TextView
+            android:id="@+id/home_page_view_button_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="御泥坊"
+            android:textColor="@color/black"
+            android:layout_below="@+id/home_page_view_button_adapter_imageurl"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/home_page_view_button_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中草药高端护理品牌"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/home_page_view_button_adapter_lible"
+            android:layout_alignLeft="@+id/home_page_view_button_adapter_lible"
+            android:layout_marginTop="4dp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/home_page_view_button_adapter_imagelabel"
+            android:layout_width="52dp"
+            android:layout_height="25dp"
+            android:src="@drawable/home_page_brand_gridview_image_01"
+            android:layout_alignRight="@+id/home_page_view_button_adapter_imageurl"
+            android:layout_alignTop="@+id/home_page_view_button_adapter_content"
+            android:layout_marginTop="-8dp"
+            />
+        
+        <LinearLayout
+            android:id="@+id/home_page_view_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_below="@+id/home_page_view_button_adapter_imagelabel"
+            android:layout_alignLeft="@+id/home_page_view_button_adapter_imagelabel"
+            android:layout_marginLeft="5dp"
+            android:padding="4dp"
+            >
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:src="@drawable/add_image_attention"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注"
+                android:textSize="10sp"
+                android:textColor="#d62b2b"
+                android:layout_gravity="center_vertical"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/home_page_view_button_adapter_eylt_attention_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已关注"
+            android:textSize="10sp"
+            android:textColor="#d62b2b"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/home_page_view_button_adapter_imagelabel"
+            android:layout_alignLeft="@+id/home_page_view_button_adapter_imagelabel"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:visibility="gone"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/home_page_view_button_adapter_layout_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/home_page_view_button_adapter_content"
+            android:layout_alignLeft="@+id/home_page_view_button_adapter_content"
+            android:layout_alignTop="@+id/home_page_view_button_layout"
+            android:gravity="center"
+            android:padding="4dp"
+            >
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/tag_image_gral"
+                android:layout_marginTop="1dp"
+                />
+            <TextView
+                android:id="@+id/home_page_view_button_adapter_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234"
+                android:textSize="11sp"
+                android:layout_marginTop="-1dp"
+                />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

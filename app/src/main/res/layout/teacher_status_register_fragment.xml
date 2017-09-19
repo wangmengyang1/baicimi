@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/teacher_status_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="#d52846"
+        >
+
+        <ImageView
+            android:id="@+id/teacher_status_login_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_wirth_image"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教师/学生 选购专区"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:src="@drawable/teacher_status_register_fragment_image_01"
+                android:scaleType="fitXY"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="      遵循BNN文化基金“根植于爱，施之于育”的宗旨，MICI（百次幂），联合班宁开设“教育支持专区”，凡是在百次幂商城认证成功的教师和学生均可在教师/学生选购专区，以比商城优惠5%-15%的价格选购优质生活用品，差价与一切运营费用由BNN承担，点滴行动，让教育更安心。"
+                android:textColor="#bf030303"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e1e1e1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MICI"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="以下所有类别均可享受优惠"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/teacher_status_register_fragment_more_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="快速进入教师/学生选购专区>>>"
+                android:textColor="#7cbfea"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                />
+
+
+            <GridView
+                android:id="@+id/teacher_status_regiseter_fragment_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:layout_margin="8dp"
+                ></GridView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="教育快讯:"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="获奖情况"
+                        android:textColor="@color/black"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="恭喜湖北省衡阳市衡阳一中王小明同学获得BNN文化基金--高中生画作展第一名，荣获BNN文化基金颁发的10000元奖学金。"
+                        android:textSize="13sp"
+                        android:textColor="#b0030303"
+                        android:ellipsize="end"
+                        android:layout_marginTop="11dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="了解更多>>>"
+                        android:textSize="12sp"
+                        android:textColor="#7cbfea"
+                        android:gravity="right"
+                        android:layout_marginTop="8dp"
+
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/teacher_status_register_fragment_view_shape"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="画作赏析"
+                        android:textColor="@color/black"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="高中生画作展前10名赏析"
+                        android:textSize="13sp"
+                        android:textColor="#b0030303"
+                        android:layout_marginLeft="20dp"
+                        android:maxLines="6"
+                        android:ellipsize="end"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="了解更多>>>"
+                        android:textSize="12sp"
+                        android:textColor="#7cbfea"
+                        android:gravity="right"
+                        android:layout_marginTop="8dp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:src="@drawable/teacher_status_register_fragment_image_06"
+                android:scaleType="fitXY"
+                android:layout_marginTop="15dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="班宁文化基金——2018高中优秀画作即将开展"
+                        android:textColor="@color/black"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="本届高中生优秀画作展共设置1名一等奖，3名二等奖，10名三等奖。奖品分别为：一等奖：10000元奖学金，二等奖：5000元奖学金，三等奖：1000元奖学金。"
+                        android:textSize="13sp"
+                        android:textColor="#b0030303"
+                        android:maxLines="4"
+                        android:ellipsize="end"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="8dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="了解更多>>>"
+                        android:textSize="12sp"
+                        android:textColor="#7cbfea"
+                        android:gravity="right"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/textView6" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MICI——回访贫困儿童"
+                        android:textColor="@color/black"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="2017年11月，MICI贫困儿童资助小组带领30名志愿者进入广东河源贫困山区看望孩子们，了解他们的生活，学习现状，并为他们带来了学习、生活用品，回访中，很多孩子表示在柏树针的帮助下已经"
+                        android:textSize="13sp"
+                        android:textColor="#bf030303"
+                        android:layout_marginLeft="20dp"
+                        android:maxLines="4"
+                        android:ellipsize="end"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_marginRight="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="了解更多>>>"
+                        android:textSize="12sp"
+                        android:textColor="#7cbfea"
+                        android:gravity="right"
+                        android:layout_marginTop="8dp"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+    <!--<ImageView
+        android:id="@+id/teacher_status_login_guanggao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacher_status_login_title"
+        android:layout_marginTop="-30dp"
+        android:src="@mipmap/login_title" />
+
+    <LinearLayout
+        android:id="@+id/login_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacher_status_login_guanggao"
+        android:layout_marginTop="-30dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+            <TextView
+                android:id="@+id/teacher_status_zhanghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="账号"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/teacher_status_phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/teacher_status_zhanghao"
+                android:background="#fff"
+                android:hint="请输入"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:textColor="#C7C7C7"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#ddd" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+            <TextView
+                android:id="@+id/teacher_status_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="密码"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/teacher_status_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/teacher_status_password"
+                android:background="#fff"
+                android:hint="请输入"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="#C7C7C7"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp">
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/login_password_chexbok"
+                    android:button="@null" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#ddd" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:padding="10dp"
+        android:background="@drawable/teacher_status_register_fragment_picture_shape"
+        >
+
+        <ImageView
+            android:id="@+id/teacher_status_register_fragment_add_picture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/meigui_meishi_eveluate_picture"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传图片"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/teacher_status_btn_login"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/login_ll"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/login_btn"
+        android:text="注册"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+
+        />
+
+
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@mipmap/qq_login"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@mipmap/weixin_login"
+
+            />
+
+    </LinearLayout>-->
+
+
+
+</LinearLayout>

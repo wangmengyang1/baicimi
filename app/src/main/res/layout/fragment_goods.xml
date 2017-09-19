@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#F3F3F5"
+        android:layout_height="600dp">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_yuandian1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/heiyuandian"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_yuandian2"-->
+            <!--android:layout_below="@id/img_yuandian1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/yuandian"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_yuandian3"-->
+            <!--android:layout_below="@id/img_yuandian2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/yuandian"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--/>-->
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_yuandian4"-->
+            <!--android:layout_below="@id/img_yuandian3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/yuandian"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/img_yuandian5"-->
+            <!--android:layout_below="@id/img_yuandian4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/fangdian"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--/>-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_details1"
+            android:layout_centerInParent="true"
+            />
+
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="+信息"
+            android:textSize="15dp"
+            android:background="@mipmap/tv_bac"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

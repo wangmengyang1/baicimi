@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/login_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/register_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="隐私设置"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/chuangkou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/cehua" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#EEEEEE"></View>
+
+        <ImageView
+            android:id="@+id/login_guanggao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_title"
+            android:layout_marginTop="-30dp"
+            android:src="@mipmap/login_title" />
+
+        <View
+            android:id="@+id/vv1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="-30dp"
+            android:background="#EEEEEE"></View>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          >
+
+          <TextView
+              android:id="@+id/tongguo"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="通过手机号码找到我"
+              android:textSize="16sp"
+              android:textColor="#575758"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="40dp"
+              android:text="关闭后，其他用户将不能通过手机号码搜索到你，你也不会出现在其他人的手机"
+              android:textSize="12sp"
+              android:textColor="#AAAAAA"
+              android:layout_marginLeft="10dp"
+              android:layout_below="@id/tongguo"
+              />
+
+          <CheckBox
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:button="@null"
+              android:layout_marginRight="10dp"
+              android:background="@drawable/yesnot_phone_find"
+              />
+      </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            ></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            >
+
+            <TextView
+                android:id="@+id/tongguo_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通过手机号码找到我"
+                android:textSize="16sp"
+                android:textColor="#575758"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text="关闭后，其他用户将不能通过会员名搜索到你"
+                android:textSize="12sp"
+                android:textColor="#AAAAAA"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/tongguo_phone"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/yesnot_phone_find"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            ></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="黑名单列表"
+                android:textColor="#575758"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            ></View>
+    </LinearLayout>
+
+
+</RelativeLayout>

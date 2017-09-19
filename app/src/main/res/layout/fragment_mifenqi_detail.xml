@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/register_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="幂额度分期详情"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_centerInParent="true"
+                />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_below="@id/rr"
+        ></View>
+
+    <ScrollView
+        android:layout_below="@id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:background="@mipmap/myfenqi_title_img"
+                    ></View>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分期剩余应还（元）"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5400:00"
+                android:textSize="23sp"
+                android:textColor="#CF2538"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分期总额8100.00（含手续费0.00）"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#EEEEEE"
+                android:layout_marginTop="15dp"
+                ></View>
+
+            <RelativeLayout
+                android:id="@+id/fenqi_details"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分期明细"
+                    android:textSize="16sp"
+                    android:textColor="#4E4E4E"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <View
+                    android:id="@+id/right_img"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@mipmap/right_img"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    ></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已还两期"
+                    android:textSize="16sp"
+                    android:textColor="#AAAAAA"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/right_img"
+                    android:layout_marginRight="5dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#EEEEEE"
+                ></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <TextView
+                    android:id="@+id/goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商品名称"
+                    android:textSize="16sp"
+                    android:textColor="#4E4E4E"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="送货入户  等多件"
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@id/goods_name"
+                    android:textColor="#AAAAAA"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+
+                <View
+                    android:id="@+id/right_img2"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@mipmap/right_img"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    ></View>
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                ></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <TextView
+                    android:id="@+id/digndan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单金额"
+                    android:textSize="16sp"
+                    android:textColor="#4E4E4E"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8100.00"
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@id/digndan_num"
+                    android:textColor="#AAAAAA"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                ></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <TextView
+                    android:id="@+id/buy_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交易时间"
+                    android:textSize="16sp"
+                    android:textColor="#4E4E4E"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016-04-01   19:33:00"
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@id/buy_time"
+                    android:textColor="#AAAAAA"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                ></View>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"></View>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

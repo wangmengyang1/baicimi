@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/login_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:src="@mipmap/register_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="实名认证"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/chuangkou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/cehua" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#EEEEEE"></View>
+
+        <ImageView
+            android:id="@+id/login_guanggao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_title"
+            android:layout_marginTop="-30dp"
+            android:src="@mipmap/login_title" />
+
+        <View
+            android:id="@+id/vv1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="-30dp"
+            android:background="#EEEEEE"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-30dp"
+            android:background="#F0EFF5"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:background="#DDDDDD"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请填写您的真实信息，通过后将不能修改"
+                    android:textSize="13sp"
+                    android:textColor="#AAAAAA"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r2"
+                android:layout_below="@id/r1"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:layout_height="60dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="真实姓名"
+                    android:background="#ffffff"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#AAAAAA"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_below="@id/r2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AAAAAA"
+                android:layout_marginLeft="10dp"
+                ></View>
+
+            <RelativeLayout
+                android:id="@+id/r3"
+                android:layout_below="@id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#ffffff"
+                    android:hint="身份证号"
+                    android:textColor="#AAAAAA"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_next_truename"
+                android:layout_width="match_parent"
+                android:layout_below="@id/r3"
+                android:layout_height="50dp"
+                android:background="#BBBBBB"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:text="下一步"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_next_truename"
+                android:text="实名认证后，您的账户将得到更完整的保护，支付更安全"
+                android:textColor="#BBBBBB"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实名认证优势"
+                    android:textSize="20sp"
+                    android:textColor="#AAAAAA"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="保障账户安全"
+                        android:textSize="12sp"
+                        android:textColor="#BBBBBB"
+                        android:gravity="center"
+                        android:drawableTop="@mipmap/baozhang"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="保障账户安全"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="#BBBBBB"
+                        android:drawableTop="@mipmap/zhuyanshuyouhui"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="保障账户安全"
+                        android:textSize="12sp"
+                        android:textColor="#BBBBBB"
+                        android:gravity="center"
+                        android:drawableTop="@mipmap/zhifubianjie"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

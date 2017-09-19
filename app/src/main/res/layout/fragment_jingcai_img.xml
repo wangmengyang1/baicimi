@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="390dp"
+    android:background="#ffffff">
+
+  <ImageView
+      android:id="@+id/jingcai_img1"
+      android:layout_width="match_parent"
+      android:layout_height="190dp"
+      android:layout_marginTop="-10dp"
+      android:src="@mipmap/miyouquan_img"
+      />
+
+    <RelativeLayout
+        android:id="@+id/re_miyouquan_content_message"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@id/jingcai_img1"
+        android:background="#000000"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Former boy band star takes you inside massive NJ mansion"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textSize="11sp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_dingyue_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3123"
+            android:drawableLeft="@mipmap/dingyue_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textSize="11sp"
+            android:layout_marginRight="10dp"
+            />
+
+        <com.baicimi.view.CircleImageView
+            android:id="@+id/user_header_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/user_header_img"
+            android:layout_below="@id/tv_dingyue_num"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GERRY"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:layout_below="@id/tv_dingyue_num"
+            android:layout_toRightOf="@id/user_header_img"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GuangZhou,China"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/user_header_img"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="160dp"
+       android:orientation="horizontal"
+       android:layout_below="@id/re_miyouquan_content_message"
+       >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@mipmap/img_message2"
+                />
+
+            <RelativeLayout
+                android:id="@+id/miyouquan_content_message"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/img1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Former boy band star takes you inside massive NJ mansion"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#99C5F6"
+                    android:layout_marginRight="35dp"
+                    android:textSize="9sp"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/dingyue_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3123"
+                    android:drawableLeft="@mipmap/dingyue_img"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#717171"
+                    android:textSize="11sp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <com.baicimi.view.CircleImageView
+                    android:id="@+id/header_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/user_header_img"
+                    android:layout_below="@id/dingyue_num"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GERRY"
+                    android:textColor="#717171"
+                    android:textSize="10sp"
+                    android:layout_below="@id/dingyue_num"
+                    android:layout_toRightOf="@id/header_img"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GuangZhou,China"
+                    android:textColor="#717171"
+                    android:textSize="10sp"
+                    android:layout_below="@id/tv_name"
+                    android:layout_toRightOf="@id/header_img"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:id="@+id/img2"
+               android:layout_width="match_parent"
+               android:layout_height="80dp"
+               android:src="@mipmap/img_message2"
+               />
+
+           <RelativeLayout
+               android:id="@+id/miyouquan_content_message2"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:layout_below="@id/img2"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Former boy band star takes you inside massive NJ mansion"
+                   android:layout_marginTop="5dp"
+                   android:textColor="#99C5F6"
+                   android:textSize="9sp"
+                   android:layout_marginRight="35dp"
+                   android:layout_marginLeft="10dp"
+                   />
+               <TextView
+                   android:id="@+id/dingyue_num2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="3123"
+                   android:drawableLeft="@mipmap/dingyue_img"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="5dp"
+                   android:textColor="#717171"
+                   android:textSize="11sp"
+                   android:layout_marginRight="10dp"
+                   />
+
+               <com.baicimi.view.CircleImageView
+                   android:id="@+id/header_img2"
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:src="@mipmap/user_header_img"
+                   android:layout_below="@id/dingyue_num2"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="12dp"
+                   />
+
+               <TextView
+                   android:id="@+id/tv_name2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="GERRY"
+                   android:textColor="#717171"
+                   android:textSize="10sp"
+                   android:layout_below="@id/dingyue_num2"
+                   android:layout_toRightOf="@id/header_img2"
+                   android:layout_marginTop="12dp"
+                   android:layout_marginLeft="10dp"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="GuangZhou,China"
+                   android:textColor="#717171"
+                   android:textSize="10sp"
+                   android:layout_below="@id/tv_name2"
+                   android:layout_toRightOf="@id/header_img2"
+                   android:layout_marginLeft="10dp"
+                   />
+           </RelativeLayout>
+
+       </RelativeLayout>
+
+   </LinearLayout>
+
+
+</RelativeLayout>

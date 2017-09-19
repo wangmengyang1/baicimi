@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent" >
+    
+    <include layout="@layout/title_classify"
+        android:id="@+id/inc"
+         />
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/inc"
+        android:orientation="vertical" >
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"        
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/lv_classify_name"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="#F5F5F9"
+                android:divider="@null"
+                android:scrollbars="none" >
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical"
+                 >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:src="@mipmap/classify_img_title"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginLeft="10dp"
+                      android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <GridView
+                    android:id="@+id/gv_classify"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="3"
+                    android:padding="10dp"
+                    android:scrollbars="none"
+                    android:verticalSpacing="7dp" >
+                </GridView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<com.baicimi.view.ViewLoad-->
+        <!--android:id="@+id/vl_load"-->
+        <!--android:layout_below="@id/inc"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+
+</RelativeLayout>

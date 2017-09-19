@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD800"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/gua" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="在您购买的产品瓶身上找到积分码，输" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:text="入“积分码”后面的所有字符。" />
+
+
+   <TextView
+       android:layout_width="300dp"
+       android:layout_height="0.9dp"
+       android:text=""
+       android:background="#AAAAAA"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="10dp"
+       />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P"
+            android:textSize="36dp"
+            android:textColor="#120E00"
+            android:layout_marginTop="6dp"
+            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sousuo_shape"
+            android:text="     "
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:background="@drawable/wancheng_shape"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="完成"
+        android:textColor="#2C2601"
+        android:textSize="16sp"
+        />
+
+
+</LinearLayout>

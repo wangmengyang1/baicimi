@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <EditText
+                    android:id="@+id/huafei_phone_num"
+                    android:background="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="13759315931"
+                    android:textColor="#202020"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/img_phone_chongzhi_header" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/huafei_phone_num"
+                    android:layout_marginLeft="20dp"
+                    android:text="账户绑定号码(广东移动)" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBBB"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/liuliangchongzhi_back"
+                    android:text="30M"
+                    android:textColor="#D91F3B"
+                    android:textSize="20sp"
+                    android:layout_height="100dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/liuliangchongzhi_back"
+                    android:text="100M"
+                    android:textColor="#D91F3B"
+                    android:textSize="20sp"
+                    android:layout_height="100dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/liuliangchongzhi_back"
+                    android:text="300M"
+                    android:textColor="#D91F3B"
+                    android:textSize="20sp"
+                    android:layout_height="100dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/liuliangchongzhi_back"
+                    android:text="500M"
+                    android:textColor="#D91F3B"
+                    android:textSize="20sp"
+                    android:layout_height="100dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/liuliangchongzhi_back"
+                    android:text="1000M"
+                    android:textColor="#D91F3B"
+                    android:textSize="20sp"
+                    android:layout_height="100dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/liuliangchongzhi_back"
+                    android:text="2000M"
+                    android:textColor="#D91F3B"
+                    android:textSize="20sp"
+                    android:layout_height="100dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30M流量叠加包"
+                android:textSize="16sp"
+                android:textColor="#5E5E5E"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#bbbbbb"
+                ></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                >
+
+                <TextView
+                    android:id="@+id/liuliangdiejiabao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.75元"
+                    android:textSize="14sp"
+                    android:textColor="#484848"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="20dp"
+                    android:text="流量卷自动抵扣1元"
+                    android:textColor="#FA8A8F"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/liuliangdiejiabao"
+                    android:background="@mipmap/huafeichongzhi_back"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全国可用，即时生效，当月有效"
+                    android:textSize="12sp"
+                    android:textColor="#B7B7B7"
+                    android:layout_below="@id/liuliangdiejiabao"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="45dp"
+                    android:background="@mipmap/huafeichongzhi_back"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="购买"
+                    android:textSize="15sp"
+                    android:textColor="#E6455E"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBBB"
+                ></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                ></RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

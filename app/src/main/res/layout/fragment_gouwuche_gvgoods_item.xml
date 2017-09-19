@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:id="@+id/gouwuche_img_gv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/mianmo_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/gouwuche_tv_gv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正品盒装韩国品驰强效补水保湿美白蚕丝面膜贴女紧..."
+        android:textSize="13sp"
+        android:layout_below="@id/gouwuche_img_gv"
+        android:textColor="#4C5A64"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/gouwuche_tv_gv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥57.99"
+        android:layout_below="@id/gouwuche_tv_gv_message"
+        android:textSize="15sp"
+        android:textColor="#FE5922"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/gouwuche_tv_gv_paynum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="51人付款"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/gouwuche_tv_gv_price"
+        android:layout_below="@id/gouwuche_tv_gv_message"
+        android:textColor="#8F8F8F"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/gengduoanniu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        />
+
+</RelativeLayout>

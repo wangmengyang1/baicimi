@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/fragment_friday_night_head"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:background="@mipmap/zhouwu_img1"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@mipmap/fridaynight_title2"></View>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@mipmap/fridaynight_title3"
+                    android:id="@+id/view"></View>
+
+                <LinearLayout
+                    android:id="@+id/fragment_friday_night_layout_tagnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="4dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/tag_image_white"
+                        android:layout_marginTop="1dp"
+                        />
+                    <TextView
+                        android:id="@+id/fragment_friday_night_textview_tagnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234"
+                        android:textSize="11sp"
+                        android:layout_marginTop="-1dp"
+                        android:textColor="@color/white"
+                        />
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/fridaynight_title4"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#F0F1F6"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="19点场"
+                    android:textColor="@color/title_color"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="距开始"
+                        android:textColor="#797979"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:background="@mipmap/daojishi_back"
+                        android:padding="2dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="03"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text=" : "
+                        android:textColor="#797979"
+                        android:textSize="13sp"
+                        android:padding="2dp"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/daojishi_back"
+                        android:padding="2dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="40"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text=" : "
+                        android:textColor="#797979"
+                        android:textSize="13sp"
+                        android:padding="2dp"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/daojishi_back"
+                        android:padding="2dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="36"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.baicimi.ui.MyGridView
+                android:id="@+id/buying_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fafafa"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="1dp"></com.baicimi.ui.MyGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#fafafa"></View>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:background="@mipmap/fridaynight_title5"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#F0F1F6"
+                android:orientation="horizontal"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="20点场"
+                    android:textColor="@color/title_color"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="距开始"
+                    android:textColor="#797979"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:background="@mipmap/daojishi_back"
+                    android:padding="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="03"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" : "
+                    android:textColor="#797979"
+                    android:textSize="13sp"
+                    android:padding="2dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/daojishi_back"
+                    android:padding="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="40"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" : "
+                    android:textColor="#797979"
+                    android:textSize="13sp"
+                    android:padding="2dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/daojishi_back"
+                    android:padding="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="36"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <com.baicimi.ui.MyGridView
+                android:id="@+id/buying_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fafafa"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="1dp"></com.baicimi.ui.MyGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#fafafa"></View>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:background="@mipmap/fridaynight_title6"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#F0F1F6"
+                android:orientation="horizontal"
+                android:paddingRight="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="21点场"
+                    android:textColor="@color/title_color"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="距开始"
+                    android:textColor="#797979"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:background="@mipmap/daojishi_back"
+                    android:padding="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="03"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" : "
+                    android:textColor="#797979"
+                    android:textSize="13sp"
+                    android:padding="2dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/daojishi_back"
+                    android:padding="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="40"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" : "
+                    android:textColor="#797979"
+                    android:textSize="13sp"
+                    android:padding="2dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/daojishi_back"
+                    android:padding="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="36"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <com.baicimi.ui.MyGridView
+                android:id="@+id/buying_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fafafa"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="1dp"></com.baicimi.ui.MyGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#fafafa"></View>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/cela_interal_exchange_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/cela_interal_exchange_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/cela_back"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="积分兑换"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/cela_imtegral_exchange_image"
+            android:layout_width="135dp"
+            android:layout_height="138dp"
+            android:src="@drawable/cela_integral_fragment_image"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/cela_imtegral_exchange_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恭喜获得 15 积分"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cela_imtegral_exchange_image"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+
+            />
+
+        <View
+            android:id="@+id/cela_imtegral_exchange_view"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/integral_view_shape"
+            android:layout_below="@+id/cela_imtegral_exchange_textview"
+            android:layout_marginTop="15dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/cela_imtegral_exchange_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cela_imtegral_exchange_view"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/cela_imtegral_exchange_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史积分：55468548485"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:id="@+id/cela_imtegral_exchange_acquire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本次获得积分：1532"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:id="@+id/cela_imtegral_exchange_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最新积分：5564655444"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cela_imtegral_exchange_rl"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            >
+
+            <Button
+                android:id="@+id/cela_imtegral_exchange_button"
+                android:layout_width="95dp"
+                android:layout_height="28dp"
+                android:text="返回"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:background="@drawable/cela_integral_button_shape"
+                android:textColor="#ffffff"
+                />
+            <!--<View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/cela_imtegral_exchange_details"
+                android:layout_width="95dp"
+                android:layout_height="32dp"
+                android:text="积分详情"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:textSize="16sp"
+                android:background="@drawable/cela_integral_button_shape"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />-->
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/register_back"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的订单"
+            android:textSize="18sp"
+            android:textColor="#4F4F51"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/img_dingdan_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_gouwuche_more"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/dingdan_sousuo_img"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_dingdan_more"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center">
+
+
+    <com.baicimi.ui.MyDingDanPagerSlidingTabStrip
+        android:id="@+id/my_dingdan_ps"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        app:pstsDividerColor="#00ffffff"
+        app:pstsIndicatorColor="#D93636"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsShouldExpand="true"
+        app:pstsTabSelectTextColor="@color/common_text_tab"
+        app:pstsTabSelectTextSize="12sp"
+        app:pstsTabTextSize="18sp"></com.baicimi.ui.MyDingDanPagerSlidingTabStrip>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rr1"
+        android:layout_marginTop="5dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_my_dingdan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

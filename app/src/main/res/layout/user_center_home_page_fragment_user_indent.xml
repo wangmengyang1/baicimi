@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/user_center_home_page_fragment_image_07"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/user_center_home_page_fragment_user_indent_layout_04"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="50dp"
+                    android:paddingBottom="3dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/user_center_home_page_fragment_image_09"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="帮助"
+                        android:textColor="@color/black"
+
+                        />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/user_center_home_page_fragment_image_10"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/user_center_home_page_fragment_image_11"
+                        android:layout_marginLeft="15dp"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设置"
+                        android:textColor="@color/black"
+
+                        />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/user_center_home_page_fragment_user_indent_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/user_center_home_page_fragment_edittext_shape"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/user_center_home_page_fragment_user_indent_layout_04"
+
+                    >
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="25dp"
+                        android:hint="输入积分码"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/sousuo_image_wright"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/user_center_home_page_fragment_user_indent_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/user_center_home_page_fragment_image_03"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/user_center_home_page_fragment_user_indent_layout"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <ImageView
+
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/user_center_home_page_fragment_image_04"
+                    android:layout_alignBottom="@+id/user_center_home_page_fragment_user_indent_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="-5dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/user_center_home_page_fragment_user_indent_layout_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_below="@+id/user_center_home_page_fragment_user_indent_image"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="百事加冰"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/user_center_home_page_fragment_image_05"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/user_center_home_page_fragment_user_indent_layout_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/user_center_home_page_fragment_user_indent_layout_01"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/user_center_home_page_fragment_layout_background_shape"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="关注 8808"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="粉丝 502万"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="幂友 502万"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="文章 502万"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/user_center_home_page_fragment_user_indent_layout_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/user_center_home_page_fragment_user_indent_layout_02"
+                    android:background="@drawable/user_center_home_page_fragment_layout_background_shape"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="分享 8808"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/user_center_home_page_fragment_image_06"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 5980"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/user_center_home_page_fragment_image_08"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 5980"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="积分 502万"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="一句话介绍一下你自己吧，让别人更了解你"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/user_center_home_page_fragment_user_indent_layout_03"
+                    android:layout_marginTop="15dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="百次幂商城"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:background="#d2d2d2"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="全球生活汇"
+                    android:textColor="@color/common_text_tab"
+                    android:textSize="18sp"
+                    android:background="#e7e3e4"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:src="@mipmap/user_center"
+                android:scaleType="fitXY"
+                android:layout_marginTop="3dp"
+                />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="2dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的订单"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/black"
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="团购订单"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="1dp"
+                        android:background="#eeefee"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="政府采购订单"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="1dp"
+                        android:background="#eeefee"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分期订单"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="1dp"
+                        android:background="#eeefee"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="亲密付订单"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="1dp"
+                        android:background="#eeefee"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的拍卖"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="1dp"
+                        android:background="#eeefee"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的预售"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="1dp"
+                        android:background="#eeefee"
+                        />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@+id/user_center_home_page_fragment_user_indent_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f4f4f4"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/user_center_home_page_fragment_image_01"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会员推荐"
+                    android:textColor="#b5000000"
+                    />
+
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/user_center_home_page_fragmet_gridview_03_user_indent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:layout_margin="15dp"
+                ></GridView>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTabTextSize" format="dimension"/>
+        <attr name="pstsTabTextColor" format="color"/>
+        <attr name="pstsTabSelectTextSize" format="dimension"/>
+        <attr name="pstsTabSelectTextColor" format="color"/>
+        <attr name="pstsTabSelectedTextColor" format="color"/>
+        <attr name="selectedTabTextColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView2">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="navattr">
+        <attr name="checkedimg" format="reference"/>
+        <attr name="uncheckedimg" format="reference"/>
+        <attr name="count" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RingView">
+        <!--环形比例图的尺寸-->
+        <attr name="ringSize" format="dimension" />
+        <!--环形的宽度-->
+        <attr name="strokeWidth" format="dimension" />
+        <!--环形的对齐方式-->
+        <attr name="align" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="center_horizontal" value="3" />
+            <enum name="center_vertical" value="4" />
+        </attr>
+    </declare-styleable>
+    <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="slidingmenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+
+</resources>

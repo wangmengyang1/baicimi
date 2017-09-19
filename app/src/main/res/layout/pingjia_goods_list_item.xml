@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="160dp">
+
+    <ImageView
+        android:id="@+id/pingfen_goods"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/pingfen_goods"
+        />
+
+    <TextView
+        android:id="@+id/tv_pingjia_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正品韩国品驰长效补水保湿玻尿酸能量面膜蚕丝弹力女士祛痘抗辐射"
+        android:textSize="15sp"
+        android:textColor="#5C5C5C"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/pingfen_goods"
+        />
+
+    <TextView
+        android:id="@+id/tv_pingjia_get_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评价+晒单最多可获得40积分"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/pingfen_goods"
+        android:layout_below="@id/tv_pingjia_goods"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/re_shaidan"
+        android:clickable="true"
+        android:layout_width="100dp"
+        android:background="@mipmap/shaidan_img"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/tv_pingjia_get_code"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/bi_img"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@mipmap/bi_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评价晒单"
+            android:textSize="13sp"
+            android:textColor="#F8595A"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/bi_img"
+            android:layout_marginLeft="2dp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

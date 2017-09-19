@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <com.baicimi.ui.MyListView
+        android:id="@+id/my_dingdan_list"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:divider="#F1F2F6"
+        android:dividerHeight="10dp"
+        android:layout_height="wrap_content"></com.baicimi.ui.MyListView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#EEEEEE"
+                >
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="130dp"
+                    android:layout_height="1dp"
+                    android:background="#BCBCBD"
+                    android:layout_centerVertical="true"
+                    ></View>
+
+                <TextView
+                    android:id="@+id/tv_weinituijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="为您推荐"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toLeftOf="@id/view2"
+                    android:textColor="#878787"
+                    android:drawablePadding="4dp"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/weinintuijian_img"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/view1"
+                    android:layout_marginLeft="16dp"
+                    />
+
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="130dp"
+                    android:layout_height="1dp"
+                    android:background="#BCBCBD"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    ></View>
+
+            </RelativeLayout>
+
+
+            <com.baicimi.ui.MyGridView
+                android:id="@+id/my_dingdan_gv"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"
+                android:numColumns="2"
+                android:layout_height="wrap_content"></com.baicimi.ui.MyGridView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

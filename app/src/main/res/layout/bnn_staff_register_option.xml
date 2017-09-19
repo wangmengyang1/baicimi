@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e1e1e1"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="带*的为必填"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="50dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*所属区域"
+                    android:textSize="13sp"
+                    android:textColor="#5d5d5d"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/bnn_staff_register_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/bnn_staff_register_spinner_tv"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="--请选择--"
+                        android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                        android:layout_marginRight="5dp"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/below_image_01"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="50dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*岗位"
+                    android:textSize="13sp"
+                    android:textColor="#5d5d5d"
+                    />
+
+
+                <Spinner
+                    android:id="@+id/bnn_staff_register_spinner_02"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    ></Spinner>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:id="@+id/bnn_staff_register_option_leadership_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*主管ID ："
+                    android:textSize="13sp"
+                    android:textColor="#5d5d5d"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="12dp"
+                    android:hint="请输入主管或推荐人ID"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:id="@+id/bnn_staff_register_option_leadership"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*主管姓名 ："
+                    android:textSize="13sp"
+                    android:textColor="#5d5d5d"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="12dp"
+                    android:hint="请输入主管或推荐人姓名"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:id="@+id/bnn_staff_register_option_leadership_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*主管电话："
+                    android:textSize="13sp"
+                    android:textColor="#5d5d5d"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="12dp"
+                    android:hint="请输入主管或推荐人电话"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*上传身份证证明 ："
+                    android:textSize="13sp"
+                    android:textColor="#5d5d5d"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="浏览..."
+                    android:textSize="12sp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:background="@drawable/person_cnetered_acthentication_user_button_shape"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*手机号 ："
+                    android:textSize="13sp"
+                    android:textColor="#5d5d5d"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:hint="请输入手机号码"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*验证码 ："
+                    android:textSize="13sp"
+                    android:textColor="#5d5d5d"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:hint="输入图片验证码"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P77F"
+                    android:textSize="14sp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#cc000000"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*短信验证码 ："
+                    android:textSize="13sp"
+                    android:textColor="#5d5d5d"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:hint="输入短信验证码"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获取验证码"
+                    android:textSize="12sp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:background="@drawable/person_cnetered_acthentication_user_button_shape"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="26dp"
+                >
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/MyCheckBoxTwo"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我已阅读并接受"
+                    android:textSize="11sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《百次幂注册协议》"
+                    android:textSize="11sp"
+                    android:textColor="#ce2538"
+                    />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即上传"
+                android:background="@drawable/activity_present_check_adapter_btn_shape_second"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

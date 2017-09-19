@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F4F5">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/check_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re1"></android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:id="@+id/cantuan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EDEDED"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="以下小伙伴正在发起团购，您可以直接参团"
+            android:textColor="#6E6E6E"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/groubuy_btn">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="5dp"
+                        android:text="杨俊梅"
+                        android:textColor="#6E6E6E"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="武汉"
+                        android:textColor="#7E7E7E"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="5dp"
+                    android:text="还差1人成团"
+                    android:textColor="#FE2F46"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="70dp"
+                    android:text="剩余34:40:54结束"
+                    android:textColor="#7E7E7E"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/to_groubuy"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="去参团"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/youjiimg" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <com.baicimi.view.CircleImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/user_head_img_detail" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/grounbuy_up" />
+
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/grounbuy_down" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/re_buy"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_above="@id/cantuan"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/gouwuche_all_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="团购价：¥100.00元"
+            android:textColor="#5B5B5B"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gouwuche_all_price"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="支付开团并邀请4人参团，24小时内人数不足自动退款"
+            android:textColor="#D43742"
+            android:textSize="10sp" />
+
+        <CheckBox
+            android:id="@+id/che1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/gouwuche_all_price"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/gouwuche_use_jifen_chexbok"
+            android:button="@null"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/jifendikou1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gouwuche_all_price"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@id/che1"
+            android:text="1000积分抵扣10元"
+            android:textColor="#5B5B5B"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dikouhou_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gouwuche_all_price"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@id/jifendikou1"
+            android:text="¥90.00元"
+            android:textColor="#5B5B5B"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/che2"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/che1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/gouwuche_use_jifen_chexbok"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/jifendikou2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/che1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/che2"
+            android:text="1500积分抵扣15元"
+            android:textColor="#5B5B5B"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dikouhou_price2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/che1"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/jifendikou2"
+            android:text="¥85.00元"
+            android:textColor="#5B5B5B"
+            android:textSize="14sp" />
+
+
+        <CheckBox
+            android:id="@+id/che3"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/che2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/gouwuche_use_jifen_chexbok"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/jifendikou3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/che2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/che3"
+            android:text="3000积分抵扣30元"
+            android:textColor="#5B5B5B"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dikouhou_price3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/che2"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/jifendikou3"
+            android:text="¥70.00元"
+            android:textColor="#5B5B5B"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/img_buynow"
+            android:text="^ 选择"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_buynow"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_choose"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/img_buynow"
+            android:text="立即购买"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_gouwuche"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_buynow"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/img_buynow"
+            android:text="购物车"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

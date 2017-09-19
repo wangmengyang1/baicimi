@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    //首页头部
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@mipmap/titel_pic"
+        >
+        <Button
+            android:id="@+id/btn_head_cehua"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/shouyecehua"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:layout_marginLeft="20dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+
+            <ImageView
+                android:id="@+id/title_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/logo"
+                />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广东"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:layout_toRightOf="@id/title_logo"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/geren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/geren"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+
+    </RelativeLayout>
+
+
+    //首页滑动界面
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <com.baicimi.ui.MyDingDanPagerSlidingTabStrip
+            android:id="@+id/head_page"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            app:pstsDividerColor="#00ffffff"
+            app:pstsIndicatorColor="#D93636"
+            app:pstsIndicatorHeight="1dp"
+            app:pstsShouldExpand="true"
+            app:pstsTabSelectTextColor="@color/common_text_tab"
+            app:pstsTabSelectTextSize="12sp"
+            app:pstsTabTextSize="15sp"></com.baicimi.ui.MyDingDanPagerSlidingTabStrip>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rr1"
+        android:layout_marginTop="5dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="460dp" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_gravity="bottom"
+        ></View>
+
+</LinearLayout>

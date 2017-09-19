@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">百次幂商城</string>
+    <string name="scan_text">支持快递运单号扫描</string>
+
+    <string name="tab_menu_alert">首页</string>
+    <string name="tab_menu_profile">消息</string>
+    <string name="tab_menu_pay">搜索</string>
+    <string name="tab_menu_setting">回到商城</string>
+    <string name="meizhuang_remen_wenzhang1">这个早先欧美美妆大神的作品，着实火了好一阵，最近以为韩国博主又来挑战了，点击查看视频
+        ，两个像素妆看下来发现这是个学习修容划重点的好时候，你们准备好了么！半期小马扎看过来...</string>
+     <string name="meizhuang_remen_wenzhang2">先来观摩一下原版教程，体会一下外国人的脑洞看起来小姑搜到时真的很明显，睫毛瞬间
+     延长了，双眼也看起来更大，不过真的香问一句不会招蚂蚁吗！不过真的香问一句不会招蚂蚁吗！不过真的香问一句不会招蚂蚁吗！
+     视频一出，网友妹子...</string>
+       <string name="meizhuang_remen_wenzhang3">看过剧的朋友都知道片中李准基饰演的四皇子最大的心理阴影就是眼睛上的疤痕了，所以剧中的大部分形象都是佩戴面具以半张脸示人
+           ，被看到了疤痕会暴走，此时身为化妆师转...</string>
+      <string name="meizhuang_remen_wenzhang4">那么先来科普下，这添加的人鱼姬到底是啥？其实就是动不动就卖断货的YSL圣罗兰唇色纯柚叛逆裸唇序列...</string>
+    <string name="huodngjianjie">亲爱的微游戏平台用户：为了提升积分商城体验，我们将于2016年10月09日起进行升级调整，调整后将启用新积分商城，在保证原积分功能和使用途径...</string>
+    <string name="meizhuang_remen_wenzhang5">韩式粗眉也不是人人都适合被韩剧带火的一字粗眉一经世面就感受到各种追捧，不过当人人都挂着两条平直的眉毛出街...</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <string name="enter">这是SDK_Sample的入口界面</string>
+    <string name="reg">将该app注册到微信</string>
+    <string name="goto_send">跳转到发消息界面</string>
+    <string name="launch_wx">启动微信</string>
+    <string name="check_timeline_supported">检查是否支持发送到朋友圈</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

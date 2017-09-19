@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/teacher_status_register_adapter_item_shape"
+        android:layout_margin="2dp"
+        >
+
+        <ImageView
+            android:id="@+id/teacher_status_register_adapter_image"
+            android:layout_width="111dp"
+            android:layout_height="70dp"
+            android:src="@drawable/teacher_status_register_fragment_image_02"
+            android:padding="2dp"
+            />
+
+        <TextView
+            android:id="@+id/teacher_status_register_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日化用品"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/teacher_status_register_adapter_image"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

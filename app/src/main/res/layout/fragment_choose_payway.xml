@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/register_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择支付方式"
+            android:textSize="16sp"
+            android:textColor="#4C4B4E"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@mipmap/img_gouwuche_more"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单金额"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#767676"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1770.00元"
+            android:layout_alignParentRight="true"
+            android:textSize="17sp"
+            android:layout_marginRight="15dp"
+            android:textColor="#FE0C1C"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <View
+            android:id="@+id/weixin_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/weixin_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            ></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信支付"
+            android:textSize="15sp"
+            android:textColor="#3E403F"
+            android:layout_toRightOf="@id/weixin_img"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信安全支付"
+            android:textSize="14sp"
+            android:textColor="#AAAAAA"
+            android:layout_toRightOf="@id/weixin_img"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/right_img"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            ></View>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <View
+            android:id="@+id/zhifubao_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/zhifubao_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            ></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝支付"
+            android:textSize="15sp"
+            android:textColor="#3E403F"
+            android:layout_toRightOf="@id/zhifubao_img"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝安全支付"
+            android:textSize="14sp"
+            android:textColor="#AAAAAA"
+            android:layout_toRightOf="@id/zhifubao_img"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/right_img"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            ></View>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <View
+            android:id="@+id/yinlian_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/yinlian_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            ></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡支付"
+            android:textSize="15sp"
+            android:textColor="#3E403F"
+            android:layout_toRightOf="@id/yinlian_img"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡安全支付"
+            android:textSize="14sp"
+            android:textColor="#AAAAAA"
+            android:layout_toRightOf="@id/yinlian_img"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/right_img"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            ></View>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <View
+            android:id="@+id/pingguo_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/pingguo_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            ></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置Apple Pay"
+            android:textSize="15sp"
+            android:textColor="#3E403F"
+            android:layout_toRightOf="@id/pingguo_img"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="初次使用请先设置Apple Pay"
+            android:textSize="14sp"
+            android:textColor="#AAAAAA"
+            android:layout_toRightOf="@id/pingguo_img"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/right_img"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            ></View>
+
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@mipmap/shanfu_img"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            ></View>
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@mipmap/yinlian_img"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="75dp"
+            ></View>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+
+</LinearLayout>

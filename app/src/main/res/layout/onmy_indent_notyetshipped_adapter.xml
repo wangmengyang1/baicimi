@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/onmy_indent_not_yetshipped_adapter_headimage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/onmy_indent_notyesshipped_adapter_image_01"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+        
+
+        <TextView
+            android:id="@+id/onmy_indent_not_yetshipped_adapter_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联盟猫旗舰店"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/onmy_indent_not_yetshipped_adapter_headimage"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/right_img"
+            android:layout_toRightOf="@id/onmy_indent_not_yetshipped_adapter_store"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/onmy_indent_not_yetshipped_adapter_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="买家已付款"
+            android:textSize="12sp"
+            android:textColor="#ff4400"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#F0F0F0"
+        >
+
+        <ImageView
+            android:id="@+id/onmy_indent_not_yetshipped_adapter_imageurl"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/onmy_indent_notyesshipped_adapter_image_02"
+            />
+
+        <TextView
+            android:id="@+id/onmy_indent_not_yetshipped_adapter_content"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#4A4A50"
+            android:text="Go5最新游戏原画设计视频教程cg插画ps基础手绘动漫"
+            android:layout_toRightOf="@id/onmy_indent_not_yetshipped_adapter_imageurl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/onmy_indent_not_yetshipped_adapter_classify"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="颜色分类:【加强版】NZJ-02白色双夹"
+            android:layout_toRightOf="@id/onmy_indent_not_yetshipped_adapter_imageurl"
+            android:layout_marginLeft="10dp"
+            android:textColor="#D0D0D0"
+            android:textSize="12sp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/onmy_indent_not_yetshipped_adapter_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/onmy_indent_not_yetshipped_adapter_salesreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="七天退换"
+            android:textColor="#ff3837"
+            android:textSize="12sp"
+            android:background="@drawable/onmy_indent_notyetshipped_adapter_textview_sales_shape"
+            android:layout_below="@+id/onmy_indent_not_yetshipped_adapter_classify"
+            android:layout_alignLeft="@+id/onmy_indent_not_yetshipped_adapter_classify"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:id="@+id/onmy_indent_not_yetshipped_adapter_newmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥124.00"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            />
+
+       <RelativeLayout
+           android:id="@+id/onmy_indent_not_yetshipped_adapter_layout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/onmy_indent_not_yetshipped_adapter_newmoney"
+           android:layout_alignLeft="@+id/onmy_indent_not_yetshipped_adapter_newmoney"
+           android:layout_marginTop="4dp"
+           >
+
+           <TextView
+               android:id="@+id/onmy_indent_not_yetshipped_adapter_oldmoney"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="¥589.00"
+               />
+
+           <View
+               android:layout_width="50dp"
+               android:layout_height="1dp"
+               android:layout_centerVertical="true"
+               android:background="#848484"
+               />
+
+
+       </RelativeLayout>
+
+        <TextView
+            android:id="@+id/onmy_indent_not_yetshipped_adapter_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X1"
+            android:textSize="12sp"
+            android:layout_below="@+id/onmy_indent_not_yetshipped_adapter_layout"
+            android:textColor="#848484"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_dingdan_goods_num_layout_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/onmy_indent_not_yetshipped_adapter_xian"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:text="险"
+            android:layout_centerVertical="true"
+            android:textColor="#ff4400"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/onmy_indent_notyetshipped_adapter_textview_xian_shape"
+            android:padding="3dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/onmy_indent_not_yetshipped_adapter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运费险"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/onmy_indent_not_yetshipped_adapter_xian"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:id="@+id/onmy_indent_not_yetshipped_adapter_claim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认收货前退货可理赔"
+            android:layout_toRightOf="@+id/onmy_indent_not_yetshipped_adapter_xian"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/onmy_indent_not_yetshipped_adapter_name"
+            android:layout_marginTop="4dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运费险已失效"
+            android:textColor="#ff4400"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_below="@+id/onmy_indent_not_yetshipped_adapter_claim"
+            android:layout_marginTop="8dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+
+        <TextView
+            android:id="@+id/onmy_indent_notyetshipped_adapter_aggregate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计：¥124.80（含运费¥0.00）"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+        <TextView
+            android:id="@+id/onmy_indent_notyetshipped_adapter_number_commodity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共1件商品"
+            android:textSize="14sp"
+            android:textColor="#848484"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/onmy_indent_notyetshipped_adapter_aggregate"
+            />
+
+
+
+
+        <View
+            android:id="@+id/onmy_indent_notyetshipped_adapter_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_below="@+id/onmy_indent_notyetshipped_adapter_number_commodity"
+            android:layout_marginTop="5dp"
+            ></View>
+
+        <Button
+            android:id="@+id/onmy_indent_notyetshipped_adapter_lengthendelivery"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_shape"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="延长收货"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/onmy_indent_notyetshipped_adapter_view"
+            />
+
+
+        <Button
+            android:id="@+id/onmy_indent_notyetshipped_adapter_lookLogistics"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="查看物流"
+            android:textSize="14sp"
+            android:textColor="#5F5F5F"
+            android:layout_toLeftOf="@id/onmy_indent_notyetshipped_adapter_lengthendelivery"
+            android:background="@drawable/shape"
+            android:layout_below="@+id/onmy_indent_notyetshipped_adapter_view"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分期订单"
+            android:textColor="#ff4400"
+            android:layout_below="@+id/onmy_indent_notyetshipped_adapter_view"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            />
+
+
+        <!--<Button
+            android:id="@+id/btn_yanchangshouhuo"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:text="联系买家"
+            android:textColor="#5F5F5F"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape"
+            android:layout_toLeftOf="@id/btn_chakanwuliu"
+            android:layout_below="@+id/fragment_my_dingdan_item_view"
+            />
+
+
+        <TextView
+            android:id="@+id/fragment_my_dingdan_item_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/fragment_my_dingdan_item_view"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            />
+
+
+        <TextView
+            android:id="@+id/fragment_my_dingdan_item_bill"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:background="@drawable/more_dolig"
+            android:text="开票申请"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="12sp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            />-->
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

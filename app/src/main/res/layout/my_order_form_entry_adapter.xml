@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/my_order_form_entry_adapter_imageurl"
+            android:layout_width="96dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image_dingdan_01"
+            />
+
+        <TextView
+            android:id="@+id/my_order_form_entry_adapter_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥39"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/my_order_form_entry_adapter_imageurl"
+            android:textColor="@color/black"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/my_order_form_entry_adapter_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市"
+            android:textSize="12sp"
+            android:layout_below="@+id/my_order_form_entry_adapter_money"
+            android:layout_alignLeft="@+id/my_order_form_entry_adapter_money"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="30dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍卖订单"
+            android:textColor="@color/black"
+            android:layout_below="@+id/my_order_form_entry_adapter_address"
+            android:layout_alignLeft="@+id/my_order_form_entry_adapter_address"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:id="@+id/my_order_form_entry_adapter_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待付款"
+            android:layout_alignLeft="@+id/my_order_form_entry_adapter_address"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:layout_alignBottom="@+id/my_order_form_entry_adapter_imageurl"
+            />
+
+        <TextView
+            android:id="@+id/my_order_form_entry_adapter_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍卖订单"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/my_order_form_entry_adapter_payment"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/my_order_form_entry_adapter_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:05"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:src="@drawable/ic_check_background"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        >
+
+        <ImageView
+            android:id="@+id/present_check_adapter_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:src="@drawable/ic_product"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/present_check_adapter_lible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中秋节活动礼包"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginRight="5dp"
+                />
+            <TextView
+                android:id="@+id/present_check_adapter_synopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PINCH洁面乳5ML+PINCH精华"
+                android:textSize="15sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                />
+            <TextView
+                android:id="@+id/present_check_adapter_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="寄存有效时长：16.09.15-16.10.15"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                >
+                <Button
+                    android:id="@+id/present_check_adapter_btn_examine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="查看"
+                    android:textSize="10sp"
+                    android:textColor="@color/beijing"
+                    android:background="@drawable/activity_present_check_adapter_btn_shape"
+                    android:layout_margin="2dp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:id="@+id/present_check_adapter_btn_get"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="领取"
+                    android:textSize="10sp"
+                    android:textColor="@color/beijing"
+                    android:background="@drawable/activity_present_check_adapter_btn_shape"
+                    android:layout_margin="2dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    />
+                <Button
+                    android:id="@+id/present_check_adapter_btn_givepresent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="转赠好友"
+                    android:textSize="10sp"
+                    android:textColor="@color/beijing"
+                    android:background="@drawable/activity_present_check_adapter_btn_shape"
+                    android:layout_margin="2dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/present_check_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="分享"
+                    android:textSize="10sp"
+                    android:drawableLeft="@drawable/ic_present_check_share"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_yellow"
+                    android:layout_marginRight="5dp"
+                    android:padding="2dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

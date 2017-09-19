@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/groubuy_goods_img"
+            android:layout_width="197dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/groubuy_gv_img1"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/groubuy_goods_name"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/groubuy_goods_img"
+            android:layout_centerHorizontal="true"
+            android:text="官方授权 自然堂乐园补水保湿"
+            android:textColor="#616161"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            />
+
+        <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_below="@id/groubuy_goods_name"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/use_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原价¥320"
+                android:textSize="12sp"
+                android:textColor="#AAAAAA"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <View
+                android:layout_width="55dp"
+                android:layout_height="1dp"
+                android:background="#AAAAAA"
+                android:layout_marginLeft="9dp"
+                android:layout_centerVertical="true"
+                ></View>
+
+            <TextView
+                android:id="@+id/persaon_groubuy_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单人团¥120"
+                android:textSize="12sp"
+                android:textColor="#AAAAAA"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tuangouprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="团购价"
+                android:textSize="13sp"
+                android:textColor="#616161"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/groubuy_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥15.7"
+                android:textSize="13sp"
+                android:textColor="#F13559"
+                android:layout_toRightOf="@id/tuangouprice"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@mipmap/jifen_picture"
+                android:layout_toRightOf="@id/groubuy_price"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                ></View>
+
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_toRightOf="@id/groubuy_price"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/btn_shape"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="去团购>"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

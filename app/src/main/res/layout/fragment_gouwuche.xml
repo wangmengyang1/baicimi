@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/fuqin"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购物车"
+            android:textColor="#4C4C4C"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/img_gouwuche_more" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EEEEEE"></View>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.baicimi.ui.MyListView
+                android:id="@+id/gouwuche_list"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:divider="#F1F2F6"
+                android:dividerHeight="2dp"
+                android:layout_height="wrap_content"></com.baicimi.ui.MyListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BBBBBB"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <CheckBox
+            android:id="@+id/jiesuan_checbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/gouwuche_list_chexbok"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_quanxuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:textSize="17sp"
+            android:textColor="#606060"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/jiesuan_checbox"
+            android:layout_marginLeft="15dp"
+            />
+
+        <Button
+            android:id="@+id/btn_jiesuan"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="结算(0)"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="#EE0219"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_heji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计："
+            android:textColor="#4E5251"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/tv_quanxuan"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:id="@+id/jisuan_all_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥0"
+            android:textColor="#EE0219"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/tv_heji"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_dikou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠券抵扣：¥5"
+            android:textSize="13sp"
+            android:textColor="#818181"
+            android:layout_toRightOf="@id/tv_quanxuan"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/tv_heji"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:id="@+id/user_jifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用:1000积分   抵扣:¥10"
+            android:textSize="13sp"
+            android:textColor="#818181"
+            android:layout_below="@id/tv_dikou"
+            android:layout_toRightOf="@id/tv_quanxuan"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实付："
+            android:textSize="15sp"
+            android:textColor="#4E5251"
+            android:layout_toRightOf="@id/tv_quanxuan"
+            android:layout_below="@id/user_jifen"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/shifu_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥0"
+            android:textColor="#EE0219"
+            android:textSize="15sp"
+            android:layout_below="@id/user_jifen"
+            android:layout_toRightOf="@id/tv_heji"
+            android:layout_marginLeft="3dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"></View>
+</LinearLayout>

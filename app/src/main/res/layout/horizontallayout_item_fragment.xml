@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/horizontallayout_item_fragment_imageurl"
+            android:layout_width="110dp"
+            android:layout_height="112dp"
+            android:src="@drawable/tyrout_applyfor_fragment_image_05"
+            />
+
+        <TextView
+            android:id="@+id/horizontallayout_item_fragment_lible"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="女士清香香水1瓶"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:layout_below="@+id/horizontallayout_item_fragment_imageurl"
+            android:gravity="center"
+            />
+
+        <RelativeLayout
+            android:id="@+id/horizontallayout_item_fragment_laouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/horizontallayout_item_fragment_lible"
+            android:layout_marginTop="4dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/horizontallayout_item_fragment_layout_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥112.00"
+                    android:textSize="12sp"
+                    android:textColor="#9a9a9a"
+                    />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="#9a9a9a"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@+id/horizontallayout_item_fragment_layout_02"
+                android:layout_marginLeft="5dp"
+                android:layout_alignTop="@+id/horizontallayout_item_fragment_layout_02"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="限量"
+                    android:textColor="#9a9a9a"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="#ce2538"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="份"
+                    android:textColor="#9a9a9a"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="免费试用"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="12sp"
+            android:layout_below="@+id/horizontallayout_item_fragment_laouts"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/horizontallayout_item_fragment_textview_shape"
+            android:textColor="@color/white"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img_goods"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/mianmo_img" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/img_goods"
+            android:background="#BBBBBB"></View>
+
+        <TextView
+            android:id="@+id/tv_goods_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_goods"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="正品韩国品驰长效补水保湿能量面馍馍"
+            android:textColor="#606060"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_goods"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_goods_message"
+            android:text="包邮"
+            android:textColor="#9F9F9F"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/goods_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_goods_message"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="商品货号:"
+            android:textColor="#9F9F9F"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_goods_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_goods_message"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/goods_num"
+            android:text="BNN015012"
+            android:textColor="#9F9F9F"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_chandi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_goods_message"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_goods_num"
+            android:text="产地:"
+            android:textColor="#9F9F9F"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_goods_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_goods_message"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_chandi"
+            android:text="韩国/中国"
+            android:textColor="#9F9F9F"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_jifenjia_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_goods_address"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="积分价¥"
+            android:textColor="#C40327"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_jifenjia_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_goods_address"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_jifenjia_goods"
+            android:text="8908:00"
+            android:textColor="#C40327"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/img_jifen"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_below="@id/tv_goods_address"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/tv_jifenjia_num"
+            android:src="@mipmap/jifen" />
+
+        <TextView
+            android:id="@+id/tv_jifen_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_goods_address"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_jifen"
+            android:background="#C0011E"
+            android:text="5000"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_jifendikou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_goods_address"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_jifen_num"
+            android:text="积分抵扣"
+            android:textColor="#C0011E"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_mony_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_goods_address"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_jifendikou"
+            android:background="#C0011E"
+            android:text="100"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_shangcheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jifenjia_num"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="商城价 ¥"
+            android:textColor="#989898"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_shangchengjia_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jifenjia_num"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_shangcheng"
+            android:text="9008.00"
+            android:textColor="#989898"
+            android:textSize="13sp" />
+
+
+        <CheckBox
+            android:id="@+id/jifen_check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shangchengjia_num"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/use_jifen_chexbok"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/tv_jifen1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shangchengjia_num"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/jifen_check1"
+            android:background="#C0011E"
+            android:text="1000"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_jifendikou1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shangchengjia_num"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_jifen1"
+            android:text="积分抵扣"
+            android:textColor="#C0011E"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_mony_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shangchengjia_num"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_jifendikou1"
+            android:background="#C0011E"
+            android:text="5"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_jyuan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shangchengjia_num"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_mony_num1"
+            android:text="元"
+            android:textColor="#C0011E"
+            android:textSize="13sp" />
+
+
+        //积分抵扣选择第二行
+
+        <CheckBox
+            android:id="@+id/jifen_check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jyuan1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/use_jifen_chexbok"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/tv_jifen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jyuan1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/jifen_check2"
+            android:background="#C0011E"
+            android:text="2000"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_jifendikou2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jyuan1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_jifen2"
+            android:text="积分抵扣"
+            android:textColor="#C0011E"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_mony_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jyuan1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_jifendikou2"
+            android:background="#C0011E"
+            android:text="10"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_jyuan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jyuan1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_mony_num2"
+            android:text="元"
+            android:textColor="#C0011E"
+            android:textSize="13sp" />
+
+
+        //积分抵扣选择第三行
+
+        <CheckBox
+            android:id="@+id/jifen_check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jyuan2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/use_jifen_chexbok"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/tv_jifen3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jyuan2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/jifen_check3"
+            android:background="#C0011E"
+            android:text="5000"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_jifendikou3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jyuan2"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_jifen3"
+            android:text="积分抵扣"
+            android:textColor="#C0011E"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_mony_num3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jyuan2"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_jifendikou3"
+            android:background="#C0011E"
+            android:text="100"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_jyuan3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jyuan2"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_mony_num3"
+            android:text="元"
+            android:textColor="#C0011E"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_jyuan1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="18dp"
+            android:drawableTop="@mipmap/img_fenxiang"
+            android:text="分享"
+            android:textColor="#9A9A9A"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/share_view1"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_jyuan1"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="18dp"
+            android:layout_toLeftOf="@id/tv_share"
+            android:background="#CCCCCC"></View>
+
+        <TextView
+            android:id="@+id/tv_shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jyuan1"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="18dp"
+            android:layout_toLeftOf="@id/share_view1"
+            android:drawableTop="@mipmap/img_shoucang"
+            android:text="收藏"
+            android:textColor="#9A9A9A"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

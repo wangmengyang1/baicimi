@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_margin="5dp"
+        >
+
+        
+        <ImageView
+            android:id="@+id/actuentication_adapter_imageurl"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/actuentication_image_01"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <TextView
+            android:id="@+id/actuentication_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通企业认证"
+            android:textSize="12sp"
+            android:layout_below="@+id/actuentication_adapter_imageurl"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@mipmap/register_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            ></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择付款方式"
+            android:textSize="18sp"
+            android:textColor="#5A5C67"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/weixin_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            ></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信支付"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:textColor="#5A5C67"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 推荐 "
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="140dp"
+            android:textColor="#FFFFFF"
+            android:background="#469E8E"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_marginLeft="20dp"
+        ></View>
+
+    <RelativeLayout
+        android:id="@+id/paymony_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/zhifubao_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            ></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝支付"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:textColor="#5A5C67"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_marginLeft="20dp"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加银行卡付款"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:textColor="#5A5C67"
+            android:textSize="18sp"
+            />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/right_img"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            ></View>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_marginLeft="20dp"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户余额"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#AAAAAA"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额不足"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#AAAAAA"
+            android:textSize="15sp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_marginLeft="20dp"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户余额"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#AAAAAA"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="额度不足，请先充值到余额宝"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+
+</LinearLayout>

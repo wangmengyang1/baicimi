@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#FFFFFF">
+
+
+    <View
+        android:id="@+id/huankuan_img1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/huankuan_img1"></View>
+
+
+    <LinearLayout
+        android:id="@+id/fenqi_goods_details"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/huankuan_img1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="订单号:0104643878"
+            android:textColor="#373737"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="古驰香水套盒...                       "
+            android:textColor="#373737"
+            android:layout_gravity="center_vertical"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-04-09  19:34:00"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_tixing"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#FFF500"
+        android:text="提醒"
+        android:textColor="#2B2B2B"
+        android:layout_marginBottom="18dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_huankuan"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/btn_tixing"
+        android:background="#CE2538"
+        android:text="还款"
+        android:layout_marginBottom="18dp"
+        android:textColor="#2B2B2B"
+        android:textSize="14sp" />
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="16年07月30日还款"
+            android:textSize="10sp"
+            android:background="#EEEEEE"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#AAAAAA"
+            />
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/btn_huankuan"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="总数¥1500"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=" 本期¥"
+                android:textColor="#555555"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/back_mony_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:layout_gravity="center_vertical"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    02/03期"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_alignParentBottom="true"
+        ></View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_alignParentTop="true"
+        ></View>
+
+</RelativeLayout>

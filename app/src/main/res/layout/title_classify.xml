@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ffffff" >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:background="#EDEEF2"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_marginLeft="60dp"
+       android:layout_marginRight="60dp"
+       android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/img_serch"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="5dp"
+           android:layout_marginTop="5dp"
+           android:src="@mipmap/action_search"
+           android:layout_centerVertical="true"
+           />
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="#EDEEF2"
+           android:layout_toRightOf="@id/img_serch"
+           android:hint="6.28品驰面膜品牌日"
+           android:textColor="#D1D1D3"
+           />
+   </RelativeLayout>
+    <ImageView 
+        android:id="@+id/iv_classify_meizhuang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/meizhuang"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"/>
+    
+
+</RelativeLayout>

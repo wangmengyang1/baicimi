@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/login_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/register_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="确认团购订单"
+                    android:textColor="#696969"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+
+            <ListView
+                android:id="@+id/tuangou_dingdan_list"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:divider="#F1F2F6"
+                android:dividerHeight="10dp"
+                android:layout_height="wrap_content"
+                ></ListView>
+
+
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_heji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计:"
+            android:textSize="15sp"
+            android:textColor="#838587"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_dingdan_all_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥153"
+            android:textSize="14sp"
+            android:textColor="#ED0219"
+            android:layout_toRightOf="@id/tv_heji"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_jifen_dikou_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠券/积分抵扣：¥15"
+            android:textColor="#A9A9A9"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/tv_dingdan_all_pay"
+            />
+
+        <TextView
+            android:id="@+id/tv_yingfu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应付:"
+            android:textSize="15sp"
+            android:textColor="#838587"
+            android:layout_below="@id/tv_jifen_dikou_num"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥138"
+            android:textSize="14sp"
+            android:textColor="#ED0219"
+            android:layout_below="@id/tv_jifen_dikou_num"
+            android:layout_toRightOf="@id/tv_yingfu"
+            android:layout_marginLeft="15dp"
+            />
+
+        <Button
+            android:id="@+id/btn_tuangou_tijiao"
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:background="#EE0119"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        >
+
+        <ImageView
+            android:id="@+id/popularity_view_adapter_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/qiyueju_img"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/popularity_view_adapter_lible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="官方授权 自然堂补水保湿"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:id="@+id/popularity_view_adapter_newmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥39"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_below="@+id/popularity_view_adapter_lible"
+                />
+            <TextView
+                android:id="@+id/popularity_view_adapter_oldmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥100"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/popularity_view_adapter_newmoney"
+                android:layout_alignBottom="@+id/popularity_view_adapter_newmoney"
+                android:layout_marginLeft="10dp"
+                />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:background="@color/gray2"
+                android:layout_alignTop="@+id/popularity_view_adapter_oldmoney"
+                android:layout_alignLeft="@+id/popularity_view_adapter_oldmoney"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:id="@+id/popularity_view_adapter_usershopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15649人购买"
+                android:layout_below="@+id/popularity_view_adapter_newmoney"
+                />
+
+            <ImageView
+                android:id="@+id/popularity_view_adapter_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gouwudai_img"
+                android:layout_below="@+id/popularity_view_adapter_lible"
+                android:layout_alignRight="@+id/popularity_view_adapter_lible"
+                android:layout_marginTop="5dp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

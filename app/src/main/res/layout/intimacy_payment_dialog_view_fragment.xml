@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#00000000"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#00000000"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            >
+
+
+
+            <LinearLayout
+                android:id="@+id/intimacy_payment_dialog_view_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_below="@+id/intimacy_payment_dialog_view_image"
+
+                android:paddingTop="20dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/intimacy_payment_dialog_view_fragment_layout_shape"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户张三请求您与他开通亲密付"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/intimacy_payment_dialog_view_fragment_consent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="同意"
+                        android:gravity="center"
+                        android:background="@drawable/intimacy_payment_dialog_textview_shape"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/intimacy_payment_dialog_view_fragment_more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="了解亲密付"
+                        android:gravity="center"
+                        android:background="@drawable/intimacy_payment_dialog_textview_shape_02"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/intimacy_payment_dialog_view_image"
+                android:layout_width="52dp"
+                android:layout_height="47dp"
+                android:src="@drawable/intimacy_payment_home_page_image_05"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

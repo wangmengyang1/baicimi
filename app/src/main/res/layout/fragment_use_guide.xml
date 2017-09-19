@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@mipmap/register_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用指南"
+            android:textSize="16sp"
+            android:textColor="#131313"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="60dp"
+            android:background="@mipmap/use_guide1"
+            ></View>
+        <View
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/use_guide2"
+            ></View>
+        <View
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/use_guide3"
+            ></View>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="115dp"
+            android:background="@mipmap/use_guide4"
+            ></View>
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/use_guide5"
+            ></View>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=".湿手湿脸的情况下使用"
+        android:textSize="14sp"
+        android:textColor="#242424"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=".取1-2粒如豌豆大小的量、打湿的脸上进行按摩，再以温水彻底洗净；"
+        android:textSize="14sp"
+        android:textColor="#242424"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=".眼部建议使用专用的眼部卸妆液"
+        android:textSize="14sp"
+        android:textColor="#242424"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+</LinearLayout>

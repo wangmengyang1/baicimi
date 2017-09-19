@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#E8E8E8"
+    android:layout_marginTop="5dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/img_goods_shaixuan"
+            android:layout_width="135dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/changxiaore"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_shaixuan_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/img_goods_shaixuan"
+            android:text="湿美白蚕丝面膜贴女没..."
+            android:textColor="#7C7C7C"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shaixuan_goods_name"
+            android:layout_centerHorizontal="true"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/tv_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                >
+
+
+                <ImageView
+                    android:id="@+id/img_jifen"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@mipmap/jinbi" />
+
+
+                <TextView
+                    android:id="@+id/tv_jifen_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/img_jifen"
+                    android:background="#878787"
+                    android:text="5000"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_jifendikou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="抵扣"
+                    android:background="#878787"
+                    android:textSize="10sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_toRightOf="@id/tv_jifen_num"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_mony_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_jifendikou"
+                    android:background="#878787"
+                    android:text="100"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textSize="10sp"
+                    android:textColor="#FFFFFF"
+                    android:background="#878787"
+                    android:layout_toRightOf="@id/tv_mony_num"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/tv_layout_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/tv_jifenjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分价 ¥"
+                    android:textSize="11sp"
+                    android:textColor="#7C7C7C"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_jifenjia_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8908.00"
+                    android:textSize="11sp"
+                    android:textColor="#7C7C7C"
+                    android:layout_toRightOf="@id/tv_jifenjia"
+                    android:layout_alignTop="@id/tv_jifenjia"
+                    android:layout_marginLeft="5dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tv_layout_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_layout_01"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/tv_shangcheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商城价 ¥"
+                    android:textSize="11sp"
+                    android:textColor="#7C7C7C"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_shangchengjia_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9008.00"
+                    android:textSize="11sp"
+                    android:textColor="#7C7C7C"
+                    android:layout_toRightOf="@id/tv_shangcheng"
+                    android:layout_alignTop="@id/tv_shangcheng"
+                    android:layout_marginLeft="5dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_layout_02"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/fukuan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="892541人购买"
+                    android:textSize="10sp"
+                    android:textColor="#989898"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+                <!--<TextView
+                    android:id="@+id/tv_baoyou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="包邮"
+                    android:layout_toRightOf="@id/fukuan_num"
+                    android:layout_alignTop="@id/fukuan_num"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="10sp"
+                    />-->
+
+                <LinearLayout
+                    android:id="@+id/fragment_shaixuan_gv_item_layout_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="2dp"
+                    >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        android:id="@+id/fragment_shaixuan_gv_item_shoping_image"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/shoping_package_gral"
+                        android:layout_toRightOf="@id/fukuan_num"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/check_one_fragment_listview_adapter_userimage"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/check_one_fragment_listview_image_03"
+                    />
+
+                <TextView
+                    android:id="@+id/check_one_fragment_listview_adapter_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="逗比就是你"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/check_one_fragment_listview_adapter_userimage"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    />
+
+                <TextView
+                    android:id="@+id/check_one_fragment_listview_adapter_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今天 16:20"
+                    android:textSize="13sp"
+                    android:textColor="#6d6d6d"
+                    android:layout_below="@+id/check_one_fragment_listview_adapter_username"
+                    android:layout_alignLeft="@+id/check_one_fragment_listview_adapter_username"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/check_one_fragment_listview_adapter_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="太好看了，但还是没有我的小妹仙女好看...小妹仙女最好看了，这件产品怎么这么丑啊"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/check_one_fragment_listview_adapter_userimage"
+                    android:layout_marginTop="15dp"
+                    android:lineSpacingExtra= "5dp"
+                    />
+
+                <GridView
+                    android:id="@+id/check_one_fragment_listview_adapter_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"
+                    android:layout_below="@+id/check_one_fragment_listview_adapter_content"
+                    android:layout_marginTop="20dp"
+                    android:verticalSpacing="8dp"
+                    ></GridView>
+
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/check_one_fragment_listview_image_01"
+                            />
+
+                        <TextView
+                            android:id="@+id/check_one_fragment_listview_adapter_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="@color/black"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/check_one_fragment_listview_image_05"
+                            />
+
+                        <TextView
+                            android:id="@+id/check_one_fragment_listview_adapter_sharknumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="122"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="@color/black"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/check_one_fragment_listview_image_04"
+                            />
+
+                        <TextView
+                            android:id="@+id/check_one_fragment_listview_adapter_likenumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="847"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/black"
+
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

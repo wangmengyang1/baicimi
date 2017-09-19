@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/user_center_home_page_second_adapter_imageurl"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:src="@drawable/user_integral_gridview_item_image_37"
+            android:layout_centerHorizontal="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9f9f9"
+            android:layout_below="@+id/user_center_home_page_second_adapter_imageurl"
+            />
+
+        <TextView
+            android:id="@+id/user_center_home_page_second_adapter_lible"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="官方授权 自然堂乐园补水保湿面膜"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_below="@+id/user_center_home_page_second_adapter_imageurl"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/user_center_home_page_second_adapter_newmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥39"
+            android:textSize="18sp"
+            android:textColor="#ff3d09"
+            android:layout_below="@+id/user_center_home_page_second_adapter_lible"
+            android:layout_marginTop="8dp"
+            android:layout_alignLeft="@+id/user_center_home_page_second_adapter_lible"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/user_center_home_page_second_adapter_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_center_home_page_second_adapter_newmoney"
+            android:layout_alignBottom="@+id/user_center_home_page_second_adapter_newmoney"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/user_center_home_page_second_adapter_oldmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥100"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:background="#969696"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_center_home_page_second_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="54543人购买"
+            android:textSize="12sp"
+            android:layout_below="@+id/user_center_home_page_second_adapter_layout"
+            android:layout_alignLeft="@+id/user_center_home_page_second_adapter_lible"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/check_one_fragment_gridview_adapter_imageurl"
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:src="@drawable/check_one_fragment_listview_image_02"
+            />
+    </RelativeLayout>
+    
+</LinearLayout>

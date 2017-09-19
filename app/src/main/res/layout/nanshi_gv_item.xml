@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#E8E8E8"
+    android:layout_marginTop="5dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:id="@+id/img_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/nanshi_img"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/img_goods"
+            android:text="官方授权 自然堂乐园补水保湿"
+            android:textColor="#7C7C7C"
+            android:textSize="12sp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_buy_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="892541人购买"
+            android:textSize="13sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FE3E5C"
+            android:layout_below="@id/tv_message"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+
+        <ImageView
+            android:id="@+id/tv_baoyou"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tv_message"
+            android:layout_toRightOf="@id/tv_buy_num"
+            android:src="@mipmap/gouwudai_img"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="12sp"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#DDDDDD"
+            ></View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DDDDDD"
+            ></View>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

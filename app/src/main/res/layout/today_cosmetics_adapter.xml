@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+        
+        <ImageView
+            android:id="@+id/today_cosmetics_adapter_imageurl"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/today_cosmetics_adapter_image_01"
+            />
+
+        <TextView
+            android:id="@+id/today_cosmetics_adapter_discountsPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分价：¥159.00"
+            android:textSize="12sp"
+            android:textColor="@color/red"
+            android:layout_toRightOf="@+id/today_cosmetics_adapter_imageurl"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/today_cosmetics_adapter_marketPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商城价：¥259.00"
+            android:textSize="12sp"
+            android:textColor="#66656d"
+            android:layout_toRightOf="@+id/today_cosmetics_adapter_discountsPrice"
+            android:layout_marginLeft="8dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/today_cosmetics_adapter_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/today_cosmetics_adapter_imageurl"
+            android:layout_below="@+id/today_cosmetics_adapter_discountsPrice"
+            android:layout_alignLeft="@+id/today_cosmetics_adapter_discountsPrice"
+            android:layout_marginTop="8dp"
+            >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/today_cosmetics_adapter_image_02"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用500积分抵扣100元"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@color/red"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/today_cosmetics_adapter_content"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="澳雅婷蜗牛原液6件套补水护肤套装洁净系列"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_below="@+id/today_cosmetics_adapter_layout"
+            android:layout_alignLeft="@+id/today_cosmetics_adapter_layout"
+            android:layout_marginTop="4dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/today_cosmetics_adapter_layout_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/today_cosmetics_adapter_content"
+            android:layout_alignLeft="@+id/today_cosmetics_adapter_content"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/message_image_black"
+                />
+
+            <TextView
+                android:id="@+id/today_cosmetics_adapter_evaluate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="259"
+                android:textSize="12sp"
+                android:textColor="#5467ac"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="好评度："
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/today_cosmetics_adapter_goodreputation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="97%"
+                android:textColor="@color/red"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="售出："
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/today_cosmetics_adapter_salesVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="98120"
+                android:textColor="@color/red"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/today_cosmetics_adapter_layout_02"
+            android:layout_alignLeft="@+id/today_cosmetics_adapter_layout_02"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/today_cosmetics_adapter_number_shape"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/today_cosmetics_adapter_subtract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mins_image_black"
+                    android:background="#f3f3f3"
+                    android:padding="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/today_cosmetics_adapter_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+
+
+                    />
+
+                <ImageView
+                    android:id="@+id/today_cosmetics_adapter_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_add_black"
+                    android:background="#f3f3f3"
+                    android:padding="3dp"
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/today_cosmetics_adapter_shopcup"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/today_cosmetics_adapter_image_03"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/today_cosmetics_adapter_immediatelyshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即购买"
+                android:textColor="@color/white"
+                android:background="@color/red"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

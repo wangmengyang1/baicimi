@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/register_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流详情"
+            android:textSize="17sp"
+            android:textColor="#5B5B5C"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_gouwuche_more"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/wuliu_img"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/wuliu_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_wuliuzhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流状态"
+            android:textSize="14sp"
+            android:textColor="#5B5B5C"
+            android:layout_toRightOf="@id/wuliu_img"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="13dp"
+            />
+
+        <TextView
+            android:id="@+id/yes_no_qianshou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已签收"
+            android:textSize="14sp"
+            android:textColor="#4DBD7C"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@id/tv_wuliuzhuangtai"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_kuaidi_gongsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="承运公司: 申通快递"
+            android:textSize="14sp"
+            android:textColor="#C6C6C6"
+            android:layout_below="@id/yes_no_qianshou"
+            android:layout_toRightOf="@id/wuliu_img"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_kuaidi_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运单编号: 3311535089865"
+            android:textSize="14sp"
+            android:textColor="#C6C6C6"
+            android:layout_below="@id/tv_kuaidi_gongsi"
+            android:layout_toRightOf="@id/wuliu_img"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:id="@+id/tv_guanfang_phone_numb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="官方电话:"
+            android:textSize="14sp"
+            android:textColor="#C6C6C6"
+            android:layout_below="@id/tv_kuaidi_num"
+            android:layout_toRightOf="@id/wuliu_img"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/guanfang_phone_numb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="95543"
+            android:textSize="14sp"
+            android:textColor="#C6C6C6"
+            android:layout_below="@id/tv_kuaidi_num"
+            android:layout_toRightOf="@id/tv_guanfang_phone_numb"
+            android:layout_marginLeft="3sp"
+            android:layout_marginTop="8dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#EEEEEE"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/tigong_img"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tigong_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_benshuju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本数据由"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tigong_img"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_shijuyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="菜鸟裹裹"
+            android:textSize="14sp"
+            android:textColor="#5BABF1"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_benshuju"
+            />
+
+        <TextView
+            android:id="@+id/tv_tigong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提供"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_shijuyuan"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/right_img"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+    <com.baicimi.view.WuliuView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        />
+
+    <com.baicimi.view.WuliuViewone
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        />
+
+    <com.baicimi.view.WuliuViewtow
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        />
+    <com.baicimi.view.WuliuViewThree
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

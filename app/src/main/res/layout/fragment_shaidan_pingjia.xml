@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/register_back"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="晒单评价"
+            android:textColor="#4F4F51"
+            android:layout_centerInParent="true"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_tijiao_pingjia"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textSize="14sp"
+            android:textColor="#F45758"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        ></View>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/pingfen_goods_img"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/pingfen_goods"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_pingfen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评分"
+            android:textColor="#565658"
+            android:layout_toRightOf="@id/pingfen_goods_img"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/goods_pingjia_che1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/pingjia_xingxing_chexbok"
+            android:button="@null"
+            android:checked="true"
+            android:layout_toRightOf="@id/pingfen_goods_img"
+            android:layout_below="@id/tv_pingfen"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/goods_pingjia_che2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/pingjia_xingxing_chexbok"
+            android:button="@null"
+            android:checked="true"
+            android:layout_toRightOf="@id/goods_pingjia_che1"
+            android:layout_below="@id/tv_pingfen"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/goods_pingjia_che3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/pingjia_xingxing_chexbok"
+            android:button="@null"
+            android:checked="true"
+            android:layout_toRightOf="@id/goods_pingjia_che2"
+            android:layout_below="@id/tv_pingfen"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/goods_pingjia_che4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/pingjia_xingxing_chexbok"
+            android:button="@null"
+            android:checked="true"
+            android:layout_toRightOf="@id/goods_pingjia_che3"
+            android:layout_below="@id/tv_pingfen"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/goods_pingjia_che5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/pingjia_xingxing_chexbok"
+            android:button="@null"
+            android:checked="true"
+            android:layout_toRightOf="@id/goods_pingjia_che4"
+            android:layout_below="@id/tv_pingfen"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        ></View>
+
+        
+        <EditText
+            android:id="@+id/shaidan_pingjia_et"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="评价大于20元的商品超过十个字就有机会获得积分~"
+            android:textSize="13sp"
+            android:background="#ffffff"
+            android:gravity="top"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textColor="#AAAAAA"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:background="@mipmap/shaidan_img"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/img_pingjia"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@mipmap/img_pingjia"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加晒单图片"
+                    android:textSize="13sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/img_pingjia"
+                    android:textColor="#FE4C4C"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="10dp"
+                ></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <CheckBox
+                    android:id="@+id/nimi_pingjia_che"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/gouwuche_list_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_nimi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="匿名评价"
+                    android:textSize="12sp"
+                    android:textColor="#646464"
+                    android:layout_toRightOf="@id/nimi_pingjia_che"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/tongbu_che"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/gouwuche_list_chexbok"
+                    android:button="@null"
+                    android:layout_toRightOf="@id/tv_nimi"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tongbu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="同步发布到文章"
+                    android:textSize="12sp"
+                    android:textColor="#646464"
+                    android:layout_toRightOf="@id/tongbu_che"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F1F2F5"
+                ></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:id="@+id/wuliu_che_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/wuliu_che_img"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="物流服务评价"
+                    android:textSize="14sp"
+                    android:textColor="#646464"
+                    android:layout_toRightOf="@id/wuliu_che_img"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="满意请给5星哦"
+                    android:textColor="#A1A3A5"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:textSize="13sp"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                ></View>
+
+            //商品包装评价星级
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商品包装"
+                    android:textSize="14sp"
+                    android:textColor="#646464"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    />
+
+
+                <CheckBox
+                    android:id="@+id/baozhuang_pingjia_che1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/baozhuang_pingjia_che2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/baozhuang_pingjia_che1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <CheckBox
+                    android:id="@+id/baozhuang_pingjia_che3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/baozhuang_pingjia_che2"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/baozhuang_pingjia_che4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/baozhuang_pingjia_che3"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/baozhuang_pingjia_che5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/baozhuang_pingjia_che4"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+            </RelativeLayout>
+
+            //送货速度评价星级
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="送货速度"
+                    android:textSize="14sp"
+                    android:textColor="#646464"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    />
+
+
+                <CheckBox
+                    android:id="@+id/songhuosudu_pingjia_che1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/songhuosudu_pingjia_che2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/songhuosudu_pingjia_che1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <CheckBox
+                    android:id="@+id/songhuosudu_pingjia_che3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/songhuosudu_pingjia_che2"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/songhuosudu_pingjia_che4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/songhuosudu_pingjia_che3"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/songhuosudu_pingjia_che5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/songhuosudu_pingjia_che4"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+            </RelativeLayout>
+
+            //配送员服务态度评价星级
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配送员服务态度"
+                    android:textSize="14sp"
+                    android:textColor="#646464"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    />
+
+
+                <CheckBox
+                    android:id="@+id/taidu_pingjia_che1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/taidu_pingjia_che2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/taidu_pingjia_che1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <CheckBox
+                    android:id="@+id/taidu_pingjia_che3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/taidu_pingjia_che2"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/taidu_pingjia_che4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/taidu_pingjia_che3"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/taidu_pingjia_che5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/pingjia_xingxing_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/taidu_pingjia_che4"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#F1F1F5"
+                ></RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

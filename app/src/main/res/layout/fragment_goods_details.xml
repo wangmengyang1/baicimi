@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/goods_re"
+    android:background="#ffffff"
+    >
+
+
+    <com.baicimi.view.MyScrollView
+        android:id="@+id/myscro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rr1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/login_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/register_back"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <com.baicimi.ui.MyPagerSlidingTabStrip
+                    android:id="@+id/goods_details_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_toRightOf="@id/login_back"
+                    android:layout_marginRight="80dp"
+                    android:layout_centerHorizontal="true"
+                    app:pstsDividerColor="#00ffffff"
+                    app:pstsIndicatorColor="#D93636"
+                    app:pstsIndicatorHeight="2dp"
+                    app:pstsShouldExpand="true"
+                    app:pstsTabSelectTextColor="@color/common_text_tab"
+                    app:pstsTabSelectTextSize="12sp"
+                    app:pstsTabTextSize="18sp"></com.baicimi.ui.MyPagerSlidingTabStrip>
+
+
+                <ImageView
+                    android:id="@+id/img_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/gengduoanniu"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_gouwuche_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@mipmap/img_gouwuche"
+                    android:layout_toLeftOf="@id/img_more"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="-1dp"
+                android:background="#EEEEEE"
+                ></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rr1"
+                android:layout_marginTop="5dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="460dp" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_goods_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.baicimi.view.MyScrollView>
+
+    <include
+        android:id="@+id/goods_buy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/gouwuche_buttom" />
+
+</RelativeLayout>

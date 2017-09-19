@@ -1,0 +1,348 @@
+package com.baicimi.fragments;
+
+import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.support.v4.app.FragmentActivity;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.baicimi.R;
+import com.baicimi.adapter.CheckOneFragmentListViewAdapter;
+import com.baicimi.base.BaseFragment;
+import com.baicimi.entity.CheckOneFragmentEntry;
+import com.baicimi.image.GlideImageLoader;
+import com.baicimi.ui.ShareModel;
+import com.baicimi.ui.SharePopupWindow;
+import com.bumptech.glide.Glide;
+import com.youth.banner.Banner;
+import com.youth.banner.BannerConfig;
+import com.youth.banner.Transformer;
+import com.youth.banner.listener.OnBannerListener;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import cn.sharesdk.framework.ShareSDK;
+
+/**
+ * Created by tan on 2016/9/5.
+ * 详情页
+ */
+public class CheckTwoFragment extends BaseFragment {
+    private Button btn_mmesage, btn_wancheng;
+    private RelativeLayout re_share, re_fuwu,re_yingyang,re_guide;
+    private PopupWindow window_xinxi, window_share, window_fuwu;
+
+
+    private String text = "电动剃须刀";
+    private String imageurl = "http://h.hiphotos.baidu.com/image/pic/item/ac4bd11373f082028dc9b2a749fbfbedaa641bca.jpg";
+    private String title = "拍拍搜";
+    private String url = "www.baidu.com";
+
+    private SharePopupWindow share;
+
+
+    //头部轮播图集合
+    List<Integer> images = new ArrayList<>();
+    List<String> titles = new ArrayList<>();
+    private View view_window;
+
+    private ListView listView;
+    private List<CheckOneFragmentEntry> list = new ArrayList<>();
+    private CheckOneFragmentListViewAdapter adapter;
+    private TextView message_tv , commect_tv;
+    private LinearLayout layout_02;
+    private ImageView back;
+    private TextView back_tv;
+    private ImageView imageView;
+
+
+
+    @Override
+    protected View initView(LayoutInflater inflater, ViewGroup container) {
+        view = inflater.inflate(R.layout.check_two_item, container, false);
+        btn_mmesage = (Button) view.findViewById(R.id.btn_message);
+        btn_mmesage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showPopwindowmessage();
+            }
+        });
+        imageView = (ImageView) view.findViewById(R.id.check_two_item_imageview);
+        Glide.with(getContext())
+                .load(R.mipmap.img_details2)
+                .into(imageView);
+
+        return view;
+    }
+
+
+    /**
+     * 显示信息窗口
+     */
+    private void showPopwindowmessage() {
+        // 利用layoutInflater获得View
+        LayoutInflater inflater = LayoutInflater.from(getActivity());
+        view_window = inflater.inflate(R.layout.message_diolog, null);
+
+
+
+
+        back = (ImageView) view_window.findViewById(R.id.back_distributor_putchase_optionss);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                closePopupXinxiWindow();
+            }
+        });
+
+        //头部轮播方法
+        initBanner();
+
+        //评论布局填充
+        initCommentAdd();
+
+        //在评论和信息之间进行切换
+        initRelayout();
+
+
+
+
+        // 下面是两种方法得到宽度和高度 getWindow().getDecorView().getWidth()
+        window_xinxi = new PopupWindow(view_window,
+                WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.MATCH_PARENT);
+
+        //调用父亲变暗的方法
+        changeWindowAlpha(getActivity(), 0.5f);
+
+        // 设置popWindow弹出窗体可点击，这句话必须添加，并且是true
+        window_xinxi.setFocusable(true);
+        window_xinxi.setTouchable(true);
+
+        // 必须要给调用这个方法，否则点击popWindow以外部分，popWindow不会消失
+        window_xinxi.setBackgroundDrawable(new BitmapDrawable());
+
+//        // 实例化一个ColorDrawable颜色为半透明
+//        ColorDrawable dw = new ColorDrawable(0xFFffffff);
+//        window.setBackgroundDrawable(dw);
+//        //在参照的View控件下方显示
+//        window.showAsDropDown(MainActivity.this.findViewById(R.id.start));
+
+        // 设置popWindow的显示和消失动画
+        window_xinxi.setAnimationStyle(R.style.AnimBottom);
+        //设置在底部显示
+        window_xinxi.showAtLocation(view.findViewById(R.id.btn_message),
+                Gravity.CENTER, 0, 0);
+
+        /**
+         * *popWindow消失监听方法
+         */
+        window_xinxi.setOnDismissListener(new PopupWindow.OnDismissListener() {
+            @Override
+            public void onDismiss() {
+                changeWindowAlpha(getActivity(), 1.0f);
+            }
+        });
+
+        //点击分享
+        ShareSDK.initSDK(getContext());
+        re_share = (RelativeLayout) view_window.findViewById(R.id.re_share_ss);
+        re_share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                share = new SharePopupWindow(getActivity());
+//                share.setPlatformActionListener(MainActivity.this);
+                ShareModel model = new ShareModel();
+                model.setImageUrl(imageurl);
+                model.setText(text);
+                model.setTitle(title);
+                model.setUrl(url);
+                share.initShareParams(model);
+                share.showShareWindow();
+
+                // 显示窗口 (设置layout在PopupWindow中显示的位置)
+                share.showAtLocation(view.findViewById(R.id.btn_message),
+                        Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
+                closePopupXinxiWindow();
+            }
+        });
+
+        re_fuwu = (RelativeLayout) view_window.findViewById(R.id.re_fuwu_ss);
+        re_fuwu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                closePopupXinxiWindow();
+                startFragment(new KeHuFuWuFragment(),null);
+            }
+        });
+
+        re_yingyang = (RelativeLayout) view_window.findViewById(R.id.re_yingyang_ss);
+        re_yingyang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                closePopupXinxiWindow();
+                startFragment(new BaoYangFragment(),null);
+            }
+        });
+
+        re_guide = (RelativeLayout) view_window.findViewById(R.id.re_chicun_ss);
+        re_guide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                closePopupXinxiWindow();
+                startFragment(new UseGUideFragment(),null);
+            }
+        });
+
+    }
+
+
+
+    //头部轮播方法
+    private void initBanner() {
+        titles.clear();
+        images.clear();
+        for(int i = 0 ; i < 3 ; i++){
+
+            titles.add(new String(""));
+            images.add(R.drawable.home_page_brand_fragment_image_21);
+        }
+
+
+        //头部轮播图片
+        Banner banner = (Banner)view_window.findViewById(R.id.message_diolog_banner);
+        //设置banner样式
+        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE);
+        //设置图片加载器
+        banner.setImageLoader(new GlideImageLoader());
+        //设置图片集合
+        banner.setImages(images);
+        //设置banner动画效果
+        banner.setBannerAnimation(Transformer.DepthPage);
+        //设置标题集合（当banner样式有显示title时）
+        banner.setBannerTitles(titles);
+        //设置自动轮播，默认为true
+        banner.isAutoPlay(true);
+        //设置轮播时间
+        banner.setDelayTime(3500);
+        //设置指示器位置（当banner模式中有指示器时）
+        banner.setIndicatorGravity(BannerConfig.CENTER);
+        //banner设置方法全部调用完毕时最后调用
+        banner.start();
+
+        banner.setOnBannerListener(new OnBannerListener() {
+            @Override
+            public void OnBannerClick(int position) {
+                startFragment(new SerchGoodsFragment(),null);
+            }
+        });
+    }
+
+
+    //评论布局填充
+    private void initCommentAdd() {
+        listView = (ListView) view_window.findViewById(R.id.message_giolog_listview);
+        list.clear();
+        list.add(new CheckOneFragmentEntry(R.drawable.check_one_fragment_listview_image_03 , new String("逗比就是你") , new String("今天 19:26") ,new String("太好看了，但还是没有我的小妹仙女好看...小妹仙女最好看了，这件产品怎么这么丑啊") , new String("6") , new String("125") , new String("2659") , R.drawable.check_one_fragment_listview_image_02));
+        adapter = new CheckOneFragmentListViewAdapter(getContext() , list);
+        listView.setAdapter(adapter);
+    }
+
+
+
+    private void initRelayout() {
+        message_tv = (TextView) view_window.findViewById(R.id.message_diolog_message_tectview);
+        commect_tv = (TextView) view_window.findViewById(R.id.message_diolog_message_commecy);
+        layout_02 = (LinearLayout) view_window.findViewById(R.id.message_diolot_layout_02);
+        message_tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                layout_02.setVisibility(View.VISIBLE);
+                listView.setVisibility(View.GONE);
+                message_tv.setTextColor(Color.WHITE);
+                message_tv.setBackgroundColor(Color.parseColor("#fe0036"));
+                commect_tv.setTextColor(Color.BLACK);
+                commect_tv.setBackgroundColor(Color.parseColor("#eaeaea"));
+            }
+        });
+
+        commect_tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                layout_02.setVisibility(View.GONE);
+                listView.setVisibility(View.VISIBLE);
+                commect_tv.setTextColor(Color.WHITE);
+                commect_tv.setBackgroundColor(Color.parseColor("#fe0036"));
+                message_tv.setTextColor(Color.BLACK);
+                message_tv.setBackgroundColor(Color.parseColor("#eaeaea"));
+
+            }
+        });
+
+    }
+
+
+
+
+    /**
+     * 改变popwindow背景的方法
+     *
+     * @param alpha
+     */
+    private static void changeWindowAlpha(FragmentActivity activity, float alpha) {
+        WindowManager.LayoutParams params = activity.getWindow().getAttributes();
+        params.alpha = alpha;
+        activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+        activity.getWindow().setAttributes(params);
+    }
+
+
+    /**
+     * 关闭信息窗口
+     */
+    private void closePopupXinxiWindow() {
+        if (window_xinxi != null && window_xinxi.isShowing()) {
+            System.out.println("88888888888888888888");
+            window_xinxi.dismiss();
+            window_xinxi = null;
+            WindowManager.LayoutParams params = getActivity().getWindow().getAttributes();
+            params.alpha = 1.0f;
+            getActivity().getWindow().setAttributes(params);
+            System.out.println("99999999999999999999");
+        }
+    }
+
+    /**
+     * 关闭分享窗口
+     */
+    private void closePopupShareWindow() {
+        if (window_share != null && window_share.isShowing()) {
+            System.out.println("88888888888888888888");
+            window_share.dismiss();
+            window_share = null;
+            WindowManager.LayoutParams params = getActivity().getWindow().getAttributes();
+            params.alpha = 1.0f;
+            getActivity().getWindow().setAttributes(params);
+            System.out.println("99999999999999999999");
+        }
+    }
+
+
+
+    @Override
+    protected void initData() {
+
+    }
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分期支付"
+            android:textSize="17sp"
+            android:textColor="#5B5C68"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/clouse_fenqi"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/guanbi_use_jifen"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/che_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/use_jifen_chexbok"
+            android:button="@null"
+            android:checked="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品价格大于100.00元才能使用分期"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#5B5C68"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/che_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/use_jifen_chexbok"
+            android:button="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品价格大于100.00元才能使用分期"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#5B5C68"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/che_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/use_jifen_chexbok"
+            android:button="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品价格大于100.00元才能使用分期"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#5B5C68"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_do_fenqi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#D02022"
+        android:layout_marginTop="60dp"
+        android:text="确定"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        />
+
+
+</LinearLayout>

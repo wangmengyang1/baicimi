@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/user_img_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/user_img_head"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="花***2"
+            android:textSize="14sp"
+            android:textColor="#838383"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/user_img_head"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/pinglun_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-07-14"
+            android:textSize="14sp"
+            android:textColor="#838383"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        ></View>
+
+    <TextView
+        android:id="@+id/tv_pinglun_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="送货很快，服务态度很好，效果不错"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="#2E2E2E"
+        />
+
+    <TextView
+        android:id="@+id/pinggu_goods_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="润白狂想曲补水美白25片:1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="13sp"
+        android:textColor="#B8B8B8"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/goods_buy_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买日期:2016-05-16"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:textColor="#B8B8B8"
+            />
+
+        <TextView
+            android:id="@+id/pinglun_contents_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="13sp"
+            android:textColor="#2E2E2E"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/img_pinglun_nums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_pinglun_nums"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/pinglun_contents_num"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/pinglun_zan_nums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="13sp"
+            android:textColor="#2E2E2E"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_pinglun_nums"
+            android:layout_marginRight="25dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_pinglun_zans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_pinglun_zans"
+            android:layout_toLeftOf="@id/pinglun_zan_nums"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="01/03期"
+        android:textColor="#AAAAAA"
+        android:textSize="13sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/mony_num"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="¥1770"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16/06/30"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#AAAAAA"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15:32:45"
+            android:textSize="13sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#AAAAAA"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kafenqi_huankuan"
+        android:clickable="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="#CF263B"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还款"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还有3天"
+            android:textSize="11sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

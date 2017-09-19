@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/youhui"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+
+        <TextView
+            android:id="@+id/tv_youhuidapei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="优惠搭配"
+            android:textColor="#363636"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="13dp"
+            android:src="@mipmap/img_goods_details" />
+
+        <RelativeLayout
+            android:id="@+id/re_gouwuche"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_youhuidapei"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/img_gouwu_goods1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/img_gouwu_goods" />
+
+            <TextView
+                android:id="@+id/jia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_gouwu_goods1"
+                android:text="+"
+                android:layout_marginLeft="-50dp"
+                android:textColor="#C1C1C1"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/img_gouwu_goods2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="-45dp"
+                android:layout_toRightOf="@id/jia"
+                android:src="@mipmap/img_gouwu_goods" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_gouwuche_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re_gouwuche"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="8dp"
+            android:text="¥158"
+            android:textColor="#272727"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re_gouwuche"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="8dp"
+            android:text="¥158"
+            android:textColor="#272727"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

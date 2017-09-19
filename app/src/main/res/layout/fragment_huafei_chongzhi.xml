@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <EditText
+                    android:background="#ffffff"
+                    android:id="@+id/huafei_phone_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="13759315931"
+                    android:textColor="#202020"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/img_phone_chongzhi_header" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/huafei_phone_num"
+                    android:layout_marginLeft="20dp"
+                    android:text="账户绑定号码(广东移动)" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBBB"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/huafeichongzhi_back">
+
+                    <TextView
+                        android:id="@+id/huafei_num1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="10元"
+                        android:textColor="#EA403D"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/huafei_shoujia1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/huafei_num1"
+                        android:layout_centerHorizontal="true"
+                        android:text="售价:9.98元"
+                        android:textColor="#EA403D"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/huafeichongzhi_back">
+
+                    <TextView
+                        android:id="@+id/huafei_num2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="20元"
+                        android:textColor="#EA403D"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/huafei_shoujia2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/huafei_num2"
+                        android:layout_centerHorizontal="true"
+                        android:text="售价:19.96元"
+                        android:textColor="#EA403D"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/huafeichongzhi_back">
+
+                    <TextView
+                        android:id="@+id/huafei_num3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="30元"
+                        android:textColor="#EA403D"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/huafei_shoujia3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/huafei_num3"
+                        android:layout_centerHorizontal="true"
+                        android:text="售价:29.94元"
+                        android:textColor="#EA403D"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            //话费充值第四行
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/huafeichongzhi_back">
+
+                    <TextView
+                        android:id="@+id/huafei_num4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="50元"
+                        android:textColor="#EA403D"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/huafei_shoujia4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/huafei_num4"
+                        android:layout_centerHorizontal="true"
+                        android:text="售价:49.90元"
+                        android:textColor="#EA403D"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/huafeichongzhi_back">
+
+                    <TextView
+                        android:id="@+id/huafei_num5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="100元"
+                        android:textColor="#EA403D"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/huafei_shoujia5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/huafei_num5"
+                        android:layout_centerHorizontal="true"
+                        android:text="售价:99.80元"
+                        android:textColor="#EA403D"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/huafeichongzhi_back">
+
+                    <TextView
+                        android:id="@+id/huafei_num6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="200元"
+                        android:textColor="#EA403D"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/huafei_shoujia6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/huafei_num6"
+                        android:layout_centerHorizontal="true"
+                        android:text="售价:199.60元"
+                        android:textColor="#EA403D"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            //话费充值第三行
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/huafeichongzhi_back">
+
+                    <TextView
+                        android:id="@+id/huafei_num7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="300元"
+                        android:textColor="#EA403D"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/huafei_shoujia7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/huafei_num7"
+                        android:layout_centerHorizontal="true"
+                        android:text="售价:299.40元"
+                        android:textColor="#EA403D"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/huafeichongzhi_back">
+
+                    <TextView
+                        android:id="@+id/huafei_num8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="500元"
+                        android:textColor="#EA403D"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/huafei_shoujia8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/huafei_num8"
+                        android:layout_centerHorizontal="true"
+                        android:text="售价:499.00元"
+                        android:textColor="#EA403D"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/huafei_num9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:textColor="#EA403D"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/huafei_shoujia9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/huafei_num9"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#EA403D"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_huafei_chongzhi"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="手机营业厅"
+                    android:layout_marginLeft="60dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawablePadding="-45dp"
+                    android:drawableLeft="@mipmap/shoujiyingyeting"
+                    android:textSize="14sp"
+                    android:textColor="#7E8DAF"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="center"
+                    android:layout_height="30dp"
+                    android:background="#BBBBBB"></View>
+                <TextView
+                    android:id="@+id/chongzhi_zhangdan"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawablePadding="-30dp"
+                    android:text="我的充值记录"
+                    android:drawableLeft="@mipmap/chongzhijilu"
+                    android:textSize="14sp"
+                    android:textColor="#7E8DAF"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="#D0243A"
+      >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="08月30日  10:30开抢"
+          android:textSize="15sp"
+          android:textColor="#D1D0D0"
+          android:layout_centerInParent="true"
+          />
+
+
+  </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@mipmap/bus_img"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#2A2A2E"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动感婴儿车"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="13dp"
+            android:textColor="#E8E8E8"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥1"
+                android:textColor="#B59A67"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥489"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                />
+            <View
+                android:layout_width="38dp"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="-35dp"
+                ></View>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/yuyue_shape"
+            android:layout_gravity="center_horizontal"
+            android:text="立即预约"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#B59A67"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

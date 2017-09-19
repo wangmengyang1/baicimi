@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_dinghao_numb_no_shipments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单号：5454656321"
+            android:textSize="12sp"
+            android:textColor="#A1A1A1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/right_img"
+            android:layout_toRightOf="@id/tv_dinghao_numb_no_shipments"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="买家已付款"
+            android:textSize="12sp"
+            android:textColor="#E73449"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#F0F0F0"
+        >
+
+        <ImageView
+            android:id="@+id/my_dingdan_img_no_shipments"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/changxiaore"
+            />
+
+        <TextView
+            android:id="@+id/my_dingdan_goods_message_no_shipments"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#4A4A50"
+            android:text="懒人手机支架床头桌面创意架子多功能通用配..."
+            android:layout_toRightOf="@id/my_dingdan_img_no_shipments"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/my_dingdan_goods_color_no_shipments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色:【加强版】NZJ-02白色双夹"
+            android:layout_toRightOf="@id/my_dingdan_img_no_shipments"
+            android:layout_marginLeft="10dp"
+            android:textColor="#D0D0D0"
+            android:textSize="12sp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/my_dingdan_goods_message_no_shipments"
+            />
+
+        <TextView
+            android:id="@+id/my_dingdan_goods_price_no_shipments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥124"
+            android:textSize="12sp"
+            android:textColor="#848484"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/my_dingdan_goods_num_no_shipments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X1"
+            android:textSize="12sp"
+            android:layout_below="@id/my_dingdan_goods_price_no_shipments"
+            android:textColor="#848484"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/my_dingdan_goods_allprice_no_shipments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="¥124"
+            android:textColor="#848484"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_shifu_no_shipments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实付："
+            android:textSize="14sp"
+            android:textColor="#848484"
+            android:layout_toLeftOf="@id/my_dingdan_goods_allprice_no_shipments"
+            />
+
+        <TextView
+            android:id="@+id/my_dingdan_goods_num_all_no_shipments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共1件"
+            android:textSize="14sp"
+            android:textColor="#848484"
+            android:layout_toLeftOf="@id/tv_shifu_no_shipments"
+            android:layout_marginRight="10dp"
+            />
+
+        <View
+            android:id="@+id/fragment_my_dingdan_item_view_no_shipments"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_below="@+id/my_dingdan_goods_num_all_no_shipments"
+            android:layout_marginTop="5dp"
+            ></View>
+
+        <Button
+            android:id="@+id/btn_querenshouhuo_no_shipments"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_shape"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="延长收货"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/fragment_my_dingdan_item_view_no_shipments"
+            />
+
+
+        <Button
+            android:id="@+id/btn_chakanwuliu_no_shipments"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="查看物流"
+            android:textSize="14sp"
+            android:textColor="#5F5F5F"
+            android:layout_toLeftOf="@id/btn_querenshouhuo_no_shipments"
+            android:background="@drawable/shape"
+            android:layout_below="@+id/fragment_my_dingdan_item_view_no_shipments"
+            />
+
+
+        <Button
+            android:id="@+id/btn_yanchangshouhuo_no_shipments"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:text="延长收货"
+            android:textColor="#5F5F5F"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape"
+            android:layout_toLeftOf="@id/btn_chakanwuliu_no_shipments"
+            android:layout_below="@+id/fragment_my_dingdan_item_view_no_shipments"
+            />
+
+
+        <TextView
+            android:id="@+id/fragment_my_dingdan_item_more_no_shipments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/fragment_my_dingdan_item_view_no_shipments"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            />
+
+
+        <TextView
+            android:id="@+id/fragment_my_dingdan_item_bill_no_shipments"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:background="@drawable/more_dolig"
+            android:text="开票申请"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="13sp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

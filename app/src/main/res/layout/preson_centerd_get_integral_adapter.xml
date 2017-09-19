@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/preson_centerd_get_intergral_adapter_image"
+            android:layout_width="102dp"
+            android:layout_height="124dp"
+            android:src="@drawable/preson_centered_get_integral_fragment_image_06"
+            android:layout_centerHorizontal="true"
+            />
+
+        <View
+            android:id="@+id/preson_centerd_get_intergral_adapter_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#969696"
+            android:layout_below="@+id/preson_centerd_get_intergral_adapter_image"
+            />
+
+        <TextView
+            android:id="@+id/preson_centerd_get_intergral_adapter_lible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="官方授权 自然堂官方补水保湿"
+            android:maxLines="1"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:layout_below="@+id/preson_centerd_get_intergral_adapter_view"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/preson_centerd_get_intergral_adapter_lible"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/preson_centerd_get_intergral_adapter_newmoeny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥39"
+                android:textColor="#ff3e5d"
+                android:textSize="15sp"
+                />
+
+
+            <TextView
+                android:id="@+id/preson_centerd_get_intergral_adapter_shopuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="54543人购买"
+                android:textSize="10sp"
+                android:layout_below="@+id/preson_centerd_get_intergral_adapter_newmoeny"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/preson_centerd_get_intergral_adapter_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/preson_centerd_get_intergral_adapter_newmoeny"
+                android:layout_alignBottom="@+id/preson_centerd_get_intergral_adapter_newmoeny"
+                android:layout_marginLeft="4dp"
+                >
+
+                <TextView
+                    android:id="@+id/preson_centerd_get_intergral_adapter_oldmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textSize="12sp"
+                    />
+
+               <View
+                   android:layout_width="25dp"
+                   android:layout_height="1dp"
+                   android:background="@color/black"
+                   android:layout_centerVertical="true"
+                   />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/preson_centerd_get_intergral_adapter_money"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/preson_centered_get_integral_fragment_image_12"
+                android:layout_toRightOf="@+id/preson_centerd_get_intergral_adapter_layout"
+                />
+            
+            <ImageView
+                android:id="@+id/preson_centerd_get_intergral_adapter_collect"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/preson_centered_get_integral_fragment_image_13"
+                android:layout_toRightOf="@+id/preson_centerd_get_intergral_adapter_money"
+                android:layout_marginLeft="8dp"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
