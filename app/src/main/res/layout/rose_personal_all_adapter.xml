@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/rose_personal_all_adaapter_imageurl"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/rose_personal_all_adapter_imaghe_01"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:id="@+id/rose_personal_all_adaapter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/rose_personal_all_adaapter_imageurl"
+            android:paddingLeft="15dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:background="@drawable/rose_personal_all_adapter_layout_shape"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阅读量508万"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收益5000"
+                android:textSize="12sp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论15万"
+                android:textSize="12sp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                >
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/dingzi"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14935"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/sandian_image_01"
+                android:layout_marginRight="15dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/rose_personal_all_adaapter_lible"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Olympians's dreams cut shortwhen he tirps on first hurdle"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/rose_personal_all_adaapter_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignTop="@+id/rose_personal_all_adaapter_lible"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+
+            >
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@mipmap/dingzi"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1086"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/rose_personal_all_adaapter_userimage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user_integral_gridview_item_image_41ss"
+            android:layout_below="@+id/rose_personal_all_adaapter_lible"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/rose_personal_all_adaapter_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="百事加冰"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/rose_personal_all_adaapter_userimage"
+            android:layout_alignTop="@+id/rose_personal_all_adaapter_userimage"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/rose_personal_all_adaapter_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GuangZhou,China"
+            android:textSize="11sp"
+            android:layout_below="@+id/rose_personal_all_adaapter_username"
+            android:layout_alignLeft="@+id/rose_personal_all_adaapter_username"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignBottom="@+id/rose_personal_all_adaapter_address"
+            >
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/fenxiang_image_01"
+                />
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/fenxiang_image_03"
+                android:layout_marginLeft="8dp"
+                />
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/fenxiang_image_02"
+                android:layout_marginLeft="8dp"
+                />
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/fenxiang_image_04"
+                android:layout_marginLeft="8dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

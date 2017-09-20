@@ -1,0 +1,1548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text=" @我的"
+                    android:textColor="#848484"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/che_aite"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:checked="false"
+                    android:background="@mipmap/xiangxia"
+                    android:button="@null" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:text=" @我的相关设置"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#AAAAAA"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_aite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:background="#FFFFFF"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text=" @我的" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="我可以收到哪些人的@消息" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/all_man1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所有人"
+                        android:layout_marginTop="-3dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/love_man1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我关注的人"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我将收到这些人的@提醒"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/love_man2"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所有人"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/love_man3"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我关注的人"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/no_man"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="不提醒"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_yes"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:background="#CE2538"
+                        android:text="确定"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_cansul"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:background="#D3D3D3"
+                        android:text="取消"
+                        android:textSize="20sp"
+                        android:textColor="#393939"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    ></View>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#AAAAAA"
+                ></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="70dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="评论"
+                    android:textColor="#848484"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/xiangxia" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="42dp"
+                    android:text="评论的相关设置"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#AAAAAA"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="70dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="赞"
+                    android:textColor="#848484"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/che_zan"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:checked="false"
+                    android:background="@mipmap/xiangxia"
+                    android:button="@null" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="42dp"
+                    android:text="赞的相关设置"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_zan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:background="#FFFFFF"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="赞" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="我是否接收赞消息" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/all_men1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提醒"
+                        android:layout_marginTop="-3dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/love_men1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="不提醒"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我参与的（开启后，若赞了一片文章，我将收到“关注的人”对这条文章的赞）"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/love_men2"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开启"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/love_men3"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="不开启"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_yes1"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:background="#CE2538"
+                        android:text="确定"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_cansul1"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:background="#D3D3D3"
+                        android:text="取消"
+                        android:textSize="20sp"
+                        android:textColor="#393939"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    ></View>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#AAAAAA"
+                ></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="70dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="私信"
+                    android:textColor="#848484"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/che_sixin"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:checked="false"
+                    android:background="@mipmap/xiangxia"
+                    android:button="@null" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:text="私信的相关设置"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_sixin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            android:background="#FFFFFF"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="私信" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="我可以收到哪些人的私信" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/all_mann"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:button="@null"
+                    android:background="@drawable/bg_checkbox_star"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所有人"
+                    android:layout_marginTop="-3dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/love_mann"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:background="@drawable/bg_checkbox_star"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我关注的人（非我关注人的私信请进入未关注人私信查看）"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="-3dp"
+                    android:layout_marginLeft="6dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是否接收私信提醒"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/love_mann2"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:background="@drawable/bg_checkbox_star"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提醒"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="-3dp"
+                    android:layout_marginLeft="6dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/love_mann3"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:background="@drawable/bg_checkbox_star"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不提醒"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="-3dp"
+                    android:layout_marginLeft="6dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                >
+
+                <Button
+                    android:id="@+id/btn_yes2"
+                    android:layout_width="90dp"
+                    android:layout_height="55dp"
+                    android:background="#CE2538"
+                    android:text="确定"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    />
+
+                <Button
+                    android:id="@+id/btn_cansul2"
+                    android:layout_width="90dp"
+                    android:layout_height="55dp"
+                    android:background="#D3D3D3"
+                    android:text="取消"
+                    android:textSize="20sp"
+                    android:textColor="#393939"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#AAAAAA"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="70dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="未关注人私信"
+                    android:textColor="#848484"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/che_weiguanzhu"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:checked="false"
+                    android:background="@mipmap/xiangxia"
+                    android:button="@null" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="42dp"
+                    android:text="未关注人私信的相关设置"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_weiguanzhu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:background="#FFFFFF"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="未关注人私信" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="我是否接收未关注人私信的提醒" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/tixing"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提醒"
+                        android:layout_marginTop="-3dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/butixing"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="不提醒"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_yes3"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:background="#CE2538"
+                        android:text="确定"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_cansul3"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:background="#D3D3D3"
+                        android:text="取消"
+                        android:textSize="20sp"
+                        android:textColor="#393939"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#AAAAAA"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="70dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="新粉丝"
+                    android:textColor="#848484"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/che_new"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:checked="false"
+                    android:background="@mipmap/xiangxia"
+                    android:button="@null" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="42dp"
+                    android:text="新粉丝的相关设置"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_newlove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:background="#FFFFFF"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="未关注人私信" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="我是否接收未关注人私信的提醒" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/all_love"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所有人"
+                        android:layout_marginTop="-3dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/mylove"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我关注的人"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/no_tixing"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="不提醒"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_yes4"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:background="#CE2538"
+                        android:text="确定"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_cansul4"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:background="#D3D3D3"
+                        android:text="取消"
+                        android:textSize="20sp"
+                        android:textColor="#393939"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#AAAAAA"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="70dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="幂友圈"
+                    android:textColor="#848484"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/che_mifriend"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:checked="false"
+                    android:background="@mipmap/xiangxia"
+                    android:button="@null" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="42dp"
+                    android:text="幂友圈的相关设置"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:background="#FFFFFF"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="幂友圈" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="我是否接收幂友圈的提醒" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/all_ti"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提醒"
+                        android:layout_marginTop="-3dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/noti"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="不提醒"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_yes5"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:background="#CE2538"
+                        android:text="确定"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_cansul5"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:background="#D3D3D3"
+                        android:text="取消"
+                        android:textSize="20sp"
+                        android:textColor="#393939"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#AAAAAA"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="70dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="图钉"
+                    android:textColor="#848484"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/che_tuding"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:checked="false"
+                    android:background="@mipmap/xiangxia"
+                    android:button="@null" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="42dp"
+                    android:text="图钉的相关设置"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_tuding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:background="#FFFFFF"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="图钉" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="我是否接收图钉的提醒" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/ti"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提醒"
+                        android:layout_marginTop="-3dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/buti"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/bg_checkbox_star"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="不提醒"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="6dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_yes6"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:background="#CE2538"
+                        android:text="确定"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_cansul6"
+                        android:layout_width="90dp"
+                        android:layout_height="55dp"
+                        android:background="#D3D3D3"
+                        android:text="取消"
+                        android:textSize="20sp"
+                        android:textColor="#393939"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#AAAAAA"></View>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"></View>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="精彩推荐"
+                android:textColor="#656565"
+                android:textSize="13sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginTop="8dp"
+                android:background="#AAAAAA"></View>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:background="#FFFFFF"
+                android:text="热门文章"
+                android:textColor="#656565"
+                android:textSize="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="9dp"
+                android:background="@mipmap/rose_essay2"></View>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

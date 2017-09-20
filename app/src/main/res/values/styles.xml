@@ -23,6 +23,21 @@
         <item name="android:backgroundDimEnabled">true</item>
     </style>
 
+    <!-- tabhost相关 -->
+    <style name="MMTabButtonnn">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/bg_checkbox_menusss</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+    </style>
+
+
 
     <!--自定义弹出对话框背景-->
     <style name="MeiGuiMeiShiSecondMyorder" parent="android:Theme.Dialog">

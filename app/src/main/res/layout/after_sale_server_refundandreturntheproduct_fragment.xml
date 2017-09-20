@@ -83,7 +83,7 @@
                 <Spinner
                     android:id="@+id/after_sale_server_refundandreturntheproduct_spinner"
                     android:layout_width="160dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="25dp"
                     android:layout_marginLeft="10dp"
                     android:gravity="center"
                     android:paddingTop="4dp"

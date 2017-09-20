@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@mipmap/user_0">
+
+                <ImageView
+                    android:id="@+id/user_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/head_pic" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="美妆挖宝酱"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="13dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/user_head"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_toRightOf="@id/user_name">
+
+                    <com.baici.view.CircleImageView
+                        android:id="@+id/user_vip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/user_vip" />
+
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/guanzhu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@id/user_name"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="关注"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#FFFFFF"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="14sp"
+                        android:textColor="#FFFFFF"
+                        />
+
+                    <View
+                        android:layout_width="0.8dp"
+                        android:layout_height="12dp"
+                        android:background="#FFFFFF"
+                        android:layout_marginLeft="15dp"
+                        ></View>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="粉丝"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14sp"
+                        android:textColor="#FFFFFF"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="35万"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="14sp"
+                        android:textColor="#FFFFFF"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/guanzhu"
+                    android:layout_marginTop="3dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="简介：世界上没有丑女人，只有懒女人。不要放过让自己变得更美的机会..."
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="11sp" />
+
+
+                <ImageView
+                    android:id="@+id/login_back"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:src="@mipmap/fanhui_img"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rr1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center">
+
+
+                <com.baici.ui.MyDingDanPagerSlidingTabStrip
+                    android:id="@+id/my_dingdan_ps"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    app:pstsDividerColor="#00ffffff"
+                    app:pstsIndicatorColor="#D93636"
+                    app:pstsIndicatorHeight="2dp"
+                    app:pstsShouldExpand="true"
+                    app:pstsTabSelectTextColor="@color/common_text_tab"
+                    app:pstsTabSelectTextSize="12sp"
+                    app:pstsTabTextSize="18sp"></com.baici.ui.MyDingDanPagerSlidingTabStrip>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rr1"
+                android:layout_marginTop="5dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="660dp" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_my_dingdan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+                </FrameLayout>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

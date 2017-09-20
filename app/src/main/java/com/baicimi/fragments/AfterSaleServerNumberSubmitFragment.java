@@ -35,7 +35,6 @@ public class AfterSaleServerNumberSubmitFragment extends BaseFragment implements
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.after_sale_server_number_submit , container , false);
-
         //listview布局填充
         initListView();
 

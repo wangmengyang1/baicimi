@@ -94,7 +94,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         //移动小球
         initIntegralSlideView();
 
-
     }
 
     //移动小球

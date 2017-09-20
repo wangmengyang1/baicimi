@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.baicimi.R;
@@ -48,6 +49,8 @@ public class UserCenterHomePageFragment extends BaseFragment implements View.OnC
 
     private TextView more;
 
+    private LinearLayout layout_live;
+
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -64,6 +67,9 @@ public class UserCenterHomePageFragment extends BaseFragment implements View.OnC
 
         //头部fragment布局切换
         initFragmentLayoutShow();
+
+        layout_live = (LinearLayout) view.findViewById(R.id.user_center_home_page_fragment_live);
+        layout_live.setOnClickListener(this);
 
         return view;
     }
@@ -248,6 +254,9 @@ public class UserCenterHomePageFragment extends BaseFragment implements View.OnC
 //                startFragment(new UserCenterHomePageFragmentMore());
 ////                startFragment(new UserCenterHomePageFragmentUserIndent());
 //                break;
+            case R.id.user_center_home_page_fragment_live:
+                startFragment(new RosePerSonalFragment());
+                break;
         }
     }
 }
