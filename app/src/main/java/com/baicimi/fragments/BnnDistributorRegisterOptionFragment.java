@@ -124,8 +124,11 @@ public class BnnDistributorRegisterOptionFragment extends BaseFragment {
         data_list = new ArrayList<String>();
         data_list.add("请选择");
         data_list.add(" 分销点/店 ");
-        data_list.add("  零售店  ");
-        data_list.add("  超市 ");
+        data_list.add("  运营经理  ");
+        data_list.add("  客户代表 ");
+        data_list.add("  促销推广员 ");
+        data_list.add("  促销兼职 ");
+        data_list.add("  员工 ");
 
         //适配器
         arr_adapter= new ArrayAdapter<String>(getContext(), R.layout.person_centered_spinner_item_textview, data_list);

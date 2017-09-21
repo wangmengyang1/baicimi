@@ -41,6 +41,7 @@
             >
 
             <LinearLayout
+                android:id="@+id/frgment_meizhuang_cosmetics"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -55,7 +56,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/frgment_meizhuang_cosmetics"
+
                     android:layout_width="wrap_content"
                     android:gravity="center"
                     android:layout_gravity="center"
@@ -69,6 +70,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/frgment_meizhuang_skincare"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -83,7 +85,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/frgment_meizhuang_skincare"
+
                     android:layout_width="wrap_content"
                     android:gravity="center"
                     android:layout_gravity="center"
@@ -96,6 +98,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/frgment_meizhuang_hairdressing"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -110,7 +113,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/frgment_meizhuang_hairdressing"
+
                     android:layout_width="wrap_content"
                     android:gravity="center"
                     android:layout_gravity="center"
@@ -123,6 +126,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/frgment_meizhuang_man"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -137,7 +141,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/frgment_meizhuang_man"
+
                     android:layout_width="wrap_content"
                     android:gravity="center"
                     android:layout_gravity="center"
@@ -162,6 +166,7 @@
 
 
             <LinearLayout
+                android:id="@+id/frgment_meizhuang_aromatherapy"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -176,7 +181,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/frgment_meizhuang_aromatherapy"
+
                     android:layout_width="wrap_content"
                     android:gravity="center"
                     android:layout_gravity="center"
@@ -189,6 +194,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/frgment_meizhuang_suit"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -203,7 +209,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/frgment_meizhuang_suit"
+
                     android:layout_width="wrap_content"
                     android:gravity="center"
                     android:layout_gravity="center"
@@ -216,6 +222,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/frgment_meizhuang_hotsale"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -230,7 +237,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/frgment_meizhuang_hotsale"
+
                     android:layout_width="wrap_content"
                     android:gravity="center"
                     android:layout_gravity="center"
@@ -243,6 +250,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/frgment_meizhuang_hot_search"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -257,7 +265,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/frgment_meizhuang_hot_search"
+
                     android:layout_width="wrap_content"
                     android:gravity="center"
                     android:layout_gravity="center"
@@ -908,14 +916,14 @@
 
                     <ImageView
                         android:id="@+id/fragment_meizhuang_shoping_package_01"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/shoping_package_red"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/shoping_package_gral"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="20dp"
+                        android:padding="2dp"
                         android:layout_alignBottom="@+id/fragment_meizhuang_shoping_number_01"
-                        android:layout_marginTop="40dp"
-                        android:padding="5dp"
+                        android:layout_marginBottom="-2dp"
                         />
 
                 </RelativeLayout>
@@ -1009,14 +1017,14 @@
 
                     <ImageView
                         android:id="@+id/fragment_meizhuang_shoping_package_02"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/shoping_package_red"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/shoping_package_gral"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="20dp"
+                        android:padding="2dp"
                         android:layout_alignBottom="@+id/fragment_meizhuang_shoping_number_02"
-                        android:layout_marginTop="40dp"
-                        android:padding="5dp"
+                        android:layout_marginBottom="-2dp"
                         />
 
                 </RelativeLayout>
@@ -1111,14 +1119,14 @@
 
                     <ImageView
                         android:id="@+id/fragment_meizhuang_shoping_package_03"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/shoping_package_red"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/shoping_package_gral"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="20dp"
+                        android:padding="2dp"
                         android:layout_alignBottom="@+id/fragment_meizhuang_shoping_number_03"
-                        android:layout_marginTop="40dp"
-                        android:padding="5dp"
+                        android:layout_marginBottom="-2dp"
                         />
 
                 </RelativeLayout>
@@ -1213,14 +1221,14 @@
 
                     <ImageView
                         android:id="@+id/fragment_meizhuang_shoping_package_04"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/shoping_package_red"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/shoping_package_gral"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="20dp"
+                        android:padding="2dp"
                         android:layout_alignBottom="@+id/fragment_meizhuang_shoping_number_04"
-                        android:layout_marginTop="40dp"
-                        android:padding="6dp"
+                        android:layout_marginBottom="-2dp"
                         />
 
                 </RelativeLayout>
@@ -1315,14 +1323,14 @@
 
                     <ImageView
                         android:id="@+id/fragment_meizhuang_shoping_package_05"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/shoping_package_red"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/shoping_package_gral"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="20dp"
+                        android:padding="2dp"
                         android:layout_alignBottom="@+id/fragment_meizhuang_shoping_number_05"
-                        android:layout_marginTop="40dp"
-                        android:padding="5dp"
+                        android:layout_marginBottom="-2dp"
                         />
 
                 </RelativeLayout>
@@ -1417,14 +1425,14 @@
 
                     <ImageView
                         android:id="@+id/fragment_meizhuang_shoping_package_06"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/shoping_package_red"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/shoping_package_gral"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="20dp"
+                        android:padding="2dp"
                         android:layout_alignBottom="@+id/fragment_meizhuang_shoping_number_06"
-                        android:layout_marginTop="40dp"
-                        android:padding="5dp"
+                        android:layout_marginBottom="-2dp"
                         />
 
                 </RelativeLayout>

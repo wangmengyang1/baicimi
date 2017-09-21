@@ -197,7 +197,7 @@
             </LinearLayout>
 
 
-            <com.baicimi.ui.MyGridView
+            <GridView
                 android:id="@+id/buying_one"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -205,7 +205,7 @@
                 android:horizontalSpacing="1dp"
                 android:numColumns="2"
                 android:scrollbars="none"
-                android:verticalSpacing="1dp"></com.baicimi.ui.MyGridView>
+                android:verticalSpacing="1dp"></GridView>
 
             <View
                 android:layout_width="match_parent"
@@ -327,7 +327,7 @@
             </LinearLayout>
 
 
-            <com.baicimi.ui.MyGridView
+            <GridView
                 android:id="@+id/buying_two"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -335,7 +335,7 @@
                 android:horizontalSpacing="1dp"
                 android:numColumns="2"
                 android:scrollbars="none"
-                android:verticalSpacing="1dp"></com.baicimi.ui.MyGridView>
+                android:verticalSpacing="1dp"></GridView>
 
             <View
                 android:layout_width="match_parent"
@@ -458,7 +458,7 @@
             </LinearLayout>
 
 
-            <com.baicimi.ui.MyGridView
+            <GridView
                 android:id="@+id/buying_three"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -466,7 +466,7 @@
                 android:horizontalSpacing="1dp"
                 android:numColumns="2"
                 android:scrollbars="none"
-                android:verticalSpacing="1dp"></com.baicimi.ui.MyGridView>
+                android:verticalSpacing="1dp"></GridView>
 
             <View
                 android:layout_width="match_parent"

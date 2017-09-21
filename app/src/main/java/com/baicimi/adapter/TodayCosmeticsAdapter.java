@@ -54,10 +54,6 @@ public class TodayCosmeticsAdapter extends BaseAdapter{
             holder.imageUrl = (ImageView) view.findViewById(R.id.today_cosmetics_adapter_imageurl);
             holder.discountsPrice = (TextView) view.findViewById(R.id.today_cosmetics_adapter_discountsPrice);
             holder.marketPrice = (TextView) view.findViewById(R.id.today_cosmetics_adapter_marketPrice);
-            holder.content = (TextView) view.findViewById(R.id.today_cosmetics_adapter_content);
-            holder.evaluate = (TextView) view.findViewById(R.id.today_cosmetics_adapter_evaluate);
-            holder.goodReputation = (TextView) view.findViewById(R.id.today_cosmetics_adapter_goodreputation);
-            holder.salesVolume = (TextView) view.findViewById(R.id.today_cosmetics_adapter_salesVolume);
             holder.number = (TextView) view.findViewById(R.id.today_cosmetics_adapter_number);
             holder.subtract = (ImageView) view.findViewById(R.id.today_cosmetics_adapter_subtract);
             holder.number = (TextView) view.findViewById(R.id.today_cosmetics_adapter_number);
@@ -73,10 +69,8 @@ public class TodayCosmeticsAdapter extends BaseAdapter{
         holder.imageUrl.setImageResource(init.getImageUrl());
         holder.discountsPrice.setText(init.getDiscountsPrice());
         holder.marketPrice.setText(init.getMarketPrice());
-        holder.content.setText(init.getContent());
-        holder.evaluate.setText(init.getEvaluate());
-        holder.goodReputation.setText(init.getGoodReputation());
-        holder.salesVolume.setText(init.getSalesVolume());
+//        holder.goodReputation.setText(init.getGoodReputation());
+//        holder.salesVolume.setText(init.getSalesVolume());
         holder.number.setText(init.getBuyNumber() + "");
         holder.subtract.setOnClickListener(new View.OnClickListener() {
             @Override

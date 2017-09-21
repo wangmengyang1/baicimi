@@ -103,12 +103,6 @@ public class TeacherPurchaseOptionFragment extends BaseFragment implements View.
         list.add(new HomePageBrandButtonViewPager(R.drawable.home_page_brand_fragment_image_12 , new String("佰草集旗") , new String("中草药高端护理品牌") , 1234 , R.drawable.home_page_brand_gridview_image_02 , false));
         list.add(new HomePageBrandButtonViewPager(R.drawable.home_page_brand_fragment_image_13 , new String("温碧泉") , new String("补水就用温碧泉") , 1234 , R.drawable.home_page_brand_gridview_image_03 , false));
         list.add(new HomePageBrandButtonViewPager(R.drawable.home_page_brand_fragment_image_14 , new String("玛丽黛佳") , new String("新艺术彩妆品牌") , 1234 , R.drawable.home_page_brand_gridview_image_04 , false));
-//        list.add(new HomePageBrandButtonViewPager(R.drawable.home_page_brand_fragment_image_15 , new String("蜜丝佛陀") , new String("化妆师额化妆品") , new String("20000人关注") , R.drawable.home_page_brand_gridview_image_05));
-//        list.add(new HomePageBrandButtonViewPager(R.drawable.home_page_brand_fragment_image_16 , new String("欧诗漫") , new String("带来珍珠般的灵动肌肤") , new String("20000人关注") , R.drawable.home_page_brand_gridview_image_06));
-//        list.add(new HomePageBrandButtonViewPager(R.drawable.home_page_brand_fragment_image_17 , new String("一叶子") , new String("新鲜的力量") , new String("20000人关注") , R.drawable.home_page_brand_gridview_image_07));
-//        list.add(new HomePageBrandButtonViewPager(R.drawable.home_page_brand_fragment_image_18 , new String("森山药妆") , new String("台湾面膜知名品牌") , new String("20000人关注") , R.drawable.home_page_brand_gridview_image_08));
-//        list.add(new HomePageBrandButtonViewPager(R.drawable.home_page_brand_fragment_image_19 , new String("雅芳") , new String("魅力因为有你") , new String("20000人关注") , R.drawable.home_page_brand_gridview_image_09));
-//        list.add(new HomePageBrandButtonViewPager(R.drawable.home_page_brand_fragment_image_20 , new String("BEELY旗舰店") , new String("换货柔嫩自信美肌") , new String("20000人关注") , R.drawable.home_page_brand_gridview_image_10));
         HomePageViewButtonAdapte buttonAdapte = new HomePageViewButtonAdapte(getContext() , list);
         gridView.setAdapter(buttonAdapte);
         fixGridViewHeight(gridView);

@@ -6,12 +6,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.baicimi.R;
+import com.baicimi.base.BaseFragment;
 import com.baicimi.bean.FridayNightGvBean;
 import com.baicimi.interfaces.DistributionNumberOnitemClickSecond;
+import com.baicimi.view.ShopingPackageDialog;
 import com.bumptech.glide.Glide;
 
 import java.util.List;
@@ -28,6 +31,8 @@ public class FridayNightGvAdapter extends BaseAdapter{
     private DistributionNumberOnitemClickSecond distributionNumberOnitemClick;
     private int indexView;
 
+    private BaseFragment baseFragment;
+
     public FridayNightGvAdapter(Context context, List<FridayNightGvBean> mList , DistributionNumberOnitemClickSecond distributionNumberOnitemClick , int indexView) {
         this.mContext = context;
         this.mList = mList;
@@ -35,6 +40,17 @@ public class FridayNightGvAdapter extends BaseAdapter{
         this.distributionNumberOnitemClick = distributionNumberOnitemClick;
         this.indexView = indexView;
     }
+
+
+    public FridayNightGvAdapter(Context mContext, List<FridayNightGvBean> mList, DistributionNumberOnitemClickSecond distributionNumberOnitemClick, int indexView, BaseFragment baseFragment) {
+        this.mContext = mContext;
+        this.mList = mList;
+        this.distributionNumberOnitemClick = distributionNumberOnitemClick;
+        this.indexView = indexView;
+        this.baseFragment = baseFragment;
+        mLayoutInflater = LayoutInflater.from(mContext);
+    }
+
     @Override
     public int getCount() {
         return mList.size();
@@ -64,6 +80,7 @@ public class FridayNightGvAdapter extends BaseAdapter{
             mViewHolder.number = (TextView) convertView.findViewById(R.id.fridaynight_buying_gv_item_number_textview);
             mViewHolder.subtractTextView = (ImageView) convertView.findViewById(R.id.fridaynight_buying_gv_item_subtract);
             mViewHolder.addTextView = (ImageView) convertView.findViewById(R.id.fridaynight_buying_gv_item_add);
+            mViewHolder.rushtopurchase = (Button) convertView.findViewById(R.id.fridaynight_buying_gv_item_rushtopurchase);
             convertView.setTag(mViewHolder);
         } else {
             mViewHolder = (ViewHolder) convertView.getTag();
@@ -97,6 +114,14 @@ public class FridayNightGvAdapter extends BaseAdapter{
             }
         });
 
+        mViewHolder.rushtopurchase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ShopingPackageDialog shopingPackageDialog = new ShopingPackageDialog(mContext , R.style.MeiGuiMeiShiSecondMyorderFive , 2 , baseFragment);
+                shopingPackageDialog.show();
+            }
+        });
+
         return convertView;
     }
 
@@ -106,10 +131,10 @@ public class FridayNightGvAdapter extends BaseAdapter{
         private TextView now_price;
         private ImageView imageUrl;
         private TextView number;
-
         private ImageView subtractTextView;
         private ImageView addTextView;
 
+        private Button rushtopurchase;
 
     }
     

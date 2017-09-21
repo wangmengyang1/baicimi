@@ -34,14 +34,14 @@ public class MeiZhuangFragment extends BaseFragment implements View.OnClickListe
     private LayoutInflater mInflater,mInflater2;
 
     //设置顶部按钮点击事件
-    private TextView cosmetics;//彩妆
-    private TextView skincare;//护肤
-    private TextView hairdressing;//美发
-    private TextView man;//男士
-    private TextView aromatherapy;//香薰
-    private TextView suit;//套装
-    private TextView hotsale;//热卖
-    private TextView hot_search;//热搜
+    private LinearLayout cosmetics;//彩妆
+    private LinearLayout skincare;//护肤
+    private LinearLayout hairdressing;//美发
+    private LinearLayout man;//男士
+    private LinearLayout aromatherapy;//香薰
+    private LinearLayout suit;//套装
+    private LinearLayout hotsale;//热卖
+    private LinearLayout hot_search;//热搜
 
     //热卖推荐
     private View recommend_02;
@@ -164,6 +164,13 @@ public class MeiZhuangFragment extends BaseFragment implements View.OnClickListe
             img1.setOnClickListener(this);
             mGallery2.addView(view);
 
+            img1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startFragment(new BrandFragmentSecond());
+                }
+            });
+
         }
 
 
@@ -233,18 +240,6 @@ public class MeiZhuangFragment extends BaseFragment implements View.OnClickListe
         brand_activity_02.setOnClickListener(this);
         brand_activity_03.setOnClickListener(this);
 
-//        exclusive_category_01 = view.findViewById(R.id.meizhuang_exclusive_category_01);
-//        exclusive_category_02 = view.findViewById(R.id.meizhuang_exclusive_category_02);
-//        exclusive_category_03 = view.findViewById(R.id.meizhuang_exclusive_category_03);
-//        exclusive_category_04 = view.findViewById(R.id.meizhuang_exclusive_category_04);
-//        exclusive_category_05 = view.findViewById(R.id.meizhuang_exclusive_category_05);
-//        exclusive_category_06 = view.findViewById(R.id.meizhuang_exclusive_category_06);
-//        exclusive_category_01.setOnClickListener(this);
-//        exclusive_category_02.setOnClickListener(this);
-//        exclusive_category_03.setOnClickListener(this);
-//        exclusive_category_04.setOnClickListener(this);
-//        exclusive_category_05.setOnClickListener(this);
-//        exclusive_category_06.setOnClickListener(this);
 
         guess_me_love_01 = (LinearLayout) view.findViewById(R.id.meizhuang_guess_me_love_01);
         guess_me_love_02 = (LinearLayout) view.findViewById(R.id.meizhuang_guess_me_love_02);
@@ -262,14 +257,14 @@ public class MeiZhuangFragment extends BaseFragment implements View.OnClickListe
 
     //头部按键
     private void initUI() {
-        cosmetics = (TextView) view.findViewById(R.id.frgment_meizhuang_cosmetics);
-        skincare = (TextView) view.findViewById(R.id.frgment_meizhuang_skincare);
-        hairdressing = (TextView) view.findViewById(R.id.frgment_meizhuang_hairdressing);
-        man = (TextView) view.findViewById(R.id.frgment_meizhuang_man);
-        aromatherapy = (TextView) view.findViewById(R.id.frgment_meizhuang_aromatherapy);
-        suit = (TextView) view.findViewById(R.id.frgment_meizhuang_suit);
-        hotsale = (TextView) view.findViewById(R.id.frgment_meizhuang_hotsale);
-        hot_search = (TextView) view.findViewById(R.id.frgment_meizhuang_hot_search);
+        cosmetics = (LinearLayout) view.findViewById(R.id.frgment_meizhuang_cosmetics);
+        skincare = (LinearLayout) view.findViewById(R.id.frgment_meizhuang_skincare);
+        hairdressing = (LinearLayout) view.findViewById(R.id.frgment_meizhuang_hairdressing);
+        man = (LinearLayout) view.findViewById(R.id.frgment_meizhuang_man);
+        aromatherapy = (LinearLayout) view.findViewById(R.id.frgment_meizhuang_aromatherapy);
+        suit = (LinearLayout) view.findViewById(R.id.frgment_meizhuang_suit);
+        hotsale = (LinearLayout) view.findViewById(R.id.frgment_meizhuang_hotsale);
+        hot_search = (LinearLayout) view.findViewById(R.id.frgment_meizhuang_hot_search);
         //点击事件
         cosmetics.setOnClickListener(this);
         skincare.setOnClickListener(this);

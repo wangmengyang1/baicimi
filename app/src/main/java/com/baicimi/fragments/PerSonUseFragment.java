@@ -41,14 +41,6 @@ public class PerSonUseFragment extends BaseFragment implements View.OnClickListe
     private String[] titles = {"个护电器", "床上用品", "居家休闲", "户外运动"};
 
     //头部分类的控件
-    private TextView person;//个护电器
-    private TextView beddingarticle;//床上用品
-    private TextView relaxation;//居家休闲
-    private TextView acc;//配饰
-    private TextView outdoor;//户外运动
-    private TextView travel;//旅行用品
-    private TextView packages;//包包
-    private TextView more;//更多
 
     //热卖推荐
     private View hot_recommend_01;
@@ -79,6 +71,8 @@ public class PerSonUseFragment extends BaseFragment implements View.OnClickListe
     private MyViewPagerFragmetAdapterSecond myViewPagerFragmetAdapterSecond;
     private List<Fragment> listFragment = new ArrayList<>();
 
+    private LinearLayout electric , beddings , relaxations , accs , sports , lvxing , packageas;
+
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -103,13 +97,35 @@ public class PerSonUseFragment extends BaseFragment implements View.OnClickListe
          * 修改人：王梦阳
          */
         //控件查找以及点击事件
-        initUI();
+//        initUI();
 
         //倒计时
         getTimer();
 
 
+        //导航栏布局填充
+        initNavigation();
+
+
         return view;
+    }
+
+    //导航栏布局填充
+    private void initNavigation() {
+        electric = (LinearLayout) view.findViewById(R.id.fragment_person_user_electric);
+        beddings = (LinearLayout) view.findViewById(R.id.fragment_person_user_beddings);
+        relaxations = (LinearLayout) view.findViewById(R.id.fragment_person_user_relaxation);
+        accs = (LinearLayout) view.findViewById(R.id.fragment_person_user_acc);
+        sports = (LinearLayout) view.findViewById(R.id.fragment_person_user_sports);
+        lvxing = (LinearLayout) view.findViewById(R.id.fragment_person_user_lvxing);
+        packageas = (LinearLayout) view.findViewById(R.id.fragment_person_user_package);
+        electric.setOnClickListener(this);
+        beddings.setOnClickListener(this);
+        relaxations.setOnClickListener(this);
+        accs.setOnClickListener(this);
+        sports.setOnClickListener(this);
+        lvxing.setOnClickListener(this);
+        packageas.setOnClickListener(this);
     }
 
     private void initAddFragment() {
@@ -121,81 +137,77 @@ public class PerSonUseFragment extends BaseFragment implements View.OnClickListe
     }
 
     //控件查找以及点击事件
-    private void initUI() {
-        person = (TextView) view.findViewById(R.id.fragment_person_electric);
-        beddingarticle = (TextView) view.findViewById(R.id.fragment_person_beddingarticle);
-        relaxation = (TextView) view.findViewById(R.id.fragment_person_home_relaxation);
-        acc = (TextView) view.findViewById(R.id.fragment_person_acc);
-        outdoor = (TextView) view.findViewById(R.id.fragment_person_outdoor);
-        travel = (TextView) view.findViewById(R.id.fragment_person_travel);
-        packages = (TextView) view.findViewById(R.id.fragment_person_packages);
-        more = (TextView) view.findViewById(R.id.fragment_person_more);
-        //为控件设置点击事件
-        person.setOnClickListener(this);
-        beddingarticle.setOnClickListener(this);
-        relaxation.setOnClickListener(this);
-        acc.setOnClickListener(this);
-        outdoor.setOnClickListener(this);
-        travel.setOnClickListener(this);
-        packages.setOnClickListener(this);
-        more.setOnClickListener(this);
-
-
-        hot_recommend_01 = view.findViewById(R.id.person_use_hot_recommend_01);
-        hot_recommend_02 = view.findViewById(R.id.person_use_hot_recommend_02);
-        hot_recommend_03 = view.findViewById(R.id.person_use_hot_recommend_03);
-        hot_recommend_01.setOnClickListener(this);
-        hot_recommend_02.setOnClickListener(this);
-        hot_recommend_03.setOnClickListener(this);
-
-        new_appear_market_01 = view.findViewById(R.id.person_use_new_appear_market_01);
-//        new_appear_market_02 = view.findViewById(R.id.person_use_new_appear_market_02);
-//        new_appear_market_03 = view.findViewById(R.id.person_use_new_appear_market_03);
-//        new_appear_market_04 = view.findViewById(R.id.person_use_new_appear_market_04);
-        new_appear_market_01.setOnClickListener(this);
-//        new_appear_market_02.setOnClickListener(this);
-//        new_appear_market_03.setOnClickListener(this);
-//        new_appear_market_04.setOnClickListener(this);
-
-        favorable_sales_01 = (RelativeLayout) view.findViewById(R.id.person_user_favorable_sales_01);
-        favorable_sales_02 = (RelativeLayout) view.findViewById(R.id.person_user_favorable_sales_02);
-        favorable_sales_01.setOnClickListener(this);
-        favorable_sales_02.setOnClickListener(this);
-
-        activity_session_01 = (LinearLayout) view.findViewById(R.id.person_use_activity_session_01);
-        activity_session_02 = (LinearLayout) view.findViewById(R.id.person_use_activity_session_02);
-        activity_session_03 = (LinearLayout) view.findViewById(R.id.person_use_activity_session_03);
-        activity_session_01.setOnClickListener(this);
-        activity_session_02.setOnClickListener(this);
-        activity_session_03.setOnClickListener(this);
-    }
+//    private void initUI() {
+//        person = (TextView) view.findViewById(R.id.fragment_person_electric);
+//        beddingarticle = (TextView) view.findViewById(R.id.fragment_person_beddingarticle);
+//        relaxation = (TextView) view.findViewById(R.id.fragment_person_home_relaxation);
+//        acc = (TextView) view.findViewById(R.id.fragment_person_acc);
+//        outdoor = (TextView) view.findViewById(R.id.fragment_person_outdoor);
+//        travel = (TextView) view.findViewById(R.id.fragment_person_travel);
+//        packages = (TextView) view.findViewById(R.id.fragment_person_packages);
+//        more = (TextView) view.findViewById(R.id.fragment_person_more);
+//        //为控件设置点击事件
+//        person.setOnClickListener(this);
+//        beddingarticle.setOnClickListener(this);
+//        relaxation.setOnClickListener(this);
+//        acc.setOnClickListener(this);
+//        outdoor.setOnClickListener(this);
+//        travel.setOnClickListener(this);
+//        packages.setOnClickListener(this);
+//        more.setOnClickListener(this);
+//
+//
+//        hot_recommend_01 = view.findViewById(R.id.person_use_hot_recommend_01);
+//        hot_recommend_02 = view.findViewById(R.id.person_use_hot_recommend_02);
+//        hot_recommend_03 = view.findViewById(R.id.person_use_hot_recommend_03);
+//        hot_recommend_01.setOnClickListener(this);
+//        hot_recommend_02.setOnClickListener(this);
+//        hot_recommend_03.setOnClickListener(this);
+//
+//        new_appear_market_01 = view.findViewById(R.id.person_use_new_appear_market_01);
+////        new_appear_market_02 = view.findViewById(R.id.person_use_new_appear_market_02);
+////        new_appear_market_03 = view.findViewById(R.id.person_use_new_appear_market_03);
+////        new_appear_market_04 = view.findViewById(R.id.person_use_new_appear_market_04);
+//        new_appear_market_01.setOnClickListener(this);
+////        new_appear_market_02.setOnClickListener(this);
+////        new_appear_market_03.setOnClickListener(this);
+////        new_appear_market_04.setOnClickListener(this);
+//
+//        favorable_sales_01 = (RelativeLayout) view.findViewById(R.id.person_user_favorable_sales_01);
+//        favorable_sales_02 = (RelativeLayout) view.findViewById(R.id.person_user_favorable_sales_02);
+//        favorable_sales_01.setOnClickListener(this);
+//        favorable_sales_02.setOnClickListener(this);
+//
+//        activity_session_01 = (LinearLayout) view.findViewById(R.id.person_use_activity_session_01);
+//        activity_session_02 = (LinearLayout) view.findViewById(R.id.person_use_activity_session_02);
+//        activity_session_03 = (LinearLayout) view.findViewById(R.id.person_use_activity_session_03);
+//        activity_session_01.setOnClickListener(this);
+//        activity_session_02.setOnClickListener(this);
+//        activity_session_03.setOnClickListener(this);
+//    }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.fragment_person_electric:
-                //页面跳转到商品筛选页面
+            case R.id.fragment_person_user_electric:
                 startFragment(new SerchGoodsFragment(),null);
                 break;
-            case R.id.fragment_person_beddingarticle:
+            case R.id.fragment_person_user_beddings:
                 startFragment(new SerchGoodsFragment(),null);
                 break;
-            case R.id.fragment_person_home_relaxation:
+            case R.id.fragment_person_user_relaxation:
                 startFragment(new SerchGoodsFragment(),null);
                 break;
-            case R.id.fragment_person_acc:
+            case R.id.fragment_person_user_acc:
                 startFragment(new SerchGoodsFragment(),null);
                 break;
-            case R.id.fragment_person_outdoor:
+            case R.id.fragment_person_user_sports:
                 startFragment(new SerchGoodsFragment(),null);
                 break;
-            case R.id.fragment_person_travel:
+            case R.id.fragment_person_user_lvxing:
                 startFragment(new SerchGoodsFragment(),null);
                 break;
-            case R.id.fragment_person_packages:
-                startFragment(new SerchGoodsFragment(),null);
-                break;
-            case R.id.fragment_person_more:
+            case R.id.fragment_person_user_package:
                 startFragment(new SerchGoodsFragment(),null);
                 break;
             case R.id.person_use_hot_recommend_01:
@@ -210,15 +222,6 @@ public class PerSonUseFragment extends BaseFragment implements View.OnClickListe
             case R.id.person_use_new_appear_market_01:
                 startFragment(new SerchGoodsFragment(),null);
                 break;
-//            case R.id.person_use_new_appear_market_02:
-//                startFragment(new GoodsDetailsFragment(),null);
-//                break;
-//            case R.id.person_use_new_appear_market_03:
-//                startFragment(new GoodsDetailsFragment(),null);
-//                break;
-//            case R.id.person_use_new_appear_market_04:
-//                startFragment(new GoodsDetailsFragment(),null);
-//                break;
             case R.id.person_user_favorable_sales_01:
                 startFragment(new GoodsDetailsFragment(),null);
                 break;

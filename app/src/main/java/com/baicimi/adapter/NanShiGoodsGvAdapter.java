@@ -44,7 +44,7 @@ public class NanShiGoodsGvAdapter extends BaseAdapter{
 
     @Override
     public int getCount() {
-        return 10;
+        return mList.size();
     }
 
     @Override

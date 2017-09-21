@@ -109,17 +109,17 @@ public class DistributionOrderGoodsFragment extends BaseFragment implements  Vie
     private void initTextView(){
         hotcommodity.setTextColor(Color.BLACK);
         hotcommodity.setBackgroundColor(Color.parseColor("#f1f1f1"));
-        cosmetics.setTextColor(Color.BLACK);
+        cosmetics.setTextColor(Color.parseColor("#6f6f6f"));
         cosmetics.setBackgroundColor(Color.parseColor("#f1f1f1"));
-        beautymakeup.setTextColor(Color.BLACK);
+        beautymakeup.setTextColor(Color.parseColor("#6f6f6f"));
         beautymakeup.setBackgroundColor(Color.parseColor("#f1f1f1"));
-        personalbelongings.setTextColor(Color.BLACK);
+        personalbelongings.setTextColor(Color.parseColor("#6f6f6f"));
         personalbelongings.setBackgroundColor(Color.parseColor("#f1f1f1"));
-        infantmom.setTextColor(Color.BLACK);
+        infantmom.setTextColor(Color.parseColor("#6f6f6f"));
         infantmom.setBackgroundColor(Color.parseColor("#f1f1f1"));
-        shortcutOrderGoodsDistrict.setTextColor(Color.BLACK);
+        shortcutOrderGoodsDistrict.setTextColor(Color.parseColor("#6f6f6f"));
         shortcutOrderGoodsDistrict.setBackgroundColor(Color.parseColor("#f1f1f1"));
-        inventory.setTextColor(Color.BLACK);
+        inventory.setTextColor(Color.parseColor("#6f6f6f"));
         inventory.setBackgroundColor(Color.parseColor("#f1f1f1"));
     }
 
@@ -180,6 +180,7 @@ public class DistributionOrderGoodsFragment extends BaseFragment implements  Vie
                 initTextView();
                 hotcommodity.setTextColor(Color.WHITE);
                 hotcommodity.setBackgroundColor(Color.RED);
+                setShowFragment(2);
                 break;
             case R.id.distribution_order_good_fragment_cosmetics:
                 initTextView();
@@ -191,16 +192,19 @@ public class DistributionOrderGoodsFragment extends BaseFragment implements  Vie
                 initTextView();
                 beautymakeup.setTextColor(Color.WHITE);
                 beautymakeup.setBackgroundColor(Color.RED);
+                setShowFragment(2);
                 break;
             case R.id.distribution_order_good_fragment_personalbelongings:
                 initTextView();
                 personalbelongings.setTextColor(Color.WHITE);
                 personalbelongings.setBackgroundColor(Color.RED);
+                setShowFragment(2);
                 break;
             case R.id.distribution_order_good_fragment_infantmom:
                 initTextView();
                 infantmom.setTextColor(Color.WHITE);
                 infantmom.setBackgroundColor(Color.RED);
+                setShowFragment(2);
                 break;
             case R.id.distribution_order_good_fragment_shortcutOrderGoodsDistrict:
                 initTextView();

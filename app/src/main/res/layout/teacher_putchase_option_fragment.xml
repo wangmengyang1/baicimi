@@ -19,7 +19,7 @@
             android:id="@+id/back_teacher_putchase_option_fragment"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/back_wirth_image"
+            android:src="@drawable/back_waiter_image"
             android:layout_centerVertical="true"
             android:padding="5dp"
             />

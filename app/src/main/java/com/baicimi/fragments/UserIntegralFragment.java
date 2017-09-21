@@ -38,8 +38,8 @@ public class UserIntegralFragment extends BaseFragment{
 
         RingView ringView = (RingView) view.findViewById(R.id.user_integral_fragmentringview);
         ringView.setColors(new int[]{Color.parseColor("#2a8fd3"),Color.parseColor("#f15f48"), Color.parseColor("#2ac770")
-                , Color.parseColor("#f1c40f"),Color.parseColor("#2ac770"),Color.parseColor("#9a59b5")});
-        ringView.setValues(new int[]{33, 27, 18, 10, 7,5});
+                , Color.parseColor("#f1c40f"),Color.parseColor("#2ac770"),Color.parseColor("#9a59b5") , Color.parseColor("#2ac770"),Color.parseColor("#f15f48")});
+        ringView.setValues(new int[]{33, 27, 18, 10,10 , 10 ,  7,5});
 
         try {
             ringView.startDraw();

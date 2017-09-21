@@ -7,11 +7,9 @@
     >
 
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#11000000"
         >
 
         <ImageView
@@ -29,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="教师/学生注册入口"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textColor="@color/black"
             android:layout_centerInParent="true"
 
@@ -237,7 +235,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="获取验证码"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingBottom="5dp"
@@ -351,7 +349,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="P77F"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:paddingBottom="5dp"
@@ -376,9 +374,11 @@
 
 
                 <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/MyCheckBoxTwo"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/gouwuche_use_jifen_chexbok"
+                    android:button="@null"
+                    android:checked="true"
                     />
 
                 <TextView

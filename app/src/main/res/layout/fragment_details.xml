@@ -34,14 +34,15 @@
 
         <CheckBox
             android:id="@+id/che1"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
             android:background="@drawable/gouwuche_use_jifen_chexbok"
             android:button="@null"
             android:layout_marginLeft="15dp"
             android:layout_below="@id/gouwuche_all_price"
             android:checked="true"
             android:layout_marginTop="7dp"
+
             />
 
         <TextView
@@ -70,8 +71,8 @@
 
         <CheckBox
             android:id="@+id/che2"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
             android:background="@drawable/gouwuche_use_jifen_chexbok"
             android:button="@null"
             android:layout_marginLeft="15dp"
@@ -106,8 +107,8 @@
 
         <CheckBox
             android:id="@+id/che3"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
             android:background="@drawable/gouwuche_use_jifen_chexbok"
             android:button="@null"
             android:layout_marginLeft="15dp"

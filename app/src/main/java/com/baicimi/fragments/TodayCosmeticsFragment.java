@@ -13,6 +13,7 @@ import com.baicimi.adapter.TodayCosmeticsAdapter;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.TodayCosmeticsEntry;
 import com.baicimi.interfaces.DistributionNumberOnitemClick;
+import com.baicimi.view.ShopingPackageDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -142,7 +143,8 @@ public class TodayCosmeticsFragment extends BaseFragment implements Distribution
                     adapter.notifyDataSetChanged();
                     break;
                 case R.id.today_cosmetics_adapter_shopcup:
-                    startFragment(new ShopingCarFragment());
+                    ShopingPackageDialog shopingPackageDialog = new ShopingPackageDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                    shopingPackageDialog.show();
                     break;
                 case R.id.today_cosmetics_adapter_immediatelyshop:
                     startFragment(new GoodsDetailsFragment());

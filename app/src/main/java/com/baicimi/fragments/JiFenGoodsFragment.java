@@ -147,40 +147,40 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
                 showPopwindowPointOne();
                 break;
             case R.id.jifen_goods_brand_01:
-                startFragment(new PopularityBrandFragment(), null);
+                startFragment(new BrandFragmentSecond());
                 break;
             case R.id.jifen_goods_brand_02:
-                startFragment(new PopularityBrandFragment(), null);
+                startFragment(new BrandFragmentSecond());
                 break;
             case R.id.jifen_goods_brand_03:
-                startFragment(new PopularityBrandFragment(), null);
+                startFragment(new BrandFragmentSecond());
                 break;
             case R.id.jifen_goods_brand_04:
-                startFragment(new PopularityBrandFragment(), null);
+                startFragment(new BrandFragmentSecond());
                 break;
             case R.id.jifen_goods_brand_05:
-                startFragment(new PopularityBrandFragment(), null);
+                startFragment(new BrandFragmentSecond());
                 break;
             case R.id.jifen_goods_brand_06:
-                startFragment(new PopularityBrandFragment(), null);
+                startFragment(new BrandFragmentSecond());
                 break;
             case R.id.jifen_goods_brand_07:
-                startFragment(new PopularityBrandFragment(), null);
+                startFragment(new BrandFragmentSecond());
                 break;
             case R.id.jifen_goods_brand_08:
-                startFragment(new PopularityBrandFragment(), null);
+                startFragment(new BrandFragmentSecond());
                 break;
             case R.id.jifen_goods_brand_09:
-                startFragment(new PopularityBrandFragment(), null);
+                startFragment(new BrandFragmentSecond());
                 break;
             case R.id.jifen_goods_brand_10:
-                startFragment(new PopularityBrandFragment(), null);
+                startFragment(new BrandFragmentSecond());
                 break;
             case R.id.jifen_goods_brand_11:
-                startFragment(new PopularityBrandFragment(), null);
+                startFragment(new BrandFragmentSecond());
                 break;
             case R.id.jifen_goods_brand_12:
-                startFragment(new PopularityBrandFragment(), null);
+                startFragment(new BrandFragmentSecond());
                 break;
             case R.id.fragment_jifen_goods_head:
                 startFragment(new PopularityBrandFragment(), null);

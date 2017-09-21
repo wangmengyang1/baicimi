@@ -31,7 +31,7 @@
                 android:layout_centerInParent="true"
                 android:text="确认个人订单"
                 android:textColor="#696969"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
         </RelativeLayout>
 
         <ScrollView
@@ -54,7 +54,7 @@
 
                     <ImageView
                         android:id="@+id/img_dingdan"
-                        android:layout_width="150dp"
+                        android:layout_width="130dp"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="15dp"
@@ -68,7 +68,7 @@
                         android:layout_marginTop="15dp"
                         android:layout_toRightOf="@id/img_dingdan"
                         android:text="七月菊洗发水"
-                        android:textSize="14sp" />
+                        android:textSize="12sp" />
 
                     <TextView
                         android:id="@+id/tv_dingdan_yanse_num"
@@ -80,7 +80,7 @@
                         android:layout_toRightOf="@id/img_dingdan"
                         android:text="颜色分类:韩国5片装"
                         android:textColor="#AEAEAE"
-                        android:textSize="13sp" />
+                        android:textSize="12sp" />
 
                     <TextView
                         android:id="@+id/tv_dingdan_sand_time"
@@ -104,7 +104,7 @@
                         android:layout_toRightOf="@id/img_dingdan"
                         android:text="¥130.80"
                         android:textColor="#EC4C68"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -143,15 +143,14 @@
                         android:layout_toRightOf="@id/img_address"
                         android:text="收货人:张三"
                         android:textColor="#484C4F"
-                        android:textSize="19sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/tv_dingdan_address"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/tv_dingdan_shouhuoren"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/img_address"
                         android:text="收货地址:广东省广州市白云区太和镇"
                         android:textColor="#484C4F"
@@ -192,8 +191,8 @@
                     >
 
                     <View
-                        android:layout_width="42dp"
-                        android:layout_height="33dp"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
                         android:background="@mipmap/add_address_img"
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="15dp"
@@ -211,10 +210,10 @@
 
                 </LinearLayout>
 
-                <View
+                <!--<View
                     android:layout_width="match_parent"
                     android:layout_height="7dp"
-                    android:background="@mipmap/dizhi_img" />
+                    android:background="@mipmap/dizhi_img" />-->
 
                 //配送方式
 
@@ -232,7 +231,7 @@
                         android:layout_marginLeft="15dp"
                         android:text="配送方式"
                         android:textColor="#707678"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
 
 
                     <ImageView
@@ -252,7 +251,7 @@
                         android:layout_toLeftOf="@id/img_peisongfangshi"
                         android:text="请选择物流"
                         android:textColor="#B3B3B3"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
                 </RelativeLayout>
 
                 <View
@@ -276,7 +275,7 @@
                         android:layout_marginLeft="15dp"
                         android:text="支付方式"
                         android:textColor="#707678"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
 
 
                     <ImageView
@@ -296,7 +295,7 @@
                         android:layout_toLeftOf="@id/img_zhifufangshi"
                         android:text="未选择"
                         android:textColor="#B3B3B3"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
                 </RelativeLayout>
 
                 <View
@@ -321,7 +320,7 @@
                         android:layout_marginLeft="15dp"
                         android:text="分期支付"
                         android:textColor="#707678"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
 
 
                     <ImageView
@@ -341,7 +340,7 @@
                         android:layout_toLeftOf="@id/img_fenqizhifu"
                         android:text="【激活分期】免息购买"
                         android:textColor="#B3B3B3"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
                 </RelativeLayout>
 
                 <View
@@ -365,7 +364,7 @@
                         android:layout_marginLeft="15dp"
                         android:text="使用积分"
                         android:textColor="#707678"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
 
 
                     <ImageView
@@ -385,7 +384,7 @@
                         android:layout_toLeftOf="@id/img_use_jifen"
                         android:text="有可用积分"
                         android:textColor="#B3B3B3"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
                 </RelativeLayout>
 
                 <View
@@ -410,7 +409,7 @@
                         android:layout_marginLeft="15dp"
                         android:text="优惠券"
                         android:textColor="#707678"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
 
 
                     <ImageView
@@ -430,7 +429,7 @@
                         android:layout_toLeftOf="@id/img_youhuiquan"
                         android:text="有可用券"
                         android:textColor="#B3B3B3"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
                 </RelativeLayout>
 
                 <View
@@ -488,7 +487,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="合计:"
-                android:textSize="15sp"
+                android:textSize="13sp"
                 android:textColor="#838587"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="2dp"
@@ -513,7 +512,7 @@
                 android:text="优惠券/积分抵扣：¥15"
                 android:textColor="#A9A9A9"
                 android:layout_marginTop="1dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="13dp"
                 android:layout_below="@id/tv_dingdan_all_pay"
                 />
 
@@ -522,7 +521,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="应付:"
-                android:textSize="15sp"
+                android:textSize="13sp"
                 android:textColor="#838587"
                 android:layout_below="@id/tv_jifen_dikou_num"
                 android:layout_marginLeft="15dp"
@@ -546,7 +545,7 @@
                 android:background="#EE0119"
                 android:text="提交"
                 android:textColor="#ffffff"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:layout_alignParentRight="true"
                 />
         </RelativeLayout>

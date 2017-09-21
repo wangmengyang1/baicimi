@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.baicimi.R;
@@ -48,6 +49,8 @@ public class ManMainFragment extends BaseFragment implements View.OnClickListene
     //活动专场
     private LinearLayout activity_12 , activity_13 , activity_14;
 
+    private ImageView xifa_manmain , muyu_manmain , xiyiye_manmain , ximiannai_manmain;
+
 
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view=inflater.inflate(R.layout.fragment_manmain,container,false);
@@ -78,7 +81,22 @@ public class ManMainFragment extends BaseFragment implements View.OnClickListene
         fixListViewHeight(gridView);
 
 
+        //顶部导航
+        initNavition();
+
         return view;
+    }
+    //顶部导航
+    private void initNavition() {
+        xifa_manmain = (ImageView) view.findViewById(R.id.xifa_manmain);
+        muyu_manmain = (ImageView) view.findViewById(R.id.muyu_manmain);
+        xiyiye_manmain = (ImageView) view.findViewById(R.id.xiyiye_manmain);
+        ximiannai_manmain = (ImageView) view.findViewById(R.id.ximiannai_manmain);
+
+        xifa_manmain.setOnClickListener(this);
+        muyu_manmain.setOnClickListener(this);
+        xiyiye_manmain.setOnClickListener(this);
+        ximiannai_manmain.setOnClickListener(this);
     }
 
     private void initUI() {
@@ -232,6 +250,18 @@ public class ManMainFragment extends BaseFragment implements View.OnClickListene
                 startFragment(new SerchGoodsFragment(),null);
                 break;
             case R.id.fragment_manmain_activity_14:
+                startFragment(new SerchGoodsFragment(),null);
+                break;
+            case R.id.xifa_manmain:
+                startFragment(new SerchGoodsFragment(),null);
+                break;
+            case R.id.muyu_manmain:
+                startFragment(new SerchGoodsFragment(),null);
+                break;
+            case R.id.xiyiye_manmain:
+                startFragment(new SerchGoodsFragment(),null);
+                break;
+            case R.id.ximiannai_manmain:
                 startFragment(new SerchGoodsFragment(),null);
                 break;
         }

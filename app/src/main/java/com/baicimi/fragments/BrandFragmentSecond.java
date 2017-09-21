@@ -26,6 +26,8 @@ public class BrandFragmentSecond extends BaseFragment implements View.OnClickLis
     private LinearLayout layout_attention;
     private TextView textview_attention;
 
+    private ImageView image_01 , image_02;
+
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -35,6 +37,11 @@ public class BrandFragmentSecond extends BaseFragment implements View.OnClickLis
 
         //标价点击数据改变以及添加关注
         initTagNumber();
+
+        image_01 = (ImageView) view.findViewById(R.id.brand_fragment_second_image_01);
+        image_02 = (ImageView) view.findViewById(R.id.imageView3);
+        image_01.setOnClickListener(this);
+        image_02.setOnClickListener(this);
         return view;
     }
 
@@ -70,6 +77,12 @@ public class BrandFragmentSecond extends BaseFragment implements View.OnClickLis
             case R.id.brang_frgment_second_textview_attention:
                 layout_attention.setVisibility(View.VISIBLE);
                 textview_attention.setVisibility(View.INVISIBLE);
+                break;
+            case R.id.brand_fragment_second_image_01:
+                startFragment(new GoodsDetailsFragment());
+                break;
+            case R.id.imageView3:
+                startFragment(new GoodsDetailsFragment());
                 break;
         }
     }

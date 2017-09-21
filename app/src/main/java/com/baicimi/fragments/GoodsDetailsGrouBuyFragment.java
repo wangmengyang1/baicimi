@@ -22,7 +22,10 @@ import com.baicimi.R;
 import com.baicimi.adapter.HistoryAdapter;
 import com.baicimi.adapter.VerticalPagerAdapter;
 import com.baicimi.base.BaseFragment;
+import com.baicimi.entity.ShopingPackageMessage;
 import com.baicimi.view.VerticalViewPagerView;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -493,8 +496,11 @@ public class GoodsDetailsGrouBuyFragment extends BaseFragment implements View.On
             public void onClick(View view) {
 
                 if(index == 0){
+
                     //购物车的跳转
-                    startFragment(new ShopingCarFragment(),null);
+                    EventBus.getDefault().post(new ShopingPackageMessage(1));
+//                    //购物车的跳转
+//                    startFragment(new ShopingCarFragment(),null);
                 }else if (index == 1){
                     //立即购买的跳转
                     startFragment(new PersonDingDanFragment(),null);

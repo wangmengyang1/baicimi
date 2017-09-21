@@ -25,11 +25,133 @@
                 ></com.youth.banner.Banner>
 
 
-            <View
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:background="#fafafa"></View>
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
 
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/xifa_manmain"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:src="@drawable/image_new_14"
+                        android:textColor="#737373"
+                        />
+
+                    <ImageView
+                        android:id="@+id/muyu_manmain"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:src="@drawable/image_new_13"
+                        android:textColor="#737373"
+                        android:textSize="14sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/xiyiye_manmain"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:src="@drawable/image_new_19"
+                        android:textColor="#737373"
+                        android:textSize="14sp"
+                        />
+                    <ImageView
+                        android:id="@+id/ximiannai_manmain"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:src="@drawable/image_new_17"
+                        android:textColor="#737373"
+                        android:textSize="14sp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingBottom="8dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="护肤"
+                        android:textColor="#737373"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="洗护"
+                        android:textColor="#737373"
+                        android:textSize="13sp"  />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="个护电器"
+                        android:textColor="#737373"
+                        android:textSize="13sp"  />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="户外用品"
+                        android:textColor="#737373"
+                        android:textSize="13sp"  />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
 
             //男士主页热卖推荐
             <RelativeLayout

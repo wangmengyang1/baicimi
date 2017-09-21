@@ -9,7 +9,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.baicimi.R;
+import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.ShopingPackageMessage;
+import com.baicimi.fragments.PersonDingDanFragment;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -26,6 +28,9 @@ public class ShopingPackageDialog extends Dialog implements View.OnClickListener
 
     private ShopingPackageMessage shopingPackageMessage;
 
+    private int index;
+    private BaseFragment baseFragment;
+
 
     public ShopingPackageDialog(Context context) {
         super(context);
@@ -33,6 +38,12 @@ public class ShopingPackageDialog extends Dialog implements View.OnClickListener
 
     public ShopingPackageDialog(Context context, int themeResId) {
         super(context, themeResId);
+    }
+
+    public ShopingPackageDialog(Context context, int themeResId , int index , BaseFragment baseFragment) {
+        super(context, themeResId);
+        this.index = index;
+        this.baseFragment = baseFragment;
     }
 
 
@@ -44,8 +55,14 @@ public class ShopingPackageDialog extends Dialog implements View.OnClickListener
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EventBus.getDefault().post(new ShopingPackageMessage(1));
-                dismiss();
+                if (index != 0 && baseFragment != null){
+                    EventBus.getDefault().post(new ShopingPackageMessage(1));
+                    dismiss();
+                    baseFragment.startFragment(new PersonDingDanFragment(),null );
+                }else{
+                    EventBus.getDefault().post(new ShopingPackageMessage(1));
+                    dismiss();
+                }
             }
         });
 

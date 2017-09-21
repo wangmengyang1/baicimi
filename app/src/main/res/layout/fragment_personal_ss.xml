@@ -229,7 +229,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="102dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
 
@@ -241,7 +241,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="35dp"
                     android:orientation="horizontal">
 
                     <View
@@ -259,7 +259,7 @@
                         android:gravity="center"
                         android:text="全部内容"
                         android:textColor="@drawable/star_text_selector"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <View
                         android:layout_width="1dp"
@@ -275,7 +275,7 @@
                         android:gravity="center"
                         android:text="我的图片"
                         android:textColor="@drawable/star_text_selector"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <View
                         android:layout_width="1dp"
@@ -292,7 +292,7 @@
                         android:gravity="center"
                         android:text="我的文章"
                         android:textColor="@drawable/star_text_selector"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
 
                     <View
@@ -311,7 +311,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="35dp"
                     android:orientation="horizontal">
 
                     <View
@@ -328,7 +328,7 @@
                         android:gravity="center"
                         android:text="我的相册"
                         android:textColor="@drawable/star_text_selector"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <View
                         android:layout_width="1dp"
@@ -344,7 +344,7 @@
                         android:gravity="center"
                         android:text="赞"
                         android:textColor="@drawable/star_text_selector"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <View
                         android:layout_width="1dp"
@@ -362,7 +362,7 @@
                         android:text="设置"
                         android:drawablePadding="-30dp"
                         android:textColor="@drawable/star_text_selector"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                 </LinearLayout>
 

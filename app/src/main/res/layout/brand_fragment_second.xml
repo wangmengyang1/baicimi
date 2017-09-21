@@ -88,6 +88,7 @@
             >
 
             <ImageView
+                android:id="@+id/brand_fragment_second_image_01"
                 android:layout_width="match_parent"
                 android:layout_height="224dp"
                 android:src="@drawable/brand_fragment_second_image_01"
@@ -200,28 +201,15 @@
                 android:layout_marginTop="6dp"
                 android:textSize="13sp"
                 />
-            
+
             <ImageView
+
                 android:layout_width="220dp"
                 android:layout_height="220dp"
                 android:src="@drawable/brand_fragment_second_image_02"
                 android:layout_gravity="center"
-                />
+                android:id="@+id/imageView3" />
 
-            <!--<ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/brand_fragment_second_image_08"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="品驰智慧精准护肤"
-                android:gravity="center"
-                />-->
 
 
             <TextView
