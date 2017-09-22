@@ -19,42 +19,55 @@
             android:layout_marginLeft="15dp"
             />
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="客户服务"
-            android:textSize="17sp"
-            android:textColor="#454545"
+            android:orientation="horizontal"
             android:layout_centerInParent="true"
-            />
+            android:background="@drawable/fragment_kehufuwu_layout_shape"
+            >
+
+            <TextView
+                android:id="@+id/fragment_kehufuwu_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单问题"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/fragment_kehufuwu_layout_shape_second"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/fragment_kehufuwu_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物问题"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                />
+
+            <TextView
+                android:id="@+id/fragment_kehufuwu_thried"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其他问题"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                />
 
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/gengduo"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="15dp"
-            />
+        </LinearLayout>
+
     </RelativeLayout>
-
-   <RelativeLayout
-       android:layout_width="match_parent"
-       android:layout_height="50dp"
-       android:background="#F1F1F1"
-       >
-
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="问题查询"
-           android:textSize="13sp"
-           android:textColor="#7A7780"
-           android:layout_marginTop="25dp"
-           android:layout_marginLeft="15dp"
-           />
-   </RelativeLayout>
 
 
     //我的分期
@@ -71,7 +84,7 @@
             ></View>
 
 
-        <RadioGroup
+        <!--<RadioGroup
             android:id="@+id/fuwu_group"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -125,15 +138,9 @@
                 android:gravity="center"
                 android:text="其他问题"
                 android:textColor="#7D7D7D" />
-        </RadioGroup>
+        </RadioGroup>-->
 
-        <View
-            android:id="@+id/view2"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@id/fuwu_group"
-            android:background="#D6D6D9"
-            ></View>
+
 
         <FrameLayout
             android:id="@+id/id_content_fuwu"

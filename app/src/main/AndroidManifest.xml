@@ -8,6 +8,9 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="23" />
 
+    //获得activity 的名字
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     //二维码扫描系列权限
     <uses-permission android:name="android.permission.VIBRATE" />

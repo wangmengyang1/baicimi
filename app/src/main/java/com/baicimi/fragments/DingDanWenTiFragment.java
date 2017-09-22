@@ -46,29 +46,38 @@ public class DingDanWenTiFragment extends BaseFragment{
     private void LoadListData() {
         // TODO Auto-generated method stub
         GroupData = new ArrayList<String>();
+        GroupData.add("物流配送");
         GroupData.add("售货咨询");
         GroupData.add("退款问题");
         GroupData.add("退货换货");
 
+
         ChildrenData = new ArrayList<List<String>>();
+
         List<String> child1 = new ArrayList<String>();
-        child1.add("发货时间");
-        child1.add("包裹到哪了");
-        child1.add("修改收货地址/手机号码");
-        child1.add("偏远地区是否送到");
+        child1.add("物流配送");
+        child1.add("物流配送");
+        child1.add("物流配送");
+        child1.add("物流配送");
         ChildrenData.add(child1);
         List<String> child2 = new ArrayList<String>();
-        child2.add("退货后什么时候退款");
-        child2.add("拒收包裹后什么时候退款");
-        child2.add("发货运费退不退回");
-        child2.add("信用卡退款到账时效");
+        child2.add("发货时间");
+        child2.add("包裹到哪了");
+        child2.add("修改收货地址/手机号码");
+        child2.add("偏远地区是否送到");
         ChildrenData.add(child2);
         List<String> child3 = new ArrayList<String>();
-        child3.add("如何办理退货");
-        child3.add("换货运费问题");
-        child3.add("不同订单退货嫩个一起寄回吗");
-        child3.add("可以换货吗");
+        child3.add("退货后什么时候退款");
+        child3.add("拒收包裹后什么时候退款");
+        child3.add("发货运费退不退回");
+        child3.add("信用卡退款到账时效");
         ChildrenData.add(child3);
+        List<String> child4 = new ArrayList<String>();
+        child4.add("如何办理退货");
+        child4.add("换货运费问题");
+        child4.add("不同订单退货嫩个一起寄回吗");
+        child4.add("可以换货吗");
+        ChildrenData.add(child4);
     }
 
 
@@ -76,7 +85,7 @@ public class DingDanWenTiFragment extends BaseFragment{
         expd_lv.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-                startFragment(new WenTiDetailsFragment(),null);
+                startFragment(new WenTiDetailsFragment(ChildrenData.get(groupPosition).get(childPosition)),null);
                 return true;
             }
         });

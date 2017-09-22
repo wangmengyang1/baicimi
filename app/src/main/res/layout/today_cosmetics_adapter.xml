@@ -149,7 +149,7 @@
                 android:id="@+id/today_cosmetics_adapter_immediatelyshop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="立即购买"
+                android:text="立即订购"
                 android:textColor="@color/white"
                 android:background="#f00"
                 android:layout_marginLeft="15dp"

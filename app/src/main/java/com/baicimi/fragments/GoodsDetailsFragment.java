@@ -21,6 +21,7 @@ import android.widget.TextView;
 import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.adapter.HistoryAdapter;
+import com.baicimi.adapter.MyViewPagerFragmetAdapterSecond;
 import com.baicimi.adapter.VerticalPagerAdapter;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.ShopingPackageMessage;
@@ -46,23 +47,14 @@ public class GoodsDetailsFragment extends BaseFragment implements View.OnClickLi
     private CheckBox checkBox4;
     private CheckBox checkBox5;
     private CheckBox checkBox6;
-    private ImageView imageView1;
-    private ImageView imageView2;
-    private ImageView imageView3;
-    private ImageView imageView4;
-    private ImageView imageView5;
-    private ImageView imageView6;
+
     private Button btn_choose,btn_buynow;
 
     private ImageView btn_buying_car;
 
-    private List<View> baseList;
-    private LayoutInflater inflater;
-//    private View view1, view2, view3;
+    private List<Fragment> listFragments = new ArrayList<>();
+
     private ViewPager viewPager;
-    private VerticalViewPagerView checkOne, checkTwo, checkThree;
-    private List<Fragment> oneListFragments, twoListFragments,
-            threeListFragments;
 
     private PopupWindow window_choose;
     private CheckBox checkBox_xxl, checkBox_xl, checkBox_l, checkBox_m, checkBox_s,
@@ -143,24 +135,13 @@ public class GoodsDetailsFragment extends BaseFragment implements View.OnClickLi
         });
 
 
-        baseList = getList();
-        oneListFragments = getFragmentList();
-        twoListFragments = getTwoFragments();
-        threeListFragments = getThreeFragments();
+        listFragments.clear();
+        listFragments.add(new CheckOneFragment());
+        listFragments.add(new CheckTwoFragment());
+        listFragments.add(new CheckThreeFragment());
 
-        VerticalPagerAdapter fragmentAdapter = new VerticalPagerAdapter(
-                getChildFragmentManager(), oneListFragments);
-        VerticalPagerAdapter fragmentAdapter1 = new VerticalPagerAdapter(
-                getChildFragmentManager(), twoListFragments);
-        VerticalPagerAdapter fragmentAdapter2 = new VerticalPagerAdapter(
-                getChildFragmentManager(), threeListFragments);
-
-        HistoryAdapter adapter = new HistoryAdapter(baseList);
-
-        checkOne.setAdapter(fragmentAdapter);
-        checkTwo.setAdapter(fragmentAdapter1);
-        checkThree.setAdapter(fragmentAdapter2);
-        viewPager.setAdapter(adapter);
+        MyViewPagerFragmetAdapterSecond myViewPagerFragmetAdapterSecond = new MyViewPagerFragmetAdapterSecond(getChildFragmentManager() , listFragments);
+        viewPager.setAdapter(myViewPagerFragmetAdapterSecond);
 
 
         //购物车
@@ -195,100 +176,6 @@ public class GoodsDetailsFragment extends BaseFragment implements View.OnClickLi
         layout_tagnumber = (LinearLayout) view.findViewById(R.id.fragment_details_layout_tagnumber);
         tagNumber = (TextView) view.findViewById(R.id.fragment_details_textview_tagnumber);
         layout_tagnumber.setOnClickListener(this);
-    }
-
-    public List<View> getList() {
-        List<View> mList;
-        inflater = LayoutInflater.from(getContext());
-        View view1 = inflater.inflate(R.layout.check_one, null ,false);
-        checkOne = (VerticalViewPagerView) view1.findViewById(R.id.check_one);
-        imageView1 = (ImageView) view1.findViewById(R.id.img_gouwuche1);
-
-        imageView4 = (ImageView) view1.findViewById(R.id.login_back1);
-        //跳转到购物车界面
-        imageView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startFragment(new ShopingCarFragment(), null);
-            }
-        });
-        //返回上一层
-        imageView4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((MainActivity) getActivity()).goBack();//返回上一层页面
-            }
-        });
-        View view2 = inflater.inflate(R.layout.check_two, null);
-        checkTwo = (VerticalViewPagerView) view2.findViewById(R.id.check_two);
-        imageView2 = (ImageView) view2.findViewById(R.id.img_gouwuche2);
-        imageView5 = (ImageView) view2.findViewById(R.id.login_back2);
-        imageView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startFragment(new ShopingCarFragment(), null);
-            }
-        });
-        imageView5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((MainActivity) getActivity()).goBack();//返回上一层页面
-            }
-        });
-        View view3 = inflater.inflate(R.layout.check_three, null);
-        checkThree = (VerticalViewPagerView) view3.findViewById(R.id.check_Three);
-        imageView3 = (ImageView) view3.findViewById(R.id.img_gouwuche3);
-        imageView6 = (ImageView) view3.findViewById(R.id.login_back3);
-        imageView3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startFragment(new ShopingCarFragment(), null);
-            }
-        });
-        imageView6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((MainActivity) getActivity()).goBack();//返回上一层页面
-            }
-        });
-        mList = new ArrayList<View>();
-        mList.add(view1);
-        mList.add(view2);
-        mList.add(view3);
-        return mList;
-    }
-
-    public List<Fragment> getFragmentList() {
-        List<Fragment> listFragments = new ArrayList<Fragment>();
-
-        for (int i = 0; i < 10; i++) {
-            CheckOneFragment oneFragment = new CheckOneFragment();
-            listFragments.add(oneFragment);
-        }
-        return listFragments;
-    }
-
-    public List<Fragment> getTwoFragments() {
-        List<Fragment> listFragments = new ArrayList<Fragment>();
-
-        for (int i = 0; i < 10; i++) {
-            CheckTwoFragment twoFragment = new CheckTwoFragment();
-            listFragments.add(twoFragment);
-        }
-        return listFragments;
-    }
-
-
-    public List<Fragment> getThreeFragments() {
-        List<Fragment> listFragments = new ArrayList<Fragment>();
-
-        for (int i = 0; i < 10; i++) {
-            CheckThreeFragment threeFragment = new CheckThreeFragment();
-            listFragments.add(threeFragment);
-
-        }
-        return listFragments;
-
     }
 
     /**

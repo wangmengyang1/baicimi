@@ -206,13 +206,21 @@
 
                 <Spinner
                     android:id="@+id/bnn_distributor_register_spinner_02"
-                    android:layout_width="160dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="190dp"
+                    android:layout_height="22dp"
                     android:layout_marginLeft="15dp"
-                    android:gravity="center"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/bnn_diatributor_register_option_shape"
+
                     ></Spinner>
 
 
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/below_image_01"
+                    android:layout_marginLeft="5dp"
+                    />
             </LinearLayout>
 
             <LinearLayout

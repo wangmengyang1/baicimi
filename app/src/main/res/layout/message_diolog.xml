@@ -113,7 +113,7 @@
                             android:layout_marginLeft="20dp"
                             android:text="成分和保养"
                             android:textColor="#7C7C7C"
-                            android:textSize="17sp" />
+                            android:textSize="15sp" />
                     </RelativeLayout>
 
                     <View
@@ -135,7 +135,7 @@
                             android:layout_marginLeft="20dp"
                             android:text="产品功效"
                             android:textColor="#7C7C7C"
-                            android:textSize="17sp" />
+                            android:textSize="15sp" />
                     </RelativeLayout>
 
                     <View
@@ -157,7 +157,7 @@
                             android:layout_marginLeft="20dp"
                             android:text="使用指南"
                             android:textColor="#7C7C7C"
-                            android:textSize="17sp" />
+                            android:textSize="15sp" />
                     </RelativeLayout>
 
                     <View
@@ -181,7 +181,33 @@
                             android:text="客户服务"
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="20dp"
-                            android:textSize="17sp"
+                            android:textSize="15sp"
+                            android:textColor="#7C7C7C"
+                            />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BBBBBB"
+                        android:layout_below="@id/re_chicun"
+                        ></View>
+
+                    <RelativeLayout
+                        android:id="@+id/re_gognyingshang_ss"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/view3"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:id="@+id/tv_gognyingshang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我们的供应商"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="15sp"
                             android:textColor="#7C7C7C"
                             />
                     </RelativeLayout>
@@ -207,7 +233,7 @@
                             android:layout_marginLeft="20dp"
                             android:text="分享"
                             android:textColor="#7C7C7C"
-                            android:textSize="17sp" />
+                            android:textSize="15sp" />
                     </RelativeLayout>
 
 

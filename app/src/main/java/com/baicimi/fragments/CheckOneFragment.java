@@ -17,6 +17,7 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.adapter.CheckOneFragmentListViewAdapter;
 import com.baicimi.base.BaseFragment;
@@ -24,6 +25,7 @@ import com.baicimi.entity.CheckOneFragmentEntry;
 import com.baicimi.image.GlideImageLoader;
 import com.baicimi.ui.ShareModel;
 import com.baicimi.ui.SharePopupWindow;
+import com.baicimi.ui.VertiaclTransformer;
 import com.bumptech.glide.Glide;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
@@ -39,7 +41,7 @@ import cn.sharesdk.framework.ShareSDK;
  * Created by tan on 2016/9/5.
  * 商品页
  */
-public class CheckOneFragment extends BaseFragment {
+public class CheckOneFragment extends BaseFragment implements View.OnClickListener {
     private Button btn_mmesage, btn_wancheng;
     private RelativeLayout re_share, re_fuwu,re_yingyang,re_guide;
     private PopupWindow window_xinxi, window_share, window_fuwu;
@@ -64,14 +66,18 @@ public class CheckOneFragment extends BaseFragment {
     private CheckOneFragmentListViewAdapter adapter;
     private TextView message_tv , commect_tv;
     private LinearLayout layout_02;
-    private ImageView back;
     private TextView back_tv;
 
-    private ImageView imageView;
+//    private ImageView imageView;
+
+    private ImageView back;
 
     //头部轮播图集合
     List<Integer> image_head = new ArrayList<>();
     List<String> title_head = new ArrayList<>();
+
+    private ImageView back_head , packages;
+    private ImageView yuandian_01 , yuandian_04 ,yuandian_03 ,yuandian_02;
 
 
     @Override
@@ -84,61 +90,85 @@ public class CheckOneFragment extends BaseFragment {
                 showPopwindowmessage();
             }
         });
-        imageView = (ImageView) view.findViewById(R.id.check_ong_item_imageview);
-        Glide.with(getContext())
-                .load(R.mipmap.img_details1)
-                .into(imageView);
 
 
         //头部轮播方法
-//        initBannerHead();
+        initBannerHead();
+
+        back_head = (ImageView) view.findViewById(R.id.login_back1);
+        back_head.setOnClickListener(this);
+        packages = (ImageView) view.findViewById(R.id.img_gouwuche1);
+        packages.setOnClickListener(this);
+
+        yuandian_01 = (ImageView) view.findViewById(R.id.check_one_yuandian_01);
+        yuandian_02 = (ImageView) view.findViewById(R.id.check_one_yuandian_02);
+        yuandian_03 = (ImageView) view.findViewById(R.id.check_one_yuandian_03);
+        yuandian_04 = (ImageView) view.findViewById(R.id.check_one_yuandian_04);
 
         return view;
     }
 
 
+    private void setImageViewSrc(){
+        yuandian_01.setImageResource(R.drawable.yuandian_huise);
+        yuandian_02.setImageResource(R.drawable.yuandian_huise);
+        yuandian_03.setImageResource(R.drawable.yuandian_huise);
+        yuandian_04.setImageResource(R.drawable.yuandian_huise);
+    }
 
     //头部轮播方法
-//    private void initBannerHead() {
-//        title_head.clear();
-//        image_head.clear();
-//        for(int i = 0 ; i < 2 ; i++){
-//
-//            title_head.add(new String(""));
-//            image_head.add(R.mipmap.changxiaolunboq1);
-//            title_head.add(new String(""));
-//            image_head.add(R.mipmap.changxiaolunboq2);
-//        }
-//
-//
-//        //头部轮播图片
-//        Banner banner = (Banner)view.findViewById(R.id.check_one_item_banner);
-//        //设置banner样式
-//        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE);
-//        //设置图片加载器
-//        banner.setImageLoader(new GlideImageLoader());
-//        //设置图片集合
-//        banner.setImages(image_head);
-//        //设置banner动画效果
-//        banner.setBannerAnimation(Transformer.FlipVertical);
-//        //设置标题集合（当banner样式有显示title时）
-//        banner.setBannerTitles(title_head);
-//        //设置自动轮播，默认为true
-//        banner.isAutoPlay(true);
-//        //设置轮播时间
-//        banner.setDelayTime(2500);
-//        //设置指示器位置（当banner模式中有指示器时）
-//        banner.setIndicatorGravity(BannerConfig.CENTER);
-//        //banner设置方法全部调用完毕时最后调用
-//        banner.start();
-//
+    private void initBannerHead() {
+        title_head.clear();
+        image_head.clear();
+        for(int i = 0 ; i < 4 ; i++){
+
+            title_head.add(new String(""));
+            image_head.add(R.mipmap.img_details1);
+        }
+
+
+        //头部轮播图片
+        Banner banner = (Banner)view.findViewById(R.id.check_one_item_banner);
+        //设置banner样式
+        banner.setBannerStyle(BannerConfig.NOT_INDICATOR);
+        //设置图片加载器
+        banner.setImageLoader(new GlideImageLoader());
+        //设置图片集合
+        banner.setImages(image_head);
+        //设置banner动画效果
+        banner.setBannerAnimation(VertiaclTransformer.class);
+        //设置标题集合（当banner样式有显示title时）
+        banner.setBannerTitles(title_head);
+        //设置自动轮播，默认为true
+        banner.isAutoPlay(true);
+        //设置轮播时间
+        banner.setDelayTime(2500);
+        //设置指示器位置（当banner模式中有指示器时）
+        banner.setIndicatorGravity(BannerConfig.CENTER);
+        //banner设置方法全部调用完毕时最后调用
+        banner.start();
+
 //        banner.setOnBannerListener(new OnBannerListener() {
 //            @Override
 //            public void OnBannerClick(int position) {
-//                startFragment(new SerchGoodsFragment(),null);
+//                if (position == 0){
+//                    setImageViewSrc();
+//                    yuandian_01.setImageResource(R.drawable.yuandian_luse);
+//                }else if (position == 1){
+//                    setImageViewSrc();
+//                    yuandian_02.setImageResource(R.drawable.yuandian_luse);
+//                }else if (position == 2){
+//                    setImageViewSrc();
+//                    yuandian_03.setImageResource(R.drawable.yuandian_luse);
+//                }else if (position == 3){
+//                    setImageViewSrc();
+//                    yuandian_04.setImageResource(R.drawable.yuandian_luse);
+//                }
 //            }
 //        });
-//    }
+
+
+    }
 
 
     /**
@@ -395,5 +425,18 @@ public class CheckOneFragment extends BaseFragment {
     @Override
     protected void initData() {
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.login_back1:
+                ((MainActivity)getActivity()).goBack();//返回到上一级界面
+                break;
+            case R.id.img_gouwuche1:
+                //购物车界面
+                startFragment(new ShopingCarFragment(), null);
+                break;
+        }
     }
 }

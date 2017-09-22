@@ -27,6 +27,11 @@ public class MyViewPagerFragmetAdapterSecond extends FragmentStatePagerAdapter {
         this.title = title;
     }
 
+    public MyViewPagerFragmetAdapterSecond(FragmentManager fm, List<Fragment> list) {
+        super(fm);
+        this.list = list;
+    }
+
     @Override
     public Fragment getItem(int position) {
         return list.get(position);

@@ -2,9 +2,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/white"
-    >
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/login_back1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/register_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="金属色交织薄围巾"
+            android:textColor="#343434"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_gouwuche1"
+            android:clickable="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/shoping_image_red_01"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,21 +46,21 @@
 
 
 
-        <ImageView
-            android:id="@+id/check_three_item_imageview"
+        <com.youth.banner.Banner
+            android:id="@+id/check_three_item_banner"
             android:layout_width="250dp"
             android:layout_height="250dp"
-            android:src="@mipmap/img_details3"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            />
+            android:layout_marginTop="80dp"
+            app:title_height="0dp"
+            ></com.youth.banner.Banner>
 
 
         <Button
             android:id="@+id/btn_message"
             android:layout_width="60dp"
             android:layout_height="30dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="15dp"
             android:text="+信息"

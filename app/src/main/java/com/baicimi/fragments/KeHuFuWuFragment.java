@@ -1,11 +1,13 @@
 package com.baicimi.fragments;
 
+import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
@@ -18,11 +20,11 @@ import com.lidroid.xutils.view.annotation.event.OnClick;
  * Created by tan on 2016/9/30.
  * 客户服务界面
  */
+
 public class KeHuFuWuFragment extends BaseFragment{
     private Fragment[] mFragments;
     private int mIndex;
-
-
+    private TextView first , second , thread;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -31,28 +33,59 @@ public class KeHuFuWuFragment extends BaseFragment{
         initFragment();
 
 
+        first = (TextView) view.findViewById(R.id.fragment_kehufuwu_first);
+        second = (TextView) view.findViewById(R.id.fragment_kehufuwu_second);
+        thread = (TextView) view.findViewById(R.id.fragment_kehufuwu_thried);
         return view;
     }
 
 
-    @OnClick({R.id.login_back,R.id.gouwu,R.id.dingdan,R.id.qita})
+    @OnClick({R.id.login_back, R.id.fragment_kehufuwu_first ,R.id.fragment_kehufuwu_second ,R.id.fragment_kehufuwu_thried  })
     public void onClick(View view) {
         int id=view.getId();
         switch (id) {
             case R.id.login_back:
                 ((MainActivity)getActivity()).goBack();//返回上一层页面
                 break;
-            case R.id.dingdan:
+//            case R.id.dingdan:
+//                setIndexSelect(0);
+//                break;
+//            case R.id.gouwu:
+//                setIndexSelect(1);
+//                break;
+//            case R.id.qita:
+//                setIndexSelect(2);
+//                break;
+            case R.id.fragment_kehufuwu_first:
                 setIndexSelect(0);
+                initNavition();
+                first.setBackgroundResource(R.drawable.fragment_kehufuwu_layout_shape_second);
+                first.setTextColor(Color.WHITE);
                 break;
-            case R.id.gouwu:
+            case R.id.fragment_kehufuwu_second:
                 setIndexSelect(1);
+                initNavition();
+                second.setBackgroundResource(R.drawable.fragment_kehufuwu_layout_shape_one);
+                second.setTextColor(Color.WHITE);
                 break;
-            case R.id.qita:
+            case R.id.fragment_kehufuwu_thried:
                 setIndexSelect(2);
+                initNavition();
+                thread.setBackgroundResource(R.drawable.fragment_kehufuwu_layout_shape_threid);
+                thread.setTextColor(Color.WHITE);
                 break;
         }
     }
+
+    private void initNavition(){
+        first.setBackgroundResource(R.drawable.background_null);
+        first.setTextColor(Color.parseColor("#969696"));
+        second.setBackgroundResource(R.drawable.background_null);
+        second.setTextColor(Color.parseColor("#969696"));
+        thread.setBackgroundResource(R.drawable.background_null);
+        thread.setTextColor(Color.parseColor("#969696"));
+    }
+
 
     private void initFragment() {
         //订单问题

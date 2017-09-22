@@ -179,7 +179,7 @@
                 android:layout_width="17dp"
                 android:layout_height="17dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/shoping_package_red"
+                android:src="@drawable/shoping_package_gral"
                 android:layout_marginRight="40dp"
                 />
 

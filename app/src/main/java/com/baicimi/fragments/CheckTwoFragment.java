@@ -16,6 +16,7 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.adapter.CheckOneFragmentListViewAdapter;
 import com.baicimi.base.BaseFragment;
@@ -23,6 +24,7 @@ import com.baicimi.entity.CheckOneFragmentEntry;
 import com.baicimi.image.GlideImageLoader;
 import com.baicimi.ui.ShareModel;
 import com.baicimi.ui.SharePopupWindow;
+import com.baicimi.ui.VertiaclTransformer;
 import com.bumptech.glide.Glide;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
@@ -38,7 +40,7 @@ import cn.sharesdk.framework.ShareSDK;
  * Created by tan on 2016/9/5.
  * 详情页
  */
-public class CheckTwoFragment extends BaseFragment {
+public class CheckTwoFragment extends BaseFragment implements View.OnClickListener {
     private Button btn_mmesage, btn_wancheng;
     private RelativeLayout re_share, re_fuwu,re_yingyang,re_guide;
     private PopupWindow window_xinxi, window_share, window_fuwu;
@@ -63,10 +65,14 @@ public class CheckTwoFragment extends BaseFragment {
     private TextView message_tv , commect_tv;
     private LinearLayout layout_02;
     private ImageView back;
-    private TextView back_tv;
-    private ImageView imageView;
 
 
+
+    //头部轮播图集合
+    List<Integer> image_head = new ArrayList<>();
+    List<String> title_head = new ArrayList<>();
+
+    private ImageView back_head , packages;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -78,10 +84,13 @@ public class CheckTwoFragment extends BaseFragment {
                 showPopwindowmessage();
             }
         });
-        imageView = (ImageView) view.findViewById(R.id.check_two_item_imageview);
-        Glide.with(getContext())
-                .load(R.mipmap.img_details2)
-                .into(imageView);
+        //头部轮播方法
+        initBannerHead();
+
+        back_head = (ImageView) view.findViewById(R.id.login_back1);
+        back_head.setOnClickListener(this);
+        packages = (ImageView) view.findViewById(R.id.img_gouwuche1);
+        packages.setOnClickListener(this);
 
         return view;
     }
@@ -209,45 +218,41 @@ public class CheckTwoFragment extends BaseFragment {
 
 
 
-    //头部轮播方法
-    private void initBanner() {
-        titles.clear();
-        images.clear();
-        for(int i = 0 ; i < 3 ; i++){
 
-            titles.add(new String(""));
-            images.add(R.drawable.home_page_brand_fragment_image_21);
+    //头部轮播方法
+    private void initBannerHead() {
+        title_head.clear();
+        image_head.clear();
+        for(int i = 0 ; i < 4 ; i++){
+
+            title_head.add(new String(""));
+            image_head.add(R.mipmap.img_details2);
         }
 
 
         //头部轮播图片
-        Banner banner = (Banner)view_window.findViewById(R.id.message_diolog_banner);
+        Banner banner = (Banner)view.findViewById(R.id.check_two_item_banner);
         //设置banner样式
-        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE);
+        banner.setBannerStyle(BannerConfig.NOT_INDICATOR);
         //设置图片加载器
         banner.setImageLoader(new GlideImageLoader());
         //设置图片集合
-        banner.setImages(images);
+        banner.setImages(image_head);
         //设置banner动画效果
-        banner.setBannerAnimation(Transformer.DepthPage);
+        banner.setBannerAnimation(VertiaclTransformer.class);
         //设置标题集合（当banner样式有显示title时）
-        banner.setBannerTitles(titles);
+        banner.setBannerTitles(title_head);
         //设置自动轮播，默认为true
         banner.isAutoPlay(true);
         //设置轮播时间
-        banner.setDelayTime(3500);
+        banner.setDelayTime(2500);
         //设置指示器位置（当banner模式中有指示器时）
         banner.setIndicatorGravity(BannerConfig.CENTER);
         //banner设置方法全部调用完毕时最后调用
         banner.start();
 
-        banner.setOnBannerListener(new OnBannerListener() {
-            @Override
-            public void OnBannerClick(int position) {
-                startFragment(new SerchGoodsFragment(),null);
-            }
-        });
     }
+
 
 
     //评论布局填充
@@ -345,4 +350,58 @@ public class CheckTwoFragment extends BaseFragment {
     protected void initData() {
 
     }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.login_back1:
+                ((MainActivity)getActivity()).goBack();//返回到上一级界面
+                break;
+            case R.id.img_gouwuche1:
+                //购物车界面
+                startFragment(new ShopingCarFragment(), null);
+                break;
+        }
+    }
+
+    //头部轮播方法
+    private void initBanner() {
+        titles.clear();
+        images.clear();
+        for(int i = 0 ; i < 3 ; i++){
+
+            titles.add(new String(""));
+            images.add(R.drawable.home_page_brand_fragment_image_21);
+        }
+
+
+        //头部轮播图片
+        Banner banner = (Banner)view_window.findViewById(R.id.message_diolog_banner);
+        //设置banner样式
+        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE);
+        //设置图片加载器
+        banner.setImageLoader(new GlideImageLoader());
+        //设置图片集合
+        banner.setImages(images);
+        //设置banner动画效果
+        banner.setBannerAnimation(Transformer.DepthPage);
+        //设置标题集合（当banner样式有显示title时）
+        banner.setBannerTitles(titles);
+        //设置自动轮播，默认为true
+        banner.isAutoPlay(true);
+        //设置轮播时间
+        banner.setDelayTime(3500);
+        //设置指示器位置（当banner模式中有指示器时）
+        banner.setIndicatorGravity(BannerConfig.CENTER);
+        //banner设置方法全部调用完毕时最后调用
+        banner.start();
+
+        banner.setOnBannerListener(new OnBannerListener() {
+            @Override
+            public void OnBannerClick(int position) {
+                startFragment(new SerchGoodsFragment(),null);
+            }
+        });
+    }
+
 }

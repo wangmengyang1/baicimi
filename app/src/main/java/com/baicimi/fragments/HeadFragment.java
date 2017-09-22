@@ -34,7 +34,7 @@ public class HeadFragment extends BaseFragment {
     private MyViewPagerFragmetAdapterSecond myViewPagerFragmetAdapterSecond;
     private List<Fragment> listFragment = new ArrayList<>();
 
-    private String[] titles = {"畅销热卖", "七月菊", "宁菲", "积分商城", "团购","个人用品", "母婴用品", "男士主页", "美妆个护", "试用申请", "品牌", "周五之夜"};
+    private String[] titles = {"畅销热卖", "七月菊", "宁菲", "积分商城", "团购","个人用品", "母婴用品", "男士主页", "美妆个护", "试用申请", "品牌", "周五之夜" , "玫瑰社区"};
     //3 , "积分商城"   6, "个人用品"
 
     @Override
@@ -42,7 +42,6 @@ public class HeadFragment extends BaseFragment {
         view = inflater.inflate(R.layout.cehua_view, container, false);
         ViewUtils.inject(this, view);
         initFragment();
-
 
         viewPager = (ViewPager) view.findViewById(R.id.vp_head_viewpager);
         tabs = (PersonUserPagerSlidingTabStrip) view.findViewById(R.id.head_page_pupst);
@@ -66,6 +65,7 @@ public class HeadFragment extends BaseFragment {
         listFragment.add(new TryoutApplyforFragment());
         listFragment.add(new HomePageBrandFragment());
         listFragment.add(new FridayNightFragment());
+        listFragment.add(new HeadMeiguiRoseFragment());
     }
 
     @Override
