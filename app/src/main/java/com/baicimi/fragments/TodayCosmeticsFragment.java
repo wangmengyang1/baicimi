@@ -1,5 +1,6 @@
 package com.baicimi.fragments;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +22,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2017/8/24.
  */
+@SuppressLint("ValidFragment")
 public class TodayCosmeticsFragment extends BaseFragment implements DistributionNumberOnitemClick, View.OnClickListener {
 
     private View view;
@@ -32,7 +34,12 @@ public class TodayCosmeticsFragment extends BaseFragment implements Distribution
     private TextView sales , news , price_one , price_two , attention;
 
 
+    private boolean state;
 
+    @SuppressLint("ValidFragment")
+    public TodayCosmeticsFragment(boolean state) {
+        this.state = state;
+    }
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -74,10 +81,10 @@ public class TodayCosmeticsFragment extends BaseFragment implements Distribution
     //listview布局填充
     private void initListView() {
         listView = (ListView) view.findViewById(R.id.today_cosmetics_fragment_listview);
-        list_lv.add(new TodayCosmeticsEntry(R.drawable.today_cosmetics_adapter_image_01 , new String("积分价：¥159.00") , new String("商城价：¥259.00") , new String("澳雅婷蜗牛原液6件套补水护肤套装洁净系列") , new String("259") , new String("97") , new String("98120") , 1 ));
-        list_lv.add(new TodayCosmeticsEntry(R.drawable.today_cosmetics_adapter_image_01 , new String("积分价：¥159.00") , new String("商城价：¥259.00") , new String("澳雅婷蜗牛原液6件套补水护肤套装洁净系列") , new String("259") , new String("97") , new String("98120") , 1 ));
-        list_lv.add(new TodayCosmeticsEntry(R.drawable.today_cosmetics_adapter_image_01 , new String("积分价：¥159.00") , new String("商城价：¥259.00") , new String("澳雅婷蜗牛原液6件套补水护肤套装洁净系列") , new String("259") , new String("97") , new String("98120") , 1 ));
-        adapter = new TodayCosmeticsAdapter(getContext() , list_lv , this);
+        list_lv.add(new TodayCosmeticsEntry(R.drawable.today_cosmetics_adapter_image_01 , new String("积分价：¥159.00") , new String("商城价：¥259.00") , new String("澳雅婷蜗牛原液6件套补水护肤套装洁净系列") , new String("259") , new String("97") , new String("98120") , 1  , new String("立即购买")));
+        list_lv.add(new TodayCosmeticsEntry(R.drawable.today_cosmetics_adapter_image_01 , new String("积分价：¥159.00") , new String("商城价：¥259.00") , new String("澳雅婷蜗牛原液6件套补水护肤套装洁净系列") , new String("259") , new String("97") , new String("98120") , 1 , new String("立即购买")));
+        list_lv.add(new TodayCosmeticsEntry(R.drawable.today_cosmetics_adapter_image_01 , new String("积分价：¥159.00") , new String("商城价：¥259.00") , new String("澳雅婷蜗牛原液6件套补水护肤套装洁净系列") , new String("259") , new String("97") , new String("98120") , 1 , new String("立即购买")));
+        adapter = new TodayCosmeticsAdapter(getContext() , list_lv , this , state);
         listView.setAdapter(adapter);
         fixListViewHeight(listView);
 

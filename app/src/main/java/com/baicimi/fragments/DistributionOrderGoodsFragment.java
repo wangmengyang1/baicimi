@@ -82,7 +82,7 @@ public class DistributionOrderGoodsFragment extends BaseFragment implements  Vie
         listFragment.clear();
         listFragment.add(new InventoryDistributionFragment());
         listFragment.add(new ShortcutOrderGoodsDistrict());
-        listFragment.add(new TodayCosmeticsFragment());
+        listFragment.add(new TodayCosmeticsFragment(false));
 
 
         hotcommodity = (TextView) view.findViewById(R.id.distribution_order_good_fragment_hotcommodity);

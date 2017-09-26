@@ -2604,11 +2604,8 @@
             android:background="@drawable/intimacy_payment_home_page_button_shape"
             android:textColor="@color/white"
             android:gravity="center"
-            android:textSize="15sp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
+            android:textSize="12sp"
+            android:padding="3dp"
             android:layout_marginLeft="10dp"
             />
 

@@ -42,7 +42,7 @@ public class InventoryDistributionFragment extends BaseFragment implements Distr
         listView = (ListView) view.findViewById(R.id.distribution_order_good_fragment_listview);
         list.clear();
         for (int i = 0 ; i < 14 ; i++){
-            list.add(new DistributionOrderGoodsEntry(new String("自然堂乐园补水保湿"), new String("250ML"), R.drawable.home_page_brand_fragment_image_22 ,new String("24") , 24 , new String("快递：50元") , new String("1810元") ));
+            list.add(new DistributionOrderGoodsEntry(new String("自然堂乐园补水保湿"), new String("250ML"), R.drawable.home_page_brand_fragment_image_22 ,new String("24") , 24 , new String("快递：50元") , new String("1810元") , false ));
         }
         adapter = new DistributionOrderGoodsAdapter(getContext() , list , this);
         listView.setAdapter(adapter);
@@ -89,6 +89,10 @@ public class InventoryDistributionFragment extends BaseFragment implements Distr
                 ImageBrowseDialog imageBrowseDialog = new ImageBrowseDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
                 imageBrowseDialog.show();
 
+                break;
+            case R.id.distribution_order_good_adapter_manager:
+                list.get(i).setDelete(!(list.get(i).isDelete()));
+                adapter.notifyDataSetChanged();
                 break;
         }
     }

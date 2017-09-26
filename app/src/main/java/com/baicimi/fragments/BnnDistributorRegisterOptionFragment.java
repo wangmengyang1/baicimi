@@ -122,7 +122,7 @@ public class BnnDistributorRegisterOptionFragment extends BaseFragment {
     private void initSpinnerSecond(Spinner spinner) {
         //数据
         data_list = new ArrayList<String>();
-        data_list.add("请选择");
+        data_list.add("  ");
         data_list.add(" 分销点/店 ");
         data_list.add("  运营经理  ");
         data_list.add("  客户代表 ");

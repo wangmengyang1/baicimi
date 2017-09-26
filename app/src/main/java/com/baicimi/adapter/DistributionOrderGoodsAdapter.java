@@ -1,6 +1,7 @@
 package com.baicimi.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,7 +66,7 @@ public class DistributionOrderGoodsAdapter extends BaseAdapter{
             holder.subtract = (ImageView) view.findViewById(R.id.distribution_order_good_adapter_subtract_image);
             holder.addNumber = (ImageView) view.findViewById(R.id.distribution_order_good_adapter_add_image);
             holder.linearLayout = (LinearLayout) view.findViewById(R.id.distribution_order_good_adapter_layout);
-
+            holder.manager = (TextView) view.findViewById(R.id.distribution_order_good_adapter_manager);
 
             view.setTag(holder);
         }else{
@@ -80,6 +81,16 @@ public class DistributionOrderGoodsAdapter extends BaseAdapter{
         }else{
             holder.linearLayout.setVisibility(View.GONE);
         }
+
+
+        if (init.isDelete()){
+            holder.manager.setText(new String("删除"));
+            holder.manager.setTextColor(Color.RED);
+        }else{
+            holder.manager.setText(new String("管理"));
+            holder.manager.setTextColor(Color.parseColor("#969696"));
+        }
+
 
         holder.lible.setText(init.getLible());
         holder.specification.setText(init.getSpecification());
@@ -107,6 +118,13 @@ public class DistributionOrderGoodsAdapter extends BaseAdapter{
             }
         });
 
+        holder.manager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                distributionNOC.setNumberOnitemClick(view , i ,R.id.distribution_order_good_adapter_manager);
+            }
+        });
+
 
         return view;
     }
@@ -122,6 +140,7 @@ public class DistributionOrderGoodsAdapter extends BaseAdapter{
         private ImageView subtract;
         private ImageView addNumber;
         private LinearLayout linearLayout;
+        private TextView manager;
 
 
     }

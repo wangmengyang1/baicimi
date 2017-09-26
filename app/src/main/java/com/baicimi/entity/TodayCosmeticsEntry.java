@@ -13,6 +13,7 @@ public class TodayCosmeticsEntry {
     private String goodReputation;
     private String  salesVolume;
     private int buyNumber;
+    private String immediatelyShopp = "立即订购";
 
     public TodayCosmeticsEntry(int imageUrl, String discountsPrice, String marketPrice, String content, String evaluate, String goodReputation, String salesVolume, int buyNumber) {
         this.imageUrl = imageUrl;
@@ -23,6 +24,26 @@ public class TodayCosmeticsEntry {
         this.goodReputation = goodReputation;
         this.salesVolume = salesVolume;
         this.buyNumber = buyNumber;
+    }
+
+    public TodayCosmeticsEntry(int imageUrl, String discountsPrice, String marketPrice, String content, String evaluate, String goodReputation, String salesVolume, int buyNumber , String immediatelyShopp) {
+        this.imageUrl = imageUrl;
+        this.discountsPrice = discountsPrice;
+        this.marketPrice = marketPrice;
+        this.content = content;
+        this.evaluate = evaluate;
+        this.goodReputation = goodReputation;
+        this.salesVolume = salesVolume;
+        this.buyNumber = buyNumber;
+    }
+
+
+    public String getImmediatelyShopp() {
+        return immediatelyShopp;
+    }
+
+    public void setImmediatelyShopp(String immediatelyShopp) {
+        this.immediatelyShopp = immediatelyShopp;
     }
 
     public int getImageUrl() {

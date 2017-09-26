@@ -23,12 +23,23 @@ public class TodayCosmeticsAdapter extends BaseAdapter{
     private List<TodayCosmeticsEntry> list_lv;
     private LayoutInflater inflater;
     private DistributionNumberOnitemClick distributionNumberOnitemClick;
+    private boolean state;
     public TodayCosmeticsAdapter(Context context, List<TodayCosmeticsEntry> list_lv , DistributionNumberOnitemClick distributionNumberOnitemClick) {
         this.context = context;
         this.list_lv = list_lv;
         inflater = LayoutInflater.from(context);
         this.distributionNumberOnitemClick = distributionNumberOnitemClick;
     }
+
+    public TodayCosmeticsAdapter(Context context, List<TodayCosmeticsEntry> list_lv , DistributionNumberOnitemClick distributionNumberOnitemClick , boolean state) {
+        this.context = context;
+        this.list_lv = list_lv;
+        inflater = LayoutInflater.from(context);
+        this.distributionNumberOnitemClick = distributionNumberOnitemClick;
+        this.state = state;
+    }
+
+
 
     @Override
     public int getCount() {
@@ -69,8 +80,11 @@ public class TodayCosmeticsAdapter extends BaseAdapter{
         holder.imageUrl.setImageResource(init.getImageUrl());
         holder.discountsPrice.setText(init.getDiscountsPrice());
         holder.marketPrice.setText(init.getMarketPrice());
-//        holder.goodReputation.setText(init.getGoodReputation());
-//        holder.salesVolume.setText(init.getSalesVolume());
+
+        if (state){
+            holder.immediatelyshop.setText(new String("立即购买"));
+        }
+
         holder.number.setText(init.getBuyNumber() + "");
         holder.subtract.setOnClickListener(new View.OnClickListener() {
             @Override

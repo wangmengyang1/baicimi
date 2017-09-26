@@ -180,7 +180,7 @@ public class TeacherPurchaseOptionFragment extends BaseFragment implements View.
     private void initFragmentLayout() {
         fragmentManager = getActivity().getSupportFragmentManager();
         listFragment.clear();
-        listFragment.add(new TodayCosmeticsFragment());
+        listFragment.add(new TodayCosmeticsFragment(true));
 //        listFragment.add(new OfficeSuppliesFragment());
         setShowFragment(0);
     }

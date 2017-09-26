@@ -139,7 +139,7 @@
                 android:layout_marginTop="20dp"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="50dp"
+                android:layout_marginRight="40dp"
                 >
 
                 <TextView
@@ -153,7 +153,7 @@
 
                 <LinearLayout
                     android:id="@+id/bnn_distributor_register_spinner"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center"
@@ -163,13 +163,14 @@
 
                     <TextView
                         android:id="@+id/bnn_distributor_register_spinner_tv"
-                        android:layout_width="190dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="--请选择--"
+                        android:text="请选择区域"
                         android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
                         android:layout_marginRight="5dp"
                         android:textSize="12sp"
-                        android:gravity="center"
+                        android:paddingLeft="8dp"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
                         />
@@ -192,7 +193,7 @@
                 android:layout_marginTop="20dp"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="50dp"
+                android:layout_marginRight="40dp"
                 >
 
                 <TextView
@@ -206,7 +207,8 @@
 
                 <Spinner
                     android:id="@+id/bnn_distributor_register_spinner_02"
-                    android:layout_width="190dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="22dp"
                     android:layout_marginLeft="15dp"
                     android:gravity="center_horizontal"

@@ -12,9 +12,10 @@ public class DistributionOrderGoodsEntry {
     private int number;
     private String expressage;
     private String amountMoney;
+    private boolean delete;
 
 
-    public DistributionOrderGoodsEntry(String lible, String specification, int imageUrl, String money, int number, String expressage, String amountMoney) {
+    public DistributionOrderGoodsEntry(String lible, String specification, int imageUrl, String money, int number, String expressage, String amountMoney  ,boolean delete) {
         this.lible = lible;
         this.specification = specification;
         this.imageUrl = imageUrl;
@@ -22,8 +23,17 @@ public class DistributionOrderGoodsEntry {
         this.number = number;
         this.expressage = expressage;
         this.amountMoney = amountMoney;
+        this.delete = delete;
     }
 
+
+    public boolean isDelete() {
+        return delete;
+    }
+
+    public void setDelete(boolean delete) {
+        this.delete = delete;
+    }
 
     public String getLible() {
         return lible;
