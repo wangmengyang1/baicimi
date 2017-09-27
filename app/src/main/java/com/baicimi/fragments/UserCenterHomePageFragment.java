@@ -50,6 +50,7 @@ public class UserCenterHomePageFragment extends BaseFragment implements View.OnC
     private TextView more;
 
     private LinearLayout layout_live;
+    private LinearLayout setting;
 
 
     @Override
@@ -70,6 +71,9 @@ public class UserCenterHomePageFragment extends BaseFragment implements View.OnC
 
         layout_live = (LinearLayout) view.findViewById(R.id.user_center_home_page_fragment_live);
         layout_live.setOnClickListener(this);
+
+        setting = (LinearLayout) view.findViewById(R.id.user_center_home_page_fragment_seting);
+        setting.setOnClickListener(this);
 
         return view;
     }
@@ -113,6 +117,16 @@ public class UserCenterHomePageFragment extends BaseFragment implements View.OnC
         adapter_02 = new UserCenterHomePageAdapter(getContext() , list_02);
         gridview_02.setAdapter(adapter_02);
         fixGrdiViewHeight02(gridview_02);
+
+        gridview_02.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 2){
+                    startFragment(new IntimacyPaymentFragment());//亲密付页面
+                }
+            }
+        });
+
     }
 
     //订单中心GridView布局填充
@@ -256,6 +270,9 @@ public class UserCenterHomePageFragment extends BaseFragment implements View.OnC
 //                break;
             case R.id.user_center_home_page_fragment_live:
                 startFragment(new RosePerSonalFragment());
+                break;
+            case R.id.user_center_home_page_fragment_seting:
+                startFragment(new UserCenterHomePagerSetting());//设置
                 break;
         }
     }

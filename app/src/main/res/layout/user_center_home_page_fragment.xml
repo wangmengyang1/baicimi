@@ -57,20 +57,32 @@
                         android:src="@drawable/remen_ss"
 
                         />
-
-                    <ImageView
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:src="@drawable/shazhi_ss"
-                        android:layout_marginLeft="15dp"
-
-                        />
-                    <TextView
+                    <LinearLayout
+                        android:id="@+id/user_center_home_page_fragment_seting"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="设置"
-                        android:textSize="12sp"
-                        />
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingRight="4dp"
+                        >
+
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/shazhi_ss"
+                            android:layout_marginLeft="15dp"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设置"
+                            android:textSize="12sp"
+                            />
+
+                    </LinearLayout>
+
 
 
 

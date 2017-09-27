@@ -38,8 +38,6 @@ public class OrderFormFragment extends BaseFragment implements View.OnClickListe
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.order_form_frgment , container , false);
 
-
-
         init();
 
         return view;

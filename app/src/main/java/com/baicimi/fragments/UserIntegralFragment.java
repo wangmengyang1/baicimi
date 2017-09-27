@@ -78,9 +78,18 @@ public class UserIntegralFragment extends BaseFragment{
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i == 11){
                     startFragment(new UserCenterHomePageFragmentMore());
-                }
-                if(i == 0){
+                }else if(i == 0){
                     startFragment(new OrderFormFragment());
+                }else if(i == 1){
+                    startFragment(new PropertyCenterFragment());//资产中心
+                }else if(i == 3){
+                    startFragment(new MemberCenterFragment());//会员中心
+                }else if(i == 4){
+                    startFragment(new FriendCircleFragment());//好友圈
+                }else if(i == 7){
+                    startFragment(new ClientServerFragment());//客户服务
+                }else if(i == 9){
+                    startFragment(new HelpCenterFragment());//帮助中心
                 }
             }
         });

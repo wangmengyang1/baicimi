@@ -3,6 +3,7 @@ package com.baicimi.fragments;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -82,6 +83,26 @@ public class UserCenterHomePageFragmentMore extends BaseFragment {
         gridView_01.setAdapter(adapter);
         fixGrdiViewHeight03(gridView_01 , adapter , 4);
 
+        gridView_01.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 0){
+                    startFragment(new OrderFormFragment());//我的订单
+                }else if(i == 1){
+                    startFragment(new GovernmentPurchaseFragment());//政府采购订单
+                }else if(i == 2){
+                    startFragment(new MyGroupPurchaseFragment());//我的团购
+                }else if(i == 3){
+                    startFragment(new ByStagesFragment());//分期订单
+                }else if(i == 4){
+                    startFragment(new MyPresellFragment());//我的预售
+                }else if(i == 5){
+                    startFragment(new MyAuctionFragment());//我的拍卖
+                }
+            }
+        });
+
+
         list_02.clear();
         list_02.add(new UserCenterHomePageEntryFirst(R.drawable.tianjia_09 , new String("幂钱包")));
         list_02.add(new UserCenterHomePageEntryFirst(R.drawable.tianjia_10 , new String("账户余额")));
@@ -96,6 +117,18 @@ public class UserCenterHomePageFragmentMore extends BaseFragment {
         adapter_02 = new UserCenterHomePageAdapter(getContext() , list_02);
         gridView_02.setAdapter(adapter_02);
         fixGrdiViewHeight03(gridView_02 , adapter_02 , 4);
+
+        gridView_02.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 0){
+                    startFragment(new PropertyCenterSecondMiWallet());//幂钱包
+                }else if (i == 1){
+                    startFragment(new MiWalletMyCouponFragment());//我的卡券
+                }
+            }
+        });
+
 
         list_03.clear();
         list_03.add(new UserCenterHomePageEntryFirst(R.drawable.tianjia_19 , new String("我关注的商品")));
@@ -112,6 +145,15 @@ public class UserCenterHomePageFragmentMore extends BaseFragment {
         adapter_04 = new UserCenterHomePageAdapter(getContext() , list_04);
         gridView_04.setAdapter(adapter_04);
         fixGrdiViewHeight03(gridView_04 , adapter_04 , 4);
+        gridView_04.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 1){
+                    //会员积分
+                    startFragment(new MemberCenterSecondInteger());
+                }
+            }
+        });
 
         list_05.clear();
         list_05.add(new UserCenterHomePageEntryFirst(R.drawable.tianjia_25 , new String("寻找好友")));
@@ -140,6 +182,20 @@ public class UserCenterHomePageFragmentMore extends BaseFragment {
         adapter_07 = new UserCenterHomePageAdapter(getContext() , list_07);
         gridView_07.setAdapter(adapter_07);
         fixGrdiViewHeight03(gridView_07 , adapter_07 , 4);
+
+        gridView_07.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 0){
+                    startFragment(new SettingUserMessage());//个人信息
+                }else if (i == 4){
+                    startFragment(new SettingAccountAuthentication());//账号认证
+                }else if (i == 5){
+                    startFragment(new SettingSignificanceMoment());//重要时刻
+                }
+            }
+        });
+
 
         list_08.clear();
         list_08.add(new UserCenterHomePageEntryFirst(R.drawable.tianjia_36 , new String("购买咨询")));
