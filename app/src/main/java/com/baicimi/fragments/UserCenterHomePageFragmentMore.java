@@ -204,10 +204,7 @@ public class UserCenterHomePageFragmentMore extends BaseFragment {
         adapter_08 = new UserCenterHomePageAdapter(getContext() , list_08);
         gridView_08.setAdapter(adapter_08);
         fixGrdiViewHeight03(gridView_08 , adapter_08 , 4);
-
     }
-
-
 
     //动态计算GridView的高度
     public void fixGrdiViewHeight03(GridView listView , BaseAdapter listAdapter , int count) {

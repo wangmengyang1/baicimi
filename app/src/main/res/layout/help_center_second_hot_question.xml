@@ -196,6 +196,7 @@
                     android:text="百万行动计划咨询"
                     android:layout_marginTop="18dp"
                     android:padding="4dp"
+                    android:layout_marginBottom="18dp"
                     />
             </LinearLayout>
 

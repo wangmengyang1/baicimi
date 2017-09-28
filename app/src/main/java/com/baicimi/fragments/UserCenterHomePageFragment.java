@@ -148,7 +148,19 @@ public class UserCenterHomePageFragment extends BaseFragment implements View.OnC
         gridview_01.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                startFragment(new UserCenterHomePageFragmentUserIndent());
+                if (i == 0){
+                    startFragment(new OrderFormFragment());//我的订单
+                }else if (i == 1){
+                    startFragment(new GovernmentPurchaseFragment());//政府采购订单
+                }else if (i == 2){
+                    startFragment(new MyGroupPurchaseFragment());//我的团购
+                }else if (i == 3){
+                    startFragment(new ByStagesFragment());//分期订单
+                }else if (i == 4){
+                    startFragment(new MyPresellFragment());//我的预售
+                }else if (i == 5){
+                    startFragment(new MyAuctionFragment());//我的拍卖
+                }
             }
         });
     }

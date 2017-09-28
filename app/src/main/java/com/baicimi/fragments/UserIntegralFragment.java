@@ -9,7 +9,6 @@ import android.widget.GridView;
 
 import com.baicimi.R;
 import com.baicimi.adapter.UserCenterHomePageAdapter;
-import com.baicimi.adapter.UserCenterHomePageSecondAdapter;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.UserCenterHomePageEntryFirst;
 import com.baicimi.ui.OnDrawingException;
@@ -35,7 +34,6 @@ public class UserIntegralFragment extends BaseFragment{
 
         //GridView布局填充
         initGridView();
-
         RingView ringView = (RingView) view.findViewById(R.id.user_integral_fragmentringview);
         ringView.setColors(new int[]{Color.parseColor("#2a8fd3"),Color.parseColor("#f15f48"), Color.parseColor("#2ac770")
                 , Color.parseColor("#f1c40f"),Color.parseColor("#2ac770"),Color.parseColor("#9a59b5") , Color.parseColor("#2ac770"),Color.parseColor("#f15f48")});
@@ -46,8 +44,6 @@ public class UserIntegralFragment extends BaseFragment{
         } catch (OnDrawingException e) {
             e.printStackTrace();
         }
-
-
 
         return view;
     }
@@ -94,7 +90,6 @@ public class UserIntegralFragment extends BaseFragment{
             }
         });
 
-
     }
 
 
@@ -127,8 +122,6 @@ public class UserIntegralFragment extends BaseFragment{
         params.height = totalHeight+ (listView.getHeight() * (listAdapter.getCount() - 1)+10);
         listView.setLayoutParams(params);
     }
-
-
 
     @Override
     protected void initData() {
