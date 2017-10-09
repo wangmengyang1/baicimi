@@ -96,7 +96,7 @@ public class HomePageBrandFragment extends BaseFragment implements DistributionN
 //        vp02_list.add(initAddViewButton());
 //        vp02_list.add(initAddViewButton());
         vp02_list.add(initAddViewButton());
-        adapter_02 = new ViewPagerAdapter(getContext() , vp02_list);
+        adapter_02 = new ViewPagerAdapter( vp02_list);
         viewPager_02.setAdapter(adapter_02);
         ViewGroup.LayoutParams params = (ViewGroup.LayoutParams) gridView.getLayoutParams();
         params.height = gridView.getLayoutParams().height;
@@ -159,7 +159,7 @@ public class HomePageBrandFragment extends BaseFragment implements DistributionN
         vp01_list.add(initAddView());
         vp01_list.add(initAddView());
         vp01_list.add(initAddView());
-        adapter_01 = new ViewPagerAdapter(getContext() , vp01_list);
+        adapter_01 = new ViewPagerAdapter( vp01_list);
         viewPager_01.setAdapter(adapter_01);
         ViewGroup.LayoutParams params = (ViewGroup.LayoutParams) gridviewHead.getLayoutParams();
         params.height = gridviewHead.getLayoutParams().height;

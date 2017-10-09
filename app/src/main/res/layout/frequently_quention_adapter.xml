@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <TextView
+            android:id="@+id/frequently_question_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、如何使用积分抵扣现金？"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:id="@+id/frequently_question_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      在未发货时，您可以取消订单，重新下单，也可点击“客服”浮标与百次幂客服联系，修改订单错误信息。如已发货，可通过拒收后重拍的方法重新下单。"
+            android:layout_below="@+id/frequently_question_adapter_lible"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            />
+
+        <ImageView
+            android:id="@+id/frequently_question_adapter_image"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:src="@drawable/image_integer_check"
+            android:layout_below="@+id/frequently_question_adapter_content"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

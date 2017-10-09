@@ -19,8 +19,11 @@ import android.widget.TextView;
 import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.adapter.CheckOneFragmentListViewAdapter;
+import com.baicimi.adapter.ViewPagerAdapterItem;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.CheckOneFragmentEntry;
+import com.baicimi.entity.CommodityNumberEntry;
+import com.baicimi.entity.ShopingPackageMessage;
 import com.baicimi.image.GlideImageLoader;
 import com.baicimi.ui.ShareModel;
 import com.baicimi.ui.SharePopupWindow;
@@ -31,10 +34,16 @@ import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
 import com.youth.banner.listener.OnBannerListener;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import cn.sharesdk.framework.ShareSDK;
+import me.kaelaela.verticalviewpager.VerticalViewPager;
+import me.kaelaela.verticalviewpager.transforms.ZoomOutTransformer;
 
 /**
  * Created by tan on 2016/9/5.
@@ -73,6 +82,15 @@ public class CheckTwoFragment extends BaseFragment implements View.OnClickListen
     List<String> title_head = new ArrayList<>();
 
     private ImageView back_head , packages;
+    //购物包数据变化
+    private TextView shopPackageNumber;
+
+    private int countNumber = 0;
+
+
+    private VerticalViewPager verticalViewPager;
+    private List<View> list_vp = new ArrayList<>();
+    private ViewPagerAdapterItem adapter_vp;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -85,14 +103,57 @@ public class CheckTwoFragment extends BaseFragment implements View.OnClickListen
             }
         });
         //头部轮播方法
-        initBannerHead();
+//        initBannerHead();
 
         back_head = (ImageView) view.findViewById(R.id.login_back1);
         back_head.setOnClickListener(this);
-        packages = (ImageView) view.findViewById(R.id.img_gouwuche1);
+        packages = (ImageView) view.findViewById(R.id.img_gouwuche2);
         packages.setOnClickListener(this);
 
+        //进行eventbus注册
+        EventBus.getDefault().register(this);
+
+
+        shopPackageNumber = (TextView) view.findViewById(R.id.img_gouwuche1_item_02);
+        countNumber += CommodityNumberEntry.commodityNumberEntryIntereal().getCount();
+        shopPackageNumber.setText(countNumber + "");
+
+        //头部viewpager滑动
+        initVerticalViewPager();
+
         return view;
+    }
+
+
+
+    //头部viewpager滑动
+    private void initVerticalViewPager() {
+        verticalViewPager = (VerticalViewPager)view.findViewById(R.id.check_one_item_viewpager_02);
+        list_vp.clear();
+        for (int i = 0 ; i < 30 ; i++){
+            list_vp.add(LayoutInflater.from(getContext()).inflate(R.layout.viewpager_item_02 , null));
+        }
+
+        adapter_vp = new ViewPagerAdapterItem(list_vp);
+        verticalViewPager.setAdapter(adapter_vp);
+        verticalViewPager.setPageTransformer(true, new ZoomOutTransformer());
+
+    }
+
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        //使用完毕之后解除注册
+        EventBus.getDefault().unregister(this);
+    }
+
+
+    @Subscribe(threadMode = ThreadMode.MAIN )
+    public void getMsgEvent(ShopingPackageMessage event){
+        countNumber += event.getShopingPackageMessageNumber();
+        shopPackageNumber.setText(countNumber + "");
+        CommodityNumberEntry.commodityNumberEntryIntereal().setCount(countNumber);
     }
 
 
@@ -220,38 +281,38 @@ public class CheckTwoFragment extends BaseFragment implements View.OnClickListen
 
 
     //头部轮播方法
-    private void initBannerHead() {
-        title_head.clear();
-        image_head.clear();
-        for(int i = 0 ; i < 4 ; i++){
-
-            title_head.add(new String(""));
-            image_head.add(R.mipmap.img_details2);
-        }
-
-
-        //头部轮播图片
-        Banner banner = (Banner)view.findViewById(R.id.check_two_item_banner);
-        //设置banner样式
-        banner.setBannerStyle(BannerConfig.NOT_INDICATOR);
-        //设置图片加载器
-        banner.setImageLoader(new GlideImageLoader());
-        //设置图片集合
-        banner.setImages(image_head);
-        //设置banner动画效果
-        banner.setBannerAnimation(VertiaclTransformer.class);
-        //设置标题集合（当banner样式有显示title时）
-        banner.setBannerTitles(title_head);
-        //设置自动轮播，默认为true
-        banner.isAutoPlay(true);
-        //设置轮播时间
-        banner.setDelayTime(2500);
-        //设置指示器位置（当banner模式中有指示器时）
-        banner.setIndicatorGravity(BannerConfig.CENTER);
-        //banner设置方法全部调用完毕时最后调用
-        banner.start();
-
-    }
+//    private void initBannerHead() {
+//        title_head.clear();
+//        image_head.clear();
+//        for(int i = 0 ; i < 4 ; i++){
+//
+//            title_head.add(new String(""));
+//            image_head.add(R.mipmap.img_details2);
+//        }
+//
+//
+//        //头部轮播图片
+//        Banner banner = (Banner)view.findViewById(R.id.check_two_item_banner);
+//        //设置banner样式
+//        banner.setBannerStyle(BannerConfig.NOT_INDICATOR);
+//        //设置图片加载器
+//        banner.setImageLoader(new GlideImageLoader());
+//        //设置图片集合
+//        banner.setImages(image_head);
+//        //设置banner动画效果
+//        banner.setBannerAnimation(VertiaclTransformer.class);
+//        //设置标题集合（当banner样式有显示title时）
+//        banner.setBannerTitles(title_head);
+//        //设置自动轮播，默认为true
+//        banner.isAutoPlay(true);
+//        //设置轮播时间
+//        banner.setDelayTime(2500);
+//        //设置指示器位置（当banner模式中有指示器时）
+//        banner.setIndicatorGravity(BannerConfig.CENTER);
+//        //banner设置方法全部调用完毕时最后调用
+//        banner.start();
+//
+//    }
 
 
 
@@ -357,7 +418,7 @@ public class CheckTwoFragment extends BaseFragment implements View.OnClickListen
             case R.id.login_back1:
                 ((MainActivity)getActivity()).goBack();//返回到上一级界面
                 break;
-            case R.id.img_gouwuche1:
+            case R.id.img_gouwuche2:
                 //购物车界面
                 startFragment(new ShopingCarFragment(), null);
                 break;

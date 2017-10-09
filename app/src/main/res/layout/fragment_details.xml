@@ -197,17 +197,35 @@
             android:layout_marginTop="6dp"
             />
 
-
-        <ImageView
-            android:id="@+id/btn_gouwuche"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:src="@drawable/shoping_image_red_01"
+        <RelativeLayout
+            android:id="@+id/btn_gouwuche_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginRight="44dp"
             android:layout_marginTop="50dp"
             android:layout_centerInParent="true"
-            />
+            >
+            <TextView
+                android:id="@+id/btn_gouwuche_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_centerInParent="true"
+                android:textColor="@color/red"
+                />
+
+            <ImageView
+                android:id="@+id/btn_gouwuche"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/shoping_package_red"
+                />
+
+
+        </RelativeLayout>
+
+
 
         <Button
             android:id="@+id/btn_buynow"
@@ -219,7 +237,7 @@
             android:textSize="15sp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="35dp"
-            android:layout_below="@+id/btn_gouwuche"
+            android:layout_below="@+id/btn_gouwuche_layout"
             android:layout_marginRight="15dp"
             />
 

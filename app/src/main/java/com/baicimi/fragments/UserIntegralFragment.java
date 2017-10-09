@@ -19,6 +19,7 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2017/8/28.
+ * 个人中心首页fragment
  */
 public class UserIntegralFragment extends BaseFragment{
 

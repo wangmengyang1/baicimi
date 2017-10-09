@@ -17,6 +17,9 @@ public class ShopingPackageMessage{
         this.shopingPackageMessageNumber = shopingPackageMessageNumber;
     }
 
+    public ShopingPackageMessage() {
+    }
+
     public int getShopingPackageMessageNumber() {
         return shopingPackageMessageNumber;
     }

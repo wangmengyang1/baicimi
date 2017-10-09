@@ -150,7 +150,7 @@ public class GrouBuyDetailFragment extends BaseFragment{
         inflater = LayoutInflater.from(getContext());
         view1 = inflater.inflate(R.layout.check_one, null);
         checkOne = (VerticalViewPagerView) view1.findViewById(R.id.check_one);
-        imageView1 = (ImageView) view1.findViewById(R.id.img_gouwuche1);
+        imageView1 = (ImageView) view1.findViewById(R.id.img_gouwuche2);
 
         imageView4 = (ImageView) view1.findViewById(R.id.login_back1);
         //跳转到购物车界面

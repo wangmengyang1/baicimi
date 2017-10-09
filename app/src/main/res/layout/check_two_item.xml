@@ -29,16 +29,33 @@
             android:textColor="#343434"
             android:textSize="16sp" />
 
-        <ImageView
-            android:id="@+id/img_gouwuche1"
-            android:clickable="true"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+
+        <RelativeLayout
+            android:id="@+id/btn_gouwuche_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
             android:layout_marginRight="15dp"
-            android:src="@drawable/shoping_image_red_01"
-            android:layout_centerVertical="true"
-            />
+            >
+            <TextView
+                android:id="@+id/img_gouwuche1_item_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_centerInParent="true"
+                android:textColor="@color/red"
+                />
+
+            <ImageView
+                android:id="@+id/img_gouwuche2"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/shoping_package_red"
+                />
+
+
+        </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
@@ -63,7 +80,17 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="80dp"
             app:title_height="0dp"
+            android:visibility="gone"
             ></com.youth.banner.Banner>
+
+
+        <me.kaelaela.verticalviewpager.VerticalViewPager
+            android:id="@+id/check_one_item_viewpager_02"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            ></me.kaelaela.verticalviewpager.VerticalViewPager>
 
 
         <Button

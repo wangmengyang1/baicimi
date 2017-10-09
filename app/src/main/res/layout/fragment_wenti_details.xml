@@ -39,7 +39,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
         >
 
         <TextView
@@ -47,10 +48,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Q"
-            android:padding="4dp"
-            android:background="#ff0000"
+
+            android:background="#dc325e"
             android:textColor="@color/white"
             android:layout_marginLeft="15dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             />
 
         <TextView
@@ -60,7 +65,7 @@
             android:text="发货时间"
             android:layout_centerVertical="true"
             android:textColor="#3C3C3C"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:layout_toRightOf="@+id/fragment_wenti_details_tv"
             android:layout_marginLeft="10dp"
             />
@@ -72,18 +77,33 @@
         android:background="#EEEEEE"
         ></View>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:gravity="top"
-        android:hint="幂商城全程百次幂商城，是一家以化妆品为主的020类型购物网站。"
-        android:textSize="13sp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:background="#ffffff"
-        android:textColor="#8C8C8C"
-        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+        <TextView
+            android:id="@+id/fragment_wenti_details_textview_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="幂商城全程百次幂商城，是一家以化妆品为主的020类型购物网站。"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#ffffff"
+            android:textColor="#8C8C8C"
+            />
+        <ImageView
+            android:id="@+id/fragment_wenti_details_textview_image_integer"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:src="@drawable/image_integer_check"
+            android:layout_below="@+id/fragment_wenti_details_textview_content"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
 
     <View
         android:layout_width="match_parent"
@@ -92,14 +112,15 @@
         ></View>
 
     <RelativeLayout
+        android:id="@+id/fragment_wenti_details_frequently_question"
         android:layout_width="match_parent"
         android:layout_height="50dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="联系客服"
-            android:textSize="15sp"
+            android:text="常见问题"
+            android:textSize="14sp"
             android:textColor="#5C5C5C"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
@@ -113,6 +134,7 @@
         ></View>
 
     <RelativeLayout
+        android:id="@+id/fragment_wenti_details_online_server"
         android:layout_width="match_parent"
         android:layout_height="50dp">
 
@@ -121,7 +143,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="在线客服"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:textColor="#5C5C5C"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
@@ -144,6 +166,7 @@
         ></View>
 
     <RelativeLayout
+        android:id="@+id/fragment_wenti_details_leavemessage"
         android:layout_width="match_parent"
         android:layout_height="50dp">
 
@@ -151,7 +174,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="留言反馈"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:textColor="#5C5C5C"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"

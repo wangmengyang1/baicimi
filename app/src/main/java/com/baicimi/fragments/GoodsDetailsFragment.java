@@ -68,6 +68,9 @@ public class GoodsDetailsFragment extends BaseFragment implements View.OnClickLi
     private LinearLayout layout_check_01 , layout_check_02 , layout_check_03 , layout_check_04 , layout_check_05 , layout_check_06 ;
     private View view_window;
 
+    private TextView numberTextview;
+    private int cont;
+
 
     @Override
     protected View initView(final LayoutInflater inflater, final ViewGroup container) {
@@ -168,6 +171,9 @@ public class GoodsDetailsFragment extends BaseFragment implements View.OnClickLi
         initTagNumber();
 
 
+        numberTextview = (TextView) view.findViewById(R.id.btn_gouwuche_number);
+
+
         return view;
     }
 
@@ -194,9 +200,12 @@ public class GoodsDetailsFragment extends BaseFragment implements View.OnClickLi
                     EventBus.getDefault().post(new ShopingPackageMessage(1));
                     //只是将数据发给购物车，不进行跳转
 //                    startFragment(new ShopingCarFragment(),null);
+                    cont = cont+1;
+                    numberTextview.setText((cont) + "");
                 }else if (indext == 1){
                     //立即购买的跳转
                     startFragment(new PersonDingDanFragment(),null);
+
                 }
                 closePopupFuwuWindow();
             }

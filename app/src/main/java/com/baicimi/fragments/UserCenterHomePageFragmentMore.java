@@ -7,19 +7,17 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
-
 import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.adapter.UserCenterHomePageAdapter;
-import com.baicimi.adapter.UserCenterHomePageSecondAdapter;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.UserCenterHomePageEntryFirst;
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Administrator on 2017/8/29.
+ * 个人中心更多页面
  */
 
 public class UserCenterHomePageFragmentMore extends BaseFragment {
