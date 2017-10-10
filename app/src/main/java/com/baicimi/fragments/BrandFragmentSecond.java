@@ -13,6 +13,7 @@ import com.baicimi.base.BaseFragment;
 
 /**
  * Created by Administrator on 2017/9/12.
+ * 首页品牌二级页面
  */
 
 public class BrandFragmentSecond extends BaseFragment implements View.OnClickListener {

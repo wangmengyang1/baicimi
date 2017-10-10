@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -23,7 +22,6 @@ import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.baicimi.adapter.CelaCategoryAdapter;
 import com.baicimi.base.BaseFragment;
@@ -37,6 +35,7 @@ import com.baicimi.fragments.SerchGoodsFragment;
 import com.baicimi.fragments.TeacherStatusRegisterFragment;
 import com.baicimi.fragments.TeacherStatusRegisterGallery;
 import com.baicimi.view.IntegralSlideView;
+import com.baicimi.view.IntegralSlideViewFootPaint;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -70,9 +69,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
 
     private IntegralSlideView integralSlideView;//移动小球
+    private IntegralSlideViewFootPaint integralSlideViewFootPaint;//足迹移动
     private float startViewX, startViewY;
     float viewx, viewy, dx, dy, weightView, heightView;
     private int width;
+
+    private float startViewXFP, startViewYFP;
+    float viewxFP, viewyFP, dxFP, dyFP, weightViewFP, heightViewFP;
 
 
     @Override
@@ -137,9 +140,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         } else {
                             if (integralSlideView.getX() >= width / 2) {
 
-                                ObjectAnimator.ofFloat(integralSlideView, "translationX", -(width-Math.abs(dx)), 0).setDuration(170).start();
+                                ObjectAnimator.ofFloat(integralSlideView, "translationX", integralSlideView.getX(), width-84).setDuration(170).start();
                             } else {
-                                ObjectAnimator.ofFloat(integralSlideView, "translationX", -(width - dx), -width+80).setDuration(180).start();
+                                ObjectAnimator.ofFloat(integralSlideView, "translationX", integralSlideView.getX(), 0+18).setDuration(180).start();
                             }
                             return true;
                         }
@@ -155,6 +158,59 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             }
         });
 
+
+        integralSlideViewFootPaint = (IntegralSlideViewFootPaint) findViewById(R.id.activity_main_integralslideview_second);
+        integralSlideViewFootPaint.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN://按下
+                        startViewXFP = event.getRawX();
+                        startViewYFP = event.getRawY();
+                        viewxFP = integralSlideViewFootPaint.getX();
+                        viewyFP = integralSlideViewFootPaint.getY();
+                        weightViewFP = 0;
+                        heightViewFP = 0;
+                        break;
+                    case MotionEvent.ACTION_MOVE://滑动
+                        //确定滑动距离
+                        float x = event.getRawX();
+                        float y = event.getRawY();
+
+                        dxFP = x - startViewXFP;
+                        dyFP = y - startViewYFP;
+
+                        weightViewFP = dxFP;
+                        heightViewFP = dyFP;
+                        dxFP += viewxFP;
+                        dyFP += viewyFP;
+
+                        integralSlideViewFootPaint.setY(dyFP);
+                        integralSlideViewFootPaint.setX(dxFP);
+
+                        break;
+                    case MotionEvent.ACTION_UP://放开
+                        if (Math.abs(weightViewFP) < 3 && Math.abs(heightViewFP) < 3) {
+                            return false;
+                        } else {
+                            if (integralSlideViewFootPaint.getX() >= width / 2) {
+
+                                ObjectAnimator.ofFloat(integralSlideViewFootPaint, "translationX", integralSlideViewFootPaint.getX(), width-84).setDuration(170).start();
+                            } else {
+                                ObjectAnimator.ofFloat(integralSlideViewFootPaint, "translationX", integralSlideViewFootPaint.getX(), 0+18).setDuration(180).start();
+                            }
+                            return true;
+                        }
+                }
+                return false;
+            }
+        });
+        integralSlideViewFootPaint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
     }
 
@@ -243,6 +299,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 String lible = bundle.getString("option");
                 if(lible.equals("option")){
                     integralSlideView.setVisibility(View.VISIBLE);//如果首页开启 ，显示移动小球
+                    integralSlideViewFootPaint.setVisibility(View.VISIBLE);//如果首页开启 ，显示移动足迹
                 }
             }
             // 5 隐藏当前或者finish的Fragment
@@ -269,7 +326,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public BaseFragment getCurrentFrament() {
         return mFragments.size() > 0 ? (BaseFragment) fm.findFragmentByTag(mFragments.peekLast()) : null;
     }
-
 
     @Override
     protected void onResume() {

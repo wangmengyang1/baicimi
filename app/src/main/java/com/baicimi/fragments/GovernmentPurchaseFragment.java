@@ -18,16 +18,13 @@ public class GovernmentPurchaseFragment  extends BaseFragment implements View.On
 
     private View view;
     private ImageView back;
-
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.government_purchase_fragment , container , false);
-
         back = (ImageView) view.findViewById(R.id.government_purchase_fragment_back);
         back.setOnClickListener(this);
         return view;
     }
-
     @Override
     protected void initData() {
 

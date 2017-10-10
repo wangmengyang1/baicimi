@@ -39,7 +39,7 @@ import java.util.List;
 public class JiFenGoodsFragment extends BaseFragment implements DistributionNumberOnitemClick{
     private ViewPager viewPager;
     private PersonUserPagerSlidingTabStrip tabs;
-    private String[] titles = {"男士", "美妆", "个人用品", "母婴"};
+    private String[] titles = { "日化" , "绿色食品" , "美妆",  "母婴" , "个人用品","男士"};
 
 
 
@@ -96,6 +96,8 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
 
     private void initFragment() {
         listFragment.clear();
+        listFragment.add(new HeadJiFenNanShiFragment(this));
+        listFragment.add(new HeadJiFenNanShiFragment(this));
         listFragment.add(new HeadJiFenNanShiFragment(this));
         listFragment.add(new HeadJiFenNanShiFragment(this));
         listFragment.add(new HeadJiFenNanShiFragment(this));
