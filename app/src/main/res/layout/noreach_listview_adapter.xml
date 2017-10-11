@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/noreach_listview_adapter_imageurl"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/noreach_imageurl"
+            />
+
+        <TextView
+            android:id="@+id/noreach_listview_adapter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="头像集"
+            android:textColor="#ff0000"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/noreach_listview_adapter_imageurl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时尚达人"
+            android:textSize="12sp"
+            android:layout_below="@+id/noreach_listview_adapter_name"
+            android:layout_alignLeft="@+id/noreach_listview_adapter_name"
+            android:layout_marginTop="4dp"
+            />
+
+
+        <TextView
+            android:id="@+id/noreach_listview_adapter_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量 1"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/noreach_listview_adapter_add_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+关注"
+            android:background="@drawable/noreach_listview_adapter_add_attention_shape"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

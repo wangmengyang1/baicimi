@@ -1,5 +1,6 @@
 package com.baicimi.fragments;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,7 @@ import java.util.List;
  * Created by Administrator on 2017/9/18.
  */
 
+@SuppressLint("ValidFragment")
 public class MyOrderFormFragmentParticulars extends BaseFragment implements View.OnClickListener {
 
     private View view;

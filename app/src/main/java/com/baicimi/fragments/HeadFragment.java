@@ -42,7 +42,6 @@ public class HeadFragment extends BaseFragment {
         view = inflater.inflate(R.layout.cehua_view, container, false);
         ViewUtils.inject(this, view);
         initFragment();
-
         viewPager = (ViewPager) view.findViewById(R.id.vp_head_viewpager);
         tabs = (PersonUserPagerSlidingTabStrip) view.findViewById(R.id.head_page_pupst);
         viewPager.setAdapter(new MyViewPagerFragmetAdapterSecond(getChildFragmentManager() , listFragment , titles));
@@ -52,20 +51,20 @@ public class HeadFragment extends BaseFragment {
 
     private void initFragment() {
         listFragment.clear();
-        listFragment.add(new ChangXiaoFragment());
-        listFragment.add(new SevenMonFragment());
-        listFragment.add(new NingFeiFragment());
-        listFragment.add(new GreenFoodFragment());
+        listFragment.add(new ChangXiaoFragment());//畅销
+        listFragment.add(new SevenMonFragment());//七月菊
+        listFragment.add(new NingFeiFragment());//宁菲
+        listFragment.add(new GreenFoodFragment());//绿色食品
         listFragment.add(new JiFenGoodsFragment());//积分
-        listFragment.add(new GrouBuyFragment());
+        listFragment.add(new GrouBuyFragment());//团购
         listFragment.add(new PerSonUseFragment());//个人用品
-        listFragment.add(new MuYingFragment());
-        listFragment.add(new ManMainFragment());
-        listFragment.add(new MeiZhuangFragment());
-        listFragment.add(new TryoutApplyforFragment());
-        listFragment.add(new HomePageBrandFragment());
-        listFragment.add(new FridayNightFragment());
-        listFragment.add(new HeadMeiguiRoseFragment());
+        listFragment.add(new MuYingFragment());//母婴
+        listFragment.add(new ManMainFragment());//男士
+        listFragment.add(new MeiZhuangFragment());//美妆
+        listFragment.add(new TryoutApplyforFragment());//使用申请
+        listFragment.add(new HomePageBrandFragment());//品牌首页
+        listFragment.add(new FridayNightFragment());//周五之夜
+        listFragment.add(new HeadMeiguiRoseFragment());//玫瑰社区
     }
 
     @Override

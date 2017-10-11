@@ -64,7 +64,7 @@
                         android:id="@+id/tryout_applyfor_fragment_user_image"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/tyrout_applyfor_fragment_image_03"
+                        android:src="@drawable/user_image_weight"
                         android:layout_centerHorizontal="true"
                         />
                     <TextView

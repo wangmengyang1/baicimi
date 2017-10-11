@@ -1,5 +1,6 @@
 package com.baicimi.fragments;
 
+import android.graphics.Color;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -142,7 +143,7 @@ public class QiTaWenTiFragment extends BaseFragment{
                 myText = (TextView) convertView;
                 myText.setText(ChildrenData.get(groupPosition).get(childPosition));
             } else {
-                myText = createView(ChildrenData.get(groupPosition).get(childPosition));
+                myText = createViewPull(ChildrenData.get(groupPosition).get(childPosition));
             }
             myText.setMaxLines(1);
             myText.setEllipsize(TextUtils.TruncateAt.END);
@@ -161,6 +162,23 @@ public class QiTaWenTiFragment extends BaseFragment{
             myText.setTextSize(15);
             myText.setMaxLines(1);
             myText.setEllipsize(TextUtils.TruncateAt.END);
+            return myText;
+        }
+
+        private TextView createViewPull(String content) {
+            // TODO Auto-generated method stub
+            AbsListView.LayoutParams params = new AbsListView.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, 110);
+            TextView myText = new TextView(getContext());
+            params.height = 80;
+            myText.setLayoutParams(params);
+            myText.setGravity(Gravity.CENTER_VERTICAL| Gravity.LEFT );
+            myText.setPadding(90, 0, 0, 0);
+            myText.setText(content);
+            myText.setTextColor(0xFF8C8C8C);
+            myText.setTextSize(14);
+            myText.setMaxLines(1);
+            myText.setEllipsize(TextUtils.TruncateAt.END);
+            myText.setBackgroundColor(Color.parseColor("#eeeeee"));
             return myText;
         }
 

@@ -33,7 +33,7 @@
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
-        android:layout_height="0.8dp"
+        android:layout_height="0.6dp"
         android:background="@color/class_gray"
         />
 
@@ -45,6 +45,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:visibility="gone"
         />
     <EditText
         android:layout_width="match_parent"
@@ -53,6 +54,11 @@
         android:layout_marginRight="30dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/wenti_details_online_server_edittext_shape"
+        android:hint="请输入留言内容"
+        android:textSize="13sp"
+        android:gravity="top"
+        android:paddingTop="15dp"
+        android:paddingLeft="8dp"
         />
     <TextView
         android:layout_width="match_parent"

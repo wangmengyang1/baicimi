@@ -223,7 +223,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         date.add(new CelaProject(R.mipmap.meigui_img , "美妆个护" , new String[]{"面膜" , "护肤" , "彩妆" , "美妆工具"}));
         date.add(new CelaProject(R.mipmap.meigui_lvxing , "母婴用品" , new String[]{"孕妇护理" , "婴童护理" }));
         date.add(new CelaProject(R.mipmap.meigui_meishi , "个人用品" , new String[]{"配饰" , "包包" , "个护电器" , "床上用品","居家休闲" , "旅行用品"}));
-        date.add(new CelaProject(R.mipmap.meigui_shipin , "男士专区" , new String[]{"护肤产品" , "洗护用品" , "个护电器"}));
+        date.add(new CelaProject(R.mipmap.meigui_shipin , "男士专区" , new String[]{"护肤产品" , "洗护用品" , "个护电器" , "户外用品"}));
         date.add(new CelaProject(R.mipmap.meigui_mingxing , "输入积分码" , new String[]{}));
         date.add(new CelaProject(R.mipmap.meigui_zhuce_open , "注册通道入口" , new String[]{"教师/学生注册入口" , "BNN分销/员工注册入口"}));
         date.add(new CelaProject(R.mipmap.meigui_img , "师生选购专区" , new String[]{}));
@@ -478,7 +478,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             });
             return view;
         }
-
 
         //设置分菜单监听事件
         private OnMenuClickListenser mOnMenuClickListenser = new OnMenuClickListenser();

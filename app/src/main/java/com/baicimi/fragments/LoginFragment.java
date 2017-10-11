@@ -189,6 +189,7 @@ public class LoginFragment extends BaseFragment {
                 ((MainActivity) getActivity()).goBack();//返回到上一级界面
                 break;
             case R.id.btn_login:
+//                startFragment(new UserCenterHomePageHeadFragment() , null );//个人中心界面(最新)
                 startFragment(new UserCenterHomePageFragment(), null);
 //                startFragment(new PersonCenteredFragment(), null);//登录成功跳转到个人中心页面。（旧页面）
                 String  head=SharedPreferencesUtil.getString(getContext(), com.baicimi.Constants.INFO_HEADER,"");

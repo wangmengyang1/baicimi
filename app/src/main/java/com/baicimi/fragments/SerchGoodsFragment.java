@@ -1,5 +1,6 @@
 package com.baicimi.fragments;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
@@ -47,6 +48,7 @@ public class SerchGoodsFragment extends BaseFragment {
     private TextView lible;
     private String libleString;
 
+    @SuppressLint("ValidFragment")
     public SerchGoodsFragment(String lible) {
         libleString = lible;
     }

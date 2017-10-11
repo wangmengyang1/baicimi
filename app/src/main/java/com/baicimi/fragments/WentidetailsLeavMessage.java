@@ -25,7 +25,6 @@ public class WentidetailsLeavMessage extends BaseFragment implements View.OnClic
         back.setOnClickListener(this);
         return view;
     }
-
     @Override
     protected void initData() {
 

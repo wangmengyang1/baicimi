@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="明星品推荐"
+                    android:text="明星推荐"
                     android:textColor="#808080"
                     android:textSize="16sp" />
 

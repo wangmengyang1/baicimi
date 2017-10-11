@@ -1,5 +1,6 @@
 package com.baicimi.fragments;
 
+import android.graphics.Color;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -51,7 +52,7 @@ public class DingDanWenTiFragment extends BaseFragment{
         GroupData.add("物流问题");
         GroupData.add("订单咨询");
         GroupData.add("退货咨询");
-//        GroupData.add("退货换货");
+        GroupData.add("退款咨询");
 
 
         ChildrenData = new ArrayList<List<String>>();
@@ -94,6 +95,18 @@ public class DingDanWenTiFragment extends BaseFragment{
         list_ch_03.add("如果忘了填运单号，百次幂会在收到退货的24小时内，将退款退还到您的支付账户上。");
         list_content.add(list_ch_03);
 
+        List<String> child4 = new ArrayList<String>();
+        child4.add("1、退货后什么时候退款？");
+        child4.add("2、退货后退款到哪里？");
+        child4.add("3、拒收包裹后什么时候退款？");
+        List<String> list_ch4 = new ArrayList<>();
+        list_ch4.add("退货后填写运单号与物流公司，24小时内款项自动退到支付账户内。");
+        list_ch4.add("退款退还到支付账户，如用幂钱包支付的款项，则退款直接退到幂钱包内。");
+        list_ch4.add("拒收包裹后，百次幂收到拒收信息，在24小时内安排退款。");
+        list_content.add(list_ch4);
+
+        ChildrenData.add(child4);
+
     }
 
 
@@ -132,7 +145,7 @@ public class DingDanWenTiFragment extends BaseFragment{
                 myText = (TextView) convertView;
                 myText.setText(ChildrenData.get(groupPosition).get(childPosition));
             }else{
-                myText = createView(ChildrenData.get(groupPosition).get(childPosition));
+                myText = createViewPull(ChildrenData.get(groupPosition).get(childPosition));
                 myText.setMaxLines(1);
                 myText.setEllipsize(TextUtils.TruncateAt.END);
             }
@@ -143,6 +156,7 @@ public class DingDanWenTiFragment extends BaseFragment{
             // TODO Auto-generated method stub
             AbsListView.LayoutParams params = new AbsListView.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, 110);
             TextView myText = new TextView(getContext());
+
             myText.setLayoutParams(params);
             myText.setGravity(Gravity.CENTER_VERTICAL| Gravity.LEFT );
             myText.setPadding(90, 0, 0, 0);
@@ -151,6 +165,22 @@ public class DingDanWenTiFragment extends BaseFragment{
             myText.setTextSize(14);
             myText.setMaxLines(1);
             myText.setEllipsize(TextUtils.TruncateAt.END);
+            return myText;
+        }
+        private TextView createViewPull(String content) {
+            // TODO Auto-generated method stub
+            AbsListView.LayoutParams params = new AbsListView.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, 110);
+            TextView myText = new TextView(getContext());
+            params.height = 80;
+            myText.setLayoutParams(params);
+            myText.setGravity(Gravity.CENTER_VERTICAL| Gravity.LEFT );
+            myText.setPadding(90, 0, 0, 0);
+            myText.setText(content);
+            myText.setTextColor(0xFF8C8C8C);
+            myText.setTextSize(14);
+            myText.setMaxLines(1);
+            myText.setEllipsize(TextUtils.TruncateAt.END);
+            myText.setBackgroundColor(Color.parseColor("#eeeeee"));
             return myText;
         }
 
