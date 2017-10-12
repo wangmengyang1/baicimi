@@ -142,8 +142,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="限时兑换"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
 
                 <View
                     android:layout_width="1dp"
@@ -400,8 +400,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="新品推荐"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
 
                 <View
                     android:layout_width="1dp"
@@ -467,8 +467,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="热门品牌"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
 
                 <View
                     android:layout_width="1dp"
@@ -675,8 +675,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="人气单品"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
 
                 <View
                     android:layout_width="1dp"

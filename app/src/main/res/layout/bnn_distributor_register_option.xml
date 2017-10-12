@@ -32,7 +32,7 @@
                 android:textSize="13sp"
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="30dp"
-                android:textColor="#5d5d5d"
+                android:textColor="#737373"
                 />
 
             <LinearLayout
@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:text="*用户名 ："
                     android:textSize="13sp"
-                    android:textColor="#be000000"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:text="*设置密码 ："
                     android:textSize="13sp"
-                    android:textColor="#be000000"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -114,7 +114,7 @@
                     android:layout_height="wrap_content"
                     android:text="*确认密码 ："
                     android:textSize="13sp"
-                    android:textColor="#be000000"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -147,7 +147,7 @@
                     android:layout_height="wrap_content"
                     android:text="*申请区域："
                     android:textSize="13sp"
-                    android:textColor="#be000000"
+                    android:textColor="#737373"
                     />
 
 
@@ -201,7 +201,7 @@
                     android:layout_height="wrap_content"
                     android:text="*申请类别："
                     android:textSize="13sp"
-                    android:textColor="#be000000"
+                    android:textColor="#737373"
                     />
 
 
@@ -240,7 +240,7 @@
                     android:layout_height="wrap_content"
                     android:text="*推荐人ID ："
                     android:textSize="13sp"
-                    android:textColor="#be000000"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -272,7 +272,7 @@
                     android:layout_height="wrap_content"
                     android:text="*推荐人姓名 ："
                     android:textSize="13sp"
-                    android:textColor="#be000000"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -303,7 +303,7 @@
                     android:layout_height="wrap_content"
                     android:text="*推荐人电话 ："
                     android:textSize="13sp"
-                    android:textColor="#be000000"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -334,7 +334,7 @@
                     android:layout_height="wrap_content"
                     android:text="* 留  言  ："
                     android:textSize="13sp"
-                    android:textColor="#be000000"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -361,7 +361,7 @@
                     android:layout_height="wrap_content"
                     android:text="*身份证照 ："
                     android:textSize="13sp"
-                    android:textColor="#be000000"
+                    android:textColor="#737373"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -392,8 +392,9 @@
                     android:layout_height="wrap_content"
                     android:text="*零售店图片 ："
                     android:textSize="13sp"
-                    android:textColor="#be000000"
-                    />
+                    android:textColor="#737373"
+                    android:id="@+id/textView9" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -446,7 +447,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="立即上传"
+                android:text="立即注册"
                 android:background="@drawable/activity_present_check_adapter_btn_shape_second"
                 android:textColor="@color/white"
                 android:gravity="center"

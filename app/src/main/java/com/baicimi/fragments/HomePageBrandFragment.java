@@ -164,7 +164,6 @@ public class HomePageBrandFragment extends BaseFragment implements DistributionN
         ViewGroup.LayoutParams params = (ViewGroup.LayoutParams) gridviewHead.getLayoutParams();
         params.height = gridviewHead.getLayoutParams().height;
         viewPager_01.setLayoutParams(params);
-
         viewPager_01.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -192,6 +191,7 @@ public class HomePageBrandFragment extends BaseFragment implements DistributionN
 
             }
         });
+
 
     }
 

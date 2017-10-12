@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+
         >
 
         <ImageView
@@ -20,7 +21,9 @@
             android:layout_height="145dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:src="@mipmap/changxiaore" />
+            android:src="@mipmap/changxiaore"
+            android:layout_marginRight="20dp"
+            />
 
         <TextView
             android:id="@+id/tv_shaixuan_goods_name"
@@ -180,7 +183,7 @@
                 android:layout_height="17dp"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/shoping_package_gral"
-                android:layout_marginRight="40dp"
+                android:layout_marginRight="20dp"
                 />
 
 

@@ -42,7 +42,7 @@
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:text="您还希望在此专区购买到那些产品？"
-            android:textColor="@color/black"
+            android:textColor="#737373"
             android:textSize="12sp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="15dp"

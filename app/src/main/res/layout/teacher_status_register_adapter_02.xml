@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:text="日化用品"
             android:textSize="13sp"
-            android:textColor="@color/black"
+            android:textColor="#737373"
             android:layout_below="@+id/teacher_status_register_adapter_image"
             android:layout_marginTop="8dp"
             android:layout_centerHorizontal="true"

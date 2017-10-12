@@ -86,16 +86,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="今日团购"
-                    android:textColor="#2b2b2b"
+                    android:textColor="#737373"
+                    android:textSize="15sp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14sp"
                     android:layout_marginLeft="15dp"
                     />
 
                 <View
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
-                    android:background="#2b2b2b"
+                    android:background="#737373"
                     android:layout_marginLeft="5dp"
                     android:layout_marginBottom="15dp"
                     android:layout_marginTop="15dp"
@@ -412,7 +412,54 @@
 
                 </LinearLayout>
             </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#fafafa"
+                android:layout_marginTop="13dp"
+                ></View>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="@drawable/image_tuangou_06"
+                ></View>
+
+            <GridView
+                android:id="@+id/tuangog_meizhuang_gv_05"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                android:background="#fafafa"
+                android:numColumns="2"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_height="wrap_content"
+                ></GridView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#fafafa"
+                android:layout_marginTop="13dp"
+                ></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="@drawable/image_tuangou_06"
+                ></View>
+
+            <GridView
+                android:id="@+id/tuangog_meizhuang_gv_04"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                android:background="#fafafa"
+                android:numColumns="2"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_height="wrap_content"
+                ></GridView>
 
             <View
                 android:layout_width="match_parent"

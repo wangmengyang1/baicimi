@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.baicimi.R;
@@ -14,6 +15,7 @@ import com.baicimi.base.BaseFragment;
 import com.baicimi.bean.ShaiXuanListBean;
 import com.baicimi.datetime.MyCountDownTimer;
 import com.baicimi.image.GlideImageLoader;
+import com.bumptech.glide.Glide;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
@@ -70,6 +72,9 @@ public class MuYingFragment extends BaseFragment implements View.OnClickListener
     List<Integer> images = new ArrayList<>();
     List<String> titles = new ArrayList<>();
 
+    private int[] mImgIds,mImgIds2;
+    private LinearLayout mGallery,mGallery2;
+
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -107,7 +112,42 @@ public class MuYingFragment extends BaseFragment implements View.OnClickListener
         gridView.setAdapter(xuanGvAdapter);
         fixListViewHeight(gridView);
 
+        //热门品牌
+        initHotBrnners();
+
         return view;
+    }
+    //热门品牌
+    private void initHotBrnners() {
+        /**
+         * 图片横向轮播/热门品牌
+         * */
+        LayoutInflater mInflater2 = LayoutInflater.from(getContext());
+        mImgIds2 = new int[]{R.mipmap.remen1, R.mipmap.remen2, R.mipmap.remen3,
+                R.mipmap.remen4, R.mipmap.remen4, R.mipmap.remen4};
+        mGallery2 = (LinearLayout) view.findViewById(R.id.id_gallery2_muying);
+
+        for (int i = 0; i < mImgIds2.length; i++) {
+
+            View view = mInflater2.inflate(R.layout.activity_index_gallery_item2,
+                    mGallery2, false);
+            ImageView img1 = (ImageView) view
+                    .findViewById(R.id.id_index_gallery_item_image3);
+            Glide.with(getContext())
+                    .load(mImgIds2[i])
+                    .into(img1);
+//            img1.setImageResource(mImgIds2[i]);
+            img1.setOnClickListener(this);
+            mGallery2.addView(view);
+
+            img1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startFragment(new BrandFragmentSecond());
+                }
+            });
+
+        }
     }
 
     //控件查找以及点击事件

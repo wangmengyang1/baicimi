@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="在您购买的产品瓶身上找到积分码，刮开并输入“积分码”后面的所有字符"
-            android:textColor="#676767"
+            android:textColor="#737373"
             android:gravity="center"
             android:layout_below="@+id/cela_imtegral_image"
             android:layout_marginTop="30dp"

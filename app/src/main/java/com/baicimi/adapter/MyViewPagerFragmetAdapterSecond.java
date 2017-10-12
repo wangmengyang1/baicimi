@@ -51,6 +51,5 @@ public class MyViewPagerFragmetAdapterSecond extends FragmentStatePagerAdapter {
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         super.destroyItem(container, position, object);
-//        System.out.println("我执行了*****************");
     }
 }

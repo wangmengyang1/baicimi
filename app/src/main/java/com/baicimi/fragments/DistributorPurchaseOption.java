@@ -229,19 +229,19 @@ public class DistributorPurchaseOption extends BaseFragment implements View.OnCl
                 break;
             case R.id.distributor_putchase_option_daychemical:
                 initTextViewSetColor();
-                daychemical.setTextColor(Color.parseColor("#f05a4b"));
+                daychemical.setTextColor(Color.parseColor("#737373"));
                 break;
             case R.id.distributor_putchase_option_beautymakeup:
                 initTextViewSetColor();
-                beautymakeup.setTextColor(Color.parseColor("#f05a4b"));
+                beautymakeup.setTextColor(Color.parseColor("#737373"));
                 break;
             case R.id.distributor_putchase_option_personalbelongings:
                 initTextViewSetColor();
-                personalbelongings.setTextColor(Color.parseColor("#f05a4b"));
+                personalbelongings.setTextColor(Color.parseColor("#737373"));
                 break;
             case R.id.distributor_putchase_option_motherandbaby:
                 initTextViewSetColor();
-                motherandbaby.setTextColor(Color.parseColor("#f05a4b"));
+                motherandbaby.setTextColor(Color.parseColor("#737373"));
                 break;
 
         }

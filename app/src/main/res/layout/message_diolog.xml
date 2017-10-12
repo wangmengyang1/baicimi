@@ -27,8 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="信息"
-            android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textColor="#737373"
+            android:textSize="16sp"
 
             />
 
@@ -83,7 +83,7 @@
                     android:paddingBottom="6dp"
                     android:paddingTop="6dp"
                     android:text="评论"
-                    android:textColor="@color/black"
+                    android:textColor="#737373"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -112,7 +112,7 @@
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="20dp"
                             android:text="成分和保养"
-                            android:textColor="#7C7C7C"
+                            android:textColor="#737373"
                             android:textSize="15sp" />
                     </RelativeLayout>
 
@@ -134,7 +134,7 @@
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="20dp"
                             android:text="产品功效"
-                            android:textColor="#7C7C7C"
+                            android:textColor="#737373"
                             android:textSize="15sp" />
                     </RelativeLayout>
 
@@ -156,7 +156,7 @@
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="20dp"
                             android:text="使用指南"
-                            android:textColor="#7C7C7C"
+                            android:textColor="#737373"
                             android:textSize="15sp" />
                     </RelativeLayout>
 
@@ -182,7 +182,7 @@
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="20dp"
                             android:textSize="15sp"
-                            android:textColor="#7C7C7C"
+                            android:textColor="#737373"
                             />
                     </RelativeLayout>
 
@@ -208,7 +208,7 @@
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="20dp"
                             android:textSize="15sp"
-                            android:textColor="#7C7C7C"
+                            android:textColor="#737373"
                             />
                     </RelativeLayout>
 
@@ -232,7 +232,7 @@
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="20dp"
                             android:text="分享"
-                            android:textColor="#7C7C7C"
+                            android:textColor="#737373"
                             android:textSize="15sp" />
                     </RelativeLayout>
 

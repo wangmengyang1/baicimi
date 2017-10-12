@@ -30,7 +30,7 @@
             android:layout_centerHorizontal="true"
             android:text="官方授权 自然堂乐园补水保湿"
             android:textColor="#616161"
-            android:textSize="14sp"
+            android:textSize="12sp"
             android:maxLines="1"
             android:ellipsize="end"
             android:gravity="center"

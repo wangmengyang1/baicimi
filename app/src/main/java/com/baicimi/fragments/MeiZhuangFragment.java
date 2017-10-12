@@ -175,9 +175,6 @@ public class MeiZhuangFragment extends BaseFragment implements View.OnClickListe
 
 
 
-
-
-
         //控件查找类
         initListUI();
 

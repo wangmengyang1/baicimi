@@ -27,10 +27,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="畅销商品"
+            android:text="师生选购专区"
             android:textColor="@color/white"
             android:layout_centerInParent="true"
-            android:textSize="18sp"
+            android:textSize="16sp"
             />
 
 
@@ -121,13 +121,25 @@
                         android:gravity="center"
                         />
                     <TextView
+                        android:id="@+id/distributor_putchase_option_greenfood"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="绿色食品"
+                        android:textSize="14sp"
+                        android:textColor="#737373"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        />
+                    <TextView
                         android:id="@+id/distributor_putchase_option_sports"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:text="美妆"
                         android:textSize="14sp"
-                        android:textColor="@color/black"
+                        android:textColor="#737373"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:gravity="center"
@@ -139,7 +151,7 @@
                         android:layout_height="wrap_content"
                         android:text="个人用品"
                         android:textSize="14sp"
-                        android:textColor="@color/black"
+                        android:textColor="#737373"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:gravity="center"
@@ -154,7 +166,7 @@
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:gravity="center"
-                        android:textColor="@color/black"
+                        android:textColor="#737373"
                         />
 
                 </LinearLayout>

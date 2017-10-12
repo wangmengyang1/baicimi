@@ -292,14 +292,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="热卖试用"
-                    android:textColor="#2b2b2b"
+                    android:textColor="#737373"
                     android:textSize="15sp"
                     />
 
                 <View
                     android:layout_width="1dp"
                     android:layout_height="14dp"
-                    android:background="#2b2b2b"
+                    android:textColor="#737373"
                     android:layout_marginLeft="6dp"
                     android:layout_gravity="center_vertical"
                     />
@@ -350,14 +350,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="推荐试用"
-                    android:textColor="#2b2b2b"
+                    android:textColor="#737373"
                     android:textSize="15sp"
                     />
 
                 <View
                     android:layout_width="1dp"
                     android:layout_height="14dp"
-                    android:background="#2b2b2b"
+                    android:textColor="#737373"
                     android:layout_marginLeft="6dp"
                     android:layout_gravity="center_vertical"
                     />

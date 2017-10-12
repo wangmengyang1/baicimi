@@ -153,6 +153,98 @@
 
             </LinearLayout>
 
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#fafafa"
+
+                ></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/meizhuang_youhuishangou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="限时抢购"
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/meizhuang_youhuishangou"
+                    android:background="#808080"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/meizhuang_youhuishangou"
+                    android:text="Timed panic buying"
+                    android:textColor="#D0D0D0"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/meizhuang_manmain_sales_01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@mipmap/sale_1">
+
+
+                    <TextView
+                        android:id="@+id/manmain_downtimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:text="仅剩 90:35:59"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/manmain_favorable_sales_02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@mipmap/sale_2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="明日预告"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
             //男士主页热卖推荐
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -165,8 +257,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="热卖推荐"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
 
                 <View
                     android:layout_width="1dp"
@@ -248,74 +340,7 @@
                 android:layout_height="10dp"
                 android:background="#fafafa"></View>
 
-            //男士主页热卖品牌
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp">
 
-                <TextView
-                    android:id="@+id/tv_man_repinpai"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:text="热门品牌"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="14dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="13dp"
-                    android:layout_toRightOf="@id/tv_man_repinpai"
-                    android:background="#808080"></View>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@id/tv_man_repinpai"
-                    android:text="Hot brand"
-                    android:textColor="#D0D0D0"
-                    android:textSize="12sp" />
-
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#EEEEEE"></View>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal">
-
-                <View
-                    android:id="@+id/fragment_manmain_hot_brand_06"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@mipmap/man_repinpai1"></View>
-
-                <View
-                    android:id="@+id/fragment_manmain_hot_brand_07"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@mipmap/man_repinpai2"></View>
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:background="#fafafa"
-                ></View>
 
             //男士主页新品上市
             <RelativeLayout
@@ -329,8 +354,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="新品上市"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
 
                 <View
                     android:layout_width="1dp"
@@ -471,6 +496,74 @@
                 </LinearLayout>
 
             </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#fafafa"
+                ></View>
+            //男士主页热卖品牌
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/tv_man_repinpai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="热门品牌"
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/tv_man_repinpai"
+                    android:background="#808080"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_man_repinpai"
+                    android:text="Hot brand"
+                    android:textColor="#D0D0D0"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fragment_manmain_hot_brand_06"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@mipmap/man_repinpai1"></View>
+
+                <View
+                    android:id="@+id/fragment_manmain_hot_brand_07"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@mipmap/man_repinpai2"></View>
+            </LinearLayout>
+
 
             <View
                 android:layout_width="match_parent"
@@ -490,8 +583,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="活动专场"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
 
                 <View
                     android:layout_width="1dp"
@@ -594,8 +687,48 @@
                 android:background="#fafafa"
                 ></View>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
 
-          //销量
+                <TextView
+                    android:id="@+id/tv_cai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="猜你喜欢"
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/tv_cai"
+                    android:background="#808080"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_cai"
+                    android:text="Guess you like"
+                    android:textColor="#D0D0D0"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
+
+
+            //销量
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
@@ -647,6 +780,10 @@
                     />
 
             </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
 
           <GridView
               android:id="@+id/manmain_gv"

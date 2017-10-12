@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="柏树针员工名片 50张*2"
             android:textSize="13sp"
-            android:textColor="@color/black"
+            android:textColor="#737373"
             />
 
         <View

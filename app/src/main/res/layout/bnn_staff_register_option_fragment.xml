@@ -29,9 +29,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="BNN分销/兼职/员工注册入口"
-            android:textColor="@color/black"
+            android:textColor="#737373"
             android:layout_centerInParent="true"
-            android:textSize="18sp"
+            android:textSize="16sp"
             />
 
 

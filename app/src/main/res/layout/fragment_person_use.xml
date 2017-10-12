@@ -76,7 +76,7 @@
                             android:gravity="center"
                             android:text="个护电器"
                             android:textColor="#737373"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:layout_marginTop="2dp"
                             />
 
@@ -107,7 +107,7 @@
                             android:gravity="center"
                             android:text="床上用品"
                             android:textColor="#737373"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:layout_marginTop="2dp"
                             />
 
@@ -137,7 +137,7 @@
                             android:gravity="center"
                             android:text="居家休闲"
                             android:textColor="#737373"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:layout_marginTop="2dp"
                             />
 
@@ -167,7 +167,7 @@
                             android:gravity="center"
                             android:text="配饰"
                             android:textColor="#737373"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:layout_marginTop="2dp"
                             />
 
@@ -209,7 +209,7 @@
                             android:gravity="center"
                             android:text="户外运动"
                             android:textColor="#737373"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:layout_marginTop="2dp"
                             />
 
@@ -239,7 +239,7 @@
                             android:gravity="center"
                             android:text="旅行用品"
                             android:textColor="#737373"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:layout_marginTop="2dp"
                             />
 
@@ -269,7 +269,7 @@
                             android:gravity="center"
                             android:text="包包"
                             android:textColor="#737373"
-                            android:textSize="14sp"
+                            android:textSize="13sp"
                             android:layout_marginTop="2dp"
                             />
 
@@ -307,6 +307,94 @@
                 </LinearLayout>
 
             </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#fafafa"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/tv_youhuishangou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="优惠闪购"
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/tv_youhuishangou"
+                    android:background="#808080"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_youhuishangou"
+                    android:text="Preferential flash dslrd"
+                    android:textColor="#D0D0D0"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/person_user_favorable_sales_01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@mipmap/sale_1">
+
+
+                    <TextView
+                        android:id="@+id/fragment_person_use_downtimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:text="仅剩 90:35:59"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/person_user_favorable_sales_02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@mipmap/sale_2"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="明日预告"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
 
             <View
                 android:layout_width="match_parent"
@@ -324,8 +412,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="热卖推荐"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
 
                 <View
                     android:layout_width="1dp"
@@ -402,8 +490,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="新品上市"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
+                    android:textColor="#737373"
+                    android:textSize="15sp"/>
 
                 <View
                     android:layout_width="1dp"
@@ -728,94 +816,75 @@
             </HorizontalScrollView>
 
 
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
-                android:background="#fafafa"></View>
+                android:background="#fafafa"
+                ></View>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp">
 
                 <TextView
-                    android:id="@+id/tv_youhuishangou"
+                    android:id="@+id/tv_renmenpinpai"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="热门品牌"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="优惠闪购"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
+
+                    android:textColor="#737373"
+                    android:textSize="15sp"
+                    />
 
                 <View
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="14dp"
-                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="13dp"
-                    android:layout_toRightOf="@id/tv_youhuishangou"
+                    android:layout_marginBottom="14dp"
+                    android:layout_toRightOf="@id/tv_renmenpinpai"
+                    android:layout_marginLeft="8dp"
                     android:background="#808080"></View>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@id/tv_youhuishangou"
-                    android:text="Preferential flash dslrd"
+                    android:text="Hot brand"
+                    android:textSize="12sp"
                     android:textColor="#D0D0D0"
-                    android:textSize="12sp" />
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_renmenpinpai"
+                    android:layout_marginLeft="20dp"
+                    />
 
             </RelativeLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#EEEEEE"></View>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="115dp"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:id="@+id/person_user_favorable_sales_01"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:background="@mipmap/sale_1">
+                android:background="#DDDDDD"
+                ></View>
 
 
-                    <TextView
-                        android:id="@+id/fragment_person_use_downtimer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="10dp"
-                        android:text="仅剩 90:35:59"
-                        android:textColor="#FFFFFF"
-                        android:textSize="16sp" />
-                </RelativeLayout>
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#F9F9F9"
+                android:scrollbars="none" >
 
-                <RelativeLayout
-                    android:id="@+id/person_user_favorable_sales_02"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:background="@mipmap/sale_2"
-                    >
+                <LinearLayout
+                    android:id="@+id/id_gallery2_person_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:text="明日预告"
-                        android:textColor="#FFFFFF"
-                        android:textSize="15sp" />
-                </RelativeLayout>
+            </HorizontalScrollView>
 
-            </LinearLayout>
+
 
             <View
                 android:layout_width="match_parent"
@@ -833,8 +902,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="活动专场"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
 
                 <View
                     android:layout_width="1dp"

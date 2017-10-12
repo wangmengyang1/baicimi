@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/user_center_homepage_head_fragment_listview_item_child_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#eeeeee"
+        />
+
+    <TextView
+        android:id="@+id/user_center_homepage_head_fragment_listview_item_child_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="我的订单"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="35dp"
+        />
+
+</LinearLayout>

@@ -15,10 +15,10 @@
 
         <TextView
             android:id="@+id/today_cosmetics_fragment_sales"
-            android:layout_width="wrap_content"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:text="销量"
-            android:textColor="@color/black"
+            android:textColor="#737373"
             android:gravity="center"
             android:textSize="12sp"
             android:paddingTop="6dp"
@@ -28,7 +28,7 @@
             />
         <TextView
             android:id="@+id/today_cosmetics_fragment_news"
-            android:layout_width="wrap_content"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:text="最新"
             android:textColor="@color/red"
@@ -45,7 +45,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="价格从高到底"
-            android:textColor="@color/black"
+            android:textColor="#737373"
             android:gravity="center"
             android:textSize="12sp"
             android:paddingTop="6dp"
@@ -57,11 +57,12 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="价格从低到高"
-            android:textColor="@color/black"
+            android:textColor="#737373"
             android:gravity="center"
             android:textSize="12sp"
             android:paddingTop="6dp"
             android:paddingBottom="8dp"
+            android:layout_marginLeft="8dp"
             />
         <TextView
             android:id="@+id/today_cosmetics_fragment_price_attention"
@@ -69,7 +70,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="关注度"
-            android:textColor="@color/black"
+            android:textColor="#737373"
             android:gravity="center"
             android:textSize="12sp"
             android:paddingTop="6dp"

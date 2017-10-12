@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="御泥坊"
-            android:textColor="@color/black"
+            android:textColor="#737373"
             android:layout_below="@+id/home_page_view_button_adapter_imageurl"
             android:layout_marginTop="3dp"
             android:layout_marginLeft="5dp"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:text="中草药高端护理品牌"
             android:textSize="10sp"
-            android:textColor="@color/black"
+
             android:layout_below="@+id/home_page_view_button_adapter_lible"
             android:layout_alignLeft="@+id/home_page_view_button_adapter_lible"
             android:layout_marginTop="4dp"

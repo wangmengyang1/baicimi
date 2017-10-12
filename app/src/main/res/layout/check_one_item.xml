@@ -96,7 +96,7 @@
             android:layout_marginRight="15dp"
             android:text="+信息"
             android:textSize="15dp"
-            android:background="#ebebf2"
+            android:textColor="#737373"
             />
 
         <LinearLayout

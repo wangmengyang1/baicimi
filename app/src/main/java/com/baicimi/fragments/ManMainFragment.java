@@ -7,11 +7,13 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.baicimi.R;
 import com.baicimi.adapter.HeadPinPaiActivityGvAdapter;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.bean.ShaiXuanListBean;
+import com.baicimi.datetime.MyCountDownTimer;
 import com.baicimi.image.GlideImageLoader;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
@@ -52,6 +54,8 @@ public class ManMainFragment extends BaseFragment implements View.OnClickListene
     private ImageView xifa_manmain , muyu_manmain , xiyiye_manmain , ximiannai_manmain;
 
 
+    private MyCountDownTimer downTimer;//倒计时
+
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view=inflater.inflate(R.layout.fragment_manmain,container,false);
 
@@ -84,8 +88,22 @@ public class ManMainFragment extends BaseFragment implements View.OnClickListene
         //顶部导航
         initNavition();
 
+
+        //倒计时
+        getTimer();
+
+
         return view;
     }
+
+
+    //倒计时
+    private void getTimer(){
+        TextView textView_dt = (TextView) view.findViewById(R.id.manmain_downtimer);
+        downTimer = new MyCountDownTimer(System.currentTimeMillis() , 1000 , textView_dt);
+        downTimer.start();
+    }
+
     //顶部导航
     private void initNavition() {
         xifa_manmain = (ImageView) view.findViewById(R.id.xifa_manmain);

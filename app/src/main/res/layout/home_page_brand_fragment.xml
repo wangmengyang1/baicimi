@@ -26,7 +26,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                >
 
                 <View
                     android:layout_width="50dp"
@@ -39,7 +41,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:text="人气品牌"
-                    android:textColor="@color/black"
+                    android:textColor="#737373"
                     android:textSize="15sp" />
 
                 <View
@@ -103,7 +105,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:text="品牌精选"
-                    android:textColor="@color/black"
+                    android:textColor="#737373"
                     android:textSize="15sp" />
 
                 <View
@@ -113,19 +115,13 @@
             </LinearLayout>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="SELECTED"
-                android:gravity="center"
-                android:layout_marginTop="8dp"
-                />
 
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scrollbars="none"
+                android:layout_marginTop="10dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -155,6 +151,18 @@
                         android:paddingBottom="7dp"
                         android:paddingTop="7dp"
                         android:text="日化用品"
+                        android:textColor="@color/red"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#f1f1f1"
+                        android:gravity="center"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp"
+                        android:text="绿色食品"
                         android:textColor="@color/red"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
@@ -225,7 +233,9 @@
                     android:paddingRight="15dp"
                     android:paddingTop="6dp"
                     android:text="综合"
-                    android:textColor="@color/red" />
+                    android:textColor="@color/red"
+                    android:textSize="12sp"
+                    />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -241,12 +251,15 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="关注度"
-                        android:textColor="@color/black" />
+                        android:textColor="#737373"
+                        android:textSize="12sp"
+                        />
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/go_down_image" />
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/go_down_image"
+                        />
 
 
                 </LinearLayout>
@@ -265,11 +278,13 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="人气"
-                        android:textColor="@color/black" />
+                        android:textColor="#737373"
+                        android:textSize="12sp"
+                        />
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
                         android:src="@drawable/go_down_image" />
 
 
@@ -289,11 +304,13 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="销量"
-                        android:textColor="@color/black" />
+                        android:textColor="#737373"
+                        android:textSize="12sp"
+                        />
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
                         android:src="@drawable/go_down_image" />
 
 
@@ -313,11 +330,13 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="最新活动"
-                        android:textColor="@color/black" />
+                        android:textColor="#737373"
+                        android:textSize="12sp"
+                        />
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
                         android:src="@drawable/go_down_image" />
 
 

@@ -61,7 +61,7 @@ public class HeadFragment extends BaseFragment {
         listFragment.add(new MuYingFragment());//母婴
         listFragment.add(new ManMainFragment());//男士
         listFragment.add(new MeiZhuangFragment());//美妆
-        listFragment.add(new TryoutApplyforFragment());//使用申请
+        listFragment.add(new TryoutApplyforFragment());//试用申请
         listFragment.add(new HomePageBrandFragment());//品牌首页
         listFragment.add(new FridayNightFragment());//周五之夜
         listFragment.add(new HeadMeiguiRoseFragment());//玫瑰社区

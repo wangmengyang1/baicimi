@@ -62,7 +62,7 @@
                     android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     android:text="彩妆"
-                    android:textSize="14sp"
+                    android:textSize="13sp"
                     android:textColor="#737373"
                     android:layout_marginTop="3dp"
                     />
@@ -91,10 +91,10 @@
                     android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     android:text="护肤"
-                    android:textSize="14sp"
+                    android:textSize="13sp"
                     android:textColor="#737373"
                     android:layout_marginTop="3dp"
-                    />
+                    android:id="@+id/textView8" />
 
             </LinearLayout>
             <LinearLayout
@@ -119,7 +119,7 @@
                     android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     android:text="面膜"
-                    android:textSize="14sp"
+                    android:textSize="13sp"
                     android:textColor="#737373"
                     android:layout_marginTop="3dp"
                     />
@@ -147,7 +147,7 @@
                     android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     android:text="美妆工具"
-                    android:textSize="14sp"
+                    android:textSize="13sp"
                     android:textColor="#737373"
                     android:layout_marginTop="3dp"
                     />
@@ -187,7 +187,7 @@
                     android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     android:text="香薰"
-                    android:textSize="14sp"
+                    android:textSize="13sp"
                     android:textColor="#737373"
                     android:layout_marginTop="3dp"
                     />
@@ -215,7 +215,7 @@
                     android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     android:text="套装"
-                    android:textSize="14sp"
+                    android:textSize="13sp"
                     android:textColor="#737373"
                     android:layout_marginTop="3dp"
                     />
@@ -243,7 +243,7 @@
                     android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     android:text="热卖"
-                    android:textSize="14sp"
+                    android:textSize="13sp"
                     android:textColor="#737373"
                     android:layout_marginTop="3dp"
                     />
@@ -271,7 +271,7 @@
                     android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     android:text="热搜"
-                    android:textSize="14sp"
+                    android:textSize="13sp"
                     android:textColor="#737373"
                     android:layout_marginTop="3dp"
                     />
@@ -299,8 +299,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="限时抢购"
-                    android:textColor="#808080"
-                    android:textSize="16sp" />
+                    android:textColor="#737373"
+                    android:textSize="15sp" />
 
                 <View
                     android:layout_width="1dp"
@@ -381,10 +381,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="热卖推荐"
-                    android:textColor="#808080"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:textSize="16sp"
+                    android:textColor="#737373"
+                    android:textSize="15sp"
                     />
 
                 <View
@@ -487,10 +487,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="新品上市"
-                    android:textColor="#808080"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:textSize="16sp"
+
+                    android:textColor="#737373"
+                    android:textSize="15sp"
                     />
 
                 <View
@@ -655,10 +656,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="热门品牌"
-                    android:textColor="#808080"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:textSize="16sp"
+
+                    android:textColor="#737373"
+                    android:textSize="15sp"
                     />
 
                 <View
@@ -722,10 +724,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="活动专场"
-                    android:textColor="#808080"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:textSize="16sp"
+
+                    android:textColor="#737373"
+                    android:textSize="15sp"
                     />
 
                 <View
@@ -795,10 +798,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="猜你喜欢"
-                    android:textColor="#808080"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:textSize="16sp"
+
+                    android:textColor="#737373"
+                    android:textSize="15sp"
                     />
 
                 <View
@@ -854,7 +858,7 @@
                         android:text="官方授权，自然堂乐园补水保湿芦荟胶"
                         android:layout_marginTop="10dp"
                         android:textSize="13sp"
-                        android:textColor="#262626"
+                        android:textColor="#737373"
                         android:layout_marginRight="15dp"
                         />
 
@@ -909,7 +913,7 @@
                         android:layout_height="wrap_content"
                         android:text="4485人购买"
                         android:textSize="12sp"
-                        android:textColor="#242424"
+                        android:textColor="#737373"
                         android:layout_below="@id/used_price1"
                         android:layout_marginTop="5dp"
                         />
@@ -956,7 +960,7 @@
                         android:text="官方授权，自然堂乐园补水保湿芦荟胶"
                         android:layout_marginTop="10dp"
                         android:textSize="13sp"
-                        android:textColor="#262626"
+                        android:textColor="#737373"
                         android:layout_marginRight="15dp"
                         />
 
@@ -1010,7 +1014,7 @@
                         android:layout_height="wrap_content"
                         android:text="4485人购买"
                         android:textSize="12sp"
-                        android:textColor="#242424"
+                        android:textColor="#737373"
                         android:layout_below="@id/used_price2"
                         android:layout_marginTop="5dp"
                         />
@@ -1057,7 +1061,7 @@
                         android:text="官方授权，自然堂乐园补水保湿芦荟胶"
                         android:layout_marginTop="10dp"
                         android:textSize="13sp"
-                        android:textColor="#262626"
+                        android:textColor="#737373"
                         android:layout_marginRight="15dp"
                         />
 
@@ -1112,7 +1116,7 @@
                         android:layout_height="wrap_content"
                         android:text="4485人购买"
                         android:textSize="12sp"
-                        android:textColor="#242424"
+                        android:textColor="#737373"
                         android:layout_below="@id/used_price3"
                         android:layout_marginTop="5dp"
                         />
@@ -1159,7 +1163,7 @@
                         android:text="官方授权，自然堂乐园补水保湿芦荟胶"
                         android:layout_marginTop="10dp"
                         android:textSize="13sp"
-                        android:textColor="#262626"
+                        android:textColor="#737373"
                         android:layout_marginRight="15dp"
                         />
 
@@ -1214,7 +1218,7 @@
                         android:layout_height="wrap_content"
                         android:text="4485人购买"
                         android:textSize="12sp"
-                        android:textColor="#242424"
+                        android:textColor="#737373"
                         android:layout_below="@id/used_price4"
                         android:layout_marginTop="5dp"
                         />
@@ -1261,7 +1265,7 @@
                         android:text="官方授权，自然堂乐园补水保湿芦荟胶"
                         android:layout_marginTop="10dp"
                         android:textSize="13sp"
-                        android:textColor="#262626"
+                        android:textColor="#737373"
                         android:layout_marginRight="15dp"
                         />
 
@@ -1316,7 +1320,7 @@
                         android:layout_height="wrap_content"
                         android:text="4485人购买"
                         android:textSize="12sp"
-                        android:textColor="#242424"
+                        android:textColor="#737373"
                         android:layout_below="@id/used_price5"
                         android:layout_marginTop="5dp"
                         />
@@ -1363,7 +1367,7 @@
                         android:text="官方授权，自然堂乐园补水保湿芦荟胶"
                         android:layout_marginTop="10dp"
                         android:textSize="13sp"
-                        android:textColor="#262626"
+                        android:textColor="#737373"
                         android:layout_marginRight="15dp"
                         />
 
@@ -1418,7 +1422,7 @@
                         android:layout_height="wrap_content"
                         android:text="4485人购买"
                         android:textSize="12sp"
-                        android:textColor="#242424"
+                        android:textColor="#737373"
                         android:layout_below="@id/used_price6"
                         android:layout_marginTop="5dp"
                         />
@@ -1443,7 +1447,6 @@
                 android:layout_height="20dp"
                 android:background="#fafafa"
                 ></View>
-
 
         </LinearLayout>
     </ScrollView>

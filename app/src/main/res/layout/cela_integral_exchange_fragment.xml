@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="积分兑换"
-            android:textColor="#000000"
+            android:textColor="#737373"
             android:textSize="16sp" />
 
     </RelativeLayout>
@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="恭喜获得 15 积分"
-            android:textColor="@color/black"
+            android:textColor="#737373"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/cela_imtegral_exchange_image"
             android:layout_marginTop="30dp"
@@ -84,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="历史积分：55468548485"
-                android:textColor="#000000"
+                android:textColor="#737373"
                 />
             <TextView
                 android:id="@+id/cela_imtegral_exchange_acquire"
@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:text="本次获得积分：1532"
                 android:layout_marginTop="10dp"
-                android:textColor="#000000"
+                android:textColor="#737373"
                 />
             <TextView
                 android:id="@+id/cela_imtegral_exchange_new"
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:text="最新积分：5564655444"
                 android:layout_marginTop="10dp"
-                android:textColor="#000000"
+                android:textColor="#737373"
                 />
 
 

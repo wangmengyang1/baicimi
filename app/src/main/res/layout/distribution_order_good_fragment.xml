@@ -77,7 +77,6 @@
                         android:layout_height="wrap_content"
                         android:text="热门商品"
                         android:textSize="13sp"
-
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:paddingLeft="10dp"
@@ -89,6 +88,19 @@
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:text="日化"
+                        android:textSize="13sp"
+
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/distribution_order_good_fragment_greenfood"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="绿色食品"
                         android:textSize="13sp"
 
                         android:paddingTop="5dp"

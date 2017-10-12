@@ -172,7 +172,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="品牌活动"
-                    android:textColor="#808080"
+                    android:textColor="#737373"
                     android:textSize="15sp" />
 
                 <View
@@ -255,7 +255,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="洗发露"
-                    android:textColor="#808080"
+                    android:textColor="#737373"
                     android:textSize="15sp"   />
 
                 <View
@@ -317,8 +317,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="沐浴露"
-                    android:textColor="#808080"
-                    android:textSize="15sp"   />
+                    android:textColor="#737373"
+                    android:textSize="15sp"  />
 
                 <View
                     android:layout_width="1dp"
@@ -379,7 +379,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="洗衣液"
-                    android:textColor="#808080"
+                    android:textColor="#737373"
                     android:textSize="15sp"  />
 
                 <View
@@ -443,8 +443,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
                     android:text="洗洁精"
-                    android:textColor="#808080"
-                    android:textSize="15sp"   />
+                    android:textColor="#737373"
+                    android:textSize="15sp"  />
 
                 <View
                     android:layout_width="1dp"

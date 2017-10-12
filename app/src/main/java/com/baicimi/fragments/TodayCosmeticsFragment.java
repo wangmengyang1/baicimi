@@ -168,23 +168,23 @@ public class TodayCosmeticsFragment extends BaseFragment implements Distribution
         switch (view.getId()){
             case R.id.today_cosmetics_fragment_sales:
                 initTextViewSetColor();
-                sales.setTextColor(Color.parseColor("#f05a4b"));
+                sales.setTextColor(Color.parseColor("#737373"));
                 break;
             case R.id.today_cosmetics_fragment_news:
                 initTextViewSetColor();
-                news.setTextColor(Color.parseColor("#f05a4b"));
+                news.setTextColor(Color.parseColor("#737373"));
                 break;
             case R.id.today_cosmetics_fragment_price_one:
                 initTextViewSetColor();
-                price_one.setTextColor(Color.parseColor("#f05a4b"));
+                price_one.setTextColor(Color.parseColor("#737373"));
                 break;
             case R.id.today_cosmetics_fragment_price_two:
                 initTextViewSetColor();
-                price_two.setTextColor(Color.parseColor("#f05a4b"));
+                price_two.setTextColor(Color.parseColor("#737373"));
                 break;
             case R.id.today_cosmetics_fragment_price_attention:
                 initTextViewSetColor();
-                attention.setTextColor(Color.parseColor("#f05a4b"));
+                attention.setTextColor(Color.parseColor("#737373"));
                 break;
         }
     }

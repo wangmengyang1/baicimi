@@ -233,19 +233,19 @@ public class TeacherPurchaseOptionFragment extends BaseFragment implements View.
                 break;
             case R.id.distributor_putchase_option_officesupplies:
                 initHeadTextView();
-                officesupplies.setTextColor(Color.parseColor("#f05a4b"));
+                officesupplies.setTextColor(Color.parseColor("#737373"));
                 break;
             case R.id.distributor_putchase_option_sports:
                 initHeadTextView();
-                sports.setTextColor(Color.parseColor("#f05a4b"));
+                sports.setTextColor(Color.parseColor("#737373"));
                 break;
             case R.id.distributor_putchase_option_clothing:
                 initHeadTextView();
-                clothing.setTextColor(Color.parseColor("#f05a4b"));
+                clothing.setTextColor(Color.parseColor("#737373"));
                 break;
             case R.id.distributor_putchase_option_accessory:
                 initHeadTextView();
-                accessory.setTextColor(Color.parseColor("#f05a4b"));
+                accessory.setTextColor(Color.parseColor("#737373"));
                 break;
         }
     }

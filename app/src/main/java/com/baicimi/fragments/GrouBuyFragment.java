@@ -21,9 +21,9 @@ import java.util.List;
  * 团购页面
  */
 public class GrouBuyFragment extends BaseFragment implements View.OnClickListener {
-    private GridView myGridView,myGridView1,myGridView2;
-    private List<GrouBuyMeiZhuangGvBean> list , list_second , list_third;
-    private GrouBuyPersonGvAdapter personGvAdapter , muYiingGvAdapter , xuanGvAdapter;
+    private GridView myGridView,myGridView1,myGridView2,myGridView3,myGridView4;
+    private List<GrouBuyMeiZhuangGvBean> list , list_second , list_third , list_four , list_five;
+    private GrouBuyPersonGvAdapter personGvAdapter , muYiingGvAdapter , xuanGvAdapter , rihuaGvAdapter , foodGvAdapter;
 
 
     private TextView choiceness_tv , lobby_tv;
@@ -35,6 +35,8 @@ public class GrouBuyFragment extends BaseFragment implements View.OnClickListene
         myGridView= (GridView) view.findViewById(R.id.tuangog_meizhuang_gv);
         myGridView1= (GridView) view.findViewById(R.id.tuangog_muying_gv);
         myGridView2= (GridView) view.findViewById(R.id.tuangog_personuse_gv);
+        myGridView3= (GridView) view.findViewById(R.id.tuangog_meizhuang_gv_05);
+        myGridView4= (GridView) view.findViewById(R.id.tuangog_meizhuang_gv_04);
 
 //        //美妆个护布局填充
         initMyGridViewFirst();
@@ -43,12 +45,65 @@ public class GrouBuyFragment extends BaseFragment implements View.OnClickListene
         initMyGridViewSecond();
 //        //个人用品布局填充
         initMyGridViewThred();
+        //日化用品布局填充
+        initMyGridViewFour();
+        //绿色食品布局填充
+        initMyGridViewFive();
 
 
         //团购精选及大厅切换效果
         initChoiceness();
 
         return view;
+    }
+    //绿色食品布局填充
+    private void initMyGridViewFive() {
+        list_five = new ArrayList<>();
+        list_five.clear();
+        list_five.add(new GrouBuyMeiZhuangGvBean(new String("官方授权 自然堂乐园补水保湿") , new String("原价¥320") , new String("单人团¥120") , new String("¥15.7") , R.drawable.image_tuangou_21));
+        list_five.add(new GrouBuyMeiZhuangGvBean(new String("官方授权 自然堂乐园补水保湿") , new String("原价¥320") , new String("单人团¥120") , new String("¥15.7") , R.drawable.image_tuangou_22));
+        list_five.add(new GrouBuyMeiZhuangGvBean(new String("官方授权 自然堂乐园补水保湿") , new String("原价¥320") , new String("单人团¥120") , new String("¥15.7") , R.drawable.image_tuangou_23));
+        list_five.add(new GrouBuyMeiZhuangGvBean(new String("官方授权 自然堂乐园补水保湿") , new String("原价¥320") , new String("单人团¥120") , new String("¥15.7") , R.drawable.image_tuangou_24));
+        list_five.add(new GrouBuyMeiZhuangGvBean(new String("官方授权 自然堂乐园补水保湿") , new String("原价¥320") , new String("单人团¥120") , new String("¥15.7") , R.drawable.image_tuangou_25));
+        list_five.add(new GrouBuyMeiZhuangGvBean(new String("官方授权 自然堂乐园补水保湿") , new String("原价¥320") , new String("单人团¥120") , new String("¥15.7") , R.drawable.image_tuangou_26));
+
+
+        foodGvAdapter=new GrouBuyPersonGvAdapter(getContext(),list_five);
+        myGridView4.setAdapter(foodGvAdapter);
+        fixGridViewHeight(myGridView4);
+        myGridView4.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                startFragment(new GrouBuyDetailFragment(),null);
+                startFragment(new GoodsDetailsGrouBuyFragment(),null);
+            }
+        });
+
+    }
+
+    //日化用品布局填充
+    private void initMyGridViewFour() {
+        list_four = new ArrayList<>();
+        list_four.clear();
+        list_four.add(new GrouBuyMeiZhuangGvBean(new String("官方授权 自然堂乐园补水保湿") , new String("原价¥320") , new String("单人团¥120") , new String("¥15.7") , R.drawable.image_tuangou_21));
+        list_four.add(new GrouBuyMeiZhuangGvBean(new String("官方授权 自然堂乐园补水保湿") , new String("原价¥320") , new String("单人团¥120") , new String("¥15.7") , R.drawable.image_tuangou_22));
+        list_four.add(new GrouBuyMeiZhuangGvBean(new String("官方授权 自然堂乐园补水保湿") , new String("原价¥320") , new String("单人团¥120") , new String("¥15.7") , R.drawable.image_tuangou_23));
+        list_four.add(new GrouBuyMeiZhuangGvBean(new String("官方授权 自然堂乐园补水保湿") , new String("原价¥320") , new String("单人团¥120") , new String("¥15.7") , R.drawable.image_tuangou_24));
+        list_four.add(new GrouBuyMeiZhuangGvBean(new String("官方授权 自然堂乐园补水保湿") , new String("原价¥320") , new String("单人团¥120") , new String("¥15.7") , R.drawable.image_tuangou_25));
+        list_four.add(new GrouBuyMeiZhuangGvBean(new String("官方授权 自然堂乐园补水保湿") , new String("原价¥320") , new String("单人团¥120") , new String("¥15.7") , R.drawable.image_tuangou_26));
+
+
+        rihuaGvAdapter=new GrouBuyPersonGvAdapter(getContext(),list_four);
+        myGridView3.setAdapter(rihuaGvAdapter);
+        fixGridViewHeight(myGridView3);
+        myGridView3.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                startFragment(new GrouBuyDetailFragment(),null);
+                startFragment(new GoodsDetailsGrouBuyFragment(),null);
+            }
+        });
+
     }
 
 

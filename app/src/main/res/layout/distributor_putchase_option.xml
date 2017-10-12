@@ -19,7 +19,7 @@
             android:id="@+id/back_distributor_putchase_option"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/back_image_black"
+            android:src="@drawable/back_black"
             android:layout_centerVertical="true"
             android:padding="5dp"
             />
@@ -27,10 +27,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="分销订货"
-            android:textColor="@color/black"
+            android:text="员工物品申请"
+            android:textColor="#737373"
             android:layout_centerInParent="true"
-            android:textSize="18sp"
+            android:textSize="16sp"
             />
 
 
@@ -79,7 +79,7 @@
                         android:layout_height="wrap_content"
                         android:text="运动物料"
                         android:textSize="14sp"
-                        android:textColor="@color/black"
+                        android:textColor="#737373"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:gravity="center"
@@ -91,7 +91,7 @@
                         android:layout_height="wrap_content"
                         android:text="服装"
                         android:textSize="14sp"
-                        android:textColor="@color/black"
+                        android:textColor="#737373"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:gravity="center"
@@ -103,7 +103,7 @@
                         android:layout_height="wrap_content"
                         android:text="配饰"
                         android:textSize="14sp"
-                        android:textColor="@color/black"
+                        android:textColor="#737373"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:gravity="center"
@@ -199,7 +199,7 @@
                     android:layout_height="wrap_content"
                     android:text="品牌精选"
                     android:textSize="16sp"
-                    android:textColor="@color/black"
+                    android:textColor="#737373"
                     />
 
                 <View

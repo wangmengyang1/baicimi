@@ -8,6 +8,7 @@ import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ import com.baicimi.datetime.MyCountDownTimer;
 import com.baicimi.image.GlideImageLoader;
 import com.baicimi.interfaces.DistributionNumberOnitemClick;
 import com.baicimi.ui.PersonUserPagerSlidingTabStrip;
+import com.bumptech.glide.Glide;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
@@ -74,6 +76,9 @@ public class PerSonUseFragment extends BaseFragment implements View.OnClickListe
     private LinearLayout electric , beddings , relaxations , accs , sports , lvxing , packageas;
 
 
+    private LinearLayout mGallery,mGallery2;
+    private int[] mImgIds,mImgIds2;
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view=inflater.inflate(R.layout.fragment_person_use,container,false);
@@ -106,8 +111,44 @@ public class PerSonUseFragment extends BaseFragment implements View.OnClickListe
         //导航栏布局填充
         initNavigation();
 
+        //品牌
+        initBrnner();
+
 
         return view;
+    }
+
+    //品牌
+    private void initBrnner() {
+        /**
+         * 图片横向轮播/热门品牌
+         * */
+        LayoutInflater mInflater2 = LayoutInflater.from(getContext());
+        mImgIds2 = new int[]{R.mipmap.remen1, R.mipmap.remen2, R.mipmap.remen3,
+                R.mipmap.remen4, R.mipmap.remen4, R.mipmap.remen4};
+        mGallery2 = (LinearLayout) view.findViewById(R.id.id_gallery2_person_user);
+
+        for (int i = 0; i < mImgIds2.length; i++) {
+
+            View view = mInflater2.inflate(R.layout.activity_index_gallery_item2,
+                    mGallery2, false);
+            ImageView img1 = (ImageView) view
+                    .findViewById(R.id.id_index_gallery_item_image3);
+            Glide.with(getContext())
+                    .load(mImgIds2[i])
+                    .into(img1);
+//            img1.setImageResource(mImgIds2[i]);
+            img1.setOnClickListener(this);
+            mGallery2.addView(view);
+
+            img1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startFragment(new BrandFragmentSecond());
+                }
+            });
+
+        }
     }
 
     //导航栏布局填充

@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:text="教师/学生注册入口"
             android:textSize="16sp"
-            android:textColor="@color/black"
+            android:textColor="#737373"
             android:layout_centerInParent="true"
 
             />
@@ -57,9 +57,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="带*为必填"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="15dp"
+                android:textColor="#737373"
                 />
 
             <LinearLayout
@@ -76,8 +77,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="* 用 户 名 ："
-                    android:textSize="14sp"
-                    android:textColor="#c0000000"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -110,8 +111,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="*设置密码："
-                    android:textSize="14sp"
-                    android:textColor="#c0000000"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -144,8 +145,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="*确认密码："
-                    android:textSize="14sp"
-                    android:textColor="#c0000000"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -178,8 +179,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="*手机号码："
-                    android:textSize="14sp"
-                    android:textColor="#c0000000"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -212,8 +213,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="*验 证 码  ："
-                    android:textSize="14sp"
-                    android:textColor="#c0000000"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -241,7 +242,6 @@
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
                     android:background="@drawable/person_cnetered_acthentication_user_button_shape"
-                    android:textColor="#cc000000"
                     />
             </LinearLayout>
             <LinearLayout
@@ -258,8 +258,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="*上传身份证照："
-                    android:textSize="14sp"
-                    android:textColor="#c0000000"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
                     />
 
 
@@ -274,7 +274,6 @@
                     android:paddingBottom="4dp"
                     android:paddingTop="4dp"
                     android:background="@drawable/person_cnetered_acthentication_user_button_shape"
-                    android:textColor="#cc000000"
                     />
 
             </LinearLayout>
@@ -292,8 +291,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="*上传教师证/学生证照："
-                    android:textSize="14sp"
-                    android:textColor="#c0000000"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
                     />
 
 
@@ -307,7 +306,6 @@
                     android:paddingBottom="4dp"
                     android:paddingTop="4dp"
                     android:background="@drawable/person_cnetered_acthentication_user_button_shape"
-                    android:textColor="#cc000000"
                     />
 
             </LinearLayout>
@@ -325,8 +323,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="* 验 证 码 ："
-                    android:textSize="14sp"
-                    android:textColor="#c0000000"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
                     />
 
                 <EditText
@@ -355,7 +353,6 @@
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
                     android:background="@drawable/person_cnetered_acthentication_user_button_shape"
-                    android:textColor="#cc000000"
                     />
 
 
@@ -418,7 +415,6 @@
         </LinearLayout>
 
     </ScrollView>
-
 
 
 </LinearLayout>

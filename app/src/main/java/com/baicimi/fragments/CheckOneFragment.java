@@ -373,7 +373,7 @@ public class CheckOneFragment extends BaseFragment implements View.OnClickListen
                 listView.setVisibility(View.GONE);
                 message_tv.setTextColor(Color.WHITE);
                 message_tv.setBackgroundColor(Color.parseColor("#fe0036"));
-                commect_tv.setTextColor(Color.BLACK);
+                commect_tv.setTextColor(Color.parseColor("#737373"));
                 commect_tv.setBackgroundColor(Color.parseColor("#eaeaea"));
             }
         });
@@ -386,7 +386,7 @@ public class CheckOneFragment extends BaseFragment implements View.OnClickListen
                 listView.setVisibility(View.VISIBLE);
                 commect_tv.setTextColor(Color.WHITE);
                 commect_tv.setBackgroundColor(Color.parseColor("#fe0036"));
-                message_tv.setTextColor(Color.BLACK);
+                message_tv.setTextColor(Color.parseColor("#737373"));
                 message_tv.setBackgroundColor(Color.parseColor("#eaeaea"));
 
             }
