@@ -213,7 +213,6 @@
                     android:layout_marginLeft="15dp"
                     android:gravity="center_horizontal"
                     android:background="@drawable/bnn_diatributor_register_option_shape"
-
                     ></Spinner>
 
 

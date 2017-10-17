@@ -21,11 +21,19 @@ public class PaymentAdencyAdapter extends BaseAdapter{
     private List<PaymentAdencyEntry> list;
     private Context context;
     private LayoutInflater inflater;
+    private boolean isCheck;
 
 
     public PaymentAdencyAdapter(List<PaymentAdencyEntry> list, Context context) {
         this.list = list;
         this.context = context;
+        inflater = LayoutInflater.from(context);
+    }
+
+    public PaymentAdencyAdapter(List<PaymentAdencyEntry> list, Context context, boolean isCheck) {
+        this.list = list;
+        this.context = context;
+        this.isCheck = isCheck;
         inflater = LayoutInflater.from(context);
     }
 
@@ -55,6 +63,7 @@ public class PaymentAdencyAdapter extends BaseAdapter{
             holder.context = (TextView) view.findViewById(R.id.payment_adency_adapter_context);
             holder.specification = (TextView) view.findViewById(R.id.payment_adency_adapter_specification);
             holder.price = (TextView) view.findViewById(R.id.payment_adency_adapter_price);
+            holder.isChecks = (TextView) view.findViewById(R.id.payment_adency_adaapter_integer_tv);
             view.setTag(holder);
         }else{
             holder = (PaymentAdencyHolder) view.getTag();
@@ -67,6 +76,12 @@ public class PaymentAdencyAdapter extends BaseAdapter{
         holder.specification.setText(init.getSpecification());
         holder.price.setText(init.getPrice());
 
+        if (isCheck == true){
+            holder.isChecks.setVisibility(View.VISIBLE);
+        }else{
+            holder.isChecks.setVisibility(View.INVISIBLE);
+        }
+
         return view;
     }
 
@@ -76,6 +91,7 @@ public class PaymentAdencyAdapter extends BaseAdapter{
         private TextView context;
         private TextView specification;
         private TextView price;
+        private TextView isChecks;
     }
 
 }

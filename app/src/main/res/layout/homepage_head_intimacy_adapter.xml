@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        >
+        <ImageView
+            android:id="@+id/homepage_head_intimacy_adapter_imageurl"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user_integral_gridview_item_image_41ss"
+            />
+
+        <TextView
+            android:id="@+id/homepage_head_intimacy_adapter_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jonh"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/homepage_head_intimacy_adapter_imageurl"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+        <LinearLayout
+            android:id="@+id/homepage_head_intimacy_adapter_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/homepage_head_intimacy_adapter_textvew_shape"
+
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进入TA的"
+                android:layout_gravity="center_vertical"
+                />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/brand_fragment_second_image_13"
+                android:layout_marginLeft="4dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#eeeeee"
+            android:layout_alignLeft="@+id/homepage_head_intimacy_adapter_username"
+            android:layout_alignBottom="@+id/homepage_head_intimacy_adapter_imageurl"
+            android:layout_toLeftOf="@+id/homepage_head_intimacy_adapter_layout"
+            android:layout_marginRight="15dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

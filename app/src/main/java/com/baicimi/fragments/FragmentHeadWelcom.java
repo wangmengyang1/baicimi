@@ -30,10 +30,6 @@ public class FragmentHeadWelcom extends BaseFragment {
 		iView = (ImageView) view.findViewById(R.id.welcomhead_pic);
 		gotoTimer();
 
-
-
-
-
 		return view;
 	}
 	/**

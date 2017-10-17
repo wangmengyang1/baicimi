@@ -154,19 +154,6 @@
                 android:layout_height="45dp"
                 android:gravity="center">
 
-
-                <com.baici.ui.MyDingDanPagerSlidingTabStrip
-                    android:id="@+id/my_dingdan_ps"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:layout_centerHorizontal="true"
-                    app:pstsDividerColor="#00ffffff"
-                    app:pstsIndicatorColor="#D93636"
-                    app:pstsIndicatorHeight="2dp"
-                    app:pstsShouldExpand="true"
-                    app:pstsTabSelectTextColor="@color/common_text_tab"
-                    app:pstsTabSelectTextSize="12sp"
-                    app:pstsTabTextSize="18sp"></com.baici.ui.MyDingDanPagerSlidingTabStrip>
             </RelativeLayout>
 
             <LinearLayout

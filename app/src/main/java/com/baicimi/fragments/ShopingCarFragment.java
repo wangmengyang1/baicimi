@@ -1,5 +1,6 @@
 package com.baicimi.fragments;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
@@ -62,6 +63,7 @@ public class ShopingCarFragment extends BaseFragment {
 
     private int commodityNumber = 0;
 
+    @SuppressLint("ValidFragment")
     public ShopingCarFragment(int commodityNumber) {
         this.commodityNumber = commodityNumber;
     }

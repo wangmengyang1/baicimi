@@ -1,10 +1,12 @@
 package com.baicimi.fragments;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
@@ -29,6 +31,17 @@ public class OrderFormFragmentRefundesucceed extends BaseFragment implements Vie
     private PaymentAdencyAdapter adencyAdapter ;
     private ImageView back;
 
+    private TextView message_particulars;
+    private String typeS = "无参数";
+    private TextView type_tv;
+
+    @SuppressLint("ValidFragment")
+    public OrderFormFragmentRefundesucceed(String typeS) {
+        this.typeS = typeS;
+    }
+
+    public OrderFormFragmentRefundesucceed() {
+    }
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -39,6 +52,14 @@ public class OrderFormFragmentRefundesucceed extends BaseFragment implements Vie
 
         back = (ImageView) view.findViewById(R.id.payment_adency_fragment_resundesucceed_back);
         back.setOnClickListener(this);
+
+        message_particulars = (TextView) view.findViewById(R.id.order_form_fragment_refundesucceed_message);
+        message_particulars.setOnClickListener(this);
+
+        type_tv = (TextView) view.findViewById(R.id.order_form_fragment_refundesucceed_type);
+        if (!typeS.equals("无参数")){
+            type_tv.setText(typeS);
+        }
 
         return view;
     }
@@ -64,6 +85,10 @@ public class OrderFormFragmentRefundesucceed extends BaseFragment implements Vie
         switch (view.getId()){
             case R.id.payment_adency_fragment_resundesucceed_back:
                 ((MainActivity)getActivity()).goBack();//返回到上一级界面
+                break;
+            case R.id.order_form_fragment_refundesucceed_message:
+                //退款成功详情页
+                startFragment(new OrderFormRefundesucceedMessage());
                 break;
         }
     }

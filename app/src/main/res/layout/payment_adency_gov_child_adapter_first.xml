@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingLeft="40dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <TextView
+            android:id="@+id/payment_adency_gov_child_adapter_first_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统就近为您分配108号百次幂分销点/店为您提供货品"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/payment_adency_gov_child_adapter_first_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请您选择获取方式"
+            android:textSize="13sp"
+            android:layout_below="@+id/payment_adency_gov_child_adapter_first_lible"
+            android:layout_marginTop="4dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/payment_adency_gov_child_adapter_first_layout_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/payment_adency_gov_child_adapter_first_content"
+            android:layout_marginTop="6dp"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            >
+
+            <CheckBox
+                android:id="@+id/payment_adency_gov_child_adapter_first_checkbox_01"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:button="@null"
+                android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                android:checked="true"
+                android:focusable="false"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分销店/点派送"
+                android:textSize="13sp"
+                android:layout_marginLeft="4dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/payment_adency_gov_child_adapter_first_layout_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/payment_adency_gov_child_adapter_first_layout_01"
+            android:layout_marginTop="6dp"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            >
+
+            <CheckBox
+                android:id="@+id/payment_adency_gov_child_adapter_first_checkbox_02"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:button="@null"
+                android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                android:checked="false"
+                android:focusable="false"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自取（自取可获取10积分）"
+                android:textSize="13sp"
+                android:layout_marginLeft="4dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -61,6 +61,18 @@
             />
 
 
+        <TextView
+            android:id="@+id/payment_adency_adaapter_integer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="990积分"
+            android:textSize="12sp"
+            android:layout_alignLeft="@+id/payment_adency_adapter_lible"
+            android:layout_alignBottom="@+id/payment_adency_adapter_imageview"
+            android:layout_marginBottom="4dp"
+            android:visibility="invisible"
+            />
+
     </RelativeLayout>
 
 

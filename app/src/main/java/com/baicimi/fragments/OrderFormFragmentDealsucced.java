@@ -1,10 +1,12 @@
 package com.baicimi.fragments;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
@@ -28,6 +30,19 @@ public class OrderFormFragmentDealsucced extends BaseFragment implements View.On
     private PaymentAdencyAdapter adencyAdapter ;
     private ImageView back;
 
+    private TextView evaluate;
+
+    private String typeS = "无参数";
+    private TextView type_tv;
+
+    @SuppressLint("ValidFragment")
+    public OrderFormFragmentDealsucced(String typeS) {
+        this.typeS = typeS;
+    }
+
+    public OrderFormFragmentDealsucced() {
+    }
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.order_form_fragment_dealsucced , container , false);
@@ -36,6 +51,15 @@ public class OrderFormFragmentDealsucced extends BaseFragment implements View.On
 
         back = (ImageView) view.findViewById(R.id.payment_adency_fragment_dealsucced_back);
         back.setOnClickListener(this);
+
+        evaluate = (TextView) view.findViewById(R.id.order_form_fragment_dealsucceed_evaluate);
+        evaluate.setOnClickListener(this);
+
+        type_tv = (TextView) view.findViewById(R.id.order_form_fragment_dealsucceed_type);
+        if (!typeS.equals("无参数")){
+            type_tv.setText(typeS);
+        }
+
         return view;
     }
 
@@ -59,6 +83,10 @@ public class OrderFormFragmentDealsucced extends BaseFragment implements View.On
         switch (view.getId()){
             case R.id.payment_adency_fragment_dealsucced_back:
                 ((MainActivity)getActivity()).goBack();//返回到上一级界面
+                break;
+            case R.id.order_form_fragment_dealsucceed_evaluate:
+                //评价
+                startFragment(new OrderFormDealsucceedEvaluate());
                 break;
         }
     }

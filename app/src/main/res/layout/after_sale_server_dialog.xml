@@ -19,7 +19,7 @@
             android:id="@+id/after_sale_server_dialog_lible"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="请求已发送，百次幂客服将在24小时内处理您的退货请求"
+            android:text="请求已发送，百次幂客服将在24小时内处理您的退款请求"
             android:maxLines="2"
             android:gravity="center"
             android:layout_centerHorizontal="true"

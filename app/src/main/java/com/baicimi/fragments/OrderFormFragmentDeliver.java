@@ -1,5 +1,6 @@
 package com.baicimi.fragments;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +33,17 @@ public class OrderFormFragmentDeliver extends BaseFragment implements View.OnCli
 
     private TextView aftersale;
 
+    private String typeS = "无参数";
+    private TextView type_tv;
+
+    @SuppressLint("ValidFragment")
+    public OrderFormFragmentDeliver(String typeS) {
+        this.typeS = typeS;
+    }
+
+    public OrderFormFragmentDeliver() {
+    }
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.order_form_fragment_deliver , container , false);
@@ -44,6 +56,14 @@ public class OrderFormFragmentDeliver extends BaseFragment implements View.OnCli
 
         aftersale = (TextView) view.findViewById(R.id.ordre_form_fragment_deliver_aftersale);
         aftersale.setOnClickListener(this);
+
+        type_tv = (TextView) view.findViewById(R.id.order_form_fragment_deliver_type);
+        if (typeS.equals("无参数")){
+
+        }else {
+            type_tv.setText(typeS);
+        }
+
         return view;
     }
 
@@ -68,7 +88,7 @@ public class OrderFormFragmentDeliver extends BaseFragment implements View.OnCli
                 ((MainActivity)getActivity()).goBack();//返回到上一级界面
                 break;
             case R.id.ordre_form_fragment_deliver_aftersale:
-                startFragment(new AfterSaleServerFragment());//返回到上一级界面
+                startFragment(new AfterSaleServerFragment());//退货申请页面
                 break;
         }
     }

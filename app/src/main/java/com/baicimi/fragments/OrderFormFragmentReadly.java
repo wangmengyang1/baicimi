@@ -1,5 +1,6 @@
 package com.baicimi.fragments;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,8 +30,19 @@ public class OrderFormFragmentReadly extends BaseFragment implements View.OnClic
     private List<PaymentAdencyEntry> list = new ArrayList<>();
     private PaymentAdencyAdapter adencyAdapter ;
     private ImageView back;
-
     private TextView cancle_tv;
+
+    private String typeS = "无参数";
+    private TextView type_tv;
+
+    @SuppressLint("ValidFragment")
+    public OrderFormFragmentReadly(String typeS) {
+        this.typeS = typeS;
+    }
+
+
+    public OrderFormFragmentReadly() {
+    }
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -44,6 +56,13 @@ public class OrderFormFragmentReadly extends BaseFragment implements View.OnClic
 
         cancle_tv = (TextView) view.findViewById(R.id.order_form_fragment_readly_cancle);
         cancle_tv.setOnClickListener(this);
+
+        type_tv = (TextView) view.findViewById(R.id.order_form_fragment_readly_type);
+        if (typeS.equals("无参数")){
+
+        }else {
+            type_tv.setText(typeS);
+        }
 
         return view;
     }

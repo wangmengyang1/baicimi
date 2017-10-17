@@ -228,7 +228,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         date.add(new CelaProject(R.mipmap.meigui_zhuce_open , "注册通道入口" , new String[]{"教师/学生注册入口" , "BNN分销/员工注册入口"}));
         date.add(new CelaProject(R.mipmap.meigui_img , "师生选购专区" , new String[]{}));
         date.add(new CelaProject(R.mipmap.meigui_lvxing , "分销订货入口" , new String[]{}));
-        date.add(new CelaProject(R.mipmap.meigui_meishi , "分销物品申请入口" , new String[]{}));
+//        date.add(new CelaProject(R.mipmap.meigui_meishi , "分销物品申请入口" , new String[]{}));
         adapter = new ListViewCelaAdapter(this);
         adapter.setList(date);
         listView_cela.setAdapter(adapter);
@@ -368,11 +368,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             startFragment(new DistributionOrderGoodsFragment() , null);
         }
 
-        if(i == 10){
-            drawer.closeDrawers();
-            //跳转到分销商购买入口
-            startFragment(new DistributorPurchaseOption() , null);
-        }
+//        if(i == 10){
+//            drawer.closeDrawers();
+//            //跳转到分销商购买入口
+//            startFragment(new DistributorPurchaseOption() , null);
+//        }
 
         if(i == celaListview){
             celaListview = -1;

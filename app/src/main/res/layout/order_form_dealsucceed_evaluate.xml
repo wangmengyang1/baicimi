@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/order_form_dealsucceed_evaluate_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/order_form_dealsucceed_evaluate_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="我的评价"
+            android:textColor="#737373"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/brand_fragment_second_image_13"
+            android:padding="6dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#737373"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ListView
+                android:id="@+id/order_from_dealsucced_evaluate_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:scrollbars="none"
+                android:layout_marginTop="20dp"
+                ></ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="#737373"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="#ddd"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/order_form_dealsucceed_evaluate_checkbox_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/order_form_dealsucceed_evaluate_checkbox_first"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:button="@null"
+                        android:background="@drawable/order_form_dealsucceed_evaluate_checkbox_first_select"
+                        android:checked="true"
+                        android:layout_marginLeft="20dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/order_form_dealsucceed_evaluate_checkbox_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:button="@null"
+                        android:background="@drawable/order_form_dealsucceed_evaluate_checkbox_second_select"
+                        android:layout_marginLeft="20dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/order_form_dealsucceed_evaluate_checkbox_thread"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:button="@null"
+                        android:background="@drawable/order_form_dealsucceed_evaluate_checkbox_thread_select"
+                        android:layout_marginLeft="20dp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/order_form_dealsucceed_evaluate_checkbox_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/white"
+                    android:layout_below="@+id/order_form_dealsucceed_evaluate_checkbox_layout"
+                    android:layout_marginTop="10dp"
+                    android:hint="分享一下你的使用心得吧"
+                    android:textSize="12sp"
+                    android:gravity="top"
+                    android:padding="8dp"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/order_form_dealsucceed_evaluate_checkbox_add_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/add_image_black_64"
+                    android:layout_below="@+id/order_form_dealsucceed_evaluate_checkbox_edittext"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提交"
+                    android:textSize="13sp"
+                    android:layout_alignBottom="@+id/order_form_dealsucceed_evaluate_checkbox_add_image"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:background="@color/white"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

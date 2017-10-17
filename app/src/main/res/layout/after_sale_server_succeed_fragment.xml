@@ -28,8 +28,8 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="退货退款"
-            android:textColor="#000000"
+            android:text="仅退款"
+            android:textColor="#737373"
             android:gravity="center"
             android:textSize="16sp"
             />
@@ -62,7 +62,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="退货成功！"
+                android:text="百次幂已通过您的退款申请！"
                 android:textSize="16sp"
                 android:textColor="#3e3e3f"
                 android:layout_marginLeft="25dp"
@@ -87,6 +87,7 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:layout_marginTop="8dp"
+                android:visibility="invisible"
                 >
 
                 <TextView
@@ -110,6 +111,7 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:layout_marginTop="8dp"
+                android:visibility="invisible"
                 >
 
                 <TextView
@@ -133,6 +135,7 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:layout_marginTop="8dp"
+                android:visibility="invisible"
                 >
 
                 <TextView

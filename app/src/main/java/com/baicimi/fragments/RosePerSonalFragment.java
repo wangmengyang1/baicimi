@@ -152,15 +152,15 @@ public class RosePerSonalFragment extends BaseFragment {
     }
 
 
-    @OnClick({R.id.login_back})
-    public void OnBackClick(View view) {
-        int id = view.getId();
-        switch (id) {
-            case R.id.login_back:
-                ((MainActivity) getActivity()).goBack();//返回上一层页面
-                break;
-        }
-    }
+//    @OnClick({R.id.login_back})
+//    public void OnBackClick(View view) {
+//        int id = view.getId();
+//        switch (id) {
+//            case R.id.login_back:
+//                ((MainActivity) getActivity()).goBack();//返回上一层页面
+//                break;
+//        }
+//    }
 
     @Override
     protected void initData() {
@@ -191,18 +191,18 @@ public class RosePerSonalFragment extends BaseFragment {
         ftTransaction.commit();
     }
 
-    @OnClick({R.id.login_back,R.id.guanzhu})
-    public void onClick(View view) {
-        int id = view.getId();
-        switch (id) {
-            case R.id.guanzhu:
-               startFragment(new RoseAttentionFragment(),null);
-                break;
-            case R.id.login_back:
-                ((MainActivity) getActivity()).goBack();//返回上一层页面
-                break;
-        }
-    }
+//    @OnClick({R.id.login_back,R.id.guanzhu})
+//    public void onClick(View view) {
+//        int id = view.getId();
+//        switch (id) {
+//            case R.id.guanzhu:
+////               startFragment(new RoseAttentionFragment(),null);
+//                break;
+//            case R.id.login_back:
+//                ((MainActivity) getActivity()).goBack();//返回上一层页面
+//                break;
+//        }
+//    }
 
 
 

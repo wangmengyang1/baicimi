@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <com.baicimi.view.CustomExpandableListView
+                android:id="@+id/user_imageral_fragment_first_exp_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:childDivider="@drawable/background_null"
+                android:divider="@drawable/background_null"
+                ></com.baicimi.view.CustomExpandableListView>
+
+
+            <FrameLayout
+                android:id="@+id/user_center_home_page_head_fragment_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                ></FrameLayout>
+
+            <ListView
+                android:id="@+id/user_center_home_page_head_fragment_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:scrollbars="none"
+                android:visibility="gone"
+                ></ListView>
+            <com.baicimi.view.CustomExpandableListView
+                android:id="@+id/user_center_home_page_head_fragment_expd_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:childDivider="@drawable/background_null"
+                android:dividerHeight="0.6dp"
+                ></com.baicimi.view.CustomExpandableListView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f9f9f9"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

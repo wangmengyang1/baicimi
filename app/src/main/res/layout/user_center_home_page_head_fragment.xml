@@ -221,44 +221,58 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/user_center_home_page_fragment_shopping"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
                     >
                     <TextView
+                        android:id="@+id/user_center_home_page_fragment_shopping_textiview"
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:text="百次幂商城"
                         android:textColor="#c22737"
-                        android:textSize="15sp"
+                        android:textSize="14sp"
                         android:gravity="center"
                         android:paddingTop="5dp"
                         android:paddingBottom="4dp"
                         android:background="@drawable/user_center_title_bar_indicator_layer_list"
-
                         />
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/user_center_home_page_fragment_live"
+                    android:id="@+id/user_center_home_page_fragment_community"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
                     >
                     <TextView
+                        android:id="@+id/user_center_home_page_fragment_community_textview"
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:text="全球生活汇"
-                        android:textColor="#5a5a5a"
-                        android:textSize="15sp"
+                        android:textColor="#737373"
+                        android:textSize="14sp"
                         android:gravity="center"
                         android:paddingTop="5dp"
                         android:paddingBottom="4dp"
+                        android:background="@drawable/background_null"
                         />
                 </LinearLayout>
 
             </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:src="@mipmap/user_center"
+                android:scaleType="fitXY"
+                android:layout_marginTop="3dp"
+                />
 
             <FrameLayout
                 android:id="@+id/user_center_home_page_head_fragment_framelayout"
@@ -266,12 +280,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 ></FrameLayout>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#eeeeee"
-                android:layout_marginTop="15dp"
-                />
 
             <ListView
                 android:id="@+id/user_center_home_page_head_fragment_listview"
@@ -280,7 +288,6 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:scrollbars="none"
-                android:layout_marginTop="10dp"
                 android:visibility="gone"
                 ></ListView>
             <com.baicimi.view.CustomExpandableListView
@@ -294,7 +301,47 @@
                 ></com.baicimi.view.CustomExpandableListView>
 
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f9f9f9"
+                />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/user_center_home_page_fragment_image_01"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今日推荐"
+                    android:textColor="#b5000000"
+                    />
+
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/user_center_home_page_fragmet_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:layout_margin="18dp"
+                android:background="#f9f9f9"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                ></GridView>
         </LinearLayout>
     </ScrollView>
 

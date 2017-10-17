@@ -52,11 +52,6 @@ public class BnnStaffRegisterOptionFragment extends BaseFragment implements View
     //分销人员与员工注册切换
     private void initStaff() {
         list.add(new BnnDistributorRegisterOptionFragment());
-//        list.add(new BnnStaffSecondRegisterOptionFragment());
-//        distributor_textview = (TextView) view.findViewById(R.id.bnn_staff_register_option_distributor_textview);
-//        distributor_textview.setOnClickListener(this);
-//        staff_textview = (TextView) view.findViewById(R.id.bnn_staff_register_option_staff_textview);
-//        staff_textview.setOnClickListener(this);
         setShowFragment(0);
 
     }

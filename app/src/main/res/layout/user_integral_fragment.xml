@@ -3,9 +3,16 @@
     xmlns:ring="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/white">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#eeeeee"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:text="签到所得"
                     android:gravity="center"
-                    android:textColor="#2b8fd3"
+                    android:textColor="#737373"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -102,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:text="500分"
                     android:gravity="center"
-                    android:textColor="#2b8fd3"
+                    android:textColor="#737373"
                     />
 
             </LinearLayout>
@@ -128,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:text="购物所得"
                     android:gravity="center"
-                    android:textColor="#2b8fd3"
+                    android:textColor="#737373"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -136,7 +143,7 @@
                     android:layout_height="wrap_content"
                     android:text="2015分"
                     android:gravity="center"
-                    android:textColor="#2b8fd3"
+                    android:textColor="#737373"
                     />
 
             </LinearLayout>
@@ -163,7 +170,7 @@
                     android:layout_height="wrap_content"
                     android:text="登录所得"
                     android:gravity="center"
-                    android:textColor="#f15f48"
+                    android:textColor="#737373"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -171,7 +178,7 @@
                     android:layout_height="wrap_content"
                     android:text="56分"
                     android:gravity="center"
-                    android:textColor="#f15f48"
+                    android:textColor="#737373"
                     />
 
             </LinearLayout>
@@ -197,7 +204,7 @@
                     android:layout_height="wrap_content"
                     android:text="游戏所得"
                     android:gravity="center"
-                    android:textColor="#2ac871"
+                    android:textColor="#737373"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -205,7 +212,7 @@
                     android:layout_height="wrap_content"
                     android:text="2015分"
                     android:gravity="center"
-                    android:textColor="#2ac871"
+                    android:textColor="#737373"
                     />
 
             </LinearLayout>
@@ -231,6 +238,7 @@
                     android:layout_height="wrap_content"
                     android:text="分享所得"
                     android:gravity="center"
+                    android:textColor="#737373"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -238,6 +246,7 @@
                     android:layout_height="wrap_content"
                     android:text="2015分"
                     android:gravity="center"
+                    android:textColor="#737373"
                     />
 
             </LinearLayout>
@@ -263,7 +272,7 @@
                     android:layout_height="wrap_content"
                     android:text="推荐所得"
                     android:gravity="center"
-                    android:textColor="#f1c40f"
+                    android:textColor="#737373"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -271,7 +280,7 @@
                     android:layout_height="wrap_content"
                     android:text="2015分"
                     android:gravity="center"
-                    android:textColor="#f1c40f"
+                    android:textColor="#737373"
                     />
 
             </LinearLayout>
@@ -298,7 +307,7 @@
                     android:layout_height="wrap_content"
                     android:text="发布所得"
                     android:gravity="center"
-                    android:textColor="#f15f48"
+                    android:textColor="#737373"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -306,7 +315,7 @@
                     android:layout_height="wrap_content"
                     android:text="56分"
                     android:gravity="center"
-                    android:textColor="#f15f48"
+                    android:textColor="#737373"
                     />
 
             </LinearLayout>
@@ -333,7 +342,7 @@
                     android:layout_height="wrap_content"
                     android:text="广告所得"
                     android:gravity="center"
-                    android:textColor="#f15f48"
+                    android:textColor="#737373"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -341,7 +350,7 @@
                     android:layout_height="wrap_content"
                     android:text="56分"
                     android:gravity="center"
-                    android:textColor="#f15f48"
+                    android:textColor="#737373"
                     />
 
             </LinearLayout>
@@ -367,7 +376,7 @@
                     android:layout_height="wrap_content"
                     android:text="其他所得"
                     android:gravity="center"
-                    android:textColor="#9a59b5"
+                    android:textColor="#737373"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -375,7 +384,7 @@
                     android:layout_height="wrap_content"
                     android:text="108分"
                     android:gravity="center"
-                    android:textColor="#9a59b5"
+                    android:textColor="#737373"
                     />
 
             </LinearLayout>
@@ -386,15 +395,12 @@
         
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="#f9f9f9"
-        />
 
-    <LinearLayout
+
+    <!--<LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
 
         <GridView
             android:id="@+id/user_integral_fragment_gridview"
@@ -408,7 +414,7 @@
             android:scrollbars="none"
             ></GridView>
 
-    </LinearLayout>
+    </LinearLayout>-->
 
 
 

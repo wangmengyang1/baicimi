@@ -1,10 +1,12 @@
 package com.baicimi.fragments;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
@@ -28,6 +30,18 @@ public class OrderFormFragmentRevocation extends BaseFragment implements View.On
     private PaymentAdencyAdapter adencyAdapter ;
     private ImageView back;
 
+    private String typeS = "无参数";
+    private TextView type_tv;
+
+    @SuppressLint("ValidFragment")
+    public OrderFormFragmentRevocation(String typeS) {
+        this.typeS = typeS;
+    }
+
+
+    public OrderFormFragmentRevocation() {
+    }
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.order_form_fragment_revocation , container , false);
@@ -36,6 +50,11 @@ public class OrderFormFragmentRevocation extends BaseFragment implements View.On
 
         back = (ImageView) view.findViewById(R.id.payment_adency_fragment_revocation_back);
         back.setOnClickListener(this);
+
+        type_tv = (TextView) view.findViewById(R.id.payment_adency_fragment_revocation_type);
+        if (!typeS.equals("无参数")){
+            type_tv.setText(typeS);
+        }
         return view;
     }
 

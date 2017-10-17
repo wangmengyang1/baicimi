@@ -1,5 +1,6 @@
 package com.baicimi.fragments;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,7 @@ import java.util.List;
  * 待付款
  */
 
+@SuppressLint("ValidFragment")
 public class PaymentAdencyFragment extends BaseFragment implements View.OnClickListener {
 
     private View view;
@@ -29,7 +31,18 @@ public class PaymentAdencyFragment extends BaseFragment implements View.OnClickL
     private List<PaymentAdencyEntry> list = new ArrayList<>();
     private PaymentAdencyAdapter adencyAdapter ;
 
-    private TextView pay;//支付
+    private TextView pay  , type_textview;//支付
+
+    private String type = "";
+
+    public PaymentAdencyFragment(String type) {
+        this.type = type;
+    }
+
+    public PaymentAdencyFragment() {
+    }
+
+    private int index;
 
 
     @Override
@@ -41,8 +54,31 @@ public class PaymentAdencyFragment extends BaseFragment implements View.OnClickL
         //listview布局填充
         initListView();
 
-        pay = (TextView) view.findViewById(R.id.payment_adency_fragment_pay);
-        pay.setOnClickListener(this);
+
+
+        type_textview = (TextView) view.findViewById(R.id.payment_adency_fragment_type);
+        if (type.equals("政府采购订单")){
+            type_textview.setText("政府采购订单");
+            pay = (TextView) view.findViewById(R.id.payment_adency_fragment_pay);
+            pay.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //关于政府采购的支付跳转
+                    startFragment(new PaymentAdencyFragmentGovernment(index));
+                    index++;
+                }
+            });
+        }else {
+            pay = (TextView) view.findViewById(R.id.payment_adency_fragment_pay);
+            pay.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //团购订单采购支付页面
+                    startFragment(new PayMentSucceedFragment());
+                }
+            });
+        }
+
         return view;
     }
 
@@ -66,9 +102,9 @@ public class PaymentAdencyFragment extends BaseFragment implements View.OnClickL
             case R.id.payment_adency_fragment_back:
                 ((MainActivity)getActivity()).goBack();//返回到上一级界面
                 break;
-            case R.id.payment_adency_fragment_pay:
-                startFragment(new PayMentSucceedFragment());
-                break;
+//            case R.id.payment_adency_fragment_pay:
+//                startFragment(new PayMentSucceedFragment());
+//                break;
         }
     }
 }

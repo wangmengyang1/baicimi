@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/commonality_transfer_dialog_layout_shape"
+        android:paddingTop="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        >
+
+        <TextView
+            android:id="@+id/commonality_transfer_dialog_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对公账户"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:textColor="#737373"
+            />
+
+        <TextView
+            android:id="@+id/commonality_transfer_dialog_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请转账至一下对公账户"
+            android:textSize="13sp"
+            android:layout_below="@+id/commonality_transfer_dialog_lible"
+            android:layout_marginTop="4dp"
+            android:textColor="#737373"
+            />
+
+
+        <TextView
+            android:id="@+id/commonality_transfer_dialog_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="百次幂（上海）网络科技有限公司"
+            android:textSize="13sp"
+            android:layout_below="@+id/commonality_transfer_dialog_account"
+            android:layout_marginTop="8dp"
+            android:textColor="#737373"
+            />
+
+        <TextView
+            android:id="@+id/commonality_transfer_dialog_bankname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国招商银行"
+            android:textSize="13sp"
+            android:layout_below="@+id/commonality_transfer_dialog_company"
+            android:layout_marginTop="2dp"
+            android:textColor="#737373"
+            />
+
+        <TextView
+            android:id="@+id/commonality_transfer_dialog_banknumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4000 880 8898 9976"
+            android:textSize="13sp"
+            android:layout_below="@+id/commonality_transfer_dialog_bankname"
+            android:layout_marginTop="2dp"
+            android:textColor="#737373"
+            />
+
+        <TextView
+            android:id="@+id/commonality_transfer_dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转账成功之后请至“待付款页面”上传电子回执单"
+            android:textSize="12sp"
+            android:layout_below="@+id/commonality_transfer_dialog_banknumber"
+            android:layout_marginTop="8dp"
+            />
+
+
+        <TextView
+            android:id="@+id/commonality_transfer_dialog_request_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="知道了"
+            android:textColor="@color/white"
+            android:background="#737373"
+            android:textSize="13sp"
+            android:layout_below="@+id/commonality_transfer_dialog_message"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
