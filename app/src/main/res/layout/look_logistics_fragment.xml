@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        android:paddingBottom="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/look_logistics_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+
+            />
+
+        <TextView
+            android:id="@+id/payment_adency_fragment_deliver_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="发货中"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginRight="30dp"
+            android:textSize="16sp"
+
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#737373"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="30dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <View
+                        android:id="@+id/look_logistics_fragment_view_01"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/look_logistics_fragment_view_shape"
+                        />
+
+
+                    <View
+                        android:id="@+id/look_logistics_fragment_view_02"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/look_logistics_fragment_view_shape_second"
+                        android:layout_marginTop="70dp"
+                        />
+
+                    <View
+                        android:id="@+id/look_logistics_fragment_view_03"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/look_logistics_fragment_view_shape_second"
+                        android:layout_marginTop="70dp"
+                        android:layout_below="@+id/look_logistics_fragment_view_02"
+                        />
+
+                    <View
+                        android:id="@+id/look_logistics_fragment_view_04"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/look_logistics_fragment_view_shape_second"
+                        android:layout_marginTop="70dp"
+                        android:layout_below="@+id/look_logistics_fragment_view_03"
+                        />
+
+                    <View
+                        android:id="@+id/look_logistics_fragment_view_05"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/look_logistics_fragment_view_shape_second"
+                        android:layout_marginTop="70dp"
+                        android:layout_below="@+id/look_logistics_fragment_view_04"
+                        />
+
+                    <View
+                        android:id="@+id/look_logistics_fragment_view_06"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/look_logistics_fragment_view_shape_second"
+                        android:layout_marginTop="70dp"
+                        android:layout_below="@+id/look_logistics_fragment_view_05"
+                        />
+
+                    <View
+                        android:id="@+id/look_logistics_fragment_view_07"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/look_logistics_fragment_view_shape_second"
+                        android:layout_marginTop="70dp"
+                        android:layout_below="@+id/look_logistics_fragment_view_06"
+                        />
+
+
+                    <View
+                        android:layout_width="0.6dp"
+                        android:layout_height="500dp"
+                        android:background="#737373"
+                        android:layout_below="@+id/look_logistics_fragment_view_01"
+                        android:layout_marginLeft="4dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/look_logistics_fragment_view_01"
+                        android:layout_alignTop="@+id/look_logistics_fragment_view_01"
+                        android:layout_marginLeft="25dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="[广州市]快件已签收，签收人：组织签收：快递点代收点，感谢您使用中通快递，期待再次为你进行服务"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-09-12 18:02:55"
+                            android:textSize="11sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/look_logistics_fragment_view_02"
+                        android:layout_alignTop="@+id/look_logistics_fragment_view_02"
+                        android:layout_marginLeft="25dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="[广州市]钟落潭派件员 杨建华 15014240948正在为您派件"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-09-12 18:02:55"
+                            android:textSize="11sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/look_logistics_fragment_view_03"
+                        android:layout_alignTop="@+id/look_logistics_fragment_view_03"
+                        android:layout_marginLeft="25dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="[广州市]快件已到达广州中罗塔"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-09-12 18:02:55"
+                            android:textSize="11sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/look_logistics_fragment_view_04"
+                        android:layout_alignTop="@+id/look_logistics_fragment_view_04"
+                        android:layout_marginLeft="25dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="[广州市]快件已从广州发出，准备发往广州钟落潭"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-09-12 18:02:55"
+                            android:textSize="11sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/look_logistics_fragment_view_05"
+                        android:layout_alignTop="@+id/look_logistics_fragment_view_05"
+                        android:layout_marginLeft="25dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="[广州市]快件已从广州发出，准备发往广州快件中心"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-09-12 18:02:55"
+                            android:textSize="11sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/look_logistics_fragment_view_06"
+                        android:layout_alignTop="@+id/look_logistics_fragment_view_06"
+                        android:layout_marginLeft="25dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="[广州市]快件已从产冲发出，准备发往佛山快递中心"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-09-12 18:02:55"
+                            android:textSize="11sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/look_logistics_fragment_view_07"
+                        android:layout_alignTop="@+id/look_logistics_fragment_view_07"
+                        android:layout_marginLeft="25dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="快件已出库"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-09-12 18:02:55"
+                            android:textSize="11sp"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"/>
+
+                    <TextView
+                        android:id="@+id/look_logistics_fragment_server_logistics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="物流客服"
+                        android:textSize="13sp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:background="@drawable/look_logistics_fragment_textview_shape"
+                        android:layout_marginRight="15dp"
+                        />
+                    <TextView
+                        android:id="@+id/look_logistics_fragment_evaluate_courier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评价快递员"
+                        android:textSize="13sp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:background="@drawable/look_logistics_fragment_textview_shape"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

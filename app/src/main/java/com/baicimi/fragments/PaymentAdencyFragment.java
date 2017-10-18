@@ -64,7 +64,13 @@ public class PaymentAdencyFragment extends BaseFragment implements View.OnClickL
                 @Override
                 public void onClick(View view) {
                     //关于政府采购的支付跳转
-                    startFragment(new PaymentAdencyFragmentGovernment(index));
+                    if (index % 3 == 0){
+                        startFragment(new PaymentAdencyFragmentGovernment());
+                    }else if (index % 3 == 1){
+                        startFragment(new PaymentAdencyFragmentGovernmentSecond());
+                    }else if (index % 3 == 2){
+                        startFragment(new PaymentAdencyFragmentGovernmentThread());
+                    }
                     index++;
                 }
             });

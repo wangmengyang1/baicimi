@@ -36,6 +36,11 @@ public class OrderFormFragmentDeliver extends BaseFragment implements View.OnCli
     private String typeS = "无参数";
     private TextView type_tv;
 
+    private TextView looklogistics;
+
+    private int index;
+
+
     @SuppressLint("ValidFragment")
     public OrderFormFragmentDeliver(String typeS) {
         this.typeS = typeS;
@@ -64,6 +69,9 @@ public class OrderFormFragmentDeliver extends BaseFragment implements View.OnCli
             type_tv.setText(typeS);
         }
 
+        looklogistics = (TextView) view.findViewById(R.id.order_form_fragment_deliver_looklogistics);
+        looklogistics.setOnClickListener(this);
+
         return view;
     }
 
@@ -88,7 +96,22 @@ public class OrderFormFragmentDeliver extends BaseFragment implements View.OnCli
                 ((MainActivity)getActivity()).goBack();//返回到上一级界面
                 break;
             case R.id.ordre_form_fragment_deliver_aftersale:
-                startFragment(new AfterSaleServerFragment());//退货申请页面
+                //退货申请页面
+                startFragment(new AfterSaleServerFragment());
+                break;
+            case R.id.order_form_fragment_deliver_looklogistics:
+                //查看物流
+                if (index % 4  == 0){
+                    startFragment(new LookLogisticsFragment());//01
+                }else if (index % 4  == 1){
+                    startFragment(new LookLogisticsFragmentSecond());//02
+                }else if (index % 4  == 2){
+                    startFragment(new LookLogisticsFragmentThread());//03
+                }else if (index % 4  == 3){
+                    startFragment(new LookLogisticsFragmentFour());//04
+                }
+
+                index++;
                 break;
         }
     }

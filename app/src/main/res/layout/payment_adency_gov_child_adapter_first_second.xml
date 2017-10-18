@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingLeft="40dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <TextView
+            android:id="@+id/payment_adency_gov_child_adapter_first_second_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统就近为您分配上海仓为您配送，请选择配送物流"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/payment_adency_gov_child_adapter_first_layout_second_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/payment_adency_gov_child_adapter_first_second_lible"
+            android:layout_marginTop="6dp"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            >
+
+            <CheckBox
+                android:id="@+id/payment_adency_gov_child_adapter_first_checkbox_second_01"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:button="@null"
+                android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                android:checked="true"
+                android:focusable="false"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圆通快递"
+                android:textSize="13sp"
+                android:layout_marginLeft="4dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/payment_adency_gov_child_adapter_first_layout_second_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/payment_adency_gov_child_adapter_first_layout_second_01"
+            android:layout_marginTop="6dp"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            >
+
+            <CheckBox
+                android:id="@+id/payment_adency_gov_child_adapter_first_checkbox_second_02"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:button="@null"
+                android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                android:checked="false"
+                android:focusable="false"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中通快递"
+                android:textSize="13sp"
+                android:layout_marginLeft="4dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/payment_adency_gov_child_adapter_first_layout_second_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/payment_adency_gov_child_adapter_first_layout_second_02"
+            android:layout_marginTop="6dp"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            >
+
+            <CheckBox
+                android:id="@+id/payment_adency_gov_child_adapter_first_checkbox_second_03"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:button="@null"
+                android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                android:checked="false"
+                android:focusable="false"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天天快递"
+                android:textSize="13sp"
+                android:layout_marginLeft="4dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        android:paddingBottom="5dp"
+        android:background="#eeeeee"
+        >
+
+        <ImageView
+            android:id="@+id/look_logistics_fragment_thread_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+
+            />
+
+        <TextView
+            android:id="@+id/look_logistics_fragment_thread_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="物流查询"
+            android:textColor="#737373"
+            android:gravity="center"
+            android:layout_marginRight="30dp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="订单编号 H97656843546"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:background="#eeeeee"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="百次幂第108号分销点/店为您服务"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:background="#eeeeee"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#eeeeee"
+                >
+
+                <View
+                    android:id="@+id/look_logistics_fragment_second_view_01"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/look_logistics_fragment_second_view_shape"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    />
+                <View
+                    android:id="@+id/look_logistics_fragment_second_view_02"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/look_logistics_fragment_second_view_shape"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="60dp"
+                    />
+
+
+                <View
+                    android:id="@+id/look_logistics_fragment_second_view_03"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/look_logistics_fragment_second_view_shape"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="60dp"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="#ff0000"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09/12/22:20"
+                    android:textSize="13sp"
+                    android:layout_above="@+id/look_logistics_fragment_second_view_01"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09/12/22:20"
+                    android:textSize="13sp"
+                    android:layout_above="@+id/look_logistics_fragment_second_view_02"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2小时内"
+                    android:textSize="13sp"
+                    android:layout_above="@+id/look_logistics_fragment_second_view_02"
+                    android:layout_marginRight="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="4dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="安排派送"
+                    android:layout_below="@+id/look_logistics_fragment_second_view_01"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="派送成功"
+                    android:layout_below="@+id/look_logistics_fragment_second_view_01"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="13sp"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="派送中"
+                    android:layout_below="@+id/look_logistics_fragment_second_view_01"
+                    android:layout_marginTop="4dp"
+                    android:textSize="13sp"
+                    android:layout_centerInParent="true"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="派送员"
+                android:layout_marginTop="15dp"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/image_userimage_01"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="李四 16584889465468"
+                android:layout_marginTop="4dp"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户评价："
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="员工形象："
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textSize="13sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                >
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_01"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector"
+                            android:layout_marginRight="4dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="专业、整洁"
+                                android:textSize="13sp"
+                                android:id="@+id/textView11" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_02"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_02"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="未穿戴工装工牌"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_03"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_03"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="形象邋遢"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-2分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_04"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_05"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="穿其他品牌宣传服装"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-5分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送达时间："
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textSize="13sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                >
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_05"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector"
+
+                            android:layout_marginRight="4dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2小时内送达"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_06"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_02"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2小时内未送达"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_07"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_05"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="超过24小时仍未送达"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-5分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务态度："
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textSize="13sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                >
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_08"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector"
+                            android:layout_marginRight="4dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="非常好"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_09"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_02"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="一般"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_10"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_03"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="很差"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-2分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_11"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_05"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="非常差"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-5分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送货质量："
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textSize="13sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                >
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_12"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector"
+
+                            android:layout_marginRight="4dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="准确，我破损"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_13"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_02"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="送错货"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_14"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_05"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="产品有破损"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-5分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="售后服务："
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textSize="13sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                >
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_15"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector"
+                            android:layout_marginRight="4dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="清晰给出解决方案"
+                                android:textSize="13sp"
+                                 />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_16"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_02"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="可以解决问题"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_17"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_03"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="面对咨询解释不满意"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-2分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lood_logistics_fragment_thread_layout_18"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/look_logistics_fragment_second_layout_selector_05"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="不理睬"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-5分"
+                                android:textSize="13sp"
+                                android:layout_marginTop="4dp"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提意见或建议"
+                android:textSize="13sp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="欢迎您对百次幂分销点/店的形象、卫生、服务态度与质量提出您的宝贵意见，上传相关反馈图片，提交反馈意见，百次幂将赠送您100积分。"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="top"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="反馈主题："
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/look_loginstics_fragment_thread_extitext_shape"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="top"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="反馈内容："
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:textSize="13sp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/look_loginstics_fragment_thread_extitext_shape"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="top"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="反馈主题："
+                    android:visibility="invisible"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/add_image_black_64"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="上传图片"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/look_loginstics_fragment_thread_dissmess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认提交"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:background="#737373"
+                android:layout_gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

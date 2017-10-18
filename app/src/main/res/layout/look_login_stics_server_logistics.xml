@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        android:paddingBottom="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/look_logistics_server_logistics_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+
+            />
+
+        <TextView
+            android:id="@+id/look_logistics_server_logistics_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="发货中"
+            android:textColor="#737373"
+            android:gravity="center"
+            android:layout_marginRight="30dp"
+            android:textSize="16sp"
+            />
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#737373"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/look_logistics_server_logistics_imageview"
+            android:layout_width="60dp"
+            android:layout_height="90dp"
+            android:src="@drawable/image_dingdan_01"
+            />
+
+        <TextView
+            android:id="@+id/look_logistics_server_logistics_libles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运输中"
+            android:layout_toRightOf="@+id/look_logistics_server_logistics_imageview"
+            android:layout_marginLeft="25dp"
+            android:textColor="#5e5c5f"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/look_logistics_server_logistics_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="链条式连帽运动衫"
+            android:textSize="13sp"
+            android:layout_below="@+id/look_logistics_server_logistics_libles"
+            android:layout_alignLeft="@+id/look_logistics_server_logistics_libles"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:id="@+id/look_logistics_server_logistics_specification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流服务：中通快递"
+            android:textSize="13sp"
+            android:layout_below="@+id/look_logistics_server_logistics_context"
+            android:layout_alignLeft="@+id/look_logistics_server_logistics_context"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:id="@+id/look_logistics_server_logistics_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥339.00"
+            android:textColor="#3e3e3f"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/look_logistics_server_logistics_imageview"
+            />
+
+        <TextView
+            android:id="@+id/look_logistics_server_logistics_price_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运单编号：254684218546"
+            android:textSize="13sp"
+            android:layout_below="@+id/look_logistics_server_logistics_specification"
+            android:layout_alignLeft="@+id/look_logistics_server_logistics_specification"
+            android:layout_marginTop="4dp"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#737373"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/image_user_black_01"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hi~请问有什么可以帮到您"
+            android:background="@drawable/look_login_stics_server_logistics_textview_shape"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="8dp"
+            />
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#737373"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/yuying_image"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="输入内容咨询"
+            android:textSize="13sp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/look_login_stics_server_logistics_exittext_layer_list"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/jia_image_black_32"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

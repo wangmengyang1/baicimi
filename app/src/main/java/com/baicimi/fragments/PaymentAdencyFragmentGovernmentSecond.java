@@ -1,6 +1,5 @@
 package com.baicimi.fragments;
 
-import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,10 +24,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/10/16.
- * 个人中心，政府采购订单  订单支付详情页面
+ * Created by Administrator on 2017/10/18.
+ * 个人中心，政府采购订单  订单支付详情页面02
  */
-public class PaymentAdencyFragmentGovernment extends BaseFragment implements View.OnClickListener {
+public class PaymentAdencyFragmentGovernmentSecond extends BaseFragment implements View.OnClickListener {
+
 
     private View view;
     private ImageView back;
@@ -40,32 +40,23 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
     private CustomExpandableListView customExpandableListView;
     private List<CustomGovernmentEntry> gruopList = new ArrayList<>();
     private List<List<View>> childList = new ArrayList<>();
-    private PaymentAdencyGovernmentCusAdaapter adencyGovernmentCusAdaapter;
+    private PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter adencyGovernmentCusAdaapter;
 
     private List<List<BooleanEntry>> groupBoolean = new ArrayList<>();//用来保存并记录下拉菜单的数据
 
-    PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderFirst holder_01 = null;
-    PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderSecond holder_02 = null;
-    PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderThread holder_03 = null;
+    PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderFirst holder_01 = null;
+    PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderSecond holder_02 = null;
+    PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderThread holder_03 = null;
 
 
     private TextView dissmess;
 
-    private int index;
-
-    @SuppressLint("ValidFragment")
-    public PaymentAdencyFragmentGovernment(int index) {
-        this.index = index;
-    }
-
-    public PaymentAdencyFragmentGovernment() {
-    }
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
-        view = inflater.inflate(R.layout.pryment_adency_fragment_government, container, false);
+        view = inflater.inflate(R.layout.payment_adency_fragment_government_second , container , false);
 
-        back = (ImageView) view.findViewById(R.id.government_purchase_fragment_myorderform_back);
+        back = (ImageView) view.findViewById(R.id.government_purchase_fragment_myorderform_second_back);
         back.setOnClickListener(this);
 
         //listview布局填充
@@ -74,15 +65,17 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
         //下拉菜单布局添加
         initCusListView();
 
-        dissmess = (TextView) view.findViewById(R.id.pryment_adency_fragment_government_dismesstv);
+        dissmess = (TextView) view.findViewById(R.id.pryment_adency_fragment_government_second_dismesstv);
         dissmess.setOnClickListener(this);
 
         return view;
     }
 
+
+
     //下拉菜单布局添加
     private void initCusListView() {
-        customExpandableListView = (CustomExpandableListView) view.findViewById(R.id.pryment_adency_fragment_government_customlistview);
+        customExpandableListView = (CustomExpandableListView) view.findViewById(R.id.pryment_adency_fragment_government_second_customlistview);
         customExpandableListView.setGroupIndicator(null);
         gruopList.clear();
         gruopList.add(new CustomGovernmentEntry("配送方式", ""));
@@ -94,7 +87,7 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
 
         childList.clear();
         List<View> list_01 = new ArrayList<>();
-        list_01.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_first, null));
+        list_01.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_first_second, null));
         List<View> list_02 = new ArrayList<>();
         list_01.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_second, null));
         List<View> list_03 = new ArrayList<>();
@@ -114,7 +107,7 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
         childList.add(list_04);
         childList.add(list_05);
         childList.add(list_06);
-        adencyGovernmentCusAdaapter = new PaymentAdencyGovernmentCusAdaapter();
+        adencyGovernmentCusAdaapter = new PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter();
         customExpandableListView.setAdapter(adencyGovernmentCusAdaapter);
 
         List<BooleanEntry> childBoolean01 = new ArrayList<>();
@@ -137,29 +130,29 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
     //listview布局填充
     private void initListView() {
 
-        if (index == 1){
-            listView = (ListView) view.findViewById(R.id.pryment_adency_fragment_government_listview);
-            list.clear();
-            list.add(new PaymentAdencyEntry(R.drawable.image_dingdan_01, new String("链条式连帽运动衫"), new String("白色 编号-5644/216"), new String("L(175/96A)"), new String("¥339.00")));
-            adencyAdapter = new PaymentAdencyAdapter(list, getContext() , true);
-            listView.setAdapter(adencyAdapter);
-        }else{
-            listView = (ListView) view.findViewById(R.id.pryment_adency_fragment_government_listview);
+//        if (index == 1){
+//            listView = (ListView) view.findViewById(R.id.pryment_adency_fragment_government_listview);
+//            list.clear();
+//            list.add(new PaymentAdencyEntry(R.drawable.image_dingdan_01, new String("链条式连帽运动衫"), new String("白色 编号-5644/216"), new String("L(175/96A)"), new String("¥339.00")));
+//            adencyAdapter = new PaymentAdencyAdapter(list, getContext() , true);
+//            listView.setAdapter(adencyAdapter);
+//        }else{
+            listView = (ListView) view.findViewById(R.id.pryment_adency_fragment_government_second_listview);
             list.clear();
             list.add(new PaymentAdencyEntry(R.drawable.image_dingdan_01, new String("链条式连帽运动衫"), new String("白色 编号-5644/216"), new String("L(175/96A)"), new String("¥339.00")));
             adencyAdapter = new PaymentAdencyAdapter(list, getContext());
             listView.setAdapter(adencyAdapter);
-        }
+//        }
     }
 
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.government_purchase_fragment_myorderform_back:
+            case R.id.government_purchase_fragment_myorderform_second_back:
                 ((MainActivity) getActivity()).goBack();//返回到上一级页面
                 break;
-            case R.id.pryment_adency_fragment_government_dismesstv:
+            case R.id.pryment_adency_fragment_government_second_dismesstv:
                 //订单提交
                 if (groupBoolean.get(0).get(0).getIndex() == 0 && groupBoolean.get(1).get(0).getIndex() == 0) {
                     startFragment(new ExpressageDeliveryFragment());//分销点送货并且为快捷送货
@@ -209,16 +202,16 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
 
         @Override
         public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
-            PaymentAdencyGovernmentCusGroupHolder holder = null;
+            PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusGroupHolder holder = null;
 
             if (view == null) {
                 view = LayoutInflater.from(getContext()).inflate(R.layout.payment_adeny_government_sus_group_adapter, null);
-                holder = new PaymentAdencyGovernmentCusGroupHolder();
+                holder = new PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusGroupHolder();
                 holder.lible = (TextView) view.findViewById(R.id.payment_adeny_government_susgroup_adapter_lible);
                 holder.conbtent = (TextView) view.findViewById(R.id.payment_adeny_government_susgroup_adapter_content);
                 view.setTag(holder);
             } else {
-                holder = (PaymentAdencyGovernmentCusGroupHolder) view.getTag();
+                holder = (PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusGroupHolder) view.getTag();
             }
 
             holder.lible.setText(gruopList.get(i).getLible());
@@ -247,23 +240,31 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
                 view = null;
                 if (view == null) {
 
-                    view = LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_first, null);
-                    holder_01 = new PaymentAdencyGovernmentCusChildHolderFirst();
-                    holder_01.layout_01 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_first_layout_01);
-                    holder_01.layout_02 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_first_layout_02);
-                    holder_01.checkBox01 = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_first_checkbox_01);
-                    holder_01.checkBox02 = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_first_checkbox_02);
+                    view = LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_first_second, null);
+                    holder_01 = new PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderFirst();
+                    holder_01.layout_01 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_first_layout_second_01);
+                    holder_01.layout_02 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_first_layout_second_02);
+                    holder_01.layout_03 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_first_layout_second_03);
+                    holder_01.checkBox01 = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_first_checkbox_second_01);
+                    holder_01.checkBox02 = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_first_checkbox_second_02);
+                    holder_01.checkBox03 = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_first_checkbox_second_03);
                     view.setTag(holder_01);
                 } else {
-                    holder_01 = (PaymentAdencyGovernmentCusChildHolderFirst) view.getTag();
+                    holder_01 = (PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderFirst) view.getTag();
                 }
 
                 if (groupBoolean.get(i).get(i1).getIndex() == 0) {
                     holder_01.checkBox01.setChecked(true);
                     holder_01.checkBox02.setChecked(false);
+                    holder_01.checkBox03.setChecked(false);
                 } else if (groupBoolean.get(i).get(i1).getIndex() == 1) {
                     holder_01.checkBox01.setChecked(false);
                     holder_01.checkBox02.setChecked(true);
+                    holder_01.checkBox03.setChecked(false);
+                }else if (groupBoolean.get(i).get(i1).getIndex() == 2) {
+                    holder_01.checkBox01.setChecked(false);
+                    holder_01.checkBox02.setChecked(false);
+                    holder_01.checkBox03.setChecked(true);
                 }
 
                 holder_01.layout_01.setOnClickListener(new View.OnClickListener() {
@@ -271,6 +272,7 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
                     public void onClick(View view) {
                         holder_01.checkBox01.setChecked(true);
                         holder_01.checkBox02.setChecked(false);
+                        holder_01.checkBox03.setChecked(false);
                         groupBoolean.get(i).get(i1).setIndex(0);
                     }
                 });
@@ -280,7 +282,17 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
                     public void onClick(View view) {
                         holder_01.checkBox01.setChecked(false);
                         holder_01.checkBox02.setChecked(true);
+                        holder_01.checkBox03.setChecked(false);
                         groupBoolean.get(i).get(i1).setIndex(1);
+                    }
+                });
+                holder_01.layout_03.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_01.checkBox01.setChecked(false);
+                        holder_01.checkBox02.setChecked(false);
+                        holder_01.checkBox03.setChecked(true);
+                        groupBoolean.get(i).get(i1).setIndex(2);
                     }
                 });
 //
@@ -289,6 +301,7 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
                     public void onClick(View view) {
                         holder_01.checkBox01.setChecked(true);
                         holder_01.checkBox02.setChecked(false);
+                        holder_01.checkBox03.setChecked(false);
                         groupBoolean.get(i).get(i1).setIndex(0);
                     }
                 });
@@ -296,10 +309,21 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
                     @Override
                     public void onClick(View view) {
                         holder_01.checkBox01.setChecked(false);
+                        holder_01.checkBox03.setChecked(false);
                         holder_01.checkBox02.setChecked(true);
                         groupBoolean.get(i).get(i1).setIndex(1);
                     }
                 });
+                holder_01.checkBox03.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_01.checkBox01.setChecked(false);
+                        holder_01.checkBox03.setChecked(true);
+                        holder_01.checkBox02.setChecked(false);
+                        groupBoolean.get(i).get(i1).setIndex(2);
+                    }
+                });
+
 
                 return view;
 
@@ -307,7 +331,7 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
                 view = null;
                 if (view == null) {
                     view = LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_second, null);
-                    holder_02 = new PaymentAdencyGovernmentCusChildHolderSecond();
+                    holder_02 = new PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderSecond();
                     holder_02.layout_01 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_second_layout_01);
                     holder_02.layout_02 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_second_layout_02);
                     holder_02.checkBox01 = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_second_checkbox_01);
@@ -315,7 +339,7 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
 
                     view.setTag(holder_02);
                 } else {
-                    holder_02 = (PaymentAdencyGovernmentCusChildHolderSecond) view.getTag();
+                    holder_02 = (PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderSecond) view.getTag();
                 }
 
 
@@ -367,7 +391,7 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
                 view = null;
                 if (view == null) {
                     view = LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_thread, null);
-                    holder_03 = new PaymentAdencyGovernmentCusChildHolderThread();
+                    holder_03 = new PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderThread();
                     holder_03.layout_01 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_thread_layout_01);
                     holder_03.layout_02 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_thread_layout_02);
                     holder_03.layout_03 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_thread_layout_03);
@@ -381,7 +405,7 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
 
                     view.setTag(holder_03);
                 } else {
-                    holder_03 = (PaymentAdencyGovernmentCusChildHolderThread) view.getTag();
+                    holder_03 = (PaymentAdencyFragmentGovernmentSecond.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderThread) view.getTag();
                 }
 
 
@@ -547,8 +571,10 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
         private class PaymentAdencyGovernmentCusChildHolderFirst {
             private LinearLayout layout_01;
             private LinearLayout layout_02;
+            private LinearLayout layout_03;
             private CheckBox checkBox01;
             private CheckBox checkBox02;
+            private CheckBox checkBox03;
         }
 
         private class PaymentAdencyGovernmentCusChildHolderSecond {
@@ -585,5 +611,4 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
         }
 
     }
-
 }
