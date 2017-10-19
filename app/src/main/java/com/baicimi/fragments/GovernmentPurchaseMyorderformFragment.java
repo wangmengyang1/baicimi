@@ -1,6 +1,5 @@
 package com.baicimi.fragments;
 
-import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +28,7 @@ public class GovernmentPurchaseMyorderformFragment extends BaseFragment implemen
     private ListView listView;
     private List<MyOrderFormEntry> list = new ArrayList<>();
     private MyorderFormEntryAdapter adapter;
+    private int count;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -66,7 +66,8 @@ public class GovernmentPurchaseMyorderformFragment extends BaseFragment implemen
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(list.get(i).getPayment().equals("待付款")){
-                    startFragment(new PaymentAdencyFragment("政府采购订单"));
+                    startFragment(new PaymentAdencyFragment(count , "政府采购订单" ));
+                    count++;
                 } else if (list.get(i).getPayment().equals("准备中")){
                     startFragment(new OrderFormFragmentReadly("政府采购订单"));
                 }else if (list.get(i).getPayment().equals("发货中")){

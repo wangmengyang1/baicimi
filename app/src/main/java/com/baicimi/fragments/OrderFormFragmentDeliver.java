@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -36,7 +37,8 @@ public class OrderFormFragmentDeliver extends BaseFragment implements View.OnCli
     private String typeS = "无参数";
     private TextView type_tv;
 
-    private TextView looklogistics;
+    private TextView looklogistics  , pay_way;
+    private LinearLayout layout_02 , layout_03 , layout_04;
 
     private int index;
 
@@ -67,6 +69,17 @@ public class OrderFormFragmentDeliver extends BaseFragment implements View.OnCli
 
         }else {
             type_tv.setText(typeS);
+            if (typeS.equals("分期订单")){
+                pay_way = (TextView) view.findViewById(R.id.order_form_fragment_deliver_pay_way);
+                pay_way.setText("分期订单");
+                layout_02 = (LinearLayout) view.findViewById(R.id.order_form_fragment_deliver_layout_02);
+                layout_02.setVisibility(View.VISIBLE);
+            }else if (typeS.equals("我的预售订单")){
+                layout_03 = (LinearLayout) view.findViewById(R.id.order_form_fragment_deliver_layout_03);
+                layout_03.setVisibility(View.VISIBLE);
+                layout_04 = (LinearLayout) view.findViewById(R.id.order_form_fragment_deliver_layout_04);
+                layout_04.setVisibility(View.VISIBLE);
+            }
         }
 
         looklogistics = (TextView) view.findViewById(R.id.order_form_fragment_deliver_looklogistics);

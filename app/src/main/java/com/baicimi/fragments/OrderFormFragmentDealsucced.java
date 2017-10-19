@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -33,7 +34,8 @@ public class OrderFormFragmentDealsucced extends BaseFragment implements View.On
     private TextView evaluate;
 
     private String typeS = "无参数";
-    private TextView type_tv;
+    private TextView type_tv , pay_way;
+    private LinearLayout layout_02 , layout_03 , layout_04;
 
     @SuppressLint("ValidFragment")
     public OrderFormFragmentDealsucced(String typeS) {
@@ -58,6 +60,17 @@ public class OrderFormFragmentDealsucced extends BaseFragment implements View.On
         type_tv = (TextView) view.findViewById(R.id.order_form_fragment_dealsucceed_type);
         if (!typeS.equals("无参数")){
             type_tv.setText(typeS);
+            if (typeS.equals("分期订单")){
+                pay_way = (TextView) view.findViewById(R.id.order_form_fragment_dealsucceed_pay_way);
+                pay_way.setText("分期订单");
+                layout_02 = (LinearLayout) view.findViewById(R.id.order_form_fragment_dealsucceed_layout_02);
+                layout_02.setVisibility(View.VISIBLE);
+            }else if (typeS.equals("我的预售订单")){
+                layout_03 = (LinearLayout) view.findViewById(R.id.order_form_fragment_dealsucceed_layout_03);
+                layout_03.setVisibility(View.VISIBLE);
+                layout_04 = (LinearLayout) view.findViewById(R.id.order_form_fragment_dealsucceed_layout_04);
+                layout_04.setVisibility(View.VISIBLE);
+            }
         }
 
         return view;

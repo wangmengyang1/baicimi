@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/date_time_fragment_linearlayout"
+    android:background="#eeeeee"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/date_time_fragment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <NumberPicker
+                android:id="@+id/date_time_fragment_month"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                ></NumberPicker>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 月 "
+                android:layout_gravity="center"
+                />
+            <NumberPicker
+                android:id="@+id/date_time_fragment_day"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                ></NumberPicker>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 日 "
+                android:layout_gravity="center"
+                />
+            <NumberPicker
+                android:id="@+id/date_time_fragment_apm"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                ></NumberPicker>
+            <NumberPicker
+                android:id="@+id/date_time_fragment_hour"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                ></NumberPicker>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 时 "
+                android:layout_gravity="center"
+                />
+            <NumberPicker
+                android:id="@+id/date_time_fragment_minute"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                ></NumberPicker>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 分 "
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/date_time_fragment_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            android:layout_below="@+id/date_time_fragment_layout"
+            />
+
+        <TextView
+            android:id="@+id/date_time_fragment_affirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_below="@+id/date_time_fragment_view"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

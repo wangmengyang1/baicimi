@@ -211,10 +211,37 @@
                     />
 
                 <TextView
+                    android:id="@+id/order_form_fragment_refundesucceed_pay_way"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="在线支付"
+                    android:gravity="right"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/order_form_fragment_refundesucceed_layout_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分期形式"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="¥1263X6期"
                     android:gravity="right"
                     />
 

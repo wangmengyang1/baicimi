@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -40,7 +41,8 @@ public class OrderFormFragmentSales extends BaseFragment implements View.OnClick
     public OrderFormFragmentSales() {
     }
 
-    private TextView particulars , more;
+    private TextView particulars , more , pay_way;
+    private LinearLayout layout_02;
 
 
     @Override
@@ -56,6 +58,12 @@ public class OrderFormFragmentSales extends BaseFragment implements View.OnClick
         type_tv = (TextView) view.findViewById(R.id.payment_adency_fragment_sales_type);
         if (!typeS.equals("无参数")){
             type_tv.setText(typeS);
+            if (typeS.equals("分期订单")){
+                pay_way = (TextView) view.findViewById(R.id.order_form_fragment_sales_pay_way);
+                pay_way.setText("分期订单");
+                layout_02 = (LinearLayout) view.findViewById(R.id.order_form_fragment_sales_layout_02);
+                layout_02.setVisibility(View.VISIBLE);
+            }
         }
 
         particulars = (TextView) view.findViewById(R.id.order_form_fragment_sales_particulars);

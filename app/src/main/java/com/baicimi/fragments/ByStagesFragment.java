@@ -43,11 +43,11 @@ public class ByStagesFragment extends BaseFragment implements View.OnClickListen
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.government_purchase_fragment_back:
+            case R.id.by_stages_fragment_back:
                 ((MainActivity)getActivity()).goBack();//返回到上一级页面
                 break;
             case R.id.by_stages_fragment_myorderform:
-                //返回到上一级页面
+
                 startFragment(new ByStagesGroupFragment());
                 break;
         }

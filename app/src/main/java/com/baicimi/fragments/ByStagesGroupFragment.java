@@ -48,8 +48,8 @@ public class ByStagesGroupFragment extends BaseFragment implements View.OnClickL
     private void initListView() {
         listView = (ListView) view.findViewById(R.id.by_stages_group_fragment_listview);
         list.clear();
-        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_01 , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("分期订单") , "未成团" , new String("10:05")));
-        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_02  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("分期订单") , "已成团" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_01 , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("分期订单") , "准备中" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_02  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("分期订单") , "已退货" , new String("10:05")));
         list.add(new MyOrderFormEntry(R.drawable.image_dingdan_01  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("分期订单") , "已退货" , new String("10:05")));
         list.add(new MyOrderFormEntry(R.drawable.image_dingdan_02  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("分期订单") , "发货中" , new String("10:05")));
         list.add(new MyOrderFormEntry(R.drawable.image_dingdan_01 , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("分期订单") , "交易成功" , new String("10:05")));
@@ -63,18 +63,18 @@ public class ByStagesGroupFragment extends BaseFragment implements View.OnClickL
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String payment = list.get(i).getPayment();
-                if (payment.equals("未成团")){
-                    startFragment(new MyGroupPurchaseListViewNoReach());//未成团页面
+                if (payment.equals("准备中")){
+                    startFragment(new OrderFormFragmentReadly("分期订单"));//未成团页面
                 }else if (payment.equals("已成团")){
                     startFragment(new MyGroupPurchaseListViewReach());//已成团页面
                 }else if (payment.equals("已退货")){
-                    startFragment(new MyOrderFormFragmentParticulars("已退货"));//已退货
+                    startFragment(new OrderFormFragmentSales("分期订单"));//已退货
                 }else if (payment.equals("发货中")){
-                    startFragment(new OrderFormFragmentDeliver());//发货中
+                    startFragment(new OrderFormFragmentDeliver("分期订单"));//发货中
                 }else if (payment.equals("交易成功")){
-                    startFragment(new OrderFormFragmentDealsucced());//交易成功
+                    startFragment(new OrderFormFragmentDealsucced("分期订单"));//交易成功
                 }else if (payment.equals("退款成功")){
-                    startFragment(new MyOrderFormFragmentParticulars("退款成功"));//退款成功
+                    startFragment(new OrderFormFragmentRefundesucceed());//退款成功
                 }
             }
         });

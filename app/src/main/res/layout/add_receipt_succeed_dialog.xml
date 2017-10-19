@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        >
+
+        <TextView
+            android:id="@+id/add_receipt_dialog_succeed_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传成功！"
+            android:textColor="#737373"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/add_receipt_dialog_succeed_image"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="百次幂客服24小时内审核完成，请留意订单状态。"
+            android:layout_below="@+id/add_receipt_dialog_succeed_lible"
+            android:layout_marginTop="15dp"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/add_receipt_dialog_succeed_diamess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:background="#737373"
+            android:layout_below="@+id/add_receipt_dialog_succeed_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

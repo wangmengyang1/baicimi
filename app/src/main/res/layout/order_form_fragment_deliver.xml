@@ -149,12 +149,6 @@
                         android:paddingBottom="4dp"
                         />
 
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="1dp"
-                        android:layout_weight="1"
-                        />
-
                     <TextView
                         android:layout_width="80dp"
                         android:layout_height="30dp"
@@ -214,10 +208,37 @@
                     />
 
                 <TextView
+                    android:id="@+id/order_form_fragment_deliver_pay_way"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="在线支付"
+                    android:gravity="right"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/order_form_fragment_deliver_layout_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分期形式："
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="¥1235X6期"
                     android:gravity="right"
                     />
 
@@ -246,7 +267,58 @@
                     />
 
             </LinearLayout>
+            <LinearLayout
+                android:id="@+id/order_form_fragment_deliver_layout_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                >
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="阶段1-定金："
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="¥50.00"
+                    android:gravity="right"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/order_form_fragment_deliver_layout_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="阶段2-尾款："
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="¥298.00"
+                    android:gravity="right"
+                    />
+
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

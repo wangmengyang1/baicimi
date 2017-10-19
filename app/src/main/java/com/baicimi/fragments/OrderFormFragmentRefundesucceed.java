@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -33,7 +34,8 @@ public class OrderFormFragmentRefundesucceed extends BaseFragment implements Vie
 
     private TextView message_particulars;
     private String typeS = "无参数";
-    private TextView type_tv;
+    private TextView type_tv , pay_way;
+    private LinearLayout layout_02;
 
     @SuppressLint("ValidFragment")
     public OrderFormFragmentRefundesucceed(String typeS) {
@@ -59,6 +61,12 @@ public class OrderFormFragmentRefundesucceed extends BaseFragment implements Vie
         type_tv = (TextView) view.findViewById(R.id.order_form_fragment_refundesucceed_type);
         if (!typeS.equals("无参数")){
             type_tv.setText(typeS);
+            if (typeS.equals("分期订单")){
+                pay_way = (TextView) view.findViewById(R.id.order_form_fragment_refundesucceed_pay_way);
+                pay_way.setText("分期订单");
+                layout_02 = (LinearLayout) view.findViewById(R.id.order_form_fragment_refundesucceed_layout_02);
+                layout_02.setVisibility(View.VISIBLE);
+            }
         }
 
         return view;

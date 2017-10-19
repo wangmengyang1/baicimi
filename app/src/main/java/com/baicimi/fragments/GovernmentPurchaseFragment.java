@@ -21,6 +21,7 @@ public class GovernmentPurchaseFragment  extends BaseFragment implements View.On
     private ImageView back;
     private TextView readly , myorderform;
     private int index;
+    private TextView deliver;
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.government_purchase_fragment , container , false);
@@ -32,6 +33,9 @@ public class GovernmentPurchaseFragment  extends BaseFragment implements View.On
 
         myorderform = (TextView) view.findViewById(R.id.government_purchase_fragment_myorderform);
         myorderform.setOnClickListener(this);
+
+        deliver = (TextView) view.findViewById(R.id.government_purchase_fragment_deliver);
+        deliver.setOnClickListener(this);
         return view;
     }
     @Override
@@ -53,6 +57,10 @@ public class GovernmentPurchaseFragment  extends BaseFragment implements View.On
             case R.id.government_purchase_fragment_myorderform:
                 //我的政府采购
                 startFragment(new GovernmentPurchaseMyorderformFragment());
+                break;
+            case R.id.government_purchase_fragment_deliver:
+                //快速申请通道
+                startFragment(new GovernmentPurchaseFastTrackProcedure());
                 break;
         }
     }

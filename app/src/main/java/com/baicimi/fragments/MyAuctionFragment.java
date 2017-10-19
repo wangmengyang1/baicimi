@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
@@ -19,12 +20,16 @@ public class MyAuctionFragment extends BaseFragment implements View.OnClickListe
     private View view;
 
     private ImageView back;
+    private TextView myorderform;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.my_auction_fragment , container , false);
         back = (ImageView) view.findViewById(R.id.my_auction_fragment_back);
         back.setOnClickListener(this);
+
+        myorderform = (TextView) view.findViewById(R.id.my_auction_fragment_myorderform);
+        myorderform.setOnClickListener(this);
         return view;
     }
 
@@ -38,6 +43,9 @@ public class MyAuctionFragment extends BaseFragment implements View.OnClickListe
         switch (view.getId()){
             case R.id.my_auction_fragment_back:
                 ((MainActivity)getActivity()).goBack();//返回到上一级页面
+                break;
+            case R.id.my_auction_fragment_myorderform:
+                startFragment(new MyOrderFormFragmentParticulars("我的拍卖订单"));//待付款
                 break;
         }
     }

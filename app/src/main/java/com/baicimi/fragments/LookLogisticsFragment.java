@@ -27,7 +27,6 @@ public class LookLogisticsFragment extends BaseFragment implements View.OnClickL
         back.setOnClickListener(this);
         logistics = (TextView) view.findViewById(R.id.look_logistics_fragment_server_logistics);
         courier = (TextView) view.findViewById(R.id.look_logistics_fragment_evaluate_courier);
-
         logistics.setOnClickListener(this);
         courier.setOnClickListener(this);
         return view;

@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.baicimi.R;
 import com.baicimi.entity.TeacherStatusRegisterEntry;
+import com.baicimi.view.LeaveMessageDialog;
 
 import java.util.List;
 
@@ -50,6 +51,9 @@ public class TeacherStatusRegisterAdapter extends BaseAdapter{
 
             if(i == 4){
                 view = inflater.inflate(R.layout.teacher_status_register_adapter , null);
+                holder = new TeacherStatusHolder();
+                holder.message = (TextView) view.findViewById(R.id.teacher_status_register_adapter_success);
+
             }else{
                 view = inflater.inflate(R.layout.teacher_status_register_adapter_02 , null);
                 holder = new TeacherStatusHolder();
@@ -62,7 +66,13 @@ public class TeacherStatusRegisterAdapter extends BaseAdapter{
         }
 
         if(i == 4){
-
+            holder.message.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    LeaveMessageDialog leaveMessageDialog = new LeaveMessageDialog(context , R.style.MeiGuiMeiShiSecondMyorderFive);
+                    leaveMessageDialog.show();
+                }
+            });
         }else{
             TeacherStatusRegisterEntry init = (TeacherStatusRegisterEntry) getItem(i);
             holder.imageUrl.setImageResource(init.getImageUrl());
@@ -74,6 +84,7 @@ public class TeacherStatusRegisterAdapter extends BaseAdapter{
     public class TeacherStatusHolder{
         private ImageView imageUrl;
         private TextView lible;
+        private TextView message;
     }
 
 }

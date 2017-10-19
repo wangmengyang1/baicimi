@@ -47,10 +47,81 @@ public class MyOrderFormFragmentParticulars extends BaseFragment implements View
         back.setOnClickListener(this);
         libles.setText(lible);
 
-        //listview布局填充
-        initListView();
-
+        if(lible.equals("我的拍卖订单")){
+            initListViewAuction();
+        }else if (lible.equals("我的预售订单")){
+            initListViewPresell();
+        } else {
+            //listview布局填充
+            initListView();
+        }
+        
         return view;
+    }
+
+    private void initListViewPresell() {
+        listView = (ListView) view.findViewById(R.id.my_order_form_fragment_listview);
+        list.clear();
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_01 , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "待付款" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_02  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "准备中" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_02  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "已订购" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_01  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "发货中" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_02  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "交易成功" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_01 , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") ,  "待付款" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_02  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "准备中" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_01  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "发货中" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_02  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "交易成功" , new String("10:05")));
+
+        adapter = new MyorderFormEntryAdapter(list , getContext());
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(list.get(i).getPayment().equals("待付款")){
+                    startFragment(new PaymentAdencyFragment(lible));
+                }else if (list.get(i).getPayment().equals("准备中")){
+                    startFragment(new OrderFormFragmentReadly(lible));
+                }else if (list.get(i).getPayment().equals("发货中")){
+                    startFragment(new OrderFormFragmentDeliver(lible));
+                }else if (list.get(i).getPayment().equals("交易成功")){
+                    startFragment(new OrderFormFragmentDealsucced(lible));
+                }else if (list.get(i).getPayment().equals("已订购")){
+                    startFragment(new OrderFormFragmentReadly(lible));
+                }
+            }
+        });
+    }
+
+    private void initListViewAuction() {
+        listView = (ListView) view.findViewById(R.id.my_order_form_fragment_listview);
+        list.clear();
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_01 , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "待付款" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_02  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "准备中" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_01  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "发货中" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_02  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "交易成功" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_01 , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") ,  "待付款" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_02  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "准备中" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_01  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "发货中" , new String("10:05")));
+        list.add(new MyOrderFormEntry(R.drawable.image_dingdan_02  , new String("¥39") , new String("广州市白云区太和镇民营科技园火炬大厦1501号，白云区55000 广东省，广州市") , new String("拍卖订单") , "交易成功" , new String("10:05")));
+
+        adapter = new MyorderFormEntryAdapter(list , getContext());
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(list.get(i).getPayment().equals("待付款")){
+                    startFragment(new PaymentAdencyFragment(lible));
+                }else if (list.get(i).getPayment().equals("准备中")){
+                    startFragment(new OrderFormFragmentReadly(lible));
+                }else if (list.get(i).getPayment().equals("发货中")){
+                    startFragment(new OrderFormFragmentDeliver(lible));
+                }else if (list.get(i).getPayment().equals("交易成功")){
+                    startFragment(new OrderFormFragmentDealsucced(lible));
+                }
+            }
+        });
     }
 
     //listview布局填充
