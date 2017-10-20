@@ -62,28 +62,28 @@ public class UserCenterHomepageHeadIntimacyMyorderform extends BaseFragment impl
         adapter = new MyorderFormEntryAdapter(list , getContext());
         listView.setAdapter(adapter);
 
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                if(lible.equals("待付款")){
-//                    startFragment(new PaymentAdencyFragment());
-//                }else if (lible.equals("准备中")){
-//                    startFragment(new OrderFormFragmentReadly());
-//                }else if (lible.equals("发货中")){
-//                    startFragment(new OrderFormFragmentDeliver());
-//                }else if (lible.equals("交易成功")){
-//                    startFragment(new OrderFormFragmentDealsucced());
-//                }else if (lible.equals("已撤销")){
-//                    startFragment(new OrderFormFragmentRevocation());
-//                }else if (lible.equals("已退货")){
-//                    startFragment(new OrderFormFragmentSales());
-//                }else if (lible.equals("退款成功")){
-//                    startFragment(new OrderFormFragmentRefundesucceed());
-//                }else if (lible.equals("我的订单")){
-//                    startFragment(new OrderFormFragmentReadly());
-//                }
-//            }
-//        });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(list.get(i).getPayment().equals("待付款")){
+                    startFragment(new PaymentAdencyFragment());
+                }else if (list.get(i).getPayment().equals("准备中")){
+                    startFragment(new OrderFormFragmentReadly());
+                }else if (list.get(i).getPayment().equals("发货中")){
+                    startFragment(new OrderFormFragmentDeliver());
+                }else if (list.get(i).getPayment().equals("交易成功")){
+                    startFragment(new OrderFormFragmentDealsucced());
+                }else if (list.get(i).getPayment().equals("已撤销")){
+                    startFragment(new OrderFormFragmentRevocation());
+                }else if (list.get(i).getPayment().equals("已退货")){
+                    startFragment(new OrderFormFragmentSales());
+                }else if (list.get(i).getPayment().equals("退款成功")){
+                    startFragment(new OrderFormFragmentRefundesucceed());
+                }else if (list.get(i).getPayment().equals("我的订单")){
+                    startFragment(new OrderFormFragmentReadly());
+                }
+            }
+        });
     }
 
     @Override

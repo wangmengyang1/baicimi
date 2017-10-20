@@ -42,7 +42,7 @@ public class TeacherStatusRegisterFragment extends BaseFragment implements View.
     private TeacherStatusRegisterAdapter adapter;
 
 
-    private TextView more;
+    private TextView more , educatioin_more;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -61,6 +61,8 @@ public class TeacherStatusRegisterFragment extends BaseFragment implements View.
         more.setOnClickListener(this);
 
 
+        educatioin_more = (TextView) view.findViewById(R.id.teacher_stats_register_fragment_education_more);
+        educatioin_more.setOnClickListener(this);
         return view;
     }
 
@@ -111,6 +113,9 @@ public class TeacherStatusRegisterFragment extends BaseFragment implements View.
                 break;
             case R.id.teacher_status_register_fragment_more_textview:
                 startFragment(new TeacherPurchaseOptionFragment());
+                break;
+            case R.id.teacher_stats_register_fragment_education_more:
+                startFragment(new TeacherStatusRegisterEducation());
                 break;
         }
     }

@@ -34,8 +34,11 @@ public class OrderFormFragmentDealsucced extends BaseFragment implements View.On
     private TextView evaluate;
 
     private String typeS = "无参数";
-    private TextView type_tv , pay_way;
+    private TextView type_tv , pay_way , logistics , aftersale;
     private LinearLayout layout_02 , layout_03 , layout_04;
+
+
+
 
     @SuppressLint("ValidFragment")
     public OrderFormFragmentDealsucced(String typeS) {
@@ -73,6 +76,10 @@ public class OrderFormFragmentDealsucced extends BaseFragment implements View.On
             }
         }
 
+        logistics = (TextView) view.findViewById(R.id.order_form_fragment_dealsucceed_logistics);
+        aftersale = (TextView) view.findViewById(R.id.order_form_fragment_dealsucceed_aftersale);
+        logistics.setOnClickListener(this);
+        aftersale.setOnClickListener(this);
         return view;
     }
 
@@ -100,6 +107,14 @@ public class OrderFormFragmentDealsucced extends BaseFragment implements View.On
             case R.id.order_form_fragment_dealsucceed_evaluate:
                 //评价
                 startFragment(new OrderFormDealsucceedEvaluate());
+                break;
+            case R.id.order_form_fragment_dealsucceed_logistics:
+                //物流
+                startFragment(new LookLogisticsFragment());//01
+                break;
+            case R.id.order_form_fragment_dealsucceed_aftersale:
+                //售后
+                startFragment(new AfterSaleServerFragment());
                 break;
         }
     }

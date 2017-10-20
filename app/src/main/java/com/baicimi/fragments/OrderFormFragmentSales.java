@@ -41,7 +41,7 @@ public class OrderFormFragmentSales extends BaseFragment implements View.OnClick
     public OrderFormFragmentSales() {
     }
 
-    private TextView particulars , more , pay_way;
+    private TextView particulars , more , pay_way , logistics;
     private LinearLayout layout_02;
 
 
@@ -70,6 +70,9 @@ public class OrderFormFragmentSales extends BaseFragment implements View.OnClick
         more = (TextView) view.findViewById(R.id.order_form_fragment_sales_more);
         particulars.setOnClickListener(this);
         more.setOnClickListener(this);
+
+        logistics = (TextView) view.findViewById(R.id.order_form_fragment_sales_logistics);
+        logistics.setOnClickListener(this);
 
         return view;
     }
@@ -103,6 +106,10 @@ public class OrderFormFragmentSales extends BaseFragment implements View.OnClick
             case R.id.order_form_fragment_sales_more:
                 //已申请退货
                 startFragment(new AfterSaleServerOrderFormSalesFragment());//退货申请页面
+                break;
+            case R.id.order_form_fragment_sales_logistics:
+                //查看物流
+                startFragment(new LookLogisticsFragment());//01
                 break;
         }
     }

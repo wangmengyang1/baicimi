@@ -58,6 +58,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
     private GridView gridview_03;
     private List<UserCenterHomePageEntrySecond> list_03 = new ArrayList<>();
     private UserCenterHomePageSecondAdapter adapter_03;
+    private LinearLayout showLayout;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -65,7 +66,6 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
         //下拉菜单问题
         initCusListView();
-
         fm = getChildFragmentManager();
         fragments.clear();
         fragments.add(new UserIntegralFragmentFirst());
@@ -86,6 +86,9 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
         //今日推荐GridView布局填充
         initRecommend();
+
+        showLayout = (LinearLayout) view.findViewById(R.id.user_center_home_page_head_fragment_layout);
+
         return view;
     }
 
@@ -330,6 +333,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                 community_tv.setTextColor(Color.parseColor("#737373"));
                 community_tv.setBackgroundResource(R.drawable.background_null);
                 initShowFragment(0);
+                showLayout.setVisibility(View.VISIBLE);
                 break;
             case R.id.user_center_home_page_fragment_community:
                 community_tv.setTextColor(Color.parseColor("#c22737"));
@@ -337,6 +341,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                 shopping_tv.setTextColor(Color.parseColor("#737373"));
                 shopping_tv.setBackgroundResource(R.drawable.background_null);
                 initShowFragment(1);
+                showLayout.setVisibility(View.GONE);
                 break;
         }
     }

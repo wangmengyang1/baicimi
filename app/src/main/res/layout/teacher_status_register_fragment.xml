@@ -36,6 +36,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:scrollbars="none"
         >
 
         <LinearLayout
@@ -115,17 +116,39 @@
                 ></GridView>
 
 
-
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="教育快讯:"
-                android:textSize="16sp"
-                android:textColor="#737373"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
                 android:layout_marginTop="20dp"
-                />
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="教育快讯:"
+                    android:textSize="14sp"
+                    android:textColor="#737373"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/teacher_stats_register_fragment_education_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="了解更多>>>"
+                    android:gravity="right"
+                    android:textColor="#7cbfea"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"

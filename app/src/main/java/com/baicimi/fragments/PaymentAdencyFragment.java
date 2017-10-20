@@ -79,7 +79,7 @@ public class PaymentAdencyFragment extends BaseFragment implements View.OnClickL
                     public void onClick(View view) {
                         //关于政府采购的支付跳转
                         if (index % 3 == 0){
-                            startFragment(new PaymentAdencyFragmentGovernment());
+                            startFragment(new PaymentAdencyFragmentGovernment());//支付页面
                         }else if (index % 3 == 1){
                             startFragment(new PaymentAdencyFragmentGovernmentSecond());
                         }else if (index % 3 == 2){
@@ -129,7 +129,8 @@ public class PaymentAdencyFragment extends BaseFragment implements View.OnClickL
                 @Override
                 public void onClick(View view) {
                     //团购订单采购支付页面
-                    startFragment(new PayMentSucceedFragment());
+//                    startFragment(new PayMentSucceedFragment());
+                    startFragment(new PaymentAdencyFragmentGovernment());//支付页面(最新)
                 }
             });
         }

@@ -204,7 +204,8 @@ public class GoodsDetailsFragment extends BaseFragment implements View.OnClickLi
                     numberTextview.setText((cont) + "");
                 }else if (indext == 1){
                     //立即购买的跳转
-                    startFragment(new PersonDingDanFragment(),null);
+//                    startFragment(new PersonDingDanFragment(),null);
+                    startFragment(new PaymentAdencyFragmentGovernment());//支付页面(最新)
 
                 }
                 closePopupFuwuWindow();

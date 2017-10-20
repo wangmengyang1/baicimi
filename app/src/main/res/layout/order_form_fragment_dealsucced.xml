@@ -131,6 +131,7 @@
                         android:textColor="#3e3e3f"
                         />
                     <TextView
+                        android:id="@+id/order_form_fragment_dealsucceed_logistics"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
@@ -140,13 +141,13 @@
                         android:gravity="center"
                         />
                     <TextView
+                        android:id="@+id/order_form_fragment_dealsucceed_aftersale"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:text="售后"
                         android:textSize="12sp"
                         android:textColor="#0684b9"
-
                         />
 
 

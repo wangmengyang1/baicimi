@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+
+        >
+
+        <TextView
+            android:id="@+id/reacher_education_second_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无偿资助——6岁孩子重返校园"
+            android:textSize="13sp"
+            android:textColor="#737373"
+            />
+
+        <TextView
+            android:id="@+id/reacher_education_second_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="河南信阳小山城一个6岁男孩豆豆，父母早亡，由年迈的奶奶抚养长大，家境贫寒，无力承担读书费用"
+            android:textSize="13sp"
+            android:layout_below="@+id/reacher_education_second_adapter_lible"
+            android:layout_marginTop="8dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

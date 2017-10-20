@@ -34,7 +34,7 @@ public class OrderFormFragmentRefundesucceed extends BaseFragment implements Vie
 
     private TextView message_particulars;
     private String typeS = "无参数";
-    private TextView type_tv , pay_way;
+    private TextView type_tv , pay_way , logistics;
     private LinearLayout layout_02;
 
     @SuppressLint("ValidFragment")
@@ -69,6 +69,9 @@ public class OrderFormFragmentRefundesucceed extends BaseFragment implements Vie
             }
         }
 
+        logistics = (TextView) view.findViewById(R.id.order_form_fragment_refundesucceed_logistics);
+        logistics.setOnClickListener(this);
+
         return view;
     }
 
@@ -97,6 +100,10 @@ public class OrderFormFragmentRefundesucceed extends BaseFragment implements Vie
             case R.id.order_form_fragment_refundesucceed_message:
                 //退款成功详情页
                 startFragment(new OrderFormRefundesucceedMessage());
+                break;
+            case R.id.order_form_fragment_refundesucceed_logistics:
+                //查看物流
+                startFragment(new LookLogisticsFragment());//01
                 break;
         }
     }

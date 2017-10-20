@@ -218,16 +218,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         //111111111
         listView_cela = (ListView)findViewById(R.id.view_choudi_listview);
         //添加数据源
-        date.add(new CelaProject(R.mipmap.meigui_mingxing , "洗护用品" , new String[]{"头发护理" , "身体护理" }));
-        date.add(new CelaProject(R.mipmap.meigui_meizhuang , "家居清洁" , new String[]{"厨房清洁" , "衣物清洁" , "卫浴清洁"}));
-        date.add(new CelaProject(R.mipmap.meigui_img , "美妆个护" , new String[]{"面膜" , "护肤" , "彩妆" , "美妆工具"}));
-        date.add(new CelaProject(R.mipmap.meigui_lvxing , "母婴用品" , new String[]{"孕妇护理" , "婴童护理" }));
-        date.add(new CelaProject(R.mipmap.meigui_meishi , "个人用品" , new String[]{"配饰" , "包包" , "个护电器" , "床上用品","居家休闲" , "旅行用品"}));
-        date.add(new CelaProject(R.mipmap.meigui_shipin , "男士专区" , new String[]{"护肤产品" , "洗护用品" , "个护电器" , "户外用品"}));
-        date.add(new CelaProject(R.mipmap.meigui_mingxing , "输入积分码" , new String[]{}));
-        date.add(new CelaProject(R.mipmap.meigui_zhuce_open , "注册通道入口" , new String[]{"教师/学生注册入口" , "BNN分销/员工注册入口"}));
-        date.add(new CelaProject(R.mipmap.meigui_img , "师生选购专区" , new String[]{}));
-        date.add(new CelaProject(R.mipmap.meigui_lvxing , "分销订货入口" , new String[]{}));
+        date.add(new CelaProject(R.drawable.drawlayout_image_01 , "洗护用品" , new String[]{"头发护理" , "身体护理" }));
+        date.add(new CelaProject(R.drawable.drawlayout_image_02 , "家居清洁" , new String[]{"厨房清洁" , "衣物清洁" , "卫浴清洁"}));
+        date.add(new CelaProject(R.drawable.drawlayout_image_03 , "美妆个护" , new String[]{"面膜" , "护肤" , "彩妆" , "美妆工具"}));
+        date.add(new CelaProject(R.drawable.drawlayout_image_04 , "母婴用品" , new String[]{"孕妇护理" , "婴童护理" }));
+        date.add(new CelaProject(R.drawable.drawlayout_image_05 , "个人用品" , new String[]{"配饰" , "包包" , "个护电器" , "床上用品","居家休闲" , "旅行用品"}));
+        date.add(new CelaProject(R.drawable.drawlayout_image_06 , "男士专区" , new String[]{"护肤产品" , "洗护用品" , "个护电器" , "户外用品"}));
+        date.add(new CelaProject(R.drawable.drawlayout_image_07, "输入积分码" , new String[]{}));
+        date.add(new CelaProject(R.drawable.drawlayout_image_08, "注册通道入口" , new String[]{"教师/学生注册入口" , "BNN分销/员工注册入口"}));
+        date.add(new CelaProject(R.drawable.drawlayout_image_09, "师生选购专区" , new String[]{}));
+        date.add(new CelaProject(R.drawable.drawlayout_image_10 , "分销订货入口" , new String[]{}));
 //        date.add(new CelaProject(R.mipmap.meigui_meishi , "分销物品申请入口" , new String[]{}));
         adapter = new ListViewCelaAdapter(this);
         adapter.setList(date);
@@ -367,12 +367,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             //跳转到分销订货入口
             startFragment(new DistributionOrderGoodsFragment() , null);
         }
-
-//        if(i == 10){
-//            drawer.closeDrawers();
-//            //跳转到分销商购买入口
-//            startFragment(new DistributorPurchaseOption() , null);
-//        }
 
         if(i == celaListview){
             celaListview = -1;

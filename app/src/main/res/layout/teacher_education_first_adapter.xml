@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/reacher_education_first_adapter_imageurl"
+            android:layout_width="142dp"
+            android:layout_height="90dp"
+            android:src="@drawable/teacher_education_image_04"
+            />
+
+        <TextView
+            android:id="@+id/reacher_education_first_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="教育头条"
+            android:layout_toRightOf="@+id/reacher_education_first_adapter_imageurl"
+            android:layout_marginLeft="15dp"
+            android:textColor="#737373"
+            />
+
+        <TextView
+            android:id="@+id/reacher_education_first_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="班宁赞助，百次幂主办的2017高校花作展即日在上海展出，班宁赞助，百次幂主办的2017高校花作展即日在上海展出，班宁赞助，百次幂主办的2017高校花作展即日在上海展出，班宁赞助，百次幂主办的2017高校花作展即日在上海展出，"
+            android:layout_alignLeft="@+id/reacher_education_first_adapter_lible"
+            android:layout_below="@+id/reacher_education_first_adapter_lible"
+            android:layout_marginTop="10dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

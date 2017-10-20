@@ -125,6 +125,7 @@
                         android:textColor="#3e3e3f"
                         />
                     <TextView
+                        android:id="@+id/order_form_fragment_sales_logistics"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
