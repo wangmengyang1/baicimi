@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/home_integer_conversion_details_adapter_layout_02"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/home_integer_conversion_details_adapter_imageurl"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/home_integer_conversion_05"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/home_integer_conversion_06"
+                android:layout_toRightOf="@+id/home_integer_conversion_details_adapter_imageurl"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignTop="@+id/home_integer_conversion_details_adapter_imageurl"
+                />
+            <TextView
+                android:id="@+id/home_integer_conversion_details_adapter_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_centerInParent="true"
+                />
+
+
+            <TextView
+                android:id="@+id/home_integer_conversion_details_adapter_vonversiondate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017/09/07 20:00"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

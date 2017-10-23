@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/every_conversion_adapter_shape"
+        android:padding="0.6dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/every_conversion_adapter_head_image"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/home_integer_conversion_02"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:id="@+id/every_conversion_adapter_layout_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_below="@+id/every_conversion_adapter_head_image"
+            >
+
+            <TextView
+                android:id="@+id/every_conversion_adapter_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="9:00场"
+                android:layout_marginLeft="15dp"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+            <ImageView
+                android:id="@+id/every_conversion_adapter_stateimage"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/time_737373"
+                />
+
+            <TextView
+                android:id="@+id/every_conversion_adapter_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进行中"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="13sp"
+                />
+            
+
+            
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            android:layout_below="@+id/every_conversion_adapter_layout_01"
+            />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/every_conversion_adapter_layout_01"
+            android:layout_marginTop="1dp"
+            >
+            
+            <ImageView
+                android:id="@+id/every_conversion_adapter_imageurl"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="150dp"
+                android:src="@drawable/home_integer_conversion_01"
+                android:scaleType="fitXY"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/every_conversion_adapter_lible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="香奈儿NO5香水"
+                    android:layout_marginLeft="15dp"
+                    />
+                <TextView
+                    android:id="@+id/every_conversion_adapter_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="市场价：¥216.00"
+                    android:layout_marginLeft="15dp"
+
+                    />
+                <TextView
+                    android:id="@+id/every_conversion_adapter_integer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="积分：6556"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/every_conversion_adapter_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="数量：16556"
+                    android:layout_marginLeft="15dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/every_conversion_adapter_rule"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="兑换规则"
+                        android:background="@drawable/every_conversion_adapter_shape"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/every_conversion_adapter_conversion"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="兑换详情"
+                        android:background="@drawable/every_conversion_adapter_shape"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/every_conversion_adapter_rushpurchase"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="立即兑换"
+                    android:background="@drawable/every_conversion_adapter_shape"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

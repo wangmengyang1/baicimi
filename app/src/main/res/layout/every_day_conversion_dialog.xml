@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+
+        <TextView
+            android:id="@+id/every_day_conversion_dialog_head_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置信息提醒后，"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/every_day_conversion_dialog_head_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我们会通过邮件，短信及手机客户端来提醒您哦。"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/every_day_conversion_dialog_head_01"
+            android:textSize="13sp"
+            />
+
+        <View
+            android:id="@+id/every_day_conversion_dialog_view"
+            android:layout_width="320dp"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            android:layout_below="@+id/every_day_conversion_dialog_head_02"
+            android:layout_marginTop="6dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/every_day_conversion_dialog_layout"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/every_day_conversion_dialog_view"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            >
+            <TextView
+                android:id="@+id/every_day_conversion_dialog_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="手机号码：13189026359"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="修改"
+                android:textColor="#737373"
+                android:background="@drawable/every_day_conversion_dialog_textview_shape"
+                android:layout_marginLeft="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/every_day_conversion_dialog_layout_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/every_day_conversion_dialog_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="提醒时间："
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/every_conversion_adapter_shape"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:textSize="13sp"
+                android:hint="10"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="日"
+                android:layout_marginLeft="4dp"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/every_conversion_adapter_shape"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:textSize="13sp"
+                android:hint="10"
+                android:layout_marginLeft="4dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="时"
+                android:layout_marginLeft="4dp"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/every_conversion_adapter_shape"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:textSize="13sp"
+                android:hint="10"
+                android:layout_marginLeft="4dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="分"
+                android:layout_marginLeft="4dp"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/every_conversion_adapter_shape"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:textSize="13sp"
+                android:hint="10"
+                android:layout_marginLeft="4dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/every_day_conversion_dialog_dissmess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:background="@drawable/every_conversion_adapter_shape"
+            android:layout_below="@+id/every_day_conversion_dialog_layout_02"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="13sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

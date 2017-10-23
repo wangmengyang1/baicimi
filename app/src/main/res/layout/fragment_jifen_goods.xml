@@ -381,6 +381,48 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/fragment_jifen_goods_everyday"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="140dp"
+                    android:src="@drawable/home_integer_conversion_03"
+                    android:scaleType="fitXY"
+                    />
+                <ImageView
+                    android:id="@+id/fragment_jifen_goods_brand"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="140dp"
+                    android:src="@drawable/home_integer_conversion_03"
+                    android:scaleType="fitXY"
+                    />
+                <ImageView
+                    android:id="@+id/fragment_jifen_goods_festival"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="140dp"
+                    android:src="@drawable/home_integer_conversion_03"
+                    android:scaleType="fitXY"
+                    />
+                <ImageView
+                    android:id="@+id/fragment_jifen_goods_newconversion"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="140dp"
+                    android:src="@drawable/home_integer_conversion_03"
+                    android:scaleType="fitXY"
+                    />
+
+
+            </LinearLayout>
 
 
             <View

@@ -16,6 +16,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
@@ -64,6 +65,7 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
     private MyViewPagerFragmetAdapterSecond myViewPagerFragmetAdapterSecond;
     private List<Fragment> listFragment = new ArrayList<>();
 
+    private ImageView everyday , brand , festival , newconversion;
 
 
     @Override
@@ -84,6 +86,12 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
         timelimit = (LinearLayout) view.findViewById(R.id.fragment_jifen_goods_timelimit);
         new_conversion = (LinearLayout) view.findViewById(R.id.fragment_jifen_goods_new_conversion);
         goods_big = (LinearLayout) view.findViewById(R.id.fragment_jifen_goods_big);
+
+        everyday = (ImageView) view.findViewById(R.id.fragment_jifen_goods_everyday);
+        brand = (ImageView) view.findViewById(R.id.fragment_jifen_goods_brand);
+        festival = (ImageView) view.findViewById(R.id.fragment_jifen_goods_festival);
+        newconversion = (ImageView) view.findViewById(R.id.fragment_jifen_goods_newconversion);
+
 
         //新品推荐
         new_recommend_01 = view.findViewById(R.id.fragment_jifen_goods_new_recommend_01);
@@ -124,7 +132,8 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
             R.id.jifen_goods_brand_08 , R.id.jifen_goods_brand_09 , R.id.jifen_goods_brand_10 ,
             R.id.jifen_goods_brand_11 , R.id.jifen_goods_brand_12 , R.id.fragment_jifen_goods_head , R.id.fragment_jifen_goods_timelimit ,
             R.id.fragment_jifen_goods_new_conversion , R.id.fragment_jifen_goods_big , R.id.fragment_jifen_goods_new_recommend_01 ,
-            R.id.fragment_jifen_goods_new_recommend_02 , R.id.fragment_jifen_goods_new_recommend_03 ,
+            R.id.fragment_jifen_goods_new_recommend_02 , R.id.fragment_jifen_goods_new_recommend_03 ,R.id.fragment_jifen_goods_everyday,
+            R.id.fragment_jifen_goods_brand,R.id.fragment_jifen_goods_festival , R.id.fragment_jifen_goods_newconversion
 
     })
     public void onClick(View view) {
@@ -149,40 +158,40 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
                 showPopwindowPointOne();
                 break;
             case R.id.jifen_goods_brand_01:
-                startFragment(new BrandFragmentSecond());
+                startFragment(new HomeIntegerHotBrandFragment());
                 break;
             case R.id.jifen_goods_brand_02:
-                startFragment(new BrandFragmentSecond());
+                startFragment(new HomeIntegerHotBrandFragment());
                 break;
             case R.id.jifen_goods_brand_03:
-                startFragment(new BrandFragmentSecond());
+                startFragment(new HomeIntegerHotBrandFragment());
                 break;
             case R.id.jifen_goods_brand_04:
-                startFragment(new BrandFragmentSecond());
+                startFragment(new HomeIntegerHotBrandFragment());
                 break;
             case R.id.jifen_goods_brand_05:
-                startFragment(new BrandFragmentSecond());
+                startFragment(new HomeIntegerHotBrandFragment());
                 break;
             case R.id.jifen_goods_brand_06:
-                startFragment(new BrandFragmentSecond());
+                startFragment(new HomeIntegerHotBrandFragment());
                 break;
             case R.id.jifen_goods_brand_07:
-                startFragment(new BrandFragmentSecond());
+                startFragment(new HomeIntegerHotBrandFragment());
                 break;
             case R.id.jifen_goods_brand_08:
-                startFragment(new BrandFragmentSecond());
+                startFragment(new HomeIntegerHotBrandFragment());
                 break;
             case R.id.jifen_goods_brand_09:
-                startFragment(new BrandFragmentSecond());
+                startFragment(new HomeIntegerHotBrandFragment());
                 break;
             case R.id.jifen_goods_brand_10:
-                startFragment(new BrandFragmentSecond());
+                startFragment(new HomeIntegerHotBrandFragment());
                 break;
             case R.id.jifen_goods_brand_11:
-                startFragment(new BrandFragmentSecond());
+                startFragment(new HomeIntegerHotBrandFragment());
                 break;
             case R.id.jifen_goods_brand_12:
-                startFragment(new BrandFragmentSecond());
+                startFragment(new HomeIntegerHotBrandFragment());
                 break;
             case R.id.fragment_jifen_goods_head:
                 startFragment(new PopularityBrandFragment(), null);
@@ -205,7 +214,18 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
             case R.id.fragment_jifen_goods_new_recommend_03:
                 startFragment(new GoodsDetailsFragment(),null);
                 break;
-
+            case R.id.fragment_jifen_goods_everyday:
+                startFragment(new HomeIntegerTimelimitConversion());
+                break;
+            case R.id.fragment_jifen_goods_brand:
+                startFragment(new HomeIntegerTimelimitConversion(1));
+                break;
+            case R.id.fragment_jifen_goods_festival:
+                startFragment(new HomeIntegerTimelimitConversion(2));
+                break;
+            case R.id.fragment_jifen_goods_newconversion:
+                startFragment(new HomeIntegerTimelimitConversion(3));
+                break;
 
         }
     }
