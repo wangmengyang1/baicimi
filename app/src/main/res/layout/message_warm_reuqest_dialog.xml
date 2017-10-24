@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        >
+
+        <TextView
+            android:id="@+id/message_warm_request_dialog_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对不起，您无权预约！"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff0000"
+            />
+
+        <TextView
+            android:id="@+id/message_warm_request_dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您需升级值V5，才可享受此特权。"
+            android:layout_below="@+id/message_warm_request_dialog_lible"
+            android:layout_marginTop="15dp"
+            android:textSize="13sp"
+            />
+
+
+        <TextView
+            android:id="@+id/message_warm_request_dialog_dissmess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看会员等级"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/message_warm_request_dialog_content"
+            android:layout_marginTop="15dp"
+            android:textSize="13sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/every_conversion_adapter_shape"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

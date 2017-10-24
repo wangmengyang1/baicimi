@@ -11,9 +11,13 @@ import android.widget.TextView;
 import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.EverydayConversionEntry;
+import com.baicimi.fragments.ConversionRuleFragment;
+import com.baicimi.fragments.HomeConversionSubscribeFragment;
 import com.baicimi.fragments.HomeIntegerConversionDetails;
 import com.baicimi.fragments.HomeIntegerSubscribeDetails;
 import com.baicimi.view.EveryDayConversionDialog;
+import com.baicimi.view.ImmediatelyConversionDialog;
+import com.baicimi.view.MessageWarmRequestDialog;
 
 import java.util.List;
 
@@ -27,6 +31,7 @@ public class EverydayConversionAdapter extends BaseAdapter {
     private LayoutInflater inflater;
     private int count = 5;
     private BaseFragment fragment;
+    private int dialogIndex;
 
     public EverydayConversionAdapter(List<EverydayConversionEntry> list, Context context ,BaseFragment fragment) {
         this.list = list;
@@ -124,6 +129,46 @@ public class EverydayConversionAdapter extends BaseAdapter {
                     }
                 }
             });
+            holder.rushpurchase.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (fragment != null){
+                        fragment.startFragment(new HomeConversionSubscribeFragment());//兑换预约
+                    }
+                }
+            });
+        }else if (count == 4){
+            holder.conversion.setText("预约详情");
+            holder.rushpurchase.setText("立即预约");
+            holder.conversion.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (fragment != null){
+                        fragment.startFragment(new HomeIntegerSubscribeDetails());//预约详情
+                    }
+                }
+            });
+            holder.rushpurchase.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (fragment != null){
+//                        fragment.startFragment(new HomeConversionSubscribeFragment());//兑换预约
+                        //立即预约
+                        dialogIndex++;
+                        if (dialogIndex % 3 == 0){
+                            ImmediatelyConversionDialog immediatelyConversionDialog = new ImmediatelyConversionDialog(context , R.style.MeiGuiMeiShiSecondMyorderFive , false);
+                            immediatelyConversionDialog.show();
+                        }else if (dialogIndex % 3 == 1){
+                            ImmediatelyConversionDialog immediatelyConversionDialog = new ImmediatelyConversionDialog(context , R.style.MeiGuiMeiShiSecondMyorderFive , true);
+                            immediatelyConversionDialog.show();
+                        }else if (dialogIndex % 3 == 2){
+                            MessageWarmRequestDialog messageWarmRequestDialog = new MessageWarmRequestDialog(context , R.style.MeiGuiMeiShiSecondMyorderFive);
+                            messageWarmRequestDialog.show();
+                        }
+
+                    }
+                }
+            });
         }
         holder.state.setText(init.getState());
         holder.imageUrl.setImageResource(init.getImageUrl());
@@ -131,6 +176,16 @@ public class EverydayConversionAdapter extends BaseAdapter {
         holder.money.setText(init.getMoney());
         holder.integerMoney.setText(init.getIntegerMoney());
         holder.number.setText(init.getNumber());
+        holder.rule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (fragment != null){
+                    //兑换规则
+                    fragment.startFragment(new ConversionRuleFragment());
+                }
+            }
+        });
         return view;
     }
 

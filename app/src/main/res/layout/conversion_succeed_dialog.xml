@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        >
+
+        <TextView
+            android:id="@+id/conversion_succeed_dialog_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兑换成功"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff0000"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/conversion_succeed_dialog_lible"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请于\''"
+
+                android:textSize="13sp"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="礼品寄存处"
+                android:textSize="13sp"
+                android:textColor="#0686b3"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\''查看兑换礼品"
+
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

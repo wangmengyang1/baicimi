@@ -140,16 +140,22 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
         int id = view.getId();
         switch (id) {
             case R.id.change_ranking:
-                startFragment(new ChangeRankingFragment(), null);
+                //兑换排行
+//                startFragment(new ChangeRankingFragment(), null);
+                startFragment(new HomeIntegerGoodsConversionRanking(), null);
                 break;
             case R.id.news_things:
                 startFragment(new NewUserStoreFragment(), null);
                 break;
             case R.id.free_area:
-                startFragment(new FreeAreaFragment(), null);
+                //免费礼品
+//                startFragment(new FreeAreaFragment(), null);
+                startFragment(new HomeIntegerFreeGiftFragment(), null);
                 break;
             case R.id.jifen_rule:
-                startFragment(new PointsRuleFragment(), null);
+                //积分规则
+//                startFragment(new PointsRuleFragment(), null);
+                startFragment(new HomeIntegerRuleFragmet(), null);
                 break;
             case R.id.sigin_btn:
                 showPopwindowSigin();
