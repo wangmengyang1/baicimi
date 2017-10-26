@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <TextView
+            android:id="@+id/gether_listview_adapter_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.刮开积分码。"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="8dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/gether_listview_adapter_imageurl"
+            android:layout_width="112dp"
+            android:layout_height="88dp"
+            android:src="@drawable/user_integer_image_05"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/gether_listview_adapter_more"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:id="@+id/gether_listview_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在百次幂积分商城上兑换礼品（礼品包含大牌化妆品，使用日用品，进口母婴产品等高品质产品）"
+            android:layout_toRightOf="@+id/gether_listview_adapter_imageurl"
+            android:layout_marginLeft="15dp"
+            android:textSize="13sp"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

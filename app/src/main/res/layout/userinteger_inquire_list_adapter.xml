@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/userinteger_inquire_list_adapter_imageurl"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user_integer_image_02"
+            />
+
+        <TextView
+            android:id="@+id/userinteger_inquire_list_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M145684654684"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/userinteger_inquire_list_adapter_imageurl"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/userinteger_inquire_list_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分：1032135"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/userinteger_inquire_list_adapter_imageurl"
+            android:layout_marginLeft="8dp"
+            android:layout_alignBottom="@+id/userinteger_inquire_list_adapter_imageurl"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去看看"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/every_conversion_adapter_shape"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

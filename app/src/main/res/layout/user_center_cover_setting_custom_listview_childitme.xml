@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/user_center_cover_setting_custom_listview_childitem_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="持续时间"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="赠送积分"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/user_center_cover_setting_custom_listview_childitem_integer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="点击积分"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/user_center_cover_setting_custom_listview_childitem_layout_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_center_cover_setting_custom_listview_childitem_layout"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投放时间：2017/09/08 00:00"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间：2017/09/20 00:00"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_center_cover_setting_custom_listview_childitem_dateinteger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_center_cover_setting_custom_listview_childitem_layout_02"
+            android:text="10/小时"
+            android:textSize="13sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="45dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2/次"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/user_center_cover_setting_custom_listview_childitem_dateinteger"
+            android:layout_marginRight="25dp"
+            android:textSize="13sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

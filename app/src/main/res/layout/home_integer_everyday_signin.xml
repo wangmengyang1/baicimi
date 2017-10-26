@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/home_integer_everyday_signin_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/home_integer_everyday_signin__lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="每日签到"
+            android:textColor="#737373"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/brand_fragment_second_image_13"
+            android:padding="6dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/home_integer_everyday_signin__scanning"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/brand_fragment_second_image_12"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="28dp"
+            android:background="@drawable/brand_fragment_second_edittext_layer_list"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:textSize="12sp"
+            android:paddingLeft="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9月"
+                    android:textSize="13sp"
+                    />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/down_image_black_02"
+                    android:layout_marginLeft="4dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="连续签到"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 15 "
+                        android:textSize="13sp"
+                        android:textColor="#049ed0"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="天"
+                        />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已签到"
+                    android:textSize="13sp"
+                    android:padding="2dp"
+                    android:background="#eeeeee"
+                    android:textColor="@color/white"
+                    />
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="#737373"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <GridView
+                android:id="@+id/home_integer_everyday_signin_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:numColumns="5"
+                android:verticalSpacing="2dp"
+                android:horizontalSpacing="2dp"
+                android:scrollbars="none"
+                ></GridView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签到规则："
+                android:layout_marginTop="30dp"
+                android:textSize="13sp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.签到即送积分，连续签到则每天都比前一天多获取1积分。"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.如有漏签，之前累计签到天数归零，需重新累计。"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.连续签到15天，30天，45天，60天，100天均有礼品相赠。"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="30dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

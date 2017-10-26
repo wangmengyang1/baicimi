@@ -145,7 +145,9 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
                 startFragment(new HomeIntegerGoodsConversionRanking(), null);
                 break;
             case R.id.news_things:
-                startFragment(new NewUserStoreFragment(), null);
+                //新人专区
+//                startFragment(new NewUserStoreFragment(), null);
+                startFragment(new HomeIntegerNewPeoplePrefecture(), null);
                 break;
             case R.id.free_area:
                 //免费礼品
@@ -158,7 +160,9 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
                 startFragment(new HomeIntegerRuleFragmet(), null);
                 break;
             case R.id.sigin_btn:
-                showPopwindowSigin();
+//                showPopwindowSigin();
+                //每日签到
+                startFragment(new HomeIntegerEverydaySignin(), null);
                 break;
             case R.id.float_btn:
                 showPopwindowPointOne();

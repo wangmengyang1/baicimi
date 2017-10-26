@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="4dp">
+
+        <ImageView
+            android:id="@+id/usercenter_userintger_fragment_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:padding="4dp"
+            android:src="@drawable/back_image_black" />
+
+        <TextView
+            android:id="@+id/usercenter_userintger_fragment_lible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="会员积分"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:padding="6dp"
+            android:src="@drawable/brand_fragment_second_image_13" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/usercenter_userintger_fragment_scanning"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/brand_fragment_second_image_12" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/brand_fragment_second_edittext_layer_list"
+            android:hint=""
+            android:paddingLeft="8dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="搜索"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/usercenter_userinteger_fragment_inquire"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="积分查询"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="#eeeeee"
+            />
+        <TextView
+            android:id="@+id/usercenter_userinteger_fragment_use"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="使用积分"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+
+            />
+        <TextView
+            android:id="@+id/usercenter_userinteger_fragment_gather"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="收集积分"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+
+            />
+        <TextView
+            android:id="@+id/usercenter_userinteger_fragment_earn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="赚取积分"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            >
+
+            <FrameLayout
+                android:id="@+id/usercenter_userinteger_fragment_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

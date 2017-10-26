@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/add_receipt_dialog_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/add_receipt_dialog_lible"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投放时间："
+                android:layout_marginTop="4dp"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您确定取消\''宁菲圣诞礼遇\''主题封面吗？"
+                android:maxLines="1"
+                android:layout_marginTop="4dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余时间：3小时："
+                android:layout_marginTop="4dp"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/add_receipt_dialog_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/cover_setting_first_cancle_dialog_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textSize="13sp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="#eeeeee"
+                />
+            <TextView
+                android:id="@+id/cover_setting_first_cancle_dialog_dissmess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不取消"
+                android:textSize="13sp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="#eeeeee"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

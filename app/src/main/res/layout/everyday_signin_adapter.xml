@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:id="@+id/every_day_signin_adapter_relativelayout_01"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#f17e8b"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:id="@+id/every_day_signin_adapter_layout_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/every_day_signin_adapter_signindate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已签到"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/every_day_signin_adapter_layout_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/every_day_signin_adapter_layout_01"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获取"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/every_day_signin_adapter_signinNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/every_day_signin_adapter_relativelayout_02"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#d2d2d2"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/everyday_sigini_adapter_layout02_signinDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/everyday_sigini_adapter_layout02_signinDate"
+                android:layout_toRightOf="@+id/everyday_sigini_adapter_layout02_signinDate"
+                android:text="未签到"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/every_day_signin_adapter_relativelayout_03"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#d2d2d2"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/everyday_sigini_adapter_layout03_signinDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/every_day_signin_adapter_relativelayout_04"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#d2d2d2"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/timedate_image"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

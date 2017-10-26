@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/user_integer_image_01"
+                android:scaleType="fitXY"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#eeeeee"
+                />
+
+
+            <ListView
+                android:id="@+id/userinteger_fragment_inquire_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="4dp"
+                android:divider="#eeeeee"
+                android:scrollbars="none"
+                ></ListView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#eeeeee"
+                />
+
+            <GridView
+                android:id="@+id/userinteger_fragment_inquire_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:scrollbars="none"
+                ></GridView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:paddingBottom="40dp"
+                android:background="#eeeeee"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="百次幂当前会员积分已经累计到102213651分了奥，"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="快去看看你的积分吧！"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_marginTop="4dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击查询"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/every_conversion_adapter_shape"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

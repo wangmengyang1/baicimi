@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/integer_particulars_layout_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@+id/automatic_selection_layout_02"
+            android:layout_marginTop="6dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击积分即独立IP访问你的个人中心，"
+                android:textSize="13sp"
+                android:layout_marginLeft="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你所获得的积分。"
+                android:textSize="13sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/integer_particulars_diessmess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="懂了"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="#eeeeee"
+            android:layout_below="@+id/integer_particulars_layout_03"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/eran_listview_adapter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/eran_listview_adapter_imageurl"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/user_integer_image_06"
+                />
+
+            <TextView
+                android:id="@+id/eran_listview_adapter_lible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="01.推荐给好友"
+                android:layout_marginLeft="15dp"
+                />
+
+            <View
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/eran_listview_adapter_morefirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="了解详情"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:background="@drawable/every_conversion_adapter_shape"
+                />
+            <TextView
+                android:id="@+id/eran_listview_adapter_moresecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="现在推荐"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:background="@drawable/every_conversion_adapter_shape"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/eran_listview_adapter_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#eeeeee"
+            android:layout_below="@+id/eran_listview_adapter_layout"
+            android:layout_marginTop="6dp"
+            />
+
+        <TextView
+            android:id="@+id/eran_listview_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="线上购买：在百次幂商城购买任意产品都可获得积分，系统根据成交金额将自动获得的积分转到您的个人积分账户中，线下购买，在实体店购买产品，刮开瓶身积分码并输入，积分立即累计到个人账户。"
+            android:textSize="13sp"
+            android:layout_below="@+id/eran_listview_adapter_view"
+            android:layout_marginTop="8dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

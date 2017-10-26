@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/use_listview_adapter_imageurl"
+            android:layout_width="112dp"
+            android:layout_height="88dp"
+            android:src="@drawable/user_integer_image_04"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/use_listview_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在百次幂积分商城上兑换礼品（礼品包含大牌化妆品，使用日用品，进口母婴产品等高品质产品）"
+            android:layout_toRightOf="@+id/use_listview_adapter_imageurl"
+            android:layout_marginLeft="15dp"
+            android:textSize="13sp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/use_listview_adapter_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现在兑换"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/every_conversion_adapter_shape"
+            android:layout_alignBottom="@+id/use_listview_adapter_imageurl"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -71,6 +71,13 @@ public class HomeIntegerFreeGiftAdapter extends BaseAdapter{
 
 //        holder.layout_lible.setText(init.getLible());
 
+        if (!(init.getHeadLible().equals("ischeck"))){
+            holder.layout_lible.setVisibility(View.VISIBLE);
+            holder.layout_lible.setText(init.getHeadLible());
+        }else {
+            holder.layout_lible.setVisibility(View.INVISIBLE);
+        }
+
         return view;
     }
 

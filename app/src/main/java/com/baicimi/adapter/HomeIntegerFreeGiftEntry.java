@@ -10,6 +10,9 @@ public class HomeIntegerFreeGiftEntry {
     private String money;
     private String integerNumber;
     private String number;
+    private String headLible;
+
+
 
     public HomeIntegerFreeGiftEntry(int imageUrl, String lible, String money, String integerNumber, String number) {
         this.imageUrl = imageUrl;
@@ -19,6 +22,24 @@ public class HomeIntegerFreeGiftEntry {
         this.number = number;
     }
 
+
+    public HomeIntegerFreeGiftEntry(int imageUrl, String lible, String money, String integerNumber, String number, String headLible) {
+        this.imageUrl = imageUrl;
+        this.lible = lible;
+        this.money = money;
+        this.integerNumber = integerNumber;
+        this.number = number;
+        this.headLible = headLible;
+    }
+
+
+    public String getHeadLible() {
+        return headLible;
+    }
+
+    public void setHeadLible(String headLible) {
+        this.headLible = headLible;
+    }
 
     public int getImageUrl() {
         return imageUrl;

@@ -43,7 +43,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
     private List<List<String>> ChildrenData;
     private List<Integer> groupDageImage  = new ArrayList<>();
 
-    private ImageView back;
+    private ImageView back , headImage;
 
     private FragmentManager fm;
     private List<BaseFragment> fragments = new ArrayList<>();
@@ -52,13 +52,15 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
     private String showFragemtnTag = "null";
 
     private LinearLayout shopping, community;
-    private TextView shopping_tv, community_tv;
+    private TextView shopping_tv, community_tv , shardSDk;
 
     //今日推荐
     private GridView gridview_03;
     private List<UserCenterHomePageEntrySecond> list_03 = new ArrayList<>();
     private UserCenterHomePageSecondAdapter adapter_03;
     private LinearLayout showLayout;
+
+    private int shardSdk;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -88,6 +90,12 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
         initRecommend();
 
         showLayout = (LinearLayout) view.findViewById(R.id.user_center_home_page_head_fragment_layout);
+
+
+        headImage = (ImageView) view.findViewById(R.id.user_headimage);
+        headImage.setOnClickListener(this);
+        shardSDk = (TextView) view.findViewById(R.id.user_name);
+        shardSDk.setOnClickListener(this);
 
         return view;
     }
@@ -189,6 +197,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     //我的等级
                 } else if (i == 2 && i1 == 1) {
                     //会员积分
+                    startFragment(new UserCenterUserIntegerFragment());
                 }else if (i == 4 && i1 == 0) {
                     //发起亲密付
                     startFragment(new UserCenterHomepageHeadIntimacyRequest());
@@ -342,6 +351,24 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                 shopping_tv.setBackgroundResource(R.drawable.background_null);
                 initShowFragment(1);
                 showLayout.setVisibility(View.GONE);
+                break;
+            case R.id.user_headimage:
+                //封面设置
+//                startFragment(new UserCenterCoverSettingFragment());
+                startFragment(new UserCenterCoverSettingCatalogyFragment());
+                break;
+
+            case R.id.user_name:
+
+                if (shardSdk % 2 == 0){
+                    //分享
+                    startFragment(new UserCenterHomePageShardSDK());
+                }else {
+                    //产品分享
+                    startFragment(new UserCenterHomePageProductShardSDK());
+                }
+
+                shardSdk++;
                 break;
         }
     }

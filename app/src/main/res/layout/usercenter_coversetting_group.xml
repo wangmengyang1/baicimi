@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:descendantFocusability="blocksDescendants"
+            >
+
+            <CheckBox
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/checkbox_selector_two"
+                android:button="@null"
+                android:focusable="false"
+                />
+
+            <TextView
+                android:id="@+id/usercenter_coversetting_group_lible"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="宁菲"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投放计划"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/every_conversion_adapter_shape"
+                android:layout_marginLeft="8dp"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预览"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/every_conversion_adapter_shape"
+                android:layout_marginLeft="8dp"
+                android:textSize="13sp"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详情"
+                android:textSize="13sp"
+                />
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/down_image_black_02"
+                android:layout_marginLeft="8dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

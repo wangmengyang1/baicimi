@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/usercenter_homepage_product_shardsdk_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/usercenter_homepage_product_shardsdk_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="产品分享"
+
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/brand_fragment_second_image_13"
+            android:padding="6dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/usercenter_homepage_product_shardsdk_scanning"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/brand_fragment_second_image_12"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="28dp"
+            android:background="@drawable/brand_fragment_second_edittext_layer_list"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint=""
+            android:textSize="12sp"
+            android:paddingLeft="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:src="@drawable/usercenter_home_page_shardsdk_image_02"
+                android:scaleType="fitXY"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="0.6dp"
+                    android:background="#737373"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分享到"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="13sp"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="0.6dp"
+                    android:background="#737373"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/hudie_img"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="全球生活汇"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/baicimi_logo1"
+                    android:layout_marginLeft="40dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="幂友圈"
+                    android:layout_marginLeft="10dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/usercenter_home_page_shardsdk_image_03"
+                            />
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/usercenter_home_page_shardsdk_image_03"
+                            android:layout_marginLeft="15dp"
+                            />
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/usercenter_home_page_shardsdk_image_03"
+                            android:layout_marginLeft="15dp"
+                            />
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/usercenter_home_page_shardsdk_image_03"
+                            android:layout_marginLeft="15dp"
+                            />
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/usercenter_home_page_shardsdk_image_03"
+                            android:layout_marginLeft="15dp"
+                            />
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/usercenter_home_page_shardsdk_image_03"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/add_image_black_64"
+                    android:layout_marginLeft="15dp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="10dp"
+                />
+
+            <GridView
+                android:id="@+id/usercenter_homepage_product_shardsdk_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="6"
+                android:horizontalSpacing="0dp"
+                android:verticalSpacing="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="none"
+                android:layout_marginTop="15dp"
+                ></GridView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
