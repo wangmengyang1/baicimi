@@ -86,6 +86,17 @@
                     />
 
 
+
+                <TextView
+                    android:id="@+id/user_center_home_page_head_fragment_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置"
+                    android:textSize="13sp"
+                    android:layout_alignParentRight="true"
+                    android:padding="15dp"
+                    />
+
             </RelativeLayout>
 
             <LinearLayout

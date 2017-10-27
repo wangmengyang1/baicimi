@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        >
+
+
+        <TextView
+            android:id="@+id/mi_fridends_jurisdiction_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="允许幂友查看我的购物车"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/mi_fridends_jurisdiction_edittext"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mi_fridends_jurisdiction_lible"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/every_conversion_adapter_shape"
+            android:hint="输入搜索"
+            android:textSize="13sp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            />
+
+        <ListView
+            android:id="@+id/mi_fridends_jurisdiction_listview"
+            android:layout_width="230dp"
+            android:layout_height="220dp"
+            android:layout_below="@+id/mi_fridends_jurisdiction_edittext"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:dividerHeight="0dp"
+            android:divider="@color/white"
+            ></ListView>
+
+        <TextView
+            android:id="@+id/mi_fridends_jurisdiction_dissmess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看"
+            android:textSize="13sp"
+            android:background="@drawable/every_conversion_adapter_shape"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_below="@+id/mi_fridends_jurisdiction_listview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

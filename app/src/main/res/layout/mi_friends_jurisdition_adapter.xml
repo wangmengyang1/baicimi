@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/mi_fridends_jurisdiction_adapter_imageurl"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/mi_friends_jurisdtion_image_02"
+                />
+
+            <TextView
+                android:id="@+id/mi_fridends_jurisdiction_adapter_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="越努力越幸运"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                />
+
+            <CheckBox
+                android:id="@+id/mi_fridends_jurisdiction_adapter_checkbox"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:button="@null"
+                android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                android:checked="true"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

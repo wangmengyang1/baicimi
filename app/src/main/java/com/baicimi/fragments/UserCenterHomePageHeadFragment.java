@@ -62,6 +62,8 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
     private int shardSdk;
 
+    private TextView setting;
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.user_center_home_page_head_fragment , container , false);
@@ -97,6 +99,9 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
         shardSDk = (TextView) view.findViewById(R.id.user_name);
         shardSDk.setOnClickListener(this);
 
+
+        setting = (TextView) view.findViewById(R.id.user_center_home_page_head_fragment_setting);
+        setting.setOnClickListener(this);
         return view;
     }
 
@@ -369,6 +374,10 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                 }
 
                 shardSdk++;
+                break;
+            case R.id.user_center_home_page_head_fragment_setting:
+                //设置界面
+                startFragment(new UserCenterHomePagerSetting());
                 break;
         }
     }

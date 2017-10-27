@@ -113,7 +113,7 @@
                 android:padding="4dp"
                 />
             <TextView
-
+                android:id="@+id/setting_privacy_fragment_usercenterprivacy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="个人中心查看权限"
@@ -121,7 +121,7 @@
                 android:padding="4dp"
                 />
             <TextView
-
+                android:id="@+id/setting_privacy_fragment_userdateprivacy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="个人资料查看权限"
@@ -130,7 +130,7 @@
                 />
 
             <TextView
-
+                android:id="@+id/setting_privacy_fragment_remfriendsprivacy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="推荐好友权限"
@@ -139,7 +139,7 @@
                 />
 
             <TextView
-
+                android:id="@+id/setting_privacy_mifriends_privacy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="幂友权限"
@@ -148,7 +148,7 @@
                 />
 
             <TextView
-
+                android:id="@+id/setting_privacy_message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="消息管理权限"
@@ -156,7 +156,7 @@
                 android:padding="4dp"
                 />
             <TextView
-
+                android:id="@+id/setting_privacy_comment_manager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="评论管理权限"
@@ -165,7 +165,7 @@
                 />
 
             <TextView
-
+                android:id="@+id/setting_privacy_fragment_blockmanagement"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="屏蔽管理权限"
@@ -174,7 +174,7 @@
                 />
 
             <TextView
-
+                android:id="@+id/setting_privacy_fragment_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="位置管理权限"
