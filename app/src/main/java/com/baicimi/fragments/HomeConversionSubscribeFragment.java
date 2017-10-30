@@ -5,7 +5,9 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
+import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
 
@@ -33,6 +35,7 @@ public class HomeConversionSubscribeFragment extends BaseFragment implements Vie
             brandView_07 ,brandView_08 ,brandView_09 ,brandView_10 ,brandView_11 ,brandView_12 ;
 
 
+    private ImageView back;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -46,6 +49,9 @@ public class HomeConversionSubscribeFragment extends BaseFragment implements Vie
 
         //fragment显示
         initShowFragment(0);
+
+        back = (ImageView) view.findViewById(R.id.home_conversion_subscribe_fragment_back);
+        back.setOnClickListener(this);
         return view;
     }
 
@@ -149,6 +155,9 @@ public class HomeConversionSubscribeFragment extends BaseFragment implements Vie
                 break;
             case R.id.home_conversion_subscrive_12:
                 startFragment(new HomeIntegerHotBrandFragment());
+                break;
+            case R.id.home_conversion_subscribe_fragment_back:
+                ((MainActivity)getActivity()).goBack();//返回到上一级页面
                 break;
 
         }

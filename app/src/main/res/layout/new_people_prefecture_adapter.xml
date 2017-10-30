@@ -96,7 +96,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="立即兑换"
+                    android:text="立即规则"
                     android:background="@drawable/every_conversion_adapter_shape"
                     android:paddingTop="3dp"
                     android:paddingBottom="3dp"

@@ -33,6 +33,7 @@
                 android:text="投放时间："
                 android:layout_marginTop="4dp"
                 android:visibility="invisible"
+                android:textColor="#737373"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -40,6 +41,7 @@
                 android:text="您确定取消\''宁菲圣诞礼遇\''主题封面吗？"
                 android:maxLines="1"
                 android:layout_marginTop="4dp"
+                android:textColor="#737373"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -47,6 +49,7 @@
                 android:text="剩余时间：3小时："
                 android:layout_marginTop="4dp"
                 android:visibility="invisible"
+                android:textColor="#737373"
                 />
 
         </LinearLayout>
@@ -71,6 +74,7 @@
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:background="#eeeeee"
+                android:textColor="#737373"
                 />
             <TextView
                 android:id="@+id/cover_setting_first_cancle_dialog_dissmess"
@@ -84,6 +88,7 @@
                 android:paddingRight="15dp"
                 android:background="#eeeeee"
                 android:layout_marginLeft="15dp"
+                android:textColor="#737373"
                 />
 
         </LinearLayout>

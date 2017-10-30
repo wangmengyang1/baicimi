@@ -4,6 +4,8 @@ import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.widget.NumberPicker;
 import android.widget.TextView;
 
 import com.baicimi.R;
@@ -27,6 +29,8 @@ public class EveryDayConversionDialog extends Dialog {
     private TextView dissmess;
     private BaseFragment baseFragment;
 
+    private NumberPicker numberPickerMonth;
+
     public EveryDayConversionDialog(Context context, int themeResId , BaseFragment baseFragment ) {
         super(context, themeResId);
         this.baseFragment = baseFragment;
@@ -43,6 +47,9 @@ public class EveryDayConversionDialog extends Dialog {
                 dismiss();
             }
         });
-
+//        numberPickerMonth = (NumberPicker) findViewById(R.id.date_time_fragment_month);
+//        numberPickerMonth.setMaxValue(12);
+//        numberPickerMonth.setMinValue(1);
+//        numberPickerMonth.setValue(10);
     }
 }

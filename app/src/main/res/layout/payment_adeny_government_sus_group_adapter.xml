@@ -28,16 +28,13 @@
             android:layout_centerVertical="true"
             />
 
-        <CheckBox
+        <ImageView
             android:id="@+id/payment_adeny_government_susgroup_adapter_checkbox"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:background="@drawable/payment_adeny_government_sus_group_checkbox_select"
-            android:button="@null"
             android:layout_alignParentRight="true"
-            android:checked="false"
             android:layout_centerVertical="true"
-            android:visibility="invisible"
+            android:src="@drawable/down_image_black_02"
             />
 
         <TextView

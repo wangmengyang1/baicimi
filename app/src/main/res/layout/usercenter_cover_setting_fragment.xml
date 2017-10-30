@@ -146,7 +146,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@mipmap/right_img"
-                    android:layout_marginLeft="4dp"
+                    android:layout_marginLeft="8dp"
                     />
             </LinearLayout>
 
@@ -239,6 +239,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/usercenter_cover_setting_fragment_confirm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="确定"

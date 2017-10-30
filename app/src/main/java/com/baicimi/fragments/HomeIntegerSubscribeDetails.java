@@ -3,8 +3,10 @@ package com.baicimi.fragments;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.adapter.HomeintegerConversionDetailsAdapter;
 import com.baicimi.base.BaseFragment;
@@ -18,12 +20,13 @@ import java.util.List;
  * 首页  积分商城 预约详情
  */
 
-public class HomeIntegerSubscribeDetails extends BaseFragment {
+public class HomeIntegerSubscribeDetails extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private ListView listView;
     private List<HomeintegerConversionDetailsEntry> list = new ArrayList<>();
     private HomeintegerConversionDetailsAdapter adapter;
+    private ImageView back;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -31,6 +34,9 @@ public class HomeIntegerSubscribeDetails extends BaseFragment {
 
         //listview布局填充
         initListView();
+
+        back = (ImageView) view.findViewById(R.id.home_integer_subscribe_details_fragment_back);
+        back.setOnClickListener(this);
 
         return view;
     }
@@ -79,4 +85,12 @@ public class HomeIntegerSubscribeDetails extends BaseFragment {
         listView.setLayoutParams(params);
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.home_integer_subscribe_details_fragment_back:
+                ((MainActivity)getActivity()).goBack();//返回到上一级页面
+                break;
+        }
+    }
 }

@@ -24,6 +24,7 @@
             android:text="设置信息提醒后，"
             android:layout_centerHorizontal="true"
             android:textSize="13sp"
+            android:textColor="#737373"
             />
         <TextView
             android:id="@+id/every_day_conversion_dialog_head_02"
@@ -33,6 +34,7 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/every_day_conversion_dialog_head_01"
             android:textSize="13sp"
+            android:textColor="#737373"
             />
 
         <View
@@ -60,6 +62,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
                 android:text="手机号码：13189026359"
+                android:textColor="#737373"
                 />
 
             <TextView
@@ -93,6 +96,29 @@
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
                 android:text="提醒时间："
+                android:textColor="#737373"
+                />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/every_conversion_adapter_shape"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:textSize="13sp"
+                android:hint="10"
+                android:textColor="#737373"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="月"
+                android:layout_marginLeft="4dp"
+                android:textColor="#737373"
                 />
 
             <EditText
@@ -105,6 +131,8 @@
                 android:paddingBottom="1dp"
                 android:textSize="13sp"
                 android:hint="10"
+                android:layout_marginLeft="4dp"
+                android:textColor="#737373"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -112,6 +140,7 @@
                 android:textSize="13sp"
                 android:text="日"
                 android:layout_marginLeft="4dp"
+                android:textColor="#737373"
                 />
 
             <EditText
@@ -125,6 +154,7 @@
                 android:textSize="13sp"
                 android:hint="10"
                 android:layout_marginLeft="4dp"
+                android:textColor="#737373"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -132,40 +162,9 @@
                 android:textSize="13sp"
                 android:text="时"
                 android:layout_marginLeft="4dp"
+                android:textColor="#737373"
                 />
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/every_conversion_adapter_shape"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:paddingTop="1dp"
-                android:paddingBottom="1dp"
-                android:textSize="13sp"
-                android:hint="10"
-                android:layout_marginLeft="4dp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="13sp"
-                android:text="分"
-                android:layout_marginLeft="4dp"
-                />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/every_conversion_adapter_shape"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:paddingTop="1dp"
-                android:paddingBottom="1dp"
-                android:textSize="13sp"
-                android:hint="10"
-                android:layout_marginLeft="4dp"
-                />
         </LinearLayout>
 
         <TextView
@@ -182,6 +181,7 @@
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:textSize="13sp"
+            android:textColor="#737373"
             />
 
     </RelativeLayout>

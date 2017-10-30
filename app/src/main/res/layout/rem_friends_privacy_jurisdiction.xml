@@ -104,6 +104,7 @@
                 />
 
             <LinearLayout
+                android:id="@+id/rem_friends_privacy_jurisdiction_layout_01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -111,6 +112,7 @@
                 >
 
                 <CheckBox
+                    android:id="@+id/rem_friends_privacy_jurisdiction_checkbox_01"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:button="@null"
@@ -129,6 +131,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/rem_friends_privacy_jurisdiction_layout_02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -136,6 +139,7 @@
                 >
 
                 <CheckBox
+                    android:id="@+id/rem_friends_privacy_jurisdiction_checkbox_02"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:button="@null"
@@ -161,6 +165,7 @@
                 />
 
             <LinearLayout
+                android:id="@+id/rem_friends_privacy_jurisdiction_layout_03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -168,6 +173,7 @@
                 >
 
                 <CheckBox
+                    android:id="@+id/rem_friends_privacy_jurisdiction_checkbox_03"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:button="@null"
@@ -186,6 +192,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/rem_friends_privacy_jurisdiction_layout_04"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -193,11 +200,11 @@
                 >
 
                 <CheckBox
+                    android:id="@+id/rem_friends_privacy_jurisdiction_checkbox_04"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:button="@null"
                     android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
-
                     />
 
                 <TextView

@@ -54,10 +54,10 @@ public class UserIntegralFragmentFirst extends BaseFragment {
     //数据源填充
     private void LoadListData() {
         groupDageImage.clear();
-        groupDageImage.add(R.drawable.user_center_head_image_01);
-        groupDageImage.add(R.drawable.user_center_head_image_02);
-        groupDageImage.add(R.drawable.user_center_head_image_03);
-        groupDageImage.add(R.drawable.user_center_head_image_04);
+        groupDageImage.add(R.drawable.image_usercenter_12);
+        groupDageImage.add(R.drawable.image_usercenter_13);
+        groupDageImage.add(R.drawable.image_usercenter_14);
+        groupDageImage.add(R.drawable.image_usercenter_15);
 
         GroupData = new ArrayList<String>();
         GroupData.add("我的积分");

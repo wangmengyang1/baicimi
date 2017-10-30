@@ -44,7 +44,6 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
 
 
 
-
     private PopupWindow window,window_point1,window_point2,window_point3;
     private CheckBox checkBox1,checkBox2,checkBox3,checkBox4,checkBox5,checkBox6,checkBox7;
     private TextView textView1,textView2,textView3,textView4,textView5,textView6,textView7,

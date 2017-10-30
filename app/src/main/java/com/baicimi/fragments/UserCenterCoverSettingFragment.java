@@ -14,8 +14,10 @@ import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.CustomGovernmentEntry;
 import com.baicimi.view.AutomaticSelectionDialog;
 import com.baicimi.view.CoverSettingFirstDialog;
+import com.baicimi.view.CoverSettingFirstReplaceDialog;
 import com.baicimi.view.CustomExpandableListView;
 import com.baicimi.view.IntegerParticularsDialog;
+import com.baicimi.view.UserCenterCoverSettingPlanDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +38,7 @@ public class UserCenterCoverSettingFragment extends BaseFragment implements View
     private List<List<View>> childListSecond = new ArrayList<>();
     private UserCenterCoverSettingFragment.PaymentAdencyGovernmentCusAdaapter adencyGovernmentCusAdaapter;
     private UserCenterCoverSettingFragment.PaymentAdencyGovernmentCusAdaapter adencyGovernmentCusAdaapterSecond;
-    private TextView management;
+    private TextView management , confirm;
 
     private CheckBox checkBox;
 
@@ -61,6 +63,9 @@ public class UserCenterCoverSettingFragment extends BaseFragment implements View
 
         checkBox = (CheckBox) view.findViewById(R.id.usercenter_cover_setting_fragment_checkbox);
         checkBox.setOnClickListener(this);
+
+        confirm = (TextView) view.findViewById(R.id.usercenter_cover_setting_fragment_confirm);
+        confirm.setOnClickListener(this);
 
         return view;
     }
@@ -117,6 +122,12 @@ public class UserCenterCoverSettingFragment extends BaseFragment implements View
                 AutomaticSelectionDialog automaticSeoectionDialog = new AutomaticSelectionDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
                 automaticSeoectionDialog.show();
                 break;
+            case R.id.usercenter_cover_setting_fragment_confirm:
+
+                CoverSettingFirstReplaceDialog coverSettingFirstReplaceDialog = new CoverSettingFirstReplaceDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                coverSettingFirstReplaceDialog.show();
+
+                break;
         }
     }
 
@@ -163,6 +174,8 @@ public class UserCenterCoverSettingFragment extends BaseFragment implements View
                 view = LayoutInflater.from(getContext()).inflate(R.layout.usercenter_coversetting_group , null);
                 holder = new UserCenterCoverGroupHolder();
                 holder.lible = (TextView) view.findViewById(R.id.usercenter_coversetting_group_lible);
+                holder.plan = (TextView) view.findViewById(R.id.usercenter_coversetting_group_plan);
+                holder.preview = (TextView) view.findViewById(R.id.usercenter_coversetting_group_preview);
                 view.setTag(holder);
             }else{
                 holder = (UserCenterCoverGroupHolder) view.getTag();
@@ -170,11 +183,28 @@ public class UserCenterCoverSettingFragment extends BaseFragment implements View
 
             holder.lible.setText(gruopList.get(i).getLible());
 
+            holder.plan.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    UserCenterCoverSettingPlanDialog userCenterCoverSettingPlanDialog = new UserCenterCoverSettingPlanDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                    userCenterCoverSettingPlanDialog.show();
+                }
+            });
+
+            holder.preview.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //封面预览
+                    startFragment(new UserCenterCoverSettingPreView());
+                }
+            });
+
             return view;
         }
 
         public class UserCenterCoverGroupHolder{
             private TextView lible;
+            private TextView plan , preview;
         }
 
 

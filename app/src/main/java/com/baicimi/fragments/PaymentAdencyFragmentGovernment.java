@@ -52,6 +52,9 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
     PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderFirst holder_01 = null;
     PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderSecond holder_02 = null;
     PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderThread holder_03 = null;
+    PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderFour holder_04 = null;
+    PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderFive holder_05 = null;
+    PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderSix holder_06 = null;
 
 
     private TextView dissmess;
@@ -59,9 +62,12 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
     private int index;
     private PopupWindow popupWindow;
 
+    private TextView lible;
+    private String libleS = "";
+
     @SuppressLint("ValidFragment")
-    public PaymentAdencyFragmentGovernment(int index) {
-        this.index = index;
+    public PaymentAdencyFragmentGovernment(String libleS) {
+        this.libleS = libleS;
     }
 
     public PaymentAdencyFragmentGovernment() {
@@ -83,6 +89,11 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
         dissmess = (TextView) view.findViewById(R.id.pryment_adency_fragment_government_dismesstv);
         dissmess.setOnClickListener(this);
 
+        if (libleS.equals("我的预售订单")){
+            lible = (TextView) view.findViewById(R.id.government_purchase_fragment_myorderform_lible);
+            lible.setText("支付尾款");
+        }
+
         return view;
     }
 
@@ -102,18 +113,15 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
         List<View> list_01 = new ArrayList<>();
         list_01.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_first, null));
         List<View> list_02 = new ArrayList<>();
-        list_01.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_second, null));
+        list_02.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_second, null));
         List<View> list_03 = new ArrayList<>();
-        list_01.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_thread, null));
+        list_03.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_thread, null));
         List<View> list_04 = new ArrayList<>();
-        list_01.add(LayoutInflater.from(getContext()).inflate(R.layout.fragment_null, null));
-        list_01.add(LayoutInflater.from(getContext()).inflate(R.layout.fragment_null, null));
+        list_04.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_four , null));
         List<View> list_05 = new ArrayList<>();
-        list_01.add(LayoutInflater.from(getContext()).inflate(R.layout.fragment_null, null));
-        list_01.add(LayoutInflater.from(getContext()).inflate(R.layout.fragment_null, null));
+        list_05.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_five, null));
         List<View> list_06 = new ArrayList<>();
-        list_01.add(LayoutInflater.from(getContext()).inflate(R.layout.fragment_null, null));
-        list_01.add(LayoutInflater.from(getContext()).inflate(R.layout.fragment_null, null));
+        list_06.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_six, null));
         childList.add(list_01);
         childList.add(list_02);
         childList.add(list_03);
@@ -186,10 +194,6 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
 
         @Override
         public int getChildrenCount(int i) {
-
-            if (i >= 3) {
-                return 0;
-            }
             return 1;
         }
 
@@ -278,6 +282,12 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
                         holder_01.checkBox01.setChecked(true);
                         holder_01.checkBox02.setChecked(false);
                         groupBoolean.get(i).get(i1).setIndex(0);
+
+                        gruopList.add(1 ,new CustomGovernmentEntry("配送时间", ""));
+                        List<View> list_02 = new ArrayList<>();
+                        list_02.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_second, null));
+                        childList.add(1 ,list_02);
+                        notifyDataSetChanged();
                     }
                 });
 
@@ -287,6 +297,9 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
                         holder_01.checkBox01.setChecked(false);
                         holder_01.checkBox02.setChecked(true);
                         groupBoolean.get(i).get(i1).setIndex(1);
+                        gruopList.remove(1);
+                        childList.remove(1);
+                        notifyDataSetChanged();
                     }
                 });
 //
@@ -296,6 +309,13 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
                         holder_01.checkBox01.setChecked(true);
                         holder_01.checkBox02.setChecked(false);
                         groupBoolean.get(i).get(i1).setIndex(0);
+
+
+                        gruopList.add(1 ,new CustomGovernmentEntry("配送时间", ""));
+                        List<View> list_02 = new ArrayList<>();
+                        list_02.add(LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_second, null));
+                        childList.add(1 ,list_02);
+                        notifyDataSetChanged();
                     }
                 });
                 holder_01.checkBox02.setOnClickListener(new View.OnClickListener() {
@@ -304,6 +324,10 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
                         holder_01.checkBox01.setChecked(false);
                         holder_01.checkBox02.setChecked(true);
                         groupBoolean.get(i).get(i1).setIndex(1);
+
+                        gruopList.remove(1);
+                        childList.remove(1);
+                        notifyDataSetChanged();
                     }
                 });
 
@@ -545,7 +569,144 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
                 });
 
                 return view;
-            } else {
+            }else if (i == 3){
+                view = null;
+                if (view == null){
+                    view = LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_four , null);
+                    holder_04 = new PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderFour();
+                    holder_04.first_checkbox = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_four_checkbox_first);
+                    holder_04.second_checkbox = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_four_checkbox_seconc);
+                    holder_04.thread_checkbox = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_four_checkbox_thread);
+
+                    view.setTag(holder_04);
+                }else{
+                    holder_04 = (PaymentAdencyGovernmentCusChildHolderFour) view.getTag();
+                }
+
+                holder_04.first_checkbox.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_04.first_checkbox.setChecked(true);
+                        holder_04.second_checkbox.setChecked(false);
+                        holder_04.thread_checkbox.setChecked(false);
+                    }
+                });
+                holder_04.second_checkbox.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_04.first_checkbox.setChecked(false);
+                        holder_04.second_checkbox.setChecked(true);
+                        holder_04.thread_checkbox.setChecked(false);
+                    }
+                });
+                holder_04.thread_checkbox.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_04.first_checkbox.setChecked(false);
+                        holder_04.second_checkbox.setChecked(false);
+                        holder_04.thread_checkbox.setChecked(true);
+                    }
+                });
+
+                return view;
+            }else if (i == 4){
+                view = null;
+                if (view == null){
+                    view = LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_five , null);
+                    holder_05 = new PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderFive();
+                    holder_05.layout_01 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_five_layout_01);
+                    holder_05.layout_02 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_five_layout_02);
+                    holder_05.layout_03 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_five_layout_03);
+
+                    holder_05.first_checkbox = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_five_checkbox_01);
+                    holder_05.second_checkbox = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_five_checkbox_02);
+                    holder_05.thread_checkbox = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_five_checkbox_03);
+
+                    view.setTag(holder_05);
+                }else{
+                    holder_05 = (PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderFive) view.getTag();
+                }
+
+                holder_05.layout_01.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_05.first_checkbox.setChecked(true);
+                        holder_05.second_checkbox.setChecked(false);
+                        holder_05.thread_checkbox.setChecked(false);
+                    }
+                });
+                holder_05.layout_02.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_05.first_checkbox.setChecked(false);
+                        holder_05.second_checkbox.setChecked(true);
+                        holder_05.thread_checkbox.setChecked(false);
+                    }
+                });
+                holder_05.layout_03.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_05.first_checkbox.setChecked(false);
+                        holder_05.second_checkbox.setChecked(false);
+                        holder_05.thread_checkbox.setChecked(true);
+                    }
+                });
+
+
+                holder_05.first_checkbox.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_05.first_checkbox.setChecked(true);
+                        holder_05.second_checkbox.setChecked(false);
+                        holder_05.thread_checkbox.setChecked(false);
+                    }
+                });
+                holder_05.second_checkbox.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_05.first_checkbox.setChecked(false);
+                        holder_05.second_checkbox.setChecked(true);
+                        holder_05.thread_checkbox.setChecked(false);
+                    }
+                });
+                holder_05.thread_checkbox.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_05.first_checkbox.setChecked(false);
+                        holder_05.second_checkbox.setChecked(false);
+                        holder_05.thread_checkbox.setChecked(true);
+                    }
+                });
+
+                return view;
+            }else if (i == 5){
+                view = null;
+                if (view == null){
+                    view = LayoutInflater.from(getContext()).inflate(R.layout.payment_adency_gov_child_adapter_six , null);
+                    holder_06 = new PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderSix();
+                    holder_06.layout_01 = (LinearLayout) view.findViewById(R.id.payment_adency_gov_child_adapter_six_layout_01);
+                    holder_06.first_checkbox = (CheckBox) view.findViewById(R.id.payment_adency_gov_child_adapter_six_checkbox_01);
+
+                    view.setTag(holder_06);
+                }else{
+                    holder_06 = (PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusChildHolderSix) view.getTag();
+                }
+
+                holder_06.layout_01.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_06.first_checkbox.setChecked(!holder_06.first_checkbox.isChecked());
+                    }
+                });
+                holder_06.first_checkbox.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        holder_06.first_checkbox.setChecked(!holder_06.first_checkbox.isChecked());
+                    }
+                });
+
+                return view;
+            }else {
 
                 return null;
             }
@@ -578,6 +739,25 @@ public class PaymentAdencyFragmentGovernment extends BaseFragment implements Vie
             private CheckBox checkBox04;
             private CheckBox checkBox05;
         }
+
+        private class PaymentAdencyGovernmentCusChildHolderFour{
+            private CheckBox first_checkbox;
+            private CheckBox second_checkbox;
+            private CheckBox thread_checkbox;
+        }
+        private class PaymentAdencyGovernmentCusChildHolderFive{
+
+            private LinearLayout layout_01 , layout_02 ,layout_03 ;
+            private CheckBox first_checkbox;
+            private CheckBox second_checkbox;
+            private CheckBox thread_checkbox;
+        }
+
+        private class PaymentAdencyGovernmentCusChildHolderSix{
+            private LinearLayout layout_01;
+            private CheckBox first_checkbox;
+        }
+
 
 
         @Override

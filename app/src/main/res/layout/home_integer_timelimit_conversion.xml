@@ -107,8 +107,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="15dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 >
 
                 <LinearLayout

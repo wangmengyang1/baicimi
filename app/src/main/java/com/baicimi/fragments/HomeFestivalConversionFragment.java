@@ -42,11 +42,11 @@ public class HomeFestivalConversionFragment extends BaseFragment {
     private void initListView() {
         listView = (ListView) view.findViewById(R.id.home_festival_convetsion_fragment_listview);
         list.clear();
-        list.add(new EverydayConversionEntry("12月25日（圣诞节） 00:00" , "30天20小时8分" , R.drawable.home_integer_conversion_01 , "限量20瓶洗发水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
+        list.add(new EverydayConversionEntry("12月25日（圣诞节） 00:00" , "进行中" , R.drawable.home_integer_conversion_01 , "限量20瓶洗发水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
         list.add(new EverydayConversionEntry("12月25日（圣诞节） 00:00" , "30天20小时8分" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
         list.add(new EverydayConversionEntry("12月25日（圣诞节） 00:00" , "30天20小时8分" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
         list.add(new EverydayConversionEntry("12月25日（圣诞节） 00:00" , "30天20小时8分" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
-        list.add(new EverydayConversionEntry("12月25日（圣诞节） 00:00" , "30天20小时8分" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
+        list.add(new EverydayConversionEntry("12月25日（圣诞节） 00:00" , "兑换结束" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
         adapter = new EverydayConversionAdapter(list , getContext() , 2,this);
         listView.setAdapter(adapter);
         fixGrdiViewHeight03(listView);

@@ -38,11 +38,11 @@ public class HomeNewConversionFragment extends BaseFragment {
     private void initListView() {
         listView = (ListView) view.findViewById(R.id.home_new_convetsion_fragment_listview);
         list.clear();
-        list.add(new EverydayConversionEntry("10月5日 9:00" , "20天17小时6分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
-        list.add(new EverydayConversionEntry("10月5日 9:00" , "20天17小时6分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
-        list.add(new EverydayConversionEntry("10月5日 9:00" , "20天17小时6分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
-        list.add(new EverydayConversionEntry("10月5日 9:00" , "20天17小时6分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
-        list.add(new EverydayConversionEntry("10月5日 9:00" , "兑换结束" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
+        list.add(new EverydayConversionEntry("10月5日 9:00" , "进行中" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
+        list.add(new EverydayConversionEntry("10月5日 17:00" , "20天17小时6分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
+        list.add(new EverydayConversionEntry("10月5日 19:00" , "20天17小时6分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
+        list.add(new EverydayConversionEntry("10月5日 20:00" , "20天17小时6分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
+        list.add(new EverydayConversionEntry("10月5日 7:00" , "兑换结束" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
         adapter = new EverydayConversionAdapter(list , getContext() , this);
         listView.setAdapter(adapter);
         fixGrdiViewHeight03(listView);

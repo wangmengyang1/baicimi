@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="55dp"
+        android:paddingRight="55dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        >
+
+        <TextView
+            android:id="@+id/order_formdealsucceed_dissmess_dialog_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评价发表成功"
+            android:textSize="13sp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/order_formdealsucceed_dissmess_dialog_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/order_formdealsucceed_dissmess_dialog_lible"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您可到订单中心-"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评价管理"
+                android:textSize="13sp"
+                android:textColor="#7da8df"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看评价"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/order_formdealsucceed_dissmess_dialog_diamess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="知道了"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:background="#737373"
+            android:layout_below="@+id/order_formdealsucceed_dissmess_dialog_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

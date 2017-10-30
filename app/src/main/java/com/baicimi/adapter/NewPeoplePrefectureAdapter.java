@@ -9,7 +9,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.baicimi.R;
+import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.NewPeoplePrefectureEntry;
+import com.baicimi.fragments.ConversionRuleFragment;
+import com.baicimi.fragments.HomeIntegerConversionDetails;
 
 import java.util.List;
 
@@ -21,8 +24,9 @@ public class NewPeoplePrefectureAdapter extends BaseAdapter{
     private List<NewPeoplePrefectureEntry> list;
     private Context context;
     private LayoutInflater inflater;
+    private BaseFragment fragment;
 
-    public NewPeoplePrefectureAdapter(List<NewPeoplePrefectureEntry> list, Context context) {
+    public NewPeoplePrefectureAdapter(List<NewPeoplePrefectureEntry> list, Context context , BaseFragment fragment) {
         this.list = list;
         this.context = context;
         inflater = LayoutInflater.from(context);
@@ -53,7 +57,8 @@ public class NewPeoplePrefectureAdapter extends BaseAdapter{
             holder.lible = (TextView) view.findViewById(R.id.new_people_prefecture_adapter_lible);
             holder.number = (TextView) view.findViewById(R.id.new_people_prefecture_adapter_number);
             holder.integer = (TextView) view.findViewById(R.id.new_people_prefecture_adapter_integer);
-
+            holder.rule = (TextView) view.findViewById(R.id.new_people_prefecture_adapter_rule);
+            holder.conversion = (TextView) view.findViewById(R.id.new_people_prefecture_adapter_conversion);
             view.setTag(holder);
         }else{
             holder = (NewPeoplePrefectureHolder) view.getTag();
@@ -64,6 +69,28 @@ public class NewPeoplePrefectureAdapter extends BaseAdapter{
         holder.number.setText(init.getNumber());
         holder.integer.setText(init.getInteger());
 
+        holder.rule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (fragment != null){
+                    //兑换详情
+                    fragment.startFragment(new HomeIntegerConversionDetails());//兑换详情
+                }
+
+            }
+        });
+
+        holder.conversion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (fragment != null){
+                //兑换规则
+                fragment.startFragment(new ConversionRuleFragment());
+                }
+            }
+        });
+
+
         return view;
     }
 
@@ -72,6 +99,8 @@ public class NewPeoplePrefectureAdapter extends BaseAdapter{
         private TextView lible;
         private TextView number;
         private TextView integer;
+        private TextView rule;
+        private TextView conversion;
 
     }
 

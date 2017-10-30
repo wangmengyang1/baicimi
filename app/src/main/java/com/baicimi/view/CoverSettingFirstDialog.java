@@ -54,8 +54,9 @@ public class CoverSettingFirstDialog extends Dialog {
             public void onClick(View view) {
                 //替换
                 dismiss();
-                CoverSettingFirstReplaceDialog coverSettingFirstReplaceDialog = new CoverSettingFirstReplaceDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
-                coverSettingFirstReplaceDialog.show();
+
+                CoverSettingFirstDissmessDialog coverSettingFirstDissmessDialog = new CoverSettingFirstDissmessDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                coverSettingFirstDissmessDialog.show();
             }
         });
 

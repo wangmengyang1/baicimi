@@ -5,8 +5,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.adapter.EverydaySigninAdapter;
 import com.baicimi.adapter.NewPeoplePrefectureAdapter;
@@ -22,12 +24,13 @@ import java.util.List;
  * 积分商城 每日签到
  */
 
-public class HomeIntegerEverydaySignin extends BaseFragment {
+public class HomeIntegerEverydaySignin extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private GridView gridView;
     private List<EverydaySigninEntry> list = new ArrayList<>();
     private EverydaySigninAdapter adapter;
+    private ImageView back;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -35,6 +38,9 @@ public class HomeIntegerEverydaySignin extends BaseFragment {
 
         //gridview布局填充
         initGridView();
+
+        back = (ImageView) view.findViewById(R.id.home_integer_everyday_signin_back);
+        back.setOnClickListener(this);
 
         return view;
     }
@@ -101,5 +107,14 @@ public class HomeIntegerEverydaySignin extends BaseFragment {
     @Override
     protected void initData() {
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.home_integer_everyday_signin_back:
+                ((MainActivity)getActivity()).goBack();//返回到上一级页面
+                break;
+        }
     }
 }

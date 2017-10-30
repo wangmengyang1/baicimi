@@ -8,6 +8,7 @@ public class ConversionRankingEntry {
     private int imageUrl;
     private String lible;
     private String content;
+    private boolean state;
 
     public ConversionRankingEntry(int imageUrl, String lible, String content) {
         this.imageUrl = imageUrl;
@@ -15,6 +16,21 @@ public class ConversionRankingEntry {
         this.content = content;
     }
 
+    public ConversionRankingEntry(int imageUrl, String lible, String content , boolean state) {
+        this.imageUrl = imageUrl;
+        this.lible = lible;
+        this.content = content;
+        this.state = state;
+    }
+
+
+    public boolean isState() {
+        return state;
+    }
+
+    public void setState(boolean state) {
+        this.state = state;
+    }
 
     public int getImageUrl() {
         return imageUrl;

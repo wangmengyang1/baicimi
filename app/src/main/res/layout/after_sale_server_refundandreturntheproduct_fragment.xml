@@ -114,9 +114,7 @@
                 <ImageView
                     android:layout_width="45dp"
                     android:layout_height="45dp"
-                    android:src="@drawable/add_image_black_01ss"
-                    android:padding="8dp"
-                    android:background="@drawable/after_sale_server_image_shape"
+                    android:src="@drawable/add_eeeeee_64"
                     android:layout_marginLeft="15dp"
                     />
 

@@ -33,6 +33,7 @@
             android:layout_below="@+id/message_warm_succeed_dialog_lible"
             android:layout_marginTop="15dp"
             android:textSize="13sp"
+            android:textColor="#737373"
             />
         <TextView
             android:id="@+id/message_warm_succeed_dialog_content_second"
@@ -42,6 +43,7 @@
             android:layout_below="@+id/message_warm_succeed_dialog_content"
             android:layout_centerHorizontal="true"
             android:textSize="13sp"
+            android:textColor="#737373"
             />
 
         <TextView
@@ -58,6 +60,7 @@
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:background="@drawable/every_conversion_adapter_shape"
+            android:textColor="#737373"
             />
 
     </RelativeLayout>

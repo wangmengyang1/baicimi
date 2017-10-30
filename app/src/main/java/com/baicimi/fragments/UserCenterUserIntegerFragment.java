@@ -6,8 +6,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
 
@@ -33,6 +35,8 @@ public class UserCenterUserIntegerFragment extends BaseFragment implements View.
     private List<String> listFragmentTag = new ArrayList<>();
     private int index = 5;
 
+    private ImageView back;
+
 
 
     @Override
@@ -54,6 +58,8 @@ public class UserCenterUserIntegerFragment extends BaseFragment implements View.
         user.setOnClickListener(this);
         gather.setOnClickListener(this);
         earn.setOnClickListener(this);
+        back = (ImageView) view.findViewById(R.id.usercenter_userintger_fragment_back);
+        back.setOnClickListener(this);
 
         return view;
     }
@@ -123,6 +129,9 @@ public class UserCenterUserIntegerFragment extends BaseFragment implements View.
                 initShowTablebar();
                 initShowFragment(3);
                 inquire.setBackgroundColor(Color.parseColor("#eeeeee"));
+                break;
+            case R.id.usercenter_userintger_fragment_back:
+                ((MainActivity)getActivity()).goBack();//返回到上一级页面
                 break;
         }
     }

@@ -33,6 +33,7 @@
             android:layout_below="@+id/message_warm_request_dialog_lible"
             android:layout_marginTop="15dp"
             android:textSize="13sp"
+            android:textColor="#737373"
             />
 
 
@@ -50,6 +51,7 @@
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:background="@drawable/every_conversion_adapter_shape"
+            android:textColor="#737373"
             />
 
     </RelativeLayout>

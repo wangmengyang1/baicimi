@@ -113,6 +113,7 @@
                 />
 
             <LinearLayout
+                android:id="@+id/address_juisdiction_fragment_layout_01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -120,6 +121,7 @@
                 >
 
                 <CheckBox
+                    android:id="@+id/address_juisdiction_fragment_checkbox_01"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:button="@null"
@@ -136,6 +138,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/address_juisdiction_fragment_layout_02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -143,6 +146,7 @@
                 >
 
                 <CheckBox
+                    android:id="@+id/address_juisdiction_fragment_checkbox_02"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:button="@null"

@@ -117,6 +117,7 @@
                         />
 
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_01"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -124,6 +125,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_01"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -140,6 +142,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_02"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -147,6 +150,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_02"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -163,6 +167,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_03"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -170,6 +175,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_03"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -186,6 +192,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_04"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -193,6 +200,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_04"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -209,6 +217,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_05"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -216,6 +225,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_05"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -232,6 +242,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_06"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -239,6 +250,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_06"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -269,6 +281,7 @@
                         />
 
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_07"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -276,6 +289,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_07"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -292,6 +306,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_08"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -299,6 +314,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_08"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -315,6 +331,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_09"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -322,6 +339,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_09"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -338,6 +356,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -345,6 +364,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_10"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -376,6 +396,7 @@
                         />
 
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -383,6 +404,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_11"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -399,6 +421,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -406,6 +429,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_12"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -422,6 +446,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -429,6 +454,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_13"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -462,6 +488,7 @@
                         />
 
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -469,6 +496,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_14"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -485,6 +513,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/comment_manager_jurisdiction_fragment_layout_15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -492,6 +521,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/comment_manager_jurisdiction_fragment_checkbox_15"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"

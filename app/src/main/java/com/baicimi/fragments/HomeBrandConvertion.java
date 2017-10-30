@@ -40,7 +40,7 @@ public class HomeBrandConvertion extends BaseFragment {
     private void initListView() {
         listView = (ListView) view.findViewById(R.id.home_brand_convetion_listview);
         list.clear();
-        list.add(new EverydayConversionEntry("10月七日 7:00" , "20天17小时5分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
+        list.add(new EverydayConversionEntry("10月七日 7:00" , "进行中" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
         list.add(new EverydayConversionEntry("10月七日 7:00" , "20天17小时5分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
         list.add(new EverydayConversionEntry("10月七日 7:00" , "20天17小时5分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
         list.add(new EverydayConversionEntry("10月七日 7:00" , "20天17小时5分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));

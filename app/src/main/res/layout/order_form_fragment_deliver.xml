@@ -138,8 +138,8 @@
                         />
                     <TextView
                         android:id="@+id/ordre_form_fragment_deliver_aftersale"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+
                         android:layout_height="wrap_content"
                         android:text="售后"
                         android:textSize="12sp"
@@ -147,6 +147,10 @@
                         android:gravity="center"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
+                        android:layout_marginRight="40dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+
                         />
 
                     <TextView

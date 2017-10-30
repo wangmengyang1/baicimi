@@ -43,6 +43,7 @@
                 android:text="请于\''"
 
                 android:textSize="13sp"
+                android:textColor="#737373"
                 />
             <TextView
 
@@ -59,6 +60,7 @@
                 android:text="\''查看兑换礼品"
 
                 android:textSize="13sp"
+                android:textColor="#737373"
                 />
         </LinearLayout>
 

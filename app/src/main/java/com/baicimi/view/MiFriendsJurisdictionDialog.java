@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -52,6 +53,14 @@ public class MiFriendsJurisdictionDialog extends Dialog{
         list.add(new MifridedsJurisdtionEntry(R.drawable.mi_friends_jurisdtion_image_02 , "越努力越幸运" , false));
         adapter = new MifridedsJurisdtionAdapter(list , getContext());
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                list.get(i).setIscheck(!(list.get(i).ischeck()));
+                adapter.notifyDataSetChanged();
+            }
+        });
 
         dissmess = (TextView) findViewById(R.id.mi_fridends_jurisdiction_dissmess);
         dissmess.setOnClickListener(new View.OnClickListener() {

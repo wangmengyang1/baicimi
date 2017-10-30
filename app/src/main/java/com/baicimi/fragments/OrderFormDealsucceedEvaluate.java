@@ -6,12 +6,14 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.adapter.PaymentAdencyAdapter;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.PaymentAdencyEntry;
+import com.baicimi.view.OrderFormDealsucceedDissmessDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +33,8 @@ public class OrderFormDealsucceedEvaluate extends BaseFragment implements View.O
 
     private CheckBox firstCheck , secondCheck ,threadCheck;
 
+    private TextView dissmess;
+
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -49,6 +53,9 @@ public class OrderFormDealsucceedEvaluate extends BaseFragment implements View.O
         firstCheck.setOnClickListener(this);
         secondCheck.setOnClickListener(this);
         threadCheck.setOnClickListener(this);
+
+        dissmess = (TextView) view.findViewById(R.id.order_form_dealsucceed_evaluate_dissmess);
+        dissmess.setOnClickListener(this);
 
         return view;
     }
@@ -90,6 +97,12 @@ public class OrderFormDealsucceedEvaluate extends BaseFragment implements View.O
                 firstCheck.setChecked(false);
                 secondCheck.setChecked(false);
                 threadCheck.setChecked(true);
+                break;
+
+            case R.id.order_form_dealsucceed_evaluate_dissmess:
+                //提交
+                OrderFormDealsucceedDissmessDialog orderFormDealsucceedDissmessDialog = new OrderFormDealsucceedDissmessDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                orderFormDealsucceedDissmessDialog.show();
                 break;
         }
     }

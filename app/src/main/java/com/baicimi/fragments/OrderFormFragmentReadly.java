@@ -75,6 +75,8 @@ public class OrderFormFragmentReadly extends BaseFragment implements View.OnClic
                 layout_03.setVisibility(View.VISIBLE);
                 layout_04 = (LinearLayout) view.findViewById(R.id.order_form_fragment_layout_04);
                 layout_04.setVisibility(View.VISIBLE);
+            }else if (typeS.equals("政府采购订单")){
+                cancle_tv.setVisibility(View.GONE);
             }
         }
 

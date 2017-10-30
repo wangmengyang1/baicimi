@@ -26,6 +26,7 @@ public class AutomaticSelectionDialog extends Dialog {
 
     private TextView dissmess , circle;
     private BaseFragment baseFragment;
+    private TextView setting;
 
     public AutomaticSelectionDialog(Context context, int themeResId , BaseFragment baseFragment ) {
         super(context, themeResId);
@@ -36,6 +37,17 @@ public class AutomaticSelectionDialog extends Dialog {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.automatic_selection_dialog);
+
+
+        setting = (TextView) findViewById(R.id.automatic_selection_dialog_setting);
+        setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dismiss();
+                AutomaticSelectionSettingDialog automaticSelectionSettingDialog = new AutomaticSelectionSettingDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                automaticSelectionSettingDialog.show();
+            }
+        });
 
         dissmess = (TextView) findViewById(R.id.automatic_selection_diessmess);
         dissmess.setOnClickListener(new View.OnClickListener() {

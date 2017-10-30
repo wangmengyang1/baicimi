@@ -252,17 +252,17 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
     //数据源填充
     private void LoadListData() {
         groupDageImage.clear();
-        groupDageImage.add(R.drawable.user_center_head_image_01);
-        groupDageImage.add(R.drawable.user_center_head_image_02);
-        groupDageImage.add(R.drawable.user_center_head_image_03);
-        groupDageImage.add(R.drawable.user_center_head_image_04);
-        groupDageImage.add(R.drawable.user_center_head_image_05);
-        groupDageImage.add(R.drawable.user_center_head_image_06);
-        groupDageImage.add(R.drawable.user_center_head_image_07);
-        groupDageImage.add(R.drawable.user_center_head_image_08);
-        groupDageImage.add(R.drawable.user_center_head_image_09);
-        groupDageImage.add(R.drawable.user_center_head_image_06);
-        groupDageImage.add(R.drawable.user_center_head_image_04);
+        groupDageImage.add(R.drawable.image_usercenter_01);
+        groupDageImage.add(R.drawable.image_usercenter_02);
+        groupDageImage.add(R.drawable.image_usercenter_03);
+        groupDageImage.add(R.drawable.image_usercenter_04);
+        groupDageImage.add(R.drawable.image_usercenter_05);
+        groupDageImage.add(R.drawable.image_usercenter_06);
+        groupDageImage.add(R.drawable.image_usercenter_07);
+        groupDageImage.add(R.drawable.image_usercenter_08);
+        groupDageImage.add(R.drawable.image_usercenter_09);
+        groupDageImage.add(R.drawable.image_usercenter_10);
+        groupDageImage.add(R.drawable.image_usercenter_11);
 
         GroupData = new ArrayList<String>();
         GroupData.add("订单中心");

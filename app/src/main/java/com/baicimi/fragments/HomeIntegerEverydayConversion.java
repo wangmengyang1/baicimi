@@ -42,10 +42,10 @@ public class HomeIntegerEverydayConversion extends BaseFragment {
         listView = (ListView) view.findViewById(R.id.home_integer_everyday_conversion_listview);
         list.clear();
         list.add(new EverydayConversionEntry("9:00场" , "进行中" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
-        list.add(new EverydayConversionEntry("9:00场" , "进行中" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
-        list.add(new EverydayConversionEntry("9:00场" , "进行中" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
-        list.add(new EverydayConversionEntry("9:00场" , "进行中" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
-        list.add(new EverydayConversionEntry("9:00场" , "兑换结束" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
+        list.add(new EverydayConversionEntry("15:00场" , "17小时5分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
+        list.add(new EverydayConversionEntry("17:00场" , "17小时5分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
+        list.add(new EverydayConversionEntry("20:00场" , "17小时5分钟" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
+        list.add(new EverydayConversionEntry("7:00场" , "兑换结束" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
         adapter = new EverydayConversionAdapter(list , getContext() , 0 , this);
         listView.setAdapter(adapter);
         fixGrdiViewHeight03(listView);

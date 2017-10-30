@@ -36,6 +36,7 @@
             android:layout_marginTop="15dp"
             android:textSize="13sp"
             android:layout_centerHorizontal="true"
+            android:textColor="#737373"
             />
 
         <TextView
@@ -52,6 +53,7 @@
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:background="@drawable/every_conversion_adapter_shape"
+            android:textColor="#737373"
             />
 
         <TextView
@@ -63,6 +65,7 @@
             android:layout_below="@+id/immediately_conversion_dialog_dissmess"
             android:layout_marginTop="15dp"
             android:gravity="center"
+            android:textColor="#737373"
             />
     </RelativeLayout>
 

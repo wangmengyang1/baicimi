@@ -105,6 +105,7 @@
                 />
 
             <LinearLayout
+                android:id="@+id/usercenter_find_jurisdiction_layout_01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -112,6 +113,7 @@
                 >
 
                 <CheckBox
+                    android:id="@+id/usercenter_find_jurisdiction_checkbox_01"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:button="@null"
@@ -128,6 +130,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/usercenter_find_jurisdiction_layout_02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -135,6 +138,7 @@
                 >
 
                 <CheckBox
+                    android:id="@+id/usercenter_find_jurisdiction_checkbox_02"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:button="@null"
@@ -151,6 +155,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/usercenter_find_jurisdiction_layout_03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -158,6 +163,7 @@
                 >
 
                 <CheckBox
+                    android:id="@+id/usercenter_find_jurisdiction_checkbox_03"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:button="@null"
@@ -174,6 +180,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/usercenter_find_jurisdiction_layout_04"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -181,6 +188,7 @@
                 >
 
                 <CheckBox
+                    android:id="@+id/usercenter_find_jurisdiction_checkbox_04"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:button="@null"
@@ -197,6 +205,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/usercenter_find_jurisdiction_layout_05"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -204,6 +213,7 @@
                 >
 
                 <CheckBox
+                    android:id="@+id/usercenter_find_jurisdiction_checkbox_05"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:button="@null"
@@ -220,6 +230,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/usercenter_find_jurisdiction_layout_06"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -227,6 +238,7 @@
                 >
 
                 <CheckBox
+                    android:id="@+id/usercenter_find_jurisdiction_checkbox_06"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:button="@null"

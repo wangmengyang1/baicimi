@@ -144,7 +144,8 @@
                 >
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="1.推荐朋友成为百次幂会员可获得积分。"
                     android:textSize="13sp"
@@ -214,6 +215,7 @@
                     android:ellipsize="end"
                     />
                 <TextView
+                    android:id="@+id/home_integer_rule_fragment_store_homepage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="逛逛商城"
@@ -246,6 +248,7 @@
                     android:ellipsize="end"
                     />
                 <TextView
+                    android:id="@+id/home_integer_rule_fragment_store_signin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="现在签到"
@@ -415,6 +418,7 @@
                     />
 
                 <TextView
+                    android:id="@+id/home_integer_rule_fragment_store_integer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="兑换"

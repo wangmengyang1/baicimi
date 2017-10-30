@@ -100,6 +100,10 @@ public class EverydayConversionAdapter extends BaseAdapter {
         if (init.getState().equals("兑换结束")) {
             holder.conversion.setText("兑换详情");
             holder.rushpurchase.setVisibility(View.INVISIBLE);
+            if (((EverydayConversionEntry) getItem(i)).getState().equals("进行中")){
+                holder.rushpurchase.setBackgroundResource(R.drawable.every_conversion_adapter_layout_shapes);
+            }
+
             holder.conversion.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -117,10 +121,20 @@ public class EverydayConversionAdapter extends BaseAdapter {
                     everyDayConversionDialog.show();
                 }
             });
+
+            if (((EverydayConversionEntry) getItem(i)).getState().equals("进行中")){
+//                holder.conversion.setVisibility(View.INVISIBLE);
+            }
+
         }else if (count == 2){
             holder.headImage.setVisibility(View.VISIBLE);
             holder.conversion.setText("预约详情");
             holder.rushpurchase.setText("立即预约");
+
+            if (((EverydayConversionEntry) getItem(i)).getState().equals("进行中")){
+                holder.rushpurchase.setBackgroundResource(R.drawable.every_conversion_adapter_layout_shapes);
+            }
+
             holder.conversion.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -140,6 +154,10 @@ public class EverydayConversionAdapter extends BaseAdapter {
         }else if (count == 4){
             holder.conversion.setText("预约详情");
             holder.rushpurchase.setText("立即预约");
+
+            if (((EverydayConversionEntry) getItem(i)).getState().equals("进行中")){
+                holder.rushpurchase.setBackgroundResource(R.drawable.every_conversion_adapter_layout_shapes);
+            }
             holder.conversion.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -186,6 +204,12 @@ public class EverydayConversionAdapter extends BaseAdapter {
                 }
             }
         });
+
+        if (((EverydayConversionEntry) getItem(i)).getState().equals("进行中")){
+            holder.rushpurchase.setBackgroundResource(R.drawable.every_conversion_adapter_layout_shapes);
+//                holder.conversion.setVisibility(View.INVISIBLE);
+        }
+
         return view;
     }
 

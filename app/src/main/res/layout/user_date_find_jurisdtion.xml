@@ -119,6 +119,7 @@
                         />
 
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_01"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -126,6 +127,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_01"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -142,6 +144,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_02"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -149,6 +152,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_02"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -165,6 +169,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_03"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -172,6 +177,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_03"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -188,6 +194,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_04"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -195,6 +202,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_04"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -211,6 +219,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_05"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -218,6 +227,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_05"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -234,6 +244,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_06"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -241,6 +252,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_06"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -274,6 +286,7 @@
                         />
 
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_07"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -281,6 +294,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_07"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -297,6 +311,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_08"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -304,6 +319,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_08"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -320,6 +336,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_09"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -327,6 +344,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_09"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -343,6 +361,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -350,6 +369,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_10"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -366,6 +386,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -373,6 +394,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_11"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -389,6 +411,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -396,6 +419,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_12"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -412,6 +436,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -419,6 +444,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_13"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -435,6 +461,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -442,6 +469,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_14"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -474,6 +502,7 @@
                         />
 
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -481,6 +510,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_15"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -497,6 +527,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -504,6 +535,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_16"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -520,6 +552,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_17"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -527,6 +560,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_17"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -543,6 +577,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -550,6 +585,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_18"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -566,6 +602,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -573,6 +610,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_19"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -589,6 +627,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -596,6 +635,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_20"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -629,6 +669,7 @@
                         />
 
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -636,6 +677,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_21"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -652,6 +694,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -659,6 +702,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_22"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -675,6 +719,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -682,6 +727,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_23"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -698,6 +744,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -705,6 +752,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_24"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -721,6 +769,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_25"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -728,6 +777,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_25"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"
@@ -744,6 +794,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/user_date_find_jurisdtion_layout_26"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -751,6 +802,7 @@
                         >
 
                         <CheckBox
+                            android:id="@+id/user_date_find_jurisdtion_checkbox_26"
                             android:layout_width="15dp"
                             android:layout_height="15dp"
                             android:button="@null"

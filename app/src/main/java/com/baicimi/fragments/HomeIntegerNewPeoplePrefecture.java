@@ -50,7 +50,7 @@ public class HomeIntegerNewPeoplePrefecture extends BaseFragment {
         listThread.clear();
         listThread.add(new NewPeoplePrefectureEntry(R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "数量：16556" , "积分：6556"));
         listThread.add(new NewPeoplePrefectureEntry(R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "数量：16556" , "积分：6556"));
-        adapterThread = new NewPeoplePrefectureAdapter(listThread , getContext());
+        adapterThread = new NewPeoplePrefectureAdapter(listThread , getContext() , this);
         listviewThread.setAdapter(adapterThread);
         fixGrdiViewHeight03(listviewThread);
     }
@@ -61,7 +61,7 @@ public class HomeIntegerNewPeoplePrefecture extends BaseFragment {
         listSecond.clear();
         listSecond.add(new NewPeoplePrefectureEntry(R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "数量：16556" , "积分：6556"));
         listSecond.add(new NewPeoplePrefectureEntry(R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "数量：16556" , "积分：6556"));
-        adapterSecond = new NewPeoplePrefectureAdapter(listSecond , getContext());
+        adapterSecond = new NewPeoplePrefectureAdapter(listSecond , getContext(), this);
         listviewSecond.setAdapter(adapterSecond);
         fixGrdiViewHeight03(listviewSecond);
     }
@@ -73,7 +73,7 @@ public class HomeIntegerNewPeoplePrefecture extends BaseFragment {
         listFirst.add(new NewPeoplePrefectureEntry(R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "数量：16556" , "积分：6556"));
         listFirst.add(new NewPeoplePrefectureEntry(R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "数量：16556" , "积分：6556"));
         listFirst.add(new NewPeoplePrefectureEntry(R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "数量：16556" , "积分：6556"));
-        adapterFirst = new NewPeoplePrefectureAdapter(listFirst , getContext());
+        adapterFirst = new NewPeoplePrefectureAdapter(listFirst , getContext(), this);
         listviewFirst.setAdapter(adapterFirst);
         fixGrdiViewHeight03(listviewFirst);
 

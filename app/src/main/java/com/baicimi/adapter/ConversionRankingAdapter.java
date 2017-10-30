@@ -21,6 +21,7 @@ public class ConversionRankingAdapter extends BaseAdapter{
     private Context context;
     private LayoutInflater inflater;
     private boolean isCheck;
+    private ConversionRankingHolder holder;
 
     public ConversionRankingAdapter(List<ConversionRankingEntry> listFirst, Context context) {
         this.listFirst = listFirst;
@@ -51,8 +52,8 @@ public class ConversionRankingAdapter extends BaseAdapter{
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        ConversionRankingHolder holder = null;
+    public View getView(final int i, View view, ViewGroup viewGroup) {
+        holder = null;
         if (view == null){
             view = inflater.inflate(R.layout.conversion_ranking_adapter , null);
             holder = new ConversionRankingHolder();
@@ -77,6 +78,31 @@ public class ConversionRankingAdapter extends BaseAdapter{
         holder.imagerUrl.setImageResource(init.getImageUrl());
         holder.lible.setText(init.getLible());
         holder.content.setText(init.getContent());
+
+
+        if (listFirst.get(i).isState()){
+            holder.addAttention.setText("已关注");
+        }else {
+            holder.addAttention.setText("+关注");
+        }
+
+
+        holder.addAttention.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (((ConversionRankingEntry) getItem(i)).isState() == true){
+                    holder.addAttention.setText("已关注");
+                    listFirst.get(i).setState(!listFirst.get(i).isState());
+                    notifyDataSetChanged();
+                }else {
+                    holder.addAttention.setText("+关注");
+                    listFirst.get(i).setState(!listFirst.get(i).isState());
+                    notifyDataSetChanged();
+                }
+            }
+        });
+
+
         return view;
     }
 

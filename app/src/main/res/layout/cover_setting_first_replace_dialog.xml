@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:text="确定用主题封面：\''七月菊花香季\''"
             android:layout_centerHorizontal="true"
+            android:textColor="#737373"
             />
 
         <TextView
@@ -35,6 +36,7 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/add_receipt_dialog_lible_first"
             android:layout_marginTop="4dp"
+            android:textColor="#737373"
             />
 
 
@@ -56,6 +58,7 @@
                 android:textSize="13sp"
                 android:maxLines="2"
                 android:ellipsize="end"
+                android:textColor="#737373"
                 />
 
         </LinearLayout>
@@ -80,6 +83,7 @@
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:background="#eeeeee"
+                android:textColor="#737373"
                 />
             <TextView
                 android:id="@+id/add_receipt_dialog_dissmess"
@@ -93,6 +97,7 @@
                 android:paddingRight="15dp"
                 android:background="#eeeeee"
                 android:layout_marginLeft="15dp"
+                android:textColor="#737373"
                 />
 
         </LinearLayout>

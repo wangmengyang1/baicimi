@@ -244,6 +244,7 @@ public class GovernmentPurchaseFastTrackProcedure extends BaseFragment implement
                 holder = new GovernmentPurchaseFastTrackProcedure.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusGroupHolder();
                 holder.lible = (TextView) view.findViewById(R.id.payment_adeny_government_susgroup_adapter_lible);
                 holder.conbtent = (TextView) view.findViewById(R.id.payment_adeny_government_susgroup_adapter_content);
+                holder.down = (ImageView) view.findViewById(R.id.payment_adeny_government_susgroup_adapter_checkbox);
                 view.setTag(holder);
             } else {
                 holder = (GovernmentPurchaseFastTrackProcedure.PaymentAdencyGovernmentCusAdaapter.PaymentAdencyGovernmentCusGroupHolder) view.getTag();
@@ -257,7 +258,6 @@ public class GovernmentPurchaseFastTrackProcedure extends BaseFragment implement
                 holder.conbtent.setVisibility(View.INVISIBLE);
             }
 
-
             return view;
         }
 
@@ -265,6 +265,7 @@ public class GovernmentPurchaseFastTrackProcedure extends BaseFragment implement
         public class PaymentAdencyGovernmentCusGroupHolder {
             private TextView lible;
             private TextView conbtent;
+            private ImageView down;
         }
 
 

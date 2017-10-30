@@ -4,6 +4,7 @@ import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -80,12 +81,18 @@ public class HomeIntegerGoodsConversionRanking extends BaseFragment implements V
     private void initSecondListView() {
         listviewSecond = (ListView) view.findViewById(R.id.homeinteger_goods_conversion_ranking_listview_second);
         listSecond.clear();
-        listSecond.add(new ConversionRankingEntry(R.drawable.home_integer_conversion_08 , "梦露MULU" , "17890人兑换"));
-        listSecond.add(new ConversionRankingEntry(R.drawable.home_integer_conversion_08 , "梦露MULU" , "17890人兑换"));
-        listSecond.add(new ConversionRankingEntry(R.drawable.home_integer_conversion_08 , "梦露MULU" , "17890人兑换"));
+        listSecond.add(new ConversionRankingEntry(R.drawable.home_integer_conversion_08 , "梦露MULU" , "17890人兑换" , false));
+        listSecond.add(new ConversionRankingEntry(R.drawable.home_integer_conversion_08 , "梦露MULU" , "17890人兑换", false));
+        listSecond.add(new ConversionRankingEntry(R.drawable.home_integer_conversion_08 , "梦露MULU" , "17890人兑换", false));
         adapterSecond = new ConversionRankingAdapter(listSecond , getContext() , true);
         listviewSecond.setAdapter(adapterSecond);
         fixGrdiViewHeight03(listviewSecond);
+        listviewSecond.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                startFragment(new BrandFragmentSecond());//品牌详情
+            }
+        });
     }
 
     //firstlistview布局填充
@@ -99,6 +106,13 @@ public class HomeIntegerGoodsConversionRanking extends BaseFragment implements V
         adapterFirst = new ConversionRankingAdapter(listFirst , getContext() , false);
         listviewFirst.setAdapter(adapterFirst);
         fixGrdiViewHeight03(listviewFirst);
+
+        listviewFirst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                startFragment(new GoodsDetailsFragment(),null);//商品详情
+            }
+        });
     }
 
 

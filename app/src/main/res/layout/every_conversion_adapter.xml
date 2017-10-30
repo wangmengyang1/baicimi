@@ -107,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="13sp"
                     android:text="香奈儿NO5香水"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     />
                 <TextView
                     android:id="@+id/every_conversion_adapter_money"
@@ -115,8 +115,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="13sp"
                     android:text="市场价：¥216.00"
-                    android:layout_marginLeft="15dp"
-
+                    android:layout_marginLeft="20dp"
                     />
                 <TextView
                     android:id="@+id/every_conversion_adapter_integer"
@@ -124,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="13sp"
                     android:text="积分：6556"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     />
 
                 <TextView
@@ -133,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="13sp"
                     android:text="数量：16556"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     />
 
 
@@ -159,6 +158,10 @@
 
                         android:gravity="center"
                         />
+
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="1dp"/>
                     <TextView
                         android:id="@+id/every_conversion_adapter_conversion"
                         android:layout_width="0dp"
