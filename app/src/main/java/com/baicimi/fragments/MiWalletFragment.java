@@ -40,6 +40,9 @@ public class MiWalletFragment extends BaseFragment {
      */
     private ImageView mImageView;
 
+    private int indext;
+
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.fragment_miwallet, container, false);
@@ -59,7 +62,8 @@ public class MiWalletFragment extends BaseFragment {
 
 
     @OnClick({R.id.login_back,R.id.img_kajuan,R.id.img_my_code,R.id.zhanghu_yue,R.id.img_mixinyongfen,R.id.img_shoujichongzhi,
-            R.id.img_quanqiuhui,R.id.img_erweima , R.id.fragment_miwallet_live_server , R.id.fragment_miwallet_brand_card , R.id.fragment_miwallet_intimacy_payment})
+            R.id.img_quanqiuhui,R.id.img_erweima , R.id.fragment_miwallet_live_server , R.id.fragment_miwallet_brand_card ,
+            R.id.fragment_miwallet_intimacy_payment , R.id.fragment_miwallet_image_mybystages})
     public void onClick(View view) {
         int id = view.getId();
         switch (id) {
@@ -67,7 +71,8 @@ public class MiWalletFragment extends BaseFragment {
                 ((MainActivity) getActivity()).goBack();//返回上一层页面
                 break;
             case R.id.img_my_code:
-                startFragment(new MyCodeFragment(),null);
+//                startFragment(new MyCodeFragment(),null);
+                startFragment(new MiWalldtMyCodeFragment(),null);//我的积分（新）
                 break;
             case R.id.zhanghu_yue:
                 startFragment(new ZhanghuYuEFragment(),null);
@@ -93,6 +98,23 @@ public class MiWalletFragment extends BaseFragment {
                 break;
             case R.id.fragment_miwallet_intimacy_payment://亲密付
                 startFragment(new IntimacyPaymentHomePageFragment());
+                break;
+
+            case R.id.fragment_miwallet_image_mybystages://我的分期
+//                startFragment(new MiWalletFragmentMybustages());
+                startFragment(new MiWalletMybustagesFirst());
+                break;
+            case R.id.img_kajuan:
+                //优惠券
+
+                if (indext % 3 == 0){
+                    startFragment(new MiWalletDiscountCouponFirst("团购优惠券"));
+                }else if (indext % 3 == 1){
+                    startFragment(new MiWalletDiscountCouponFirst("限量优惠券"));
+                }else if (indext % 3 == 2){
+                    startFragment(new MiWalletDiscountCouponFirst("政府采购优惠券"));
+                }
+                indext++;
                 break;
         }
     }

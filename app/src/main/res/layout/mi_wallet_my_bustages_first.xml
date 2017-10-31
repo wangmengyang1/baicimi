@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/mi_wallet_my_bustages_first_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/mi_wallet_my_bustages_first_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="我的分期"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/brand_fragment_second_image_13"
+            android:padding="6dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/mi_wallet_my_bustages_first_scanning"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/brand_fragment_second_image_12"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="28dp"
+            android:background="@drawable/brand_fragment_second_edittext_layer_list"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="我的分期"
+            android:textSize="12sp"
+            android:paddingLeft="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分期付款申请流程："
+                android:textSize="13sp"
+                android:padding="15dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/mi_wallet_my_bustages_first_step_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="填写提交订单信息"
+                    android:textSize="13sp"
+                    android:padding="4dp"
+                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    />
+
+                <ImageView
+                    android:id="@+id/mi_wallet_my_bustages_first_step_toright"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/toright_image"
+                    android:layout_toRightOf="@+id/mi_wallet_my_bustages_first_step_first"
+                    android:layout_marginTop="-4dp"
+                    />
+
+                <TextView
+                    android:id="@+id/mi_wallet_my_bustages_first_step_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择分期付款"
+                    android:textSize="13sp"
+                    android:padding="4dp"
+                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    android:layout_toRightOf="@+id/mi_wallet_my_bustages_first_step_toright"
+                    />
+
+                <ImageView
+                    android:id="@+id/mi_wallet_my_bustages_first_step_toleftdownbutton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/toleftdown_button_image"
+                    android:layout_below="@+id/mi_wallet_my_bustages_first_step_second"
+                    android:layout_alignRight="@+id/mi_wallet_my_bustages_first_step_second"
+                    android:layout_marginTop="4dp"
+                    />
+
+                <TextView
+                    android:id="@+id/mi_wallet_my_bustages_first_step_thread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="填写提交个人信息"
+                    android:textSize="13sp"
+                    android:padding="4dp"
+                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                   android:layout_below="@+id/mi_wallet_my_bustages_first_step_second"
+                    android:layout_toLeftOf="@+id/mi_wallet_my_bustages_first_step_toleftdownbutton"
+                    android:layout_marginTop="20dp"
+                    />
+                <ImageView
+                    android:id="@+id/mi_wallet_my_bustages_first_step_toleft"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/toleft_image"
+                    android:layout_toLeftOf="@+id/mi_wallet_my_bustages_first_step_thread"
+                    android:layout_alignTop="@+id/mi_wallet_my_bustages_first_step_thread"
+                    />
+
+                <TextView
+                    android:id="@+id/mi_wallet_my_bustages_first_step_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="填写提交个人信息"
+                    android:textSize="13sp"
+                    android:padding="4dp"
+                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    android:layout_alignTop="@+id/mi_wallet_my_bustages_first_step_thread"
+                    android:layout_toLeftOf="@+id/mi_wallet_my_bustages_first_step_toleft"
+                    />
+
+                <ImageView
+                    android:id="@+id/mi_wallet_my_bustages_first_step_torightdownbuttom"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/torigutdown_button_image"
+                    android:layout_below="@+id/mi_wallet_my_bustages_first_step_four"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/mi_wallet_my_bustages_first_step_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="填写提交个人信息"
+                    android:textSize="13sp"
+                    android:padding="4dp"
+                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    android:layout_toRightOf="@+id/mi_wallet_my_bustages_first_step_torightdownbuttom"
+                    android:layout_below="@+id/mi_wallet_my_bustages_first_step_four"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="6dp"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的分期："
+                android:textSize="13sp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <ListView
+                android:id="@+id/mi_wallet_my_bustages_first_libview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:dividerHeight="10dp"
+                android:divider="@color/white"
+                android:scrollbars="none"
+                ></ListView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#eeeeee"
+                android:layout_marginBottom="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请分期常见问题："
+                android:textSize="13sp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:text="1.那些人可以办理分期"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:text="账户资料信息晚上"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:text="历史消息记录≥6次"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:text="账户已绑定银行卡"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:text="历史充值记录≥6次"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:text="曾邀请6位以上好友注册百次幂账户"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:text="2.需要准备什么资料"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:text="资料准备很简单：身份证、学生教务系统个人信息截图"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:text="（需截取完整信息）、社保卡（上班族）即可"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:text="3.如何还款"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:text="可以通过我们网站的第三方支付还款或提前还款，如："
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:text="支付宝、财付通、网银"
+                android:layout_marginBottom="30dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

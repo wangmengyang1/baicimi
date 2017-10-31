@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/my_bustages_adapter_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/my_bustages_adapter_lible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="订单编号：165436854321354"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/my_bustages_adapter_consumption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="分期类型：消费分期"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="4dp"
+                />
+            <TextView
+                android:id="@+id/my_bustages_adapter_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="办理时间：2017-07-05"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:id="@+id/my_bustages_adapter_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="交易本金：4000.00元"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="4dp"
+                />
+            <TextView
+                android:id="@+id/my_bustages_adapter_consumptionnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="总期数：24期"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="4dp"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/my_bustages_adapter_layout"
+            >
+            <TextView
+                android:id="@+id/my_bustages_adapter_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未通过"
+                android:textSize="13sp"
+                />
+
+
+            <TextView
+                android:id="@+id/my_bustages_adapter_result"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="重新申请"
+                android:textColor="@color/white"
+                android:background="#737373"
+                android:layout_marginTop="15dp"
+                android:textSize="13sp"
+                android:padding="2dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

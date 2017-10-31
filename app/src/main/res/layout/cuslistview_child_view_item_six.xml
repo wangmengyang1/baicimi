@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <View
+            android:id="@+id/cuslistview_child_view_item_six_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/cuslistview_child_view_item_six_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（100积分 == 1元）"
+            android:textSize="13sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/cuslistview_child_view_item_six_view"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/cuslistview_child_view_item_six_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨提示：账户积分兑换优惠券后暂不支持积分返还或返现，若兑换成功积分余额未更新，请刷新活重新登录"
+            android:textSize="13sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/cuslistview_child_view_item_six_lible"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cuslistview_view_image_04"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/cuslistview_child_view_item_six_content"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

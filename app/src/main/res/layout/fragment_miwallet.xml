@@ -283,6 +283,7 @@
                             android:background="#EDEDED"></View>
 
                         <ImageView
+                            android:id="@+id/fragment_miwallet_image_mybystages"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
