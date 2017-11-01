@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_margin="15dp"
+                android:text="收款方："
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/every_conversion_adapter_shape"
+                    android:gravity="center"
+                    android:layout_marginLeft="25dp"
+                    >
+
+                    <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:hint="选择/输入银行"
+                        android:textSize="13sp"
+                        android:background="@drawable/every_conversion_adapter_shape"
+                        android:padding="4dp"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/down_image_black_02"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已存银行"
+                    android:textSize="13sp"
+                    android:textColor="#3167a7"
+                    android:layout_marginLeft="10dp"
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/down_image_black_02"
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="贮蓄卡号"
+                android:textSize="13sp"
+                android:background="@drawable/every_conversion_adapter_shape"
+                android:padding="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                />
+
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="开户人姓名"
+                android:textSize="13sp"
+                android:background="@drawable/every_conversion_adapter_shape"
+                android:padding="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_margin="15dp"
+                android:text="付款金额："
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                >
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:hint="最高50000"
+                    android:textSize="13sp"
+                    android:background="@drawable/every_conversion_adapter_shape"
+                    android:padding="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="元"
+                    android:layout_marginLeft="8dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="收取0.1%服务费，最低0.1元"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_margin="15dp"
+                android:text="到账时间："
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                >
+
+                <CheckBox
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:button="@null"
+                    android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                    android:checked="true"
+                    android:focusable="false"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2小时内到账"
+                    android:layout_marginLeft="6dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <CheckBox
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:button="@null"
+                    android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+
+                    android:focusable="false"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次日24点前到账"
+                    android:layout_marginLeft="6dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_margin="15dp"
+                android:text="服务费：0元（付款总金额0元）"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_margin="15dp"
+                android:text="付款说明："
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                >
+
+                <EditText
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:hint="可选（20字以内）"
+                    android:textSize="13sp"
+                    android:background="@drawable/every_conversion_adapter_shape"
+                    android:padding="4dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                >
+
+                <CheckBox
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:button="@null"
+                    android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                    android:checked="true"
+                    android:focusable="false"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="付款原因以短信方式通知收款方（免费）"
+                    android:layout_marginLeft="6dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

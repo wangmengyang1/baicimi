@@ -2,6 +2,7 @@ package com.baicimi.view;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,12 +20,21 @@ import java.util.List;
  * Created by Administrator on 2017/10/27.
  */
 public class MiFriendsJurisdictionDialog extends Dialog{
+
+    private String lible;
+    private TextView libleHolder;
+
     public MiFriendsJurisdictionDialog(Context context) {
         super(context);
     }
 
     public MiFriendsJurisdictionDialog(Context context, int themeResId) {
         super(context, themeResId);
+    }
+
+    public MiFriendsJurisdictionDialog(Context context, int themeResId , String lible) {
+        super(context, themeResId);
+        this.lible = lible;
     }
 
     protected MiFriendsJurisdictionDialog(Context context, boolean cancelable, OnCancelListener cancelListener) {
@@ -69,5 +79,12 @@ public class MiFriendsJurisdictionDialog extends Dialog{
                 dismiss();
             }
         });
+
+        libleHolder = (TextView) findViewById(R.id.mi_fridends_jurisdiction_lible);
+        if (lible != null){
+            libleHolder.setText(lible);
+            dissmess.setText("确定");
+        }
+
     }
 }

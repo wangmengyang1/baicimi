@@ -23,6 +23,7 @@
             android:textSize="13sp"
             android:text="允许幂友查看我的购物车"
             android:layout_centerHorizontal="true"
+            android:textColor="#737373"
             />
 
         <EditText
@@ -31,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/mi_fridends_jurisdiction_lible"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/every_conversion_adapter_shape"
             android:hint="输入搜索"
             android:textSize="13sp"
@@ -43,7 +44,7 @@
         <ListView
             android:id="@+id/mi_fridends_jurisdiction_listview"
             android:layout_width="230dp"
-            android:layout_height="220dp"
+            android:layout_height="180dp"
             android:layout_below="@+id/mi_fridends_jurisdiction_edittext"
             android:layout_centerHorizontal="true"
             android:scrollbars="none"
@@ -66,6 +67,7 @@
             android:layout_below="@+id/mi_fridends_jurisdiction_listview"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
+            android:textColor="#737373"
             />
 
     </RelativeLayout>

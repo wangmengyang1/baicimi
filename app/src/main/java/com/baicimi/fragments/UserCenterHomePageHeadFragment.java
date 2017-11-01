@@ -191,7 +191,8 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                 } else if (i == 0 && i1 == 6) {
                     startFragment(new MyPresellFragment());//我的预售
                 } else if (i == 1 && i1 == 0) {
-                    startFragment(new MiWalletFragment());//幂钱包
+//                    startFragment(new MiWalletFragment());//幂钱包
+                    startFragment(new MiWalletFragmentHomePage());//幂钱包 （新）
                 } else if (i == 1 && i1 == 1) {
                     //幂积分银行
                 } else if (i == 1 && i1 == 2) {
