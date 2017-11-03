@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/fragment_present_save_first_adapter_imageurl"
+                android:layout_width="80dp"
+                android:layout_height="95dp"
+                android:src="@drawable/fragment_present_save_home_image_01"
+                />
+
+
+            <TextView
+                android:id="@+id/fragment_present_save_first_adapter_lible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="纯棉毛巾"
+                android:layout_toRightOf="@+id/fragment_present_save_first_adapter_imageurl"
+                android:layout_marginLeft="15dp"
+                android:textColor="#737373"
+                />
+
+            <TextView
+                android:id="@+id/fragment_present_save_first_adapter_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="新人专区0积分兑换"
+                android:layout_below="@+id/fragment_present_save_first_adapter_lible"
+                android:layout_alignLeft="@+id/fragment_present_save_first_adapter_lible"
+                android:layout_marginTop="4dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#737373"
+                />
+            <TextView
+                android:id="@+id/fragment_present_save_first_adapter_deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="寄存有效时长：2016-09-15 - 2017-10-10"
+                android:layout_below="@+id/fragment_present_save_first_adapter_content"
+                android:layout_alignLeft="@+id/fragment_present_save_first_adapter_content"
+                android:layout_marginTop="4dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#737373"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@+id/fragment_present_save_first_adapter_imageurl"
+                android:layout_alignBottom="@+id/fragment_present_save_first_adapter_imageurl"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/fragment_present_save_first_adapter_examine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="查看"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                        android:textColor="#737373"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/fragment_present_save_first_adapter_draw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="领取"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                        android:textColor="#737373"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/fragment_present_save_first_adapter_giventoone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="转赠好友"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                        android:textColor="#737373"
+                        android:maxLines="1"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/fragment_present_save_first_adapter_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="分享"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                        android:textColor="#737373"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/fragment_present_save_first_adapter_isExpire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="即将到期"
+            android:textColor="@color/white"
+            android:background="#e17777"
+            android:textSize="13sp"
+            android:padding="4dp"
+            />
+
+        <ImageView
+            android:id="@+id/fragment_present_save_first_adapter_isloseEfficacy"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:src="@drawable/yishixiao_image"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

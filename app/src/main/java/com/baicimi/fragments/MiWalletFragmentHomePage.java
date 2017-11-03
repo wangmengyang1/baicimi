@@ -16,7 +16,8 @@ import com.baicimi.base.BaseFragment;
 public class MiWalletFragmentHomePage extends BaseFragment implements View.OnClickListener {
 
     private View view;
-    private TextView record , myorderform ,transferaccounts;
+    private TextView record , myorderform ,transferaccounts , code , mybystages , discountcoupon;
+    private int indext;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -30,6 +31,14 @@ public class MiWalletFragmentHomePage extends BaseFragment implements View.OnCli
         transferaccounts = (TextView) view.findViewById(R.id.mi_wallet_fragment_homepage_transferaccounts);
         transferaccounts.setOnClickListener(this);
 
+        code = (TextView) view.findViewById(R.id.mi_wallet_fragment_homepage_code);
+        code.setOnClickListener(this);
+
+        mybystages = (TextView) view.findViewById(R.id.mi_wallet_fragment_homepage_mybystages);
+        mybystages.setOnClickListener(this);
+
+        discountcoupon = (TextView) view.findViewById(R.id.mi_wallet_fragment_homepage_discountcoupon);
+        discountcoupon.setOnClickListener(this);
         return view;
     }
 
@@ -52,6 +61,24 @@ public class MiWalletFragmentHomePage extends BaseFragment implements View.OnCli
             case R.id.mi_wallet_fragment_homepage_transferaccounts:
                 //转账付款
                 startFragment(new MiWalletHomePageTransFeraccounts());
+                break;
+            case R.id.mi_wallet_fragment_homepage_code:
+                startFragment(new MiWalldtMyCodeFragment(),null);//我的积分（新）
+                break;
+            case R.id.mi_wallet_fragment_homepage_mybystages:
+                //我的分期
+                startFragment(new MiWalletMybustagesFirst());
+                break;
+            case R.id.mi_wallet_fragment_homepage_discountcoupon:
+                //我的卡券
+                if (indext % 3 == 0){
+                    startFragment(new MiWalletDiscountCouponFirst("团购优惠券"));
+                }else if (indext % 3 == 1){
+                    startFragment(new MiWalletDiscountCouponFirst("限量优惠券"));
+                }else if (indext % 3 == 2){
+                    startFragment(new MiWalletDiscountCouponFirst("政府采购优惠券"));
+                }
+                indext++;
                 break;
         }
     }

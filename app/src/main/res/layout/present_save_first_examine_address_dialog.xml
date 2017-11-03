@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        >
+
+        <TextView
+            android:id="@+id/present_save_first_examine_address_dialog_lible"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="地址"
+            android:textSize="13sp"
+            android:textColor="#737373"
+            />
+
+
+
+        <TextView
+            android:id="@+id/present_save_first_examine_address_dialog_content"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="广东省广州市白云区太和镇民营科技园火炬大厦1501       修改"
+            android:layout_below="@+id/present_save_first_examine_address_dialog_lible"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            android:textColor="#737373"
+            />
+
+
+
+        <TextView
+            android:id="@+id/present_save_first_examine_address_dialog_expressage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示：您需支付6元快递费"
+            android:textSize="13sp"
+            android:textColor="#ff0000"
+            android:layout_below="@+id/present_save_first_examine_address_dialog_content"
+            android:layout_marginTop="6dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/present_save_first_examine_address_dialog_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/present_save_first_examine_address_dialog_expressage"
+            android:layout_marginTop="8dp"
+            >
+
+
+            <CheckBox
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:button="@null"
+                android:background="@drawable/checkbox_selector_two"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="选择到付"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/present_save_first_examine_address_dialog_layout"
+            android:layout_marginTop="20dp"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/present_save_first_examine_address_dialog_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="确定"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:background="#737373"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -62,7 +62,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
     private int shardSdk;
 
-    private TextView setting;
+    private TextView setting , message;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -102,6 +102,9 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
         setting = (TextView) view.findViewById(R.id.user_center_home_page_head_fragment_setting);
         setting.setOnClickListener(this);
+
+        message = (TextView) view.findViewById(R.id.user_center_home_page_head_fragment_message);
+        message.setOnClickListener(this);
         return view;
     }
 
@@ -199,6 +202,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     //赚取积分
                 } else if (i == 1 && i1 == 3) {
                     //支付管理
+                    startFragment(new PayManagerFragment());
                 } else if (i == 2 && i1 == 0) {
                     //我的等级
                 } else if (i == 2 && i1 == 1) {
@@ -211,7 +215,8 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     //红包
                 }else if (i == 4 && i1 == 2) {
                     //礼品寄存处
-                    startFragment(new FragmentPresentSave() , null);
+//                    startFragment(new FragmentPresentSave() , null);
+                    startFragment(new FragmentPresentSaveHomePage());//(新)
                 }else if (i == 4 && i1 == 3) {
                     //爱心捐赠
                 }else if (i == 4 && i1 == 4) {
@@ -228,6 +233,9 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     //加入分销点/点
                 }else if (i == 5 && i1 == 1) {
                     //我要推荐
+                    startFragment(new MyRecommendFragmentHomePage());
+
+//                    startFragment(new MyRecommendFragment("首次推荐礼品"));
                 }else if (i == 6 && i1 == 0) {
                     //我的商城
                 }else if (i == 6 && i1 == 1) {
@@ -236,6 +244,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     //购买咨询
                 }else if (i == 7 && i1 == 1) {
                     //投诉与建议
+                    startFragment(new ComplaintSuggestFragment());
                 }else if (i == 8 ) {
                     //我的购物袋
                     startFragment(new ShopingCarFragment(CommodityNumberEntry.commodityNumberEntryIntereal().getCount()) , null);
@@ -379,6 +388,10 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
             case R.id.user_center_home_page_head_fragment_setting:
                 //设置界面
                 startFragment(new UserCenterHomePagerSetting());
+                break;
+            case R.id.user_center_home_page_head_fragment_message:
+                //消息中心界面
+                startFragment(new UserCenterHomePagerMessage());
                 break;
         }
     }

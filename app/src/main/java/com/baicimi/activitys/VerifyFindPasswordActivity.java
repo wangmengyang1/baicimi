@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import com.baicimi.R;
 import com.baicimi.base.BaseActivity;
 import com.baicimi.ui.TimeButton;
+import com.baicimi.view.RecommendRegisterDialog;
 import com.lidroid.xutils.view.annotation.ContentView;
 import com.lidroid.xutils.view.annotation.ViewInject;
 
@@ -34,10 +35,15 @@ public class VerifyFindPasswordActivity extends BaseActivity{
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(VerifyFindPasswordActivity.this,NewPasswordSetActivity.class);
-                startActivity(intent);
-                finish();
+
+                //会员推荐
+
+                RecommendRegisterDialog recommendRegisterDialog = new RecommendRegisterDialog(getApplicationContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                recommendRegisterDialog.show();
+//                Intent intent=new Intent();
+//                intent.setClass(VerifyFindPasswordActivity.this,NewPasswordSetActivity.class);
+//                startActivity(intent);
+//                finish();
             }
         });
 

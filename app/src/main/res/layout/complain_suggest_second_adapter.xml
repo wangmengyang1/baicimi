@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/complain_suggest_second_adapter_head_lible"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="排名"
+                android:textSize="13sp"
+                android:gravity="center"
+
+                />
+
+            <ImageView
+                android:id="@+id/complain_suggest_second_adapter_head_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/image_convertion_06"
+                android:layout_marginLeft="20dp"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/complain_suggest_second_adapter_head_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="百次幂账号"
+                android:textSize="13sp"
+                android:paddingLeft="8dp"
+                />
+
+
+            <TextView
+                android:id="@+id/complain_suggest_second_adapter_head_codenumber"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="采纳建议"
+                android:textSize="13sp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/complain_suggest_second_adapter_head_addeptNumber"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="获得奖励"
+                android:textSize="13sp"
+                android:gravity="center"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

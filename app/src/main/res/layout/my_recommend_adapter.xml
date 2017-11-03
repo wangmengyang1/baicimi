@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/my_recommend_adapter_imagurl"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/image_convertion_01"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/my_recommend_adapter_imagurl"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/my_recommend_adapter_lible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="礼品名称：洁丽雅纯棉毛巾4条装"
+                    android:layout_marginRight="15dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+                <TextView
+                    android:id="@+id/my_recommend_adapter_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="价值（元）：29.99"
+                    android:layout_marginTop="4dp"
+                    />
+                <TextView
+                    android:id="@+id/my_recommend_adapter_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="积分：1200"
+                    android:layout_marginTop="4dp"
+                    />
+
+                <TextView
+                    android:id="@+id/my_recommend_adapter_usernumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="已推荐成功人数：10人"
+                    android:layout_marginTop="4dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/my_recommend_adapter_conversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即兑换"
+                android:textSize="13sp"
+                android:textColor="#737373"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/pryment_adency_fragment_government_edittext_shape_two"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

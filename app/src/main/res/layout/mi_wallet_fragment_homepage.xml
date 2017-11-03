@@ -106,6 +106,7 @@
             android:padding="4dp"
             />
         <TextView
+            android:id="@+id/mi_wallet_fragment_homepage_code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="我的积分"
@@ -121,6 +122,7 @@
             android:padding="4dp"
             />
         <TextView
+            android:id="@+id/mi_wallet_fragment_homepage_mybystages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="我的分期"
@@ -128,6 +130,7 @@
             android:padding="4dp"
             />
         <TextView
+            android:id="@+id/mi_wallet_fragment_homepage_discountcoupon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="我的卡券"

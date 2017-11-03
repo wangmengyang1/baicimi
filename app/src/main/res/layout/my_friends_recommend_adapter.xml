@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+        android:layout_margin="5dp"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/my_friends_recommend_adapter_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:id="@+id/my_friends_recommend_adapter_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="姓名：张三"
+                />
+
+            <TextView
+                android:id="@+id/my_friends_recommend_adapter_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="电话：1325463832135"
+                />
+            <TextView
+                android:id="@+id/my_friends_recommend_adapter_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="邮箱：132546383@qq.com"
+                android:layout_marginTop="4dp"
+                />
+            <TextView
+                android:id="@+id/my_friends_recommend_adapter_weichect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="微信号：1325463832135"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:id="@+id/my_friends_recommend_adapter_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="推荐状态：成功"
+                android:layout_marginTop="15dp"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/my_friends_recommend_adapter_deblocking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_convertion_02"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/my_friends_recommend_adapter_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_75_eeeeee"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

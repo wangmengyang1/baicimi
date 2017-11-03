@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="4dp">
+
+        <ImageView
+            android:id="@+id/my_recommend_fragment_homepage_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:padding="4dp"
+            android:src="@drawable/back_image_black" />
+
+        <TextView
+            android:id="@+id/my_recommend_fragment_homepage_lible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="好友推荐"
+            android:textColor="#737373"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:padding="6dp"
+            android:src="@drawable/brand_fragment_second_image_13" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/my_recommend_fragment_homepage_scanning"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/brand_fragment_second_image_12" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/brand_fragment_second_edittext_layer_list"
+            android:hint="我的订单"
+            android:paddingLeft="8dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="搜索"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/recommend_image_01" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="好友推荐功能是MICI为会员设置的积分福利功能，成功推荐好友注册MICI后，则可在好友每次商品交易中获取相应比例积分奖励。"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="推荐规则与奖励"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="      每位会员共享有6次推荐机会，完成上一次推荐任务才可解锁下一次推荐，每次推荐完成后可兑换礼品。解锁推荐越多，所能推荐的名额越多，所获积分奖励越多，并有机会加入BNN百万行动计划。"
+                android:textSize="13sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="       从第二关开始，解锁条件加入“购物率”，如推荐成功后45天内未在商城购物，则推荐失效，需重新推荐。重新推荐不需要推荐好友重新注册百次幂账号，只需重新接受推荐即可。"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="        以下情况，MICI视为“盲荐”，一经核实，将取消该会员推荐资格。"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:text="1、每次推荐成功率均低于30%。
+2、所填写信息错误率高于20%，如手机号码为空号，姓名与手机号码不符等。
+3、有其他会员投诉，与推荐者不相识，次数超过2次。
+"
+                android:textSize="13sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/my_recommend_fragment_homepage_firstcheckbox"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector_second"
+                        android:button="@null"
+                        android:text="首次\n推荐"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:checked="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/my_recommend_fragment_homepage_firstrecommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="领取礼品"
+                        android:textSize="13sp"
+                        android:textColor="#fe6001"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/xiangyou"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/my_recommend_fragment_homepage_secondcheckbox"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector_second"
+                        android:button="@null"
+                        android:text="二次\n推荐"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+
+                        />
+                    <TextView
+                        android:id="@+id/my_recommend_fragment_homepage_secondrecommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="领取礼品"
+                        android:textSize="13sp"
+
+                        android:layout_marginTop="4dp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/xiangyou"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/my_recommend_fragment_homepage_threadcheckbox"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector_second"
+                        android:button="@null"
+                        android:text="三次\n推荐"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/my_recommend_fragment_homepage_threadrecommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="领取礼品"
+                        android:textSize="13sp"
+
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/xiangyou"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/my_recommend_fragment_homepage_fourcheckbox"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector_second"
+                        android:button="@null"
+                        android:text="四次\n推荐"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/my_recommend_fragment_homepage_fourrecommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="领取礼品"
+                        android:textSize="13sp"
+
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/xiangyou"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/my_recommend_fragment_homepage_fivecheckbox"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector_second"
+                        android:button="@null"
+                        android:text="五次\n推荐"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+
+                        />
+                    <TextView
+                        android:id="@+id/my_recommend_fragment_homepage_fiverecommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="领取礼品"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/xiangyou"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/my_recommend_fragment_homepage_sixcheckbox"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector_second"
+                        android:button="@null"
+                        android:text="六次\n推荐"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/my_recommend_fragment_homepage_sixrecommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="领取礼品"
+                        android:textSize="13sp"
+
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/xiangyou"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/my_recommend_fragment_homepage_deblocking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="解锁"
+                android:background="#fe6001"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

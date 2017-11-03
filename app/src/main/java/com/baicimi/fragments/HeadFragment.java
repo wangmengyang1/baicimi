@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 
 import com.baicimi.R;
 import com.baicimi.adapter.MyViewPagerFragmetAdapterSecond;
-import com.baicimi.adapter.NoticeDialogPagerAdapterpa;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.ui.PersonUserPagerSlidingTabStrip;
 import com.lidroid.xutils.ViewUtils;
