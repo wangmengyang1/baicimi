@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        >
+
+
+        <TextView
+            android:id="@+id/cover_setting_second_replace_dialog_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您选中的：\''宁菲圣诞礼遇\''主题将于\n2017/09/20 00:00开始使用\n到时系统帮你自动更换。"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:textColor="#737373"
+            android:gravity="center"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/cover_setting_second_replace_dialog_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/cover_setting_second_replace_dialog_lible"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:text="注：原主题封面\''宁菲圣诞礼遇\''尚未到时，如替换将扣除20积分赔偿积分。"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#737373"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/cover_setting_second_replace_dialog_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/cover_setting_second_replace_dialog_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textSize="13sp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="#eeeeee"
+                android:textColor="#737373"
+                />
+            <TextView
+                android:id="@+id/cover_setting_second_replace_dialog_dissmess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textSize="13sp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="#eeeeee"
+                android:layout_marginLeft="15dp"
+                android:textColor="#737373"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

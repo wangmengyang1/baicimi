@@ -115,7 +115,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1.性别，年龄，星座，个人简介等基本资料查看权限"
-                        android:textSize="13sp"
+                        android:textColor="#737373"
                         />
 
                     <LinearLayout
@@ -282,7 +282,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="2.简历查看权限"
-                        android:textSize="13sp"
+                        android:textColor="#737373"
                         />
 
                     <LinearLayout
@@ -498,7 +498,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="3.相册查看权限"
-                        android:textSize="13sp"
+                        android:textColor="#737373"
                         />
 
                     <LinearLayout
@@ -665,7 +665,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="4.\''钉\''记录查看权限"
-                        android:textSize="13sp"
+                        android:textColor="#737373"
                         />
 
                     <LinearLayout

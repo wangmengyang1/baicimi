@@ -37,13 +37,13 @@ public class UserIntegerFragmentEarn extends BaseFragment{
     //listview布局填充
     private void initListView() {
         listView = (ListView) view.findViewById(R.id.user_integer_fragment_earn_listview);
-        list.add(new EranEntry(R.drawable.user_integer_image_06 , "01.推荐给好友" , "了解详情" , "现在推荐" , "线上购买：在百次幂商城购买任意产品都可获得积分，系统根据成交金额将自动获得的积分转到您的个人积分账户中，线下购买，在实体店购买产品，刮开瓶身积分码并输入，积分立即累计到个人账户。"));
-        list.add(new EranEntry(R.drawable.user_integer_image_06 , "02.晒图留言" , "null" , "我去晒图" , "线上购买：在百次幂商城购买任意产品都可获得积分，系统根据成交金额将自动获得的积分转到您的个人积分账户中，线下购买，在实体店购买产品，刮开瓶身积分码并输入，积分立即累计到个人账户。"));
-        list.add(new EranEntry(R.drawable.user_integer_image_06 , "03.购买商品" , "null" , "去逛逛" , "线上购买：在百次幂商城购买任意产品都可获得积分，系统根据成交金额将自动获得的积分转到您的个人积分账户中，线下购买，在实体店购买产品，刮开瓶身积分码并输入，积分立即累计到个人账户。"));
-        list.add(new EranEntry(R.drawable.user_integer_image_06 , "04.每日签到" , "null" , "马上签到" , "线上购买：在百次幂商城购买任意产品都可获得积分，系统根据成交金额将自动获得的积分转到您的个人积分账户中，线下购买，在实体店购买产品，刮开瓶身积分码并输入，积分立即累计到个人账户。"));
-        list.add(new EranEntry(R.drawable.user_integer_image_06 , "05.积分活动" , "null" , "去看看" , "线上购买：在百次幂商城购买任意产品都可获得积分，系统根据成交金额将自动获得的积分转到您的个人积分账户中，线下购买，在实体店购买产品，刮开瓶身积分码并输入，积分立即累计到个人账户。"));
-        list.add(new EranEntry(R.drawable.user_integer_image_06 , "06.社区评论" , "null" , "去全球生活汇" , "线上购买：在百次幂商城购买任意产品都可获得积分，系统根据成交金额将自动获得的积分转到您的个人积分账户中，线下购买，在实体店购买产品，刮开瓶身积分码并输入，积分立即累计到个人账户。"));
-        adater = new EranListViewAdater(list , getContext());
+        list.add(new EranEntry(R.drawable.user_integer_image_06 , "01.推荐给好友" , "了解详情" , "现在推荐" , "推荐朋友成为百次幂会员，可获得积分，在被推荐者每次成功购买商品时，都会有相应比例积分自动转到您的个人账户下。"));
+        list.add(new EranEntry(R.drawable.earm_code_image_02 , "02.晒图留言" , "null" , "我去晒图" , "您在百次幂商城购买商品后，在评论区晒图留言，即可获得相应积分，留言被其他人浏览，均有相应积分自动转入到您的个人账户。"));
+        list.add(new EranEntry(R.drawable.earm_code_image_03 , "03.购买商品" , "null" , "去逛逛" , "线上购买：在百次幂商城购买任意产品都可获得积分，系统根据成交金额将自动获得的积分转到您的个人积分账户中，线下购买，在实体店购买产品，刮开瓶身积分码并输入，积分立即累计到个人账户。"));
+        list.add(new EranEntry(R.drawable.earm_code_image_04 , "04.每日签到" , "null" , "马上签到" , "百次幂商城手机APP每日签到即可获得相应积分。"));
+        list.add(new EranEntry(R.drawable.earm_code_image_05 , "05.积分活动" , "null" , "去看看" , "参加百次幂积分商城活动，即可赚取或获赠相应积分。"));
+        list.add(new EranEntry(R.drawable.earm_code_image_06 , "06.社区评论" , "null" , "去全球生活汇" , "全球生活汇APP上发帖与互动也可获得相应积分。"));
+        adater = new EranListViewAdater(list , getContext() , this);
         listView.setAdapter(adater);
         fixGrdiViewHeight03(listView);
     }

@@ -118,17 +118,17 @@ public class UserCenterUserIntegerFragment extends BaseFragment implements View.
             case R.id.usercenter_userinteger_fragment_use:
                 initShowTablebar();
                 initShowFragment(1);
-                inquire.setBackgroundColor(Color.parseColor("#eeeeee"));
+                user.setBackgroundColor(Color.parseColor("#eeeeee"));
                 break;
             case R.id.usercenter_userinteger_fragment_gather:
                 initShowTablebar();
                 initShowFragment(2);
-                inquire.setBackgroundColor(Color.parseColor("#eeeeee"));
+                gather.setBackgroundColor(Color.parseColor("#eeeeee"));
                 break;
             case R.id.usercenter_userinteger_fragment_earn:
                 initShowTablebar();
                 initShowFragment(3);
-                inquire.setBackgroundColor(Color.parseColor("#eeeeee"));
+                earn.setBackgroundColor(Color.parseColor("#eeeeee"));
                 break;
             case R.id.usercenter_userintger_fragment_back:
                 ((MainActivity)getActivity()).goBack();//返回到上一级页面

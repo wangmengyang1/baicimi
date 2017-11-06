@@ -112,7 +112,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1.我可以收到那些人的消息"
-                        android:textSize="13sp"
+                        android:textColor="#737373"
                         />
 
                     <LinearLayout
@@ -252,7 +252,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="2.是否接受临时会话消息"
-                        android:textSize="13sp"
+                        android:textColor="#737373"
                         />
 
                     <LinearLayout
@@ -343,7 +343,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="3.我可以收到那些人的私信"
-                        android:textSize="13sp"
+                        android:textColor="#737373"
                         />
 
                     <LinearLayout

@@ -41,10 +41,10 @@ public class UserIntegerFragmentUse extends BaseFragment{
         listView = (ListView) view.findViewById(R.id.user_integer_fragment_user_listview);
         list.clear();
         list.add(new UseEntry(R.drawable.user_integer_image_04 , "在百次幂积分商城上兑换礼品（礼品包含大牌化妆品，使用日用品，进口母婴产品等高品质产品）" , "现在兑换"));
-        list.add(new UseEntry(R.drawable.user_integer_image_04 , "在百次幂积分商城上兑换礼品（礼品包含大牌化妆品，使用日用品，进口母婴产品等高品质产品）" , "去逛逛"));
-        list.add(new UseEntry(R.drawable.user_integer_image_04 , "在百次幂积分商城上兑换礼品（礼品包含大牌化妆品，使用日用品，进口母婴产品等高品质产品）" , "null"));
-        list.add(new UseEntry(R.drawable.user_integer_image_04 , "在百次幂积分商城上兑换礼品（礼品包含大牌化妆品，使用日用品，进口母婴产品等高品质产品）" , "null"));
-        adapter = new UseListViewAdapter(list , getContext());
+        list.add(new UseEntry(R.drawable.user_integer_image_04 , "您所累积的积分，可在百次幂商城中购买商品是使用" , "去逛逛"));
+        list.add(new UseEntry(R.drawable.user_integer_image_04 , "所累积积分还可存入积分银行，提现到个人银行）" , "null"));
+        list.add(new UseEntry(R.drawable.user_integer_image_04 , "到星巴克，肯德基等上千家百次幂合作品牌店中，用积分抵用现金消费使用" , "null"));
+        adapter = new UseListViewAdapter(list , getContext() , this);
         listView.setAdapter(adapter);
         fixGrdiViewHeight03(listView);
 

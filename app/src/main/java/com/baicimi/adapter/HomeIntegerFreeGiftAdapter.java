@@ -9,6 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.baicimi.R;
+import com.baicimi.base.BaseFragment;
+import com.baicimi.fragments.ConversionRuleFragment;
+import com.baicimi.fragments.HomeIntegerConversionDetails;
 
 import java.util.List;
 
@@ -20,11 +23,13 @@ public class HomeIntegerFreeGiftAdapter extends BaseAdapter{
     private List<HomeIntegerFreeGiftEntry> list;
     private Context context;
     private LayoutInflater inflater;
+    private BaseFragment fragment;
 
-    public HomeIntegerFreeGiftAdapter(List<HomeIntegerFreeGiftEntry> list, Context context) {
+    public HomeIntegerFreeGiftAdapter(List<HomeIntegerFreeGiftEntry> list, Context context , BaseFragment fragment) {
         this.list = list;
         this.context = context;
         inflater = LayoutInflater.from(context);
+        this.fragment = fragment;
     }
 
     @Override
@@ -77,6 +82,27 @@ public class HomeIntegerFreeGiftAdapter extends BaseAdapter{
         }else {
             holder.layout_lible.setVisibility(View.INVISIBLE);
         }
+
+        holder.details.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (fragment != null){
+                    //兑换详情
+                    fragment.startFragment(new HomeIntegerConversionDetails());//兑换详情
+                }
+            }
+        });
+
+        holder.rule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (fragment != null){
+                    //兑换规则
+                    fragment.startFragment(new ConversionRuleFragment());
+                }
+            }
+        });
+
 
         return view;
     }

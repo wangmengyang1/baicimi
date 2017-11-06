@@ -9,7 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.baicimi.R;
+import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.EranEntry;
+import com.baicimi.fragments.HomeIntegerEverydaySignin;
+import com.baicimi.fragments.MainFragment;
+import com.baicimi.fragments.OrderFormDealsucceedEvaluate;
 import com.baicimi.view.LineChartView;
 
 import java.util.ArrayList;
@@ -23,12 +27,14 @@ public class EranListViewAdater extends BaseAdapter{
     private List<EranEntry> list = new ArrayList<>();
     private Context context;
     private LayoutInflater inflater;
+    private BaseFragment fragment;
 
 
-    public EranListViewAdater(List<EranEntry> list, Context context) {
+    public EranListViewAdater(List<EranEntry> list, Context context , BaseFragment fragment) {
         this.list = list;
         this.context = context;
         inflater = LayoutInflater.from(context);
+        this.fragment = fragment;
     }
 
     @Override
@@ -75,6 +81,20 @@ public class EranListViewAdater extends BaseAdapter{
 
         holder.moreSecond.setText(init.getMoreSecond());
         holder.content.setText(init.getContent());
+
+        if (init.getMoreSecond().equals("我去晒图")){
+            //宝贝评论页面
+            //评价
+            fragment.startFragment(new OrderFormDealsucceedEvaluate());
+        }else if (init.getMoreSecond().equals("去逛逛")){
+            //返回到商城首页
+            fragment.getActivity().getSupportFragmentManager().popBackStack(null , 1);
+            fragment.startFragment(new MainFragment());
+        }else if (init.getMoreSecond().equals("马上签到")){
+            //每日签到
+            fragment.startFragment(new HomeIntegerEverydaySignin(), null);
+        }
+
 
         return view;
     }

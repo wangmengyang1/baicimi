@@ -102,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="您允许别人以何种方式访问您？"
-                android:textSize="13sp"
+                android:textColor="#737373"
                 />
 
             <LinearLayout

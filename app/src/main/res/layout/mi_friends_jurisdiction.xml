@@ -57,7 +57,7 @@
             android:id="@+id/mi_fridends_jurisdiction_dissmess"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="查看"
+            android:text="确定"
             android:textSize="13sp"
             android:background="@drawable/every_conversion_adapter_shape"
             android:paddingTop="4dp"

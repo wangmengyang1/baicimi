@@ -19,7 +19,7 @@ public class HomeIntegerRuleFragmet extends BaseFragment implements View.OnClick
 
     private View view;
     private ImageView back;
-    private TextView store_homepage , store_signin , integer;
+    private TextView store_homepage , store_signin , integer , now_setting;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -33,6 +33,9 @@ public class HomeIntegerRuleFragmet extends BaseFragment implements View.OnClick
         store_homepage.setOnClickListener(this);
         store_signin.setOnClickListener(this);
         integer.setOnClickListener(this);
+
+        now_setting = (TextView) view.findViewById(R.id.home_integer_rule_fragment_now_setting);
+        now_setting.setOnClickListener(this);
 
         return view;
     }
@@ -60,6 +63,12 @@ public class HomeIntegerRuleFragmet extends BaseFragment implements View.OnClick
             case R.id.home_integer_rule_fragment_store_integer:
                 //积分兑换成功页面
                 startFragment(new IntegralExchangeFragment());//跳转到第二页面
+                break;
+            case R.id.home_integer_rule_fragment_now_setting:
+                //现在设置
+                //封面设置
+//                startFragment(new UserCenterCoverSettingFragment());
+                startFragment(new UserCenterCoverSettingCatalogyFragment());
                 break;
         }
     }

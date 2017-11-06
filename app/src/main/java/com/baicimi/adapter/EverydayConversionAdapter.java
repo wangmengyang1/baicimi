@@ -146,7 +146,18 @@ public class EverydayConversionAdapter extends BaseAdapter {
             holder.rushpurchase.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (fragment != null){
+                    //立即预约
+                    dialogIndex++;
+                    if (dialogIndex % 4 == 0){
+                        ImmediatelyConversionDialog immediatelyConversionDialog = new ImmediatelyConversionDialog(context , R.style.MeiGuiMeiShiSecondMyorderFive , false);
+                        immediatelyConversionDialog.show();
+                    }else if (dialogIndex % 4 == 1){
+                        ImmediatelyConversionDialog immediatelyConversionDialog = new ImmediatelyConversionDialog(context , R.style.MeiGuiMeiShiSecondMyorderFive , true);
+                        immediatelyConversionDialog.show();
+                    }else if (dialogIndex % 4 == 2){
+                        MessageWarmRequestDialog messageWarmRequestDialog = new MessageWarmRequestDialog(context , R.style.MeiGuiMeiShiSecondMyorderFive);
+                        messageWarmRequestDialog.show();
+                    }else if (dialogIndex % 4 == 3){
                         fragment.startFragment(new HomeConversionSubscribeFragment());//兑换预约
                     }
                 }
@@ -166,27 +177,16 @@ public class EverydayConversionAdapter extends BaseAdapter {
                     }
                 }
             });
-            holder.rushpurchase.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (fragment != null){
-//                        fragment.startFragment(new HomeConversionSubscribeFragment());//兑换预约
-                        //立即预约
-                        dialogIndex++;
-                        if (dialogIndex % 3 == 0){
-                            ImmediatelyConversionDialog immediatelyConversionDialog = new ImmediatelyConversionDialog(context , R.style.MeiGuiMeiShiSecondMyorderFive , false);
-                            immediatelyConversionDialog.show();
-                        }else if (dialogIndex % 3 == 1){
-                            ImmediatelyConversionDialog immediatelyConversionDialog = new ImmediatelyConversionDialog(context , R.style.MeiGuiMeiShiSecondMyorderFive , true);
-                            immediatelyConversionDialog.show();
-                        }else if (dialogIndex % 3 == 2){
-                            MessageWarmRequestDialog messageWarmRequestDialog = new MessageWarmRequestDialog(context , R.style.MeiGuiMeiShiSecondMyorderFive);
-                            messageWarmRequestDialog.show();
-                        }
-
-                    }
-                }
-            });
+//            holder.rushpurchase.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    if (fragment != null){
+////                        fragment.startFragment(new HomeConversionSubscribeFragment());//兑换预约
+//
+//
+//                    }
+//                }
+//            });
         }
         holder.state.setText(init.getState());
         holder.imageUrl.setImageResource(init.getImageUrl());

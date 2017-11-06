@@ -100,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1.是否推荐通讯录好友"
-                android:textSize="13sp"
+                android:textColor="#737373"
                 />
 
             <LinearLayout
@@ -160,7 +160,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2.是否接受MICI/全球生活汇推荐的好友"
-                android:textSize="13sp"
+                android:textColor="#737373"
                 android:layout_marginTop="15dp"
                 />
 
@@ -220,7 +220,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3.黑名单/全球生活汇推荐的好友"
-                android:textSize="13sp"
+                android:textColor="#737373"
                 android:layout_marginTop="15dp"
                 />
 

@@ -3,8 +3,10 @@ package com.baicimi.fragments;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.adapter.EverydayConversionAdapter;
 import com.baicimi.adapter.HomeIntegerFreeGiftAdapter;
@@ -19,7 +21,7 @@ import java.util.List;
  * 积分商城 免费礼品
  */
 
-public class HomeIntegerFreeGiftFragment extends BaseFragment {
+public class HomeIntegerFreeGiftFragment extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private ListView listviewFirst , listviewSecond , listviewThread;
@@ -29,6 +31,7 @@ public class HomeIntegerFreeGiftFragment extends BaseFragment {
     private HomeIntegerFreeGiftAdapter adapterFirst;
     private HomeIntegerFreeGiftAdapter adapterSecond;
     private HomeIntegerFreeGiftAdapter adapterThread;
+    private ImageView back;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -41,6 +44,9 @@ public class HomeIntegerFreeGiftFragment extends BaseFragment {
         //threadListView布局填充
         initThreadListView();
 
+        back = (ImageView) view.findViewById(R.id.home_integer_free_gift_fragment_back);
+        back.setOnClickListener(this);
+
         return view;
     }
 
@@ -50,7 +56,7 @@ public class HomeIntegerFreeGiftFragment extends BaseFragment {
         listThread.clear();
         listThread.add(new HomeIntegerFreeGiftEntry(R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00" , "积分：6556" , "数量：16556", "绑定三张以上银行卡"));
         listThread.add(new HomeIntegerFreeGiftEntry(R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00" , "积分：6556" , "数量：16556"  , "认证人生重要时刻"));
-        adapterThread = new HomeIntegerFreeGiftAdapter(listThread , getContext());
+        adapterThread = new HomeIntegerFreeGiftAdapter(listThread , getContext() , this);
         listviewThread.setAdapter(adapterThread);
         fixGrdiViewHeight03(listviewThread);
     }
@@ -61,7 +67,7 @@ public class HomeIntegerFreeGiftFragment extends BaseFragment {
         listSecond.clear();
         listSecond.add(new HomeIntegerFreeGiftEntry(R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00" , "积分：6556" , "数量：16556" , "V2专区"));
         listSecond.add(new HomeIntegerFreeGiftEntry(R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00" , "积分：6556" , "数量：16556", "V3专区"));
-        adapterSecond = new HomeIntegerFreeGiftAdapter(listSecond , getContext());
+        adapterSecond = new HomeIntegerFreeGiftAdapter(listSecond , getContext(), this);
         listviewSecond.setAdapter(adapterSecond);
         fixGrdiViewHeight03(listviewSecond);
     }
@@ -71,7 +77,7 @@ public class HomeIntegerFreeGiftFragment extends BaseFragment {
         listviewFirst = (ListView) view.findViewById(R.id.home_integer_free_gift_listview_first);
         listFirst.clear();
         listFirst.add(new HomeIntegerFreeGiftEntry(R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00" , "积分：6556" , "数量：16556" , "ischeck"));
-        adapterFirst = new HomeIntegerFreeGiftAdapter(listFirst , getContext());
+        adapterFirst = new HomeIntegerFreeGiftAdapter(listFirst , getContext(), this);
         listviewFirst.setAdapter(adapterFirst);
         fixGrdiViewHeight03(listviewFirst);
     }
@@ -105,4 +111,12 @@ public class HomeIntegerFreeGiftFragment extends BaseFragment {
         listView.setLayoutParams(params);
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.home_integer_free_gift_fragment_back:
+                ((MainActivity)getActivity()).goBack();//返回到上一级页面
+                break;
+        }
+    }
 }

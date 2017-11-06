@@ -4,7 +4,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
+import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.adapter.ProductShardSdkAdapter;
 import com.baicimi.adapter.UserCenterHomePageSecondAdapter;
@@ -17,12 +20,14 @@ import java.util.List;
  * Created by Administrator on 2017/10/26.
  * 分享（产品分享）
  */
-public class UserCenterHomePageProductShardSDK extends BaseFragment {
+public class UserCenterHomePageProductShardSDK extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private GridView gridView;
     private List<Integer> list = new ArrayList<>();
     private ProductShardSdkAdapter adapter;
+    private ImageView back;
+    private LinearLayout layout_first;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -30,6 +35,12 @@ public class UserCenterHomePageProductShardSDK extends BaseFragment {
 
         //GridView布局填充
         initGridView();
+
+        back = (ImageView) view.findViewById(R.id.usercenter_homepage_product_shardsdk_back);
+        back.setOnClickListener(this);
+
+        layout_first = (LinearLayout) view.findViewById(R.id.usercenter_homepage_product_shardsdk_second_layout);
+        layout_first.setOnClickListener(this);
         return view;
     }
 
@@ -63,7 +74,7 @@ public class UserCenterHomePageProductShardSDK extends BaseFragment {
             return;
         }
 
-        for (int index = 0; index < (listAdapter.getCount() /6); index++) {
+        for (int index = 0; index <= (listAdapter.getCount() /6); index++) {
             View listViewItem = listAdapter.getView(index, null, listView);
             // 计算子项View 的宽高
             listViewItem.measure(0, 0);
@@ -77,4 +88,16 @@ public class UserCenterHomePageProductShardSDK extends BaseFragment {
         listView.setLayoutParams(params);
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.usercenter_homepage_product_shardsdk_back:
+                ((MainActivity)getActivity()).goBack();//返回到上一级页面
+                break;
+            case R.id.usercenter_homepage_product_shardsdk_second_layout:
+                //分享
+                startFragment(new UserCenterHomePageShardSDK());
+                break;
+        }
+    }
 }

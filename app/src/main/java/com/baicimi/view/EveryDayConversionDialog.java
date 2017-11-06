@@ -45,6 +45,9 @@ public class EveryDayConversionDialog extends Dialog {
             @Override
             public void onClick(View view) {
                 dismiss();
+                //提示设置消息提醒成功
+                ConversionSucceedDialog conversionSucceedDialog = new ConversionSucceedDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                conversionSucceedDialog.show();
             }
         });
 //        numberPickerMonth = (NumberPicker) findViewById(R.id.date_time_fragment_month);

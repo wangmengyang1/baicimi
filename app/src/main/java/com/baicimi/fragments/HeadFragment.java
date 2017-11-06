@@ -1,5 +1,6 @@
 package com.baicimi.fragments;
 
+import android.annotation.SuppressLint;
 import android.support.v4.app.Fragment;
 
 import android.support.v4.view.ViewPager;
@@ -36,6 +37,18 @@ public class HeadFragment extends BaseFragment {
             , "男士主页", "美妆个护", "试用申请", "品牌"
             , "周五之夜" , "玫瑰社区"};
 
+
+    private int index = 20;
+
+
+    @SuppressLint("ValidFragment")
+    public HeadFragment(int index) {
+        this.index = index;
+    }
+
+    public HeadFragment() {
+    }
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.cehua_view, container, false);
@@ -45,6 +58,9 @@ public class HeadFragment extends BaseFragment {
         tabs = (PersonUserPagerSlidingTabStrip) view.findViewById(R.id.head_page_pupst);
         viewPager.setAdapter(new MyViewPagerFragmetAdapterSecond(getChildFragmentManager() , listFragment , titles));
         tabs.setViewPager(viewPager);
+        if (index != 20){
+            tabs.getChildAt(index);
+        }
         return view;
     }
 

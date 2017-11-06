@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        >
+
+
+        <TextView
+            android:id="@+id/get_present_getcode_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恭喜你，签到成功，"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:textColor="#737373"
+            />
+        <TextView
+            android:id="@+id/get_present_getcode_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获得25积分"
+            android:layout_below="@+id/get_present_getcode_lible"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            android:textColor="#737373"
+            android:layout_marginTop="8dp"
+            />
+
+
+        <TextView
+            android:id="@+id/get_present_getcode_diamess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="13sp"
+            android:background="@drawable/every_conversion_adapter_shape"
+            android:layout_below="@+id/get_present_getcode_second"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#737373"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

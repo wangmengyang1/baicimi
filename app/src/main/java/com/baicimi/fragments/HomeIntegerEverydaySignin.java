@@ -15,6 +15,7 @@ import com.baicimi.adapter.NewPeoplePrefectureAdapter;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.EverydaySigninEntry;
 import com.baicimi.view.GetPresentDialog;
+import com.baicimi.view.GetPresentGetCodeDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,12 +68,20 @@ public class HomeIntegerEverydaySignin extends BaseFragment implements View.OnCl
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i == 15){
+                if (i == 29){
                     GetPresentDialog getpresentDialog = new GetPresentDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
                     getpresentDialog.show();
                 }else{
-                    boolean b = list.get(i).isState();
-                    list.get(i).setState(!b);
+                    if (list.get(i).isState()){
+                        GetPresentGetCodeDialog getPresentGetCodeDialog = new   GetPresentGetCodeDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                        getPresentGetCodeDialog.show();
+                    }else{
+                        list.get(i).setState(false);
+                        list.get(i).setNotreachState(false);
+                        GetPresentGetCodeDialog getPresentGetCodeDialog = new   GetPresentGetCodeDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                        getPresentGetCodeDialog.show();
+
+                    }
                 }
                 adapter.notifyDataSetChanged();
             }

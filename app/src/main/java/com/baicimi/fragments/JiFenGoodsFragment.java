@@ -4,8 +4,6 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.text.format.Time;
 import android.view.Gravity;
@@ -26,7 +24,6 @@ import com.baicimi.adapter.MyViewPagerFragmetAdapterSecond;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.interfaces.DistributionNumberOnitemClick;
 import com.baicimi.ui.PersonUserPagerSlidingTabStrip;
-import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.event.OnClick;
 
 import java.util.ArrayList;
@@ -37,7 +34,7 @@ import java.util.List;
  * Created by tan on 2016/10/14.
  * 首页积分商品页面
  */
-public class JiFenGoodsFragment extends BaseFragment implements DistributionNumberOnitemClick{
+public class JiFenGoodsFragment extends BaseFragment implements DistributionNumberOnitemClick, View.OnClickListener {
     private ViewPager viewPager;
     private PersonUserPagerSlidingTabStrip tabs;
     private String[] titles = { "日化" , "绿色食品" , "美妆",  "母婴" , "个人用品","男士"};
@@ -53,7 +50,6 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
     public static final int check_color = 0xFFCE2F4B;
 
 
-
     private View head;
 
     private LinearLayout timelimit , new_conversion , goods_big;
@@ -64,7 +60,7 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
     private MyViewPagerFragmetAdapterSecond myViewPagerFragmetAdapterSecond;
     private List<Fragment> listFragment = new ArrayList<>();
 
-    private ImageView everyday , brand , festival , newconversion;
+    private ImageView everyday, brand, festival, newconversion, conversion_order;
 
 
     @Override
@@ -96,6 +92,11 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
         new_recommend_01 = view.findViewById(R.id.fragment_jifen_goods_new_recommend_01);
         new_recommend_02 = view.findViewById(R.id.fragment_jifen_goods_new_recommend_02);
         new_recommend_03 = view.findViewById(R.id.fragment_jifen_goods_new_recommend_03);
+
+
+        //兑换预约
+        conversion_order = (ImageView) view.findViewById(R.id.fragment_jifen_goods_conversion_order);
+        conversion_order.setOnClickListener(this);
 
         //人气商品
         return view;
@@ -132,7 +133,7 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
             R.id.jifen_goods_brand_11 , R.id.jifen_goods_brand_12 , R.id.fragment_jifen_goods_head , R.id.fragment_jifen_goods_timelimit ,
             R.id.fragment_jifen_goods_new_conversion , R.id.fragment_jifen_goods_big , R.id.fragment_jifen_goods_new_recommend_01 ,
             R.id.fragment_jifen_goods_new_recommend_02 , R.id.fragment_jifen_goods_new_recommend_03 ,R.id.fragment_jifen_goods_everyday,
-            R.id.fragment_jifen_goods_brand,R.id.fragment_jifen_goods_festival , R.id.fragment_jifen_goods_newconversion
+            R.id.fragment_jifen_goods_brand, R.id.fragment_jifen_goods_festival, R.id.fragment_jifen_goods_newconversion, R.id.fragment_jifen_goods_conversion_order
 
     })
     public void onClick(View view) {
@@ -234,6 +235,11 @@ public class JiFenGoodsFragment extends BaseFragment implements DistributionNumb
                 break;
             case R.id.fragment_jifen_goods_newconversion:
                 startFragment(new HomeIntegerTimelimitConversion(3));
+                break;
+
+            case R.id.fragment_jifen_goods_conversion_order:
+                //兑换预约
+                startFragment(new HomeConversionSubscribeFragment());//兑换预约
                 break;
 
         }

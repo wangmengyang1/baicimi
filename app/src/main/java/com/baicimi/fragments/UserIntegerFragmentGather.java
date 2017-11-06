@@ -39,9 +39,9 @@ public class UserIntegerFragmentGather extends BaseFragment{
     private void initListView() {
         listView = (ListView) view.findViewById(R.id.user_integer_fragment_grather_listview);
         list.clear();
-        list.add(new UseEntry(R.drawable.user_integer_image_04 , "在百次幂积分商城上兑换礼品（礼品包含大牌化妆品，使用日用品，进口母婴产品等高品质产品）" , "1.刮开积分码"));
-        list.add(new UseEntry(R.drawable.user_integer_image_04 , "在百次幂积分商城上兑换礼品（礼品包含大牌化妆品，使用日用品，进口母婴产品等高品质产品）" , "2.输入积分码"));
-        list.add(new UseEntry(R.drawable.user_integer_image_04 , "在百次幂积分商城上兑换礼品（礼品包含大牌化妆品，使用日用品，进口母婴产品等高品质产品）" , "3.积分即刻到账"));
+        list.add(new UseEntry(R.drawable.user_integer_image_04 , "在实体店，淘宝，天猫，京东，百次幂商场等各种渠道购买的宁菲产品，瓶身背面均标有产品积分码。" , "1.刮开积分码"));
+        list.add(new UseEntry(R.drawable.user_integer_image_04 , "刮开积分码，在网页版百次幂商城，手机端菜单栏上找到 输入积分码 ，点击输入积分，即可获得相应积分。" , "2.输入积分码"));
+        list.add(new UseEntry(R.drawable.user_integer_image_04 , "个人所得积分可提现，兑换礼品及购买商品时抵用现金。" , "3.积分即刻到账"));
         adapter = new GatherListViewAdapter(list , getContext());
         listView.setAdapter(adapter);
         fixGrdiViewHeight03(listView);

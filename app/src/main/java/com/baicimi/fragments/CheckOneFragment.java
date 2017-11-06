@@ -304,20 +304,23 @@ public class CheckOneFragment extends BaseFragment implements View.OnClickListen
         re_share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                share = new SharePopupWindow(getContext());
-//                share.setPlatformActionListener(MainActivity.this);
-                ShareModel model = new ShareModel();
-                model.setImageUrl(imageurl);
-                model.setText(text);
-                model.setTitle(title);
-                model.setUrl(url);
-                share.initShareParams(model);
-                share.showShareWindow();
-
-                // 显示窗口 (设置layout在PopupWindow中显示的位置)
-                share.showAtLocation(view.findViewById(R.id.btn_message),
-                        Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
+//                share = new SharePopupWindow(getContext());
+////                share.setPlatformActionListener(MainActivity.this);
+//                ShareModel model = new ShareModel();
+//                model.setImageUrl(imageurl);
+//                model.setText(text);
+//                model.setTitle(title);
+//                model.setUrl(url);
+//                share.initShareParams(model);
+//                share.showShareWindow();
+//
+//                // 显示窗口 (设置layout在PopupWindow中显示的位置)
+//                share.showAtLocation(view.findViewById(R.id.btn_message),
+//                        Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
+//                closePopupXinxiWindow();
                 closePopupXinxiWindow();
+                //分享
+                startFragment(new UserCenterHomePageProductShardSDK());
             }
         });
 

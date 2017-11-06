@@ -54,6 +54,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:background="@drawable/every_conversion_adapter_shape"
+            android:textSize="13sp"
             />
     </RelativeLayout>
 

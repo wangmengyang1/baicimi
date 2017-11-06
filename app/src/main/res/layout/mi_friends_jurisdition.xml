@@ -102,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="允许幂友对我的操作"
-                android:textSize="13sp"
+                android:textColor="#737373"
                 />
 
             <LinearLayout

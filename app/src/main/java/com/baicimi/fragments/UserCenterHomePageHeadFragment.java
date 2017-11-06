@@ -11,6 +11,7 @@ import android.widget.ExpandableListView;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.baicimi.MainActivity;
@@ -64,6 +65,8 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
     private TextView setting , message;
 
+    private RelativeLayout title_head;
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.user_center_home_page_head_fragment , container , false);
@@ -105,6 +108,9 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
         message = (TextView) view.findViewById(R.id.user_center_home_page_head_fragment_message);
         message.setOnClickListener(this);
+
+        title_head = (RelativeLayout) view.findViewById(R.id.title1);
+        title_head.setOnClickListener(this);
         return view;
     }
 
@@ -205,6 +211,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     startFragment(new PayManagerFragment());
                 } else if (i == 2 && i1 == 0) {
                     //我的等级
+                    startFragment(new UserCenterGradeFragment());
                 } else if (i == 2 && i1 == 1) {
                     //会员积分
                     startFragment(new UserCenterUserIntegerFragment());
@@ -368,22 +375,17 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                 showLayout.setVisibility(View.GONE);
                 break;
             case R.id.user_headimage:
+                //用户头像
+                break;
+
+            case R.id.title1:
                 //封面设置
 //                startFragment(new UserCenterCoverSettingFragment());
                 startFragment(new UserCenterCoverSettingCatalogyFragment());
                 break;
-
             case R.id.user_name:
-
-                if (shardSdk % 2 == 0){
-                    //分享
-                    startFragment(new UserCenterHomePageShardSDK());
-                }else {
-                    //产品分享
-                    startFragment(new UserCenterHomePageProductShardSDK());
-                }
-
-                shardSdk++;
+                //产品分享
+                startFragment(new UserCenterHomePageProductShardSDK());
                 break;
             case R.id.user_center_home_page_head_fragment_setting:
                 //设置界面
@@ -415,7 +417,6 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
         public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView,
                                  ViewGroup parent) {
             // TODO Auto-generated method stub
-
 
             GetChildViewHolder holder = null;
             if (convertView == null){

@@ -3,8 +3,10 @@ package com.baicimi.fragments;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.adapter.HomeIntegerFreeGiftAdapter;
 import com.baicimi.adapter.NewPeoplePrefectureAdapter;
@@ -19,7 +21,7 @@ import java.util.List;
  * 积分商城   新人专区
  */
 
-public class HomeIntegerNewPeoplePrefecture extends BaseFragment {
+public class HomeIntegerNewPeoplePrefecture extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private ListView listviewFirst , listviewSecond  ,listviewThread;
@@ -29,6 +31,8 @@ public class HomeIntegerNewPeoplePrefecture extends BaseFragment {
     private NewPeoplePrefectureAdapter adapterFirst;
     private NewPeoplePrefectureAdapter adapterSecond;
     private NewPeoplePrefectureAdapter adapterThread;
+
+    private ImageView back;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -41,6 +45,9 @@ public class HomeIntegerNewPeoplePrefecture extends BaseFragment {
         //threadlistview布局填充
         initThreadListView();
 
+
+        back = (ImageView) view.findViewById(R.id.home_integer_home_people_perfecture_back);
+        back.setOnClickListener(this);
         return view;
     }
 
@@ -108,4 +115,12 @@ public class HomeIntegerNewPeoplePrefecture extends BaseFragment {
         listView.setLayoutParams(params);
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.home_integer_home_people_perfecture_back:
+                ((MainActivity)getActivity()).goBack();//返回到上一级页面
+                break;
+        }
+    }
 }

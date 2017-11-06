@@ -15,6 +15,7 @@ import com.baicimi.entity.CustomGovernmentEntry;
 import com.baicimi.view.AutomaticSelectionDialog;
 import com.baicimi.view.CoverSettingFirstDialog;
 import com.baicimi.view.CoverSettingFirstReplaceDialog;
+import com.baicimi.view.CoverSettingSecondReplaceDialog;
 import com.baicimi.view.CustomExpandableListView;
 import com.baicimi.view.IntegerParticularsDialog;
 import com.baicimi.view.UserCenterCoverSettingPlanDialog;
@@ -123,10 +124,11 @@ public class UserCenterCoverSettingFragment extends BaseFragment implements View
                 automaticSeoectionDialog.show();
                 break;
             case R.id.usercenter_cover_setting_fragment_confirm:
+//                CoverSettingFirstReplaceDialog coverSettingFirstReplaceDialog = new CoverSettingFirstReplaceDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+//                coverSettingFirstReplaceDialog.show();
 
-                CoverSettingFirstReplaceDialog coverSettingFirstReplaceDialog = new CoverSettingFirstReplaceDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
-                coverSettingFirstReplaceDialog.show();
-
+                CoverSettingSecondReplaceDialog coverSettingSecondReplaceDialog = new CoverSettingSecondReplaceDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                coverSettingSecondReplaceDialog.show();
                 break;
         }
     }

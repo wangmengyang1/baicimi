@@ -113,7 +113,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1.允许那些人评论我"
-                        android:textSize="13sp"
+                        android:textColor="#737373"
                         />
 
                     <LinearLayout
@@ -277,7 +277,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="2.是否允许其他人在我的评论中发表图片"
-                        android:textSize="13sp"
+                        android:textColor="#737373"
                         />
 
                     <LinearLayout
@@ -392,7 +392,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="3.我收到那些人的评论提醒"
-                        android:textSize="13sp"
+                        android:textColor="#737373"
                         />
 
                     <LinearLayout
@@ -484,7 +484,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="4.我参与的（接收到我评论的产品或文章中，其他人的评论）"
-                        android:textSize="13sp"
+                        android:textColor="#737373"
                         />
 
                     <LinearLayout

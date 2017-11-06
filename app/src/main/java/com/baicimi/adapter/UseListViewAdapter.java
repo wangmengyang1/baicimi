@@ -9,7 +9,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.baicimi.R;
+import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.UseEntry;
+import com.baicimi.fragments.HeadFragment;
+import com.baicimi.fragments.MainFragment;
 
 import java.util.List;
 
@@ -21,11 +24,13 @@ public class UseListViewAdapter extends BaseAdapter{
     private List<UseEntry> list;
     private Context context;
     private LayoutInflater inflater;
+    private BaseFragment fragment;
 
-    public UseListViewAdapter(List<UseEntry> list, Context context) {
+    public UseListViewAdapter(List<UseEntry> list, Context context ,BaseFragment fragment) {
         this.list = list;
         this.context = context;
         inflater = LayoutInflater.from(context);
+        this.fragment = fragment;
     }
 
     @Override
@@ -67,6 +72,14 @@ public class UseListViewAdapter extends BaseAdapter{
             holder.more.setVisibility(View.VISIBLE);
             holder.more.setText(init.getMore());
         }
+
+        holder.more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fragment.getActivity().getSupportFragmentManager().popBackStack(null , 1);
+                fragment.startFragment(new MainFragment());
+            }
+        });
 
         return view;
     }

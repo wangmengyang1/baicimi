@@ -9,6 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
+        android:layout_margin="5dp"
         >
 
         <ImageView
@@ -16,7 +17,22 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/usercenter_home_page_shardsdk_image_05"
+            android:layout_centerHorizontal="true"
             />
+
+        <TextView
+            android:id="@+id/product_shard_sdk_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信好友"
+            android:textSize="11sp"
+            android:layout_below="@+id/product_shard_sdk_adapter_imageurl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
     </RelativeLayout>
 
 </LinearLayout>

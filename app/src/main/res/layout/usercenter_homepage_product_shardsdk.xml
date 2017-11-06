@@ -142,19 +142,31 @@
                 android:paddingLeft="15dp"
                 >
 
-                <ImageView
+                <LinearLayout
+                    android:id="@+id/usercenter_homepage_product_shardsdk_second_layout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/hudie_img"
-                    />
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="全球生活汇"
-                    android:layout_marginLeft="10dp"
-                    />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/hudie_img"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="全球生活汇"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+
+                </LinearLayout>
 
                 <ImageView
                     android:layout_width="40dp"
@@ -270,6 +282,7 @@
                 android:layout_marginRight="15dp"
                 android:scrollbars="none"
                 android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
                 ></GridView>
         </LinearLayout>
 

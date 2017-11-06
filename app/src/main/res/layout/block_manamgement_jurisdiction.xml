@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:text="1.屏蔽私信"
             android:textColor="#737373"
-            android:textSize="13sp"
+
             />
 
         <TextView
@@ -168,7 +168,7 @@
             android:layout_height="wrap_content"
             android:text="2.屏蔽广告"
             android:textColor="#737373"
-            android:textSize="13sp"
+
             />
 
         <TextView

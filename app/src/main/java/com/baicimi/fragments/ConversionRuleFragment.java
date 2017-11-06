@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
@@ -17,6 +18,7 @@ public class ConversionRuleFragment extends BaseFragment implements View.OnClick
 
     private View view;
     private ImageView back;
+    private TextView understandcode;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -24,6 +26,9 @@ public class ConversionRuleFragment extends BaseFragment implements View.OnClick
 
         back = (ImageView) view.findViewById(R.id.conversion_rule_fragment_back);
         back.setOnClickListener(this);
+
+        understandcode = (TextView) view.findViewById(R.id.conversion_rule_fragment_understandcode);
+        understandcode.setOnClickListener(this);
         return view;
     }
 
@@ -37,6 +42,11 @@ public class ConversionRuleFragment extends BaseFragment implements View.OnClick
         switch (view.getId()){
             case R.id.conversion_rule_fragment_back:
                 ((MainActivity)getActivity()).goBack();//返回到上一级页面
+                break;
+            case R.id.conversion_rule_fragment_understandcode:
+                //积分规则
+//                startFragment(new PointsRuleFragment(), null);
+                startFragment(new HomeIntegerRuleFragmet(), null);
                 break;
         }
     }
