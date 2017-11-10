@@ -1,10 +1,12 @@
 package com.baicimi.fragments;
 
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
@@ -26,6 +28,7 @@ public class MiWalletHomePageAccountBalance extends BaseFragment implements View
     private ListView listView;
     private List<MiWalletRecordEntry> list = new ArrayList<>();
     private MiWalletRecordAdapter adapter;
+    private TextView lible_01 ,lible_02 ,lible_03 ,lible_04 ;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -37,8 +40,29 @@ public class MiWalletHomePageAccountBalance extends BaseFragment implements View
         //listview布局填充
         initListView();
 
+        lible_01 = (TextView) view.findViewById(R.id.mi_wallet_homepage_account_balance_text_01);
+        lible_02 = (TextView) view.findViewById(R.id.mi_wallet_homepage_account_balance_text_02);
+        lible_03 = (TextView) view.findViewById(R.id.mi_wallet_homepage_account_balance_text_03);
+        lible_04 = (TextView) view.findViewById(R.id.mi_wallet_homepage_account_balance_text_04);
+
+        lible_01.setOnClickListener(this);
+        lible_02.setOnClickListener(this);
+        lible_03.setOnClickListener(this);
+        lible_04.setOnClickListener(this);
 
         return view;
+    }
+
+
+    private void showTitleLible(){
+        lible_01.setBackgroundColor(Color.parseColor("#737373"));
+        lible_01.setTextColor(Color.WHITE);
+        lible_02.setBackgroundColor(Color.parseColor("#737373"));
+        lible_02.setTextColor(Color.WHITE);
+        lible_03.setBackgroundColor(Color.parseColor("#737373"));
+        lible_03.setTextColor(Color.WHITE);
+        lible_04.setBackgroundColor(Color.parseColor("#737373"));
+        lible_04.setTextColor(Color.WHITE);
     }
 
     @Override
@@ -93,6 +117,26 @@ public class MiWalletHomePageAccountBalance extends BaseFragment implements View
         switch (view.getId()){
             case R.id.mi_wallet_homepage_account_balance_back:
                 ((MainActivity)getActivity()).goBack();//返回到上一级页面
+                break;
+            case R.id.mi_wallet_homepage_account_balance_text_01:
+                showTitleLible();
+                lible_01.setBackgroundResource(R.drawable.background_null);
+                lible_01.setTextColor(Color.parseColor("#737373"));
+                break;
+            case R.id.mi_wallet_homepage_account_balance_text_02:
+                showTitleLible();
+                lible_02.setBackgroundResource(R.drawable.background_null);
+                lible_02.setTextColor(Color.parseColor("#737373"));
+                break;
+            case R.id.mi_wallet_homepage_account_balance_text_03:
+                showTitleLible();
+                lible_03.setBackgroundResource(R.drawable.background_null);
+                lible_03.setTextColor(Color.parseColor("#737373"));
+                break;
+            case R.id.mi_wallet_homepage_account_balance_text_04:
+                showTitleLible();
+                lible_04.setBackgroundResource(R.drawable.background_null);
+                lible_04.setTextColor(Color.parseColor("#737373"));
                 break;
         }
     }

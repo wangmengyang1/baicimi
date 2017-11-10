@@ -39,6 +39,7 @@ public class MiWalletDiscountCouponFirst extends BaseFragment implements View.On
 
     private String libleString = "";
 
+
     @SuppressLint("ValidFragment")
     public MiWalletDiscountCouponFirst(String libleString) {
         this.libleString = libleString;

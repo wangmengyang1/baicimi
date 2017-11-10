@@ -68,7 +68,7 @@ public class MiWalldtMyCodeFragment extends BaseFragment implements View.OnClick
     private void initList() {
         grouplist.clear();
         grouplist.add("我的积分");
-        grouplist.add("收入/指出分析");
+        grouplist.add("收入/支出分析");
         grouplist.add("积分获得分析");
         grouplist.add("积分支出分析");
         grouplist.add("积分明细");

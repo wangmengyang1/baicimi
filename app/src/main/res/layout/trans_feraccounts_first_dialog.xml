@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        >
+
+        <TextView
+            android:id="@+id/trans_feraccounts_first_dialog_lible"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="恭喜您，成为百次幂商城会员"
+            android:textSize="13sp"
+            android:textColor="#737373"
+            android:gravity="center"
+            android:visibility="invisible"
+            />
+
+
+
+        <TextView
+            android:id="@+id/trans_feraccounts_first_dialog_content"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="您的转账信息已成功提交。转账金额将在2小时内到达您的百次幂账户。"
+            android:layout_below="@+id/trans_feraccounts_first_dialog_lible"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            android:textColor="#737373"
+            android:gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/trans_feraccounts_first_dialog_content"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/trans_feraccounts_first_dialog_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="确定"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:background="#737373"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

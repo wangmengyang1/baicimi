@@ -883,6 +883,7 @@
                             />
 
                         <TextView
+                            android:id="@+id/mi_wallet_fragment_my_bustages_repayment"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"

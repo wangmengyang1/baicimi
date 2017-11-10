@@ -102,6 +102,7 @@
                     android:text="签到所得"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -110,6 +111,7 @@
                     android:text="500分"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
 
             </LinearLayout>
@@ -136,6 +138,7 @@
                     android:text="购物所得"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -144,6 +147,7 @@
                     android:text="2015分"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
 
             </LinearLayout>
@@ -171,6 +175,7 @@
                     android:text="登录所得"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -179,6 +184,7 @@
                     android:text="56分"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
 
             </LinearLayout>
@@ -205,6 +211,7 @@
                     android:text="游戏所得"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -213,6 +220,7 @@
                     android:text="2015分"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
 
             </LinearLayout>
@@ -239,6 +247,7 @@
                     android:text="分享所得"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -247,6 +256,7 @@
                     android:text="2015分"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
 
             </LinearLayout>
@@ -272,6 +282,7 @@
                     android:layout_height="wrap_content"
                     android:text="推荐所得"
                     android:gravity="center"
+                    android:textSize="13sp"
                     android:textColor="#737373"
                     />
                 <TextView
@@ -281,6 +292,7 @@
                     android:text="2015分"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
 
             </LinearLayout>
@@ -308,6 +320,7 @@
                     android:text="发布所得"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -316,6 +329,7 @@
                     android:text="56分"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
 
             </LinearLayout>
@@ -343,6 +357,7 @@
                     android:text="广告所得"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -350,6 +365,7 @@
                     android:layout_height="wrap_content"
                     android:text="56分"
                     android:gravity="center"
+                    android:textSize="13sp"
                     android:textColor="#737373"
                     />
 
@@ -377,6 +393,7 @@
                     android:text="其他所得"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -385,6 +402,7 @@
                     android:text="108分"
                     android:gravity="center"
                     android:textColor="#737373"
+                    android:textSize="13sp"
                     />
 
             </LinearLayout>

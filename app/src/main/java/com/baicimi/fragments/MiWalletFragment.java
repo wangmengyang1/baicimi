@@ -41,12 +41,12 @@ public class MiWalletFragment extends BaseFragment {
     private ImageView mImageView;
 
     private int indext;
+    private ImageView back;
 
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.fragment_miwallet, container, false);
-
         return view;
     }
 

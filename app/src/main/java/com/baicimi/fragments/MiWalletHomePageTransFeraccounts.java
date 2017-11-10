@@ -5,9 +5,14 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
+import com.baicimi.view.TransFeraccountsFirstDialog;
+import com.baicimi.view.TransFeraccountsSecondDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +21,7 @@ import java.util.List;
  * Created by Administrator on 2017/11/1.
  * 个人中心首页  资产中心  幂钱包 转账付款
  */
-public class MiWalletHomePageTransFeraccounts extends BaseFragment {
+public class MiWalletHomePageTransFeraccounts extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private FragmentManager fm;
@@ -27,6 +32,10 @@ public class MiWalletHomePageTransFeraccounts extends BaseFragment {
     private TransFeraccountsFirst transFeraccountsFirst;
     private TransFeraccountsSecond transFeraccountsSecond;
 
+    private TextView account , bannkcard;
+    private ImageView back;
+    private TextView next;
+
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -36,6 +45,17 @@ public class MiWalletHomePageTransFeraccounts extends BaseFragment {
         init();
 
         initShowFragment(0);
+
+        account = (TextView) view.findViewById(R.id.miwallet_homepage_trans_feracounts_account);
+        bannkcard = (TextView) view.findViewById(R.id.miwallet_homepage_trans_feracounts_bannkcard);
+        account.setOnClickListener(this);
+        bannkcard.setOnClickListener(this);
+
+        back = (ImageView) view.findViewById(R.id.miwallet_homepage_trand_feraccounts_back);
+        back.setOnClickListener(this);
+
+        next = (TextView) view.findViewById(R.id.miwallet_homepage_trans_feraccounts_next);
+        next.setOnClickListener(this);
         return view;
     }
 
@@ -80,5 +100,29 @@ public class MiWalletHomePageTransFeraccounts extends BaseFragment {
     @Override
     protected void initData() {
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.miwallet_homepage_trand_feraccounts_back:
+                ((MainActivity)getActivity()).goBack();
+                break;
+            case R.id.miwallet_homepage_trans_feracounts_account:
+                initShowFragment(0);
+                break;
+            case R.id.miwallet_homepage_trans_feracounts_bannkcard:
+                initShowFragment(1);
+                break;
+            case R.id.miwallet_homepage_trans_feraccounts_next:
+                if (index == 0){
+                    TransFeraccountsSecondDialog transFeraccountsSecondDialog = new TransFeraccountsSecondDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                    transFeraccountsSecondDialog.show();
+                }else{
+                    TransFeraccountsFirstDialog transFeraccountsFirstDialog = new TransFeraccountsFirstDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                    transFeraccountsFirstDialog.show();
+                }
+                break;
+        }
     }
 }

@@ -121,10 +121,12 @@
                     />
 
                 <TextView
+                    android:id="@+id/miwallet_homepage_trans_feracounts_account"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="百次幂账户"
                     />
+
 
                 <CheckBox
                     android:layout_width="15dp"
@@ -136,7 +138,11 @@
                     android:layout_marginLeft="50dp"
                     />
 
+
+
+
                 <TextView
+                    android:id="@+id/miwallet_homepage_trans_feracounts_bannkcard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="银行卡"
@@ -157,6 +163,7 @@
 
 
             <TextView
+                android:id="@+id/miwallet_homepage_trans_feraccounts_next"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="下一步"

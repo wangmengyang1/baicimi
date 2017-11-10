@@ -42,9 +42,9 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
     private List<String> GroupData;
     private List<List<String>> ChildrenData;
-    private List<Integer> groupDageImage  = new ArrayList<>();
+    private List<Integer> groupDageImage = new ArrayList<>();
 
-    private ImageView back , headImage;
+    private ImageView back, headImage;
 
     private FragmentManager fm;
     private List<BaseFragment> fragments = new ArrayList<>();
@@ -53,7 +53,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
     private String showFragemtnTag = "null";
 
     private LinearLayout shopping, community;
-    private TextView shopping_tv, community_tv , shardSDk;
+    private TextView shopping_tv, community_tv, shardSDk;
 
     //今日推荐
     private GridView gridview_03;
@@ -63,13 +63,13 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
     private int shardSdk;
 
-    private TextView setting , message;
+    private TextView setting, message;
 
     private RelativeLayout title_head;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
-        view = inflater.inflate(R.layout.user_center_home_page_head_fragment , container , false);
+        view = inflater.inflate(R.layout.user_center_home_page_head_fragment, container, false);
 
         //下拉菜单问题
         initCusListView();
@@ -160,7 +160,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
     //下拉菜单问题
     private void initCusListView() {
-        expd_lv = (CustomExpandableListView)view.findViewById(R.id.user_center_home_page_head_fragment_expd_lv);
+        expd_lv = (CustomExpandableListView) view.findViewById(R.id.user_center_home_page_head_fragment_expd_lv);
         LoadListData();
         adapters = new UserCenterHomePageHeadFragment.ExpandableAdapter();
         expd_lv.setAdapter(adapters);
@@ -170,12 +170,12 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
         expd_lv.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
             @Override
             public boolean onGroupClick(ExpandableListView expandableListView, View view, int i, long l) {
-                if (i == 8 ) {
+                if (i == 8) {
                     //我的购物袋
-                    startFragment(new ShopingCarFragment(CommodityNumberEntry.commodityNumberEntryIntereal().getCount()) , null);
-                }else if (i == 10) {
+                    startFragment(new ShopingCarFragment(CommodityNumberEntry.commodityNumberEntryIntereal().getCount()), null);
+                } else if (i == 10) {
                     //员工物品申请
-                    startFragment(new DistributorPurchaseOption() , null);
+                    startFragment(new DistributorPurchaseOption(), null);
                 }
                 return false;
             }
@@ -215,52 +215,49 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                 } else if (i == 2 && i1 == 1) {
                     //会员积分
                     startFragment(new UserCenterUserIntegerFragment());
-                }else if (i == 4 && i1 == 0) {
+                } else if (i == 4 && i1 == 0) {
                     //发起亲密付
                     startFragment(new UserCenterHomepageHeadIntimacyRequest());
-                }else if (i == 4 && i1 == 1) {
+                } else if (i == 4 && i1 == 1) {
                     //红包
-                }else if (i == 4 && i1 == 2) {
+                } else if (i == 4 && i1 == 2) {
                     //礼品寄存处
 //                    startFragment(new FragmentPresentSave() , null);
                     startFragment(new FragmentPresentSaveHomePage());//(新)
-                }else if (i == 4 && i1 == 3) {
+                } else if (i == 4 && i1 == 3) {
                     //爱心捐赠
-                }else if (i == 4 && i1 == 4) {
+                } else if (i == 4 && i1 == 4) {
                     //手机充值
-                }else if (i == 4 && i1 == 5) {
+                } else if (i == 4 && i1 == 5) {
                     //记账本
-                }else if (i == 4 && i1 == 6) {
+                } else if (i == 4 && i1 == 6) {
                     //幂额度
-                }else if (i == 4 && i1 == 7) {
+                } else if (i == 4 && i1 == 7) {
                     //幂信用积分
-                }else if (i == 4 && i1 == 8) {
+                } else if (i == 4 && i1 == 8) {
                     //信用卡还款
-                }else if (i == 5 && i1 == 0) {
+                } else if (i == 5 && i1 == 0) {
                     //加入分销点/点
-                }else if (i == 5 && i1 == 1) {
+                } else if (i == 5 && i1 == 1) {
                     //我要推荐
                     startFragment(new MyRecommendFragmentHomePage());
-
 //                    startFragment(new MyRecommendFragment("首次推荐礼品"));
-                }else if (i == 6 && i1 == 0) {
+                } else if (i == 6 && i1 == 0) {
                     //我的商城
-                }else if (i == 6 && i1 == 1) {
+                } else if (i == 6 && i1 == 1) {
                     //分销入口
-                }else if (i == 7 && i1 == 0) {
+                } else if (i == 7 && i1 == 0) {
                     //购买咨询
-                }else if (i == 7 && i1 == 1) {
+                } else if (i == 7 && i1 == 1) {
                     //投诉与建议
                     startFragment(new ComplaintSuggestFragment());
-                }else if (i == 8 ) {
+                } else if (i == 8) {
                     //我的购物袋
-                    startFragment(new ShopingCarFragment(CommodityNumberEntry.commodityNumberEntryIntereal().getCount()) , null);
-                }else if (i == 10) {
+                    startFragment(new ShopingCarFragment(CommodityNumberEntry.commodityNumberEntryIntereal().getCount()), null);
+                } else if (i == 10) {
                     //员工物品申请
-                    startFragment(new DistributorPurchaseOption() , null);
+                    startFragment(new DistributorPurchaseOption(), null);
                 }
-
-
                 return true;
             }
         });
@@ -354,9 +351,9 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.user_center_home_page_head_fragment_back:
-                ((MainActivity)getActivity()).goBack();//返回到上一级页面
+                ((MainActivity) getActivity()).goBack();//返回到上一级页面
                 break;
             case R.id.user_center_home_page_fragment_shopping:
                 shopping_tv.setTextColor(Color.parseColor("#c22737"));
@@ -377,7 +374,6 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
             case R.id.user_headimage:
                 //用户头像
                 break;
-
             case R.id.title1:
                 //封面设置
 //                startFragment(new UserCenterCoverSettingFragment());
@@ -419,20 +415,20 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
             // TODO Auto-generated method stub
 
             GetChildViewHolder holder = null;
-            if (convertView == null){
-                convertView  = LayoutInflater.from(getContext()).inflate(R.layout.user_center_homepage_head_fragment_listview_item_child , null);
+            if (convertView == null) {
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.user_center_homepage_head_fragment_listview_item_child, null);
                 holder = new GetChildViewHolder();
                 holder.textViews = (TextView) convertView.findViewById(R.id.user_center_homepage_head_fragment_listview_item_child_textview);
                 holder.textview_v = convertView.findViewById(R.id.user_center_homepage_head_fragment_listview_item_child_view);
                 convertView.setTag(holder);
-            }else {
+            } else {
                 holder = (GetChildViewHolder) convertView.getTag();
             }
 
             holder.textViews.setText(ChildrenData.get(groupPosition).get(childPosition));
-            if (childPosition == 0){
+            if (childPosition == 0) {
                 holder.textview_v.setVisibility(View.VISIBLE);
-            }else {
+            } else {
                 holder.textview_v.setVisibility(View.INVISIBLE);
             }
 
@@ -440,19 +436,18 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
         }
 
 
-        private class GetChildViewHolder{
+        private class GetChildViewHolder {
             private TextView textViews;
             private ImageView imageUrl;
             private View textview_v;
         }
 
 
-
         @Override
         public int getChildrenCount(int groupPosition) {
             // TODO Auto-generated method stub
-            if (ChildrenData.get(groupPosition).size() == 1){
-               return 0;
+            if (ChildrenData.get(groupPosition).size() == 1) {
+                return 0;
             }
             return ChildrenData.get(groupPosition).size();
         }
@@ -481,13 +476,13 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
             // TODO Auto-generated method stub
 
             GetChildViewHolder holder = null;
-            if (convertView == null){
-                convertView  = LayoutInflater.from(getContext()).inflate(R.layout.user_center_homepage_head_fragment_listview_item_group , null);
+            if (convertView == null) {
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.user_center_homepage_head_fragment_listview_item_group, null);
                 holder = new GetChildViewHolder();
                 holder.textViews = (TextView) convertView.findViewById(R.id.user_center_home_page_head_fragment_listview_item_group_lible);
                 holder.imageUrl = (ImageView) convertView.findViewById(R.id.user_center_home_page_head_fragment_listview_item_group_imageurl);
                 convertView.setTag(holder);
-            }else {
+            } else {
                 holder = (GetChildViewHolder) convertView.getTag();
             }
 

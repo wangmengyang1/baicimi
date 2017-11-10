@@ -100,8 +100,8 @@
                 android:layout_width="65dp"
                 android:layout_height="wrap_content"
                 android:text="重新申请"
-                android:textColor="@color/white"
-                android:background="#737373"
+
+                android:background="#eeeeee"
                 android:layout_marginTop="15dp"
                 android:textSize="13sp"
                 android:padding="2dp"

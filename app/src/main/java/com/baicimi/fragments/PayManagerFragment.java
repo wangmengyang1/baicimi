@@ -4,10 +4,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
+import com.baicimi.view.ModificationPayPasswordDialog;
 
 /**
  * Created by Administrator on 2017/11/3.
@@ -17,6 +19,7 @@ public class PayManagerFragment extends BaseFragment implements View.OnClickList
 
     private View view;
     private ImageView back;
+    private TextView pay_password;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -24,6 +27,9 @@ public class PayManagerFragment extends BaseFragment implements View.OnClickList
 
         back = (ImageView) view.findViewById(R.id.pay_nameger_fragment_back);
         back.setOnClickListener(this);
+
+        pay_password = (TextView) view.findViewById(R.id.pay_nameger_fragment_pay_password);
+        pay_password.setOnClickListener(this);
         return view;
     }
 
@@ -37,6 +43,11 @@ public class PayManagerFragment extends BaseFragment implements View.OnClickList
         switch (view.getId()){
             case R.id.pay_nameger_fragment_back:
                 ((MainActivity)getActivity()).goBack();//返回到上一级页面
+                break;
+            case R.id.pay_nameger_fragment_pay_password:
+                //修改支付 密码
+                ModificationPayPasswordDialog paySucceedDialog = new ModificationPayPasswordDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                paySucceedDialog.show();
                 break;
         }
     }

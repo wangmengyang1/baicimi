@@ -3,8 +3,10 @@ package com.baicimi.fragments;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
 
@@ -18,6 +20,8 @@ public class MiWalletFragmentHomePage extends BaseFragment implements View.OnCli
     private View view;
     private TextView record , myorderform ,transferaccounts , code , mybystages , discountcoupon;
     private int indext;
+
+    private ImageView back;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -39,6 +43,9 @@ public class MiWalletFragmentHomePage extends BaseFragment implements View.OnCli
 
         discountcoupon = (TextView) view.findViewById(R.id.mi_wallet_fragment_homepage_discountcoupon);
         discountcoupon.setOnClickListener(this);
+
+        back = (ImageView) view.findViewById(R.id.mi_wallet_fragment_homepage_back);
+        back.setOnClickListener(this);
         return view;
     }
 
@@ -50,6 +57,9 @@ public class MiWalletFragmentHomePage extends BaseFragment implements View.OnCli
     @Override
     public void onClick(View view) {
         switch (view.getId()){
+            case R.id.mi_wallet_fragment_homepage_back:
+                ((MainActivity)getActivity()).goBack();//返回到上一级页面
+                break;
             case R.id.mi_wallet_fragment_homepage_record:
                 //我的收支记录
                 startFragment(new MiWalletHomePageRecord());
