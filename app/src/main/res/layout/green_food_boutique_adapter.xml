@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/green_food_boutiqye_adapter_imageurl"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/green_food_image_13"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/green_food_boutiqye_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="五常大米是生活中米饭的佳品，其颗粒饱满，质地坚硬，色泽清白透饭粒油亮，香味浓郁，素有\''贡米\''之称。"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:layout_below="@+id/green_food_boutiqye_adapter_imageurl"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

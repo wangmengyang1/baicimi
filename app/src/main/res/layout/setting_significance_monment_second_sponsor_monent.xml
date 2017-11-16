@@ -99,7 +99,7 @@
         >
 
         <TextView
-
+            android:id="@+id/setting_significance_monment_second_sponsor_monent_bachelordom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="单身认证"
@@ -107,7 +107,7 @@
             android:padding="4dp"
             />
         <TextView
-
+            android:id="@+id/setting_significance_monment_second_sponsor_love_bachelordom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="恋爱认证"
@@ -115,7 +115,7 @@
             android:padding="4dp"
             />
         <TextView
-
+            android:id="@+id/setting_significance_monment_second_sponsor_getmarried_bachelordom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="结婚认证"
@@ -132,16 +132,25 @@
             android:padding="4dp"
             />
         <TextView
-
+            android:id="@+id/setting_significande_moment_second_fragment_pregnancy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="怀孕认证"
             android:layout_marginTop="18dp"
             android:padding="4dp"
             />
+        <TextView
+            android:id="@+id/setting_significande_moment_second_fragment_treasuretreasuremomdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="宝爸宝妈认证"
+            android:layout_marginTop="18dp"
+            android:padding="4dp"
+            />
+
 
         <TextView
-
+            android:id="@+id/setting_significande_moment_second_fragment_old_married_couple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="老夫老妻认证"

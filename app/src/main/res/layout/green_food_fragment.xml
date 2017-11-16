@@ -20,6 +20,7 @@
 
 
             <ImageView
+                android:id="@+id/green_food_fragmetn_boutique"
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:src="@drawable/green_food_image_01"
@@ -35,6 +36,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/green_food_fragment_food_layout"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
@@ -401,6 +403,7 @@
 
 
                     <TextView
+                        android:id="@+id/green_food_fragment_ordering_guide"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="立即预定"
@@ -537,6 +540,7 @@
                 />
 
             <RelativeLayout
+                android:id="@+id/green_food_fragment_fruits"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -813,7 +817,6 @@
                 android:numColumns="2"
                 ></GridView>
 
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -889,18 +892,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="即将上架，敬请期待"
-        android:textSize="12sp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:paddingRight="20dp"
-        android:paddingLeft="20dp"
-        android:background="@drawable/head_meigui_rose_fragment_textview_shape"
-        android:textColor="@color/white"
-        />-->
 
 </LinearLayout>

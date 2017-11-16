@@ -4,6 +4,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.baicimi.R;
 import com.baicimi.adapter.GreenFoodGridViewAdapter;
@@ -22,7 +26,7 @@ import java.util.List;
  * Created by Administrator on 2017/10/10.
  * 绿色食品首页布局
  */
-public class GreenFoodFragment extends BaseFragment{
+public class GreenFoodFragment extends BaseFragment implements View.OnClickListener {
 
     private View view;
     //头部轮播图集合
@@ -33,30 +37,48 @@ public class GreenFoodFragment extends BaseFragment{
     private List<ShaiXuanListBean> list_01 , list_02 , list_03 , list_04 , list_05 ;
     private GreenFoodGridViewAdapter adapter_01 ,adapter_02 ,adapter_03 ,adapter_04 ,adapter_05 ;
 
+    private RelativeLayout fruits_layout;
+    private TextView ordering_guide;//订购指南
+    private ImageView boutique;//精品炼成记
+    private LinearLayout food_layout;
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.green_food_fragment , container , false);
         //头部轮播方法
         initBanner();
 
-
         //gridview布局填充
-        initGridView();
+        initGridView(R.id.green_food_fragment_gridview_01 , list_01 , adapter_01);
+        initGridView(R.id.green_food_fragment_gridview_02 , list_02 , adapter_02);
+        initGridView(R.id.green_food_fragment_gridview_03 , list_03 , adapter_03);
+        initGridView(R.id.green_food_fragment_gridview_04 , list_04 , adapter_04);
+        initGridView(R.id.green_food_fragment_gridview_05 , list_05 , adapter_05);
+        fruits_layout = (RelativeLayout) view.findViewById(R.id.green_food_fragment_fruits);
+        fruits_layout.setOnClickListener(this);
+
+
+        ordering_guide = (TextView) view.findViewById(R.id.green_food_fragment_ordering_guide);
+        ordering_guide.setOnClickListener(this);
+        boutique = (ImageView) view.findViewById(R.id.green_food_fragmetn_boutique);
+        boutique.setOnClickListener(this);
+
+        food_layout = (LinearLayout) view.findViewById(R.id.green_food_fragment_food_layout);
+        food_layout.setOnClickListener(this);
 
         return view;
     }
 
     //gridview布局填充
-    private void initGridView() {
-        gridView_01 = (GridView) view.findViewById(R.id.green_food_fragment_gridview_01);
-        list_01 = new ArrayList<>();
+    private void initGridView(int id , List<ShaiXuanListBean> list , GreenFoodGridViewAdapter adapter) {
+        gridView_01 = (GridView) view.findViewById(id);
+        list = new ArrayList<>();
 
-        list_01.add(new ShaiXuanListBean("" , "水清浅青岛红苹果" , "5000" , "100" , "9899.00" , "8908.00" , R.drawable.green_food_image_15));
-        list_01.add(new ShaiXuanListBean("" , "水清浅山东大枣" , "5000" , "100" , "9899.00" , "8908.00" , R.drawable.green_food_image_15));
-        adapter_01 = new GreenFoodGridViewAdapter( list_01 , getContext() ,this);
-        gridView_01.setAdapter(adapter_01);
+        list.add(new ShaiXuanListBean("" , "水清浅青岛红苹果" , "5000" , "100" , "9899.00" , "8908.00" , R.drawable.green_food_image_15));
+        list.add(new ShaiXuanListBean("" , "水清浅山东大枣" , "5000" , "100" , "9899.00" , "8908.00" , R.drawable.green_food_image_15));
+        adapter = new GreenFoodGridViewAdapter( list , getContext() ,this);
+        gridView_01.setAdapter(adapter);
     }
-
 
     //头部轮播方法
     private void initBanner() {
@@ -92,6 +114,7 @@ public class GreenFoodFragment extends BaseFragment{
         banner.setOnBannerListener(new OnBannerListener() {
             @Override
             public void OnBannerClick(int position) {
+                //商品详情页面
                 startFragment(new SerchGoodsFragment(),null);
             }
         });
@@ -100,5 +123,27 @@ public class GreenFoodFragment extends BaseFragment{
     @Override
     protected void initData() {
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.green_food_fragment_fruits:
+                //鲜果专区
+                startFragment(new GreenFoodFragmentFruits());
+                break;
+            case R.id.green_food_fragment_ordering_guide:
+                //订购指南
+                startFragment(new GreenFoodOrderingGuide());
+                break;
+            case R.id.green_food_fragmetn_boutique:
+                //精品炼成记
+                startFragment(new GreenfoodBoutique());
+                break;
+            case R.id.green_food_fragment_food_layout:
+                //绿色食品
+                startFragment(new GreenfoodFoodLayout());
+                break;
+        }
     }
 }
