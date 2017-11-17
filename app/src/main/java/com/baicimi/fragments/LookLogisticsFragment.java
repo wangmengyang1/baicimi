@@ -19,6 +19,7 @@ public class LookLogisticsFragment extends BaseFragment implements View.OnClickL
     private View view;
     private ImageView back;
     private TextView logistics , courier;
+    private int index;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -46,6 +47,8 @@ public class LookLogisticsFragment extends BaseFragment implements View.OnClickL
             case R.id.look_logistics_fragment_server_logistics:
                 //物流客服界面首页
                 startFragment(new LookLoginsticsServerLogisticsHomePage());
+
+
                 break;
             case R.id.look_logistics_fragment_evaluate_courier:
                 //评价快递员界面

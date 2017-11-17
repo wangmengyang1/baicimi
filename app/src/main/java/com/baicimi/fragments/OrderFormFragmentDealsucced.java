@@ -38,7 +38,7 @@ public class OrderFormFragmentDealsucced extends BaseFragment implements View.On
     private LinearLayout layout_02 , layout_03 , layout_04;
 
 
-
+    private int index;
 
     @SuppressLint("ValidFragment")
     public OrderFormFragmentDealsucced(String typeS) {
@@ -110,7 +110,18 @@ public class OrderFormFragmentDealsucced extends BaseFragment implements View.On
                 break;
             case R.id.order_form_fragment_dealsucceed_logistics:
                 //物流
-                startFragment(new LookLogisticsFragment());//01
+//                startFragment(new LookLogisticsFragment());//01
+                //查看物流
+                if (index % 4 == 0) {
+                    startFragment(new LookLogisticsFragment());//01
+                } else if (index % 4 == 1) {
+                    startFragment(new LookLogisticsFragmentSecond());//02
+                } else if (index % 4 == 2) {
+                    startFragment(new LookLogisticsFragmentThread());//03
+                } else if (index % 4 == 3) {
+                    startFragment(new LookLogisticsFragmentFour());//04
+                }
+                index++;
                 break;
             case R.id.order_form_fragment_dealsucceed_aftersale:
                 //售后

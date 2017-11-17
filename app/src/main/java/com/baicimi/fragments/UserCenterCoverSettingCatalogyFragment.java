@@ -17,7 +17,7 @@ import com.baicimi.base.BaseFragment;
 public class UserCenterCoverSettingCatalogyFragment extends BaseFragment implements View.OnClickListener {
 
     private View view;
-    private TextView appreciation;
+    private TextView appreciation , customView;
 
     private ImageView back;
     @Override
@@ -35,6 +35,9 @@ public class UserCenterCoverSettingCatalogyFragment extends BaseFragment impleme
 
         back = (ImageView) view.findViewById(R.id.usercenter_cover_setting_catalogy_fragment_back);
         back.setOnClickListener(this);
+
+        customView = (TextView) view.findViewById(R.id.usercenter_cover_setting_catalog_fragment_view);
+        customView.setOnClickListener(this);
         return view;
     }
 
@@ -48,6 +51,10 @@ public class UserCenterCoverSettingCatalogyFragment extends BaseFragment impleme
         switch (view.getId()){
             case R.id.usercenter_cover_setting_catalogy_fragment_back:
                 ((MainActivity)getActivity()).goBack();//返回到上一级页面
+                break;
+            case R.id.usercenter_cover_setting_catalog_fragment_view:
+                //自定义封面
+                startFragment(new CustomViewCoverFragment());
                 break;
         }
     }
