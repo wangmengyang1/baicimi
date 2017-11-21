@@ -63,7 +63,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
     private int shardSdk;
 
-    private TextView setting, message;
+    private TextView setting, message , help_textview;
 
     private RelativeLayout title_head;
 
@@ -111,6 +111,9 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
         title_head = (RelativeLayout) view.findViewById(R.id.title1);
         title_head.setOnClickListener(this);
+
+        help_textview = (TextView) view.findViewById(R.id.user_center_home_page_head_fragment_help);
+        help_textview.setOnClickListener(this);
         return view;
     }
 
@@ -390,6 +393,10 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
             case R.id.user_center_home_page_head_fragment_message:
                 //消息中心界面
                 startFragment(new UserCenterHomePagerMessage());
+                break;
+            case R.id.user_center_home_page_head_fragment_help:
+                //帮助中心
+                startFragment(new UserCenterHelpCenter());
                 break;
         }
     }

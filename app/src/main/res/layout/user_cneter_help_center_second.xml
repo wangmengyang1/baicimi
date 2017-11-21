@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/usercenter_help_center_second_layout_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:background="#737373"
+                    android:text="账户咨询"
+                    android:padding="2dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:background="#737373"
+                    android:text="购买咨询"
+                    android:padding="2dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:background="#737373"
+                    android:text="订单咨询"
+                    android:padding="2dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:background="#737373"
+                    android:text="支付咨询"
+                    android:padding="2dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:background="#737373"
+                    android:text="积分咨询"
+                    android:padding="2dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:background="#737373"
+                    android:text="卡券咨询"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:background="#737373"
+                    android:text="会员咨询"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:background="#737373"
+                    android:text="认证咨询"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:background="#737373"
+                    android:text="亲密付咨询"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-如何查询我的个人信息？"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-已绑定手机号不能正常使用，如何修改手机号？"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-如何验证手机？如何绑定手机？"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-如何进行账号认证？"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-如何进行人生重要时刻认证？"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

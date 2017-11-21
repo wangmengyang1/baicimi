@@ -95,7 +95,6 @@ public class ShopingCarFragment extends BaseFragment {
             }
         });
 
-
         /**
          * 点击按钮显示订单popupWindow
          */
@@ -121,14 +120,11 @@ public class ShopingCarFragment extends BaseFragment {
     }
 
 
-
     @Override
     public void onStop() {
         super.onStop();
         //使用完毕之后解除注册
     }
-
-
 
     /**
      * 显示popupWindow
@@ -286,13 +282,11 @@ public class ShopingCarFragment extends BaseFragment {
      */
     private void closePopupWindow() {
         if (window != null && window.isShowing()) {
-//            System.out.println("88888888888888888888");
             window.dismiss();
             window = null;
             WindowManager.LayoutParams params = getActivity().getWindow().getAttributes();
             params.alpha = 1.0f;
             getActivity().getWindow().setAttributes(params);
-//            System.out.println("99999999999999999999");
         }
     }
 
@@ -345,9 +339,6 @@ public class ShopingCarFragment extends BaseFragment {
 //
 //    }
 //
-
-
-
 
     @Override
     protected void initData() {

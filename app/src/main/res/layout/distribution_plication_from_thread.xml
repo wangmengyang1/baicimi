@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="申请区域"
+                        android:padding="4dp"
+                        />
+
+                    <View
+                        android:layout_width="0.6dp"
+                        android:layout_height="18dp"
+                        android:background="#737373"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_null"
+                        android:textSize="13sp"
+                        android:padding="5dp"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                android:layout_marginTop="5dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="第几次申请："
+                    android:textSize="13sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        >
+
+                        <CheckBox
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:button="@null"
+                            android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                            android:checked="true"
+                            android:focusable="false"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="第一次"
+                            android:layout_marginLeft="4dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        >
+
+                        <CheckBox
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:button="@null"
+                            android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                            android:checked="false"
+                            android:focusable="false"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="第二次"
+                            android:layout_marginLeft="4dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        >
+
+                        <CheckBox
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:button="@null"
+                            android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                            android:checked="false"
+                            android:focusable="false"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="第三次"
+                            android:layout_marginLeft="4dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        >
+
+                        <CheckBox
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:button="@null"
+                            android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                            android:checked="false"
+                            android:focusable="false"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="第四次"
+                            android:layout_marginLeft="4dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                android:layout_marginTop="5dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="改善领域："
+                    android:textSize="13sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        >
+
+                        <CheckBox
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:button="@null"
+                            android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                            android:checked="true"
+                            android:focusable="false"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="服务改善"
+                            android:layout_marginLeft="4dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        >
+
+                        <CheckBox
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:button="@null"
+                            android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                            android:checked="false"
+                            android:focusable="false"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="产品改善"
+                            android:layout_marginLeft="4dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        >
+
+                        <CheckBox
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:button="@null"
+                            android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                            android:checked="false"
+                            android:focusable="false"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="门店装修改善"
+                            android:layout_marginLeft="4dp"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:textSize="13sp"
+                android:padding="4dp"
+                android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                android:id="@+id/editText2"
+                android:layout_marginTop="4dp"
+
+                android:hint="申请说明："
+                android:gravity="top"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        >
+
+        <ImageView
+            android:id="@+id/user_center_help_center_sonsult_adapter_imageurl"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/usercenter_help_center_image_15"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/user_center_help_center_sonsult_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单咨询"
+            android:layout_below="@+id/user_center_help_center_sonsult_adapter_imageurl"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            android:maxLines="1"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

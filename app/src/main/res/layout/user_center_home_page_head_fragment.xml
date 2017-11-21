@@ -109,6 +109,18 @@
                     android:paddingRight="5dp"
                     />
 
+                <TextView
+                    android:id="@+id/user_center_home_page_head_fragment_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="帮助"
+                    android:textSize="13sp"
+                    android:layout_toLeftOf="@+id/user_center_home_page_head_fragment_message"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    />
+
             </RelativeLayout>
 
             <LinearLayout

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话客服"
+                android:textSize="13sp"
+                android:textColor="#737373"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="400-883-2055"
+                android:textSize="13sp"
+                android:textColor="#737373"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拨打热线"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="4dp"
+                android:background="#737373"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                />
+            <View
+                android:layout_width="120dp"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_marginTop="4dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在线客服"
+                android:textSize="13sp"
+                android:textColor="#737373"
+                android:layout_marginTop="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在线解答您的咨询"
+                android:textSize="13sp"
+                android:textColor="#737373"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:id="@+id/user_center_help_center_thread_consult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点此咨询"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="4dp"
+                android:background="#737373"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                />
+            <View
+                android:layout_width="120dp"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提建议"
+                android:textSize="13sp"
+                android:textColor="#737373"
+                android:layout_marginTop="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请将您的意见或建议发送至邮箱"
+                android:textSize="13sp"
+                android:textColor="#737373"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我要留言"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="4dp"
+                android:background="#737373"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

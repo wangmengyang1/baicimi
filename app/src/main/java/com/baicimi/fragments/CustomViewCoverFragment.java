@@ -55,8 +55,6 @@ public class CustomViewCoverFragment extends BaseFragment implements View.OnClic
 
     }
 
-
-
     //动态计算GridView的高度
     public void fixGrdiViewHeight03(GridView listView) {
         // 如果没有设置数据适配器，则ListView没有子项，返回。
@@ -79,7 +77,6 @@ public class CustomViewCoverFragment extends BaseFragment implements View.OnClic
         params.height = totalHeight + (listView.getHeight() * (listAdapter.getCount() - 1));
         listView.setLayoutParams(params);
     }
-
 
     @Override
     public void onClick(View view) {

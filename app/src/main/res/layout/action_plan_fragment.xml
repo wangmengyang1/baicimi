@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/action_plan_fragment_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/action_plan_fragment_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="帮助中心"
+            android:textColor="#737373"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/brand_fragment_second_image_13"
+            android:padding="6dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/action_plan_fragment_scanning"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/brand_fragment_second_image_12"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="28dp"
+            android:background="@drawable/brand_fragment_second_edittext_layer_list"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint=""
+            android:textSize="12sp"
+            android:paddingLeft="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#e1e1e1"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:src="@drawable/usercenter_help_center_image_01"
+                android:scaleType="fitXY"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#eeeeee"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                >
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:padding="4dp"
+                    android:background="@drawable/user_center_help_center_edittext_whait_shape"
+                    android:hint="请输入完整的问题，如\''如何查看我的订单\''"
+                    />
+
+
+                <TextView
+                    android:id="@+id/user_center_help_center_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提问"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:text="请将你遇到的问题填入到表格内，并留下您的联系方式。\nMICI客服人员将在第一时间为您解答。"
+                    android:gravity="center"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="#eeeeee"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="百万行动计划\n班宁寻找志同道合的你携手同行\n共员百万梦想"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#737373"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="班宁全面开启\''百万行动计划\''\n不论你是谁，不论你多大，不论你在哪里\n不管你做什么，只要你心怀梦想，只要你\n对生活充满期望，只要你与班宁心灵相通\n班宁都随时欢迎你加入，与我们一起成就梦想！"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#737373"
+                    android:textSize="13sp"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/usercenter_help_center_image_28"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="计划与责任"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="      班宁从创建第个品牌第款产品开始，便秉承\''天然、安全、高效\''的原则，所有原料均来自天然植物，不追求互竿见影的化学效果，而是从根源解决使用者的肌肤困扰，为备受化学成分化妆品侵蚀的皮肤雪中送炭，给予最温柔的肌肤啊护。班宁至今创建20余个品牌超500个单品，依靠的是每件产品的高品质与高功效，以及消费者对班宁的信任与喜爱。班宁接下来也将继续开发更优质的产品，将消费者的信任直持续下去"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="    基于坚实的市场与消费基础以及反复的市场检验，依托班宁强大的科技研发与品牌营销经验，班宁对接下来每个品牌与产品的上市有着坚定的信，屿必赢的信念。诚邀志同道台的合作伙伴加入，发挥你的优势，释放你的能量，  起成就百万梦想"
+                    android:layout_marginTop="8dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="了解推荐计划"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:background="#737373"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="了解分销点/店"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:background="#737373"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="了解推广计划"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:background="#737373"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
