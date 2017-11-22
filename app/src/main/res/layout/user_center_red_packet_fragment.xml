@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/user_center_home_page_fragment_image_07">
+
+
+                <ImageView
+                    android:id="@+id/user_center_red_packet_fragment_calendar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="4dp"
+                    android:src="@drawable/calendar_image_01" />
+
+                <ImageView
+                    android:id="@+id/user_center_red_packet_fragment_user_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/user_center_red_packet_fragment_calendar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/user_integral_gridview_item_image_41sss" />
+
+                <ImageView
+
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignBottom="@+id/user_center_red_packet_fragment_user_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="-5dp"
+                    android:src="@drawable/dav_image_ss" />
+
+                <LinearLayout
+                    android:id="@+id/user_center_red_packet_fragment_user_layout_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_center_red_packet_fragment_user_image"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="百事加冰"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/xingbie_image_ss" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/user_center_red_packet_fragment_cash"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:text="现金红包"
+                    android:textColor="#737373"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/user_center_red_packet_fragment_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:text="积分红包"
+                    android:textColor="#737373"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/user_center_red_packet_fragment_giveredenvelopes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="发红包"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:textColor="#737373"
+                        android:background="@drawable/user_center_red_packet_fragment_text_shape"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/user_Center_red_packet_fragment_lible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="红包总额"
+                        android:textSize="13sp"
+                        android:layout_below="@+id/user_center_red_packet_fragment_giveredenvelopes"
+                        />
+
+                    <TextView
+                        android:id="@+id/user_Center_red_packet_fragment_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_Center_red_packet_fragment_lible"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:text="10009.80元"
+                        android:textColor="#ff0000" />
+
+
+                    <LinearLayout
+                        android:id="@+id/user_Center_red_packet_fragment_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/user_Center_red_packet_fragment_money"
+                        android:layout_marginTop="8dp"
+                        android:paddingBottom="15dp"
+                        >
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="108\n收到红包" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="98\n发出红包" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/user_center_red_packet_fragment_shardlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="15dp"
+                        android:layout_below="@+id/user_Center_red_packet_fragment_layout"
+                        >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@mipmap/fenxiangtubiao"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分享的积分"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="4dp"
+                            />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/user_center_red_packet_fragment_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:scrollbars="none"
+                    android:divider="#737373"
+                    android:dividerHeight="0.6dp"
+                    ></ListView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

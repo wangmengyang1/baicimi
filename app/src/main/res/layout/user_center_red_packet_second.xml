@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        android:background="#d52122"
+        >
+
+        <ImageView
+            android:id="@+id/user_center_red_packet_second_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_waiter_image"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/user_center_red_packet_second_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="发红包"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/brand_fragment_second_image_22"
+            android:padding="6dp"
+            android:layout_marginRight="15dp"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="12dp"
+        android:background="#d52122"
+        >
+
+        <ImageView
+            android:id="@+id/user_center_red_packet_second_scanning"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/saoma_image"
+            android:layout_marginLeft="15dp"
+            />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#e1e1e1"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="发给"
+                        android:textSize="13sp"
+                        android:paddingLeft="5dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="所有人"
+                        />
+
+                    <View
+                        android:layout_width="0.6dp"
+                        android:layout_height="25dp"
+                        android:background="#737373"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/down_image_black_02"
+                        android:padding="3dp"
+                        android:layout_marginLeft="4dp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="积分"
+                        android:textSize="13sp"
+                        android:padding="5dp"
+                        android:background="@drawable/background_null"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        />
+                    <View
+                        android:layout_width="0.6dp"
+                        android:layout_height="25dp"
+                        android:background="#737373"
+                        android:visibility="invisible"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/down_image_black_02"
+                        android:padding="3dp"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="invisible"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="普通红包限额500积分/次"
+                    android:textSize="12sp"
+                    android:textColor="#ff0000"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="红包形式"
+                        android:textSize="13sp"
+                        android:paddingLeft="5dp"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="普通红包"
+                        />
+
+                    <View
+                        android:layout_width="0.6dp"
+                        android:layout_height="25dp"
+                        android:background="#737373"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/down_image_black_02"
+                        android:padding="3dp"
+                        android:layout_marginLeft="4dp"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/user_center_red_packet_first_edittext_shape"
+                    android:hint="恭喜发财，大吉大利"
+                    android:textSize="13sp"
+                    android:gravity="top"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="15dp"
+                    />
+
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="经典版"
+                            android:gravity="center"
+                            android:background="#c9c9c9"
+                            android:textSize="13sp"
+                            android:textColor="@color/white"
+                            android:padding="8dp"
+                            />
+
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="30dp"
+                            android:background="#737373"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="节日版"
+                            android:gravity="center"
+
+                            android:textSize="13sp"
+
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp"
+                            android:padding="8dp"
+                            />
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="30dp"
+                            android:background="#737373"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="新婚版"
+                            android:gravity="center"
+
+                            android:textSize="13sp"
+
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp"
+                            android:padding="8dp"
+                            />
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="30dp"
+                            android:background="#737373"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="新年版"
+                            android:gravity="center"
+
+                            android:textSize="13sp"
+
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp"
+                            android:padding="8dp"
+                            />
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="30dp"
+                            android:background="#737373"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="可爱版"
+                            android:gravity="center"
+
+                            android:textSize="13sp"
+
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp"
+                            android:padding="8dp"
+                            />
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="30dp"
+                            android:background="#737373"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="青春版"
+                            android:gravity="center"
+
+                            android:textSize="13sp"
+
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp"
+                            android:padding="8dp"
+                            />
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="30dp"
+                            android:background="#737373"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="创意版"
+                            android:gravity="center"
+
+                            android:textSize="13sp"
+
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp"
+                            android:padding="8dp"
+                            />
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="30dp"
+                            android:background="#737373"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="个性版"
+                            android:gravity="center"
+                            android:textSize="13sp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp"
+                            android:padding="8dp"
+                            />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textSize="13sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥100.00"
+                    android:textColor="#737373"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="塞钱进钱包"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:textSize="13sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="#ff0000"
+                    android:background="@drawable/user_center_red_packet_first_dissmess_shape"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="对不起，对单一好友发起普通红包操作权限为1月/次\n您本月已对此好友发起过普通积分红包操作，请更换好友\n或改期操作。"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="#ff0000"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

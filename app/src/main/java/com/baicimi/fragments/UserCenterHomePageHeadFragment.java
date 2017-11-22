@@ -223,6 +223,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     startFragment(new UserCenterHomepageHeadIntimacyRequest());
                 } else if (i == 4 && i1 == 1) {
                     //红包
+                    startFragment(new UserCenterRedPacketFragment());
                 } else if (i == 4 && i1 == 2) {
                     //礼品寄存处
 //                    startFragment(new FragmentPresentSave() , null);

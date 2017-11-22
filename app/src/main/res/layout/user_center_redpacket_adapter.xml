@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <TextView
+            android:id="@+id/user_center_redpacket_adapter_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="年轻不留白"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/user_center_redpacket_adapter_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017.08.20"
+            android:textSize="12sp"
+            android:layout_below="@+id/user_center_redpacket_adapter_username"
+            android:layout_alignLeft="@+id/user_center_redpacket_adapter_username"
+            />
+
+        <TextView
+            android:id="@+id/user_center_redpacket_adapter_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="38.80元"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="4dp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

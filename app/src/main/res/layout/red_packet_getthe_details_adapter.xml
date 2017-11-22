@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/red_packet_getthe_details_imagenumber"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/red_packet_getthe_details_adapter_image_01"
+            android:padding="4dp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/red_packet_getthe_details_non"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+
+        <ImageView
+            android:id="@+id/red_packet_getthe_details_imageurl"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/red_packet_getthe_details_adapter_image_02"
+            android:layout_toRightOf="@+id/red_packet_getthe_details_imagenumber"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/red_packet_getthe_details_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陈坤"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/red_packet_getthe_details_imageurl"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+            android:id="@+id/red_packet_getthe_details_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="领到33.33元"
+            android:textSize="13sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff0000"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+            android:id="@+id/red_packet_getthe_details_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017.08.08  13:09:25"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
