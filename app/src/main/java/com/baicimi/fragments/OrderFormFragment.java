@@ -32,6 +32,7 @@ public class OrderFormFragment extends BaseFragment implements View.OnClickListe
     private TextView sales;
     private TextView refundsucceed;
     private TextView myorderform;
+    private TextView evaluatemanagement;
 
 
     @Override
@@ -73,6 +74,9 @@ public class OrderFormFragment extends BaseFragment implements View.OnClickListe
 
         myorderform = (TextView) view.findViewById(R.id.order_form_fragment_myorderform);
         myorderform.setOnClickListener(this);
+
+        evaluatemanagement = (TextView) view.findViewById(R.id.order_form_fragment_evaluatemanagement);
+        evaluatemanagement.setOnClickListener(this);
 
 
     }
@@ -116,6 +120,10 @@ public class OrderFormFragment extends BaseFragment implements View.OnClickListe
                 break;
             case R.id.order_form_fragment_myorderform:
                 startFragment(new MyOrderFormFragmentParticulars("我的订单"));//我的订单
+                break;
+
+            case R.id.order_form_fragment_evaluatemanagement:
+                startFragment(new EvaluateManagementFragment());//评价管理
                 break;
         }
     }

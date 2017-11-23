@@ -6,6 +6,7 @@
     >
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +16,7 @@
         >
 
         <ImageView
-            android:id="@+id/order_form_fragment_back"
+            android:id="@+id/evaluate_management_fragment_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/back_image_black"
@@ -24,11 +25,11 @@
             />
 
         <TextView
-            android:id="@+id/order_form_fragment_lible"
+            android:id="@+id/evaluate_management_fragment_lible"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="百次幂商城"
+            android:text="评价管理"
             android:textColor="#000000"
             android:gravity="center"
             android:textSize="16sp"
@@ -53,7 +54,7 @@
         >
 
         <ImageView
-            android:id="@+id/order_form_fragment_scanning"
+            android:id="@+id/evaluate_management_fragment_scanning"
             android:layout_width="34dp"
             android:layout_height="34dp"
             android:src="@drawable/brand_fragment_second_image_12"
@@ -67,7 +68,7 @@
             android:background="@drawable/brand_fragment_second_edittext_layer_list"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:hint="我的订单"
+            android:hint=""
             android:textSize="12sp"
             android:paddingLeft="8dp"
             />
@@ -89,6 +90,7 @@
         />
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -98,78 +100,70 @@
         android:layout_marginTop="10dp"
         >
 
-        <TextView
-            android:id="@+id/order_form_fragment_myorderform"
+
+
+
+        <LinearLayout
+            android:id="@+id/evaluate_management_fragment_evaluate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="我的订单"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
             android:layout_marginTop="18dp"
-            android:padding="4dp"
-            />
-        <TextView
-            android:id="@+id/order_form_fragment_paymentagency"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/evaluate_management_image_01"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宝贝评价"
+                android:padding="4dp"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="待付款"
-            android:layout_marginTop="14dp"
-            android:padding="4dp"
-            />
-        <TextView
-            android:id="@+id/order_form_fragment_readly"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="准备中"
-            android:layout_marginTop="14dp"
-            android:padding="4dp"
-            />
-        <TextView
-            android:id="@+id/order_form_fragment_deliver"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="发货中"
-            android:layout_marginTop="14dp"
-            android:padding="4dp"
-            />
-        <TextView
-            android:id="@+id/order_form_fragment_dealsucceed"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="交易成功"
-            android:layout_marginTop="14dp"
-            android:padding="4dp"
-            />
-        <TextView
-            android:id="@+id/order_form_fragment_revocation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="已撤销"
-            android:layout_marginTop="14dp"
-            android:padding="4dp"
-            />
-        <TextView
-            android:id="@+id/order_form_fragment_sales"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="已退货"
-            android:layout_marginTop="14dp"
-            android:padding="4dp"
-            />
-        <TextView
-            android:id="@+id/order_form_fragment_refundsucceed"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="退款成功"
-            android:layout_marginTop="14dp"
-            android:padding="4dp"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            android:layout_marginTop="6dp"
             />
 
-        <TextView
-            android:id="@+id/order_form_fragment_evaluatemanagement"
+        <LinearLayout
+            android:id="@+id/evaluate_management_fragment_logistics"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="评价管理"
-            android:layout_marginTop="14dp"
-            android:padding="4dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/evaluate_management_image_02"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物流评价"
+                android:padding="4dp"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            android:layout_marginTop="4dp"
             />
 
     </LinearLayout>

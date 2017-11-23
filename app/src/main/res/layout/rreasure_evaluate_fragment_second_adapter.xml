@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rreasure_evaluate_fragment_second_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/rreasure_evaluate_fragment_second_imageview"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:src="@drawable/evaluate_management_image_03"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:id="@+id/rreasure_evaluate_fragment_second_lible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="链条式连帽运动衫"
+                android:layout_toRightOf="@+id/rreasure_evaluate_fragment_second_imageview"
+                android:layout_marginLeft="25dp"
+                android:textColor="#5e5c5f"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/rreasure_evaluate_fragment_second_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="白色 编号-5644/216"
+                android:textSize="12sp"
+                android:layout_below="@+id/rreasure_evaluate_fragment_second_lible"
+                android:layout_alignLeft="@+id/rreasure_evaluate_fragment_second_lible"
+                android:layout_marginTop="2dp"
+                />
+
+            <TextView
+                android:id="@+id/rreasure_evaluate_fragment_second_specification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L(175/96A)"
+                android:textColor="#5e5c5f"
+                android:layout_below="@+id/rreasure_evaluate_fragment_second_context"
+                android:layout_alignLeft="@+id/rreasure_evaluate_fragment_second_context"
+                android:layout_marginTop="2dp"
+                />
+
+            <TextView
+                android:id="@+id/rreasure_evaluate_fragment_second_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥339.00"
+                android:textColor="#3e3e3f"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/rreasure_evaluate_fragment_second_imageview"
+                />
+
+
+            <TextView
+                android:id="@+id/rreasure_evaluate_fragment_second_integer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="990积分"
+                android:textSize="12sp"
+                android:layout_alignLeft="@+id/rreasure_evaluate_fragment_second_lible"
+                android:layout_alignBottom="@+id/rreasure_evaluate_fragment_second_imageview"
+                android:layout_marginBottom="4dp"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rreasure_evaluate_fragment_second_layout_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="百次幂第108号分销点/店"
+            android:textSize="13sp"
+            android:layout_below="@+id/rreasure_evaluate_fragment_second_layout"
+            android:layout_marginTop="6dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/rreasure_evaluate_fragment_second_layout_lible_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/rreasure_evaluate_fragment_second_layout_lible"
+            android:layout_marginTop="4dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="总评分：98分"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="排行：12"
+                />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="了解更多"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/rreasure_evaluate_fragment_second_layout_lible_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分销点/店的评价："
+            android:textSize="13sp"
+            android:layout_below="@+id/rreasure_evaluate_fragment_second_layout_lible_02"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/rreasure_evaluate_fragment_second_layout_lible_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/rreasure_evaluate_fragment_second_layout_lible_03"
+            android:layout_marginTop="4dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="感谢您的评价，我们会越做越好。"
+                />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="回复"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

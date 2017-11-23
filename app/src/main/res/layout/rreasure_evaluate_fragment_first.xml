@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="累计积分：367"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好评率：100%"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/exlce_image_01"
+                android:scaleType="fitXY"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                >
+
+                <ImageView
+                    android:id="@+id/rreasure_evaluate_fragment_first_imageview"
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/evaluate_management_image_03"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:id="@+id/rreasure_evaluate_fragment_first_lible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="链条式连帽运动衫"
+                    android:layout_toRightOf="@+id/rreasure_evaluate_fragment_first_imageview"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#5e5c5f"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/rreasure_evaluate_fragment_first_context"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="白色 编号-5644/216"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/rreasure_evaluate_fragment_first_lible"
+                    android:layout_alignLeft="@+id/rreasure_evaluate_fragment_first_lible"
+                    android:layout_marginTop="2dp"
+                    />
+
+                <TextView
+                    android:id="@+id/rreasure_evaluate_fragment_first_specification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L(175/96A)"
+                    android:textColor="#5e5c5f"
+                    android:layout_below="@+id/rreasure_evaluate_fragment_first_context"
+                    android:layout_alignLeft="@+id/rreasure_evaluate_fragment_first_context"
+                    android:layout_marginTop="2dp"
+                    />
+
+                <TextView
+                    android:id="@+id/rreasure_evaluate_fragment_first_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥339.00"
+                    android:textColor="#3e3e3f"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@+id/rreasure_evaluate_fragment_first_imageview"
+                    />
+
+
+                <TextView
+                    android:id="@+id/rreasure_evaluate_fragment_first_integer_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="990积分"
+                    android:textSize="12sp"
+                    android:layout_alignLeft="@+id/rreasure_evaluate_fragment_first_lible"
+                    android:layout_alignBottom="@+id/rreasure_evaluate_fragment_first_imageview"
+                    android:layout_marginBottom="4dp"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/rreasure_evaluate_fragment_first_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="15dp"
+                android:dividerHeight="0.6dp"
+                android:divider="#eeeeee"
+                ></ListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

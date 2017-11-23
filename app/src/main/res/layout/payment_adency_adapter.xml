@@ -12,9 +12,10 @@
 
         <ImageView
             android:id="@+id/payment_adency_adapter_imageview"
-            android:layout_width="60dp"
+            android:layout_width="75dp"
             android:layout_height="90dp"
             android:src="@drawable/image_dingdan_01"
+            android:scaleType="fitXY"
             />
 
         <TextView
