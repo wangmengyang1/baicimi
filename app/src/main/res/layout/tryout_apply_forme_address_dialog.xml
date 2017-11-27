@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        >
+
+        <TextView
+            android:id="@+id/add_frienda_dialog_lible"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="恭喜您，成为百次幂商城会员"
+            android:textSize="13sp"
+            android:textColor="#737373"
+            android:gravity="center"
+            android:visibility="invisible"
+            />
+
+
+
+        <TextView
+            android:id="@+id/add_frienda_dialog_content"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="免费试用申请提交成功，\n如申请成功\nMICI将以系统消息形式告知您\n请随时留意！"
+            android:layout_below="@+id/add_frienda_dialog_lible"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            android:textColor="#737373"
+            android:gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/add_frienda_dialog_content"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tryout_apply_forme_address_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提交申请"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

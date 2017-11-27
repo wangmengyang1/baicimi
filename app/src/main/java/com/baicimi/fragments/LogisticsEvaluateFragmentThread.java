@@ -6,7 +6,6 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.baicimi.R;
-import com.baicimi.adapter.RreasureEvaluateFragmentSecondAdapter;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.RreasureEvaluateFragmentSecondEntry;
 

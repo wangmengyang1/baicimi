@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/tryout_apply_for_second_more_report_details_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tryout_apply_for_second_more_report_details_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="试用报告"
+            android:textColor="#737373"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/brand_fragment_second_image_13"
+            android:padding="6dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/tryout_apply_for_second_more_report_details_scanning"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/brand_fragment_second_image_12"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="28dp"
+            android:background="@drawable/brand_fragment_second_edittext_layer_list"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint=""
+            android:textSize="12sp"
+            android:paddingLeft="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#e1e1e1"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="试用已结束，喜欢就来购买吧"
+                    android:gravity="center"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/white"
+                    android:background="#dddddd"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:background="#efefef"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tryout_apply_for_second_more_report_details_libles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全棉卡通可爱四件套纯棉床上用品"
+                        android:textSize="13sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/tryout_apply_for_second_more_report_details_imageurl"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/tryout_apply_forme_image_04"
+                        android:layout_below="@+id/tryout_apply_for_second_more_report_details_libles"
+                        android:layout_marginTop="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="试用状况：\n2485人申请 | 6人获得试用品 | 2份试用报告"
+                        android:layout_toRightOf="@+id/tryout_apply_for_second_more_report_details_imageurl"
+                        android:layout_alignTop="@+id/tryout_apply_for_second_more_report_details_imageurl"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="试用报告2份\n这是床单平铺在床上的感觉，看着还可以吧，黄绿拼接色调，看着挺顺眼的，四件套都组装好了。"
+                        android:textSize="13sp"
+                        android:layout_toRightOf="@+id/tryout_apply_for_second_more_report_details_imageurl"
+                        android:layout_alignBottom="@+id/tryout_apply_for_second_more_report_details_imageurl"
+                        android:layout_marginLeft="8dp"
+                        android:maxLines="3"
+                        android:ellipsize="end"
+                        />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/white"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#efefef"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tryout_apply_image_01"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="剩余商品：10,287件  购买人数：已有198人购买"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="立即购买"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:textSize="13sp"
+                        android:padding="4dp"
+                        android:background="#dddddd"
+                        android:textColor="#737373"
+                        />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/white"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:background="#efefef"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/tryout_apply_for_second_more_report_details_userimage"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tryout_apply_forme_image_07"
+                            android:layout_centerVertical="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/tryout_apply_for_second_more_report_details_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="小**1"
+                            android:layout_toRightOf="@+id/tryout_apply_for_second_more_report_details_userimage"
+                            android:layout_marginLeft="8dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tryout_apply_for_second_more_report_details_userdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="发表于 2017-08-09 16:19"
+                            android:layout_toRightOf="@+id/tryout_apply_for_second_more_report_details_userimage"
+                            android:layout_below="@+id/tryout_apply_for_second_more_report_details_username"
+                            android:layout_marginLeft="8dp"
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="全棉卡通可爱四件套纯棉床上用品"
+                        android:layout_marginTop="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="试用品综合评分：4.5"
+                        android:layout_marginTop="8dp"
+                        android:padding="4dp"
+                        android:textColor="#737373"
+                        android:background="#eeeeee"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="宝贝整体"
+                        android:layout_marginTop="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="     卖家的包装做的还是非常不错的，封口处也处理的非常好，拆开包装检查，没发现有破损的地方。面料绝对是纯棉的，摸着手感就不一样，特意用皮尺测量了被罩与床单的尺寸，还是挺准确的，被罩与被子的配合度也是相当的默契，被罩是AB板的，一面主色调是黄色，另一面的主色调是绿色，主体颜色与彩色m豆搭配也是让人赏心悦目的，对于一个家里有着极其喜欢吃M豆的小女孩而言，每天睡觉的时间是最开心了，黼垂前都要说一句”我要睡觉了，快到我窝里来“。  一套即实用叉美观的四件套，就能让一个小女孩天天享受着快乐，经过货比三家的挑选，换来家人的开心、健康，我这个全职妈妈也是极开心的。"
+                        android:layout_marginTop="8dp"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="225dp"
+                        android:src="@drawable/tryout_apply_forme_image_17"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="8dp"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:src="@drawable/tryout_apply_forme_image_18"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="亮点与细节"
+                        android:layout_marginTop="8dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="    床单的尺寸展开面很大，三面都能垂下来很大一截，完全可以把麻垫子遮盖起来，整体看着也美观，床单下角处也做了掐褶处理，与床配合的会更贴近。\n     特别喜欢被罩的大拉链，通过拉链接头处与被角的距离就能看出来拉链是非常长的，比一般的被罩的拉链都要长一些，这种长拉链的好处，就是在往被罩里装被子的时候会更容易一些，像这种将拉链安装在一侧的也是比较贴心的，这样能很好的分清被头和被角，不容易弄混淆"
+                        android:layout_marginTop="8dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/tryout_apply_forme_image_19"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="试用过程与体验"
+                        android:layout_marginTop="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="    床单的尺寸展开面很大，三面都能垂下来很大一截，完全可以把麻垫子遮盖起来，整体看着也美观，床单下角处也做了掐褶处理，与床配合的会更贴近。\n     特别喜欢被罩的大拉链，通过拉链接头处与被角的距离就能看出来拉链是非常长的，比一般的被罩的拉链都要长一些，这种长拉链的好处，就是在往被罩里装被子的时候会更容易一些，像这种将拉链安装在一侧的也是比较贴心的，这样能很好的分清被头和被角，不容易弄混淆"
+                        android:layout_marginTop="8dp"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="试用心得"
+                        android:layout_marginTop="8dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="     优点：在网上买过很多套四件套，顶属这次买的质量好，纯棉面料不易起球，水洗后也就有一点轻微掉色，第二次再洗就不掉色了，颜色、图案的搭配新颖，是年轻人所追求的款式。\n\n\n缺点:用了—小段时间，暂时还没发现有什么缺点。"
+                        android:layout_marginTop="8dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

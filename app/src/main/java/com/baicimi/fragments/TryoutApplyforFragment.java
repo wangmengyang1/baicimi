@@ -3,6 +3,7 @@ package com.baicimi.fragments;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -25,6 +26,7 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2017/9/5.
+ * 试用申请
  */
 
 public class TryoutApplyforFragment extends BaseFragment implements DistributionNumberOnitemClick{
@@ -72,6 +74,13 @@ public class TryoutApplyforFragment extends BaseFragment implements Distribution
         tryoutApplyForAdapter = new TryoutApplyForAdapter(getContext() , list ,this);
         gridView.setAdapter(tryoutApplyForAdapter);
         fixListViewHeight(gridView);
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                //我的试用申请
+                startFragment(new TryoutApplyForMeFragment());
+            }
+        });
     }
 
     //横向滑动布局填充
@@ -121,7 +130,8 @@ public class TryoutApplyforFragment extends BaseFragment implements Distribution
         banner.setOnBannerListener(new OnBannerListener() {
             @Override
             public void OnBannerClick(int position) {
-                startFragment(new SerchGoodsFragment(),null);
+                //试用报告
+                startFragment(new TryoutApplyForFragmentSecond(),null);
             }
         });
 

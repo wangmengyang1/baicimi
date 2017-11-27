@@ -11,12 +11,7 @@ public class TryoutApplyForEntry {
     private String number;
     private int tagNumber;
 
-    public TryoutApplyForEntry(int imageUrl, String lible, String newMoney, String number) {
-        this.imageUrl = imageUrl;
-        this.lible = lible;
-        this.newMoney = newMoney;
-        this.number = number;
-    }
+
 
     public TryoutApplyForEntry(int imageUrl, String lible, String newMoney, String number, int tagNumber) {
         this.imageUrl = imageUrl;
@@ -24,6 +19,9 @@ public class TryoutApplyForEntry {
         this.newMoney = newMoney;
         this.number = number;
         this.tagNumber = tagNumber;
+    }
+
+    public TryoutApplyForEntry() {
     }
 
     public int getTagNumber() {

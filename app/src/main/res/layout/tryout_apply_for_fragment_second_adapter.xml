@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:background="#efefef"
+        >
+
+        <ImageView
+            android:id="@+id/tryout_apply_for_fragment_second_adapter_imageurl"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:src="@drawable/tryout_apply_forme_image_04"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/tryout_apply_for_fragment_second_adapter_userimage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/tryout_apply_forme_image_07"
+            android:layout_toRightOf="@+id/tryout_apply_for_fragment_second_adapter_imageurl"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tryout_apply_for_fragment_second_adapter_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小**1"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/tryout_apply_for_fragment_second_adapter_userimage"
+            android:layout_marginLeft="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tryout_apply_for_fragment_second_adapter_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发表于2017-10-29 16:19"
+            android:textSize="13sp"
+            android:layout_marginLeft="4dp"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/tryout_apply_for_fragment_second_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全棉卡通可爱四件套纯棉床上用品"
+            android:textSize="13sp"
+            android:layout_below="@+id/tryout_apply_for_fragment_second_adapter_userimage"
+            android:layout_alignLeft="@+id/tryout_apply_for_fragment_second_adapter_userimage"
+            android:layout_marginTop="4dp"
+            />
+
+        <View
+            android:id="@+id/tryout_apply_for_fragment_second_adapter_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            android:layout_below="@+id/tryout_apply_for_fragment_second_adapter_lible"
+            android:layout_alignLeft="@+id/tryout_apply_for_fragment_second_adapter_lible"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tryout_apply_for_fragment_second_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="卖家的包装做的还是非常不错的，封口处也处理的非常好拆开包装{金直，没发现有破损的地方。面料是纯棉的，摸着手感就不—样，特意用皮尺测量了被罩-麻单的尺寸，"
+            android:layout_below="@+id/tryout_apply_for_fragment_second_adapter_view"
+            android:layout_alignLeft="@+id/tryout_apply_for_fragment_second_adapter_view"
+            android:maxLines="3"
+            android:ellipsize="end"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tryout_apply_for_fragment_second_adapter_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            >
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/tryout_apply_forme_image_09"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="250"
+                android:layout_marginLeft="6dp"
+                />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/tryout_apply_forme_image_10"
+                android:layout_marginLeft="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="999"
+                android:layout_marginLeft="6dp"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥599"
+            android:textSize="12sp"
+            android:background="#737373"
+            android:textColor="@color/white"
+            android:layout_alignRight="@+id/tryout_apply_for_fragment_second_adapter_imageurl"
+            android:layout_alignBottom="@+id/tryout_apply_for_fragment_second_adapter_imageurl"
+            android:padding="2dp"
+            android:layout_margin="2dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

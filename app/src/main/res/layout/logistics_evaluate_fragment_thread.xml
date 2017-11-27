@@ -104,11 +104,7 @@
 
                 </LinearLayout>
 
-
-
             </LinearLayout>
-
-
 
 
             <ListView
@@ -119,7 +115,7 @@
                 android:dividerHeight="0.6dp"
                 android:divider="#eeeeee"
                 android:scrollbars="none"
-                ></ListView>
+                />
 
 
         </LinearLayout>
