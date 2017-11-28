@@ -98,6 +98,23 @@ public class MainFragment extends BaseFragment implements RadioGroup.OnCheckedCh
 
     private int countNumber = 0;
 
+
+    public String[] getTags() {
+        return tags;
+    }
+
+    public void setTags(String[] tags) {
+        this.tags = tags;
+    }
+
+    public List<BaseFragment> getFragments() {
+        return fragments;
+    }
+
+    public void setFragments(List<BaseFragment> fragments) {
+        this.fragments = fragments;
+    }
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.fragment_main, container, false);

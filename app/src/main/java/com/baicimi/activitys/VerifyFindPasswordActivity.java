@@ -38,7 +38,7 @@ public class VerifyFindPasswordActivity extends BaseActivity{
 
                 //会员推荐
 
-                RecommendRegisterDialog recommendRegisterDialog = new RecommendRegisterDialog(getApplicationContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                RecommendRegisterDialog recommendRegisterDialog = new RecommendRegisterDialog(getBaseContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
                 recommendRegisterDialog.show();
 //                Intent intent=new Intent();
 //                intent.setClass(VerifyFindPasswordActivity.this,NewPasswordSetActivity.class);

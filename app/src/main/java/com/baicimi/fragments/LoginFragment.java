@@ -204,8 +204,10 @@ public class LoginFragment extends BaseFragment {
                 startActivity(registerintent);
                 break;
             case R.id.find_password:
-                Intent findintent = new Intent(getActivity(), SendMessageFindPasswordActivity.class);
-                startActivity(findintent);
+//                Intent findintent = new Intent(getActivity(), SendMessageFindPasswordActivity.class);
+//                startActivity(findintent);
+                //密码找回
+                startFragment(new UserPasswordFindFragment());
                 break;
         }
     }
