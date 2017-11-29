@@ -22,7 +22,7 @@ public class UserPasswordFindFragment extends BaseFragment implements View.OnCli
     private ImageView back;
     private TextView dissmess;
     private SlideImageView deblocking;
-    private int stateX , moveX;
+    private int stateX , moveX , viewStateX , viewMoveX;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -40,15 +40,19 @@ public class UserPasswordFindFragment extends BaseFragment implements View.OnCli
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 switch (motionEvent.getAction()){
                     case MotionEvent.ACTION_DOWN:
-//                        stateX =  (int) motionEvent.getX();
+                        stateX =  (int) motionEvent.getRawX();
+                        viewStateX = (int) deblocking.getX();
 //                        System.out.println(stateX + "************************");
                         break;
                     case MotionEvent.ACTION_MOVE:
-//                        moveX = (int) motionEvent.getX();
-////
-//                        int distance = moveX - stateX;
-////                        System.out.println(distance + "1111111111111111111");
-//                        deblocking.setX(stateX + distance);
+                        moveX = (int) motionEvent.getRawX();
+//
+                        int distance = moveX - stateX;
+//                        System.out.println(distance + "1111111111111111111");
+
+                        distance += viewStateX;
+
+                        deblocking.setX(distance);
 //                        stateX = moveX;
                         break;
                     case MotionEvent.ACTION_UP:

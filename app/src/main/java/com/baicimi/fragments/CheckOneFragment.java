@@ -179,59 +179,6 @@ public class CheckOneFragment extends BaseFragment implements View.OnClickListen
         yuandian_04.setImageResource(R.drawable.yuandian_huise);
     }
 
-    //头部轮播方法
-//    private void initBannerHead() {
-//        title_head.clear();
-//        image_head.clear();
-//        for(int i = 0 ; i < 4 ; i++){
-//
-//            title_head.add(new String(""));
-//            image_head.add(R.mipmap.img_details1);
-//        }
-//
-//
-//        //头部轮播图片
-//        Banner banner = (Banner)view.findViewById(R.id.check_one_item_banner);
-//        //设置banner样式
-//        banner.setBannerStyle(BannerConfig.NOT_INDICATOR);
-//        //设置图片加载器
-//        banner.setImageLoader(new GlideImageLoader());
-//        //设置图片集合
-//        banner.setImages(image_head);
-//        //设置banner动画效果
-//        banner.setBannerAnimation(VertiaclTransformer.class);
-//        //设置标题集合（当banner样式有显示title时）
-//        banner.setBannerTitles(title_head);
-//        //设置自动轮播，默认为true
-//        banner.isAutoPlay(true);
-//        //设置轮播时间
-//        banner.setDelayTime(2500);
-//        //设置指示器位置（当banner模式中有指示器时）
-//        banner.setIndicatorGravity(BannerConfig.CENTER);
-//        //banner设置方法全部调用完毕时最后调用
-//        banner.start();
-//
-////        banner.setOnBannerListener(new OnBannerListener() {
-////            @Override
-////            public void OnBannerClick(int position) {
-////                if (position == 0){
-////                    setImageViewSrc();
-////                    yuandian_01.setImageResource(R.drawable.yuandian_luse);
-////                }else if (position == 1){
-////                    setImageViewSrc();
-////                    yuandian_02.setImageResource(R.drawable.yuandian_luse);
-////                }else if (position == 2){
-////                    setImageViewSrc();
-////                    yuandian_03.setImageResource(R.drawable.yuandian_luse);
-////                }else if (position == 3){
-////                    setImageViewSrc();
-////                    yuandian_04.setImageResource(R.drawable.yuandian_luse);
-////                }
-////            }
-////        });
-//
-//
-//    }
 
 
     /**
@@ -360,6 +307,15 @@ public class CheckOneFragment extends BaseFragment implements View.OnClickListen
             }
         });
 
+        RelativeLayout gognyingshang_ss = (RelativeLayout) view_window.findViewById(R.id.re_gognyingshang_ss);
+        gognyingshang_ss.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                closePopupXinxiWindow();
+                //我们的供应商详情页
+                startFragment(new UserSupplierFragment());
+            }
+        });
 
 
 
