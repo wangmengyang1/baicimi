@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        >
+
+        <ImageView
+            android:id="@+id/foot_paint_activity_adapter_imageurl"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/foot_paint_fragment_checkbox_select_17"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+            android:id="@+id/foot_paint_activity_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7天习惯养成赛"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/foot_paint_activity_adapter_imageurl"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/foot_paint_activity_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经验值 +100 悦币 +5"
+            android:textSize="13sp"
+            android:layout_below="@+id/foot_paint_activity_adapter_lible"
+            android:layout_alignLeft="@+id/foot_paint_activity_adapter_lible"
+            android:layout_marginTop="6dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/foot_paint_activity_adapter_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="去完成"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#737373"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

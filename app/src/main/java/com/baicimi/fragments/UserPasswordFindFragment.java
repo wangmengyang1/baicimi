@@ -24,6 +24,7 @@ public class UserPasswordFindFragment extends BaseFragment implements View.OnCli
     private SlideImageView deblocking;
     private int stateX , moveX , viewStateX , viewMoveX;
 
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.user_password_find_fragment , container , false);

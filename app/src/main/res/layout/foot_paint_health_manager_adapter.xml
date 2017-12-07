@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:background="#efefef"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/foot_paint_health_manager_adapter_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/foot_paint_health_manager_adapter_imageurl"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/foot_paint_fragment_checkbox_select_23"
+                />
+
+            <TextView
+                android:id="@+id/foot_paint_health_manager_adapter_lible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="心率测试仪"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:id="@+id/foot_paint_health_manager_adapter_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="上次测试时间：2017/08/09"
+                />
+
+            <TextView
+                android:id="@+id/foot_paint_health_manager_adapter_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="上次测试心率：102"
+                android:layout_marginTop="4dp"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

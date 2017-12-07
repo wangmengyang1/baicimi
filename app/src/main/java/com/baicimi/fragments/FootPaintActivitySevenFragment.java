@@ -10,19 +10,19 @@ import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
 
 /**
- * Created by Administrator on 2017/11/29.
- * 商品详情页 信息 我们的供应商详情页
+ * Created by Administrator on 2017/12/7.
+ * 运动页面 首页 赛事活动 7天习惯养成
  */
-public class UserSupplierFragment extends BaseFragment implements View.OnClickListener {
+public class FootPaintActivitySevenFragment extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private ImageView back;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
-        view = inflater.inflate(R.layout.user_supplier_fragment , container , false);
+        view = inflater.inflate(R.layout.foot_paint_activity_seven_fragment , container , false);
 
-        back = (ImageView) view.findViewById(R.id.user_supplier_fragment_back);
+        back = (ImageView) view.findViewById(R.id.foot_paint_fragment_back);
         back.setOnClickListener(this);
         return view;
     }
@@ -35,7 +35,7 @@ public class UserSupplierFragment extends BaseFragment implements View.OnClickLi
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.user_supplier_fragment_back:
+            case R.id.foot_paint_fragment_back:
                 ((MainActivity)getActivity()).goBack();
                 break;
         }

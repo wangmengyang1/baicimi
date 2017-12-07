@@ -29,6 +29,7 @@ import com.baicimi.entity.CelaProject;
 import com.baicimi.fragments.BnnStaffRegisterOptionFragment;
 import com.baicimi.fragments.DistributionOrderGoodsFragment;
 import com.baicimi.fragments.DistributorPurchaseOption;
+import com.baicimi.fragments.FootPaintFragment;
 import com.baicimi.fragments.FragmentHeadWelcom;
 import com.baicimi.fragments.IntegralCeLaFragment;
 import com.baicimi.fragments.SerchGoodsFragment;
@@ -208,7 +209,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         integralSlideViewFootPaint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                //运动页面
+                startFragment(new FootPaintFragment() , null);
             }
         });
 

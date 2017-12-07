@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/foot_paint_fragment_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/foot_paint_fragment_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="7天习惯养成赛"
+            android:textColor="#737373"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="分享"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#e1e1e1"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="8dp"
+                android:orientation="vertical"
+                android:background="@drawable/foot_paint_activity_seven_fragment_layout_shape"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="53秒前找寻已加入参赛金额30元"
+                    android:textColor="@color/white"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_shape"
+                    android:textSize="13sp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+
+                    >
+                    <ImageView
+                        android:id="@+id/foot_paint_activity_seven_fragment_userimage"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/foot_paint_fragment_checkbox_select_26"
+                        android:layout_centerVertical="true"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/foot_paint_activity_seven_fragment_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="李子"
+                        android:layout_toRightOf="@+id/foot_paint_activity_seven_fragment_userimage"
+                        android:layout_marginLeft="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/foot_paint_activity_seven_fragment_usernumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="也有1333123人报名"
+                        android:layout_toRightOf="@+id/foot_paint_activity_seven_fragment_userimage"
+                        android:layout_marginLeft="8dp"
+                        android:layout_below="@+id/foot_paint_activity_seven_fragment_username"
+                        android:layout_marginTop="6dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="立即报名"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/foot_paint_activity_seven_fragment_dissmess_shape"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动简介"
+                android:textSize="13sp"
+                android:textColor="#c75e63"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_margin="10dp"
+                android:text="1.每日活动目标：步行8000步，室外跑步3KM或骑行6KM，连续7天完成每日运动目标即可挑战成功，可获得一天悦动会员。"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="2.可付费参与，每日完成运动目标均可拿回一定本金，挑战成功可拿回全部本金，并平分失败者的剩余本金。"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本金返还日历"
+                android:textSize="13sp"
+                android:layout_margin="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="30元:"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第1天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第2天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第3天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第4天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第5天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第6天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第7天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="60元:"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第1天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第2天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第3天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第4天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第5天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第6天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第7天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="300元:"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第1天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第2天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第3天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第4天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第5天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第6天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第7天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="300元:"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第1天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第2天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第3天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第4天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第5天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第6天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/foot_paint_activity_seven_fragment_textshape"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第7天"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="13sp"
+                android:text="立即报名"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="#c75e63"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

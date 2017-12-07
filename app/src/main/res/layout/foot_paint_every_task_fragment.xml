@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日所得积分"
+            android:textColor="#737373"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="#ff0000"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:paddingBottom="15dp"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/foot_paint_every_task_fragment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:dividerHeight="0.6dp"
+        android:divider="#737373"
+        android:layout_marginTop="10dp"
+        ></ListView>
+
+</LinearLayout>
