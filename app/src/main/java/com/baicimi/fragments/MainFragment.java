@@ -188,11 +188,13 @@ public class MainFragment extends BaseFragment implements RadioGroup.OnCheckedCh
         RelativeLayout classifysLayout = (RelativeLayout) view.findViewById(R.id.fragment_main_radiobtn_02);
         RelativeLayout searchsLayout = (RelativeLayout) view.findViewById(R.id.fragment_main_radiobtn_04);
         RelativeLayout userContentLayout = (RelativeLayout) view.findViewById(R.id.fragment_main_radiobtn_05);
+        RelativeLayout add = (RelativeLayout) view.findViewById(R.id.fragment_main_radiobtn_03);
 
         homeLayout.setOnClickListener(this);
         classifysLayout.setOnClickListener(this);
         searchsLayout.setOnClickListener(this);
         userContentLayout.setOnClickListener(this);
+        add.setOnClickListener(this);
 
     }
 
@@ -361,6 +363,10 @@ public class MainFragment extends BaseFragment implements RadioGroup.OnCheckedCh
                 toolbar.setVisibility(View.GONE);
                 userContent.setTextColor(Color.RED);
                 userContentImage.setImageResource(R.mipmap.person_center_imged);
+                break;
+            case R.id.fragment_main_radiobtn_03:
+                //添加
+                startFragment(new MiPeopleChatFragment());
                 break;
 
         }

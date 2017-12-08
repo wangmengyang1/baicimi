@@ -173,7 +173,10 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
         expd_lv.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
             @Override
             public boolean onGroupClick(ExpandableListView expandableListView, View view, int i, long l) {
-                if (i == 8) {
+                if (i == 3){
+                    //幂聊
+//                    startFragment(new MiPeopleChatFragment());
+                } else if (i == 8) {
                     //我的购物袋
                     startFragment(new ShopingCarFragment(CommodityNumberEntry.commodityNumberEntryIntereal().getCount()), null);
                 } else if (i == 10) {

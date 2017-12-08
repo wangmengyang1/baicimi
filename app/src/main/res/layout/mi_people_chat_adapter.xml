@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="6dp"
+        >
+
+        <ImageView
+            android:id="@+id/mi_people_chat_adapter_imageurl"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mi_people_chat_fragment_image_03"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <TextView
+            android:id="@+id/mi_people_chat_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="照片/相机"
+            android:layout_below="@+id/mi_people_chat_adapter_imageurl"
+            android:textSize="13sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

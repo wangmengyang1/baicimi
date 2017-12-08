@@ -28,7 +28,6 @@ import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.CelaProject;
 import com.baicimi.fragments.BnnStaffRegisterOptionFragment;
 import com.baicimi.fragments.DistributionOrderGoodsFragment;
-import com.baicimi.fragments.DistributorPurchaseOption;
 import com.baicimi.fragments.FootPaintFragment;
 import com.baicimi.fragments.FragmentHeadWelcom;
 import com.baicimi.fragments.IntegralCeLaFragment;
