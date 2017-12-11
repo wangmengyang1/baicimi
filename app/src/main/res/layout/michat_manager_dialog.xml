@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="删除聊天记录"
+                android:textSize="13sp"
+                android:textColor="#737373"
+                />
+
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="进入他的生活汇"
+                android:textSize="13sp"
+                android:textColor="#737373"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="屏蔽该幂友"
+                android:textSize="13sp"
+                android:textColor="#737373"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="加入黑名单"
+                android:textSize="13sp"
+                android:textColor="#737373"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="进入他的生活汇"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+
+                    />
+
+                <CheckBox
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:button="@null"
+                    android:background="@drawable/payment_adency_gov_child_adapter_first_checkbox_selector"
+                    android:checked="true"
+                    android:layout_marginLeft="4dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

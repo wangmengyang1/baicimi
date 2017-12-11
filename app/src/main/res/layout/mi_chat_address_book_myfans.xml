@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <com.baicimi.view.CustomExpandableListView
+                    android:id="@+id/mi_chat_address_book_myfans_customlistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:divider="#737373"
+                    android:dividerHeight="0.4dp"
+                    ></com.baicimi.view.CustomExpandableListView>
+
+
+                <LinearLayout
+                    android:id="@+id/mi_chat_address_book_myfans_layoutfirst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="25dp"
+                    android:visibility="invisible"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设置备注及标签"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#eeeeee"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="把他推荐给朋友"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#eeeeee"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="设置为幂友"
+                                android:textSize="13sp"
+                                android:textColor="#737373"
+                                android:layout_marginTop="10dp"
+                                />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.6dp"
+                                android:background="#eeeeee"
+                                android:layout_marginTop="10dp"
+                                />
+                        </LinearLayout>
+
+
+                        <CheckBox
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:button="@null"
+                            android:background="@drawable/user_center_home_page_setting_selector"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="不让他看我的幂友圈更新状态"
+                                android:textSize="13sp"
+                                android:textColor="#737373"
+                                android:layout_marginTop="10dp"
+                                />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.6dp"
+                                android:background="#eeeeee"
+                                android:layout_marginTop="10dp"
+                                />
+                        </LinearLayout>
+
+
+                        <CheckBox
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:button="@null"
+                            android:background="@drawable/user_center_home_page_setting_selector"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="不看他的幂友圈更新状态"
+                                android:textSize="13sp"
+                                android:textColor="#737373"
+                                android:layout_marginTop="10dp"
+                                />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.6dp"
+                                android:background="#eeeeee"
+                                android:layout_marginTop="10dp"
+                                />
+                        </LinearLayout>
+
+
+                        <CheckBox
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:button="@null"
+                            android:background="@drawable/user_center_home_page_setting_selector"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="加入黑名单"
+                                android:textSize="13sp"
+                                android:textColor="#737373"
+                                android:layout_marginTop="10dp"
+                                />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.6dp"
+                                android:background="#eeeeee"
+                                android:layout_marginTop="10dp"
+                                />
+                        </LinearLayout>
+
+
+                        <CheckBox
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:button="@null"
+                            android:background="@drawable/user_center_home_page_setting_selector"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="举报"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#eeeeee"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/mi_chat_add_friends_layout_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="扫一扫"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#eeeeee"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/mi_chat_add_friends_seekfriends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搜索手机号/邮箱/ID"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#eeeeee"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="为你推荐"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="明星"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <ListView
+                        android:id="@+id/mi_chat_add_friends_listviewfirst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:divider="@color/white"
+                        android:dividerHeight="4dp"
+                        android:layout_marginTop="8dp"
+                        ></ListView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="品牌"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <ListView
+                        android:id="@+id/mi_chat_add_friends_listviewsecond"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:divider="@color/white"
+                        android:dividerHeight="4dp"
+                        android:layout_marginTop="8dp"
+                        ></ListView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mi_chat_add_friends_layout_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="30dp"
+                    android:visibility="invisible"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搜索附近的人"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#eeeeee"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="面对面建群"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#eeeeee"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机联系人"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#eeeeee"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="品牌"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#eeeeee"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="企业"
+                        android:textSize="13sp"
+                        android:textColor="#737373"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#eeeeee"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

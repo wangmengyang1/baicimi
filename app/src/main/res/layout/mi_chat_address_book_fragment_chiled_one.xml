@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/mi_chat_address_book_fragment_chiled_one_userimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/check_one_fragment_listview_image_03"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+            android:id="@+id/mi_chat_address_book_fragment_chiled_one_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="妈妈"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/mi_chat_address_book_fragment_chiled_one_userimage"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+            android:id="@+id/mi_chat_address_book_fragment_chiled_one_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="管理"
+            android:textColor="@color/white"
+            android:background="#aaaaaa"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

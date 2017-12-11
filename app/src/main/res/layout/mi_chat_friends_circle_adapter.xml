@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+
+
+            <ImageView
+                android:id="@+id/mi_chat_friends_circle_adapter_imageurl"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:src="@drawable/mi_chat_friends_circle_image_01"
+                android:scaleType="fitXY"
+                />
+
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="130dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:id="@+id/mi_chat_friends_circle_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="全五分，发货速度超快，正品无疑！价格再优惠些就好了，嘻嘻！打开包装盒看到里面的填充物好可爱，泡沫球球，突然想吃棉花糖和爆米花了！"
+            android:textColor="#737373"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_below="@+id/mi_chat_friends_circle_adapter_imageurl"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/mi_chat_friends_circle_adapter_dateaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="昨天19:20 来自生活汇"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_below="@+id/mi_chat_friends_circle_adapter_content"
+            android:layout_marginTop="4dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/mi_chat_friends_circle_adapter_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/mi_chat_friends_circle_adapter_dateaddress"
+            android:layout_marginTop="4dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/message_image_black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="123"
+                android:layout_marginLeft="4dp"
+                />
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="18dp"
+                android:background="#737373"
+                android:layout_marginLeft="4dp"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/img_pinglun_zans"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="123"
+                android:layout_marginLeft="4dp"
+                />
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="18dp"
+                android:background="#737373"
+                android:layout_marginLeft="4dp"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/fenxiangtubiao"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="123"
+                android:layout_marginLeft="4dp"
+                />
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="18dp"
+                android:background="#737373"
+                android:layout_marginLeft="4dp"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/dingzi"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="123"
+                android:layout_marginLeft="4dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/mi_chat_friends_circle_adapter_userimage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/mi_people_chat_fragment_image_30"
+            android:layout_below="@+id/mi_chat_friends_circle_adapter_layout"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/mi_chat_friends_circle_adapter_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="w****f(匿名)"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/mi_chat_friends_circle_adapter_userimage"
+            android:layout_alignTop="@+id/mi_chat_friends_circle_adapter_userimage"
+            android:layout_marginLeft="8dp"
+            android:textColor="#737373"
+            />
+
+        <TextView
+            android:id="@+id/mi_chat_friends_circle_adapter_useraddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GuangZhou,China"
+            android:textSize="12sp"
+            android:layout_below="@+id/mi_chat_friends_circle_adapter_username"
+            android:layout_alignLeft="@+id/mi_chat_friends_circle_adapter_username"
+            android:layout_marginTop="4dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/mi_chat_friends_circle_adapter_useraddress"
+            >
+
+            <TextView
+                android:id="@+id/mi_chat_friends_circle_adapter_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已关注"
+                android:textSize="13sp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/message_image_black"
+                android:layout_marginLeft="8dp"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/img_pinglun_zans"
+                android:layout_marginLeft="4dp"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/fenxiangtubiao"
+                android:layout_marginLeft="4dp"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/dingzi"
+                android:layout_marginLeft="4dp"
+                />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

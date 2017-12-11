@@ -89,6 +89,7 @@
 
 
 
+
     <style name="mypopwindow_anim_style">
         <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
         <!-- 指定显示的动画xml -->
@@ -264,5 +265,7 @@
         <item name="android:minHeight">5.0dp</item>
     </style>
 
+    
+  
 
 </resources>
