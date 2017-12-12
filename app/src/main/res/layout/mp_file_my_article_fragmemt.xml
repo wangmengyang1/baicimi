@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="草稿"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <ListView
+                android:id="@+id/mp_file_my_article_fragmemt_listviewfirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:divider="@color/white"
+                android:dividerHeight="4dp"
+                android:layout_margin="15dp"
+                ></ListView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="已发布"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <ListView
+                android:id="@+id/mp_file_my_article_fragmemt_listviewsecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:divider="@color/white"
+                android:dividerHeight="4dp"
+                android:layout_margin="15dp"
+                ></ListView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="钉"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <ListView
+                android:id="@+id/mp_file_my_article_fragmemt_listviewthread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:divider="@color/white"
+                android:dividerHeight="4dp"
+                android:layout_margin="15dp"
+                ></ListView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -91,8 +91,14 @@ public class MiPeopleChatFragment extends BaseFragment implements View.OnClickLi
         gridViewFirst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //加号页面幂聊
-                startFragment(new MiPeopleChatAddFragment());
+
+                if (i == 2){
+                    //全球生活汇
+                    startFragment(new MiPeopleLifeSinksFragment());
+                }else{
+                    //加号页面幂聊
+                    startFragment(new MiPeopleChatAddFragment());
+                }
             }
         });
 

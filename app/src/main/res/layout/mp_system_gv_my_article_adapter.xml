@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        >
+
+
+        <TextView
+            android:id="@+id/mp_system_gv_my_article_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="我心中的喜马拉雅"
+            android:layout_centerVertical="true"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/mp_system_gv_my_article_adapter_dateimage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/mp_new_book_image_06"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:layout_centerVertical="true"
+
+            />
+
+        <TextView
+            android:id="@+id/mp_system_gv_my_article_adapter_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3天20小时"
+            android:layout_toRightOf="@+id/mp_system_gv_my_article_adapter_dateimage"
+            android:layout_centerVertical="true"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/mp_system_gv_my_article_adapter_manager"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/manager_image_01"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
