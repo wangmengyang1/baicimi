@@ -33,7 +33,7 @@ public class MiPeopleLifeSinksFragment extends BaseFragment implements View.OnCl
     private MPFileFragment mpFileFragment;//文件
 
 
-    private LinearLayout layoutfirst;
+    private LinearLayout layoutfirst , layoutsecond , layoutThread , layoutFour , layoutFive;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -46,6 +46,18 @@ public class MiPeopleLifeSinksFragment extends BaseFragment implements View.OnCl
 
         layoutfirst = (LinearLayout) view.findViewById(R.id.mi_people_life_sinks_fragment_layoutfirst);
         layoutfirst.setOnClickListener(this);
+
+        layoutsecond = (LinearLayout) view.findViewById(R.id.mi_people_life_sinks_fragment_layoutsecond);
+        layoutsecond.setOnClickListener(this);
+
+        layoutThread = (LinearLayout) view.findViewById(R.id.mi_people_life_sinks_fragment_mifriendscircle);
+        layoutThread.setOnClickListener(this);
+
+        layoutFour = (LinearLayout) view.findViewById(R.id.mi_people_life_sinks_fragment_layoutfour);
+        layoutFour.setOnClickListener(this);
+
+        layoutFive = (LinearLayout) view.findViewById(R.id.mi_people_life_sinks_fragment_layoutfive);
+        layoutFive.setOnClickListener(this);
         return view;
     }
 
@@ -54,6 +66,9 @@ public class MiPeopleLifeSinksFragment extends BaseFragment implements View.OnCl
     //数据填充
     private void init() {
         listFragment.clear();
+        listFragment.add(mpNewBookFragment = new MPNewBookFragment());//新建
+        listFragment.add(mpSystemGcFragment = new MPSystemGcFragment());//回收站
+        listFragment.add(mpFileFragment = new MPFileFragment());//文件
         listFragment.add(mpLifeSinksManager = new MPLifeSinksManager());//管理首页
     }
 
@@ -94,10 +109,7 @@ public class MiPeopleLifeSinksFragment extends BaseFragment implements View.OnCl
 
 
 
-    //返回按键
-    public void lifeSinksGoBack(String tag){
-        fm.popBackStack(tag , 1);//返回
-    }
+
 
     @Override
     protected void initData() {
@@ -108,7 +120,19 @@ public class MiPeopleLifeSinksFragment extends BaseFragment implements View.OnCl
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.mi_people_life_sinks_fragment_layoutfirst:
+//                initShowFragment(0);
+                break;
+            case R.id.mi_people_life_sinks_fragment_layoutsecond:
+                initShowFragment(0);
+                break;
+            case R.id.mi_people_life_sinks_fragment_mifriendscircle:
                 initShowFragment(1);
+                break;
+            case R.id.mi_people_life_sinks_fragment_layoutfour:
+                initShowFragment(2);
+                break;
+            case R.id.mi_people_life_sinks_fragment_layoutfive:
+                initShowFragment(3);
                 break;
         }
     }

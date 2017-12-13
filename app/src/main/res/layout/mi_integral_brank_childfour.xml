@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="幂积分银行创始于2017年8月1日，截止2017年12月30日，共吸纳宁菲7200万积分，七月菊7200万积分，品驰2800万积分，百次幂商城2800万积分。"
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/mi_code_brank_image_20"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="4dp"
+            android:background="#737373"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="幂银行积分：2亿"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宁菲投入积分：7200万"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="七月菊投入积分：7200万"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品驰投入积分：7200万"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="菲比投入积分：2800万"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="了解积分银行"
+            android:textSize="13sp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

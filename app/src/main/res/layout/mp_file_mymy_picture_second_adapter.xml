@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        >
+
+        <ImageView
+            android:id="@+id/mp_file_mymy_picture_second_adapter_image"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:src="@drawable/mp_new_book_image_08"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/mp_file_mymy_picture_second_adapter_pen"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/mp_new_book_image_09"
+            android:padding="2dp"
+            />
+
+        <ImageView
+            android:id="@+id/mp_file_mymy_picture_second_adapter_tag"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/mp_new_book_image_10"
+            android:layout_alignRight="@+id/mp_file_mymy_picture_second_adapter_image"
+            android:padding="2dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

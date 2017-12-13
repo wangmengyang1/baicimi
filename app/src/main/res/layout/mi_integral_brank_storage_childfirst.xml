@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="80dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+
+        <TextView
+            android:id="@+id/mi_integral_brank_storage_childfirst_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="整存整取"
+            />
+        <TextView
+            android:id="@+id/mi_integral_brank_storage_childfirst_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="整存零取"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:id="@+id/mi_integral_brank_storage_childfirst_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="零存整取"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:id="@+id/mi_integral_brank_storage_childfirst_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="存本利息"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:id="@+id/mi_integral_brank_storage_childfirst_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="定活两便"
+            android:layout_marginTop="8dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

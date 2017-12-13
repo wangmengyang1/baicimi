@@ -210,6 +210,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     startFragment(new MiWalletFragmentHomePage());//幂钱包 （新）
                 } else if (i == 1 && i1 == 1) {
                     //幂积分银行
+                    startFragment(new MiIntegralBrankFragment());
                 } else if (i == 1 && i1 == 2) {
                     //赚取积分
                 } else if (i == 1 && i1 == 3) {

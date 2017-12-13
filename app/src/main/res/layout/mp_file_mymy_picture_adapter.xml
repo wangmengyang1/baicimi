@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/mp_file_mymy_picture_adapter_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="今天"
+            />
+
+        <TextView
+            android:id="@+id/mp_file_mymy_picture_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="无标题"
+            android:layout_below="@+id/mp_file_mymy_picture_adapter_date"
+            android:layout_marginTop="2dp"
+            />
+
+        <ImageView
+            android:id="@+id/mp_file_mymy_picture_adapter_imageurl"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:src="@drawable/mp_new_book_image_07"
+            android:layout_below="@+id/mp_file_mymy_picture_adapter_lible"
+            android:layout_marginTop="4dp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

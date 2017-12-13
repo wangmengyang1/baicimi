@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/mi_code_brank_image_16"
+            android:scaleType="fitXY"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分与现金结算"
+            android:textSize="13sp"
+            android:layout_marginTop="8dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+            android:layout_marginTop="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/mi_integral_brank_childfirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                >
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:padding="4dp"
+                    android:textSize="13sp"
+                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="积分"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/mi_code_brank_image_17"
+                    />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:padding="4dp"
+                    android:textSize="13sp"
+                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="计算"
+                android:textColor="#737373"
+                android:textSize="13sp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_below="@+id/mi_integral_brank_childfirst"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="#aaaaaa"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

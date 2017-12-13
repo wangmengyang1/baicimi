@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
@@ -16,7 +17,7 @@ import java.util.List;
  * Created by Administrator on 2017/12/12.
  * 个人中心首页 幂聊首页 全球生活汇 文件
  */
-public class MPFileFragment extends BaseFragment{
+public class MPFileFragment extends BaseFragment implements View.OnClickListener {
 
     private View view;
 
@@ -29,6 +30,8 @@ public class MPFileFragment extends BaseFragment{
     private MPFileMyMyArticle mpFileMyMyArticle;//我的文章
     private MPFileMyMyPicture mpFileMyMyPicture;//我的图片
 
+    private TextView myarticle , mypicture;
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.mp_file_fragment , container , false);
@@ -36,6 +39,12 @@ public class MPFileFragment extends BaseFragment{
         fm = getChildFragmentManager();
         init();
         initShowFragment(0);
+
+        myarticle = (TextView) view.findViewById(R.id.mp_file_fragment_myarticle);
+        mypicture = (TextView) view.findViewById(R.id.mp_file_fragment_mypicture);
+
+        myarticle.setOnClickListener(this);
+        mypicture.setOnClickListener(this);
         return view;
     }
 
@@ -43,8 +52,8 @@ public class MPFileFragment extends BaseFragment{
     //数据填充
     private void init() {
         listFragment.clear();
-//        listFragment.add(mpSystemGcMyArticle = new MPSystemGcMyArticle());
-//        listFragment.add(mpSystemGcMyPicture = new MPSystemGcMyPicture());
+        listFragment.add(mpFileMyMyArticle = new MPFileMyMyArticle());
+        listFragment.add(mpFileMyMyPicture = new MPFileMyMyPicture());
     }
 
 
@@ -83,5 +92,17 @@ public class MPFileFragment extends BaseFragment{
     @Override
     protected void initData() {
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.mp_file_fragment_myarticle:
+                initShowFragment(0);
+                break;
+            case R.id.mp_file_fragment_mypicture:
+                initShowFragment(1);
+                break;
+        }
     }
 }

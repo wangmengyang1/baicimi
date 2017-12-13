@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        >
+
+        <ImageView
+            android:id="@+id/mi_integral_brand_list_adapter_imageurl"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/mi_code_brank_image_09"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/mi_integral_brand_list_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="柜台"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/mi_integral_brand_list_adapter_imageurl"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
