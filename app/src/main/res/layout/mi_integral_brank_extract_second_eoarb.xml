@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/mi_integral_brank_extract_second_eoarb_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/mi_integral_brank_extract_second_eoarb_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="定期提取"
+            android:textColor="#737373"
+            android:gravity="center"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/brand_fragment_second_image_13"
+            android:padding="6dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/mi_integral_brank_extract_second_eoarb_scanning"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/brand_fragment_second_image_12"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="28dp"
+            android:background="@drawable/brand_fragment_second_edittext_layer_list"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint=""
+            android:textSize="12sp"
+            android:paddingLeft="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#e1e1e1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textSize="13sp"
+        android:text="您的定期存款："
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="整存整取"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="存储金额"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:background="#dcdcdc"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_marginLeft="0.4dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000"
+                    android:textSize="13sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="61dp"
+                android:background="#737373"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="存储年限"
+                    android:textSize="13sp"
+
+                    android:background="#dcdcdc"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3年"
+                    android:textSize="13sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="61dp"
+                android:background="#737373"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="存入时间"
+                    android:textSize="13sp"
+
+                    android:background="#dcdcdc"
+                    android:id="@+id/textView17"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017.01.20"
+                    android:textSize="13sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="61dp"
+                android:background="#737373"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="操作"
+                    android:textSize="13sp"
+                    android:layout_marginRight="0.4dp"
+                    android:background="#dcdcdc"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+                <TextView
+                    android:id="@+id/mi_integral_brank_extract_second_eoarb_extractfirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提取"
+                    android:textSize="13sp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="整存零取"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="存储金额"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:background="#dcdcdc"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_marginLeft="0.4dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000"
+                    android:textSize="13sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="61dp"
+                android:background="#737373"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="存储年限"
+                    android:textSize="13sp"
+
+                    android:background="#dcdcdc"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3年"
+                    android:textSize="13sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="61dp"
+                android:background="#737373"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="存入时间"
+                    android:textSize="13sp"
+                    android:background="#dcdcdc"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017.01.20"
+                    android:textSize="13sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="61dp"
+                android:background="#737373"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="操作"
+                    android:textSize="13sp"
+                    android:layout_marginRight="0.4dp"
+                    android:background="#dcdcdc"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+                <TextView
+                    android:id="@+id/mi_integral_brank_extract_second_eoarb_extractsecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提取"
+                    android:textSize="13sp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

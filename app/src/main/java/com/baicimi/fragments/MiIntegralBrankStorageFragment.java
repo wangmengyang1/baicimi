@@ -143,13 +143,77 @@ public class MiIntegralBrankStorageFragment extends BaseFragment implements View
         @Override
         public View getChildView(final int i, final int i1, boolean b, View view, ViewGroup viewGroup) {
             view = null;
+            MiIBSChildHolder holder = null;
             if (i == 1){
-                view = LayoutInflater.from(getContext()).inflate(R.layout.mi_integral_brank_storage_childfirst , null);
+                if (view == null){
+                    view = LayoutInflater.from(getContext()).inflate(R.layout.mi_integral_brank_storage_childfirst , null);
+                    holder = new MiIBSChildHolder();
+                    holder.weaww = (TextView) view.findViewById(R.id.mi_integral_brank_storage_childfirst_01);
+                    holder.keeps = (TextView) view.findViewById(R.id.mi_integral_brank_storage_childfirst_02);
+                    holder.fdbi = (TextView) view.findViewById(R.id.mi_integral_brank_storage_childfirst_03);
+                    holder.interestInterest = (TextView) view.findViewById(R.id.mi_integral_brank_storage_childfirst_04);
+                    holder.timeDemandDeposit = (TextView) view.findViewById(R.id.mi_integral_brank_storage_childfirst_05);
+
+                    view.setTag(holder);
+                }else{
+                    holder = (MiIBSChildHolder) view.getTag();
+                }
+
+                holder.weaww.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //整存整取
+                        startFragment(new MiTntegralBrankWeaww());
+                    }
+                });
+
+                holder.keeps.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //整存零取
+                        startFragment(new MiTntegralBrankKeeps());
+                    }
+                });
+
+                holder.fdbi.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //零存整取
+                    }
+                });
+
+                holder.interestInterest.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //存本利息
+                        startFragment(new MiTntegralBrankKeeps("存本利息"));
+                    }
+                });
+
+                holder.timeDemandDeposit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //定活两便
+                        startFragment(new MiTntegralBrankTimeDemandDeposit());
+                    }
+                });
+
+
             }
 
             return view;
 
         }
+
+        public class MiIBSChildHolder{
+            private TextView weaww;
+            private TextView keeps;
+            private TextView fdbi;
+            private TextView interestInterest;
+            private TextView timeDemandDeposit;
+
+        }
+
 
 
         @Override

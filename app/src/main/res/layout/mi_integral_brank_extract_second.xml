@@ -5,6 +5,8 @@
     android:background="@color/white"
     >
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +16,7 @@
         >
 
         <ImageView
-            android:id="@+id/mi_integral_brank_current_fmparb_back"
+            android:id="@+id/mi_integral_brank_extract_second_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/back_image_black"
@@ -23,11 +25,11 @@
             />
 
         <TextView
-            android:id="@+id/mi_integral_brank_current_fmparb_lible"
+            android:id="@+id/mi_integral_brank_extract_second_lible"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="定期理财"
+            android:text="活期提取"
             android:textColor="#737373"
             android:gravity="center"
             android:textSize="16sp"
@@ -52,7 +54,7 @@
         >
 
         <ImageView
-            android:id="@+id/mi_integral_brank_current_fmparb_scanning"
+            android:id="@+id/mi_integral_brank_extract_second_scanning"
             android:layout_width="34dp"
             android:layout_height="34dp"
             android:src="@drawable/brand_fragment_second_image_12"
@@ -87,133 +89,122 @@
         android:background="#e1e1e1"
         />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="买入金额"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
-        />
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="15dp"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-
+        android:gravity="center_vertical"
         >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¥"
+            android:text="提取金额："
+            android:textSize="13sp"
             />
 
         <EditText
-            android:layout_width="220dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:hint="10000积分起，递增10积分"
             android:textSize="13sp"
-            android:paddingTop="4dp"
-            android:paddingBottom="4dp"
-            android:paddingLeft="8dp"
-            android:background="@drawable/background_null"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
             />
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="#eeeeee"
-        android:layout_marginTop="8dp"
-        />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="15dp"
-        >
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
             >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
-                android:text="自动转入下一期"
+                android:text="查看账户余额"
+
                 />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_marginTop="1dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户密码："
+            android:textSize="13sp"
+            />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:visibility="invisible"
+            >
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
-                android:text="自动续期开始，到期后本金和收益继续封闭一个周期，收益不间断。"
-                android:layout_marginTop="4dp"
+                android:text="查看账户余额"
+
                 />
 
-
-
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_marginTop="1dp"
+                />
         </LinearLayout>
-
-        <CheckBox
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:button="@null"
-            android:background="@drawable/user_center_home_page_setting_selector"
-            />
 
     </LinearLayout>
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#eeeeee"
-        android:padding="15dp"
-        >
 
-        <CheckBox
-            android:id="@+id/mi_integral_brank_current_fmparb_checkbox"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:button="@null"
-            android:background="@drawable/checkbox_selector_two"
-            />
-
-        <TextView
-            android:id="@+id/mi_integral_brank_current_fmparb_content"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="      同意相关协议及《网上银行开户及账户绑定协议》并向网商银行申请开立银行结算账户。本人知晓七日年化收益率不代表任何收益承诺本产品可能存在资金损失风险。"
-            android:textSize="13sp"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="确定"
-            android:paddingTop="4dp"
-            android:paddingBottom="4dp"
-            android:paddingLeft="25dp"
-            android:paddingRight="25dp"
-            android:layout_below="@+id/mi_integral_brank_current_fmparb_content"
-            android:layout_marginTop="20dp"
-            android:layout_centerHorizontal="true"
-            android:background="#dcdcdc"
-            android:textSize="13sp"
-            android:textColor="#737373"
-            />
-    </RelativeLayout>
-
+    <TextView
+        android:id="@+id/mi_integral_brank_extract_second_affirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textSize="13sp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#737373"
+        android:background="#dcdcdc"
+        />
 
 </LinearLayout>

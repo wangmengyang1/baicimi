@@ -41,6 +41,7 @@ public class MiIntegralBrankFragment extends BaseFragment implements View.OnClic
     private ImageView back;
 
     private LinearLayout storage;//存储
+    private LinearLayout treasure;//我的财富
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -58,6 +59,9 @@ public class MiIntegralBrankFragment extends BaseFragment implements View.OnClic
 
         storage = (LinearLayout) view.findViewById(R.id.mi_integral_brank_fragment_storage);
         storage.setOnClickListener(this);
+
+        treasure = (LinearLayout) view.findViewById(R.id.mi_integral_brank_fragment_treasure);
+        treasure.setOnClickListener(this);
         return view;
     }
 
@@ -161,6 +165,10 @@ public class MiIntegralBrankFragment extends BaseFragment implements View.OnClic
             case R.id.mi_integral_brank_fragment_storage:
                 //存储
                 startFragment(new MiIntegralBrankStorageFragment());
+                break;
+            case R.id.mi_integral_brank_fragment_treasure:
+                //我的财富
+                startFragment(new MiIntegralBrankMyTreasureFragment());
                 break;
         }
     }

@@ -121,6 +121,7 @@
             android:paddingTop="4dp"
             android:paddingBottom="4dp"
             android:paddingLeft="8dp"
+            android:background="@drawable/background_null"
             />
 
 
@@ -134,6 +135,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
+
         />
 
     <TextView
@@ -212,6 +214,7 @@
             />
 
         <TextView
+            android:id="@+id/mi_integral_brank_crrent_finacial_dissmess"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="确定"
@@ -226,6 +229,49 @@
             android:textSize="13sp"
             android:textColor="#737373"
             />
+
+
+        <TextView
+            android:id="@+id/mi_integral_brank_crrent_finacial_brankcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="中国建设银行储蓄卡（尾号8138），最多支付10000.0元"
+            android:textSize="13sp"
+            android:layout_below="@+id/mi_integral_brank_crrent_finacial_dissmess"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:layout_below="@+id/mi_integral_brank_crrent_finacial_brankcard"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更改"
+                android:textSize="13sp"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_marginTop="2dp"
+                />
+
+
+
+        </LinearLayout>
+
     </RelativeLayout>
 
 </LinearLayout>

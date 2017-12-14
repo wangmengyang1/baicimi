@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/extract_second_eoarb_principal_entry_slipg_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/extract_second_eoarb_principal_entry_slipg_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="定期提取"
+            android:textColor="#737373"
+            android:gravity="center"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/brand_fragment_second_image_13"
+            android:padding="6dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/extract_second_eoarb_principal_entry_slipg_scanning"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/brand_fragment_second_image_12"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="28dp"
+            android:background="@drawable/brand_fragment_second_edittext_layer_list"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint=""
+            android:textSize="12sp"
+            android:paddingLeft="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#e1e1e1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textSize="13sp"
+            android:text="幂积分银行取款凭条"
+            android:gravity="center"
+            android:textColor="#737373"
+            android:background="#dcdcdc"
+            android:layout_margin="0.6dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="用户名"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="25dp"
+                android:background="#737373"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="张晓燕"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="账号"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="25dp"
+                android:background="#737373"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="66778899"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="币别"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="25dp"
+                android:background="#737373"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="积分"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="取款金额"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="25dp"
+                android:background="#737373"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="1000"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="取款时间"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="25dp"
+                android:background="#737373"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="2017/08/09"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="手续费"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="25dp"
+                android:background="#737373"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="0"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="流水号"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="25dp"
+                android:background="#737373"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="MICI0099"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="余额"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="25dp"
+                android:background="#737373"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="5500积分"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#737373"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="银行盖章"
+                android:textSize="13sp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/tag_image_01"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打印"
+            android:textSize="13sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="#dcdcdc"
+            android:textColor="#737373"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="13sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="#dcdcdc"
+            android:textColor="#737373"
+            android:layout_marginLeft="15dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

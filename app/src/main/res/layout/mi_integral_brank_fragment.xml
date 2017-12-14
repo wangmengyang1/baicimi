@@ -222,6 +222,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/mi_integral_brank_fragment_treasure"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"

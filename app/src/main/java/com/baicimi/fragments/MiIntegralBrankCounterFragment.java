@@ -18,7 +18,7 @@ public class MiIntegralBrankCounterFragment extends BaseFragment implements View
 
     private View view;
     private ImageView back;
-    private LinearLayout investment;
+    private LinearLayout investment , extract;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -28,6 +28,9 @@ public class MiIntegralBrankCounterFragment extends BaseFragment implements View
 
         investment = (LinearLayout) view.findViewById(R.id.mi_integral_brank_counter_fragment_investment);
         investment.setOnClickListener(this);
+
+        extract = (LinearLayout) view.findViewById(R.id.mi_integral_brank_counter_fragment_extract);
+        extract.setOnClickListener(this);
         return view;
     }
 
@@ -45,6 +48,10 @@ public class MiIntegralBrankCounterFragment extends BaseFragment implements View
             case R.id.mi_integral_brank_counter_fragment_investment:
                 //投资
                 startFragment(new MiIntegralBrankInvestment());
+                break;
+            case R.id.mi_integral_brank_counter_fragment_extract:
+                //提取
+                startFragment(new MiIntegralBrankExtract());
                 break;
         }
     }

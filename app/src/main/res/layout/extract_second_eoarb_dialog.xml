@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/order_form_fragment_clicle_shape"
+        >
+
+        <TextView
+            android:id="@+id/extract_second_eoarb_dialog_lible"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="请选择提取类别："
+            android:textSize="13sp"
+            android:textColor="#737373"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/extract_second_eoarb_dialog_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/extract_second_eoarb_dialog_lible"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/extract_second_eoarb_dialog_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本金"
+                android:textColor="#737373"
+                android:textSize="13sp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                />
+
+
+            <TextView
+                android:id="@+id/extract_second_eoarb_dialog_interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="利息"
+                android:textColor="#737373"
+                android:textSize="13sp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/extract_second_eoarb_dialog_layout"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/extract_second_eoarb_dialog_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="确认"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:background="#dcdcdc"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
