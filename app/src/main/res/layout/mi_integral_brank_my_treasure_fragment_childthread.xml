@@ -156,6 +156,7 @@
                     >
 
                     <TextView
+                        android:id="@+id/mi_integral_brank_my_treasure_fragment_childthread_cdfirst"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="查看详情"
@@ -349,6 +350,7 @@
                         >
 
                         <TextView
+                            android:id="@+id/mi_integral_brank_my_treasure_fragment_childthread_fdfirst"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="查看详情"
@@ -547,6 +549,7 @@
                         >
 
                         <TextView
+                            android:id="@+id/mi_integral_brank_my_treasure_fragment_childthread_fdsecond"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="查看详情"

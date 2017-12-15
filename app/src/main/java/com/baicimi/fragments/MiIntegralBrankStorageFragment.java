@@ -30,6 +30,7 @@ public class MiIntegralBrankStorageFragment extends BaseFragment implements View
     private PaymentAdencyGovernmentCusAdaapter adencyGovernmentCusAdaapter;
 
     private ImageView back;
+    private TextView moreFirst , moreSecond;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -40,6 +41,11 @@ public class MiIntegralBrankStorageFragment extends BaseFragment implements View
 
         back = (ImageView) view.findViewById(R.id.mi_integral_brank_storage_fragmetn_back);
         back.setOnClickListener(this);
+
+        moreFirst = (TextView) view.findViewById(R.id.mi_integral_brank_storage_fragment_morefirst);
+        moreFirst.setOnClickListener(this);
+        moreSecond = (TextView) view.findViewById(R.id.mi_integral_brank_storage_fragment_moresecond);
+        moreSecond.setOnClickListener(this);
         return view;
     }
 
@@ -73,6 +79,15 @@ public class MiIntegralBrankStorageFragment extends BaseFragment implements View
         switch (view.getId()){
             case R.id.mi_integral_brank_storage_fragmetn_back:
                 ((MainActivity)getActivity()).goBack();
+                break;
+            case R.id.mi_integral_brank_storage_fragment_morefirst:
+                //了解幂银行储蓄
+                startFragment(new MiIntegralBrankStorageFragmentThread());
+                break;
+
+            case R.id.mi_integral_brank_storage_fragment_moresecond:
+                //了解存储利率
+                startFragment(new MiIntegralBrankStorageFragmentSecond());
                 break;
         }
     }

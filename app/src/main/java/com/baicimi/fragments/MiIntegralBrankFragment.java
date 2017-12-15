@@ -126,6 +126,9 @@ public class MiIntegralBrankFragment extends BaseFragment implements View.OnClic
                 if (i == 0){
                     //柜台
                     startFragment(new MiIntegralBrankCounterFragment());
+                }else if (i == 2){
+                    //话费充值
+                    startFragment(new MiIntegralBrankPrepaidRefill());
                 }
             }
         });

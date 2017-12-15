@@ -5,7 +5,6 @@
     android:background="@color/white"
     >
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +14,7 @@
         >
 
         <ImageView
-            android:id="@+id/mi_integral_brank_storage_fragmetn_back"
+            android:id="@+id/mi_integral_brank_storage_fragmetn_second_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/back_image_black"
@@ -24,11 +23,11 @@
             />
 
         <TextView
-            android:id="@+id/mi_integral_brank_storage_fragmetn_lible"
+            android:id="@+id/mi_integral_brank_storage_fragmetn_second_lible"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="储蓄"
+            android:text="存储利率"
             android:textColor="#737373"
             android:gravity="center"
             android:textSize="16sp"
@@ -53,7 +52,7 @@
         >
 
         <ImageView
-            android:id="@+id/mi_integral_brank_storage_fragmetn_scanning"
+            android:id="@+id/mi_integral_brank_storage_fragmetn_second_scanning"
             android:layout_width="34dp"
             android:layout_height="34dp"
             android:src="@drawable/brand_fragment_second_image_12"
@@ -82,62 +81,51 @@
 
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="了解存储利率"
+                android:layout_margin="15dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:src="@drawable/tag_image_11"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="0.4dp"
         android:background="#e1e1e1"
         />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        >
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:textSize="13sp"
-            android:text="请选择储蓄类型"
-            />
-
-        <TextView
-            android:id="@+id/mi_integral_brank_storage_fragment_morefirst"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="13sp"
-            android:text="了解幂银行储蓄"
-            android:padding="3dp"
-            android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
-            />
-        <TextView
-            android:id="@+id/mi_integral_brank_storage_fragment_moresecond"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="13sp"
-            android:text="了解存储利率"
-            android:padding="3dp"
-            android:layout_marginLeft="8dp"
-            android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
-            />
-    </LinearLayout>
-
-
-
-    <com.baicimi.view.CustomExpandableListView
-        android:id="@+id/mi_integral_brank_storage_fragmetn_cusendlistview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:childDivider="#eeeeee"
-        android:dividerHeight="0.6dp"
-        android:layout_marginTop="10dp"
-        ></com.baicimi.view.CustomExpandableListView>
 
 
 </LinearLayout>

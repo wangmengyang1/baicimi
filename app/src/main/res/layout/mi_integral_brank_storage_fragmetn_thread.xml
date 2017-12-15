@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/mi_integral_brank_storage_fragmetn_thread_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/mi_integral_brank_storage_fragmetn_thread_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="幂银行储蓄"
+            android:textColor="#737373"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/brand_fragment_second_image_13"
+            android:padding="6dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/mi_integral_brank_storage_fragmetn_thread_scanning"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/brand_fragment_second_image_12"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="28dp"
+            android:background="@drawable/brand_fragment_second_edittext_layer_list"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint=""
+            android:textSize="12sp"
+            android:paddingLeft="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#e1e1e1"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="了解幂银行储蓄"
+                android:layout_margin="15dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="您在幂银行进行积分存款，根据存款期限不同，您可选择活期存款和定期存款两大品种："
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="活期存款：是指开户时不约定存期，您可随时存取、存取金额不限的一种个人存款。"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="定期存款：是您在存款开户时约定存期一次或按期分次（在约定存期内）存入本金，整笔或分期、分次支取本金或利息的一种存款方式。个人定期存款可分为以下几种类型：整存整取、零存整取、整存零取、存本取息、教育储蓄、定活两便和通知存款。"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="整存整取：指开户时约定存期，整笔存入，到期一次整笔支取本息的一种个人存款。50积分起存，计息按存入时的约定利率计算，利随本清。整存整取存款可以办理到期日自动转存。存期分为三个月、六个月、一年、两年、三年、五年六个档次。具体利率标准请见利率表。"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="零存整取：指开户时约定存期、分次每月固定存款金额（由您自定）、到期一次支取本息的一种个人存款。开户手续与活期储蓄相同，只是每月要按开户时约定的金额进行续存。储户提前支取时的手续比照整存整取定期储蓄存款有关手续办理。一般5积分起存，每月存入一次，中途如有漏存，应在次月补齐。计息按实存金额和实际存期计算。存期分为一年、三年、五年。利息按存款开户日挂牌零存整取利率计算,到期未支取部分或提前支取按支取日挂牌的活期利率计算利息。具体利率标准请见利率表。"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="整存零取：指在存款开户时约定存款期限、本金一次存入，固定期限分次支取本金的一种个人存款。存款开户的手续与活期相同，存入时1000积分起存，支取期分一个月、三个月及半年一次。利息按存款开户日挂牌整存零取利率计算，于期满结清时支取。到期未支取部分或提前支取按支取日挂牌的活期利率计算利息。存期分一年、三年、五年。具体利率标准请见利率表。"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="存本取息：指在存款开户时约定存期、整笔一次存入，按固定期限分次支取利息，到期一次支取本金的一种个人存款。一般是5000积分起存。可一个月或几个月取息一次，可以在开户时约定的支取限额内多次支取任意金额。利息按存款开户日挂牌存本取息利率计算,到期未支取部分或提前支取按支取日挂牌的活期利率计算利息。存期分一年、三年、五年。具体利率标准请见利率表。"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="定活两便：指您在存款开户时不必约定存期，银行根据客户存款的实际存期按规定计息，可随时支取的一种个人存款种类。50积分起存，存期不足三个月的，利息按支取日挂牌活期利率计算存期三个月以上（含三个月）不满半年的，利息按支取日挂牌定期整存整取三个月存款利率打六折计算；存期半年以上的（含半年）不满一年的，整个存期按支取日定期整存整取半年期存款利率打六折计息；存期一年以上（含一年），无论存期多长整个存期一律按支取日定期整存整取一年期存款利率打六折计息。"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

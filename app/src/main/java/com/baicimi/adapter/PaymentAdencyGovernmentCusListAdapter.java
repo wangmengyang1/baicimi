@@ -8,7 +8,9 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.baicimi.R;
+import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.PaymentAdencyGovernmentCusEntry;
+import com.baicimi.fragments.MiIntegralBrankMyTreasureConsumptionList;
 
 import java.util.List;
 
@@ -20,11 +22,13 @@ public class PaymentAdencyGovernmentCusListAdapter extends BaseAdapter{
     private  List<PaymentAdencyGovernmentCusEntry> list;
     private Context context;
     private LayoutInflater inflater;
+    private BaseFragment baseFragment;
 
-    public PaymentAdencyGovernmentCusListAdapter(List<PaymentAdencyGovernmentCusEntry> list, Context context) {
+    public PaymentAdencyGovernmentCusListAdapter(List<PaymentAdencyGovernmentCusEntry> list, Context context , BaseFragment baseFragment) {
         this.list = list;
         this.context = context;
         inflater = LayoutInflater.from(context);
+        this.baseFragment = baseFragment;
     }
 
     @Override
@@ -65,6 +69,16 @@ public class PaymentAdencyGovernmentCusListAdapter extends BaseAdapter{
         holder.lible.setText(init.getLible());
         holder.code.setText(init.getCode());
         holder.state.setText(init.getState());
+
+        holder.particulars.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //我的资产，消费清单
+                if (baseFragment != null){
+                    baseFragment.startFragment(new MiIntegralBrankMyTreasureConsumptionList());
+                }
+            }
+        });
 
         return view;
     }
