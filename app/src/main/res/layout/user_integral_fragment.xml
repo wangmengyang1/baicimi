@@ -6,434 +6,716 @@
     android:layout_height="wrap_content"
     android:background="@color/white">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.6dp"
-        android:background="#eeeeee"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="18dp"
-        android:paddingBottom="18dp"
+        android:scrollbars="none"
         >
-
-        <RelativeLayout
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <com.baicimi.view.RingView
-                android:id="@+id/user_integral_fragmentringview"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                ring:strokeWidth="30dp"
-                ring:ringSize="165dp"
-                />
-
-
-            <RelativeLayout
-                android:id="@+id/user_integral_fragment_relativelayout"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/user_integral_fragment_layout_shape"
-                android:gravity="center"
-                >
-
-                <TextView
-                    android:id="@+id/user_intgral_fragment_lible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="我的积分"
-                    android:textSize="12sp"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="@color/white"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="99999"
-                    android:layout_below="@+id/user_intgral_fragment_lible"
-                    android:textSize="12sp"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="@color/white"
-                    />
-
-            </RelativeLayout>
-
-        </RelativeLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginLeft="20dp"
             >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="18dp"
+                android:paddingBottom="18dp"
                 >
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/user_integral_gridview_item_image_16"
-                    />
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.baicimi.view.RingView
+                        android:id="@+id/user_integral_fragmentringview"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        ring:strokeWidth="30dp"
+                        ring:ringSize="165dp"
+                        />
 
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
+                    <RelativeLayout
+                        android:id="@+id/user_integral_fragment_relativelayout"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/user_integral_fragment_layout_shape"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/user_intgral_fragment_lible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的积分"
+                            android:textSize="12sp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/white"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="99999"
+                            android:layout_below="@+id/user_intgral_fragment_lible"
+                            android:textSize="12sp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/white"
+                            />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="签到所得"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="500分"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <LinearLayout
+                        android:id="@+id/user_integral_fragment_getlayout_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/user_integral_gridview_item_image_16"
+                            />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="签到所得"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="500分"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/user_integral_fragment_getlayout_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/user_integral_gridview_item_image_12"
+                            />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="购物所得"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="2015分"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/user_integral_fragment_getlayout_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/user_integral_gridview_item_image_13"
+                            />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="登录所得"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="56分"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/user_integral_fragment_getlayout_04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/user_integral_gridview_item_image_14"
+                            />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="游戏所得"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="2015分"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/user_integral_fragment_getlayout_05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/user_integral_gridview_item_image_15"
+                            />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="分享所得"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="2015分"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/user_integral_fragment_getlayout_06"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/user_integral_gridview_item_image_16"
+                            />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="推荐所得"
+                            android:gravity="center"
+                            android:textSize="13sp"
+                            android:textColor="#737373"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="2015分"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/user_integral_fragment_getlayout_07"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/user_integral_gridview_item_image_15"
+                            />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="发布所得"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="56分"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/user_integral_fragment_getlayout_08"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/user_integral_gridview_item_image_13"
+                            />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="广告所得"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="56分"
+                            android:gravity="center"
+                            android:textSize="13sp"
+                            android:textColor="#737373"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/user_integral_fragment_getlayout_09"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/user_integral_gridview_item_image_17"
+                            />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="其他所得"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="108分"
+                            android:gravity="center"
+                            android:textColor="#737373"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
 
             </LinearLayout>
+
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
+                android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                android:layout_margin="5dp"
                 >
-                
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/user_integral_gridview_item_image_12"
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="180dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="签到领积分"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="点击签到>>"
+                            android:layout_marginTop="4dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/user_integral_fragment_01"
+                            android:layout_marginTop="4dp"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#dcdcdc"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="推荐获取积分"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="点击推荐>>"
+                            android:layout_marginTop="4dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/user_integral_fragment_02"
+                            android:layout_marginTop="4dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.6dp"
+                    android:layout_height="180dp"
+                    android:background="#dcdcdc"
                     />
 
 
-                <TextView
+                <LinearLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="购物所得"
+                    android:layout_height="180dp"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="2015分"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:text="发表文章赚积分"
+
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:text="点击发表>>"
+
+                                />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/user_integral_fragment_03"
+                            android:layout_marginLeft="4dp"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#dcdcdc"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:text=" 购 物 赚 积 分   "
+
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:text="逛逛商城>>"
+
+                                />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/user_integral_fragment_04"
+                            android:layout_marginLeft="4dp"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:background="#dcdcdc"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:text=" 玩 游 戏赚 积分 "
+
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:text="点击进入>>"
+
+                                />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/user_integral_fragment_05"
+                            android:layout_marginLeft="4dp"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
 
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
+
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
+                android:textSize="13sp"
+                android:text="为你推荐|Recommend"
+                android:layout_margin="10dp"
+                />
 
-                >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:paddingBottom="20dp"
+               >
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/user_integral_gridview_item_image_13"
-                    />
+               <ImageView
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="170dp"
+                   android:src="@drawable/user_integral_fragment_08"
+                   />
+               <ImageView
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="170dp"
+                   android:src="@drawable/user_integral_fragment_08"
+                   />
 
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="登录所得"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="56分"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-                >
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/user_integral_gridview_item_image_14"
-                    />
-
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="游戏所得"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="2015分"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-                >
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/user_integral_gridview_item_image_15"
-                    />
-
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="分享所得"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="2015分"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-                >
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/user_integral_gridview_item_image_16"
-                    />
-
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="推荐所得"
-                    android:gravity="center"
-                    android:textSize="13sp"
-                    android:textColor="#737373"
-                    />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="2015分"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-
-                >
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/user_integral_gridview_item_image_15"
-                    />
-
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="发布所得"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="56分"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-
-                >
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/user_integral_gridview_item_image_13"
-                    />
-
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="广告所得"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="56分"
-                    android:gravity="center"
-                    android:textSize="13sp"
-                    android:textColor="#737373"
-                    />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-                >
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/user_integral_gridview_item_image_17"
-                    />
-
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="其他所得"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="108分"
-                    android:gravity="center"
-                    android:textColor="#737373"
-                    android:textSize="13sp"
-                    />
-
-            </LinearLayout>
+           </LinearLayout>
 
         </LinearLayout>
 
-
-        
-    </LinearLayout>
-
-
-
-    <!--<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <GridView
-            android:id="@+id/user_integral_fragment_gridview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:numColumns="4"
-            android:verticalSpacing="1dp"
-            android:horizontalSpacing="1dp"
-            android:background="#00f9f9f9"
-            android:scrollbars="none"
-            ></GridView>
-
-    </LinearLayout>-->
-
+    </ScrollView>
 
 
 </LinearLayout>

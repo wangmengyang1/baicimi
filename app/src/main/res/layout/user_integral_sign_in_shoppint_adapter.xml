@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/user_integral_sign_in_shoppint_adapter_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="时间：2017.08.25"
+
+            />
+
+        <ImageView
+            android:id="@+id/user_integral_sign_in_shoppint_adapter_imageurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_integral_fragment_09"
+            android:layout_below="@+id/user_integral_sign_in_shoppint_adapter_date"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/user_integral_sign_in_shoppint_adapter_lible"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="2017秋季新款女鞋板鞋小白鞋女韩版白搭休闲"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_alignTop="@+id/user_integral_sign_in_shoppint_adapter_imageurl"
+            android:layout_toRightOf="@+id/user_integral_sign_in_shoppint_adapter_imageurl"
+            android:layout_marginLeft="8dp"
+            />
+
+
+        <TextView
+            android:id="@+id/user_integral_sign_in_shoppint_adapter_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="颜色分类：图色  尺码：L"
+            android:layout_alignLeft="@+id/user_integral_sign_in_shoppint_adapter_lible"
+            android:layout_below="@+id/user_integral_sign_in_shoppint_adapter_lible"
+            android:layout_marginTop="4dp"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_integral_fragment_11"
+            android:layout_below="@+id/user_integral_sign_in_shoppint_adapter_category"
+            android:layout_alignLeft="@+id/user_integral_sign_in_shoppint_adapter_category"
+            android:layout_marginTop="3dp"
+            />
+
+
+        <TextView
+            android:id="@+id/user_integral_sign_in_shoppint_adapter_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="类型：政府采购\n价格：10000\n积分：2000\n状态：交易成功"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

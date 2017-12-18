@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="发布所得：200\n点赞所得：48\n转发所得：248\n钉所得：125\n评论所得：154\n总收益：658"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
+
+</LinearLayout>

@@ -182,6 +182,9 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                 } else if (i == 10) {
                     //员工物品申请
                     startFragment(new DistributorPurchaseOption(), null);
+                }else if (i == 9) {
+                    //我的快递
+                    startFragment(new MyExpressFragment(), null);
                 }
                 return false;
             }
