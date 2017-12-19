@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        >
+
+
+
+            <com.baicimi.view.CircleImageView
+                android:id="@+id/love_donate_fragment_second_adpater_userimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/love_donate_image_07"
+
+                />
+
+            <TextView
+                android:id="@+id/love_donate_fragment_second_adpater_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="小明"
+                android:layout_toRightOf="@+id/love_donate_fragment_second_adpater_userimage"
+                android:layout_alignTop="@+id/love_donate_fragment_second_adpater_userimage"
+                android:layout_marginLeft="6dp"
+                />
+
+            <TextView
+                android:id="@+id/love_donate_fragment_second_adpater_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="GuangZhou,China"
+                android:layout_toRightOf="@+id/love_donate_fragment_second_adpater_userimage"
+                android:layout_alignBottom="@+id/love_donate_fragment_second_adpater_userimage"
+                android:layout_marginLeft="6dp"
+                />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="资助¥2000"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="+关注"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/love_donate_fragment_second_attention_shape"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

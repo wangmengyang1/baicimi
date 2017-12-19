@@ -237,6 +237,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     startFragment(new FragmentPresentSaveHomePage());//(新)
                 } else if (i == 4 && i1 == 3) {
                     //爱心捐赠
+                    startFragment(new LoveDonateFragment());
                 } else if (i == 4 && i1 == 4) {
                     //手机充值
                 } else if (i == 4 && i1 == 5) {

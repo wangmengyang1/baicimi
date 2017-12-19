@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:src="@drawable/love_donate_image_08"
+                android:scaleType="centerCrop"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="教育资助介绍"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#343434"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="无息资助是指企业或爱心人士通过无利息资助的方式，对借款者进行资金支持，帮助其完成个人心愿，所借款项可分期偿还。"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/textView24" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="教育资助适用范围"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#343434"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="1.家庭收入低于2万/年。\n2.符合入学条件，并有入学通知。\n3.出示学校开具的教育，生活基本所需费用。\n4.拥有个人身份中或户口本等有效证件。"
+                    android:layout_marginTop="6dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="申请条件"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#343434"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="1.助学金，家庭贫困的中学生或大学生，借款完成学业。\n2.完成商业领域的心愿，如开瑜伽馆，钢琴培训班，花店等自己喜爱且专长的事业心愿。"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/textView23" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="申请须知"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#343434"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="申请成功后，请按照约定还款日期与金额按时还款，如逾期未还款或拒不还款，百次幂与BNN将依法追究其刑事与民事责任。"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#ff0000"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="马 上 申 请"
+                    android:gravity="center"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/love_donate_fragment_five_second_applyfor"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

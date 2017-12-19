@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:src="@drawable/love_donate_image_08"
+                android:scaleType="centerCrop"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="文化资助介绍"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#343434"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="教育资助是指企业或爱心人士以不求回报的形式，通过资金，物质及精神上的支持，帮助受资助者达成文化艺术方面的心愿。"
+                    android:layout_marginTop="6dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="文化资助适用范围"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#343434"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="教育资助是指企业或爱心人士以不求回报的形式，通过资金，物质及精神上的支持，帮助受资助者达成文化艺术方面的心愿。"
+                    android:layout_marginTop="6dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="申请条件"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#343434"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="1.专长证明，视频，获奖证书等。\n2.如申请单一项目，需出具项目具体策划及所需费用。"
+                    android:layout_marginTop="6dp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="申请须知"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#343434"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="教育资助是指企业或爱心人士以不求回报的形式，通过资金，物质及精神上的支持，帮助受资助者达成文化艺术方面的心愿。"
+                    android:layout_marginTop="6dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="马 上 申 请"
+                    android:gravity="center"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/love_donate_fragment_five_second_applyfor"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

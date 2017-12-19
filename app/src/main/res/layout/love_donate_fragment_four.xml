@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                >
+
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="15dp"
+                    android:background="#ff0000"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="热门资助"
+                    android:layout_marginLeft="4dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="更多>"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/love_donate_image_06"
+                android:scaleType="fitXY"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                >
+
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="15dp"
+                    android:background="#ff0000"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="资助进行中"
+                    android:layout_marginLeft="4dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="更多>"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                />
+
+            <ListView
+                android:id="@+id/love_donate_fragment_four_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:divider="#eeeeee"
+                android:dividerHeight="0.6dp"
+                ></ListView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                >
+
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="15dp"
+                    android:background="#ff0000"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="资助图片分享"
+                    android:layout_marginLeft="4dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="更多>"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                />
+
+
+            <GridView
+                android:id="@+id/love_donate_fragment_four_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:horizontalSpacing="8dp"
+                android:verticalSpacing="8dp"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:scrollbars="none"
+                ></GridView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

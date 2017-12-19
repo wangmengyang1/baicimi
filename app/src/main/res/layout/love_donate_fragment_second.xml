@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                >
+
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="15dp"
+                    android:background="#ff0000"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="热门捐赠"
+                    android:layout_marginLeft="4dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="更多>"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/love_donate_image_06"
+                android:scaleType="fitXY"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                >
+
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="15dp"
+                    android:background="#ff0000"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="文化资助>资助进行中"
+                    android:layout_marginLeft="4dp"
+                    />
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                />
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/love_donate_image_01"
+                android:scaleType="centerCrop"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="基本信息："
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="资助进行中"
+                        android:padding="2dp"
+                        android:textColor="#ff0000"
+                        android:background="@drawable/love_donate_fragment_second_textview_background"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="4dp"
+                    android:gravity="bottom"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="姓名："
+                        />
+
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+
+                       <com.baicimi.view.CircleImageView
+                           android:id="@+id/love_donate_fragment_second_userimage"
+                           android:layout_width="30dp"
+                           android:layout_height="30dp"
+                           android:src="@drawable/love_donate_image_07"
+
+                           />
+
+                       <TextView
+                           android:id="@+id/love_donate_fragment_second_username"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="13sp"
+                           android:text="小明"
+                           android:layout_toRightOf="@+id/love_donate_fragment_second_userimage"
+                           android:layout_alignTop="@+id/love_donate_fragment_second_userimage"
+                           android:layout_marginLeft="6dp"
+                           />
+
+                       <TextView
+                           android:id="@+id/love_donate_fragment_second_address"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="12sp"
+                           android:text="GuangZhou,China"
+                           android:layout_toRightOf="@+id/love_donate_fragment_second_userimage"
+                           android:layout_alignBottom="@+id/love_donate_fragment_second_userimage"
+                           android:layout_marginLeft="6dp"
+                           />
+
+
+                   </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="+关注"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/love_donate_fragment_second_attention_shape"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="性别：女"
+                    android:layout_marginTop="4dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="年龄：20岁"
+                    android:layout_marginTop="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="心愿：钢琴进修"
+                    android:layout_marginTop="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="基本情况：我很喜欢钢琴，我梦想是成为钢琴家，但是现在没钱。我很喜欢钢琴，我梦想是成为钢琴家，但是现在没钱我很喜欢钢琴。我梦想是成为钢琴家，但是现在没钱。我梦想是成为钢琴家，但是现在没钱。"
+                    android:layout_marginTop="4dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="需资助：¥2000000"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="起止日趋：2017/08-2017/09"
+                    android:layout_marginTop="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="资助人数：1人"
+                    android:layout_marginTop="4dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="资助者："
+
+                        />
+
+
+                    <ListView
+                        android:id="@+id/love_donate_fragment_second_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:layout_marginLeft="6dp"
+                        android:dividerHeight="0dp"
+                        android:divider="@color/white"
+                        ></ListView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="查看更多"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:textColor="#0282c3"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="我要资助"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:background="@drawable/love_donate_fragment_second_attention_shape"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
