@@ -1,17 +1,29 @@
 package com.baicimi.fragments;
 
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
+import com.baicimi.view.AddFriendsDialog;
+import com.baicimi.view.LoveDonateDialog;
+import com.baicimi.view.MyPopupWindow;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,6 +93,9 @@ public class LoveDonateFragment extends BaseFragment implements View.OnClickList
         listFragment.clear();
         listFragment.add(loveDonateFragmentFirst = new LoveDonateFragmentFirst());
         listFragment.add(loveDonateFragmentSecond = new LoveDonateFragmentSecond());
+        listFragment.add(loveDonateFragmentThread = new LoveDonateFragmentThread());
+        listFragment.add(loveDonateFragmentFour = new LoveDonateFragmentFour());
+        listFragment.add(loveDonateFragmentFive = new LoveDonateFragmentFive());
     }
 
 
@@ -153,19 +168,32 @@ public class LoveDonateFragment extends BaseFragment implements View.OnClickList
             case R.id.love_donate_fragment_accomplish:
                 initializeTextView();
                 accomplish.setTextColor(Color.parseColor("#0282c3"));
+                initShowFragment(2);
                 break;
             case R.id.love_donate_fragment_underreview:
                 initializeTextView();
                 underreview.setTextColor(Color.parseColor("#0282c3"));
+                initShowFragment(3);
                 break;
             case R.id.love_donate_fragment_wantsupport:
                 initializeTextView();
                 wantsupport.setTextColor(Color.parseColor("#0282c3"));
+                initShowFragment(4);
                 break;
             case R.id.love_donate_fragment_applysupport:
                 initializeTextView();
                 applysupport.setTextColor(Color.parseColor("#0282c3"));
+
+                LoveDonateDialog addf = new LoveDonateDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFiveGrivaty);
+                Window win = addf.getWindow();
+                WindowManager.LayoutParams params = new WindowManager.LayoutParams();
+                params.gravity = Gravity.BOTTOM;
+                win.setAttributes(params);
+                addf.show();
+
                 break;
         }
     }
+
+
 }

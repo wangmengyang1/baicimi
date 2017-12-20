@@ -1,14 +1,20 @@
 package com.baicimi.fragments;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.baicimi.R;
 import com.baicimi.adapter.LoveDonateFragmentListAdapter;
 import com.baicimi.adapter.LoveDonateFragmentSecondAdapter;
 import com.baicimi.base.BaseFragment;
+import com.baicimi.view.LoveDonateDialog;
+import com.baicimi.view.LoveDonateSecondDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,12 +23,14 @@ import java.util.List;
  * Created by Administrator on 2017/12/19.
  * 个人中心首页 爱心捐赠   资助进行中
  */
-public class LoveDonateFragmentSecond extends BaseFragment{
+public class LoveDonateFragmentSecond extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private ListView listView;
     private List<Integer> list = new ArrayList<>();
     private LoveDonateFragmentSecondAdapter adapter;
+
+    private TextView wantsupport;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -31,6 +39,8 @@ public class LoveDonateFragmentSecond extends BaseFragment{
         //listview布局填充
         initListView();
 
+        wantsupport = (TextView) view.findViewById(R.id.love_donate_fragment_second_wantsupport);
+        wantsupport.setOnClickListener(this);
         return view;
     }
 
@@ -80,5 +90,19 @@ public class LoveDonateFragmentSecond extends BaseFragment{
     @Override
     protected void initData() {
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.love_donate_fragment_second_wantsupport:
+                LoveDonateSecondDialog addf = new LoveDonateSecondDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFiveGrivaty);
+                Window win = addf.getWindow();
+                WindowManager.LayoutParams params = new WindowManager.LayoutParams();
+                params.gravity = Gravity.BOTTOM;
+                win.setAttributes(params);
+                addf.show();
+                break;
+        }
     }
 }

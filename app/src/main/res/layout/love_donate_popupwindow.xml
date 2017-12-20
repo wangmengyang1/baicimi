@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/love_donate_popupwindow_layout_shape"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/love_donate_popupwindow_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:padding="8dp"
+                android:src="@drawable/love_donate_image_15" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="请下载表格并填写表格"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="*我们将提供一份填写相关详细资料的表格\n 请您下载至您的邮箱后认真填写相关信息\n并发送至www.baicimi.cn我们会在发送\n表格三个工作日内审核您的资助申请，审\n核结果会发送至您的邮箱，请注意查看！"
+                android:textSize="13sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邮箱地址："
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    android:hint="如284841658@qq.com"
+                    android:padding="5dp"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/checkbox_spot_selector_second"
+                    android:button="@null"
+                    android:checked="true"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="统一并接受《BNN∝MICI爱心捐款仪式》"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/love_donate_popupwindow_dissmess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/love_donate_fragment_second_attention_shape"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="下载表格"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

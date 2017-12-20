@@ -244,6 +244,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     //记账本
                 } else if (i == 4 && i1 == 6) {
                     //幂额度
+                    startFragment(new MilimitFragment());
                 } else if (i == 4 && i1 == 7) {
                     //幂信用积分
                 } else if (i == 4 && i1 == 8) {
