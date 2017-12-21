@@ -59,4 +59,12 @@
         <attr name="rightPadding" />
     </declare-styleable>
 
+
+    <!--edittext输入验证密码-->
+    <declare-styleable name="PassWordEditText">
+        <attr name="bound_line_color" format="color" />
+        <attr name="parting_line_color" format="color" />
+        <attr name="point_color" format="color" />
+    </declare-styleable>
+
 </resources>

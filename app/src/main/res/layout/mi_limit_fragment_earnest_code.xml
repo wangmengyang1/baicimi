@@ -108,6 +108,7 @@
                 android:layout_marginRight="15dp"
                 android:background="@color/white"
                 android:verticalSpacing="8dp"
+                android:scrollbars="none"
                 ></GridView>
 
             <TextView
@@ -129,6 +130,7 @@
                 android:layout_marginRight="15dp"
                 android:background="@color/white"
                 android:verticalSpacing="8dp"
+                android:scrollbars="none"
                 ></GridView>
 
             <TextView

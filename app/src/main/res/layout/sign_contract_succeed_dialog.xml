@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="213dp"
+        android:layout_height="274dp"
+        android:background="@drawable/mi_limit_image_26"
+        >
+
+        <TextView
+            android:id="@+id/sign_contract_succeed_dialog_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="恭喜你获得"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/sign_contract_succeed_dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="百次幂商城限量优惠券"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sign_contract_succeed_dialog_lible"
+            android:textColor="@color/white"
+            />
+
+
+        <TextView
+            android:id="@+id/sign_contract_succeed_dialog_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="立即领取"
+            android:textColor="@color/white"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#cccccc"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="使用地点：百次幂商城\n使用时间：2017.10.30~11.30"
+            android:layout_above="@+id/sign_contract_succeed_dialog_get"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#010101"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

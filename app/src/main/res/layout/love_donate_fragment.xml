@@ -149,6 +149,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
                             android:text="BNN∝MICI爱心捐款"
+                            android:textColor="#f196f6"
                             />
 
                         <ImageView
@@ -190,7 +191,7 @@
                             android:layout_width="12dp"
                             android:layout_height="12dp"
                             android:src="@drawable/love_donate_image_03"
-                            android:layout_marginLeft="6dp"
+
                             />
 
 
@@ -218,7 +219,7 @@
                             android:layout_width="12dp"
                             android:layout_height="12dp"
                             android:src="@drawable/love_donate_image_04"
-                            android:layout_marginLeft="6dp"
+
                             />
 
 

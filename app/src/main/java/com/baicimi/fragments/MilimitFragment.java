@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
@@ -33,6 +34,13 @@ public class MilimitFragment extends BaseFragment implements View.OnClickListene
     private MilimitFragmentEarnestMoney milimitFragmentEarnestMoney;//幂信用金
     private MilimitFragmentEarnestCode milimitFragmentEarnestCode;//幂信用积分
 
+    private TextView earnestmoney , earnestcode;
+
+    private MilimitFragmentEarnestMoneySuc milimitFragmentEarnestMoneySuc;//幂信用积分开通成功
+
+    private int count;
+
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.mi_limit_fragment , container , false);
@@ -46,6 +54,12 @@ public class MilimitFragment extends BaseFragment implements View.OnClickListene
         init();
         initShowFragment(0);
 
+
+        earnestmoney = (TextView) view.findViewById(R.id.mi_limit_fragment_earnestmoney);
+        earnestcode = (TextView) view.findViewById(R.id.mi_limit_fragment_earnestcode);
+
+        earnestmoney.setOnClickListener(this);
+        earnestcode.setOnClickListener(this);
         return view;
     }
 
@@ -58,7 +72,9 @@ public class MilimitFragment extends BaseFragment implements View.OnClickListene
     //数据填充
     private void init() {
         listFragment.clear();
-
+        listFragment.add(milimitFragmentEarnestMoney = new MilimitFragmentEarnestMoney());
+        listFragment.add(milimitFragmentEarnestCode = new MilimitFragmentEarnestCode());
+        listFragment.add(milimitFragmentEarnestMoneySuc = new MilimitFragmentEarnestMoneySuc());
     }
 
     //fragment切换
@@ -100,6 +116,20 @@ public class MilimitFragment extends BaseFragment implements View.OnClickListene
         switch (view.getId()){
             case R.id.mi_limit_fragment_back:
                 ((MainActivity)getActivity()).goBack();
+                break;
+            case R.id.mi_limit_fragment_earnestmoney:
+                if (count % 2 == 0){
+                    initShowFragment(0);
+                }else {
+                    initShowFragment(2);
+                }
+
+                count++;
+                break;
+            case R.id.mi_limit_fragment_earnestcode:
+
+                initShowFragment(1);
+
                 break;
         }
     }

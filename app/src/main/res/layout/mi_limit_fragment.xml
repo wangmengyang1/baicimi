@@ -128,6 +128,7 @@
                 >
 
                 <TextView
+                    android:id="@+id/mi_limit_fragment_earnestmoney"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
@@ -140,6 +141,7 @@
                     android:background="#c9c9c9"
                     />
                 <TextView
+                    android:id="@+id/mi_limit_fragment_earnestcode"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
