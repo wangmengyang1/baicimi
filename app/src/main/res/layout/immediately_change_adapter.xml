@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/immediately_change_adapter_imageurl"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/user_integral_fragment_code_second_image_07"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/immediately_change_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="宁菲洗发水"
+            android:layout_below="@+id/immediately_change_adapter_imageurl"
+            android:layout_marginTop="6dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/immediately_change_adapter_lible"
+            android:gravity="center_vertical"
+            android:layout_marginTop="4dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="积分"
+                />
+            <TextView
+                android:id="@+id/immediately_change_adapter_numbercode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="8200"
+                android:textColor="#ff0000"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

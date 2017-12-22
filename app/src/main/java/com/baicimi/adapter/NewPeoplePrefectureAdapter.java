@@ -11,8 +11,8 @@ import android.widget.TextView;
 import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.NewPeoplePrefectureEntry;
-import com.baicimi.fragments.ConversionRuleFragment;
 import com.baicimi.fragments.HomeIntegerConversionDetails;
+import com.baicimi.fragments.ImmediatelyChangeFragment;
 
 import java.util.List;
 
@@ -30,6 +30,7 @@ public class NewPeoplePrefectureAdapter extends BaseAdapter{
         this.list = list;
         this.context = context;
         inflater = LayoutInflater.from(context);
+        this.fragment = fragment;
     }
 
     @Override
@@ -84,8 +85,12 @@ public class NewPeoplePrefectureAdapter extends BaseAdapter{
             @Override
             public void onClick(View view) {
                 if (fragment != null){
-                //兑换规则
-                fragment.startFragment(new ConversionRuleFragment());
+
+                    //兑换详情
+//                fragment.startFragment(new ConversionRuleFragment());
+
+                    //立即兑换
+                    fragment.startFragment(new ImmediatelyChangeFragment());
                 }
             }
         });

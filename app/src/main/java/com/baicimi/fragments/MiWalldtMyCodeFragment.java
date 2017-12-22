@@ -75,7 +75,7 @@ public class MiWalldtMyCodeFragment extends BaseFragment implements View.OnClick
         grouplist.add("积分兑换");
 
         List<View> childViewItem01 = new ArrayList<>();
-        childViewItem01.add(LayoutInflater.from(getContext()).inflate(R.layout.user_integral_fragment , null));
+        childViewItem01.add(LayoutInflater.from(getContext()).inflate(R.layout.user_integral_fragment_code_second, null));
         List<View> childViewItem02 = new ArrayList<>();
         childViewItem02.add(LayoutInflater.from(getContext()).inflate(R.layout.cuslistview_child_view_item_second , null));
         List<View> childViewItem03 = new ArrayList<>();
@@ -182,20 +182,36 @@ public class MiWalldtMyCodeFragment extends BaseFragment implements View.OnClick
             if (i == 0){
                 view = null;
                 if (view == null){
-                    view = LayoutInflater.from(getContext()).inflate(R.layout.user_integral_fragment , null);
+                    view = LayoutInflater.from(getContext()).inflate(R.layout.user_integral_fragment_code_second , null);
                     holderFirst = new GetGroupViewHolder();
-                    holderFirst.ringView = (RingView) view.findViewById(R.id.user_integral_fragmentringview);
+                    holderFirst.ringView = (RingView) view.findViewById(R.id.user_integral_fragment_code_second_fragmentringview);
+                    holderFirst.codeShare = (ImageView) view.findViewById(R.id.user_integral_fragment_code_second_imagefirst);
+                    holderFirst.playGame = (ImageView) view.findViewById(R.id.user_integral_fragment_code_second_imagesecond);
+                    holderFirst.printPhoto = (ImageView) view.findViewById(R.id.user_integral_fragment_code_second_imagethread);
+                    holderFirst.shoppintCode = (ImageView) view.findViewById(R.id.user_integral_fragment_code_second_imagefour);
+
                     view.setTag(holderFirst);
                 }
                 holderFirst.ringView.setColors(new int[]{Color.parseColor("#2a8fd3"),Color.parseColor("#f15f48"), Color.parseColor("#2ac770")
                         , Color.parseColor("#f1c40f"),Color.parseColor("#2ac770"),Color.parseColor("#9a59b5") , Color.parseColor("#2ac770"),Color.parseColor("#f15f48")});
-                holderFirst.ringView.setValues(new int[]{33, 27, 18, 10,10 , 10 ,  7,5});
+                holderFirst.ringView.setValues(new int[]{33,27,18,10,10,10,7,5});
+
 
                 try {
                     holderFirst.ringView.startDraw();
                 } catch (OnDrawingException e) {
                     e.printStackTrace();
                 }
+
+
+                holderFirst.codeShare.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //分享成功
+                        startFragment(new MiWalldtMyCodeShareFragment());
+                    }
+                });
+
                 return view;
 
             }else if (i == 1){
@@ -247,6 +263,11 @@ public class MiWalldtMyCodeFragment extends BaseFragment implements View.OnClick
 
         private class GetGroupViewHolder{
             private RingView ringView;
+            private ImageView codeShare;
+            private ImageView playGame;
+            private ImageView printPhoto;
+            private ImageView shoppintCode;
+
         }
 
         private class ListviewViewFiveHolder{
