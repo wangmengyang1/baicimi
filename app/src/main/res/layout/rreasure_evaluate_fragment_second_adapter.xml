@@ -121,6 +121,7 @@
                 />
 
             <TextView
+                android:id="@+id/rreasure_evaluate_fragment_second_adapter_more"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="了解更多"

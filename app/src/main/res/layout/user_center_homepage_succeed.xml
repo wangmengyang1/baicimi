@@ -5,6 +5,7 @@
     android:background="@color/white"
     >
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +15,7 @@
         >
 
         <ImageView
-            android:id="@+id/immediately_change_succeed_back"
+            android:id="@+id/user_center_homepage_succeed_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/back_image_black"
@@ -23,11 +24,11 @@
             />
 
         <TextView
-            android:id="@+id/immediately_change_succeed_lible"
+            android:id="@+id/user_center_homepage_succeed_lible"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="兑换失败"
+            android:text="分享成功"
             android:gravity="center"
             android:textSize="16sp"
             />
@@ -113,14 +114,14 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/user_integral_fragment_code_second_image_08"
+                android:src="@drawable/user_integral_fragment_code_second_image_05"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
-                android:text="兑换失败"
+                android:text="分享成功"
                 android:layout_marginLeft="8dp"
                 android:textColor="#010101"
                 />
@@ -130,9 +131,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="亲，您的积分不足，多攒一点积分再来吧~"
+            android:text="10秒后窗口自动关闭"
             android:textSize="13sp"
             android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="进入幂友圈"
+            android:layout_marginTop="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#737373"
+            android:background="#eeeeee"
             />
 
 
@@ -144,5 +160,6 @@
         android:layout_weight="1"
         android:background="#eeeeee"
         />
+
 
 </LinearLayout>

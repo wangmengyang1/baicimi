@@ -5,6 +5,7 @@
     android:background="@color/white"
     >
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +15,7 @@
         >
 
         <ImageView
-            android:id="@+id/immediately_change_succeed_back"
+            android:id="@+id/mi_wallet_homepage_account_balance_withdraw_secceed_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/back_image_black"
@@ -23,11 +24,12 @@
             />
 
         <TextView
-            android:id="@+id/immediately_change_succeed_lible"
+            android:id="@+id/mi_wallet_homepage_account_balance_withdraw_secceed_lible"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="兑换失败"
+            android:text="申请成功"
+
             android:gravity="center"
             android:textSize="16sp"
             />
@@ -41,7 +43,6 @@
             />
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,7 +53,7 @@
         >
 
         <ImageView
-            android:id="@+id/immediately_change_succeed_scanning"
+            android:id="@+id/mi_wallet_homepage_account_balance_withdraw_secceed_scanning"
             android:layout_width="34dp"
             android:layout_height="34dp"
             android:src="@drawable/brand_fragment_second_image_12"
@@ -83,8 +84,8 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="0.6dp"
-        android:background="#eeeeee"
+        android:layout_height="0.4dp"
+        android:background="#e1e1e1"
         />
 
     <View
@@ -98,51 +99,61 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:paddingTop="40dp"
-        android:paddingBottom="40dp"
+        android:paddingTop="15dp"
         >
 
 
-        <LinearLayout
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            >
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/user_integral_fragment_code_second_image_08"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:text="兑换失败"
-                android:layout_marginLeft="8dp"
-                android:textColor="#010101"
-                />
-
-        </LinearLayout>
+            android:src="@drawable/user_integral_fragment_code_second_image_05"
+            android:layout_gravity="center_horizontal"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="亲，您的积分不足，多攒一点积分再来吧~"
+            android:textSize="18sp"
+            android:text="提现申请成功！"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textColor="#010101"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textSize="13sp"
-            android:layout_marginTop="10dp"
+            android:text="预计12小时到账，请耐心等待"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textColor="#737373"
             />
 
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="完成"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:textColor="#010101"
+            android:background="#e5e5e5"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#eeeeee"
+            />
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#eeeeee"
-        />
 
 </LinearLayout>

@@ -30,6 +30,9 @@ public class MiWalletHomePageAccountBalance extends BaseFragment implements View
     private MiWalletRecordAdapter adapter;
     private TextView lible_01 ,lible_02 ,lible_03 ,lible_04 ;
 
+    private TextView withdrawdeposit;//提现
+    private TextView recharge;//充值
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.mi_wallet_homepage_account_balance , container , false);
@@ -50,6 +53,11 @@ public class MiWalletHomePageAccountBalance extends BaseFragment implements View
         lible_03.setOnClickListener(this);
         lible_04.setOnClickListener(this);
 
+        withdrawdeposit = (TextView) view.findViewById(R.id.mi_wallet_homepage_account_balance_withdrawdeposit);
+        recharge = (TextView) view.findViewById(R.id.mi_wallet_homepage_account_balance_recharge);
+
+        withdrawdeposit.setOnClickListener(this);
+        recharge.setOnClickListener(this);
         return view;
     }
 
@@ -137,6 +145,14 @@ public class MiWalletHomePageAccountBalance extends BaseFragment implements View
                 showTitleLible();
                 lible_04.setBackgroundResource(R.drawable.background_null);
                 lible_04.setTextColor(Color.parseColor("#737373"));
+                break;
+            case R.id.mi_wallet_homepage_account_balance_withdrawdeposit:
+                //提现
+                startFragment(new MiWalletHomePageAccountBalanceWithdrawdeposit());
+                break;
+            case R.id.mi_wallet_homepage_account_balance_recharge:
+                //充值
+                startFragment(new MiWalletHomePageAccountBalanceRecharge());
                 break;
         }
     }

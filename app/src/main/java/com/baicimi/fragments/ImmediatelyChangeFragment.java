@@ -12,6 +12,7 @@ import com.baicimi.R;
 import com.baicimi.adapter.ImmediatelyChangeAdapter;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.ImmediatelyChangeEntry;
+import com.baicimi.view.ImmediatelyChangeDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -99,7 +100,9 @@ public class ImmediatelyChangeFragment extends BaseFragment implements View.OnCl
                 ((MainActivity)getActivity()).goBack();
                 break;
             case R.id.immediately_change_fragment_conversion:
-
+                //兑换弹窗
+                ImmediatelyChangeDialog immediatelyChangeDialog = new ImmediatelyChangeDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive , this);
+                immediatelyChangeDialog.show();
                 break;
         }
     }

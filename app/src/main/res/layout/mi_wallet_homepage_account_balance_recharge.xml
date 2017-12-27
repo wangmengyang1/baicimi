@@ -5,6 +5,7 @@
     android:background="@color/white"
     >
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +15,7 @@
         >
 
         <ImageView
-            android:id="@+id/immediately_change_succeed_back"
+            android:id="@+id/mi_wallet_homepage_account_balance_recharge_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/back_image_black"
@@ -23,11 +24,12 @@
             />
 
         <TextView
-            android:id="@+id/immediately_change_succeed_lible"
+            android:id="@+id/mi_wallet_homepage_account_balance_recharge_lible"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="兑换失败"
+            android:text="充值"
+
             android:gravity="center"
             android:textSize="16sp"
             />
@@ -41,7 +43,6 @@
             />
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,7 +53,7 @@
         >
 
         <ImageView
-            android:id="@+id/immediately_change_succeed_scanning"
+            android:id="@+id/mi_wallet_homepage_account_balance_recharge_scanning"
             android:layout_width="34dp"
             android:layout_height="34dp"
             android:src="@drawable/brand_fragment_second_image_12"
@@ -83,9 +84,10 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="0.6dp"
-        android:background="#eeeeee"
+        android:layout_height="0.4dp"
+        android:background="#e1e1e1"
         />
+
 
     <View
         android:layout_width="match_parent"
@@ -93,56 +95,127 @@
         android:background="#eeeeee"
         />
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:paddingTop="40dp"
-        android:paddingBottom="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_integral_fragment_code_second_image_09"
+            />
 
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
             >
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/user_integral_fragment_code_second_image_08"
-                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:text="兑换失败"
-                android:layout_marginLeft="8dp"
-                android:textColor="#010101"
+                android:textSize="13sp"
+                android:text="中国建设银行"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="尾号3380"
+                android:layout_marginTop="4dp"
+                />
         </LinearLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/user_integral_fragment_code_second_image_10"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="该卡本次最多可充值10,000.00元"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="#eeeeee"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="亲，您的积分不足，多攒一点积分再来吧~"
             android:textSize="13sp"
-            android:layout_marginTop="10dp"
+            android:text="金额"
+            android:textColor="#737373"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_null"
+            android:textSize="13sp"
+            android:hint="请输入充值金额"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:background="#eeeeee"
+        >
+
+        <TextView
+            android:id="@+id/mi_wallet_homepage_account_balance_recharge_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="下一步"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="#737373"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/mi_wallet_homepage_account_balance_recharge_next_shape"
             />
 
 
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#eeeeee"
-        />
 
 </LinearLayout>

@@ -5,8 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import com.baicimi.R;
+import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.RreasureEvaluateFragmentSecondEntry;
 
 import java.util.List;
@@ -19,10 +21,18 @@ public class LogisticsEvaluateFragmentThreadAdapter extends BaseAdapter{
     private List<RreasureEvaluateFragmentSecondEntry> list;
     private Context context;
     private LayoutInflater inflater;
+    private BaseFragment baseFragment;
 
     public LogisticsEvaluateFragmentThreadAdapter(List<RreasureEvaluateFragmentSecondEntry> list, Context context) {
         this.list = list;
         this.context = context;
+        inflater = LayoutInflater.from(context);
+    }
+
+    public LogisticsEvaluateFragmentThreadAdapter(List<RreasureEvaluateFragmentSecondEntry> list, Context context, BaseFragment baseFragment) {
+        this.list = list;
+        this.context = context;
+        this.baseFragment = baseFragment;
         inflater = LayoutInflater.from(context);
     }
 
@@ -47,15 +57,27 @@ public class LogisticsEvaluateFragmentThreadAdapter extends BaseAdapter{
         if (view == null){
             view = inflater.inflate(R.layout.logistics_evaluate_fragment_thread_adapter , null);
             holder = new LogisticsEvaluateFragmentThreadHolder();
+            holder.evaluate = (TextView) view.findViewById(R.id.logistics_evaluate_fragment_thread_adapter_evaluate);
             view.setTag(holder);
         }else{
             holder = (LogisticsEvaluateFragmentThreadHolder) view.getTag();
         }
+
+        holder.evaluate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (baseFragment != null){
+                    //评价管理   物流评价 写评价
+                    baseFragment.startFragment(new EvaluateManagementFragmentWirte());
+                }
+            }
+        });
+
         return view;
     }
 
     public class LogisticsEvaluateFragmentThreadHolder{
-
+        private TextView evaluate;
     }
 
 }

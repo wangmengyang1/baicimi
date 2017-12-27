@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+
+
+        <TextView
+            android:id="@+id/logistics_evaluate_fragment_second_par_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="这家门店是良心店家那，服务贼拉好，昨天忘记拿东西走了，当天就主动送上门了，每次购物那个服务人员都面带微笑，特耐心。网上购物特别的安心，正品保证支持支持！必须支持！"
+            />
+
+
+        <ImageView
+            android:id="@+id/logistics_evaluate_fragment_second_par_adapter_imagefirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_integral_fragment_code_second_image_21"
+            android:layout_below="@+id/logistics_evaluate_fragment_second_par_adapter_content"
+            android:layout_marginTop="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/logistics_evaluate_fragment_second_par_adapter_imagesecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_integral_fragment_code_second_image_22"
+            android:layout_below="@+id/logistics_evaluate_fragment_second_par_adapter_content"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/logistics_evaluate_fragment_second_par_adapter_imagefirst"
+            android:layout_marginLeft="15dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/logistics_evaluate_fragment_second_par_adapter_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/logistics_evaluate_fragment_second_par_adapter_imagesecond"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/logistics_evaluate_fragment_second_par_adapter_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="帅帅的小斌"
+                android:textColor="#242424"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="(匿名)"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="11.27"
+                android:layout_marginLeft="20dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/logistics_evaluate_fragment_second_par_adapter_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="解释：谢谢您给予的高评价，我们会更努力的~"
+            android:layout_below="@+id/logistics_evaluate_fragment_second_par_adapter_layout"
+            android:layout_marginTop="8dp"
+            android:textColor="#ae6c00"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
