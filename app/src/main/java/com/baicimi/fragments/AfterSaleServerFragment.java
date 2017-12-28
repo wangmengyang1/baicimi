@@ -24,7 +24,7 @@ public class AfterSaleServerFragment extends BaseFragment implements View.OnClic
     private ImageView back;
 
     private int urgedthedeliveryIndex;
-    private TextView urgedthedelivery;
+    private TextView urgedthedelivery , complaint;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -38,6 +38,9 @@ public class AfterSaleServerFragment extends BaseFragment implements View.OnClic
 
         urgedthedelivery = (TextView) view.findViewById(R.id.order_form_fragment_urgedthedelivery);
         urgedthedelivery.setOnClickListener(this);
+
+        complaint = (TextView) view.findViewById(R.id.order_form_fragment_complaint);
+        complaint.setOnClickListener(this);
         return view;
     }
 
@@ -66,6 +69,10 @@ public class AfterSaleServerFragment extends BaseFragment implements View.OnClic
                     urgeDeliverSecondDialog.show();
                     urgedthedeliveryIndex++;
                 }
+                break;
+            case R.id.order_form_fragment_complaint:
+                //投诉
+                startFragment(new AfterSaleServerComplaint());
                 break;
         }
     }

@@ -10,19 +10,18 @@ import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
 
 /**
- * Created by Administrator on 2017/12/27.
- * 评价管理   物流评价 写评价
+ * Created by Administrator on 2017/12/28.
+ * 退货申请首页 投诉页面
  */
-public class EvaluateManagementFragmentWirte extends BaseFragment implements View.OnClickListener {
+public class AfterSaleServerComplaint extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private ImageView back;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
-        view = inflater.inflate(R.layout.evaluate_mange_ment_fragment_write , container , false);
-
-        back = (ImageView) view.findViewById(R.id.evaluate_mange_ment_fragment_write_back);
+        view = inflater.inflate(R.layout.after_sale_server_complaint , container , false);
+        back = (ImageView) view.findViewById(R.id.after_sale_server_complaint_back);
         back.setOnClickListener(this);
         return view;
     }
@@ -35,7 +34,7 @@ public class EvaluateManagementFragmentWirte extends BaseFragment implements Vie
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.evaluate_mange_ment_fragment_write_back:
+            case R.id.after_sale_server_complaint_back:
                 ((MainActivity)getActivity()).goBack();
                 break;
         }
