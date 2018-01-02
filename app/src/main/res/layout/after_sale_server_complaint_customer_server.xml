@@ -16,7 +16,7 @@
         >
 
         <ImageView
-            android:id="@+id/after_sale_server_complaint_back"
+            android:id="@+id/after_sale_server_complaint_customer_server_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/back_image_black"
@@ -25,7 +25,7 @@
             />
 
         <TextView
-            android:id="@+id/after_sale_server_complaint_lible"
+            android:id="@+id/after_sale_server_complaint_customer_server_lible"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
         >
 
         <ImageView
-            android:id="@+id/after_sale_server_complaint_scanning"
+            android:id="@+id/after_sale_server_complaint_customer_server_scanning"
             android:layout_width="34dp"
             android:layout_height="34dp"
             android:src="@drawable/brand_fragment_second_image_12"
@@ -214,6 +214,112 @@
 
 
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/after_sale_server_image_01"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="等待幂客服处理"
+                    android:layout_marginLeft="6dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="幂客服将在5个工作日内介入处理，请耐心等待"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="您还可以："
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="25dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="修改投诉建议"
+                        />
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="0.6dp"
+                        android:background="#737373"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="25dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="撤销投诉"
+                        />
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="0.6dp"
+                        android:background="#737373"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -227,7 +333,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="13sp"
-                    android:text="订单信息"
+                    android:text="投诉"
                     android:textColor="#010101"
                     />
                 <View
@@ -248,418 +354,122 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
-                        android:text="订单编号："
+                        android:text="投诉类型："
                         />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="13sp"
-                        android:text="1354684213545"
-                        android:textColor="#01bed1"
-                        />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="6dp"
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="13sp"
-                        android:text="运费："
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="13sp"
-                        android:text="0.00元"
-
-                        />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="6dp"
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="13sp"
-                        android:text="总计："
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="13sp"
-                        android:text="148.00"
-                        android:textColor="#ff0000"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="13sp"
-                        android:text="元"
-                        />
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="6dp"
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="13sp"
-                        android:text="成交时间："
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="13sp"
-                        android:text="2017-11-28      11:25"
-
-                        />
-
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="投诉原因"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="  *  "
-                    android:textColor="#ff0000"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text=":"
-                    />
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
-                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
-                    android:padding="2dp"
-                    >
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
                         android:text="违背承诺"
+                        android:textColor="#ff0000"
                         />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/user_integral_fragment_code_second_image_20"
-                        android:layout_marginLeft="6dp"
-                        />
 
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
-                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
-                    android:padding="2dp"
+                    android:layout_marginTop="6dp"
                     >
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
-                        android:text="延迟发货"
+                        android:text="投诉原因："
                         />
-
-                    <ImageView
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/user_integral_fragment_code_second_image_20"
-                        android:layout_marginLeft="6dp"
+                        android:textSize="13sp"
+                        android:text="延迟发货，商家表示缺货"
+
                         />
+
 
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
-                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
-                    android:padding="2dp"
+                    android:layout_marginTop="6dp"
                     >
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
-                        android:text="请选择"
+                        android:text="投诉编号："
                         />
-
-                    <ImageView
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/user_integral_fragment_code_second_image_20"
-                        android:layout_marginLeft="6dp"
+                        android:textSize="13sp"
+                        android:text="90171546824582"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text=""
                         />
 
                 </LinearLayout>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:gravity="top"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="投诉说明"
-
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="  *  "
-                    android:textColor="#ff0000"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text=":"
-                    />
-
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
-                    android:layout_marginLeft="8dp"
-                    />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:gravity="center_vertical"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="联系电话"
-
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="  *  "
-                    android:textColor="#ff0000"
-                    android:visibility="invisible"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text=":"
-                    />
-
-
-                <EditText
-                    android:layout_width="120dp"
-                    android:layout_height="20dp"
-                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
-                    android:layout_marginLeft="8dp"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="此信息仅对客服可见"
-                    android:layout_marginLeft="8dp"
-                    />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:gravity="center_vertical"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="上传凭证"
-
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="  *  "
-                    android:textColor="#ff0000"
-
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text=":"
-                    />
-
-
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="上传图片"
-                    android:layout_marginLeft="8dp"
-                    android:padding="4dp"
-                    android:background="#e5e5e5"
-                    />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:gravity="center_vertical"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="上传凭证"
-                    android:visibility="invisible"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="  *  "
-                    android:textColor="#ff0000"
-                    android:visibility="invisible"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text=":"
-                    android:visibility="invisible"
-                    />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:text="每张图片大小不超过5M，最多6张，支持GIF,JPG,PNG,BMP格式"
-                    android:layout_marginLeft="8dp"
-                    android:padding="4dp"
-
-                    />
-
-            </LinearLayout>
-            <TextView
-                android:id="@+id/after_sale_server_complaint_submit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="13sp"
-                android:text="提交投诉申请"
-                android:paddingTop="4dp"
-                android:paddingBottom="4dp"
-                android:paddingLeft="30dp"
-                android:paddingRight="30dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:background="#e5e5e5"
-                android:layout_marginBottom="20dp"
-                />
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:background="#eeeeee"
-                />
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="15dp"
-                >
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center_vertical"
+                    android:layout_marginTop="6dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
                     >
 
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
+                        android:id="@+id/after_sale_server_complaint_customer_server_layoutstate_first"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
-                        android:text="常见问题"
+                        android:textSize="13sp"
+                        android:text="详细∨"
+                        android:textColor="#010101"
                         />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
-                        android:text="更多>"
+                        android:textSize="13sp"
+                        android:text=""
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/after_sale_server_complaint_customer_server_layout_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="投诉时间：2017-11-28  11:26"
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="投诉说明：此信息仅对幂客服可见此信息仅对幂客服可见此信息仅对幂客服可见此信息仅对幂客"
+                        android:layout_marginTop="4dp"
                         />
 
                 </LinearLayout>
@@ -667,127 +477,236 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.6dp"
-                    android:layout_marginTop="6dp"
-                    android:background="#e5e5e5"
+                    android:background="#737373"
                     />
 
+
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center_vertical"
                     android:layout_marginTop="10dp"
                     >
 
                     <TextView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@drawable/after_sale_server_complaint_number_shape_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="商家："
                         />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
-                        android:text="违背承诺投诉维权介绍"
-                        android:layout_marginLeft="6dp"
+                        android:text="百次幂"
+                        android:textColor="#04b7ce"
                         />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="联系客服"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/after_sale_server_complaint_customer_server_textview_shape"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        android:textColor="#010101"
+                        />
+
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginTop="6dp"
+
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
                     >
 
                     <TextView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@drawable/after_sale_server_complaint_number_shape_second"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/after_sale_server_complaint_customer_server_layoutstate_second"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
-                        android:text="违背承诺维权发起条件"
-                        android:layout_marginLeft="6dp"
+                        android:text="订单信息∨"
+                        android:textColor="#010101"
                         />
+
                 </LinearLayout>
+
                 <LinearLayout
+                    android:id="@+id/after_sale_server_complaint_customer_server_layout_second"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
                     android:layout_marginTop="6dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
                     >
-
-                    <TextView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@drawable/after_sale_server_complaint_number_shape_second"
-                        />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
-                        android:text="违背承诺维权的定义"
-                        android:layout_marginLeft="6dp"
+                        android:text="订单编号：326351354841315"
                         />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginTop="6dp"
-                    >
-
-                    <TextView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@drawable/after_sale_server_complaint_number_shape_second"
-                        />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
-                        android:text="百次幂延迟发货规则与实施细则"
-                        android:layout_marginLeft="6dp"
+                        android:text="运费：0.00元"
+                        android:layout_marginTop="4dp"
                         />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginBottom="20dp"
-                    >
-
-                    <TextView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:background="@drawable/after_sale_server_complaint_number_shape_second"
-                        />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
-                        android:text="什么样的情况属于天猫卖家拒绝提供或者拒绝按照承诺的方式提供发票"
-                        android:layout_marginLeft="6dp"
+                        android:text="总优惠：-174.00元"
+                        android:layout_marginTop="4dp"
                         />
-                </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="总计：148.00元"
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="成交时间：2017-11-28  11:28"
+                        android:layout_marginTop="4dp"
+                        />
 
+                </LinearLayout>
             </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#d2d2d2"
+                android:layout_marginTop="15dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="协商记录"
+                    />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="自己       2017-11-28       11:12"
+                        android:layout_marginTop="8dp"
+                        />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="#d2d2d2"
+                    android:layout_marginTop="6dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="经过双方的友好协商，买家已撤销此维权，百次幂会继续做好售后服务，感谢对百次幂的支持。"
+                    android:layout_marginTop="6dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="自己       2017-11-28       11:12"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="#d2d2d2"
+                    android:layout_marginTop="6dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="买家（HUIHOGN） 于2017-11-18     11:27创建了申请"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="投诉类型：投诉商家"
+                    android:layout_marginTop="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="投诉原因：商家表示缺货"
+                    android:layout_marginTop="4dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="投诉说明：此信息仅对幂客服可见此信息仅对幂客服可见此信息仅对幂客服可见此信息仅对幂客"
+                    android:layout_marginTop="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="投诉商品："
+                    android:layout_marginTop="4dp"
+                    />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/after_sale_server_image_02"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="20dp"
+                    />
+            </LinearLayout>
+
 
         </LinearLayout>
 
     </ScrollView>
+
 
 
 </LinearLayout>
