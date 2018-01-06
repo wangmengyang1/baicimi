@@ -10,7 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,6 +35,7 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2017/8/22.
+ * 分销订货 首页
  */
 public class DistributionOrderGoodsFragment extends BaseFragment implements  View.OnClickListener {
 
@@ -51,8 +54,10 @@ public class DistributionOrderGoodsFragment extends BaseFragment implements  Vie
     private FragmentTransaction fragmentTransaction;
     private List<Fragment> listFragment = new ArrayList<>();
 
-    private TextView hotcommodity , cosmetics , beautymakeup , personalbelongings ,
-            infantmom , shortcutOrderGoodsDistrict , inventory;
+    private TextView hotcommodity , cosmetics , beautymakeup , personalbelongings ;
+
+    private RelativeLayout shoppintBack;
+    private ImageView shoppintImage;
 
 
 
@@ -83,23 +88,28 @@ public class DistributionOrderGoodsFragment extends BaseFragment implements  Vie
         listFragment.add(new InventoryDistributionFragment());
         listFragment.add(new ShortcutOrderGoodsDistrict());
         listFragment.add(new TodayCosmeticsFragment(false));
+        listFragment.add(new ShoppingBagFragment());
 
 
         hotcommodity = (TextView) view.findViewById(R.id.distribution_order_good_fragment_hotcommodity);
         cosmetics = (TextView) view.findViewById(R.id.distribution_order_good_fragment_cosmetics);
         beautymakeup = (TextView) view.findViewById(R.id.distribution_order_good_fragment_beautymakeup);
-        personalbelongings = (TextView) view.findViewById(R.id.distribution_order_good_fragment_personalbelongings);
-        infantmom = (TextView) view.findViewById(R.id.distribution_order_good_fragment_infantmom);
-        shortcutOrderGoodsDistrict = (TextView) view.findViewById(R.id.distribution_order_good_fragment_shortcutOrderGoodsDistrict);
-        inventory = (TextView) view.findViewById(R.id.distribution_order_good_fragment_inventory);
+        personalbelongings = (TextView) view.findViewById(R.id.distribution_order_good_fragment_greenfood);
+        shoppintBack = (RelativeLayout) view.findViewById(R.id.distribution_order_good_fragment_shoppintback);
+        shoppintImage = (ImageView) view.findViewById(R.id.geren_toobar);
+//        infantmom = (TextView) view.findViewById(R.id.distribution_order_good_fragment_infantmom);
+//        shortcutOrderGoodsDistrict = (TextView) view.findViewById(R.id.distribution_order_good_fragment_shortcutOrderGoodsDistrict);
+//        inventory = (TextView) view.findViewById(R.id.distribution_order_good_fragment_inventory);
 
         hotcommodity.setOnClickListener(this);
         cosmetics.setOnClickListener(this);
         beautymakeup.setOnClickListener(this);
         personalbelongings.setOnClickListener(this);
-        infantmom.setOnClickListener(this);
-        shortcutOrderGoodsDistrict.setOnClickListener(this);
-        inventory.setOnClickListener(this);
+        shoppintBack.setOnClickListener(this);
+        shoppintImage.setOnClickListener(this);
+//        infantmom.setOnClickListener(this);
+//        shortcutOrderGoodsDistrict.setOnClickListener(this);
+//        inventory.setOnClickListener(this);
 
 
         setShowFragment(1);
@@ -115,12 +125,12 @@ public class DistributionOrderGoodsFragment extends BaseFragment implements  Vie
         beautymakeup.setBackgroundColor(Color.parseColor("#f1f1f1"));
         personalbelongings.setTextColor(Color.parseColor("#6f6f6f"));
         personalbelongings.setBackgroundColor(Color.parseColor("#f1f1f1"));
-        infantmom.setTextColor(Color.parseColor("#6f6f6f"));
-        infantmom.setBackgroundColor(Color.parseColor("#f1f1f1"));
-        shortcutOrderGoodsDistrict.setTextColor(Color.parseColor("#6f6f6f"));
-        shortcutOrderGoodsDistrict.setBackgroundColor(Color.parseColor("#f1f1f1"));
-        inventory.setTextColor(Color.parseColor("#6f6f6f"));
-        inventory.setBackgroundColor(Color.parseColor("#f1f1f1"));
+//        infantmom.setTextColor(Color.parseColor("#6f6f6f"));
+//        infantmom.setBackgroundColor(Color.parseColor("#f1f1f1"));
+//        shortcutOrderGoodsDistrict.setTextColor(Color.parseColor("#6f6f6f"));
+//        shortcutOrderGoodsDistrict.setBackgroundColor(Color.parseColor("#f1f1f1"));
+//        inventory.setTextColor(Color.parseColor("#6f6f6f"));
+//        inventory.setBackgroundColor(Color.parseColor("#f1f1f1"));
     }
 
 
@@ -192,32 +202,40 @@ public class DistributionOrderGoodsFragment extends BaseFragment implements  Vie
                 initTextView();
                 beautymakeup.setTextColor(Color.WHITE);
                 beautymakeup.setBackgroundColor(Color.RED);
-                setShowFragment(2);
+                setShowFragment(1);
                 break;
-            case R.id.distribution_order_good_fragment_personalbelongings:
+            case R.id.distribution_order_good_fragment_greenfood:
                 initTextView();
                 personalbelongings.setTextColor(Color.WHITE);
                 personalbelongings.setBackgroundColor(Color.RED);
-                setShowFragment(2);
-                break;
-            case R.id.distribution_order_good_fragment_infantmom:
-                initTextView();
-                infantmom.setTextColor(Color.WHITE);
-                infantmom.setBackgroundColor(Color.RED);
-                setShowFragment(2);
-                break;
-            case R.id.distribution_order_good_fragment_shortcutOrderGoodsDistrict:
-                initTextView();
-                shortcutOrderGoodsDistrict.setTextColor(Color.WHITE);
-                shortcutOrderGoodsDistrict.setBackgroundColor(Color.RED);
-                setShowFragment(1);
-                break;
-            case R.id.distribution_order_good_fragment_inventory:
-                initTextView();
-                inventory.setTextColor(Color.WHITE);
-                inventory.setBackgroundColor(Color.RED);
                 setShowFragment(0);
                 break;
+            case R.id.distribution_order_good_fragment_shoppintback:
+                initTextView();
+                setShowFragment(3);
+                break;
+            case R.id.geren_toobar:
+                initTextView();
+                setShowFragment(3);
+                break;
+//            case R.id.distribution_order_good_fragment_infantmom:
+//                initTextView();
+//                infantmom.setTextColor(Color.WHITE);
+//                infantmom.setBackgroundColor(Color.RED);
+//                setShowFragment(2);
+//                break;
+//            case R.id.distribution_order_good_fragment_shortcutOrderGoodsDistrict:
+//                initTextView();
+//                shortcutOrderGoodsDistrict.setTextColor(Color.WHITE);
+//                shortcutOrderGoodsDistrict.setBackgroundColor(Color.RED);
+//                setShowFragment(1);
+//                break;
+//            case R.id.distribution_order_good_fragment_inventory:
+//                initTextView();
+//                inventory.setTextColor(Color.WHITE);
+//                inventory.setBackgroundColor(Color.RED);
+//                setShowFragment(0);
+//                break;
         }
     }
 

@@ -49,33 +49,33 @@ public class TodayCosmeticsFragment extends BaseFragment implements Distribution
         initListView();
 
         //顶部导航栏布局设置
-        initHeadTextViewBar();
+//        initHeadTextViewBar();
 
         return view;
     }
 
     //顶部导航栏布局设置
-    private void initHeadTextViewBar() {
-        sales = (TextView) view.findViewById(R.id.today_cosmetics_fragment_sales);
-        news = (TextView) view.findViewById(R.id.today_cosmetics_fragment_news);
-        price_one = (TextView) view.findViewById(R.id.today_cosmetics_fragment_price_one);
-        price_two = (TextView) view.findViewById(R.id.today_cosmetics_fragment_price_two);
-        attention = (TextView) view.findViewById(R.id.today_cosmetics_fragment_price_attention);
+//    private void initHeadTextViewBar() {
+//        sales = (TextView) view.findViewById(R.id.today_cosmetics_fragment_sales);
+//        news = (TextView) view.findViewById(R.id.today_cosmetics_fragment_news);
+//        price_one = (TextView) view.findViewById(R.id.today_cosmetics_fragment_price_one);
+//        price_two = (TextView) view.findViewById(R.id.today_cosmetics_fragment_price_two);
+//        attention = (TextView) view.findViewById(R.id.today_cosmetics_fragment_price_attention);
+//
+//        sales.setOnClickListener(this);
+//        news.setOnClickListener(this);
+//        price_one.setOnClickListener(this);
+//        price_two.setOnClickListener(this);
+//        attention.setOnClickListener(this);
+//    }
 
-        sales.setOnClickListener(this);
-        news.setOnClickListener(this);
-        price_one.setOnClickListener(this);
-        price_two.setOnClickListener(this);
-        attention.setOnClickListener(this);
-    }
-
-    private void initTextViewSetColor(){
-        sales.setTextColor(Color.BLACK);
-        news.setTextColor(Color.BLACK);
-        price_one.setTextColor(Color.BLACK);
-        price_two.setTextColor(Color.BLACK);
-        attention.setTextColor(Color.BLACK);
-    }
+//    private void initTextViewSetColor(){
+//        sales.setTextColor(Color.BLACK);
+//        news.setTextColor(Color.BLACK);
+//        price_one.setTextColor(Color.BLACK);
+//        price_two.setTextColor(Color.BLACK);
+//        attention.setTextColor(Color.BLACK);
+//    }
 
 
     //listview布局填充
@@ -166,26 +166,26 @@ public class TodayCosmeticsFragment extends BaseFragment implements Distribution
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.today_cosmetics_fragment_sales:
-                initTextViewSetColor();
-                sales.setTextColor(Color.parseColor("#737373"));
-                break;
-            case R.id.today_cosmetics_fragment_news:
-                initTextViewSetColor();
-                news.setTextColor(Color.parseColor("#737373"));
-                break;
-            case R.id.today_cosmetics_fragment_price_one:
-                initTextViewSetColor();
-                price_one.setTextColor(Color.parseColor("#737373"));
-                break;
-            case R.id.today_cosmetics_fragment_price_two:
-                initTextViewSetColor();
-                price_two.setTextColor(Color.parseColor("#737373"));
-                break;
-            case R.id.today_cosmetics_fragment_price_attention:
-                initTextViewSetColor();
-                attention.setTextColor(Color.parseColor("#737373"));
-                break;
+//            case R.id.today_cosmetics_fragment_sales:
+//                initTextViewSetColor();
+//                sales.setTextColor(Color.parseColor("#737373"));
+//                break;
+//            case R.id.today_cosmetics_fragment_news:
+//                initTextViewSetColor();
+//                news.setTextColor(Color.parseColor("#737373"));
+//                break;
+//            case R.id.today_cosmetics_fragment_price_one:
+//                initTextViewSetColor();
+//                price_one.setTextColor(Color.parseColor("#737373"));
+//                break;
+//            case R.id.today_cosmetics_fragment_price_two:
+//                initTextViewSetColor();
+//                price_two.setTextColor(Color.parseColor("#737373"));
+//                break;
+//            case R.id.today_cosmetics_fragment_price_attention:
+//                initTextViewSetColor();
+//                attention.setTextColor(Color.parseColor("#737373"));
+//                break;
         }
     }
 }

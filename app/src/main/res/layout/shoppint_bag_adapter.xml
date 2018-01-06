@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <CheckBox
+            android:id="@+id/shoppint_bag_adapter_checkbox"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:button="@null"
+            android:background="@drawable/checkbox_nike_selector"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/shoppint_bag_adapter_imageurl"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/image_shangpin_01"
+            android:layout_toRightOf="@+id/shoppint_bag_adapter_checkbox"
+            />
+
+
+        <TextView
+            android:id="@+id/shoppint_bag_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="中药固发去污洗发水"
+            android:layout_toRightOf="@+id/shoppint_bag_adapter_imageurl"
+            android:textColor="#3e3e40"
+            />
+        <TextView
+            android:id="@+id/shoppint_bag_adapter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="产品编号 HB1235312"
+            android:layout_toRightOf="@+id/shoppint_bag_adapter_imageurl"
+            android:layout_below="@+id/shoppint_bag_adapter_lible"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:id="@+id/shoppint_bag_adapter_inventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="库存 2728件"
+            android:layout_toRightOf="@+id/shoppint_bag_adapter_imageurl"
+            android:layout_alignBottom="@+id/shoppint_bag_adapter_imageurl"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:id="@+id/shoppint_bag_adapter_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="700ml"
+            android:layout_toRightOf="@+id/shoppint_bag_adapter_imageurl"
+            android:textColor="#3e3e40"
+            android:layout_above="@+id/shoppint_bag_adapter_inventory"
+            />
+
+
+        <TextView
+            android:id="@+id/shoppint_bag_adapter_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="¥490.00"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:textColor="#3e3e40"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/shoppint_bag_adapter_imageurl"
+            android:background="@drawable/shoppint_bag_adapter_layout_shape"
+            android:padding="2dp"
+            >
+
+            <ImageView
+                android:id="@+id/shoppint_bag_adapter_subtract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/subtract_image_6b6b6b"
+                />
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="18dp"
+                android:background="#6b6b6b"
+                android:layout_marginLeft="3dp"
+                />
+            <TextView
+                android:id="@+id/shoppint_bag_adapter_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="48"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                />
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="18dp"
+                android:background="#6b6b6b"
+                android:layout_marginRight="3dp"
+                />
+            <ImageView
+                android:id="@+id/shoppint_bag_adapter_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_image_6b6b6b"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

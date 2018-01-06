@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:gravity="center"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:text="购物袋"
+        android:textColor="#737373"
+        android:textSize="13sp" />
+
+    <ListView
+        android:id="@+id/shoppint_bag_fragment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"></ListView>
+
+
+    <RelativeLayout
+        android:id="@+id/shoppint_bag_fragment_nextlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/shoppint_bag_fragment_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2件商品"
+            android:textColor="#3e3e40"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/shoppint_bag_fragment_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shoppint_bag_fragment_number"
+            android:layout_marginTop="20dp"
+            android:text="运费¥20.00元"
+            android:textColor="#3e3e40"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/shoppint_bag_fragment_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:background="#3e3e40"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_alignBottom="@+id/shoppint_bag_fragment_money"
+            />
+        <TextView
+            android:id="@+id/shoppint_bag_fragment_allmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥980.00"
+            android:textColor="#3e3e40"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

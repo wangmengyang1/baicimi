@@ -101,7 +101,6 @@
             android:orientation="vertical"
             >
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -212,7 +211,6 @@
 
             </LinearLayout>
 
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -255,8 +253,6 @@
                 android:layout_marginTop="10dp"
                 />
 
-
-            
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -316,8 +312,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -519,7 +513,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-
                     android:paddingTop="4dp"
                     android:paddingBottom="4dp"
                     >
@@ -582,15 +575,12 @@
                 </LinearLayout>
             </LinearLayout>
 
-
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:background="#d2d2d2"
                 android:layout_marginTop="15dp"
                 />
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -639,7 +629,6 @@
                 android:orientation="vertical"
                 >
 
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -660,6 +649,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="13sp"
                     android:text="买家（HUIHOGN） 于2017-11-18     11:27创建了申请"
+                    android:layout_marginTop="8dp"
                     />
 
                 <TextView
@@ -701,7 +691,6 @@
                     android:layout_marginBottom="20dp"
                     />
             </LinearLayout>
-
 
         </LinearLayout>
 

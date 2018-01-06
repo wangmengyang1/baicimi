@@ -19,7 +19,6 @@ public class AfterSaleServerComplaintCustomerService extends BaseFragment implem
 
     private View view;
     private ImageView back;
-
     private TextView layoutFirstState , layoutSecondState;
     private LinearLayout layoutFirst , layoutSecond;
     private boolean firstState , secondState;

@@ -48,48 +48,45 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-            
+
             <com.youth.banner.Banner
                 android:id="@+id/distribution_order_good_fragment_banner"
                 android:layout_width="match_parent"
                 android:layout_height="156dp"
                 app:title_height="0dp"
                 ></com.youth.banner.Banner>
-            
-            
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scrollbars="none"
-                >
-                
+
+
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:background="#f1f1f1"
+
                     >
-                    
+
                     <TextView
                         android:id="@+id/distribution_order_good_fragment_hotcommodity"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="热门商品"
+                        android:text="日化用品"
                         android:textSize="13sp"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
+
                         />
                     <TextView
                         android:id="@+id/distribution_order_good_fragment_cosmetics"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="日化"
+                        android:text="美妆用品"
                         android:textSize="13sp"
-
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:paddingLeft="10dp"
@@ -100,9 +97,8 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="绿色食品"
+                        android:text="个人用品"
                         android:textSize="13sp"
-
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:paddingLeft="10dp"
@@ -113,71 +109,46 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="美妆"
-                        android:textSize="13sp"
-
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        />
-                    <TextView
-                        android:id="@+id/distribution_order_good_fragment_personalbelongings"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:text="个人用品"
-                        android:textSize="13sp"
-
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        />
-                    <TextView
-                        android:id="@+id/distribution_order_good_fragment_infantmom"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
                         android:text="母婴用品"
                         android:textSize="13sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
 
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        />
-                    <TextView
-                        android:id="@+id/distribution_order_good_fragment_shortcutOrderGoodsDistrict"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:text="快捷订货区"
-                        android:textSize="13sp"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:background="@color/red"
-                        android:textColor="@color/white"
-                        />
-                    <TextView
-                        android:id="@+id/distribution_order_good_fragment_inventory"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:text="订货清单"
-                        android:textSize="13sp"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
 
-                        />
-                    
+
+
+                        <RelativeLayout
+                            android:id="@+id/distribution_order_good_fragment_shoppintback"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="25dp"
+                            android:gravity="center_vertical"
+                            >
+                            <ImageView
+                                android:id="@+id/geren_toobar"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:clickable="true"
+                                android:src="@drawable/shoping_package_gral"
+                                android:layout_centerInParent="true"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/fragment_main_shoping_package_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textColor="#737373"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+
                 </LinearLayout>
-                
-            </HorizontalScrollView>
 
 
 
