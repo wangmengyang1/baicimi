@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="137 5931 5931"
+            android:textColorHint="#010101"
+            android:background="@drawable/background_null"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:textColor="#010101"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/phone_topup_image_02"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="13sp"
+        android:text="账户绑定号码（广东移动）"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <GridView
+        android:id="@+id/phone_topup_fragment_phone_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scrollbars="none"
+        android:numColumns="3"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        ></GridView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/phone_topup_image_03"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="手机营业厅"
+            android:layout_marginLeft="4dp"
+            android:textColor="#435a8c"
+            />
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@drawable/phone_topup_fragment_phone_view_shape"
+            android:layout_marginBottom="4dp"/>
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="15dp"
+            android:background="#435a8c"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/phone_topup_image_04"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="我的充值记录"
+            android:layout_marginLeft="4dp"
+            android:textColor="#435a8c"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

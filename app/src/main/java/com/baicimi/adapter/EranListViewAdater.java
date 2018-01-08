@@ -33,8 +33,14 @@ public class EranListViewAdater extends BaseAdapter{
     public EranListViewAdater(List<EranEntry> list, Context context , BaseFragment fragment) {
         this.list = list;
         this.context = context;
-        inflater = LayoutInflater.from(context);
         this.fragment = fragment;
+        inflater = LayoutInflater.from(context);
+    }
+
+    public EranListViewAdater(List<EranEntry> list, Context context) {
+        this.list = list;
+        this.context = context;
+        inflater = LayoutInflater.from(context);
     }
 
     @Override
@@ -68,7 +74,7 @@ public class EranListViewAdater extends BaseAdapter{
             holder = (EranListViewHolder) view.getTag();
         }
 
-        EranEntry init = (EranEntry) getItem(i);
+        final EranEntry init = (EranEntry) getItem(i);
 
         holder.imageUrl.setImageResource(init.getImageUrl());
         holder.lible.setText(init.getLible());
@@ -82,18 +88,25 @@ public class EranListViewAdater extends BaseAdapter{
         holder.moreSecond.setText(init.getMoreSecond());
         holder.content.setText(init.getContent());
 
-        if (init.getMoreSecond().equals("我去晒图")){
-            //宝贝评论页面
-            //评价
-            fragment.startFragment(new OrderFormDealsucceedEvaluate());
-        }else if (init.getMoreSecond().equals("去逛逛")){
-            //返回到商城首页
-            fragment.getActivity().getSupportFragmentManager().popBackStack(null , 1);
-            fragment.startFragment(new MainFragment());
-        }else if (init.getMoreSecond().equals("马上签到")){
-            //每日签到
-            fragment.startFragment(new HomeIntegerEverydaySignin(), null);
-        }
+
+        holder.moreSecond.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (init.getMoreSecond().equals("我去晒图")){
+                    //宝贝评论页面
+                    //评价
+                    fragment.startFragment(new OrderFormDealsucceedEvaluate());
+                }else if (init.getMoreSecond().equals("去逛逛")){
+                    //返回到商城首页
+                    fragment.getActivity().getSupportFragmentManager().popBackStack(null , 1);
+                    fragment.startFragment(new MainFragment());
+                }else if (init.getMoreSecond().equals("马上签到")){
+                    //每日签到
+                    fragment.startFragment(new HomeIntegerEverydaySignin(), null);
+                }
+
+            }
+        });
 
 
         return view;

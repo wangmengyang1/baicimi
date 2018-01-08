@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.baicimi.R;
+import com.baicimi.adapter.ComplaintSuggestSecondAdapter;
 import com.baicimi.adapter.EranListViewAdater;
 import com.baicimi.adapter.GatherListViewAdapter;
 import com.baicimi.base.BaseFragment;
@@ -36,7 +37,8 @@ public class UserIntegerFragmentEarn extends BaseFragment{
 
     //listview布局填充
     private void initListView() {
-        listView = (ListView) view.findViewById(R.id.user_integer_fragment_earn_listview);
+        listView = (ListView) view.findViewById(R.id.user_integre_fragment_earnint_listview);
+        list.clear();
         list.add(new EranEntry(R.drawable.user_integer_image_06 , "01.推荐给好友" , "了解详情" , "现在推荐" , "推荐朋友成为百次幂会员，可获得积分，在被推荐者每次成功购买商品时，都会有相应比例积分自动转到您的个人账户下。"));
         list.add(new EranEntry(R.drawable.earm_code_image_02 , "02.晒图留言" , "null" , "我去晒图" , "您在百次幂商城购买商品后，在评论区晒图留言，即可获得相应积分，留言被其他人浏览，均有相应积分自动转入到您的个人账户。"));
         list.add(new EranEntry(R.drawable.earm_code_image_03 , "03.购买商品" , "null" , "去逛逛" , "线上购买：在百次幂商城购买任意产品都可获得积分，系统根据成交金额将自动获得的积分转到您的个人积分账户中，线下购买，在实体店购买产品，刮开瓶身积分码并输入，积分立即累计到个人账户。"));
@@ -46,7 +48,9 @@ public class UserIntegerFragmentEarn extends BaseFragment{
         adater = new EranListViewAdater(list , getContext() , this);
         listView.setAdapter(adater);
         fixGrdiViewHeight03(listView);
+
     }
+
 
 
     //动态计算GridView的高度
@@ -63,6 +67,7 @@ public class UserIntegerFragmentEarn extends BaseFragment{
             // 计算子项View 的宽高
             listViewItem.measure(0, 0);
             // 计算所有子项的高度和
+            totalHeight += 16;
             totalHeight += listViewItem.getMeasuredHeight();
         }
         ViewGroup.LayoutParams params = listView.getLayoutParams();
@@ -71,6 +76,7 @@ public class UserIntegerFragmentEarn extends BaseFragment{
         params.height = totalHeight + (listView.getHeight() * (listAdapter.getCount() - 1));
         listView.setLayoutParams(params);
     }
+
 
     @Override
     protected void initData() {

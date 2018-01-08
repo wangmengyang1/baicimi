@@ -51,13 +51,17 @@
                 />
 
 
+
+
             <ListView
-                android:id="@+id/user_integer_fragment_earn_listview"
+                android:id="@+id/user_integre_fragment_earnint_listview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:dividerHeight="10dp"
                 android:divider="#eeeeee"
+                android:scrollbars="none"
                 ></ListView>
+
 
         </LinearLayout>
     </ScrollView>

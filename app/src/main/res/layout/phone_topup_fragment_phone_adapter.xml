@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+        <CheckBox
+            android:id="@+id/phone_topup_fragment_phone_adapter_checkbox"
+            android:layout_width="117dp"
+            android:layout_height="88dp"
+            android:button="@null"
+            android:background="@drawable/phone_topup_fragment_phone_adapter_checkbox_select"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:id="@+id/phone_topup_fragment_phone_adapter_lible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ff0000"
+                android:text="10元"
+                />
+
+            <TextView
+                android:id="@+id/phone_topup_fragment_phone_adapter_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#ff0000"
+                android:text="售价：409.98元"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

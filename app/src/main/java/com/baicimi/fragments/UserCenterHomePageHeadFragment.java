@@ -240,6 +240,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     startFragment(new LoveDonateFragment());
                 } else if (i == 4 && i1 == 4) {
                     //手机充值
+                    startFragment(new PhoneTopUpFragment());
                 } else if (i == 4 && i1 == 5) {
                     //记账本
                 } else if (i == 4 && i1 == 6) {
