@@ -73,16 +73,18 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
 
         //下拉菜单问题
         initCusListView();
+
+        //fragment切换
         fm = getChildFragmentManager();
         fragments.clear();
         fragments.add(new UserIntegralFragmentFirst());
         fragments.add(new RosePerSonalFragment());
 
-        back = (ImageView) view.findViewById(R.id.user_center_home_page_head_fragment_back);
-        back.setOnClickListener(this);
-
         //fragment切换
         initShowFragment(0);
+
+        back = (ImageView) view.findViewById(R.id.user_center_home_page_head_fragment_back);
+        back.setOnClickListener(this);
 
         shopping = (LinearLayout) view.findViewById(R.id.user_center_home_page_fragment_shopping);
         community = (LinearLayout) view.findViewById(R.id.user_center_home_page_fragment_community);

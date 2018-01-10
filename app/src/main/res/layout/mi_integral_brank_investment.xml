@@ -143,7 +143,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="7日年化收益率"
+                    android:text="七日年化收益率"
                     android:textSize="13sp"
                     android:gravity="center"
                     android:layout_marginTop="8dp"
@@ -218,7 +218,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="7日年化收益率"
+                    android:text="七日年化收益率"
                     android:textSize="13sp"
                     android:gravity="center"
                     android:layout_marginTop="8dp"
@@ -285,7 +285,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="稳健低风险，历史无亏损\n4.4678%    1月"
+                    android:text="稳健低风险，历史无亏损\n4.6280%      1月"
                     android:textSize="16sp"
                     android:gravity="center"
                     android:layout_marginTop="8dp"
@@ -294,10 +294,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="7日年化收益率    封闭前"
+                    android:text="七日年化收益率    封闭前"
                     android:textSize="13sp"
                     android:gravity="center"
-                    android:layout_marginTop="8dp"
+
                     />
 
                 <TextView

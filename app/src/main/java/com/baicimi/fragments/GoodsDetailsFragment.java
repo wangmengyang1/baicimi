@@ -72,43 +72,16 @@ public class GoodsDetailsFragment extends BaseFragment implements View.OnClickLi
     private int cont;
 
 
+    private TextView allMoney;
+
+
     @Override
     protected View initView(final LayoutInflater inflater, final ViewGroup container) {
         view = inflater.inflate(R.layout.fragment_details, container, false);
-        checkBox1 = (CheckBox) view.findViewById(R.id.che1);
-        checkBox2 = (CheckBox) view.findViewById(R.id.che2);
-        checkBox3 = (CheckBox) view.findViewById(R.id.che3);
         checkBox4 = (CheckBox) view.findViewById(R.id.btn_three);
         checkBox5 = (CheckBox) view.findViewById(R.id.btn_six);
         checkBox6 = (CheckBox) view.findViewById(R.id.btn_shier);
         viewPager = (ViewPager) view.findViewById(R.id.check_list);
-
-        checkBox1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkBox1.setChecked(true);
-                checkBox2.setChecked(false);
-                checkBox3.setChecked(false);
-            }
-        });
-
-        checkBox2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkBox1.setChecked(false);
-                checkBox2.setChecked(true);
-                checkBox3.setChecked(false);
-            }
-        });
-
-        checkBox3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkBox1.setChecked(false);
-                checkBox2.setChecked(false);
-                checkBox3.setChecked(true);
-            }
-        });
 
         checkBox4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -388,6 +361,8 @@ public class GoodsDetailsFragment extends BaseFragment implements View.OnClickLi
 
 
 
+        allMoney = (TextView) view_window.findViewById(R.id.goods_deails_choose_dialog_moneyall);
+
     }
 
     //规格选择
@@ -458,26 +433,32 @@ public class GoodsDetailsFragment extends BaseFragment implements View.OnClickLi
             case R.id.goods_details_choose_dialog_layout_01:
                 initCheckSelect();
                 checkBox_xxl.setChecked(true);
+                allMoney.setText("78.00");
                 break;
             case R.id.goods_details_choose_dialog_layout_02:
                 initCheckSelect();
                 checkBox_xl.setChecked(true);
+                allMoney.setText("68.00");
                 break;
             case R.id.goods_details_choose_dialog_layout_03:
                 initCheckSelect();
                 checkBox_l.setChecked(true);
+                allMoney.setText("48.00");
                 break;
             case R.id.goods_details_choose_dialog_layout_04:
                 initCheckSelect();
                 checkBox_m.setChecked(true);
+                allMoney.setText("38.00");
                 break;
             case R.id.goods_details_choose_dialog_layout_05:
                 initCheckSelect();
                 checkBox_s.setChecked(true);
+                allMoney.setText("28.00");
                 break;
             case R.id.goods_details_choose_dialog_layout_06:
                 initCheckSelect();
                 checkBox_xs.setChecked(true);
+                allMoney.setText("18.00");
                 break;
         }
     }

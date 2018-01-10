@@ -29,7 +29,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="百次幂商城"
-            android:textColor="#000000"
+            android:textColor="#737373"
             android:gravity="center"
             android:textSize="16sp"
             />

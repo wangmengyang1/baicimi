@@ -23,7 +23,7 @@ public class MiIntegralBrankStorageFragmentSecond extends BaseFragment implement
         view = inflater.inflate(R.layout.mi_integral_brank_storage_fragmetn_second , container ,false);
         back = (ImageView) view.findViewById(R.id.mi_integral_brank_storage_fragmetn_second_back);
         back.setOnClickListener(this);
-        return null;
+        return view;
     }
 
     @Override

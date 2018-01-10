@@ -30,6 +30,7 @@ public class ShopingPackageDialog extends Dialog implements View.OnClickListener
 
     private int index;
     private BaseFragment baseFragment;
+    private TextView allMoney;
 
 
     public ShopingPackageDialog(Context context) {
@@ -68,6 +69,8 @@ public class ShopingPackageDialog extends Dialog implements View.OnClickListener
 
         //款式大小选择
         initCheckBodSelect();
+
+        allMoney = (TextView)findViewById(R.id.goods_deails_choose_dialog_moneyall);
     }
     //款式大小选择
     private void initCheckBodSelect() {
@@ -140,26 +143,32 @@ public class ShopingPackageDialog extends Dialog implements View.OnClickListener
             case R.id.goods_details_choose_dialog_layout_01:
                 initCheckBox();
                 select_01.setChecked(true);
+                allMoney.setText("78.00");
                 break;
             case R.id.goods_details_choose_dialog_layout_02:
                 initCheckBox();
                 select_02.setChecked(true);
+                allMoney.setText("68.00");
                 break;
             case R.id.goods_details_choose_dialog_layout_03:
                 initCheckBox();
                 select_03.setChecked(true);
+                allMoney.setText("48.00");
                 break;
             case R.id.goods_details_choose_dialog_layout_04:
                 initCheckBox();
                 select_04.setChecked(true);
+                allMoney.setText("38.00");
                 break;
             case R.id.goods_details_choose_dialog_layout_05:
                 initCheckBox();
                 select_05.setChecked(true);
+                allMoney.setText("28.00");
                 break;
             case R.id.goods_details_choose_dialog_layout_06:
                 initCheckBox();
                 select_06.setChecked(true);
+                allMoney.setText("18.00");
                 break;
             case R.id.goods_xxl:
                 initCheckBox();

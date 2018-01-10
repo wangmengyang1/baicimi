@@ -15,216 +15,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!--<RelativeLayout
-                android:id="@+id/title1"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@mipmap/user_0">
-
-                <ImageView
-                    android:id="@+id/user_head"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_centerInParent="true"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/user_integral_gridview_item_image_41ss" />
-
-                <TextView
-                    android:id="@+id/user_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/user_head"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="用户名称"
-                    android:textColor="#ffffff"
-                    android:textSize="15sp" />
-
-
-                <RelativeLayout
-                    android:layout_width="13dp"
-                    android:layout_height="15dp"
-                    android:layout_below="@id/user_head"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_toRightOf="@id/user_name">
-
-                    <ImageView
-                        android:id="@+id/user_vip"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@mipmap/user_vip" />
-
-
-
-                </RelativeLayout>
-
-
-
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/user_name"
-                    android:layout_centerHorizontal="true"
-                    android:text="勿须烦恼，终有溺水替沧海，抛却纠..."
-                    android:textColor="#ffffff"
-                    android:textSize="14sp" />
-
-
-                <ImageView
-                    android:id="@+id/login_back"
-                    android:layout_width="27dp"
-                    android:layout_height="27dp"
-                    android:src="@drawable/fanhui_touming_image"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="15dp"
-                    android:padding="4dp"
-                    />
-
-
-            </RelativeLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:background="#FFFFFF"
-                android:orientation="horizontal"
-                >
-
-                <TextView
-                    android:id="@+id/guanzhu"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:clickable="true"
-                    android:layout_height="wrap_content"
-                    android:text="153万"
-                    android:textSize="12sp"
-                    android:textColor="#969696"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:drawableLeft="@mipmap/yanjing"
-                    android:drawablePadding="-30dp"
-                    android:layout_marginLeft="29dp"
-                    />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="153万"
-                    android:textSize="12sp"
-                    android:textColor="#969696"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:drawableLeft="@mipmap/rentou"
-                    android:drawablePadding="-30dp"
-                    />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="153万"
-                    android:textSize="12sp"
-                    android:textColor="#969696"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:drawableLeft="@mipmap/wenzhang"
-                    android:drawablePadding="-35dp"
-                    />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="153万"
-                    android:textSize="12sp"
-                    android:textColor="#969696"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:drawableLeft="@mipmap/ji"
-                    android:drawablePadding="-35dp"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:background="#FFFFFF"
-                android:orientation="horizontal"
-                >
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="153万"
-                    android:textSize="12sp"
-                    android:textColor="#969696"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:drawableLeft="@mipmap/fensi"
-                    android:drawablePadding="-30dp"
-                    android:layout_marginLeft="29dp"
-                    />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="153万"
-                    android:textSize="12sp"
-                    android:textColor="#969696"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:drawableLeft="@mipmap/gongju"
-                    android:drawablePadding="-30dp"
-                    />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="153万"
-                    android:textSize="12sp"
-                    android:textColor="#969696"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:drawableLeft="@mipmap/aixin"
-                    android:drawablePadding="-35dp"
-                    />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:text="153万"
-                    android:textSize="12sp"
-                    android:textColor="#969696"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:drawableLeft="@mipmap/zhaiyao"
-                    android:drawablePadding="-35dp"
-                    />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:background="#F6F6F6"
-                ></View>
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#DDDDDD"></View>-->
 
 
             <LinearLayout
@@ -238,131 +28,146 @@
                     android:layout_height="1dp"
                     android:background="#CCCCCC"></View>
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="#CCCCCC"></View>
 
                     <CheckBox
-                        android:id="@+id/all_check"
-                        style="@style/MMTabButton"
+                        android:id="@+id/fragment_personal_ss_all"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:checked="true"
-                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
                         android:text="全部内容"
-                        android:textColor="@drawable/star_text_selector"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="#DDDDDD"></View>
-
-                    <CheckBox
-                        android:id="@+id/picture_check"
-                        style="@style/MMTabButton"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:gravity="center"
-                        android:text="我的图片"
-                        android:textColor="@drawable/star_text_selector"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="#CCCCCC"></View>
-
-
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        android:checked="true"
+                        />
                     <CheckBox
-                        android:id="@+id/essay_check"
-                        style="@style/MMTabButton"
+                        android:id="@+id/fragment_personal_ss_picture"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="他的图片"
                         android:gravity="center"
-                        android:text="我的文章"
-                        android:textColor="@drawable/star_text_selector"
-                        android:textSize="14sp" />
-
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="#DDDDDD"></View>
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/fragment_personal_ss_article"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="他的文章"
+                        android:gravity="center"
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/fragment_personal_ss_photo"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="他的相册"
+                        android:gravity="center"
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
 
 
 
                 </LinearLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#CCCCCC"></View>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="#CCCCCC"></View>
-
                     <CheckBox
-                        android:id="@+id/xiangce_check"
-                        style="@style/MMTabButton"
+                        android:id="@+id/fragment_personal_ss_video"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="他的视频"
                         android:gravity="center"
-                        android:text="我的相册"
-                        android:textColor="@drawable/star_text_selector"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="#DDDDDD"></View>
-
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
                     <CheckBox
-                        android:id="@+id/zan_check"
-                        style="@style/MMTabButton"
+                        android:id="@+id/fragment_personal_ss_praise"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="他的赞"
                         android:gravity="center"
-                        android:text="赞"
-                        android:textColor="@drawable/star_text_selector"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="#CCCCCC"></View>
-
-
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
                     <CheckBox
-                        android:id="@+id/shezhi_check"
-                        style="@style/MMTabButton"
+                        android:id="@+id/fragment_personal_ss_share"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="他的分享"
                         android:gravity="center"
-                        android:text="设置"
-                        android:drawablePadding="-30dp"
-                        android:textColor="@drawable/star_text_selector"
-                        android:textSize="14sp" />
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/fragment_personal_ss_attention"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="他的钉"
+                        android:gravity="center"
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
+
 
                 </LinearLayout>
 
@@ -373,15 +178,10 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#CCCCCC"></View>
-
 
 
             <FrameLayout
-                android:id="@+id/personal_vp"
+                android:id="@+id/fragment_personal_ss_framelayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 ></FrameLayout>

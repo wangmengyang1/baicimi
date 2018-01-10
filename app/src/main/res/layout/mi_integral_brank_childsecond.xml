@@ -18,6 +18,15 @@
             android:src="@drawable/mi_code_brank_image_18"
             />
 
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="单位（万）"
+            />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="0.6dp"

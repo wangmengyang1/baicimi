@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eff5"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        android:background="#ce253a"
+        android:paddingBottom="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/phone_topup_bill_fragment_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_wirte"
+            android:padding="4dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/phone_topup_bill_fragment_lible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="手机充值账单"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/sandian_image_wirte"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="13sp"
+            android:textColor="#010101"
+            android:text="7月"
+            />
+
+            <ListView
+                android:id="@+id/phone_topup_bill_fragment_listview_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:background="@color/white"
+                ></ListView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textSize="13sp"
+                android:textColor="#010101"
+                android:text="3月"
+                android:id="@+id/textView27" />
+
+            <ListView
+                android:id="@+id/phone_topup_bill_fragment_listview_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:background="@color/white"
+                ></ListView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textSize="13sp"
+                android:textColor="#010101"
+                android:text="2月"
+                />
+
+            <ListView
+                android:id="@+id/phone_topup_bill_fragment_listview_thread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:background="@color/white"
+                ></ListView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="使用电脑访问www.alipay.com查询更多记录"
+                android:layout_marginTop="15dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

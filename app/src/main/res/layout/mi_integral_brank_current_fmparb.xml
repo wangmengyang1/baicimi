@@ -190,13 +190,39 @@
             android:background="@drawable/checkbox_selector_two"
             />
 
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      同意相关协议及"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="《网上银行开户及账户绑定协议》"
+                android:textColor="#039ece"
+                />
+
+
+        </LinearLayout>
         <TextView
             android:id="@+id/mi_integral_brank_current_fmparb_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="      同意相关协议及《网上银行开户及账户绑定协议》并向网商银行申请开立银行结算账户。本人知晓七日年化收益率不代表任何收益承诺本产品可能存在资金损失风险。"
+            android:text="                                                                                                   并向网商银行申请开立银行结算账户。本人知晓七日年化收益率不代表任何收益承诺本产品可能存在资金损失风险。"
             android:textSize="13sp"
             />
+
 
         <TextView
             android:layout_width="wrap_content"

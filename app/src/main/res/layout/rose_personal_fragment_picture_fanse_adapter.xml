@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/rose_personal_fragment_picture_fanse_adapter_userimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/rose_personal_fragment_picture_image_21"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/rose_personal_fragment_picture_fanse_adapter_userimage"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/rose_personal_fragment_picture_fanse_adapter_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="baby"
+                android:textColor="#535353"
+                />
+            <TextView
+                android:id="@+id/rose_personal_fragment_picture_fanse_adapter_content"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="今天百次幂商城又搞活动了！快点去和我......."
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="2dp"
+                />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_marginTop="2dp"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/rose_personal_fragment_picture_fanse_adapter_meun"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/rose_personal_fragment_picture_image_08"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/rose_personal_fragment_picture_fanse_adapter_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/rose_personal_fragment_picture_image_09"
+            android:layout_toLeftOf="@+id/rose_personal_fragment_picture_fanse_adapter_meun"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

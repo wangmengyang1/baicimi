@@ -53,7 +53,7 @@
                     android:layout_height="25dp"
                     android:padding="4dp"
                     android:textSize="13sp"
-                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    android:background="@drawable/mi_integral_brank_childifrst_edittext_shape"
                     />
 
                 <TextView
@@ -61,12 +61,23 @@
                     android:layout_height="wrap_content"
                     android:textSize="13sp"
                     android:text="积分"
+                    android:layout_marginLeft="4dp"
                     />
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="30dp"
                     android:src="@drawable/mi_code_brank_image_17"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="现金"
+                    android:layout_marginRight="4dp"
                     />
 
                 <EditText
@@ -74,7 +85,7 @@
                     android:layout_height="25dp"
                     android:padding="4dp"
                     android:textSize="13sp"
-                    android:background="@drawable/pryment_adency_fragment_government_edittext_shape"
+                    android:background="@drawable/mi_integral_brank_childifrst_edittext_shape"
                     />
 
             </LinearLayout>
@@ -84,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="计算"
-                android:textColor="#737373"
+                android:textColor="@color/white"
                 android:textSize="13sp"
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp"
@@ -93,7 +104,7 @@
                 android:layout_below="@+id/mi_integral_brank_childfirst"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="8dp"
-                android:background="#aaaaaa"
+                android:background="@drawable/mi_integral_brank_childifrst_edittext_shapesecond"
                 />
 
         </RelativeLayout>

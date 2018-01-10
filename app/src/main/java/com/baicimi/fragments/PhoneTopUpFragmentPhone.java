@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
+import android.widget.TextView;
 
 import com.baicimi.R;
 import com.baicimi.adapter.PhoneTopUpFragmentPhoneAdapter;
@@ -17,12 +18,14 @@ import java.util.List;
  * Created by Administrator on 2018/1/8.
  *  个人中心首页 手机充值 充话费
  */
-public class PhoneTopUpFragmentPhone extends BaseFragment{
+public class PhoneTopUpFragmentPhone extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private GridView gridView;
     private List<PhoneTopUpFragmentPhoneEntry> list = new ArrayList<>();
     private PhoneTopUpFragmentPhoneAdapter adapter;
+
+    private TextView record;
 
 
     @Override
@@ -32,7 +35,8 @@ public class PhoneTopUpFragmentPhone extends BaseFragment{
         //GridView布局填充
         initGridView();
 
-
+        record = (TextView) view.findViewById(R.id.phone_tupup_fragment_phone_mytupuprecord);
+        record.setOnClickListener(this);
         return view;
     }
 
@@ -53,7 +57,6 @@ public class PhoneTopUpFragmentPhone extends BaseFragment{
         fixGrdiViewHeight03(gridView);
 
     }
-
 
 
     //动态计算GridView的高度
@@ -84,5 +87,15 @@ public class PhoneTopUpFragmentPhone extends BaseFragment{
     @Override
     protected void initData() {
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.phone_tupup_fragment_phone_mytupuprecord:
+                //手机充值账单
+                startFragment(new PhoneTopUpBillFragment());
+                break;
+        }
     }
 }

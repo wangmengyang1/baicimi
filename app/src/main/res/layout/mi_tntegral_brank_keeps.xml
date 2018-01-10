@@ -82,13 +82,6 @@
 
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.4dp"
-        android:background="#e1e1e1"
-        />
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -170,7 +163,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
-                        android:text="支取期："
+                        android:text="支取期：    "
                         />
 
                     <CheckBox
@@ -178,7 +171,7 @@
                         android:layout_height="15dp"
                         android:button="@null"
                         android:background="@drawable/checkbox_selector_two"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="13dp"
                         />
 
                     <TextView
@@ -440,6 +433,12 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#e1e1e1"
+        />
 
 
 </LinearLayout>

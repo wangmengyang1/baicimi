@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#eeeeee"
+                android:layout_margin="6dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:src="@drawable/rose_personal_fragment_picture_image_01"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/rose_personal_fragment_picture_image_02"
+                        android:padding="6dp"
+                        android:layout_margin="4dp"
+                        android:visibility="invisible"
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#010101"
+                    android:text="My hometown"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="13sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="A lot of foreigners were enjoying the sunshine.  thetime. Wentas other people did. ......"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="#b5b5b5"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="昨天19：20  来自全球生活汇"
+
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="阅读原文"
+
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/rose_personal_fragment_picture_image_03"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="123"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            />
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#737373"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/rose_personal_fragment_picture_image_04"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="123"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            />
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#737373"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/rose_personal_fragment_picture_image_05"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="123"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            />
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#737373"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/rose_personal_fragment_picture_image_02"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="123"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            />
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#737373"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/rose_personal_fragment_picture_image_06"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="123"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            />
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:background="#737373"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/rose_personal_fragment_picture_image_07"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="123"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/rose_personal_fragment_picture_userimage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rose_personal_fragment_picture_image_10"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/rose_personal_fragment_picture_userimage"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#010101"
+                            android:text="GARY"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="Guangzhou,China"
+                            android:layout_marginTop="4dp"
+                            />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/rose_personal_fragment_picture_add"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/rose_personal_fragment_picture_image_09"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBottom="@+id/rose_personal_fragment_picture_userimage"
+                        android:padding="4dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/rose_personal_fragment_picture_menu"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/rose_personal_fragment_picture_image_08"
+                        android:layout_alignBottom="@+id/rose_personal_fragment_picture_userimage"
+                        android:layout_toLeftOf="@+id/rose_personal_fragment_picture_add"
+                        android:layout_marginRight="15dp"
+                        android:padding="4dp"
+
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="昨天10:16  来自全球生活汇"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="阅读全文"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/rose_personal_fragment_picture_image_03"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="123"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        />
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="#737373"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/rose_personal_fragment_picture_image_04"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="123"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        />
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="#737373"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/rose_personal_fragment_picture_image_05"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="123"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        />
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="#737373"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/rose_personal_fragment_picture_image_02"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="123"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        />
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="#737373"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/rose_personal_fragment_picture_image_06"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="123"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        />
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="#737373"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/rose_personal_fragment_picture_image_07"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="123"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                >
+
+
+                <ImageView
+                    android:id="@+id/rose_personal_fragment_picture_userimages"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/rose_personal_fragment_picture_image_10"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/rose_personal_fragment_picture_userimages"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#010101"
+                        android:text="GARY"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="Guangzhou,China"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/rose_personal_fragment_picture_adds"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/rose_personal_fragment_picture_image_09"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@+id/rose_personal_fragment_picture_userimages"
+                    android:padding="4dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/rose_personal_fragment_picture_menus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/rose_personal_fragment_picture_image_08"
+                    android:layout_alignBottom="@+id/rose_personal_fragment_picture_userimages"
+                    android:layout_toLeftOf="@+id/rose_personal_fragment_picture_adds"
+                    android:layout_marginRight="15dp"
+                    android:padding="4dp"
+
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#737373"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

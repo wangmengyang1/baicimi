@@ -25,14 +25,57 @@
             android:id="@+id/gouwuche_all_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¥100.00元"
+            android:text="美白保湿洁面乳"
             android:textSize="14sp"
-            android:textColor="#5B5B5B"
+            android:textColor="#010101"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="15dp"
             />
 
-        <CheckBox
+
+        <TextView
+            android:id="@+id/gouwuche_all_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="¥99.00-199.00"
+            android:textColor="#ff0000"
+            android:layout_below="@+id/gouwuche_all_price"
+            android:layout_alignLeft="@+id/gouwuche_all_price"
+            android:layout_marginTop="15dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gouwuche_all_money"
+            android:layout_alignLeft="@+id/gouwuche_all_money"
+
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="¥128.00-228.00"
+
+                />
+
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0.6dp"
+                android:background="#737373"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+
+
+
+        <!--<CheckBox
             android:id="@+id/che1"
             android:layout_width="18dp"
             android:layout_height="18dp"
@@ -138,7 +181,7 @@
             android:layout_toRightOf="@id/jifendikou3"
             android:layout_marginLeft="35dp"
             android:layout_alignTop="@+id/che3"
-            />
+            />-->
 
         <TextView
             android:id="@+id/tv_fenqi"
@@ -148,7 +191,7 @@
             android:textSize="12sp"
             android:textColor="#5B5B5B"
             android:layout_marginTop="3dp"
-            android:layout_below="@id/che3"
+            android:layout_alignBottom="@+id/btn_buynow"
             android:layout_marginLeft="15dp"
             />
 
@@ -162,7 +205,7 @@
             android:checked="true"
             android:background="@drawable/fenqi_chexbok"
             android:textColor="#5B5B5B"
-            android:layout_below="@id/che3"
+            android:layout_alignBottom="@+id/btn_buynow"
             android:layout_toRightOf="@id/tv_fenqi"
             android:layout_marginTop="6dp"
             />
@@ -177,7 +220,7 @@
             android:layout_marginLeft="5dp"
             android:textSize="12sp"
             android:textColor="#5B5B5B"
-            android:layout_below="@id/che3"
+            android:layout_alignBottom="@+id/btn_buynow"
             android:layout_toRightOf="@id/btn_three"
             android:layout_marginTop="6dp"
             />
@@ -192,7 +235,7 @@
             android:textSize="12sp"
             android:layout_marginLeft="5dp"
             android:textColor="#5B5B5B"
-            android:layout_below="@id/che3"
+            android:layout_alignBottom="@+id/btn_buynow"
             android:layout_toRightOf="@id/btn_six"
             android:layout_marginTop="6dp"
             />
