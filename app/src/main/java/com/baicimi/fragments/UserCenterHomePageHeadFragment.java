@@ -78,7 +78,8 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
         fm = getChildFragmentManager();
         fragments.clear();
         fragments.add(new UserIntegralFragmentFirst());
-        fragments.add(new RosePerSonalFragment());
+        fragments.add(new RosePerSonalFragment());//ta的全球生活汇
+        fragments.add(new RosePerSonalMyFragment());//我的全球生活汇
 
         //fragment切换
         initShowFragment(0);

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/rose_personal_my_fragment_all"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="全部内容"
+                        android:gravity="center"
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        android:checked="true"
+                        />
+                    <CheckBox
+                        android:id="@+id/rose_personal_my_fragment_picture"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="我的图片"
+                        android:gravity="center"
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/rose_personal_my_fragment_article"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="我的文章"
+                        android:gravity="center"
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/rose_personal_my_fragment_photo"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="我的相册"
+                        android:gravity="center"
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/rose_personal_my_fragment_video"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="我的视频"
+                        android:gravity="center"
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/rose_personal_my_fragment_myfriends"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="幂友圈"
+                        android:gravity="center"
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/rose_personal_my_fragment_attention"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="我的关注"
+                        android:gravity="center"
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/rose_personal_my_fragment_setting"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="设置"
+                        android:gravity="center"
+                        android:textColor="#010101"
+                        android:background="@drawable/fragment_personal_ss_checkbox_selector"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="13sp"
+                        android:layout_margin="2dp"
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"></View>
+
+            </LinearLayout>
+
+
+
+            <FrameLayout
+                android:id="@+id/rose_personal_my_fragment_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
