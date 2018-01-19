@@ -15,26 +15,17 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.baicimi.MainActivity;
 import com.baicimi.R;
-import com.baicimi.adapter.HistoryAdapter;
 import com.baicimi.adapter.MyViewPagerFragmetAdapterSecond;
-import com.baicimi.adapter.VerticalPagerAdapter;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.ShopingPackageMessage;
-import com.baicimi.ui.ShareModel;
-import com.baicimi.ui.SharePopupWindow;
-import com.baicimi.view.VerticalViewPagerView;
 
 import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import cn.sharesdk.framework.ShareSDK;
 
 /**
  * Created by tan on 2016/9/5.
@@ -70,7 +61,6 @@ public class GoodsDetailsFragment extends BaseFragment implements View.OnClickLi
 
     private TextView numberTextview;
     private int cont;
-
 
     private TextView allMoney;
 

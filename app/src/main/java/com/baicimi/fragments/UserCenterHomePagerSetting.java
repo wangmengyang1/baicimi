@@ -18,7 +18,9 @@ public class UserCenterHomePagerSetting extends BaseFragment implements View.OnC
 
     private View view;
     private ImageView back;
-    private TextView user_message ,account_authentication ,privacy_seting ,significance_moment;
+    private TextView user_message ,account_authentication
+            ,privacy_seting ,significance_moment , invoicesetting
+             , clrcle , mifriendsjurisdiction , addressmanager;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -35,6 +37,22 @@ public class UserCenterHomePagerSetting extends BaseFragment implements View.OnC
         privacy_seting.setOnClickListener(this);
         significance_moment = (TextView) view.findViewById(R.id.user_center_homepager_setting_fragment_significance_moment);
         significance_moment.setOnClickListener(this);
+
+        //发票设置
+        invoicesetting = (TextView) view.findViewById(R.id.user_center_homepager_setting_fragment_user_invoicesetting);
+        invoicesetting.setOnClickListener(this);
+
+        //账户安全
+        clrcle = (TextView) view.findViewById(R.id.user_center_homepager_setting_fragment_account_clrcle);
+        clrcle.setOnClickListener(this);
+
+        //幂友权限
+        mifriendsjurisdiction = (TextView) view.findViewById(R.id.user_center_homepager_setting_fragment_user_mifriendsjurisdiction);
+        mifriendsjurisdiction.setOnClickListener(this);
+
+        //地址管理
+        addressmanager = (TextView) view.findViewById(R.id.user_center_homepager_setting_fragment_account_addressmanager);
+        addressmanager.setOnClickListener(this);
         return view;
     }
 
@@ -64,6 +82,22 @@ public class UserCenterHomePagerSetting extends BaseFragment implements View.OnC
             case R.id.user_center_homepager_setting_fragment_significance_moment:
                 //人生重要时刻
                 startFragment(new SettingSignificanceMoment());
+                break;
+            case R.id.user_center_homepager_setting_fragment_user_invoicesetting:
+                //发票设置
+                startFragment(new SettingSignificanceInvoiceSetting());
+                break;
+            case R.id.user_center_homepager_setting_fragment_account_clrcle:
+                //账户安全
+                startFragment(new SettingSignificanceHomeCircle());
+                break;
+            case R.id.user_center_homepager_setting_fragment_user_mifriendsjurisdiction:
+                //幂友权限
+                startFragment(new UserCenterHomePagerSettingMifriends());
+                break;
+            case R.id.user_center_homepager_setting_fragment_account_addressmanager:
+                //地址管理
+                startFragment(new UserCenterHomePagerSettingAddressManager());
                 break;
         }
     }

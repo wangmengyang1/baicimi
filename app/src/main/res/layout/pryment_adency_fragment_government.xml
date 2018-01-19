@@ -76,56 +76,67 @@
 
 
             <LinearLayout
+                android:id="@+id/pryment_adency_fragment_government_listview_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:orientation="horizontal"
-                android:layout_marginTop="15dp"
+                android:orientation="vertical"
                 >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="张三"
-                    android:textSize="13sp"
-                    />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="189*****0055"
-                    android:textSize="13sp"
-                    android:gravity="right"
-                    />
-            </LinearLayout>
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="15dp"
-                >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张三"
+                        android:textSize="13sp"
+                        />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="189*****0055"
+                        android:textSize="13sp"
+                        android:gravity="right"
+                        />
+                </LinearLayout>
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/address_gov_image_black"
-                    />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="收货地址：中国广东省广州市白云区太和镇XX街XX大厦22层2209室"
-                    android:textSize="13sp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    >
 
-                    />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/address_gov_image_black"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="收货地址：中国广东省广州市白云区太和镇XX街XX大厦22层2209室"
+                        android:textSize="13sp"
+
+                        />
+
+                </LinearLayout>
 
             </LinearLayout>
+
+
 
             <View
                 android:layout_width="match_parent"
@@ -235,6 +246,7 @@
                 android:layout_below="@+id/pryment_adency_fragment_government_totalold"
                 android:textSize="12sp"
                 android:layout_marginTop="6dp"
+                android:visibility="invisible"
                 />
 
             <TextView
@@ -245,6 +257,7 @@
                 android:textColor="#737373"
                 android:layout_below="@+id/pryment_adency_fragment_government_discounts"
                 android:layout_marginTop="8dp"
+                android:visibility="invisible"
                 />
 
             <TextView

@@ -1,23 +1,15 @@
 package com.baicimi.fragments;
 
-import android.os.Handler;
-import android.os.Parcelable;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ImageView;
 
 import com.baicimi.R;
 import com.baicimi.adapter.HeadPinPaiActivityGvAdapter;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.bean.ShaiXuanListBean;
 import com.baicimi.image.GlideImageLoader;
-import com.baicimi.view.MyViewPager;
-import com.bumptech.glide.Glide;
 import com.lidroid.xutils.view.annotation.event.OnClick;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
@@ -26,16 +18,12 @@ import com.youth.banner.listener.OnBannerListener;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by tan on 2016/10/14.
  * 首页畅销热卖页面
  */
 public class ChangXiaoFragment extends BaseFragment {
-    private ScheduledExecutorService scheduledExecutorService;
     private View huodong1,huodong2,huodong3,huodong4;
     private GridView gridView,gridView1,gridView2,gridView3;
     private List<ShaiXuanListBean> listBeen;

@@ -269,7 +269,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="*推荐人姓名 ："
+                    android:text=" 推荐人姓名 ："
                     android:textSize="13sp"
                     android:textColor="#737373"
                     />
@@ -300,7 +300,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="*推荐人电话 ："
+                    android:text=" 推荐人电话 ："
                     android:textSize="13sp"
                     android:textColor="#737373"
                     />

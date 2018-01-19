@@ -199,19 +199,21 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                 //此处执行二级下拉菜单点击事件
                 if (i == 0 && i1 == 0) {
                     startFragment(new OrderFormFragment());//我的订单
-                } else if (i == 0 && i1 == 1) {
-                    startFragment(new MyGroupPurchaseFragment());//团购订单
-                } else if (i == 0 && i1 == 2) {
-                    startFragment(new UserCenterHomePageHeadIntimacy());//亲密付订单
-                } else if (i == 0 && i1 == 3) {
-                    startFragment(new GovernmentPurchaseFragment());//政府采购
-                } else if (i == 0 && i1 == 4) {
-                    startFragment(new ByStagesFragment());//分期订单
-                } else if (i == 0 && i1 == 5) {
-                    startFragment(new MyAuctionFragment());//我的拍卖
-                } else if (i == 0 && i1 == 6) {
-                    startFragment(new MyPresellFragment());//我的预售
-                } else if (i == 1 && i1 == 0) {
+                }
+//                else if (i == 0 && i1 == 1) {
+//                    startFragment(new MyGroupPurchaseFragment());//团购订单
+//                } else if (i == 0 && i1 == 2) {
+//                    startFragment(new UserCenterHomePageHeadIntimacy());//亲密付订单
+//                } else if (i == 0 && i1 == 3) {
+//                    startFragment(new GovernmentPurchaseFragment());//政府采购
+//                } else if (i == 0 && i1 == 4) {
+//                    startFragment(new ByStagesFragment());//分期订单
+//                } else if (i == 0 && i1 == 5) {
+//                    startFragment(new MyAuctionFragment());//我的拍卖
+//                } else if (i == 0 && i1 == 6) {
+//                    startFragment(new MyPresellFragment());//我的预售
+//                }
+                else if (i == 1 && i1 == 0) {
 //                    startFragment(new MiWalletFragment());//幂钱包
                     startFragment(new MiWalletFragmentHomePage());//幂钱包 （新）
                 } else if (i == 1 && i1 == 1) {
@@ -451,6 +453,23 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                 holder.textview_v.setVisibility(View.VISIBLE);
             } else {
                 holder.textview_v.setVisibility(View.INVISIBLE);
+            }
+
+
+            if (ChildrenData.get(groupPosition).get(childPosition).equals("团购订单")){
+                holder.textViews.setTextColor(0xFFeeeeee);
+            }else if (ChildrenData.get(groupPosition).get(childPosition).equals("亲密付订单")){
+                holder.textViews.setTextColor(0xFFeeeeee);
+            }else if (ChildrenData.get(groupPosition).get(childPosition).equals("政府采购订单")){
+                holder.textViews.setTextColor(0xFFeeeeee);
+            }else if (ChildrenData.get(groupPosition).get(childPosition).equals("分期订单")){
+                holder.textViews.setTextColor(0xFFeeeeee);
+            }else if (ChildrenData.get(groupPosition).get(childPosition).equals("我的拍卖")){
+                holder.textViews.setTextColor(0xFFeeeeee);
+            }else if (ChildrenData.get(groupPosition).get(childPosition).equals("我的预售")){
+                holder.textViews.setTextColor(0xFFeeeeee);
+            }else {
+                holder.textViews.setTextColor(0xFF797979);
             }
 
             return convertView;

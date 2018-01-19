@@ -75,7 +75,9 @@
         android:background="@mipmap/btn_back_img"
         android:text="120ML"
         android:textColor="#484848"
-        android:textSize="5sp" />
+        android:textSize="5sp"
+        android:visibility="invisible"
+        />
 
     <Spinner
         android:id="@+id/btn_jifendikou"
@@ -88,7 +90,9 @@
         android:layout_marginLeft="3dp"
         android:text="1000积分抵扣10元"
         android:textColor="#484848"
-        android:textSize="5sp" />
+        android:textSize="5sp"
+        android:visibility="invisible"
+        />
 
 
     //加减框

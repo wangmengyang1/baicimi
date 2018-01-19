@@ -98,7 +98,7 @@
         >
 
         <TextView
-            android:id="@+id/setting_user_message_fragment_myorderform"
+            android:id="@+id/setting_user_message_myorderform"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="基本资料"
@@ -106,7 +106,7 @@
             android:padding="4dp"
             />
         <TextView
-
+            android:id="@+id/setting_user_message_moredate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="更多资料"

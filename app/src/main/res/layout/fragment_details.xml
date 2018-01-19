@@ -195,6 +195,7 @@
             android:layout_marginLeft="15dp"
             />
 
+        <!--checkbox背景   android:background="@drawable/fenqi_chexbok" -->
         <CheckBox
             android:id="@+id/btn_three"
             android:layout_width="70dp"
@@ -202,12 +203,12 @@
             android:text="  ¥2469x3期"
             android:textSize="12sp"
             android:button="@null"
-            android:checked="true"
-            android:background="@drawable/fenqi_chexbok"
+            android:checked="false"
             android:textColor="#5B5B5B"
             android:layout_alignBottom="@+id/btn_buynow"
             android:layout_toRightOf="@id/tv_fenqi"
             android:layout_marginTop="6dp"
+            android:clickable="false"
             />
 
         <CheckBox
@@ -215,7 +216,6 @@
             android:layout_width="70dp"
             android:layout_height="25dp"
             android:button="@null"
-            android:background="@drawable/fenqi_chexbok"
             android:text="  ¥2469x3期"
             android:layout_marginLeft="5dp"
             android:textSize="12sp"
@@ -223,6 +223,7 @@
             android:layout_alignBottom="@+id/btn_buynow"
             android:layout_toRightOf="@id/btn_three"
             android:layout_marginTop="6dp"
+            android:clickable="false"
             />
 
         <CheckBox
@@ -230,7 +231,6 @@
             android:layout_width="70dp"
             android:layout_height="25dp"
             android:button="@null"
-            android:background="@drawable/fenqi_chexbok"
             android:text="  ¥2469x3期"
             android:textSize="12sp"
             android:layout_marginLeft="5dp"
@@ -238,6 +238,7 @@
             android:layout_alignBottom="@+id/btn_buynow"
             android:layout_toRightOf="@id/btn_six"
             android:layout_marginTop="6dp"
+            android:clickable="false"
             />
 
         <RelativeLayout

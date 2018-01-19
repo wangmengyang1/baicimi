@@ -101,7 +101,11 @@ public class ShopingCarFragment extends BaseFragment {
         btn_jiesuan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showPopwindow();
+                //订单属性（暂时隐藏）
+//                showPopwindow();
+
+                //跳转到支付页面
+                startFragment(new PaymentAdencyFragmentGovernment());//支付页面(最新)
             }
         });
 

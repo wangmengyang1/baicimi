@@ -119,7 +119,7 @@
                 android:padding="4dp"
                 />
             <TextView
-
+                android:id="@+id/user_center_homepager_setting_fragment_account_addressmanager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="收货地址"
@@ -128,7 +128,7 @@
                 />
 
             <TextView
-
+                android:id="@+id/user_center_homepager_setting_fragment_user_invoicesetting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="发票设置"
@@ -136,7 +136,7 @@
                 android:padding="4dp"
                 />
             <TextView
-
+                android:id="@+id/user_center_homepager_setting_fragment_user_mifriendsjurisdiction"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="幂友权限"
@@ -363,7 +363,6 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="关于百次幂商城"
-
                     android:padding="4dp"
                     />
 
