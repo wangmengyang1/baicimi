@@ -154,6 +154,7 @@
                 android:background="#eeeeee"
                 />
             <LinearLayout
+                android:id="@+id/setting_user_message_basic_date_nickname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -323,6 +324,7 @@
                 android:background="#eeeeee"
                 />
             <LinearLayout
+                android:id="@+id/setting_user_message_basic_date_manageraddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"

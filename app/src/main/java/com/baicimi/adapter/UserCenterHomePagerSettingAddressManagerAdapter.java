@@ -12,6 +12,8 @@ import android.widget.TextView;
 import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
 import com.baicimi.entity.UserCenterHomePagerSettingAddressManagerEntry;
+import com.baicimi.fragments.UserCenterHomePagerSettingAddressManagerAddAddress;
+import com.baicimi.fragments.UserCenterHomePagerSettingAddressManagerCompileAddress;
 
 import java.util.List;
 
@@ -80,6 +82,18 @@ public class UserCenterHomePagerSettingAddressManagerAdapter extends BaseAdapter
         }else{
             holder.defaultCB.setChecked(false);
         }
+
+        //编辑收货地址
+        holder.compile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (baseFragment != null){
+
+                    baseFragment.startFragment(new UserCenterHomePagerSettingAddressManagerCompileAddress());
+                }
+            }
+        });
+
 
         return view;
     }

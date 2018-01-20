@@ -17,7 +17,7 @@
         >
 
         <ImageView
-            android:id="@+id/user_center_homepager_setting_address_manager_addaddress_back"
+            android:id="@+id/user_center_homepage_setting_address_manager_compile_address_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/back_image_black"
@@ -26,23 +26,24 @@
             />
 
         <TextView
-            android:id="@+id/user_center_homepager_setting_address_manager_addaddress_lible"
+            android:id="@+id/user_center_homepage_setting_address_manager_compile_address_lible"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="添加收货地址"
+            android:text="修改收货地址"
             android:textColor="#535353"
             android:gravity="center"
             android:textSize="16sp"
             />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/brand_fragment_second_image_13"
-            android:padding="6dp"
-            android:layout_marginRight="15dp"
-            android:visibility="invisible"
+        <TextView
+            android:id="@+id/user_center_homepage_setting_address_manager_compile_saveaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#ff0000"
+            android:text="保存"
+            android:paddingRight="15dp"
             />
 
     </LinearLayout>
@@ -129,7 +130,7 @@
 
 
         <EditText
-            android:id="@+id/ed_receive_phone_num"
+            android:id="@+id/user_center_homepage_setting_address_manager_compile_address_num"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/background_null"
@@ -145,7 +146,7 @@
 
 
     <RelativeLayout
-        android:id="@+id/user_center_homepager_setting_address_manager_addaddress_area"
+        android:id="@+id/user_center_homepage_setting_address_manager_compile_address_area"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
@@ -155,7 +156,7 @@
         >
 
         <ImageView
-            android:id="@+id/user_center_homepager_setting_address_manager_addaddress_address"
+            android:id="@+id/user_center_homepage_setting_address_manager_compile_address_address"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:src="@drawable/address_image"
@@ -171,7 +172,7 @@
             android:text="所在地区"
             android:textColor="#60646F"
             android:textSize="13sp"
-            android:layout_toRightOf="@+id/user_center_homepager_setting_address_manager_addaddress_address"
+            android:layout_toRightOf="@+id/user_center_homepage_setting_address_manager_compile_address_address"
             />
 
 
@@ -184,7 +185,7 @@
             android:background="@mipmap/right_img"></ImageView>
 
         <TextView
-            android:id="@+id/user_center_homepager_setting_address_manager_addaddress_addresslible"
+            android:id="@+id/user_center_homepage_setting_address_manager_compile_addresslible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -206,7 +207,7 @@
         >
 
         <ImageView
-            android:id="@+id/user_center_homepager_setting_address_manager_addaddress_addressjd"
+            android:id="@+id/user_center_homepage_setting_address_manager_compile_address_addressjd"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:src="@drawable/address_image"
@@ -222,7 +223,7 @@
             android:text="街道"
             android:textColor="#60646F"
             android:textSize="13sp"
-            android:layout_toRightOf="@+id/user_center_homepager_setting_address_manager_addaddress_addressjd"
+            android:layout_toRightOf="@+id/user_center_homepage_setting_address_manager_compile_address_addressjd"
 
             />
 
@@ -366,7 +367,7 @@
         />
 
     <RelativeLayout
-        android:id="@+id/user_center_homepager_setting_address_manager_addaddress_saveaddress"
+        android:id="@+id/user_center_homepage_setting_address_manager_compile_address_saveaddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -377,7 +378,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="保存地址"
+            android:text="删除地址"
             android:textSize="13sp"
             android:textColor="#ff0000"
             android:layout_centerVertical="true"
@@ -393,5 +394,6 @@
         android:layout_weight="1"
         android:background="#eeeeee"
         />
+
 
 </LinearLayout>

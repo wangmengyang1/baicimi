@@ -24,14 +24,19 @@ import org.json.JSONArray;
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2018/1/19.
- * 个人中心设置界面 地址管理 添加收货地址
+ * Created by Administrator on 2018/1/20.
+ * //修改新地址
  */
-public class UserCenterHomePagerSettingAddressManagerAddAddress extends BaseFragment implements View.OnClickListener {
+public class UserCenterHomePagerSettingAddressManagerCompileAddress extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private ImageView back;
-    private RelativeLayout saveAddress;
+
+    private TextView saveAddress;
+    private RelativeLayout deleteAddress;
+
+
+
 
     private RelativeLayout area;
 
@@ -87,25 +92,29 @@ public class UserCenterHomePagerSettingAddressManagerAddAddress extends BaseFrag
     };
 
 
-
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
-        view = inflater.inflate(R.layout.user_center_homepager_setting_address_manager_addaddress , container , false);
-        back = (ImageView) view.findViewById(R.id.user_center_homepager_setting_address_manager_addaddress_back);
-        back.setOnClickListener(this);
+        view = inflater.inflate(R.layout.user_center_homepage_setting_address_manager_compile_address , container , false);
 
-        saveAddress = (RelativeLayout) view.findViewById(R.id.user_center_homepager_setting_address_manager_addaddress_saveaddress);
+        back = (ImageView) view.findViewById(R.id.user_center_homepage_setting_address_manager_compile_address_back);
+        back.setOnClickListener(this);
+        saveAddress = (TextView) view.findViewById(R.id.user_center_homepage_setting_address_manager_compile_saveaddress);
         saveAddress.setOnClickListener(this);
+
+        deleteAddress = (RelativeLayout) view.findViewById(R.id.user_center_homepage_setting_address_manager_compile_address_saveaddress);
+        deleteAddress.setOnClickListener(this);
+
 
 
         //所在地区
 
         mHandler.sendEmptyMessage(MSG_LOAD_DATA);
 
-        area = (RelativeLayout) view.findViewById(R.id.user_center_homepager_setting_address_manager_addaddress_area);
+        area = (RelativeLayout) view.findViewById(R.id.user_center_homepage_setting_address_manager_compile_address_area);
         area.setOnClickListener(this);
 
-        addressLible = (TextView) view.findViewById(R.id.user_center_homepager_setting_address_manager_addaddress_addresslible);
+        addressLible = (TextView) view.findViewById(R.id.user_center_homepage_setting_address_manager_compile_addresslible);
+
 
 
         return view;
@@ -220,17 +229,21 @@ public class UserCenterHomePagerSettingAddressManagerAddAddress extends BaseFrag
 
 
 
+
+
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.user_center_homepager_setting_address_manager_addaddress_back:
+            case R.id.user_center_homepage_setting_address_manager_compile_address_back:
                 ((MainActivity)getActivity()).goBack();
                 break;
-            case R.id.user_center_homepager_setting_address_manager_addaddress_saveaddress:
+            case R.id.user_center_homepage_setting_address_manager_compile_saveaddress:
                 ((MainActivity)getActivity()).goBack();
                 break;
-            case R.id.user_center_homepager_setting_address_manager_addaddress_area:
-
+            case R.id.user_center_homepage_setting_address_manager_compile_address_saveaddress:
+                ((MainActivity)getActivity()).goBack();
+                break;
+            case R.id.user_center_homepage_setting_address_manager_compile_address_area:
                 if (isLoaded){
                     ShowPickerView();
                 }else {
