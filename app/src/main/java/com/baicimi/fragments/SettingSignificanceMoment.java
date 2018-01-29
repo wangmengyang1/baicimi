@@ -20,6 +20,7 @@ public class SettingSignificanceMoment extends BaseFragment implements View.OnCl
     private ImageView back;
     private TextView sponsorMoment;
 
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         view = inflater.inflate(R.layout.setting_significande_moment , container , false);
@@ -46,6 +47,7 @@ public class SettingSignificanceMoment extends BaseFragment implements View.OnCl
                 //发起认证
                 startFragment(new SettingSignificanceMonmentSecondSponsorMoment());
                 break;
+
         }
     }
 }

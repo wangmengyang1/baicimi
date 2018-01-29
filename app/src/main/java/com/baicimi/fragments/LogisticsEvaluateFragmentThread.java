@@ -40,7 +40,7 @@ public class LogisticsEvaluateFragmentThread extends BaseFragment{
         list.add(new RreasureEvaluateFragmentSecondEntry(1));
         list.add(new RreasureEvaluateFragmentSecondEntry(1));
         list.add(new RreasureEvaluateFragmentSecondEntry(1));
-        adapter = new LogisticsEvaluateFragmentThreadAdapter(list , getContext());
+        adapter = new LogisticsEvaluateFragmentThreadAdapter(list , getContext() , this);
         listView.setAdapter(adapter);
         fixGrdiViewHeight03(listView);
     }

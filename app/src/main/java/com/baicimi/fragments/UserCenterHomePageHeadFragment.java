@@ -231,8 +231,10 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     //会员积分
                     startFragment(new UserCenterUserIntegerFragment());
                 } else if (i == 4 && i1 == 0) {
+                    //亲密付首页
+                    startFragment(new IntimacyPayHomeFragment());
                     //发起亲密付
-                    startFragment(new UserCenterHomepageHeadIntimacyRequest());
+//                    startFragment(new UserCenterHomepageHeadIntimacyRequest());
                 } else if (i == 4 && i1 == 1) {
                     //红包
                     startFragment(new UserCenterRedPacketFragment());
@@ -248,6 +250,7 @@ public class UserCenterHomePageHeadFragment extends BaseFragment implements View
                     startFragment(new PhoneTopUpFragment());
                 } else if (i == 4 && i1 == 5) {
                     //记账本
+                    startFragment(new TallyBookFragment());
                 } else if (i == 4 && i1 == 6) {
                     //幂额度
                     startFragment(new MilimitFragment());

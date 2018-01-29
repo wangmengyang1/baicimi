@@ -35,11 +35,7 @@ public class UserCenterHomePagerSettingAddressManagerCompileAddress extends Base
     private TextView saveAddress;
     private RelativeLayout deleteAddress;
 
-
-
-
     private RelativeLayout area;
-
 
     private TextView addressLible;
 
@@ -104,18 +100,11 @@ public class UserCenterHomePagerSettingAddressManagerCompileAddress extends Base
         deleteAddress = (RelativeLayout) view.findViewById(R.id.user_center_homepage_setting_address_manager_compile_address_saveaddress);
         deleteAddress.setOnClickListener(this);
 
-
-
         //所在地区
-
         mHandler.sendEmptyMessage(MSG_LOAD_DATA);
-
         area = (RelativeLayout) view.findViewById(R.id.user_center_homepage_setting_address_manager_compile_address_area);
         area.setOnClickListener(this);
-
         addressLible = (TextView) view.findViewById(R.id.user_center_homepage_setting_address_manager_compile_addresslible);
-
-
 
         return view;
     }
@@ -142,9 +131,7 @@ public class UserCenterHomePagerSettingAddressManagerCompileAddress extends Base
         return detail;
     }
 
-
     private void ShowPickerView() {// 弹出选择器
-
         OptionsPickerView pvOptions = new OptionsPickerView.Builder(getContext(), new OptionsPickerView.OnOptionsSelectListener() {
             @Override
             public void onOptionsSelect(int options1, int options2, int options3, View v) {
@@ -226,10 +213,6 @@ public class UserCenterHomePagerSettingAddressManagerCompileAddress extends Base
         mHandler.sendEmptyMessage(MSG_LOAD_SUCCESS);
 
     }
-
-
-
-
 
     @Override
     public void onClick(View view) {

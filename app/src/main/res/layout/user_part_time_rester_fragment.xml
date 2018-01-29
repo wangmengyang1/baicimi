@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/user_part_time_rester_fragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/user_part_time_rester_fragment_option"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_image_black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="员工兼职注册"
+            android:textColor="#737373"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/gray_deep"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e1e1e1"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="带*的为必填"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#737373"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*用户名 ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="13dp"
+                    android:hint="请输入你的用户名"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*设置密码 ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="13dp"
+                    android:hint="请输入6-8位密码，含字母数字和符号"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*确认密码 ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="13dp"
+                    android:hint="请再次输入你的密码"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*申请区域："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/user_part_time_rester_fragment_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    >
+
+                    <TextView
+                        android:id="@+id/user_part_time_rester_fragment_tv"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="请选择区域"
+                        android:layout_marginRight="5dp"
+                        android:textSize="12sp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/xialacaidan_image_01"
+                        android:scaleType="fitXY"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*申请类别："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+
+                <Spinner
+                    android:id="@+id/user_part_time_rester_fragment_02"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/bnn_diatributor_register_option_shape"
+                    android:scrollbars="none"
+                    ></Spinner>
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/xialacaidan_image_01"
+                    android:scaleType="fitXY"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*姓名 ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="13dp"
+                    android:hint="请输入本人真实姓名"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*电话号码 ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="13dp"
+                    android:hint="请输手机号码"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*直系亲属 ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="13dp"
+                    android:hint="请输直系亲属姓名"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*直系亲属电话:"
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="13dp"
+                    android:hint="请输直系亲属电话"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*身份证号码 ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="13dp"
+                    android:hint="请输入本人身份证号码"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*详细住址 ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="13dp"
+                    android:hint="请输入本人详细住址"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*推荐人ID ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:layout_marginLeft="13dp"
+                    android:hint="请输入推荐人ID"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text=" 推荐人姓名 ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:hint="请输入推荐人姓名"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginLeft="13dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text=" 推荐人电话 ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:hint="请输入推荐人电话"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginLeft="13dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text=" 留言 ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/person_centered_acthentication_user_fragment_spinnert_shape"
+                    android:textColor="#5d5d5d"
+                    android:hint="兼职的需要填写，简单介绍一下自己"
+                    android:textSize="12sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="top"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*个人照片 ："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/user_part_time_rester_fragment_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 添 加 "
+                    android:textSize="12sp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:background="@drawable/person_cnetered_acthentication_user_button_shape"
+                    android:layout_marginLeft="13dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:text="个人正面照片，清晰不模糊"
+                    android:layout_marginLeft="4dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="*身份证照片："
+                    android:textSize="13sp"
+                    android:textColor="#737373"
+                    android:gravity="right"
+                    android:id="@+id/textView9" />
+
+                <LinearLayout
+                    android:id="@+id/user_part_time_rester_fragment_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图片"
+                        android:textSize="12sp"
+                        android:padding="6dp"
+                        android:background="@drawable/person_cnetered_acthentication_user_button_shape"
+                        android:layout_marginLeft="13dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图片"
+                        android:textSize="12sp"
+                        android:padding="6dp"
+                        android:background="@drawable/person_cnetered_acthentication_user_button_shape"
+                        android:layout_marginLeft="15dp"
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/user_part_time_rester_fragment_addlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 添 加 "
+                    android:textSize="12sp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:background="@drawable/person_cnetered_acthentication_user_button_shape"
+                    android:layout_marginLeft="12dp"
+                    />
+
+
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:text="身份证张反面+手持照（3张）"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <CheckBox
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/gouwuche_use_jifen_chexbok"
+                    android:button="@null"
+                    android:checked="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我已阅读并接受 "
+                    android:textSize="11sp"
+                    android:textColor="#be000000"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《在线服务协议》"
+                    android:textSize="11sp"
+                    android:textColor="#ce2538"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即注册"
+                android:background="@drawable/activity_present_check_adapter_btn_shape_second"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

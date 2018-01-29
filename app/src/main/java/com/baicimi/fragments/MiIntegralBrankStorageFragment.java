@@ -4,8 +4,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
@@ -72,6 +74,16 @@ public class MiIntegralBrankStorageFragment extends BaseFragment implements View
 
         adencyGovernmentCusAdaapter = new PaymentAdencyGovernmentCusAdaapter();
         customExpandableListView.setAdapter(adencyGovernmentCusAdaapter);
+        customExpandableListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
+            @Override
+            public boolean onGroupClick(ExpandableListView expandableListView, View view, int i, long l) {
+                if (i == 0){
+                    //活期储蓄
+                    startFragment(new CurrentStorageFragment());
+                }
+                return false;
+            }
+        });
     }
 
     @Override

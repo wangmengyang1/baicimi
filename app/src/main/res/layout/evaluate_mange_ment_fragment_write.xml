@@ -877,6 +877,7 @@
 
 
             <TextView
+                android:id="@+id/evaluate_namege_ment_fragment_write_dissmess"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"

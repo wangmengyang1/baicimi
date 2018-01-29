@@ -147,6 +147,24 @@
             android:layout_marginTop="18dp"
             android:padding="4dp"
             />
+        <TextView
+            android:id="@+id/settting_account_authentication_distribution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BNN分销批发注册入口"
+            android:layout_marginTop="18dp"
+            android:padding="4dp"
+            />
+
+        <TextView
+            android:id="@+id/settting_account_authentication_parttimeuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="兼职/员工入口"
+            android:layout_marginTop="18dp"
+            android:padding="4dp"
+            />
+
 
 
     </LinearLayout>

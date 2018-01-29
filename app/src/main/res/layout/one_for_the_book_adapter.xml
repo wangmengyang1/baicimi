@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/one_for_the_book_adapter_imageurl"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/tally_book_datail_image_06"
+            />
+
+
+        <TextView
+            android:id="@+id/one_for_the_book_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="一般"
+            android:layout_below="@+id/one_for_the_book_adapter_imageurl"
+            android:layout_marginTop="4dp"
+            android:textColor="#535353"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

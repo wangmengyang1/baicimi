@@ -4,10 +4,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.base.BaseFragment;
+import com.baicimi.view.OrderFormDealsucceedDissmessDialog;
 
 /**
  * Created by Administrator on 2017/12/27.
@@ -17,6 +19,7 @@ public class EvaluateManagementFragmentWirte extends BaseFragment implements Vie
 
     private View view;
     private ImageView back;
+    private TextView dissmess;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -24,6 +27,9 @@ public class EvaluateManagementFragmentWirte extends BaseFragment implements Vie
 
         back = (ImageView) view.findViewById(R.id.evaluate_mange_ment_fragment_write_back);
         back.setOnClickListener(this);
+
+        dissmess = (TextView) view.findViewById(R.id.evaluate_namege_ment_fragment_write_dissmess);
+        dissmess.setOnClickListener(this);
         return view;
     }
 
@@ -37,6 +43,12 @@ public class EvaluateManagementFragmentWirte extends BaseFragment implements Vie
         switch (view.getId()){
             case R.id.evaluate_mange_ment_fragment_write_back:
                 ((MainActivity)getActivity()).goBack();
+                break;
+            case R.id.evaluate_namege_ment_fragment_write_dissmess:
+                //评价成功
+                //提交
+                OrderFormDealsucceedDissmessDialog orderFormDealsucceedDissmessDialog = new OrderFormDealsucceedDissmessDialog(getContext() , R.style.MeiGuiMeiShiSecondMyorderFive);
+                orderFormDealsucceedDissmessDialog.show();
                 break;
         }
     }

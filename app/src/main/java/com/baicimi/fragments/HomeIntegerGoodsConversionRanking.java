@@ -72,7 +72,7 @@ public class HomeIntegerGoodsConversionRanking extends BaseFragment implements V
         listThread.add(new EverydayConversionEntry("9:00场" , "进行中" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
         listThread.add(new EverydayConversionEntry("9:00场" , "进行中" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
 //        listThread.add(new EverydayConversionEntry("9:00场" , "兑换结束" , R.drawable.home_integer_conversion_01 , "香奈儿NO5香水" , "市场价：¥216.00"  , "积分：6556" , "数量：16556"));
-        adapteThread = new EverydayConversionAdapter(listThread , getContext() , 4 , this);
+        adapteThread = new EverydayConversionAdapter(listThread , getContext() , 2 , this);
         listviewThread.setAdapter(adapteThread);
         fixGrdiViewHeight04(listviewThread);
     }

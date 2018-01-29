@@ -13,7 +13,7 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:paddingTop="4dp"
-        android:background="#ce253a"
+        android:background="@color/white"
         android:paddingBottom="4dp"
         >
 
@@ -21,7 +21,7 @@
             android:id="@+id/phone_topup_bill_fragment_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/back_image_wirte"
+            android:src="@drawable/back_black"
             android:padding="4dp"
             android:layout_marginLeft="15dp"
             />
@@ -32,7 +32,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="手机充值账单"
-            android:textColor="@color/white"
+            android:textColor="#535353"
             android:gravity="center"
             android:textSize="16sp"
             />

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        >
+
+        <ImageView
+            android:id="@+id/tally_book_datail_adapter_imageurl"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/tally_book_datail_image_01"
+            />
+
+        <TextView
+            android:id="@+id/tally_book_datail_adapter_lible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="消费产品名称..."
+            android:layout_toRightOf="@+id/tally_book_datail_adapter_imageurl"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:textColor="#535353"
+            />
+
+        <TextView
+            android:id="@+id/tally_book_datail_adapter_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="-98.00"
+            android:textColor="#737373"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

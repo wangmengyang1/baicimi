@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.baicimi.MainActivity;
 import com.baicimi.R;
@@ -17,6 +18,7 @@ public class UserCenterHomePagerSettingMifriends extends BaseFragment implements
 
     private View view;
     private ImageView back;
+    private TextView payforanotherforme;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -24,6 +26,9 @@ public class UserCenterHomePagerSettingMifriends extends BaseFragment implements
 
         back = (ImageView) view.findViewById(R.id.user_center_home_page_setting_mifriends_back);
         back.setOnClickListener(this);
+
+        payforanotherforme = (TextView) view.findViewById(R.id.user_center_home_page_setting_mifriends_payforanotherforme);
+        payforanotherforme.setOnClickListener(this);
         return view;
     }
 
@@ -37,6 +42,10 @@ public class UserCenterHomePagerSettingMifriends extends BaseFragment implements
         switch (view.getId()){
             case R.id.user_center_home_page_setting_mifriends_back:
                 ((MainActivity)getActivity()).goBack();
+                break;
+            case R.id.user_center_home_page_setting_mifriends_payforanotherforme:
+                //为我代付
+//                startFragment(new PayForaNotherForMeFragment());
                 break;
         }
     }

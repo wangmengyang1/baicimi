@@ -127,7 +127,7 @@ public class EverydayConversionAdapter extends BaseAdapter {
             }
 
         }else if (count == 2){
-            holder.headImage.setVisibility(View.VISIBLE);
+            holder.headImage.setVisibility(View.GONE);
             holder.conversion.setText("预约详情");
             holder.rushpurchase.setText("立即预约");
 

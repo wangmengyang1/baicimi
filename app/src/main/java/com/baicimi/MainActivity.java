@@ -34,6 +34,7 @@ import com.baicimi.fragments.IntegralCeLaFragment;
 import com.baicimi.fragments.SerchGoodsFragment;
 import com.baicimi.fragments.TeacherStatusRegisterFragment;
 import com.baicimi.fragments.TeacherStatusRegisterGallery;
+import com.baicimi.fragments.UserPartTimeReisterFragment;
 import com.baicimi.view.IntegralSlideView;
 import com.baicimi.view.IntegralSlideViewFootPaint;
 
@@ -226,7 +227,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         date.add(new CelaProject(R.drawable.drawlayout_image_05 , "个人用品" , new String[]{"配饰" , "包包" , "个护电器" , "床上用品","居家休闲" , "旅行用品"}));
         date.add(new CelaProject(R.drawable.drawlayout_image_06 , "男士专区" , new String[]{"护肤产品" , "洗护用品" , "个护电器" , "户外用品"}));
         date.add(new CelaProject(R.drawable.drawlayout_image_07, "输入积分码" , new String[]{}));
-        date.add(new CelaProject(R.drawable.drawlayout_image_08, "注册通道入口" , new String[]{"教师/学生注册入口" , "BNN分销/员工注册入口"}));
+        date.add(new CelaProject(R.drawable.drawlayout_image_08, "注册通道入口" , new String[]{"教师/学生注册入口" , "BNN分销批发注册入口" , "兼职/员工注册入口"}));
         date.add(new CelaProject(R.drawable.drawlayout_image_09, "师生选购专区" , new String[]{}));
         date.add(new CelaProject(R.drawable.drawlayout_image_10 , "分销订货入口" , new String[]{}));
 //        date.add(new CelaProject(R.mipmap.meigui_meishi , "分销物品申请入口" , new String[]{}));
@@ -458,7 +459,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                             adapter.notifyDataSetChanged();
                         }else if(i == 1){
                             drawer.closeDrawers();
+                            //班宁分销批发注册入口
                             startFragment(new BnnStaffRegisterOptionFragment(),null);
+                            celaListview = -1;
+                            adapter.notifyDataSetChanged();
+                        }else if (i == 2){
+                            drawer.closeDrawers();
+                            //兼职员工入口
+                            startFragment(new UserPartTimeReisterFragment(),null);
                             celaListview = -1;
                             adapter.notifyDataSetChanged();
                         }

@@ -14,6 +14,8 @@ public class AuthenticationEntry {
     }
 
 
+
+
     public int getImageUrl() {
         return imageUrl;
     }

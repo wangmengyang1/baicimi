@@ -3,8 +3,10 @@ package com.baicimi.fragments;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.baicimi.MainActivity;
 import com.baicimi.R;
 import com.baicimi.adapter.MyExpressFragmentAdapter;
 import com.baicimi.adapter.UserIntegralSignInShoppingAdapter;
@@ -18,12 +20,14 @@ import java.util.List;
  * Created by Administrator on 2017/12/18.
  * 个人中心  我的快递
  */
-public class MyExpressFragment extends BaseFragment {
+public class MyExpressFragment extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private ListView listView;
     private List<MyExpressFragmentEntry> list = new ArrayList<>();
     private MyExpressFragmentAdapter adapter;
+
+    private ImageView back;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
@@ -31,6 +35,9 @@ public class MyExpressFragment extends BaseFragment {
 
         //listview布局填充
         initListView();
+
+        back = (ImageView) view.findViewById(R.id.my_express_fragment_back);
+        back.setOnClickListener(this);
 
         return view;
     }
@@ -76,5 +83,14 @@ public class MyExpressFragment extends BaseFragment {
     @Override
     protected void initData() {
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.my_express_fragment_back:
+                ((MainActivity)getActivity()).goBack();
+                break;
+        }
     }
 }

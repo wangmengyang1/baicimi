@@ -28,7 +28,7 @@ import java.util.List;
  * Created by Administrator on 2017/8/23.
  */
 
-public class BnnDistributorRegisterOptionFragment extends BaseFragment {
+public class BnnDistributorRegisterOptionFragment extends BaseFragment implements View.OnClickListener {
 
     private View view;
     private Spinner  spinner_02;
@@ -39,6 +39,9 @@ public class BnnDistributorRegisterOptionFragment extends BaseFragment {
     private LinearLayout spinner;
     private TextView spinner_tv;
 
+    private TextView licenseTv;//营业执照图片添加
+    private TextView addLayout;//店铺门面照添加
+    private LinearLayout layout;
 
     //地址选择器
 
@@ -115,6 +118,14 @@ public class BnnDistributorRegisterOptionFragment extends BaseFragment {
         spinner_02 = (Spinner) view.findViewById(R.id.bnn_distributor_register_spinner_02);
         initSpinnerSecond(spinner_02);
 
+
+        licenseTv = (TextView) view.findViewById(R.id.bnn_distributor_register_option_license);
+        licenseTv.setOnClickListener(this);
+
+        addLayout = (TextView) view.findViewById(R.id.bnn_distributor_register_option_addlayout);
+        addLayout.setOnClickListener(this);
+
+        layout = (LinearLayout) view.findViewById(R.id.bnn_distributor_register_option_layout);
         return view;
     }
 
@@ -122,13 +133,10 @@ public class BnnDistributorRegisterOptionFragment extends BaseFragment {
     private void initSpinnerSecond(Spinner spinner) {
         //数据
         data_list = new ArrayList<String>();
-        data_list.add("  ");
-        data_list.add(" 分销点/店 ");
-        data_list.add("  运营经理  ");
-        data_list.add("  客户代表 ");
-        data_list.add("  促销推广员 ");
-        data_list.add("  促销兼职 ");
-        data_list.add("  员工 ");
+
+        data_list.add(" 零售 ");
+        data_list.add("  批发  ");
+
 
         //适配器
         arr_adapter= new ArrayAdapter<String>(getContext(), R.layout.person_centered_spinner_item_textview, data_list);
@@ -248,4 +256,18 @@ public class BnnDistributorRegisterOptionFragment extends BaseFragment {
     }
 
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.bnn_distributor_register_option_license:
+                licenseTv.setText("图片");
+                licenseTv.setPadding(12 , 12 , 12 , 12);
+                break;
+            case R.id.bnn_distributor_register_option_addlayout:
+                addLayout.setText("图片");
+                addLayout.setPadding(12 , 12 , 12 , 12);
+                layout.setVisibility(View.VISIBLE);
+                break;
+        }
+    }
 }

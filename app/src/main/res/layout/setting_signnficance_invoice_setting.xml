@@ -340,6 +340,7 @@
                     android:textSize="13sp" />
 
                 <LinearLayout
+                    android:id="@+id/setting_signnficance_invoice_setting_invoicecontent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
